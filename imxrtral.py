@@ -1708,46 +1708,6 @@ class Crate:
         lib_f = open(os.path.join(srcpath, "lib.rs"), "w")
         lib_f.write(CRATE_LIB_PREAMBLE)
 
-
-        devices = [
-            device
-            for family in self.families
-            for device in family.devices
-        ]
-        features = [f'feature="{dev.name}"' for dev in devices]
-
-        chip_id_variants = [f"{dev.name.capitalize()} = {int(dev.name[len('imxrt'):])}\n" for dev in devices]
-        lib_f.write(f"""
-        /// All supported i.MX RT chips.
-        ///
-        /// You may query the selected chip ID
-        /// - at compile time, using the `CHIP_ID` constant.
-        /// - at run time, through the `IMXRT_RAL_CHIP_ID` static.
-        #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
-        #[repr(u32)]
-        pub enum ChipId {{
-            {", ".join(chip_id_variants)}
-        }}
-
-        impl ChipId {{
-            /// Equate two chip IDs in a constant context.
-            pub const fn eq(self, other: ChipId) -> bool {{
-                self as u32 == other as u32
-            }}
-        }}
-
-        """)
-
-        for dev in devices:
-            lib_f.write(f'#[cfg(feature="{dev.name}")]\n')
-            lib_f.write(f"pub const CHIP_ID: ChipId = ChipId::{dev.name.capitalize()};\n")
-
-
-        lib_f.write(f'#[cfg(any({", ".join(features)}))]\n')
-        lib_f.write(f'#[no_mangle]\n')
-        lib_f.write(f'pub static IMXRT_RAL_CHIP_ID: ChipId = CHIP_ID;\n')
-        lib_f.write("\n")
-
         cargo_f = open(os.path.join(path, "Cargo.toml"), "w")
         cargo_f.write(CRATE_CARGO_TOML_PREAMBLE)
 
