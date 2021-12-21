@@ -67,6 +67,13 @@ pub enum Interrupt {{}}
 /// hand, no LPUART peripheral will have this constant, since there are
 /// multiple instances.
 pub const SOLE_INSTANCE: u8 = {SOLE_INSTANCE};
+
+mod private {{
+    pub trait Sealed {{}}
+}}
+
+/// Implemented on all `Instance<N>` when `N` is a valid instance number.
+pub trait Valid : private::Sealed {{}}
 """
 
 
@@ -698,8 +705,8 @@ class PeripheralInstance(Node):
             addr: u32,
         }}
 
-        impl private::Sealed for {self.name} {{}}
-        impl Valid for {self.name} {{}}
+        impl crate::private::Sealed for {self.name} {{}}
+        impl crate::Valid for {self.name} {{}}
 
         #[cfg(not(feature="nosync"))]
         #[allow(renamed_and_removed_lints)]
@@ -904,13 +911,6 @@ class PeripheralPrototype(Node):
                 self.intrs
             }
         }
-
-        pub(crate) mod private {
-            pub trait Sealed {}
-        }
-
-        /// Describes a valid `Instance<N>` for this peripheral.
-        pub trait Valid : private::Sealed {}
         """
 
     def to_rust_file(self, path):
@@ -1108,8 +1108,7 @@ class PeripheralPrototypeLink(Node):
             f"//! {desc}",
             "",
             f"pub use crate::{self.path}::{{RegisterBlock, ResetValues}};",
-            f"pub use crate::{self.path}::{{Instance, Valid}};",
-            f"use crate::{self.path}::private;"
+            f"pub use crate::{self.path}::Instance;",
             "",
         ]
         if self.instances:

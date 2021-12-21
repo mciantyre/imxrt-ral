@@ -314,8 +314,8 @@
 //! # Some(()) }();
 //! ```
 //!
-//! To catch an invalid N at compile time, use `lpuart::Valid`, a trait implemented on
-//! all valid `lpuart::Instance<N>` types.
+//! To catch an invalid N at compile time, use `Valid`, a trait implemented on
+//! all valid `Instance<N>` types.
 //!
 //! ```
 //! # use imxrt_ral::ccm;
@@ -323,7 +323,7 @@
 //!
 //! fn ccm_enable_lpuart_clock_gate<const LPUART_N: u8>(ccm: &mut ccm::CCM)
 //! where
-//!     lpuart::Instance<LPUART_N>: lpuart::Valid, // NEW: constrain LPUART_N to valid instance numbers.
+//!     lpuart::Instance<LPUART_N>: imxrt_ral::Valid, // NEW: constrain LPUART_N to valid instance numbers.
 //! {
 //!     match LPUART_N {
 //!         1 => { /* ... */ }
@@ -344,7 +344,7 @@
 //! # use imxrt_ral::lpuart;
 //! # fn ccm_enable_lpuart_clock_gate<const LPUART_N: u8>(ccm: &mut ccm::CCM)
 //! # where
-//! #     lpuart::Instance<LPUART_N>: lpuart::Valid,
+//! #     lpuart::Instance<LPUART_N>: imxrt_ral::Valid,
 //! # {}
 //! # || -> Option<()> {
 //! # let mut ccm = ccm::CCM::take()?;
