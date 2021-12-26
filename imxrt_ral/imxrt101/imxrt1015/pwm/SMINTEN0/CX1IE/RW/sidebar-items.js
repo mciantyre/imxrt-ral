@@ -1,1 +1,0 @@
-initSidebarItems({"constant":[["CX1IE_0","0b0: Interrupt request disabled for STS[CFX1]."],["CX1IE_1","0b1: Interrupt request enabled for STS[CFX1]."]]});

@@ -1,1 +1,0 @@
-initSidebarItems({"constant":[["ADLPC_0","0b0: ADC hard block not in low power mode."],["ADLPC_1","0b1: ADC hard block in low power mode."]]});

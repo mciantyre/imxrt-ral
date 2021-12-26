@@ -1,1 +1,0 @@
-initSidebarItems({"constant":[["REFSEL_0","0b00: Selects VREFH/VREFL as reference voltage."]]});

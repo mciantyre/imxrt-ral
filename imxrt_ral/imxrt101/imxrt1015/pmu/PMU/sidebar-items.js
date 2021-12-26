@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["INTERRUPTS","The interrupts associated with PMU"],["reset","Reset values for each field in PMU"]],"fn":[["release","Release exclusive access to PMU"],["steal","Unsafely steal PMU"],["take","Safe access to PMU"]]});

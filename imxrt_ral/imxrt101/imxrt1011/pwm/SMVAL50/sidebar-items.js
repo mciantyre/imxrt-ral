@@ -1,1 +1,0 @@
-initSidebarItems({"mod":[["VAL5","Value Register 5"]]});
