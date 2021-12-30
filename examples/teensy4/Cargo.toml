@@ -17,7 +17,7 @@ features = ["imxrt1062", "rt"]
 # on features and requirements.
 [dependencies.cortex-m-rt]
 features = ["device"]
-version = "0.6.13"
+version = "0.7"
 
 # This is an extra dependency that helps us boot the Teensy 4.
 [dependencies.teensy4-fcb]
@@ -28,7 +28,7 @@ version = "0.3.0"
 version = "0.1"
 
 [dependencies.cortex-m-rtic]
-version = "0.6.0-alpha.4"
+version = "1.0"
 
 [dependencies.cortex-m]
 version = "0.7"
