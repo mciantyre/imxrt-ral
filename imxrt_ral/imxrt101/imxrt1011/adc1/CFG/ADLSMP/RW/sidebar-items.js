@@ -1,1 +1,0 @@
-initSidebarItems({"constant":[["ADLSMP_0","0b0: Short sample mode."],["ADLSMP_1","0b1: Long sample mode."]]});

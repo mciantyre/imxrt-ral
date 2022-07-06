@@ -1,1 +1,0 @@
-initSidebarItems({"constant":[["PWMB_EN_0","0b0000: PWM_B output disabled."],["PWMB_EN_1","0b0001: PWM_B output enabled."]]});
