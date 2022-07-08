@@ -104,7 +104,7 @@ no-default-features = true
 default-target = "thumbv7em-none-eabihf"
 
 # Change dependencies in imxrtral.py, not here!
-[target.'cfg(target_arch = "arm")'.dependencies.cortex-m]
+[dependencies.cortex-m]
 version = "0.7.2"
 optional = true
 
@@ -1343,7 +1343,6 @@ class Device(Node):
                 f.write(f"{interrupt.name} = {interrupt.value},\n")
             f.write("}\n")
             f.write("""\
-                #[cfg(target_arch = "arm")]
                 unsafe impl cortex_m::interrupt::InterruptNumber for Interrupt {
                     #[inline]
                     fn number(self) -> u16 {
