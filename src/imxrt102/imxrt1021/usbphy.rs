@@ -1732,7 +1732,17 @@ pub struct USBPHY {
 }
 
 impl crate::private::Sealed for USBPHY {}
-impl crate::Valid for USBPHY {}
+impl crate::Valid for USBPHY {
+    fn take() -> Option<Self> {
+        <USBPHY>::take()
+    }
+    fn release(self) {
+        <USBPHY>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <USBPHY>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

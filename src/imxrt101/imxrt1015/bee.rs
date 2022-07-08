@@ -870,7 +870,17 @@ pub struct BEE {
 }
 
 impl crate::private::Sealed for BEE {}
-impl crate::Valid for BEE {}
+impl crate::Valid for BEE {
+    fn take() -> Option<Self> {
+        <BEE>::take()
+    }
+    fn release(self) {
+        <BEE>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <BEE>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

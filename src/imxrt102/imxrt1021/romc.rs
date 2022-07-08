@@ -482,7 +482,17 @@ pub struct ROMC {
 }
 
 impl crate::private::Sealed for ROMC {}
-impl crate::Valid for ROMC {}
+impl crate::Valid for ROMC {
+    fn take() -> Option<Self> {
+        <ROMC>::take()
+    }
+    fn release(self) {
+        <ROMC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ROMC>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

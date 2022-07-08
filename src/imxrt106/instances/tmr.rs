@@ -36,7 +36,17 @@ pub struct TMR1 {
 }
 
 impl crate::private::Sealed for TMR1 {}
-impl crate::Valid for TMR1 {}
+impl crate::Valid for TMR1 {
+    fn take() -> Option<Self> {
+        <TMR1>::take()
+    }
+    fn release(self) {
+        <TMR1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <TMR1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -198,7 +208,17 @@ pub struct TMR2 {
 }
 
 impl crate::private::Sealed for TMR2 {}
-impl crate::Valid for TMR2 {}
+impl crate::Valid for TMR2 {
+    fn take() -> Option<Self> {
+        <TMR2>::take()
+    }
+    fn release(self) {
+        <TMR2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <TMR2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -360,7 +380,17 @@ pub struct TMR3 {
 }
 
 impl crate::private::Sealed for TMR3 {}
-impl crate::Valid for TMR3 {}
+impl crate::Valid for TMR3 {
+    fn take() -> Option<Self> {
+        <TMR3>::take()
+    }
+    fn release(self) {
+        <TMR3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <TMR3>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -522,7 +552,17 @@ pub struct TMR4 {
 }
 
 impl crate::private::Sealed for TMR4 {}
-impl crate::Valid for TMR4 {}
+impl crate::Valid for TMR4 {
+    fn take() -> Option<Self> {
+        <TMR4>::take()
+    }
+    fn release(self) {
+        <TMR4>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <TMR4>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

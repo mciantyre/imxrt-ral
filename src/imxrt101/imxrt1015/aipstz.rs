@@ -28,7 +28,17 @@ pub struct AIPSTZ1 {
 }
 
 impl crate::private::Sealed for AIPSTZ1 {}
-impl crate::Valid for AIPSTZ1 {}
+impl crate::Valid for AIPSTZ1 {
+    fn take() -> Option<Self> {
+        <AIPSTZ1>::take()
+    }
+    fn release(self) {
+        <AIPSTZ1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <AIPSTZ1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -143,7 +153,17 @@ pub struct AIPSTZ2 {
 }
 
 impl crate::private::Sealed for AIPSTZ2 {}
-impl crate::Valid for AIPSTZ2 {}
+impl crate::Valid for AIPSTZ2 {
+    fn take() -> Option<Self> {
+        <AIPSTZ2>::take()
+    }
+    fn release(self) {
+        <AIPSTZ2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <AIPSTZ2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -258,7 +278,17 @@ pub struct AIPSTZ3 {
 }
 
 impl crate::private::Sealed for AIPSTZ3 {}
-impl crate::Valid for AIPSTZ3 {}
+impl crate::Valid for AIPSTZ3 {
+    fn take() -> Option<Self> {
+        <AIPSTZ3>::take()
+    }
+    fn release(self) {
+        <AIPSTZ3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <AIPSTZ3>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -373,7 +403,17 @@ pub struct AIPSTZ4 {
 }
 
 impl crate::private::Sealed for AIPSTZ4 {}
-impl crate::Valid for AIPSTZ4 {}
+impl crate::Valid for AIPSTZ4 {
+    fn take() -> Option<Self> {
+        <AIPSTZ4>::take()
+    }
+    fn release(self) {
+        <AIPSTZ4>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <AIPSTZ4>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

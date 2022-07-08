@@ -97,7 +97,17 @@ pub struct CAN3 {
 }
 
 impl crate::private::Sealed for CAN3 {}
-impl crate::Valid for CAN3 {}
+impl crate::Valid for CAN3 {
+    fn take() -> Option<Self> {
+        <CAN3>::take()
+    }
+    fn release(self) {
+        <CAN3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CAN3>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

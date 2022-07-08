@@ -33,7 +33,17 @@ pub struct ADC1 {
 }
 
 impl crate::private::Sealed for ADC1 {}
-impl crate::Valid for ADC1 {}
+impl crate::Valid for ADC1 {
+    fn take() -> Option<Self> {
+        <ADC1>::take()
+    }
+    fn release(self) {
+        <ADC1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ADC1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -165,7 +175,17 @@ pub struct ADC2 {
 }
 
 impl crate::private::Sealed for ADC2 {}
-impl crate::Valid for ADC2 {}
+impl crate::Valid for ADC2 {
+    fn take() -> Option<Self> {
+        <ADC2>::take()
+    }
+    fn release(self) {
+        <ADC2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ADC2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

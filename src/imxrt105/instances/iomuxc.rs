@@ -165,7 +165,17 @@ pub struct IOMUXC {
 }
 
 impl crate::private::Sealed for IOMUXC {}
-impl crate::Valid for IOMUXC {}
+impl crate::Valid for IOMUXC {
+    fn take() -> Option<Self> {
+        <IOMUXC>::take()
+    }
+    fn release(self) {
+        <IOMUXC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <IOMUXC>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

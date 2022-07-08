@@ -30,7 +30,17 @@ pub struct XBARB2 {
 }
 
 impl crate::private::Sealed for XBARB2 {}
-impl crate::Valid for XBARB2 {}
+impl crate::Valid for XBARB2 {
+    fn take() -> Option<Self> {
+        <XBARB2>::take()
+    }
+    fn release(self) {
+        <XBARB2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <XBARB2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -147,7 +157,17 @@ pub struct XBARB3 {
 }
 
 impl crate::private::Sealed for XBARB3 {}
-impl crate::Valid for XBARB3 {}
+impl crate::Valid for XBARB3 {
+    fn take() -> Option<Self> {
+        <XBARB3>::take()
+    }
+    fn release(self) {
+        <XBARB3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <XBARB3>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

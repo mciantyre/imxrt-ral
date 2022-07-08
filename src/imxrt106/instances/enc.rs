@@ -33,7 +33,17 @@ pub struct ENC1 {
 }
 
 impl crate::private::Sealed for ENC1 {}
-impl crate::Valid for ENC1 {}
+impl crate::Valid for ENC1 {
+    fn take() -> Option<Self> {
+        <ENC1>::take()
+    }
+    fn release(self) {
+        <ENC1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ENC1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -162,7 +172,17 @@ pub struct ENC2 {
 }
 
 impl crate::private::Sealed for ENC2 {}
-impl crate::Valid for ENC2 {}
+impl crate::Valid for ENC2 {
+    fn take() -> Option<Self> {
+        <ENC2>::take()
+    }
+    fn release(self) {
+        <ENC2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ENC2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -291,7 +311,17 @@ pub struct ENC3 {
 }
 
 impl crate::private::Sealed for ENC3 {}
-impl crate::Valid for ENC3 {}
+impl crate::Valid for ENC3 {
+    fn take() -> Option<Self> {
+        <ENC3>::take()
+    }
+    fn release(self) {
+        <ENC3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ENC3>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -420,7 +450,17 @@ pub struct ENC4 {
 }
 
 impl crate::private::Sealed for ENC4 {}
-impl crate::Valid for ENC4 {}
+impl crate::Valid for ENC4 {
+    fn take() -> Option<Self> {
+        <ENC4>::take()
+    }
+    fn release(self) {
+        <ENC4>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ENC4>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

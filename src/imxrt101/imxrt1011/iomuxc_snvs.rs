@@ -356,7 +356,17 @@ pub struct IOMUXC_SNVS {
 }
 
 impl crate::private::Sealed for IOMUXC_SNVS {}
-impl crate::Valid for IOMUXC_SNVS {}
+impl crate::Valid for IOMUXC_SNVS {
+    fn take() -> Option<Self> {
+        <IOMUXC_SNVS>::take()
+    }
+    fn release(self) {
+        <IOMUXC_SNVS>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <IOMUXC_SNVS>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

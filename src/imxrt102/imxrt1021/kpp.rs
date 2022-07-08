@@ -331,7 +331,17 @@ pub struct KPP {
 }
 
 impl crate::private::Sealed for KPP {}
-impl crate::Valid for KPP {}
+impl crate::Valid for KPP {
+    fn take() -> Option<Self> {
+        <KPP>::take()
+    }
+    fn release(self) {
+        <KPP>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <KPP>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

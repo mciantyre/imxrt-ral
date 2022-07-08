@@ -483,7 +483,17 @@ pub struct RTWDOG {
 }
 
 impl crate::private::Sealed for RTWDOG {}
-impl crate::Valid for RTWDOG {}
+impl crate::Valid for RTWDOG {
+    fn take() -> Option<Self> {
+        <RTWDOG>::take()
+    }
+    fn release(self) {
+        <RTWDOG>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <RTWDOG>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

@@ -2243,7 +2243,17 @@ pub struct SAI1 {
 }
 
 impl crate::private::Sealed for SAI1 {}
-impl crate::Valid for SAI1 {}
+impl crate::Valid for SAI1 {
+    fn take() -> Option<Self> {
+        <SAI1>::take()
+    }
+    fn release(self) {
+        <SAI1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <SAI1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -2384,7 +2394,17 @@ pub struct SAI2 {
 }
 
 impl crate::private::Sealed for SAI2 {}
-impl crate::Valid for SAI2 {}
+impl crate::Valid for SAI2 {
+    fn take() -> Option<Self> {
+        <SAI2>::take()
+    }
+    fn release(self) {
+        <SAI2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <SAI2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -2525,7 +2545,17 @@ pub struct SAI3 {
 }
 
 impl crate::private::Sealed for SAI3 {}
-impl crate::Valid for SAI3 {}
+impl crate::Valid for SAI3 {
+    fn take() -> Option<Self> {
+        <SAI3>::take()
+    }
+    fn release(self) {
+        <SAI3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <SAI3>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

@@ -28,7 +28,17 @@ pub struct WDOG1 {
 }
 
 impl crate::private::Sealed for WDOG1 {}
-impl crate::Valid for WDOG1 {}
+impl crate::Valid for WDOG1 {
+    fn take() -> Option<Self> {
+        <WDOG1>::take()
+    }
+    fn release(self) {
+        <WDOG1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <WDOG1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -142,7 +152,17 @@ pub struct WDOG2 {
 }
 
 impl crate::private::Sealed for WDOG2 {}
-impl crate::Valid for WDOG2 {}
+impl crate::Valid for WDOG2 {
+    fn take() -> Option<Self> {
+        <WDOG2>::take()
+    }
+    fn release(self) {
+        <WDOG2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <WDOG2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

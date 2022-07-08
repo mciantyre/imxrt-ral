@@ -2094,7 +2094,17 @@ pub struct TRNG {
 }
 
 impl crate::private::Sealed for TRNG {}
-impl crate::Valid for TRNG {}
+impl crate::Valid for TRNG {
+    fn take() -> Option<Self> {
+        <TRNG>::take()
+    }
+    fn release(self) {
+        <TRNG>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <TRNG>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

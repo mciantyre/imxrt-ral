@@ -3316,7 +3316,17 @@ pub struct SNVS {
 }
 
 impl crate::private::Sealed for SNVS {}
-impl crate::Valid for SNVS {}
+impl crate::Valid for SNVS {
+    fn take() -> Option<Self> {
+        <SNVS>::take()
+    }
+    fn release(self) {
+        <SNVS>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <SNVS>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

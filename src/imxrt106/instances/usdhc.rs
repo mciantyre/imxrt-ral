@@ -35,7 +35,17 @@ pub struct USDHC1 {
 }
 
 impl crate::private::Sealed for USDHC1 {}
-impl crate::Valid for USDHC1 {}
+impl crate::Valid for USDHC1 {
+    fn take() -> Option<Self> {
+        <USDHC1>::take()
+    }
+    fn release(self) {
+        <USDHC1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <USDHC1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -173,7 +183,17 @@ pub struct USDHC2 {
 }
 
 impl crate::private::Sealed for USDHC2 {}
-impl crate::Valid for USDHC2 {}
+impl crate::Valid for USDHC2 {
+    fn take() -> Option<Self> {
+        <USDHC2>::take()
+    }
+    fn release(self) {
+        <USDHC2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <USDHC2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

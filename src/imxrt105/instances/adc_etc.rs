@@ -48,7 +48,17 @@ pub struct ADC_ETC {
 }
 
 impl crate::private::Sealed for ADC_ETC {}
-impl crate::Valid for ADC_ETC {}
+impl crate::Valid for ADC_ETC {
+    fn take() -> Option<Self> {
+        <ADC_ETC>::take()
+    }
+    fn release(self) {
+        <ADC_ETC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ADC_ETC>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

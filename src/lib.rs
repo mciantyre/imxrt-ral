@@ -51,7 +51,53 @@ mod private {
 }
 
 /// Implemented on all `Instance<N>` when `N` is a valid instance number.
-pub trait Valid: private::Sealed {}
+///
+/// It also provides a generic `take()`, `release()`, and `steal()` interface for
+/// all instances. For example,
+///
+/// ```
+/// use imxrt_ral as ral;
+/// use ral::{Valid, lpuart::Instance};
+///
+/// fn work_with_lpuart<const N: u8>() -> Option<Instance<N>>
+/// where
+///     Instance<N>: Valid,
+/// {
+///     let inst = <Instance<N> as Valid>::take()?;
+///     // Do things with inst...
+///     Some(inst)
+/// }
+/// ```
+pub trait Valid: private::Sealed + Sized {
+    /// Provides safe access to the instance.
+    ///
+    /// This function returns `Some(Instance)` if this instance is not
+    /// currently taken, and `None` if it is. This ensures that if you
+    /// do get `Some(Instance)`, you are ensured unique access to
+    /// the peripheral and there cannot be data races (unless other
+    /// code uses `unsafe`, of course). You can then pass the
+    /// `Instance` around to other functions as required. When you're
+    /// done with it, you can call `release(instance)` to return it.
+    ///
+    /// `Instance` itself dereferences to a `RegisterBlock`, which
+    /// provides access to the peripheral's registers.
+    fn take() -> Option<Self>;
+
+    /// Release exclusive access to this instance.
+    ///
+    /// This function allows you to return an `Instance` so that it
+    /// is available to `take()` again. This function will panic if
+    /// you return a different `Instance` or if this instance is not
+    /// already taken.
+    fn release(self);
+
+    /// Unsafely steal this instance.
+    ///
+    /// This function is similar to take() but forcibly takes the
+    /// Instance, marking it as taken regardless of its previous
+    /// state.
+    unsafe fn steal() -> Self;
+}
 #[cfg(any(feature = "doc", feature = "imxrt1011", feature = "imxrt1015"))]
 pub mod imxrt101;
 

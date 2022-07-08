@@ -2738,7 +2738,17 @@ pub struct LPI2C1 {
 }
 
 impl crate::private::Sealed for LPI2C1 {}
-impl crate::Valid for LPI2C1 {}
+impl crate::Valid for LPI2C1 {
+    fn take() -> Option<Self> {
+        <LPI2C1>::take()
+    }
+    fn release(self) {
+        <LPI2C1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPI2C1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -2875,7 +2885,17 @@ pub struct LPI2C2 {
 }
 
 impl crate::private::Sealed for LPI2C2 {}
-impl crate::Valid for LPI2C2 {}
+impl crate::Valid for LPI2C2 {
+    fn take() -> Option<Self> {
+        <LPI2C2>::take()
+    }
+    fn release(self) {
+        <LPI2C2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPI2C2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -3012,7 +3032,17 @@ pub struct LPI2C3 {
 }
 
 impl crate::private::Sealed for LPI2C3 {}
-impl crate::Valid for LPI2C3 {}
+impl crate::Valid for LPI2C3 {
+    fn take() -> Option<Self> {
+        <LPI2C3>::take()
+    }
+    fn release(self) {
+        <LPI2C3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPI2C3>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -3149,7 +3179,17 @@ pub struct LPI2C4 {
 }
 
 impl crate::private::Sealed for LPI2C4 {}
-impl crate::Valid for LPI2C4 {}
+impl crate::Valid for LPI2C4 {
+    fn take() -> Option<Self> {
+        <LPI2C4>::take()
+    }
+    fn release(self) {
+        <LPI2C4>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPI2C4>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

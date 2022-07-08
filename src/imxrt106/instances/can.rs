@@ -39,7 +39,17 @@ pub struct CAN1 {
 }
 
 impl crate::private::Sealed for CAN1 {}
-impl crate::Valid for CAN1 {}
+impl crate::Valid for CAN1 {
+    fn take() -> Option<Self> {
+        <CAN1>::take()
+    }
+    fn release(self) {
+        <CAN1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CAN1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -232,7 +242,17 @@ pub struct CAN2 {
 }
 
 impl crate::private::Sealed for CAN2 {}
-impl crate::Valid for CAN2 {}
+impl crate::Valid for CAN2 {
+    fn take() -> Option<Self> {
+        <CAN2>::take()
+    }
+    fn release(self) {
+        <CAN2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CAN2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

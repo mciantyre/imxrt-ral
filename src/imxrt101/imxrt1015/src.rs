@@ -622,7 +622,17 @@ pub struct SRC {
 }
 
 impl crate::private::Sealed for SRC {}
-impl crate::Valid for SRC {}
+impl crate::Valid for SRC {
+    fn take() -> Option<Self> {
+        <SRC>::take()
+    }
+    fn release(self) {
+        <SRC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <SRC>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

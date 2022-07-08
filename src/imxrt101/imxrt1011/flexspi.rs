@@ -3902,7 +3902,17 @@ pub struct FLEXSPI {
 }
 
 impl crate::private::Sealed for FLEXSPI {}
-impl crate::Valid for FLEXSPI {}
+impl crate::Valid for FLEXSPI {
+    fn take() -> Option<Self> {
+        <FLEXSPI>::take()
+    }
+    fn release(self) {
+        <FLEXSPI>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <FLEXSPI>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

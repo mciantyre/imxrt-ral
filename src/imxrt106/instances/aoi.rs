@@ -32,7 +32,17 @@ pub struct AOI1 {
 }
 
 impl crate::private::Sealed for AOI1 {}
-impl crate::Valid for AOI1 {}
+impl crate::Valid for AOI1 {
+    fn take() -> Option<Self> {
+        <AOI1>::take()
+    }
+    fn release(self) {
+        <AOI1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <AOI1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -149,7 +159,17 @@ pub struct AOI2 {
 }
 
 impl crate::private::Sealed for AOI2 {}
-impl crate::Valid for AOI2 {}
+impl crate::Valid for AOI2 {
+    fn take() -> Option<Self> {
+        <AOI2>::take()
+    }
+    fn release(self) {
+        <AOI2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <AOI2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

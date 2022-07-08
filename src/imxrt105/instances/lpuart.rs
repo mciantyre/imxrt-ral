@@ -32,7 +32,17 @@ pub struct LPUART1 {
 }
 
 impl crate::private::Sealed for LPUART1 {}
-impl crate::Valid for LPUART1 {}
+impl crate::Valid for LPUART1 {
+    fn take() -> Option<Self> {
+        <LPUART1>::take()
+    }
+    fn release(self) {
+        <LPUART1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPUART1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -153,7 +163,17 @@ pub struct LPUART2 {
 }
 
 impl crate::private::Sealed for LPUART2 {}
-impl crate::Valid for LPUART2 {}
+impl crate::Valid for LPUART2 {
+    fn take() -> Option<Self> {
+        <LPUART2>::take()
+    }
+    fn release(self) {
+        <LPUART2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPUART2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -274,7 +294,17 @@ pub struct LPUART3 {
 }
 
 impl crate::private::Sealed for LPUART3 {}
-impl crate::Valid for LPUART3 {}
+impl crate::Valid for LPUART3 {
+    fn take() -> Option<Self> {
+        <LPUART3>::take()
+    }
+    fn release(self) {
+        <LPUART3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPUART3>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -395,7 +425,17 @@ pub struct LPUART4 {
 }
 
 impl crate::private::Sealed for LPUART4 {}
-impl crate::Valid for LPUART4 {}
+impl crate::Valid for LPUART4 {
+    fn take() -> Option<Self> {
+        <LPUART4>::take()
+    }
+    fn release(self) {
+        <LPUART4>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPUART4>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -516,7 +556,17 @@ pub struct LPUART5 {
 }
 
 impl crate::private::Sealed for LPUART5 {}
-impl crate::Valid for LPUART5 {}
+impl crate::Valid for LPUART5 {
+    fn take() -> Option<Self> {
+        <LPUART5>::take()
+    }
+    fn release(self) {
+        <LPUART5>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPUART5>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -637,7 +687,17 @@ pub struct LPUART6 {
 }
 
 impl crate::private::Sealed for LPUART6 {}
-impl crate::Valid for LPUART6 {}
+impl crate::Valid for LPUART6 {
+    fn take() -> Option<Self> {
+        <LPUART6>::take()
+    }
+    fn release(self) {
+        <LPUART6>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPUART6>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -758,7 +818,17 @@ pub struct LPUART7 {
 }
 
 impl crate::private::Sealed for LPUART7 {}
-impl crate::Valid for LPUART7 {}
+impl crate::Valid for LPUART7 {
+    fn take() -> Option<Self> {
+        <LPUART7>::take()
+    }
+    fn release(self) {
+        <LPUART7>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPUART7>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -879,7 +949,17 @@ pub struct LPUART8 {
 }
 
 impl crate::private::Sealed for LPUART8 {}
-impl crate::Valid for LPUART8 {}
+impl crate::Valid for LPUART8 {
+    fn take() -> Option<Self> {
+        <LPUART8>::take()
+    }
+    fn release(self) {
+        <LPUART8>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPUART8>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

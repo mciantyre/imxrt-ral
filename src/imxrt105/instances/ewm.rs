@@ -30,7 +30,17 @@ pub struct EWM {
 }
 
 impl crate::private::Sealed for EWM {}
-impl crate::Valid for EWM {}
+impl crate::Valid for EWM {
+    fn take() -> Option<Self> {
+        <EWM>::take()
+    }
+    fn release(self) {
+        <EWM>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <EWM>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

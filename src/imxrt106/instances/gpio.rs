@@ -32,7 +32,17 @@ pub struct GPIO1 {
 }
 
 impl crate::private::Sealed for GPIO1 {}
-impl crate::Valid for GPIO1 {}
+impl crate::Valid for GPIO1 {
+    fn take() -> Option<Self> {
+        <GPIO1>::take()
+    }
+    fn release(self) {
+        <GPIO1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPIO1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -174,7 +184,17 @@ pub struct GPIO2 {
 }
 
 impl crate::private::Sealed for GPIO2 {}
-impl crate::Valid for GPIO2 {}
+impl crate::Valid for GPIO2 {
+    fn take() -> Option<Self> {
+        <GPIO2>::take()
+    }
+    fn release(self) {
+        <GPIO2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPIO2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -300,7 +320,17 @@ pub struct GPIO3 {
 }
 
 impl crate::private::Sealed for GPIO3 {}
-impl crate::Valid for GPIO3 {}
+impl crate::Valid for GPIO3 {
+    fn take() -> Option<Self> {
+        <GPIO3>::take()
+    }
+    fn release(self) {
+        <GPIO3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPIO3>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -426,7 +456,17 @@ pub struct GPIO4 {
 }
 
 impl crate::private::Sealed for GPIO4 {}
-impl crate::Valid for GPIO4 {}
+impl crate::Valid for GPIO4 {
+    fn take() -> Option<Self> {
+        <GPIO4>::take()
+    }
+    fn release(self) {
+        <GPIO4>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPIO4>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -552,7 +592,17 @@ pub struct GPIO5 {
 }
 
 impl crate::private::Sealed for GPIO5 {}
-impl crate::Valid for GPIO5 {}
+impl crate::Valid for GPIO5 {
+    fn take() -> Option<Self> {
+        <GPIO5>::take()
+    }
+    fn release(self) {
+        <GPIO5>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPIO5>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -678,7 +728,17 @@ pub struct GPIO6 {
 }
 
 impl crate::private::Sealed for GPIO6 {}
-impl crate::Valid for GPIO6 {}
+impl crate::Valid for GPIO6 {
+    fn take() -> Option<Self> {
+        <GPIO6>::take()
+    }
+    fn release(self) {
+        <GPIO6>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPIO6>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -798,7 +858,17 @@ pub struct GPIO7 {
 }
 
 impl crate::private::Sealed for GPIO7 {}
-impl crate::Valid for GPIO7 {}
+impl crate::Valid for GPIO7 {
+    fn take() -> Option<Self> {
+        <GPIO7>::take()
+    }
+    fn release(self) {
+        <GPIO7>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPIO7>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -918,7 +988,17 @@ pub struct GPIO8 {
 }
 
 impl crate::private::Sealed for GPIO8 {}
-impl crate::Valid for GPIO8 {}
+impl crate::Valid for GPIO8 {
+    fn take() -> Option<Self> {
+        <GPIO8>::take()
+    }
+    fn release(self) {
+        <GPIO8>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPIO8>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -1038,7 +1118,17 @@ pub struct GPIO9 {
 }
 
 impl crate::private::Sealed for GPIO9 {}
-impl crate::Valid for GPIO9 {}
+impl crate::Valid for GPIO9 {
+    fn take() -> Option<Self> {
+        <GPIO9>::take()
+    }
+    fn release(self) {
+        <GPIO9>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPIO9>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

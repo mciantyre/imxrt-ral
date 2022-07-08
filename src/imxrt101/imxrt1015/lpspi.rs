@@ -1617,7 +1617,17 @@ pub struct LPSPI1 {
 }
 
 impl crate::private::Sealed for LPSPI1 {}
-impl crate::Valid for LPSPI1 {}
+impl crate::Valid for LPSPI1 {
+    fn take() -> Option<Self> {
+        <LPSPI1>::take()
+    }
+    fn release(self) {
+        <LPSPI1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPSPI1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -1743,7 +1753,17 @@ pub struct LPSPI2 {
 }
 
 impl crate::private::Sealed for LPSPI2 {}
-impl crate::Valid for LPSPI2 {}
+impl crate::Valid for LPSPI2 {
+    fn take() -> Option<Self> {
+        <LPSPI2>::take()
+    }
+    fn release(self) {
+        <LPSPI2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LPSPI2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

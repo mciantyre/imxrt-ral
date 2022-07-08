@@ -2167,7 +2167,17 @@ pub struct PXP {
 }
 
 impl crate::private::Sealed for PXP {}
-impl crate::Valid for PXP {}
+impl crate::Valid for PXP {
+    fn take() -> Option<Self> {
+        <PXP>::take()
+    }
+    fn release(self) {
+        <PXP>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <PXP>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

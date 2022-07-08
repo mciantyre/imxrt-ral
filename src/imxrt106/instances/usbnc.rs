@@ -30,7 +30,17 @@ pub struct USBNC1 {
 }
 
 impl crate::private::Sealed for USBNC1 {}
-impl crate::Valid for USBNC1 {}
+impl crate::Valid for USBNC1 {
+    fn take() -> Option<Self> {
+        <USBNC1>::take()
+    }
+    fn release(self) {
+        <USBNC1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <USBNC1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -141,7 +151,17 @@ pub struct USBNC2 {
 }
 
 impl crate::private::Sealed for USBNC2 {}
-impl crate::Valid for USBNC2 {}
+impl crate::Valid for USBNC2 {
+    fn take() -> Option<Self> {
+        <USBNC2>::take()
+    }
+    fn release(self) {
+        <USBNC2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <USBNC2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

@@ -589,7 +589,17 @@ pub struct CMP1 {
 }
 
 impl crate::private::Sealed for CMP1 {}
-impl crate::Valid for CMP1 {}
+impl crate::Valid for CMP1 {
+    fn take() -> Option<Self> {
+        <CMP1>::take()
+    }
+    fn release(self) {
+        <CMP1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CMP1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -704,7 +714,17 @@ pub struct CMP2 {
 }
 
 impl crate::private::Sealed for CMP2 {}
-impl crate::Valid for CMP2 {}
+impl crate::Valid for CMP2 {
+    fn take() -> Option<Self> {
+        <CMP2>::take()
+    }
+    fn release(self) {
+        <CMP2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CMP2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -819,7 +839,17 @@ pub struct CMP3 {
 }
 
 impl crate::private::Sealed for CMP3 {}
-impl crate::Valid for CMP3 {}
+impl crate::Valid for CMP3 {
+    fn take() -> Option<Self> {
+        <CMP3>::take()
+    }
+    fn release(self) {
+        <CMP3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CMP3>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -934,7 +964,17 @@ pub struct CMP4 {
 }
 
 impl crate::private::Sealed for CMP4 {}
-impl crate::Valid for CMP4 {}
+impl crate::Valid for CMP4 {
+    fn take() -> Option<Self> {
+        <CMP4>::take()
+    }
+    fn release(self) {
+        <CMP4>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CMP4>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

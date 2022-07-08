@@ -44,7 +44,17 @@ pub struct ENET1 {
 }
 
 impl crate::private::Sealed for ENET1 {}
-impl crate::Valid for ENET1 {}
+impl crate::Valid for ENET1 {
+    fn take() -> Option<Self> {
+        <ENET1>::take()
+    }
+    fn release(self) {
+        <ENET1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ENET1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -258,7 +268,17 @@ pub struct ENET2 {
 }
 
 impl crate::private::Sealed for ENET2 {}
-impl crate::Valid for ENET2 {}
+impl crate::Valid for ENET2 {
+    fn take() -> Option<Self> {
+        <ENET2>::take()
+    }
+    fn release(self) {
+        <ENET2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ENET2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

@@ -417,7 +417,17 @@ pub struct PIT {
 }
 
 impl crate::private::Sealed for PIT {}
-impl crate::Valid for PIT {}
+impl crate::Valid for PIT {
+    fn take() -> Option<Self> {
+        <PIT>::take()
+    }
+    fn release(self) {
+        <PIT>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <PIT>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

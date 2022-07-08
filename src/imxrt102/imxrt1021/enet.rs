@@ -3416,7 +3416,17 @@ pub struct ENET {
 }
 
 impl crate::private::Sealed for ENET {}
-impl crate::Valid for ENET {}
+impl crate::Valid for ENET {
+    fn take() -> Option<Self> {
+        <ENET>::take()
+    }
+    fn release(self) {
+        <ENET>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ENET>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

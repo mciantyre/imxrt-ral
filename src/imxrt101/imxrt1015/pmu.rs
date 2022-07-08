@@ -1919,7 +1919,17 @@ pub struct PMU {
 }
 
 impl crate::private::Sealed for PMU {}
-impl crate::Valid for PMU {}
+impl crate::Valid for PMU {
+    fn take() -> Option<Self> {
+        <PMU>::take()
+    }
+    fn release(self) {
+        <PMU>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <PMU>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

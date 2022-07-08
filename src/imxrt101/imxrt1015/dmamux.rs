@@ -518,7 +518,17 @@ pub struct DMAMUX {
 }
 
 impl crate::private::Sealed for DMAMUX {}
-impl crate::Valid for DMAMUX {}
+impl crate::Valid for DMAMUX {
+    fn take() -> Option<Self> {
+        <DMAMUX>::take()
+    }
+    fn release(self) {
+        <DMAMUX>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <DMAMUX>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

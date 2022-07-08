@@ -30,7 +30,17 @@ pub struct GPT1 {
 }
 
 impl crate::private::Sealed for GPT1 {}
-impl crate::Valid for GPT1 {}
+impl crate::Valid for GPT1 {
+    fn take() -> Option<Self> {
+        <GPT1>::take()
+    }
+    fn release(self) {
+        <GPT1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPT1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -149,7 +159,17 @@ pub struct GPT2 {
 }
 
 impl crate::private::Sealed for GPT2 {}
-impl crate::Valid for GPT2 {}
+impl crate::Valid for GPT2 {
+    fn take() -> Option<Self> {
+        <GPT2>::take()
+    }
+    fn release(self) {
+        <GPT2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPT2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

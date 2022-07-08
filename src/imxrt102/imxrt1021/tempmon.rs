@@ -318,7 +318,17 @@ pub struct TEMPMON {
 }
 
 impl crate::private::Sealed for TEMPMON {}
-impl crate::Valid for TEMPMON {}
+impl crate::Valid for TEMPMON {
+    fn take() -> Option<Self> {
+        <TEMPMON>::take()
+    }
+    fn release(self) {
+        <TEMPMON>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <TEMPMON>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

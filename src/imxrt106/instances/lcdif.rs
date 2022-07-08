@@ -42,7 +42,17 @@ pub struct LCDIF {
 }
 
 impl crate::private::Sealed for LCDIF {}
-impl crate::Valid for LCDIF {}
+impl crate::Valid for LCDIF {
+    fn take() -> Option<Self> {
+        <LCDIF>::take()
+    }
+    fn release(self) {
+        <LCDIF>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <LCDIF>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

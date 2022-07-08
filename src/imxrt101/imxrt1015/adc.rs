@@ -892,7 +892,17 @@ pub struct ADC {
 }
 
 impl crate::private::Sealed for ADC {}
-impl crate::Valid for ADC {}
+impl crate::Valid for ADC {
+    fn take() -> Option<Self> {
+        <ADC>::take()
+    }
+    fn release(self) {
+        <ADC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <ADC>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

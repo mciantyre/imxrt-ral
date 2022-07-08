@@ -28,7 +28,17 @@ pub struct DCDC {
 }
 
 impl crate::private::Sealed for DCDC {}
-impl crate::Valid for DCDC {}
+impl crate::Valid for DCDC {
+    fn take() -> Option<Self> {
+        <DCDC>::take()
+    }
+    fn release(self) {
+        <DCDC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <DCDC>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

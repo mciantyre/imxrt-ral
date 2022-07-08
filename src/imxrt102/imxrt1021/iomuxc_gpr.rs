@@ -5379,7 +5379,17 @@ pub struct IOMUXC_GPR {
 }
 
 impl crate::private::Sealed for IOMUXC_GPR {}
-impl crate::Valid for IOMUXC_GPR {}
+impl crate::Valid for IOMUXC_GPR {
+    fn take() -> Option<Self> {
+        <IOMUXC_GPR>::take()
+    }
+    fn release(self) {
+        <IOMUXC_GPR>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <IOMUXC_GPR>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

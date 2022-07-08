@@ -33,7 +33,17 @@ pub struct TSC {
 }
 
 impl crate::private::Sealed for TSC {}
-impl crate::Valid for TSC {}
+impl crate::Valid for TSC {
+    fn take() -> Option<Self> {
+        <TSC>::take()
+    }
+    fn release(self) {
+        <TSC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <TSC>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

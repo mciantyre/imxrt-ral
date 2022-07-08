@@ -312,7 +312,17 @@ pub struct USBNC {
 }
 
 impl crate::private::Sealed for USBNC {}
-impl crate::Valid for USBNC {}
+impl crate::Valid for USBNC {
+    fn take() -> Option<Self> {
+        <USBNC>::take()
+    }
+    fn release(self) {
+        <USBNC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <USBNC>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

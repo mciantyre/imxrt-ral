@@ -4195,7 +4195,17 @@ pub struct CCM {
 }
 
 impl crate::private::Sealed for CCM {}
-impl crate::Valid for CCM {}
+impl crate::Valid for CCM {
+    fn take() -> Option<Self> {
+        <CCM>::take()
+    }
+    fn release(self) {
+        <CCM>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CCM>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

@@ -598,7 +598,17 @@ pub struct USB_ANALOG {
 }
 
 impl crate::private::Sealed for USB_ANALOG {}
-impl crate::Valid for USB_ANALOG {}
+impl crate::Valid for USB_ANALOG {
+    fn take() -> Option<Self> {
+        <USB_ANALOG>::take()
+    }
+    fn release(self) {
+        <USB_ANALOG>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <USB_ANALOG>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

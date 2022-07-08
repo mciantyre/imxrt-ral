@@ -35,7 +35,17 @@ pub struct USB {
 }
 
 impl crate::private::Sealed for USB {}
-impl crate::Valid for USB {}
+impl crate::Valid for USB {
+    fn take() -> Option<Self> {
+        <USB>::take()
+    }
+    fn release(self) {
+        <USB>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <USB>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

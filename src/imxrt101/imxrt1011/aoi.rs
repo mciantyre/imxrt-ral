@@ -30,7 +30,17 @@ pub struct AOI {
 }
 
 impl crate::private::Sealed for AOI {}
-impl crate::Valid for AOI {}
+impl crate::Valid for AOI {
+    fn take() -> Option<Self> {
+        <AOI>::take()
+    }
+    fn release(self) {
+        <AOI>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <AOI>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

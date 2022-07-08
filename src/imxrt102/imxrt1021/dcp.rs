@@ -2430,7 +2430,17 @@ pub struct DCP {
 }
 
 impl crate::private::Sealed for DCP {}
-impl crate::Valid for DCP {}
+impl crate::Valid for DCP {
+    fn take() -> Option<Self> {
+        <DCP>::take()
+    }
+    fn release(self) {
+        <DCP>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <DCP>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

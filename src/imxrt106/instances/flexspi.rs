@@ -45,7 +45,17 @@ pub struct FLEXSPI1 {
 }
 
 impl crate::private::Sealed for FLEXSPI1 {}
-impl crate::Valid for FLEXSPI1 {}
+impl crate::Valid for FLEXSPI1 {
+    fn take() -> Option<Self> {
+        <FLEXSPI1>::take()
+    }
+    fn release(self) {
+        <FLEXSPI1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <FLEXSPI1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -320,7 +330,17 @@ pub struct FLEXSPI2 {
 }
 
 impl crate::private::Sealed for FLEXSPI2 {}
-impl crate::Valid for FLEXSPI2 {}
+impl crate::Valid for FLEXSPI2 {
+    fn take() -> Option<Self> {
+        <FLEXSPI2>::take()
+    }
+    fn release(self) {
+        <FLEXSPI2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <FLEXSPI2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

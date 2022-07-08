@@ -35,7 +35,17 @@ pub struct XTALOSC24M {
 }
 
 impl crate::private::Sealed for XTALOSC24M {}
-impl crate::Valid for XTALOSC24M {}
+impl crate::Valid for XTALOSC24M {
+    fn take() -> Option<Self> {
+        <XTALOSC24M>::take()
+    }
+    fn release(self) {
+        <XTALOSC24M>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <XTALOSC24M>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

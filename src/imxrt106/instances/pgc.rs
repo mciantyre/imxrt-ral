@@ -32,7 +32,17 @@ pub struct PGC {
 }
 
 impl crate::private::Sealed for PGC {}
-impl crate::Valid for PGC {}
+impl crate::Valid for PGC {
+    fn take() -> Option<Self> {
+        <PGC>::take()
+    }
+    fn release(self) {
+        <PGC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <PGC>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

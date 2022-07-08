@@ -3061,7 +3061,17 @@ pub struct SEMC {
 }
 
 impl crate::private::Sealed for SEMC {}
-impl crate::Valid for SEMC {}
+impl crate::Valid for SEMC {
+    fn take() -> Option<Self> {
+        <SEMC>::take()
+    }
+    fn release(self) {
+        <SEMC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <SEMC>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

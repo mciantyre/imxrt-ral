@@ -37,7 +37,17 @@ pub struct CCM_ANALOG {
 }
 
 impl crate::private::Sealed for CCM_ANALOG {}
-impl crate::Valid for CCM_ANALOG {}
+impl crate::Valid for CCM_ANALOG {
+    fn take() -> Option<Self> {
+        <CCM_ANALOG>::take()
+    }
+    fn release(self) {
+        <CCM_ANALOG>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CCM_ANALOG>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

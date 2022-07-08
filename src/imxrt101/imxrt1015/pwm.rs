@@ -5294,7 +5294,17 @@ pub struct PWM {
 }
 
 impl crate::private::Sealed for PWM {}
-impl crate::Valid for PWM {}
+impl crate::Valid for PWM {
+    fn take() -> Option<Self> {
+        <PWM>::take()
+    }
+    fn release(self) {
+        <PWM>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <PWM>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

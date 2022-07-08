@@ -36,7 +36,17 @@ pub struct XBARA1 {
 }
 
 impl crate::private::Sealed for XBARA1 {}
-impl crate::Valid for XBARA1 {}
+impl crate::Valid for XBARA1 {
+    fn take() -> Option<Self> {
+        <XBARA1>::take()
+    }
+    fn release(self) {
+        <XBARA1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <XBARA1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

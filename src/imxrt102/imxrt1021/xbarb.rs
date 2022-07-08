@@ -349,7 +349,17 @@ pub struct XBARB {
 }
 
 impl crate::private::Sealed for XBARB {}
-impl crate::Valid for XBARB {}
+impl crate::Valid for XBARB {
+    fn take() -> Option<Self> {
+        <XBARB>::take()
+    }
+    fn release(self) {
+        <XBARB>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <XBARB>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

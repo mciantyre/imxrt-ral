@@ -1207,7 +1207,17 @@ pub struct OCOTP {
 }
 
 impl crate::private::Sealed for OCOTP {}
-impl crate::Valid for OCOTP {}
+impl crate::Valid for OCOTP {
+    fn take() -> Option<Self> {
+        <OCOTP>::take()
+    }
+    fn release(self) {
+        <OCOTP>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <OCOTP>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

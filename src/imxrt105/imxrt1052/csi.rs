@@ -1972,7 +1972,17 @@ pub struct CSI {
 }
 
 impl crate::private::Sealed for CSI {}
-impl crate::Valid for CSI {}
+impl crate::Valid for CSI {
+    fn take() -> Option<Self> {
+        <CSI>::take()
+    }
+    fn release(self) {
+        <CSI>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CSI>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

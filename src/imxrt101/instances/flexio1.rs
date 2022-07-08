@@ -46,7 +46,17 @@ pub struct FLEXIO1 {
 }
 
 impl crate::private::Sealed for FLEXIO1 {}
-impl crate::Valid for FLEXIO1 {}
+impl crate::Valid for FLEXIO1 {
+    fn take() -> Option<Self> {
+        <FLEXIO1>::take()
+    }
+    fn release(self) {
+        <FLEXIO1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <FLEXIO1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

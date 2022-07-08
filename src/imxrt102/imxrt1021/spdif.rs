@@ -1371,7 +1371,17 @@ pub struct SPDIF {
 }
 
 impl crate::private::Sealed for SPDIF {}
-impl crate::Valid for SPDIF {}
+impl crate::Valid for SPDIF {
+    fn take() -> Option<Self> {
+        <SPDIF>::take()
+    }
+    fn release(self) {
+        <SPDIF>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <SPDIF>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

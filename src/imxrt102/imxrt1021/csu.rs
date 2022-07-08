@@ -2543,7 +2543,17 @@ pub struct CSU {
 }
 
 impl crate::private::Sealed for CSU {}
-impl crate::Valid for CSU {}
+impl crate::Valid for CSU {
+    fn take() -> Option<Self> {
+        <CSU>::take()
+    }
+    fn release(self) {
+        <CSU>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CSU>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

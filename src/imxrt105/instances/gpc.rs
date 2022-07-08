@@ -32,7 +32,17 @@ pub struct GPC {
 }
 
 impl crate::private::Sealed for GPC {}
-impl crate::Valid for GPC {}
+impl crate::Valid for GPC {
+    fn take() -> Option<Self> {
+        <GPC>::take()
+    }
+    fn release(self) {
+        <GPC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <GPC>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

@@ -1563,7 +1563,17 @@ pub struct TMR1 {
 }
 
 impl crate::private::Sealed for TMR1 {}
-impl crate::Valid for TMR1 {}
+impl crate::Valid for TMR1 {
+    fn take() -> Option<Self> {
+        <TMR1>::take()
+    }
+    fn release(self) {
+        <TMR1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <TMR1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -1725,7 +1735,17 @@ pub struct TMR2 {
 }
 
 impl crate::private::Sealed for TMR2 {}
-impl crate::Valid for TMR2 {}
+impl crate::Valid for TMR2 {
+    fn take() -> Option<Self> {
+        <TMR2>::take()
+    }
+    fn release(self) {
+        <TMR2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <TMR2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

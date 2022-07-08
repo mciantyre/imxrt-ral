@@ -54,7 +54,17 @@ pub struct PWM1 {
 }
 
 impl crate::private::Sealed for PWM1 {}
-impl crate::Valid for PWM1 {}
+impl crate::Valid for PWM1 {
+    fn take() -> Option<Self> {
+        <PWM1>::take()
+    }
+    fn release(self) {
+        <PWM1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <PWM1>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -358,7 +368,17 @@ pub struct PWM2 {
 }
 
 impl crate::private::Sealed for PWM2 {}
-impl crate::Valid for PWM2 {}
+impl crate::Valid for PWM2 {
+    fn take() -> Option<Self> {
+        <PWM2>::take()
+    }
+    fn release(self) {
+        <PWM2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <PWM2>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -662,7 +682,17 @@ pub struct PWM3 {
 }
 
 impl crate::private::Sealed for PWM3 {}
-impl crate::Valid for PWM3 {}
+impl crate::Valid for PWM3 {
+    fn take() -> Option<Self> {
+        <PWM3>::take()
+    }
+    fn release(self) {
+        <PWM3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <PWM3>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
@@ -966,7 +996,17 @@ pub struct PWM4 {
 }
 
 impl crate::private::Sealed for PWM4 {}
-impl crate::Valid for PWM4 {}
+impl crate::Valid for PWM4 {
+    fn take() -> Option<Self> {
+        <PWM4>::take()
+    }
+    fn release(self) {
+        <PWM4>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <PWM4>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

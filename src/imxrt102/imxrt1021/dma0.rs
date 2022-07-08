@@ -10851,7 +10851,17 @@ pub struct DMA0 {
 }
 
 impl crate::private::Sealed for DMA0 {}
-impl crate::Valid for DMA0 {}
+impl crate::Valid for DMA0 {
+    fn take() -> Option<Self> {
+        <DMA0>::take()
+    }
+    fn release(self) {
+        <DMA0>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <DMA0>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

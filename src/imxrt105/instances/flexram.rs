@@ -30,7 +30,17 @@ pub struct FLEXRAM {
 }
 
 impl crate::private::Sealed for FLEXRAM {}
-impl crate::Valid for FLEXRAM {}
+impl crate::Valid for FLEXRAM {
+    fn take() -> Option<Self> {
+        <FLEXRAM>::take()
+    }
+    fn release(self) {
+        <FLEXRAM>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <FLEXRAM>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]

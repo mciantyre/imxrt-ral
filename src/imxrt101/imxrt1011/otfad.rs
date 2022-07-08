@@ -1003,7 +1003,17 @@ pub struct OTFAD {
 }
 
 impl crate::private::Sealed for OTFAD {}
-impl crate::Valid for OTFAD {}
+impl crate::Valid for OTFAD {
+    fn take() -> Option<Self> {
+        <OTFAD>::take()
+    }
+    fn release(self) {
+        <OTFAD>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <OTFAD>::steal()
+    }
+}
 
 #[cfg(not(feature = "nosync"))]
 #[allow(renamed_and_removed_lints)]
