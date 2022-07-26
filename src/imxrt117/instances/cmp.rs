@@ -1,0 +1,512 @@
+#![allow(non_snake_case, non_upper_case_globals)]
+#![allow(non_camel_case_types)]
+//! CMP
+//!
+//! Used by: imxrt1176_cm4, imxrt1176_cm7
+
+pub use crate::imxrt117::peripherals::cmp::Instance;
+pub use crate::imxrt117::peripherals::cmp::{RegisterBlock, ResetValues};
+
+pub use crate::imxrt117::peripherals::cmp::{C0, C1, C2, C3, PARAM, VERID};
+#[cfg(not(feature = "nosync"))]
+use core::sync::atomic::{AtomicBool, Ordering};
+
+/// The CMP1 peripheral instance.
+#[cfg(not(feature = "doc"))]
+pub type CMP1 = Instance<1>;
+
+/// The CMP1 peripheral instance.
+///
+/// This is a new type only for documentation purposes. When
+/// compiling for a target, this is defined as
+///
+/// ```rust
+/// pub type CMP1 = Instance<1>;
+/// ```
+#[cfg(feature = "doc")]
+pub struct CMP1 {
+    #[allow(unused)] // Only for documentation generation.
+    addr: u32,
+}
+
+impl crate::private::Sealed for CMP1 {}
+impl crate::Valid for CMP1 {
+    fn take() -> Option<Self> {
+        <CMP1>::take()
+    }
+    fn release(self) {
+        <CMP1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CMP1>::steal()
+    }
+}
+
+#[cfg(not(feature = "nosync"))]
+#[allow(renamed_and_removed_lints)]
+#[allow(private_no_mangle_statics)]
+#[no_mangle]
+static CMP1_TAKEN: AtomicBool = AtomicBool::new(false);
+
+/// Access functions for the CMP1 peripheral instance
+#[cfg(not(feature = "nosync"))]
+impl CMP1 {
+    const INSTANCE: Self = Self {
+        addr: 0x401a4000,
+        #[cfg(not(feature = "doc"))]
+        intrs: &[crate::interrupt::ACMP1],
+    };
+
+    /// Reset values for each field in CMP1
+    pub const reset: ResetValues = ResetValues {
+        VERID: 0x01000000,
+        PARAM: 0x00000000,
+        C0: 0x00000000,
+        C1: 0x00000000,
+        C2: 0x00000000,
+        C3: 0x11000000,
+    };
+
+    /// Safe access to CMP1
+    ///
+    /// This function returns `Some(Instance)` if this instance is not
+    /// currently taken, and `None` if it is. This ensures that if you
+    /// do get `Some(Instance)`, you are ensured unique access to
+    /// the peripheral and there cannot be data races (unless other
+    /// code uses `unsafe`, of course). You can then pass the
+    /// `Instance` around to other functions as required. When you're
+    /// done with it, you can call `release(instance)` to return it.
+    ///
+    /// `Instance` itself dereferences to a `RegisterBlock`, which
+    /// provides access to the peripheral's registers.
+    #[inline]
+    pub fn take() -> Option<Self> {
+        let taken = CMP1_TAKEN.swap(true, Ordering::SeqCst);
+        if taken {
+            None
+        } else {
+            Some(Self::INSTANCE)
+        }
+    }
+
+    /// Release exclusive access to CMP1
+    ///
+    /// This function allows you to return an `Instance` so that it
+    /// is available to `take()` again. This function will panic if
+    /// you return a different `Instance` or if this instance is not
+    /// already taken.
+    #[inline]
+    pub fn release(_: Self) {
+        let taken = CMP1_TAKEN.swap(false, Ordering::SeqCst);
+        assert!(taken, "Released a peripheral which was not taken");
+    }
+
+    /// Unsafely steal CMP1
+    ///
+    /// This function is similar to take() but forcibly takes the
+    /// Instance, marking it as taken irregardless of its previous
+    /// state.
+    #[inline]
+    pub unsafe fn steal() -> Self {
+        CMP1_TAKEN.store(true, Ordering::SeqCst);
+        Self::INSTANCE
+    }
+}
+
+impl CMP1 {
+    /// The interrupts associated with CMP1
+    #[cfg(not(feature = "doc"))]
+    pub const INTERRUPTS: [crate::Interrupt; 1] = [crate::interrupt::ACMP1];
+
+    /// The interrupts associated with CMP1
+    ///
+    /// Note: the values are invalid for a documentation build.
+    #[cfg(feature = "doc")]
+    pub const INTERRUPTS: [crate::Interrupt; 0] = [];
+}
+
+/// Raw pointer to CMP1
+///
+/// Dereferencing this is unsafe because you are not ensured unique
+/// access to the peripheral, so you may encounter data races with
+/// other users of this peripheral. It is up to you to ensure you
+/// will not cause data races.
+///
+/// This constant is provided for ease of use in unsafe code: you can
+/// simply call for example `write_reg!(gpio, GPIOA, ODR, 1);`.
+pub const CMP1: *const RegisterBlock = 0x401a4000 as *const _;
+
+/// The CMP2 peripheral instance.
+#[cfg(not(feature = "doc"))]
+pub type CMP2 = Instance<2>;
+
+/// The CMP2 peripheral instance.
+///
+/// This is a new type only for documentation purposes. When
+/// compiling for a target, this is defined as
+///
+/// ```rust
+/// pub type CMP2 = Instance<2>;
+/// ```
+#[cfg(feature = "doc")]
+pub struct CMP2 {
+    #[allow(unused)] // Only for documentation generation.
+    addr: u32,
+}
+
+impl crate::private::Sealed for CMP2 {}
+impl crate::Valid for CMP2 {
+    fn take() -> Option<Self> {
+        <CMP2>::take()
+    }
+    fn release(self) {
+        <CMP2>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CMP2>::steal()
+    }
+}
+
+#[cfg(not(feature = "nosync"))]
+#[allow(renamed_and_removed_lints)]
+#[allow(private_no_mangle_statics)]
+#[no_mangle]
+static CMP2_TAKEN: AtomicBool = AtomicBool::new(false);
+
+/// Access functions for the CMP2 peripheral instance
+#[cfg(not(feature = "nosync"))]
+impl CMP2 {
+    const INSTANCE: Self = Self {
+        addr: 0x401a8000,
+        #[cfg(not(feature = "doc"))]
+        intrs: &[crate::interrupt::ACMP2],
+    };
+
+    /// Reset values for each field in CMP2
+    pub const reset: ResetValues = ResetValues {
+        VERID: 0x01000000,
+        PARAM: 0x00000000,
+        C0: 0x00000000,
+        C1: 0x00000000,
+        C2: 0x00000000,
+        C3: 0x11000000,
+    };
+
+    /// Safe access to CMP2
+    ///
+    /// This function returns `Some(Instance)` if this instance is not
+    /// currently taken, and `None` if it is. This ensures that if you
+    /// do get `Some(Instance)`, you are ensured unique access to
+    /// the peripheral and there cannot be data races (unless other
+    /// code uses `unsafe`, of course). You can then pass the
+    /// `Instance` around to other functions as required. When you're
+    /// done with it, you can call `release(instance)` to return it.
+    ///
+    /// `Instance` itself dereferences to a `RegisterBlock`, which
+    /// provides access to the peripheral's registers.
+    #[inline]
+    pub fn take() -> Option<Self> {
+        let taken = CMP2_TAKEN.swap(true, Ordering::SeqCst);
+        if taken {
+            None
+        } else {
+            Some(Self::INSTANCE)
+        }
+    }
+
+    /// Release exclusive access to CMP2
+    ///
+    /// This function allows you to return an `Instance` so that it
+    /// is available to `take()` again. This function will panic if
+    /// you return a different `Instance` or if this instance is not
+    /// already taken.
+    #[inline]
+    pub fn release(_: Self) {
+        let taken = CMP2_TAKEN.swap(false, Ordering::SeqCst);
+        assert!(taken, "Released a peripheral which was not taken");
+    }
+
+    /// Unsafely steal CMP2
+    ///
+    /// This function is similar to take() but forcibly takes the
+    /// Instance, marking it as taken irregardless of its previous
+    /// state.
+    #[inline]
+    pub unsafe fn steal() -> Self {
+        CMP2_TAKEN.store(true, Ordering::SeqCst);
+        Self::INSTANCE
+    }
+}
+
+impl CMP2 {
+    /// The interrupts associated with CMP2
+    #[cfg(not(feature = "doc"))]
+    pub const INTERRUPTS: [crate::Interrupt; 1] = [crate::interrupt::ACMP2];
+
+    /// The interrupts associated with CMP2
+    ///
+    /// Note: the values are invalid for a documentation build.
+    #[cfg(feature = "doc")]
+    pub const INTERRUPTS: [crate::Interrupt; 0] = [];
+}
+
+/// Raw pointer to CMP2
+///
+/// Dereferencing this is unsafe because you are not ensured unique
+/// access to the peripheral, so you may encounter data races with
+/// other users of this peripheral. It is up to you to ensure you
+/// will not cause data races.
+///
+/// This constant is provided for ease of use in unsafe code: you can
+/// simply call for example `write_reg!(gpio, GPIOA, ODR, 1);`.
+pub const CMP2: *const RegisterBlock = 0x401a8000 as *const _;
+
+/// The CMP3 peripheral instance.
+#[cfg(not(feature = "doc"))]
+pub type CMP3 = Instance<3>;
+
+/// The CMP3 peripheral instance.
+///
+/// This is a new type only for documentation purposes. When
+/// compiling for a target, this is defined as
+///
+/// ```rust
+/// pub type CMP3 = Instance<3>;
+/// ```
+#[cfg(feature = "doc")]
+pub struct CMP3 {
+    #[allow(unused)] // Only for documentation generation.
+    addr: u32,
+}
+
+impl crate::private::Sealed for CMP3 {}
+impl crate::Valid for CMP3 {
+    fn take() -> Option<Self> {
+        <CMP3>::take()
+    }
+    fn release(self) {
+        <CMP3>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CMP3>::steal()
+    }
+}
+
+#[cfg(not(feature = "nosync"))]
+#[allow(renamed_and_removed_lints)]
+#[allow(private_no_mangle_statics)]
+#[no_mangle]
+static CMP3_TAKEN: AtomicBool = AtomicBool::new(false);
+
+/// Access functions for the CMP3 peripheral instance
+#[cfg(not(feature = "nosync"))]
+impl CMP3 {
+    const INSTANCE: Self = Self {
+        addr: 0x401ac000,
+        #[cfg(not(feature = "doc"))]
+        intrs: &[crate::interrupt::ACMP3],
+    };
+
+    /// Reset values for each field in CMP3
+    pub const reset: ResetValues = ResetValues {
+        VERID: 0x01000000,
+        PARAM: 0x00000000,
+        C0: 0x00000000,
+        C1: 0x00000000,
+        C2: 0x00000000,
+        C3: 0x11000000,
+    };
+
+    /// Safe access to CMP3
+    ///
+    /// This function returns `Some(Instance)` if this instance is not
+    /// currently taken, and `None` if it is. This ensures that if you
+    /// do get `Some(Instance)`, you are ensured unique access to
+    /// the peripheral and there cannot be data races (unless other
+    /// code uses `unsafe`, of course). You can then pass the
+    /// `Instance` around to other functions as required. When you're
+    /// done with it, you can call `release(instance)` to return it.
+    ///
+    /// `Instance` itself dereferences to a `RegisterBlock`, which
+    /// provides access to the peripheral's registers.
+    #[inline]
+    pub fn take() -> Option<Self> {
+        let taken = CMP3_TAKEN.swap(true, Ordering::SeqCst);
+        if taken {
+            None
+        } else {
+            Some(Self::INSTANCE)
+        }
+    }
+
+    /// Release exclusive access to CMP3
+    ///
+    /// This function allows you to return an `Instance` so that it
+    /// is available to `take()` again. This function will panic if
+    /// you return a different `Instance` or if this instance is not
+    /// already taken.
+    #[inline]
+    pub fn release(_: Self) {
+        let taken = CMP3_TAKEN.swap(false, Ordering::SeqCst);
+        assert!(taken, "Released a peripheral which was not taken");
+    }
+
+    /// Unsafely steal CMP3
+    ///
+    /// This function is similar to take() but forcibly takes the
+    /// Instance, marking it as taken irregardless of its previous
+    /// state.
+    #[inline]
+    pub unsafe fn steal() -> Self {
+        CMP3_TAKEN.store(true, Ordering::SeqCst);
+        Self::INSTANCE
+    }
+}
+
+impl CMP3 {
+    /// The interrupts associated with CMP3
+    #[cfg(not(feature = "doc"))]
+    pub const INTERRUPTS: [crate::Interrupt; 1] = [crate::interrupt::ACMP3];
+
+    /// The interrupts associated with CMP3
+    ///
+    /// Note: the values are invalid for a documentation build.
+    #[cfg(feature = "doc")]
+    pub const INTERRUPTS: [crate::Interrupt; 0] = [];
+}
+
+/// Raw pointer to CMP3
+///
+/// Dereferencing this is unsafe because you are not ensured unique
+/// access to the peripheral, so you may encounter data races with
+/// other users of this peripheral. It is up to you to ensure you
+/// will not cause data races.
+///
+/// This constant is provided for ease of use in unsafe code: you can
+/// simply call for example `write_reg!(gpio, GPIOA, ODR, 1);`.
+pub const CMP3: *const RegisterBlock = 0x401ac000 as *const _;
+
+/// The CMP4 peripheral instance.
+#[cfg(not(feature = "doc"))]
+pub type CMP4 = Instance<4>;
+
+/// The CMP4 peripheral instance.
+///
+/// This is a new type only for documentation purposes. When
+/// compiling for a target, this is defined as
+///
+/// ```rust
+/// pub type CMP4 = Instance<4>;
+/// ```
+#[cfg(feature = "doc")]
+pub struct CMP4 {
+    #[allow(unused)] // Only for documentation generation.
+    addr: u32,
+}
+
+impl crate::private::Sealed for CMP4 {}
+impl crate::Valid for CMP4 {
+    fn take() -> Option<Self> {
+        <CMP4>::take()
+    }
+    fn release(self) {
+        <CMP4>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <CMP4>::steal()
+    }
+}
+
+#[cfg(not(feature = "nosync"))]
+#[allow(renamed_and_removed_lints)]
+#[allow(private_no_mangle_statics)]
+#[no_mangle]
+static CMP4_TAKEN: AtomicBool = AtomicBool::new(false);
+
+/// Access functions for the CMP4 peripheral instance
+#[cfg(not(feature = "nosync"))]
+impl CMP4 {
+    const INSTANCE: Self = Self {
+        addr: 0x401b0000,
+        #[cfg(not(feature = "doc"))]
+        intrs: &[crate::interrupt::ACMP4],
+    };
+
+    /// Reset values for each field in CMP4
+    pub const reset: ResetValues = ResetValues {
+        VERID: 0x01000000,
+        PARAM: 0x00000000,
+        C0: 0x00000000,
+        C1: 0x00000000,
+        C2: 0x00000000,
+        C3: 0x11000000,
+    };
+
+    /// Safe access to CMP4
+    ///
+    /// This function returns `Some(Instance)` if this instance is not
+    /// currently taken, and `None` if it is. This ensures that if you
+    /// do get `Some(Instance)`, you are ensured unique access to
+    /// the peripheral and there cannot be data races (unless other
+    /// code uses `unsafe`, of course). You can then pass the
+    /// `Instance` around to other functions as required. When you're
+    /// done with it, you can call `release(instance)` to return it.
+    ///
+    /// `Instance` itself dereferences to a `RegisterBlock`, which
+    /// provides access to the peripheral's registers.
+    #[inline]
+    pub fn take() -> Option<Self> {
+        let taken = CMP4_TAKEN.swap(true, Ordering::SeqCst);
+        if taken {
+            None
+        } else {
+            Some(Self::INSTANCE)
+        }
+    }
+
+    /// Release exclusive access to CMP4
+    ///
+    /// This function allows you to return an `Instance` so that it
+    /// is available to `take()` again. This function will panic if
+    /// you return a different `Instance` or if this instance is not
+    /// already taken.
+    #[inline]
+    pub fn release(_: Self) {
+        let taken = CMP4_TAKEN.swap(false, Ordering::SeqCst);
+        assert!(taken, "Released a peripheral which was not taken");
+    }
+
+    /// Unsafely steal CMP4
+    ///
+    /// This function is similar to take() but forcibly takes the
+    /// Instance, marking it as taken irregardless of its previous
+    /// state.
+    #[inline]
+    pub unsafe fn steal() -> Self {
+        CMP4_TAKEN.store(true, Ordering::SeqCst);
+        Self::INSTANCE
+    }
+}
+
+impl CMP4 {
+    /// The interrupts associated with CMP4
+    #[cfg(not(feature = "doc"))]
+    pub const INTERRUPTS: [crate::Interrupt; 1] = [crate::interrupt::ACMP4];
+
+    /// The interrupts associated with CMP4
+    ///
+    /// Note: the values are invalid for a documentation build.
+    #[cfg(feature = "doc")]
+    pub const INTERRUPTS: [crate::Interrupt; 0] = [];
+}
+
+/// Raw pointer to CMP4
+///
+/// Dereferencing this is unsafe because you are not ensured unique
+/// access to the peripheral, so you may encounter data races with
+/// other users of this peripheral. It is up to you to ensure you
+/// will not cause data races.
+///
+/// This constant is provided for ease of use in unsafe code: you can
+/// simply call for example `write_reg!(gpio, GPIOA, ODR, 1);`.
+pub const CMP4: *const RegisterBlock = 0x401b0000 as *const _;

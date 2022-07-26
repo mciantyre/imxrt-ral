@@ -699,23 +699,11 @@ class PeripheralInstance(Node):
         self.addr = addr
         self.reset_values = reset_values
         self.intrs = intrs
-        self.generic_instance = False
+        self.instance_number = SOLE_INSTANCE
 
     def to_dict(self):
         return {"name": self.name, "addr": self.addr,
                 "reset_values": self.reset_values}
-
-    def instance_number(self):
-        """
-        If this is a generic instance, returns the instance number. Otherwise,
-        returns SOLE_INSTANCE.
-        """
-        if self.generic_instance:
-            inst_n = instance_number(self.name)
-            assert(inst_n is not None)
-            return inst_n
-        else:
-            return SOLE_INSTANCE
 
     def to_rust(self, registers):
         registers = {r.offset: r.name for r in registers}
@@ -729,7 +717,8 @@ class PeripheralInstance(Node):
             intrs = "[]"
             num_intrs = 0
 
-        number = self.instance_number()
+        number = self.instance_number
+        assert number is not None, f"{self.name} {self.addr}"
         typedef = f"pub type {self.name} = Instance<{number}>;"
         return f"""
         /// The {self.name} peripheral instance.
@@ -859,6 +848,7 @@ class PeripheralInstance(Node):
     def __eq__(self, other):
         return (self.name == other.name and
                 self.addr == other.addr and
+                self.intrs == other.intrs and
                 self.reset_values == other.reset_values)
 
 
@@ -1017,7 +1007,7 @@ class PeripheralPrototype(Node):
     def to_struct_entry(self):
         lines = []
         for instance in self.instances:
-            number = instance.instance_number()
+            number = instance.instance_number
             lines.append(f"pub {instance.name}: {self.name}::Instance<{number}>,")
         return "\n".join(lines)
 
@@ -1064,15 +1054,17 @@ class PeripheralPrototype(Node):
         peripheral.instances.append(PeripheralInstance(name, addr, resets, intrs))
         return peripheral
 
-    def consume(self, other, parent):
+    def consume(self, other, parent, custom_inst_numbers=None):
         """
         Adds any PeripheralInstances from other to self, and adjusts self's
         name to the common prefix of the two names, if such a prefix is
         at least 3 letters long.
         """
         self.instances += other.instances
+        if custom_inst_numbers is None:
+            custom_inst_numbers = instance_number
         for instance in self.instances:
-            instance.generic_instance = True
+            instance.instance_number = custom_inst_numbers(instance.name)
         newname = common_name(self.name, other.name, parent.name)
         if newname != self.name:
             if newname not in [p.name for p in parent.peripherals]:
@@ -1192,7 +1184,7 @@ class PeripheralPrototypeLink(Node):
             usename = self.name
         lines = []
         for instance in self.instances:
-            number = instance.instance_number()
+            number = instance.instance_number
             lines.append(f"pub {instance.name}: {usename}::Instance<{number}>,")
         return "\n".join(lines)
 
@@ -1508,6 +1500,31 @@ class Device(Node):
                     # just do not group up well at all.
                     links.append((idx1, idx2))
                     to_link.add(idx2)
+                elif p1.name.startswith("cm7_gpio") and p2.name.startswith("gpio"):
+                    # Treat these as distinct.
+                    pass
+                elif p1.name.startswith("gpio") and p2.name.startswith("cm7_gpio"):
+                    # See above.
+                    pass
+                elif p1.name.startswith("xecc"):
+                    def xecc_instances(name):
+                        if "semc" in name.lower():
+                            return 0
+                        else:
+                            # FlexSPI
+                            return instance_number(name)
+                    p1.consume(p2, parent=self, custom_inst_numbers=xecc_instances)
+                    to_delete.add(idx2)
+                elif p1.name.startswith("pgmc"):
+                    def pgmc_instances(name, _instances=set()):
+                        # A generator would be useful here, but we can't pickle it,
+                        # and some pickling is happening somewhere. Not sure why.
+                        # Workaround:
+                        assert name not in _instances
+                        _instances.add(name)
+                        return len(_instances)
+                    p1.consume(p2, parent=self, custom_inst_numbers=pgmc_instances)
+                    to_delete.add(idx2)
                 else:
                     # Other peripherals we just move instances together.
                     p1.consume(p2, parent=self)
@@ -1603,6 +1620,10 @@ class Family(Node):
             if p1 is p2 or idx1 in to_link or idx2 in to_link:
                 continue
             elif p1.registers == p2.registers:
+                if p1.name.startswith("gpio") and p2.name.startswith("cm7_gpio"):
+                    continue
+                elif p1.name.startswith("cm7_gpio") and p2.name.startswith("gpio"):
+                    continue
                 to_link.add(idx2)
                 if idx1 not in links:
                     links[idx1] = []

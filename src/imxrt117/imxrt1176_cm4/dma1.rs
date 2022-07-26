@@ -1,0 +1,633 @@
+#![allow(non_snake_case, non_upper_case_globals)]
+#![allow(non_camel_case_types)]
+//! DMA
+
+pub use crate::imxrt117::peripherals::dma1::Instance;
+pub use crate::imxrt117::peripherals::dma1::{RegisterBlock, ResetValues};
+
+pub use crate::imxrt117::peripherals::dma1::{
+    CDNE, CEEI, CERQ, CERR, CINT, CR, DCHPRI0, DCHPRI1, DCHPRI10, DCHPRI11, DCHPRI12, DCHPRI13,
+    DCHPRI14, DCHPRI15, DCHPRI16, DCHPRI17, DCHPRI18, DCHPRI19, DCHPRI2, DCHPRI20, DCHPRI21,
+    DCHPRI22, DCHPRI23, DCHPRI24, DCHPRI25, DCHPRI26, DCHPRI27, DCHPRI28, DCHPRI29, DCHPRI3,
+    DCHPRI30, DCHPRI31, DCHPRI4, DCHPRI5, DCHPRI6, DCHPRI7, DCHPRI8, DCHPRI9, EARS, EEI, ERQ, ERR,
+    ES, HRS, INT, SEEI, SERQ, SSRT, TCD_ATTR_0, TCD_ATTR_1, TCD_ATTR_10, TCD_ATTR_11, TCD_ATTR_12,
+    TCD_ATTR_13, TCD_ATTR_14, TCD_ATTR_15, TCD_ATTR_16, TCD_ATTR_17, TCD_ATTR_18, TCD_ATTR_19,
+    TCD_ATTR_2, TCD_ATTR_20, TCD_ATTR_21, TCD_ATTR_22, TCD_ATTR_23, TCD_ATTR_24, TCD_ATTR_25,
+    TCD_ATTR_26, TCD_ATTR_27, TCD_ATTR_28, TCD_ATTR_29, TCD_ATTR_3, TCD_ATTR_30, TCD_ATTR_31,
+    TCD_ATTR_4, TCD_ATTR_5, TCD_ATTR_6, TCD_ATTR_7, TCD_ATTR_8, TCD_ATTR_9, TCD_BITER_ELINK,
+    TCD_BITER_ELINKNO_1, TCD_BITER_ELINKNO_10, TCD_BITER_ELINKNO_11, TCD_BITER_ELINKNO_12,
+    TCD_BITER_ELINKNO_13, TCD_BITER_ELINKNO_14, TCD_BITER_ELINKNO_15, TCD_BITER_ELINKNO_16,
+    TCD_BITER_ELINKNO_17, TCD_BITER_ELINKNO_18, TCD_BITER_ELINKNO_19, TCD_BITER_ELINKNO_2,
+    TCD_BITER_ELINKNO_20, TCD_BITER_ELINKNO_21, TCD_BITER_ELINKNO_22, TCD_BITER_ELINKNO_23,
+    TCD_BITER_ELINKNO_24, TCD_BITER_ELINKNO_25, TCD_BITER_ELINKNO_26, TCD_BITER_ELINKNO_27,
+    TCD_BITER_ELINKNO_28, TCD_BITER_ELINKNO_29, TCD_BITER_ELINKNO_3, TCD_BITER_ELINKNO_30,
+    TCD_BITER_ELINKNO_31, TCD_BITER_ELINKNO_4, TCD_BITER_ELINKNO_5, TCD_BITER_ELINKNO_6,
+    TCD_BITER_ELINKNO_7, TCD_BITER_ELINKNO_8, TCD_BITER_ELINKNO_9, TCD_CITER_ELINK,
+    TCD_CITER_ELINKNO_1, TCD_CITER_ELINKNO_10, TCD_CITER_ELINKNO_11, TCD_CITER_ELINKNO_12,
+    TCD_CITER_ELINKNO_13, TCD_CITER_ELINKNO_14, TCD_CITER_ELINKNO_15, TCD_CITER_ELINKNO_16,
+    TCD_CITER_ELINKNO_17, TCD_CITER_ELINKNO_18, TCD_CITER_ELINKNO_19, TCD_CITER_ELINKNO_2,
+    TCD_CITER_ELINKNO_20, TCD_CITER_ELINKNO_21, TCD_CITER_ELINKNO_22, TCD_CITER_ELINKNO_23,
+    TCD_CITER_ELINKNO_24, TCD_CITER_ELINKNO_25, TCD_CITER_ELINKNO_26, TCD_CITER_ELINKNO_27,
+    TCD_CITER_ELINKNO_28, TCD_CITER_ELINKNO_29, TCD_CITER_ELINKNO_3, TCD_CITER_ELINKNO_30,
+    TCD_CITER_ELINKNO_31, TCD_CITER_ELINKNO_4, TCD_CITER_ELINKNO_5, TCD_CITER_ELINKNO_6,
+    TCD_CITER_ELINKNO_7, TCD_CITER_ELINKNO_8, TCD_CITER_ELINKNO_9, TCD_CSR_0, TCD_CSR_1,
+    TCD_CSR_10, TCD_CSR_11, TCD_CSR_12, TCD_CSR_13, TCD_CSR_14, TCD_CSR_15, TCD_CSR_16, TCD_CSR_17,
+    TCD_CSR_18, TCD_CSR_19, TCD_CSR_2, TCD_CSR_20, TCD_CSR_21, TCD_CSR_22, TCD_CSR_23, TCD_CSR_24,
+    TCD_CSR_25, TCD_CSR_26, TCD_CSR_27, TCD_CSR_28, TCD_CSR_29, TCD_CSR_3, TCD_CSR_30, TCD_CSR_31,
+    TCD_CSR_4, TCD_CSR_5, TCD_CSR_6, TCD_CSR_7, TCD_CSR_8, TCD_CSR_9, TCD_DADDR_0, TCD_DADDR_1,
+    TCD_DADDR_10, TCD_DADDR_11, TCD_DADDR_12, TCD_DADDR_13, TCD_DADDR_14, TCD_DADDR_15,
+    TCD_DADDR_16, TCD_DADDR_17, TCD_DADDR_18, TCD_DADDR_19, TCD_DADDR_2, TCD_DADDR_20,
+    TCD_DADDR_21, TCD_DADDR_22, TCD_DADDR_23, TCD_DADDR_24, TCD_DADDR_25, TCD_DADDR_26,
+    TCD_DADDR_27, TCD_DADDR_28, TCD_DADDR_29, TCD_DADDR_3, TCD_DADDR_30, TCD_DADDR_31, TCD_DADDR_4,
+    TCD_DADDR_5, TCD_DADDR_6, TCD_DADDR_7, TCD_DADDR_8, TCD_DADDR_9, TCD_DLASTSGA_0,
+    TCD_DLASTSGA_1, TCD_DLASTSGA_10, TCD_DLASTSGA_11, TCD_DLASTSGA_12, TCD_DLASTSGA_13,
+    TCD_DLASTSGA_14, TCD_DLASTSGA_15, TCD_DLASTSGA_16, TCD_DLASTSGA_17, TCD_DLASTSGA_18,
+    TCD_DLASTSGA_19, TCD_DLASTSGA_2, TCD_DLASTSGA_20, TCD_DLASTSGA_21, TCD_DLASTSGA_22,
+    TCD_DLASTSGA_23, TCD_DLASTSGA_24, TCD_DLASTSGA_25, TCD_DLASTSGA_26, TCD_DLASTSGA_27,
+    TCD_DLASTSGA_28, TCD_DLASTSGA_29, TCD_DLASTSGA_3, TCD_DLASTSGA_30, TCD_DLASTSGA_31,
+    TCD_DLASTSGA_4, TCD_DLASTSGA_5, TCD_DLASTSGA_6, TCD_DLASTSGA_7, TCD_DLASTSGA_8, TCD_DLASTSGA_9,
+    TCD_DOFF_0, TCD_DOFF_1, TCD_DOFF_10, TCD_DOFF_11, TCD_DOFF_12, TCD_DOFF_13, TCD_DOFF_14,
+    TCD_DOFF_15, TCD_DOFF_16, TCD_DOFF_17, TCD_DOFF_18, TCD_DOFF_19, TCD_DOFF_2, TCD_DOFF_20,
+    TCD_DOFF_21, TCD_DOFF_22, TCD_DOFF_23, TCD_DOFF_24, TCD_DOFF_25, TCD_DOFF_26, TCD_DOFF_27,
+    TCD_DOFF_28, TCD_DOFF_29, TCD_DOFF_3, TCD_DOFF_30, TCD_DOFF_31, TCD_DOFF_4, TCD_DOFF_5,
+    TCD_DOFF_6, TCD_DOFF_7, TCD_DOFF_8, TCD_DOFF_9, TCD_NBYTES_ML, TCD_NBYTES_MLNO_1,
+    TCD_NBYTES_MLNO_10, TCD_NBYTES_MLNO_11, TCD_NBYTES_MLNO_12, TCD_NBYTES_MLNO_13,
+    TCD_NBYTES_MLNO_14, TCD_NBYTES_MLNO_15, TCD_NBYTES_MLNO_16, TCD_NBYTES_MLNO_17,
+    TCD_NBYTES_MLNO_18, TCD_NBYTES_MLNO_19, TCD_NBYTES_MLNO_2, TCD_NBYTES_MLNO_20,
+    TCD_NBYTES_MLNO_21, TCD_NBYTES_MLNO_22, TCD_NBYTES_MLNO_23, TCD_NBYTES_MLNO_24,
+    TCD_NBYTES_MLNO_25, TCD_NBYTES_MLNO_26, TCD_NBYTES_MLNO_27, TCD_NBYTES_MLNO_28,
+    TCD_NBYTES_MLNO_29, TCD_NBYTES_MLNO_3, TCD_NBYTES_MLNO_30, TCD_NBYTES_MLNO_31,
+    TCD_NBYTES_MLNO_4, TCD_NBYTES_MLNO_5, TCD_NBYTES_MLNO_6, TCD_NBYTES_MLNO_7, TCD_NBYTES_MLNO_8,
+    TCD_NBYTES_MLNO_9, TCD_SADDR_0, TCD_SADDR_1, TCD_SADDR_10, TCD_SADDR_11, TCD_SADDR_12,
+    TCD_SADDR_13, TCD_SADDR_14, TCD_SADDR_15, TCD_SADDR_16, TCD_SADDR_17, TCD_SADDR_18,
+    TCD_SADDR_19, TCD_SADDR_2, TCD_SADDR_20, TCD_SADDR_21, TCD_SADDR_22, TCD_SADDR_23,
+    TCD_SADDR_24, TCD_SADDR_25, TCD_SADDR_26, TCD_SADDR_27, TCD_SADDR_28, TCD_SADDR_29,
+    TCD_SADDR_3, TCD_SADDR_30, TCD_SADDR_31, TCD_SADDR_4, TCD_SADDR_5, TCD_SADDR_6, TCD_SADDR_7,
+    TCD_SADDR_8, TCD_SADDR_9, TCD_SLAST_0, TCD_SLAST_1, TCD_SLAST_10, TCD_SLAST_11, TCD_SLAST_12,
+    TCD_SLAST_13, TCD_SLAST_14, TCD_SLAST_15, TCD_SLAST_16, TCD_SLAST_17, TCD_SLAST_18,
+    TCD_SLAST_19, TCD_SLAST_2, TCD_SLAST_20, TCD_SLAST_21, TCD_SLAST_22, TCD_SLAST_23,
+    TCD_SLAST_24, TCD_SLAST_25, TCD_SLAST_26, TCD_SLAST_27, TCD_SLAST_28, TCD_SLAST_29,
+    TCD_SLAST_3, TCD_SLAST_30, TCD_SLAST_31, TCD_SLAST_4, TCD_SLAST_5, TCD_SLAST_6, TCD_SLAST_7,
+    TCD_SLAST_8, TCD_SLAST_9, TCD_SOFF_0, TCD_SOFF_1, TCD_SOFF_10, TCD_SOFF_11, TCD_SOFF_12,
+    TCD_SOFF_13, TCD_SOFF_14, TCD_SOFF_15, TCD_SOFF_16, TCD_SOFF_17, TCD_SOFF_18, TCD_SOFF_19,
+    TCD_SOFF_2, TCD_SOFF_20, TCD_SOFF_21, TCD_SOFF_22, TCD_SOFF_23, TCD_SOFF_24, TCD_SOFF_25,
+    TCD_SOFF_26, TCD_SOFF_27, TCD_SOFF_28, TCD_SOFF_29, TCD_SOFF_3, TCD_SOFF_30, TCD_SOFF_31,
+    TCD_SOFF_4, TCD_SOFF_5, TCD_SOFF_6, TCD_SOFF_7, TCD_SOFF_8, TCD_SOFF_9,
+};
+#[cfg(not(feature = "nosync"))]
+use core::sync::atomic::{AtomicBool, Ordering};
+
+/// The DMA1 peripheral instance.
+#[cfg(not(feature = "doc"))]
+pub type DMA1 = Instance<0>;
+
+/// The DMA1 peripheral instance.
+///
+/// This is a new type only for documentation purposes. When
+/// compiling for a target, this is defined as
+///
+/// ```rust
+/// pub type DMA1 = Instance<0>;
+/// ```
+#[cfg(feature = "doc")]
+pub struct DMA1 {
+    #[allow(unused)] // Only for documentation generation.
+    addr: u32,
+}
+
+impl crate::private::Sealed for DMA1 {}
+impl crate::Valid for DMA1 {
+    fn take() -> Option<Self> {
+        <DMA1>::take()
+    }
+    fn release(self) {
+        <DMA1>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <DMA1>::steal()
+    }
+}
+
+#[cfg(not(feature = "nosync"))]
+#[allow(renamed_and_removed_lints)]
+#[allow(private_no_mangle_statics)]
+#[no_mangle]
+static DMA1_TAKEN: AtomicBool = AtomicBool::new(false);
+
+/// Access functions for the DMA1 peripheral instance
+#[cfg(not(feature = "nosync"))]
+impl DMA1 {
+    const INSTANCE: Self = Self {
+        addr: 0x40c14000,
+        #[cfg(not(feature = "doc"))]
+        intrs: &[
+            crate::interrupt::DMA0_DMA16,
+            crate::interrupt::DMA1_DMA17,
+            crate::interrupt::DMA2_DMA18,
+            crate::interrupt::DMA3_DMA19,
+            crate::interrupt::DMA4_DMA20,
+            crate::interrupt::DMA5_DMA21,
+            crate::interrupt::DMA6_DMA22,
+            crate::interrupt::DMA7_DMA23,
+            crate::interrupt::DMA8_DMA24,
+            crate::interrupt::DMA9_DMA25,
+            crate::interrupt::DMA10_DMA26,
+            crate::interrupt::DMA11_DMA27,
+            crate::interrupt::DMA12_DMA28,
+            crate::interrupt::DMA13_DMA29,
+            crate::interrupt::DMA14_DMA30,
+            crate::interrupt::DMA15_DMA31,
+            crate::interrupt::DMA_ERROR,
+        ],
+    };
+
+    /// Reset values for each field in DMA1
+    pub const reset: ResetValues = ResetValues {
+        CR: 0x00000400,
+        ES: 0x00000000,
+        ERQ: 0x00000000,
+        EEI: 0x00000000,
+        CEEI: 0x00000000,
+        SEEI: 0x00000000,
+        CERQ: 0x00000000,
+        SERQ: 0x00000000,
+        CDNE: 0x00000000,
+        SSRT: 0x00000000,
+        CERR: 0x00000000,
+        CINT: 0x00000000,
+        INT: 0x00000000,
+        ERR: 0x00000000,
+        HRS: 0x00000000,
+        EARS: 0x00000000,
+        DCHPRI3: 0x00000003,
+        DCHPRI2: 0x00000002,
+        DCHPRI1: 0x00000001,
+        DCHPRI0: 0x00000000,
+        DCHPRI7: 0x00000007,
+        DCHPRI6: 0x00000006,
+        DCHPRI5: 0x00000005,
+        DCHPRI4: 0x00000004,
+        DCHPRI11: 0x0000000B,
+        DCHPRI10: 0x0000000A,
+        DCHPRI9: 0x00000009,
+        DCHPRI8: 0x00000008,
+        DCHPRI15: 0x0000000F,
+        DCHPRI14: 0x0000000E,
+        DCHPRI13: 0x0000000D,
+        DCHPRI12: 0x0000000C,
+        DCHPRI19: 0x00000013,
+        DCHPRI18: 0x00000012,
+        DCHPRI17: 0x00000011,
+        DCHPRI16: 0x00000010,
+        DCHPRI23: 0x00000017,
+        DCHPRI22: 0x00000016,
+        DCHPRI21: 0x00000015,
+        DCHPRI20: 0x00000014,
+        DCHPRI27: 0x0000001B,
+        DCHPRI26: 0x0000001A,
+        DCHPRI25: 0x00000019,
+        DCHPRI24: 0x00000018,
+        DCHPRI31: 0x0000001F,
+        DCHPRI30: 0x0000001E,
+        DCHPRI29: 0x0000001D,
+        DCHPRI28: 0x0000001C,
+        TCD_SADDR_0: 0x00000000,
+        TCD_SOFF_0: 0x00000000,
+        TCD_ATTR_0: 0x00000000,
+        TCD_NBYTES_ML: 0x00000000,
+        TCD_SLAST_0: 0x00000000,
+        TCD_DADDR_0: 0x00000000,
+        TCD_DOFF_0: 0x00000000,
+        TCD_CITER_ELINK: 0x00000000,
+        TCD_DLASTSGA_0: 0x00000000,
+        TCD_CSR_0: 0x00000000,
+        TCD_BITER_ELINK: 0x00000000,
+        TCD_SADDR_1: 0x00000000,
+        TCD_SOFF_1: 0x00000000,
+        TCD_ATTR_1: 0x00000000,
+        TCD_NBYTES_MLNO_1: 0x00000000,
+        TCD_SLAST_1: 0x00000000,
+        TCD_DADDR_1: 0x00000000,
+        TCD_DOFF_1: 0x00000000,
+        TCD_CITER_ELINKNO_1: 0x00000000,
+        TCD_DLASTSGA_1: 0x00000000,
+        TCD_CSR_1: 0x00000000,
+        TCD_BITER_ELINKNO_1: 0x00000000,
+        TCD_SADDR_2: 0x00000000,
+        TCD_SOFF_2: 0x00000000,
+        TCD_ATTR_2: 0x00000000,
+        TCD_NBYTES_MLNO_2: 0x00000000,
+        TCD_SLAST_2: 0x00000000,
+        TCD_DADDR_2: 0x00000000,
+        TCD_DOFF_2: 0x00000000,
+        TCD_CITER_ELINKNO_2: 0x00000000,
+        TCD_DLASTSGA_2: 0x00000000,
+        TCD_CSR_2: 0x00000000,
+        TCD_BITER_ELINKNO_2: 0x00000000,
+        TCD_SADDR_3: 0x00000000,
+        TCD_SOFF_3: 0x00000000,
+        TCD_ATTR_3: 0x00000000,
+        TCD_NBYTES_MLNO_3: 0x00000000,
+        TCD_SLAST_3: 0x00000000,
+        TCD_DADDR_3: 0x00000000,
+        TCD_DOFF_3: 0x00000000,
+        TCD_CITER_ELINKNO_3: 0x00000000,
+        TCD_DLASTSGA_3: 0x00000000,
+        TCD_CSR_3: 0x00000000,
+        TCD_BITER_ELINKNO_3: 0x00000000,
+        TCD_SADDR_4: 0x00000000,
+        TCD_SOFF_4: 0x00000000,
+        TCD_ATTR_4: 0x00000000,
+        TCD_NBYTES_MLNO_4: 0x00000000,
+        TCD_SLAST_4: 0x00000000,
+        TCD_DADDR_4: 0x00000000,
+        TCD_DOFF_4: 0x00000000,
+        TCD_CITER_ELINKNO_4: 0x00000000,
+        TCD_DLASTSGA_4: 0x00000000,
+        TCD_CSR_4: 0x00000000,
+        TCD_BITER_ELINKNO_4: 0x00000000,
+        TCD_SADDR_5: 0x00000000,
+        TCD_SOFF_5: 0x00000000,
+        TCD_ATTR_5: 0x00000000,
+        TCD_NBYTES_MLNO_5: 0x00000000,
+        TCD_SLAST_5: 0x00000000,
+        TCD_DADDR_5: 0x00000000,
+        TCD_DOFF_5: 0x00000000,
+        TCD_CITER_ELINKNO_5: 0x00000000,
+        TCD_DLASTSGA_5: 0x00000000,
+        TCD_CSR_5: 0x00000000,
+        TCD_BITER_ELINKNO_5: 0x00000000,
+        TCD_SADDR_6: 0x00000000,
+        TCD_SOFF_6: 0x00000000,
+        TCD_ATTR_6: 0x00000000,
+        TCD_NBYTES_MLNO_6: 0x00000000,
+        TCD_SLAST_6: 0x00000000,
+        TCD_DADDR_6: 0x00000000,
+        TCD_DOFF_6: 0x00000000,
+        TCD_CITER_ELINKNO_6: 0x00000000,
+        TCD_DLASTSGA_6: 0x00000000,
+        TCD_CSR_6: 0x00000000,
+        TCD_BITER_ELINKNO_6: 0x00000000,
+        TCD_SADDR_7: 0x00000000,
+        TCD_SOFF_7: 0x00000000,
+        TCD_ATTR_7: 0x00000000,
+        TCD_NBYTES_MLNO_7: 0x00000000,
+        TCD_SLAST_7: 0x00000000,
+        TCD_DADDR_7: 0x00000000,
+        TCD_DOFF_7: 0x00000000,
+        TCD_CITER_ELINKNO_7: 0x00000000,
+        TCD_DLASTSGA_7: 0x00000000,
+        TCD_CSR_7: 0x00000000,
+        TCD_BITER_ELINKNO_7: 0x00000000,
+        TCD_SADDR_8: 0x00000000,
+        TCD_SOFF_8: 0x00000000,
+        TCD_ATTR_8: 0x00000000,
+        TCD_NBYTES_MLNO_8: 0x00000000,
+        TCD_SLAST_8: 0x00000000,
+        TCD_DADDR_8: 0x00000000,
+        TCD_DOFF_8: 0x00000000,
+        TCD_CITER_ELINKNO_8: 0x00000000,
+        TCD_DLASTSGA_8: 0x00000000,
+        TCD_CSR_8: 0x00000000,
+        TCD_BITER_ELINKNO_8: 0x00000000,
+        TCD_SADDR_9: 0x00000000,
+        TCD_SOFF_9: 0x00000000,
+        TCD_ATTR_9: 0x00000000,
+        TCD_NBYTES_MLNO_9: 0x00000000,
+        TCD_SLAST_9: 0x00000000,
+        TCD_DADDR_9: 0x00000000,
+        TCD_DOFF_9: 0x00000000,
+        TCD_CITER_ELINKNO_9: 0x00000000,
+        TCD_DLASTSGA_9: 0x00000000,
+        TCD_CSR_9: 0x00000000,
+        TCD_BITER_ELINKNO_9: 0x00000000,
+        TCD_SADDR_10: 0x00000000,
+        TCD_SOFF_10: 0x00000000,
+        TCD_ATTR_10: 0x00000000,
+        TCD_NBYTES_MLNO_10: 0x00000000,
+        TCD_SLAST_10: 0x00000000,
+        TCD_DADDR_10: 0x00000000,
+        TCD_DOFF_10: 0x00000000,
+        TCD_CITER_ELINKNO_10: 0x00000000,
+        TCD_DLASTSGA_10: 0x00000000,
+        TCD_CSR_10: 0x00000000,
+        TCD_BITER_ELINKNO_10: 0x00000000,
+        TCD_SADDR_11: 0x00000000,
+        TCD_SOFF_11: 0x00000000,
+        TCD_ATTR_11: 0x00000000,
+        TCD_NBYTES_MLNO_11: 0x00000000,
+        TCD_SLAST_11: 0x00000000,
+        TCD_DADDR_11: 0x00000000,
+        TCD_DOFF_11: 0x00000000,
+        TCD_CITER_ELINKNO_11: 0x00000000,
+        TCD_DLASTSGA_11: 0x00000000,
+        TCD_CSR_11: 0x00000000,
+        TCD_BITER_ELINKNO_11: 0x00000000,
+        TCD_SADDR_12: 0x00000000,
+        TCD_SOFF_12: 0x00000000,
+        TCD_ATTR_12: 0x00000000,
+        TCD_NBYTES_MLNO_12: 0x00000000,
+        TCD_SLAST_12: 0x00000000,
+        TCD_DADDR_12: 0x00000000,
+        TCD_DOFF_12: 0x00000000,
+        TCD_CITER_ELINKNO_12: 0x00000000,
+        TCD_DLASTSGA_12: 0x00000000,
+        TCD_CSR_12: 0x00000000,
+        TCD_BITER_ELINKNO_12: 0x00000000,
+        TCD_SADDR_13: 0x00000000,
+        TCD_SOFF_13: 0x00000000,
+        TCD_ATTR_13: 0x00000000,
+        TCD_NBYTES_MLNO_13: 0x00000000,
+        TCD_SLAST_13: 0x00000000,
+        TCD_DADDR_13: 0x00000000,
+        TCD_DOFF_13: 0x00000000,
+        TCD_CITER_ELINKNO_13: 0x00000000,
+        TCD_DLASTSGA_13: 0x00000000,
+        TCD_CSR_13: 0x00000000,
+        TCD_BITER_ELINKNO_13: 0x00000000,
+        TCD_SADDR_14: 0x00000000,
+        TCD_SOFF_14: 0x00000000,
+        TCD_ATTR_14: 0x00000000,
+        TCD_NBYTES_MLNO_14: 0x00000000,
+        TCD_SLAST_14: 0x00000000,
+        TCD_DADDR_14: 0x00000000,
+        TCD_DOFF_14: 0x00000000,
+        TCD_CITER_ELINKNO_14: 0x00000000,
+        TCD_DLASTSGA_14: 0x00000000,
+        TCD_CSR_14: 0x00000000,
+        TCD_BITER_ELINKNO_14: 0x00000000,
+        TCD_SADDR_15: 0x00000000,
+        TCD_SOFF_15: 0x00000000,
+        TCD_ATTR_15: 0x00000000,
+        TCD_NBYTES_MLNO_15: 0x00000000,
+        TCD_SLAST_15: 0x00000000,
+        TCD_DADDR_15: 0x00000000,
+        TCD_DOFF_15: 0x00000000,
+        TCD_CITER_ELINKNO_15: 0x00000000,
+        TCD_DLASTSGA_15: 0x00000000,
+        TCD_CSR_15: 0x00000000,
+        TCD_BITER_ELINKNO_15: 0x00000000,
+        TCD_SADDR_16: 0x00000000,
+        TCD_SOFF_16: 0x00000000,
+        TCD_ATTR_16: 0x00000000,
+        TCD_NBYTES_MLNO_16: 0x00000000,
+        TCD_SLAST_16: 0x00000000,
+        TCD_DADDR_16: 0x00000000,
+        TCD_DOFF_16: 0x00000000,
+        TCD_CITER_ELINKNO_16: 0x00000000,
+        TCD_DLASTSGA_16: 0x00000000,
+        TCD_CSR_16: 0x00000000,
+        TCD_BITER_ELINKNO_16: 0x00000000,
+        TCD_SADDR_17: 0x00000000,
+        TCD_SOFF_17: 0x00000000,
+        TCD_ATTR_17: 0x00000000,
+        TCD_NBYTES_MLNO_17: 0x00000000,
+        TCD_SLAST_17: 0x00000000,
+        TCD_DADDR_17: 0x00000000,
+        TCD_DOFF_17: 0x00000000,
+        TCD_CITER_ELINKNO_17: 0x00000000,
+        TCD_DLASTSGA_17: 0x00000000,
+        TCD_CSR_17: 0x00000000,
+        TCD_BITER_ELINKNO_17: 0x00000000,
+        TCD_SADDR_18: 0x00000000,
+        TCD_SOFF_18: 0x00000000,
+        TCD_ATTR_18: 0x00000000,
+        TCD_NBYTES_MLNO_18: 0x00000000,
+        TCD_SLAST_18: 0x00000000,
+        TCD_DADDR_18: 0x00000000,
+        TCD_DOFF_18: 0x00000000,
+        TCD_CITER_ELINKNO_18: 0x00000000,
+        TCD_DLASTSGA_18: 0x00000000,
+        TCD_CSR_18: 0x00000000,
+        TCD_BITER_ELINKNO_18: 0x00000000,
+        TCD_SADDR_19: 0x00000000,
+        TCD_SOFF_19: 0x00000000,
+        TCD_ATTR_19: 0x00000000,
+        TCD_NBYTES_MLNO_19: 0x00000000,
+        TCD_SLAST_19: 0x00000000,
+        TCD_DADDR_19: 0x00000000,
+        TCD_DOFF_19: 0x00000000,
+        TCD_CITER_ELINKNO_19: 0x00000000,
+        TCD_DLASTSGA_19: 0x00000000,
+        TCD_CSR_19: 0x00000000,
+        TCD_BITER_ELINKNO_19: 0x00000000,
+        TCD_SADDR_20: 0x00000000,
+        TCD_SOFF_20: 0x00000000,
+        TCD_ATTR_20: 0x00000000,
+        TCD_NBYTES_MLNO_20: 0x00000000,
+        TCD_SLAST_20: 0x00000000,
+        TCD_DADDR_20: 0x00000000,
+        TCD_DOFF_20: 0x00000000,
+        TCD_CITER_ELINKNO_20: 0x00000000,
+        TCD_DLASTSGA_20: 0x00000000,
+        TCD_CSR_20: 0x00000000,
+        TCD_BITER_ELINKNO_20: 0x00000000,
+        TCD_SADDR_21: 0x00000000,
+        TCD_SOFF_21: 0x00000000,
+        TCD_ATTR_21: 0x00000000,
+        TCD_NBYTES_MLNO_21: 0x00000000,
+        TCD_SLAST_21: 0x00000000,
+        TCD_DADDR_21: 0x00000000,
+        TCD_DOFF_21: 0x00000000,
+        TCD_CITER_ELINKNO_21: 0x00000000,
+        TCD_DLASTSGA_21: 0x00000000,
+        TCD_CSR_21: 0x00000000,
+        TCD_BITER_ELINKNO_21: 0x00000000,
+        TCD_SADDR_22: 0x00000000,
+        TCD_SOFF_22: 0x00000000,
+        TCD_ATTR_22: 0x00000000,
+        TCD_NBYTES_MLNO_22: 0x00000000,
+        TCD_SLAST_22: 0x00000000,
+        TCD_DADDR_22: 0x00000000,
+        TCD_DOFF_22: 0x00000000,
+        TCD_CITER_ELINKNO_22: 0x00000000,
+        TCD_DLASTSGA_22: 0x00000000,
+        TCD_CSR_22: 0x00000000,
+        TCD_BITER_ELINKNO_22: 0x00000000,
+        TCD_SADDR_23: 0x00000000,
+        TCD_SOFF_23: 0x00000000,
+        TCD_ATTR_23: 0x00000000,
+        TCD_NBYTES_MLNO_23: 0x00000000,
+        TCD_SLAST_23: 0x00000000,
+        TCD_DADDR_23: 0x00000000,
+        TCD_DOFF_23: 0x00000000,
+        TCD_CITER_ELINKNO_23: 0x00000000,
+        TCD_DLASTSGA_23: 0x00000000,
+        TCD_CSR_23: 0x00000000,
+        TCD_BITER_ELINKNO_23: 0x00000000,
+        TCD_SADDR_24: 0x00000000,
+        TCD_SOFF_24: 0x00000000,
+        TCD_ATTR_24: 0x00000000,
+        TCD_NBYTES_MLNO_24: 0x00000000,
+        TCD_SLAST_24: 0x00000000,
+        TCD_DADDR_24: 0x00000000,
+        TCD_DOFF_24: 0x00000000,
+        TCD_CITER_ELINKNO_24: 0x00000000,
+        TCD_DLASTSGA_24: 0x00000000,
+        TCD_CSR_24: 0x00000000,
+        TCD_BITER_ELINKNO_24: 0x00000000,
+        TCD_SADDR_25: 0x00000000,
+        TCD_SOFF_25: 0x00000000,
+        TCD_ATTR_25: 0x00000000,
+        TCD_NBYTES_MLNO_25: 0x00000000,
+        TCD_SLAST_25: 0x00000000,
+        TCD_DADDR_25: 0x00000000,
+        TCD_DOFF_25: 0x00000000,
+        TCD_CITER_ELINKNO_25: 0x00000000,
+        TCD_DLASTSGA_25: 0x00000000,
+        TCD_CSR_25: 0x00000000,
+        TCD_BITER_ELINKNO_25: 0x00000000,
+        TCD_SADDR_26: 0x00000000,
+        TCD_SOFF_26: 0x00000000,
+        TCD_ATTR_26: 0x00000000,
+        TCD_NBYTES_MLNO_26: 0x00000000,
+        TCD_SLAST_26: 0x00000000,
+        TCD_DADDR_26: 0x00000000,
+        TCD_DOFF_26: 0x00000000,
+        TCD_CITER_ELINKNO_26: 0x00000000,
+        TCD_DLASTSGA_26: 0x00000000,
+        TCD_CSR_26: 0x00000000,
+        TCD_BITER_ELINKNO_26: 0x00000000,
+        TCD_SADDR_27: 0x00000000,
+        TCD_SOFF_27: 0x00000000,
+        TCD_ATTR_27: 0x00000000,
+        TCD_NBYTES_MLNO_27: 0x00000000,
+        TCD_SLAST_27: 0x00000000,
+        TCD_DADDR_27: 0x00000000,
+        TCD_DOFF_27: 0x00000000,
+        TCD_CITER_ELINKNO_27: 0x00000000,
+        TCD_DLASTSGA_27: 0x00000000,
+        TCD_CSR_27: 0x00000000,
+        TCD_BITER_ELINKNO_27: 0x00000000,
+        TCD_SADDR_28: 0x00000000,
+        TCD_SOFF_28: 0x00000000,
+        TCD_ATTR_28: 0x00000000,
+        TCD_NBYTES_MLNO_28: 0x00000000,
+        TCD_SLAST_28: 0x00000000,
+        TCD_DADDR_28: 0x00000000,
+        TCD_DOFF_28: 0x00000000,
+        TCD_CITER_ELINKNO_28: 0x00000000,
+        TCD_DLASTSGA_28: 0x00000000,
+        TCD_CSR_28: 0x00000000,
+        TCD_BITER_ELINKNO_28: 0x00000000,
+        TCD_SADDR_29: 0x00000000,
+        TCD_SOFF_29: 0x00000000,
+        TCD_ATTR_29: 0x00000000,
+        TCD_NBYTES_MLNO_29: 0x00000000,
+        TCD_SLAST_29: 0x00000000,
+        TCD_DADDR_29: 0x00000000,
+        TCD_DOFF_29: 0x00000000,
+        TCD_CITER_ELINKNO_29: 0x00000000,
+        TCD_DLASTSGA_29: 0x00000000,
+        TCD_CSR_29: 0x00000000,
+        TCD_BITER_ELINKNO_29: 0x00000000,
+        TCD_SADDR_30: 0x00000000,
+        TCD_SOFF_30: 0x00000000,
+        TCD_ATTR_30: 0x00000000,
+        TCD_NBYTES_MLNO_30: 0x00000000,
+        TCD_SLAST_30: 0x00000000,
+        TCD_DADDR_30: 0x00000000,
+        TCD_DOFF_30: 0x00000000,
+        TCD_CITER_ELINKNO_30: 0x00000000,
+        TCD_DLASTSGA_30: 0x00000000,
+        TCD_CSR_30: 0x00000000,
+        TCD_BITER_ELINKNO_30: 0x00000000,
+        TCD_SADDR_31: 0x00000000,
+        TCD_SOFF_31: 0x00000000,
+        TCD_ATTR_31: 0x00000000,
+        TCD_NBYTES_MLNO_31: 0x00000000,
+        TCD_SLAST_31: 0x00000000,
+        TCD_DADDR_31: 0x00000000,
+        TCD_DOFF_31: 0x00000000,
+        TCD_CITER_ELINKNO_31: 0x00000000,
+        TCD_DLASTSGA_31: 0x00000000,
+        TCD_CSR_31: 0x00000000,
+        TCD_BITER_ELINKNO_31: 0x00000000,
+    };
+
+    /// Safe access to DMA1
+    ///
+    /// This function returns `Some(Instance)` if this instance is not
+    /// currently taken, and `None` if it is. This ensures that if you
+    /// do get `Some(Instance)`, you are ensured unique access to
+    /// the peripheral and there cannot be data races (unless other
+    /// code uses `unsafe`, of course). You can then pass the
+    /// `Instance` around to other functions as required. When you're
+    /// done with it, you can call `release(instance)` to return it.
+    ///
+    /// `Instance` itself dereferences to a `RegisterBlock`, which
+    /// provides access to the peripheral's registers.
+    #[inline]
+    pub fn take() -> Option<Self> {
+        let taken = DMA1_TAKEN.swap(true, Ordering::SeqCst);
+        if taken {
+            None
+        } else {
+            Some(Self::INSTANCE)
+        }
+    }
+
+    /// Release exclusive access to DMA1
+    ///
+    /// This function allows you to return an `Instance` so that it
+    /// is available to `take()` again. This function will panic if
+    /// you return a different `Instance` or if this instance is not
+    /// already taken.
+    #[inline]
+    pub fn release(_: Self) {
+        let taken = DMA1_TAKEN.swap(false, Ordering::SeqCst);
+        assert!(taken, "Released a peripheral which was not taken");
+    }
+
+    /// Unsafely steal DMA1
+    ///
+    /// This function is similar to take() but forcibly takes the
+    /// Instance, marking it as taken irregardless of its previous
+    /// state.
+    #[inline]
+    pub unsafe fn steal() -> Self {
+        DMA1_TAKEN.store(true, Ordering::SeqCst);
+        Self::INSTANCE
+    }
+}
+
+impl DMA1 {
+    /// The interrupts associated with DMA1
+    #[cfg(not(feature = "doc"))]
+    pub const INTERRUPTS: [crate::Interrupt; 17] = [
+        crate::interrupt::DMA0_DMA16,
+        crate::interrupt::DMA1_DMA17,
+        crate::interrupt::DMA2_DMA18,
+        crate::interrupt::DMA3_DMA19,
+        crate::interrupt::DMA4_DMA20,
+        crate::interrupt::DMA5_DMA21,
+        crate::interrupt::DMA6_DMA22,
+        crate::interrupt::DMA7_DMA23,
+        crate::interrupt::DMA8_DMA24,
+        crate::interrupt::DMA9_DMA25,
+        crate::interrupt::DMA10_DMA26,
+        crate::interrupt::DMA11_DMA27,
+        crate::interrupt::DMA12_DMA28,
+        crate::interrupt::DMA13_DMA29,
+        crate::interrupt::DMA14_DMA30,
+        crate::interrupt::DMA15_DMA31,
+        crate::interrupt::DMA_ERROR,
+    ];
+
+    /// The interrupts associated with DMA1
+    ///
+    /// Note: the values are invalid for a documentation build.
+    #[cfg(feature = "doc")]
+    pub const INTERRUPTS: [crate::Interrupt; 0] = [];
+}
+
+/// Raw pointer to DMA1
+///
+/// Dereferencing this is unsafe because you are not ensured unique
+/// access to the peripheral, so you may encounter data races with
+/// other users of this peripheral. It is up to you to ensure you
+/// will not cause data races.
+///
+/// This constant is provided for ease of use in unsafe code: you can
+/// simply call for example `write_reg!(gpio, GPIOA, ODR, 1);`.
+pub const DMA1: *const RegisterBlock = 0x40c14000 as *const _;

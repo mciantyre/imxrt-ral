@@ -138,3 +138,12 @@ pub use imxrt106::imxrt1062::*;
 
 #[cfg(feature = "imxrt1064")]
 pub use imxrt106::imxrt1064::*;
+
+#[cfg(any(feature = "doc", feature = "imxrt1176_cm4", feature = "imxrt1176_cm7"))]
+pub mod imxrt117;
+
+#[cfg(feature = "imxrt1176_cm4")]
+pub use imxrt117::imxrt1176_cm4::*;
+
+#[cfg(feature = "imxrt1176_cm7")]
+pub use imxrt117::imxrt1176_cm7::*;

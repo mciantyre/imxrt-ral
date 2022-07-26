@@ -1,0 +1,201 @@
+#![allow(non_snake_case, non_upper_case_globals)]
+#![allow(non_camel_case_types)]
+//! SEMC
+//!
+//! Used by: imxrt1176_cm4, imxrt1176_cm7
+
+pub use crate::imxrt117::peripherals::semc::Instance;
+pub use crate::imxrt117::peripherals::semc::{RegisterBlock, ResetValues};
+
+pub use crate::imxrt117::peripherals::semc::{
+    BMCR0, BMCR1, BR0, BR1, BR10, BR11, BR2, BR3, BR4, BR5, BR6, BR7, BR8, BR9, DBICR0, DBICR1,
+    DBICR2, DCCR, DLLCR, INTEN, INTR, IOCR, IPCMD, IPCR0, IPCR1, IPCR2, IPRXDAT, IPTXDAT, MCR,
+    NANDCR0, NANDCR1, NANDCR2, NANDCR3, NORCR0, NORCR1, NORCR2, NORCR3, SDRAMCR0, SDRAMCR1,
+    SDRAMCR2, SDRAMCR3, SRAMCR0, SRAMCR1, SRAMCR2, SRAMCR3, SRAMCR4, SRAMCR5, SRAMCR6, STS0, STS1,
+    STS10, STS11, STS12, STS13, STS14, STS15, STS2, STS3, STS4, STS5, STS6, STS7, STS8, STS9,
+};
+#[cfg(not(feature = "nosync"))]
+use core::sync::atomic::{AtomicBool, Ordering};
+
+/// The SEMC peripheral instance.
+#[cfg(not(feature = "doc"))]
+pub type SEMC = Instance<0>;
+
+/// The SEMC peripheral instance.
+///
+/// This is a new type only for documentation purposes. When
+/// compiling for a target, this is defined as
+///
+/// ```rust
+/// pub type SEMC = Instance<0>;
+/// ```
+#[cfg(feature = "doc")]
+pub struct SEMC {
+    #[allow(unused)] // Only for documentation generation.
+    addr: u32,
+}
+
+impl crate::private::Sealed for SEMC {}
+impl crate::Valid for SEMC {
+    fn take() -> Option<Self> {
+        <SEMC>::take()
+    }
+    fn release(self) {
+        <SEMC>::release(self);
+    }
+    unsafe fn steal() -> Self {
+        <SEMC>::steal()
+    }
+}
+
+#[cfg(not(feature = "nosync"))]
+#[allow(renamed_and_removed_lints)]
+#[allow(private_no_mangle_statics)]
+#[no_mangle]
+static SEMC_TAKEN: AtomicBool = AtomicBool::new(false);
+
+/// Access functions for the SEMC peripheral instance
+#[cfg(not(feature = "nosync"))]
+impl SEMC {
+    const INSTANCE: Self = Self {
+        addr: 0x400d4000,
+        #[cfg(not(feature = "doc"))]
+        intrs: &[crate::interrupt::SEMC],
+    };
+
+    /// Reset values for each field in SEMC
+    pub const reset: ResetValues = ResetValues {
+        MCR: 0x10000002,
+        IOCR: 0x00000000,
+        BMCR0: 0x00000000,
+        BMCR1: 0x00000000,
+        BR0: 0x00000000,
+        BR1: 0x00000000,
+        BR2: 0x00000000,
+        BR3: 0x00000000,
+        BR4: 0x00000000,
+        BR5: 0x00000000,
+        BR6: 0x00000000,
+        BR7: 0x00000000,
+        BR8: 0x00000000,
+        DLLCR: 0x00000100,
+        INTEN: 0x00000000,
+        INTR: 0x00000000,
+        SDRAMCR0: 0x00000C26,
+        SDRAMCR1: 0x00994934,
+        SDRAMCR2: 0x80000EEE,
+        SDRAMCR3: 0x40808000,
+        NANDCR0: 0x00000000,
+        NANDCR1: 0x00000000,
+        NANDCR2: 0x00010410,
+        NANDCR3: 0x00000000,
+        NORCR0: 0x00000000,
+        NORCR1: 0x00000000,
+        NORCR2: 0x00000000,
+        NORCR3: 0x00000000,
+        SRAMCR0: 0x00000000,
+        SRAMCR1: 0x00000000,
+        SRAMCR2: 0x00000000,
+        SRAMCR3: 0x00000000,
+        DBICR0: 0x00000000,
+        DBICR1: 0x00000000,
+        DBICR2: 0x00000000,
+        IPCR0: 0x00000000,
+        IPCR1: 0x00000000,
+        IPCR2: 0x00000000,
+        IPCMD: 0x00000000,
+        IPTXDAT: 0x00000000,
+        IPRXDAT: 0x00000000,
+        STS0: 0x00000001,
+        STS1: 0x00000000,
+        STS2: 0x00000000,
+        STS3: 0x00000000,
+        STS4: 0x00000000,
+        STS5: 0x00000000,
+        STS6: 0x00000000,
+        STS7: 0x00000000,
+        STS8: 0x00000000,
+        STS9: 0x00000000,
+        STS10: 0x00000000,
+        STS11: 0x00000000,
+        STS12: 0x00000000,
+        STS13: 0x00000100,
+        STS14: 0x00000000,
+        STS15: 0x00000000,
+        BR9: 0xA0000018,
+        BR10: 0xA4000018,
+        BR11: 0xA8000018,
+        SRAMCR4: 0x00000000,
+        SRAMCR5: 0x00000000,
+        SRAMCR6: 0x00000000,
+        DCCR: 0x00000000,
+    };
+
+    /// Safe access to SEMC
+    ///
+    /// This function returns `Some(Instance)` if this instance is not
+    /// currently taken, and `None` if it is. This ensures that if you
+    /// do get `Some(Instance)`, you are ensured unique access to
+    /// the peripheral and there cannot be data races (unless other
+    /// code uses `unsafe`, of course). You can then pass the
+    /// `Instance` around to other functions as required. When you're
+    /// done with it, you can call `release(instance)` to return it.
+    ///
+    /// `Instance` itself dereferences to a `RegisterBlock`, which
+    /// provides access to the peripheral's registers.
+    #[inline]
+    pub fn take() -> Option<Self> {
+        let taken = SEMC_TAKEN.swap(true, Ordering::SeqCst);
+        if taken {
+            None
+        } else {
+            Some(Self::INSTANCE)
+        }
+    }
+
+    /// Release exclusive access to SEMC
+    ///
+    /// This function allows you to return an `Instance` so that it
+    /// is available to `take()` again. This function will panic if
+    /// you return a different `Instance` or if this instance is not
+    /// already taken.
+    #[inline]
+    pub fn release(_: Self) {
+        let taken = SEMC_TAKEN.swap(false, Ordering::SeqCst);
+        assert!(taken, "Released a peripheral which was not taken");
+    }
+
+    /// Unsafely steal SEMC
+    ///
+    /// This function is similar to take() but forcibly takes the
+    /// Instance, marking it as taken irregardless of its previous
+    /// state.
+    #[inline]
+    pub unsafe fn steal() -> Self {
+        SEMC_TAKEN.store(true, Ordering::SeqCst);
+        Self::INSTANCE
+    }
+}
+
+impl SEMC {
+    /// The interrupts associated with SEMC
+    #[cfg(not(feature = "doc"))]
+    pub const INTERRUPTS: [crate::Interrupt; 1] = [crate::interrupt::SEMC];
+
+    /// The interrupts associated with SEMC
+    ///
+    /// Note: the values are invalid for a documentation build.
+    #[cfg(feature = "doc")]
+    pub const INTERRUPTS: [crate::Interrupt; 0] = [];
+}
+
+/// Raw pointer to SEMC
+///
+/// Dereferencing this is unsafe because you are not ensured unique
+/// access to the peripheral, so you may encounter data races with
+/// other users of this peripheral. It is up to you to ensure you
+/// will not cause data races.
+///
+/// This constant is provided for ease of use in unsafe code: you can
+/// simply call for example `write_reg!(gpio, GPIOA, ODR, 1);`.
+pub const SEMC: *const RegisterBlock = 0x400d4000 as *const _;
