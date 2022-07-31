@@ -519,7 +519,7 @@ pub mod SR {
 }
 
 /// AES Key Word
-pub mod CTX_KEY00 {
+pub mod CTX_KEY0_0 {
 
     /// AES Key
     pub mod KEY {
@@ -537,22 +537,22 @@ pub mod CTX_KEY00 {
 }
 
 /// AES Key Word
-pub mod CTX_KEY10 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY1_0 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Key Word
-pub mod CTX_KEY20 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY2_0 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Key Word
-pub mod CTX_KEY30 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY3_0 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Counter Word
-pub mod CTX_CTR00 {
+pub mod CTX_CTR0_0 {
 
     /// AES Counter
     pub mod CTR {
@@ -570,12 +570,12 @@ pub mod CTX_CTR00 {
 }
 
 /// AES Counter Word
-pub mod CTX_CTR10 {
-    pub use super::CTX_CTR00::CTR;
+pub mod CTX_CTR1_0 {
+    pub use super::CTX_CTR0_0::CTR;
 }
 
 /// AES Region Descriptor Word0
-pub mod CTX_RGD_W00 {
+pub mod CTX_RGD_W0_0 {
 
     /// Start Address
     pub mod SRTADDR {
@@ -593,7 +593,7 @@ pub mod CTX_RGD_W00 {
 }
 
 /// AES Region Descriptor Word1
-pub mod CTX_RGD_W10 {
+pub mod CTX_RGD_W1_0 {
 
     /// Valid
     pub mod VLD {
@@ -674,132 +674,132 @@ pub mod CTX_RGD_W10 {
 }
 
 /// AES Key Word
-pub mod CTX_KEY01 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY0_1 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Key Word
-pub mod CTX_KEY11 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY1_1 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Key Word
-pub mod CTX_KEY21 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY2_1 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Key Word
-pub mod CTX_KEY31 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY3_1 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Counter Word
-pub mod CTX_CTR01 {
-    pub use super::CTX_CTR00::CTR;
+pub mod CTX_CTR0_1 {
+    pub use super::CTX_CTR0_0::CTR;
 }
 
 /// AES Counter Word
-pub mod CTX_CTR11 {
-    pub use super::CTX_CTR00::CTR;
+pub mod CTX_CTR1_1 {
+    pub use super::CTX_CTR0_0::CTR;
 }
 
 /// AES Region Descriptor Word0
-pub mod CTX_RGD_W01 {
-    pub use super::CTX_RGD_W00::SRTADDR;
+pub mod CTX_RGD_W0_1 {
+    pub use super::CTX_RGD_W0_0::SRTADDR;
 }
 
 /// AES Region Descriptor Word1
-pub mod CTX_RGD_W11 {
-    pub use super::CTX_RGD_W10::ADE;
-    pub use super::CTX_RGD_W10::ENDADDR;
-    pub use super::CTX_RGD_W10::RO;
-    pub use super::CTX_RGD_W10::VLD;
+pub mod CTX_RGD_W1_1 {
+    pub use super::CTX_RGD_W1_0::ADE;
+    pub use super::CTX_RGD_W1_0::ENDADDR;
+    pub use super::CTX_RGD_W1_0::RO;
+    pub use super::CTX_RGD_W1_0::VLD;
 }
 
 /// AES Key Word
-pub mod CTX_KEY02 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY0_2 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Key Word
-pub mod CTX_KEY12 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY1_2 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Key Word
-pub mod CTX_KEY22 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY2_2 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Key Word
-pub mod CTX_KEY32 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY3_2 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Counter Word
-pub mod CTX_CTR02 {
-    pub use super::CTX_CTR00::CTR;
+pub mod CTX_CTR0_2 {
+    pub use super::CTX_CTR0_0::CTR;
 }
 
 /// AES Counter Word
-pub mod CTX_CTR12 {
-    pub use super::CTX_CTR00::CTR;
+pub mod CTX_CTR1_2 {
+    pub use super::CTX_CTR0_0::CTR;
 }
 
 /// AES Region Descriptor Word0
-pub mod CTX_RGD_W02 {
-    pub use super::CTX_RGD_W00::SRTADDR;
+pub mod CTX_RGD_W0_2 {
+    pub use super::CTX_RGD_W0_0::SRTADDR;
 }
 
 /// AES Region Descriptor Word1
-pub mod CTX_RGD_W12 {
-    pub use super::CTX_RGD_W10::ADE;
-    pub use super::CTX_RGD_W10::ENDADDR;
-    pub use super::CTX_RGD_W10::RO;
-    pub use super::CTX_RGD_W10::VLD;
+pub mod CTX_RGD_W1_2 {
+    pub use super::CTX_RGD_W1_0::ADE;
+    pub use super::CTX_RGD_W1_0::ENDADDR;
+    pub use super::CTX_RGD_W1_0::RO;
+    pub use super::CTX_RGD_W1_0::VLD;
 }
 
 /// AES Key Word
-pub mod CTX_KEY03 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY0_3 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Key Word
-pub mod CTX_KEY13 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY1_3 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Key Word
-pub mod CTX_KEY23 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY2_3 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Key Word
-pub mod CTX_KEY33 {
-    pub use super::CTX_KEY00::KEY;
+pub mod CTX_KEY3_3 {
+    pub use super::CTX_KEY0_0::KEY;
 }
 
 /// AES Counter Word
-pub mod CTX_CTR03 {
-    pub use super::CTX_CTR00::CTR;
+pub mod CTX_CTR0_3 {
+    pub use super::CTX_CTR0_0::CTR;
 }
 
 /// AES Counter Word
-pub mod CTX_CTR13 {
-    pub use super::CTX_CTR00::CTR;
+pub mod CTX_CTR1_3 {
+    pub use super::CTX_CTR0_0::CTR;
 }
 
 /// AES Region Descriptor Word0
-pub mod CTX_RGD_W03 {
-    pub use super::CTX_RGD_W00::SRTADDR;
+pub mod CTX_RGD_W0_3 {
+    pub use super::CTX_RGD_W0_0::SRTADDR;
 }
 
 /// AES Region Descriptor Word1
-pub mod CTX_RGD_W13 {
-    pub use super::CTX_RGD_W10::ADE;
-    pub use super::CTX_RGD_W10::ENDADDR;
-    pub use super::CTX_RGD_W10::RO;
-    pub use super::CTX_RGD_W10::VLD;
+pub mod CTX_RGD_W1_3 {
+    pub use super::CTX_RGD_W1_0::ADE;
+    pub use super::CTX_RGD_W1_0::ENDADDR;
+    pub use super::CTX_RGD_W1_0::RO;
+    pub use super::CTX_RGD_W1_0::VLD;
 }
 #[repr(C)]
 pub struct RegisterBlock {
@@ -814,142 +814,142 @@ pub struct RegisterBlock {
     _reserved2: [u32; 62],
 
     /// AES Key Word
-    pub CTX_KEY00: RWRegister<u32>,
+    pub CTX_KEY0_0: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY10: RWRegister<u32>,
+    pub CTX_KEY1_0: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY20: RWRegister<u32>,
+    pub CTX_KEY2_0: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY30: RWRegister<u32>,
+    pub CTX_KEY3_0: RWRegister<u32>,
 
     /// AES Counter Word
-    pub CTX_CTR00: RWRegister<u32>,
+    pub CTX_CTR0_0: RWRegister<u32>,
 
     /// AES Counter Word
-    pub CTX_CTR10: RWRegister<u32>,
+    pub CTX_CTR1_0: RWRegister<u32>,
 
     /// AES Region Descriptor Word0
-    pub CTX_RGD_W00: RWRegister<u32>,
+    pub CTX_RGD_W0_0: RWRegister<u32>,
 
     /// AES Region Descriptor Word1
-    pub CTX_RGD_W10: RWRegister<u32>,
+    pub CTX_RGD_W1_0: RWRegister<u32>,
 
     _reserved3: [u32; 8],
 
     /// AES Key Word
-    pub CTX_KEY01: RWRegister<u32>,
+    pub CTX_KEY0_1: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY11: RWRegister<u32>,
+    pub CTX_KEY1_1: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY21: RWRegister<u32>,
+    pub CTX_KEY2_1: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY31: RWRegister<u32>,
+    pub CTX_KEY3_1: RWRegister<u32>,
 
     /// AES Counter Word
-    pub CTX_CTR01: RWRegister<u32>,
+    pub CTX_CTR0_1: RWRegister<u32>,
 
     /// AES Counter Word
-    pub CTX_CTR11: RWRegister<u32>,
+    pub CTX_CTR1_1: RWRegister<u32>,
 
     /// AES Region Descriptor Word0
-    pub CTX_RGD_W01: RWRegister<u32>,
+    pub CTX_RGD_W0_1: RWRegister<u32>,
 
     /// AES Region Descriptor Word1
-    pub CTX_RGD_W11: RWRegister<u32>,
+    pub CTX_RGD_W1_1: RWRegister<u32>,
 
     _reserved4: [u32; 8],
 
     /// AES Key Word
-    pub CTX_KEY02: RWRegister<u32>,
+    pub CTX_KEY0_2: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY12: RWRegister<u32>,
+    pub CTX_KEY1_2: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY22: RWRegister<u32>,
+    pub CTX_KEY2_2: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY32: RWRegister<u32>,
+    pub CTX_KEY3_2: RWRegister<u32>,
 
     /// AES Counter Word
-    pub CTX_CTR02: RWRegister<u32>,
+    pub CTX_CTR0_2: RWRegister<u32>,
 
     /// AES Counter Word
-    pub CTX_CTR12: RWRegister<u32>,
+    pub CTX_CTR1_2: RWRegister<u32>,
 
     /// AES Region Descriptor Word0
-    pub CTX_RGD_W02: RWRegister<u32>,
+    pub CTX_RGD_W0_2: RWRegister<u32>,
 
     /// AES Region Descriptor Word1
-    pub CTX_RGD_W12: RWRegister<u32>,
+    pub CTX_RGD_W1_2: RWRegister<u32>,
 
     _reserved5: [u32; 8],
 
     /// AES Key Word
-    pub CTX_KEY03: RWRegister<u32>,
+    pub CTX_KEY0_3: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY13: RWRegister<u32>,
+    pub CTX_KEY1_3: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY23: RWRegister<u32>,
+    pub CTX_KEY2_3: RWRegister<u32>,
 
     /// AES Key Word
-    pub CTX_KEY33: RWRegister<u32>,
+    pub CTX_KEY3_3: RWRegister<u32>,
 
     /// AES Counter Word
-    pub CTX_CTR03: RWRegister<u32>,
+    pub CTX_CTR0_3: RWRegister<u32>,
 
     /// AES Counter Word
-    pub CTX_CTR13: RWRegister<u32>,
+    pub CTX_CTR1_3: RWRegister<u32>,
 
     /// AES Region Descriptor Word0
-    pub CTX_RGD_W03: RWRegister<u32>,
+    pub CTX_RGD_W0_3: RWRegister<u32>,
 
     /// AES Region Descriptor Word1
-    pub CTX_RGD_W13: RWRegister<u32>,
+    pub CTX_RGD_W1_3: RWRegister<u32>,
 }
 pub struct ResetValues {
     pub CR: u32,
     pub SR: u32,
-    pub CTX_KEY00: u32,
-    pub CTX_KEY10: u32,
-    pub CTX_KEY20: u32,
-    pub CTX_KEY30: u32,
-    pub CTX_CTR00: u32,
-    pub CTX_CTR10: u32,
-    pub CTX_RGD_W00: u32,
-    pub CTX_RGD_W10: u32,
-    pub CTX_KEY01: u32,
-    pub CTX_KEY11: u32,
-    pub CTX_KEY21: u32,
-    pub CTX_KEY31: u32,
-    pub CTX_CTR01: u32,
-    pub CTX_CTR11: u32,
-    pub CTX_RGD_W01: u32,
-    pub CTX_RGD_W11: u32,
-    pub CTX_KEY02: u32,
-    pub CTX_KEY12: u32,
-    pub CTX_KEY22: u32,
-    pub CTX_KEY32: u32,
-    pub CTX_CTR02: u32,
-    pub CTX_CTR12: u32,
-    pub CTX_RGD_W02: u32,
-    pub CTX_RGD_W12: u32,
-    pub CTX_KEY03: u32,
-    pub CTX_KEY13: u32,
-    pub CTX_KEY23: u32,
-    pub CTX_KEY33: u32,
-    pub CTX_CTR03: u32,
-    pub CTX_CTR13: u32,
-    pub CTX_RGD_W03: u32,
-    pub CTX_RGD_W13: u32,
+    pub CTX_KEY0_0: u32,
+    pub CTX_KEY1_0: u32,
+    pub CTX_KEY2_0: u32,
+    pub CTX_KEY3_0: u32,
+    pub CTX_CTR0_0: u32,
+    pub CTX_CTR1_0: u32,
+    pub CTX_RGD_W0_0: u32,
+    pub CTX_RGD_W1_0: u32,
+    pub CTX_KEY0_1: u32,
+    pub CTX_KEY1_1: u32,
+    pub CTX_KEY2_1: u32,
+    pub CTX_KEY3_1: u32,
+    pub CTX_CTR0_1: u32,
+    pub CTX_CTR1_1: u32,
+    pub CTX_RGD_W0_1: u32,
+    pub CTX_RGD_W1_1: u32,
+    pub CTX_KEY0_2: u32,
+    pub CTX_KEY1_2: u32,
+    pub CTX_KEY2_2: u32,
+    pub CTX_KEY3_2: u32,
+    pub CTX_CTR0_2: u32,
+    pub CTX_CTR1_2: u32,
+    pub CTX_RGD_W0_2: u32,
+    pub CTX_RGD_W1_2: u32,
+    pub CTX_KEY0_3: u32,
+    pub CTX_KEY1_3: u32,
+    pub CTX_KEY2_3: u32,
+    pub CTX_KEY3_3: u32,
+    pub CTX_CTR0_3: u32,
+    pub CTX_CTR1_3: u32,
+    pub CTX_RGD_W0_3: u32,
+    pub CTX_RGD_W1_3: u32,
 }
 pub struct Instance<const N: u8> {
     #[cfg_attr(feature = "nosync", allow(unused))]
@@ -1034,38 +1034,38 @@ impl OTFAD {
     pub const reset: ResetValues = ResetValues {
         CR: 0x00000000,
         SR: 0x00000040,
-        CTX_KEY00: 0x00000000,
-        CTX_KEY10: 0x00000000,
-        CTX_KEY20: 0x00000000,
-        CTX_KEY30: 0x00000000,
-        CTX_CTR00: 0x00000000,
-        CTX_CTR10: 0x00000000,
-        CTX_RGD_W00: 0x00000000,
-        CTX_RGD_W10: 0x000003F8,
-        CTX_KEY01: 0x00000000,
-        CTX_KEY11: 0x00000000,
-        CTX_KEY21: 0x00000000,
-        CTX_KEY31: 0x00000000,
-        CTX_CTR01: 0x00000000,
-        CTX_CTR11: 0x00000000,
-        CTX_RGD_W01: 0x00000000,
-        CTX_RGD_W11: 0x000003F8,
-        CTX_KEY02: 0x00000000,
-        CTX_KEY12: 0x00000000,
-        CTX_KEY22: 0x00000000,
-        CTX_KEY32: 0x00000000,
-        CTX_CTR02: 0x00000000,
-        CTX_CTR12: 0x00000000,
-        CTX_RGD_W02: 0x00000000,
-        CTX_RGD_W12: 0x000003F8,
-        CTX_KEY03: 0x00000000,
-        CTX_KEY13: 0x00000000,
-        CTX_KEY23: 0x00000000,
-        CTX_KEY33: 0x00000000,
-        CTX_CTR03: 0x00000000,
-        CTX_CTR13: 0x00000000,
-        CTX_RGD_W03: 0x00000000,
-        CTX_RGD_W13: 0x000003F8,
+        CTX_KEY0_0: 0x00000000,
+        CTX_KEY1_0: 0x00000000,
+        CTX_KEY2_0: 0x00000000,
+        CTX_KEY3_0: 0x00000000,
+        CTX_CTR0_0: 0x00000000,
+        CTX_CTR1_0: 0x00000000,
+        CTX_RGD_W0_0: 0x00000000,
+        CTX_RGD_W1_0: 0x000003F8,
+        CTX_KEY0_1: 0x00000000,
+        CTX_KEY1_1: 0x00000000,
+        CTX_KEY2_1: 0x00000000,
+        CTX_KEY3_1: 0x00000000,
+        CTX_CTR0_1: 0x00000000,
+        CTX_CTR1_1: 0x00000000,
+        CTX_RGD_W0_1: 0x00000000,
+        CTX_RGD_W1_1: 0x000003F8,
+        CTX_KEY0_2: 0x00000000,
+        CTX_KEY1_2: 0x00000000,
+        CTX_KEY2_2: 0x00000000,
+        CTX_KEY3_2: 0x00000000,
+        CTX_CTR0_2: 0x00000000,
+        CTX_CTR1_2: 0x00000000,
+        CTX_RGD_W0_2: 0x00000000,
+        CTX_RGD_W1_2: 0x000003F8,
+        CTX_KEY0_3: 0x00000000,
+        CTX_KEY1_3: 0x00000000,
+        CTX_KEY2_3: 0x00000000,
+        CTX_KEY3_3: 0x00000000,
+        CTX_CTR0_3: 0x00000000,
+        CTX_CTR1_3: 0x00000000,
+        CTX_RGD_W0_3: 0x00000000,
+        CTX_RGD_W1_3: 0x000003F8,
     };
 
     /// Safe access to OTFAD

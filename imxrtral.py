@@ -1892,7 +1892,7 @@ def expand_cluster(node):
     nodes = []
     for register in node.findall('register'):
         addr = cluster_addr + get_int(register, 'addressOffset')
-        name = get_string(register, 'name') + str(cluster_idx)
+        name = get_string(register, 'name') + "_" + str(cluster_idx)
         clusr = copy.deepcopy(register)
         clusr.find('addressOffset').text = "0x{:08x}".format(addr)
         clusr.find('name').text = name

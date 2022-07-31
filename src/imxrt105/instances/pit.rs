@@ -8,8 +8,8 @@ pub use crate::imxrt105::peripherals::pit::Instance;
 pub use crate::imxrt105::peripherals::pit::{RegisterBlock, ResetValues};
 
 pub use crate::imxrt105::peripherals::pit::{
-    CVAL0, CVAL1, CVAL2, CVAL3, LDVAL0, LDVAL1, LDVAL2, LDVAL3, LTMR64H, LTMR64L, MCR, TCTRL0,
-    TCTRL1, TCTRL2, TCTRL3, TFLG0, TFLG1, TFLG2, TFLG3,
+    CVAL_0, CVAL_1, CVAL_2, CVAL_3, LDVAL_0, LDVAL_1, LDVAL_2, LDVAL_3, LTMR64H, LTMR64L, MCR,
+    TCTRL_0, TCTRL_1, TCTRL_2, TCTRL_3, TFLG_0, TFLG_1, TFLG_2, TFLG_3,
 };
 #[cfg(not(feature = "nosync"))]
 use core::sync::atomic::{AtomicBool, Ordering};
@@ -65,22 +65,22 @@ impl PIT {
         MCR: 0x00000002,
         LTMR64H: 0x00000000,
         LTMR64L: 0x00000000,
-        LDVAL0: 0x00000000,
-        CVAL0: 0x00000000,
-        TCTRL0: 0x00000000,
-        TFLG0: 0x00000000,
-        LDVAL1: 0x00000000,
-        CVAL1: 0x00000000,
-        TCTRL1: 0x00000000,
-        TFLG1: 0x00000000,
-        LDVAL2: 0x00000000,
-        CVAL2: 0x00000000,
-        TCTRL2: 0x00000000,
-        TFLG2: 0x00000000,
-        LDVAL3: 0x00000000,
-        CVAL3: 0x00000000,
-        TCTRL3: 0x00000000,
-        TFLG3: 0x00000000,
+        LDVAL_0: 0x00000000,
+        CVAL_0: 0x00000000,
+        TCTRL_0: 0x00000000,
+        TFLG_0: 0x00000000,
+        LDVAL_1: 0x00000000,
+        CVAL_1: 0x00000000,
+        TCTRL_1: 0x00000000,
+        TFLG_1: 0x00000000,
+        LDVAL_2: 0x00000000,
+        CVAL_2: 0x00000000,
+        TCTRL_2: 0x00000000,
+        TFLG_2: 0x00000000,
+        LDVAL_3: 0x00000000,
+        CVAL_3: 0x00000000,
+        TCTRL_3: 0x00000000,
+        TFLG_3: 0x00000000,
     };
 
     /// Safe access to PIT

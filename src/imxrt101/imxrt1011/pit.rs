@@ -89,7 +89,7 @@ pub mod LTMR64L {
 }
 
 /// Timer Load Value Register
-pub mod LDVAL0 {
+pub mod LDVAL_0 {
 
     /// Timer Start Value
     pub mod TSV {
@@ -107,7 +107,7 @@ pub mod LDVAL0 {
 }
 
 /// Current Timer Value Register
-pub mod CVAL0 {
+pub mod CVAL_0 {
 
     /// Current Timer Value
     pub mod TVL {
@@ -125,7 +125,7 @@ pub mod CVAL0 {
 }
 
 /// Timer Control Register
-pub mod TCTRL0 {
+pub mod TCTRL_0 {
 
     /// Timer Enable
     pub mod TEN {
@@ -192,7 +192,7 @@ pub mod TCTRL0 {
 }
 
 /// Timer Flag Register
-pub mod TFLG0 {
+pub mod TFLG_0 {
 
     /// Timer Interrupt Flag
     pub mod TIF {
@@ -217,69 +217,69 @@ pub mod TFLG0 {
 }
 
 /// Timer Load Value Register
-pub mod LDVAL1 {
-    pub use super::LDVAL0::TSV;
+pub mod LDVAL_1 {
+    pub use super::LDVAL_0::TSV;
 }
 
 /// Current Timer Value Register
-pub mod CVAL1 {
-    pub use super::CVAL0::TVL;
+pub mod CVAL_1 {
+    pub use super::CVAL_0::TVL;
 }
 
 /// Timer Control Register
-pub mod TCTRL1 {
-    pub use super::TCTRL0::CHN;
-    pub use super::TCTRL0::TEN;
-    pub use super::TCTRL0::TIE;
+pub mod TCTRL_1 {
+    pub use super::TCTRL_0::CHN;
+    pub use super::TCTRL_0::TEN;
+    pub use super::TCTRL_0::TIE;
 }
 
 /// Timer Flag Register
-pub mod TFLG1 {
-    pub use super::TFLG0::TIF;
+pub mod TFLG_1 {
+    pub use super::TFLG_0::TIF;
 }
 
 /// Timer Load Value Register
-pub mod LDVAL2 {
-    pub use super::LDVAL0::TSV;
+pub mod LDVAL_2 {
+    pub use super::LDVAL_0::TSV;
 }
 
 /// Current Timer Value Register
-pub mod CVAL2 {
-    pub use super::CVAL0::TVL;
+pub mod CVAL_2 {
+    pub use super::CVAL_0::TVL;
 }
 
 /// Timer Control Register
-pub mod TCTRL2 {
-    pub use super::TCTRL0::CHN;
-    pub use super::TCTRL0::TEN;
-    pub use super::TCTRL0::TIE;
+pub mod TCTRL_2 {
+    pub use super::TCTRL_0::CHN;
+    pub use super::TCTRL_0::TEN;
+    pub use super::TCTRL_0::TIE;
 }
 
 /// Timer Flag Register
-pub mod TFLG2 {
-    pub use super::TFLG0::TIF;
+pub mod TFLG_2 {
+    pub use super::TFLG_0::TIF;
 }
 
 /// Timer Load Value Register
-pub mod LDVAL3 {
-    pub use super::LDVAL0::TSV;
+pub mod LDVAL_3 {
+    pub use super::LDVAL_0::TSV;
 }
 
 /// Current Timer Value Register
-pub mod CVAL3 {
-    pub use super::CVAL0::TVL;
+pub mod CVAL_3 {
+    pub use super::CVAL_0::TVL;
 }
 
 /// Timer Control Register
-pub mod TCTRL3 {
-    pub use super::TCTRL0::CHN;
-    pub use super::TCTRL0::TEN;
-    pub use super::TCTRL0::TIE;
+pub mod TCTRL_3 {
+    pub use super::TCTRL_0::CHN;
+    pub use super::TCTRL_0::TEN;
+    pub use super::TCTRL_0::TIE;
 }
 
 /// Timer Flag Register
-pub mod TFLG3 {
-    pub use super::TFLG0::TIF;
+pub mod TFLG_3 {
+    pub use super::TFLG_0::TIF;
 }
 #[repr(C)]
 pub struct RegisterBlock {
@@ -297,73 +297,73 @@ pub struct RegisterBlock {
     _reserved2: [u32; 6],
 
     /// Timer Load Value Register
-    pub LDVAL0: RWRegister<u32>,
+    pub LDVAL_0: RWRegister<u32>,
 
     /// Current Timer Value Register
-    pub CVAL0: RORegister<u32>,
+    pub CVAL_0: RORegister<u32>,
 
     /// Timer Control Register
-    pub TCTRL0: RWRegister<u32>,
+    pub TCTRL_0: RWRegister<u32>,
 
     /// Timer Flag Register
-    pub TFLG0: RWRegister<u32>,
+    pub TFLG_0: RWRegister<u32>,
 
     /// Timer Load Value Register
-    pub LDVAL1: RWRegister<u32>,
+    pub LDVAL_1: RWRegister<u32>,
 
     /// Current Timer Value Register
-    pub CVAL1: RORegister<u32>,
+    pub CVAL_1: RORegister<u32>,
 
     /// Timer Control Register
-    pub TCTRL1: RWRegister<u32>,
+    pub TCTRL_1: RWRegister<u32>,
 
     /// Timer Flag Register
-    pub TFLG1: RWRegister<u32>,
+    pub TFLG_1: RWRegister<u32>,
 
     /// Timer Load Value Register
-    pub LDVAL2: RWRegister<u32>,
+    pub LDVAL_2: RWRegister<u32>,
 
     /// Current Timer Value Register
-    pub CVAL2: RORegister<u32>,
+    pub CVAL_2: RORegister<u32>,
 
     /// Timer Control Register
-    pub TCTRL2: RWRegister<u32>,
+    pub TCTRL_2: RWRegister<u32>,
 
     /// Timer Flag Register
-    pub TFLG2: RWRegister<u32>,
+    pub TFLG_2: RWRegister<u32>,
 
     /// Timer Load Value Register
-    pub LDVAL3: RWRegister<u32>,
+    pub LDVAL_3: RWRegister<u32>,
 
     /// Current Timer Value Register
-    pub CVAL3: RORegister<u32>,
+    pub CVAL_3: RORegister<u32>,
 
     /// Timer Control Register
-    pub TCTRL3: RWRegister<u32>,
+    pub TCTRL_3: RWRegister<u32>,
 
     /// Timer Flag Register
-    pub TFLG3: RWRegister<u32>,
+    pub TFLG_3: RWRegister<u32>,
 }
 pub struct ResetValues {
     pub MCR: u32,
     pub LTMR64H: u32,
     pub LTMR64L: u32,
-    pub LDVAL0: u32,
-    pub CVAL0: u32,
-    pub TCTRL0: u32,
-    pub TFLG0: u32,
-    pub LDVAL1: u32,
-    pub CVAL1: u32,
-    pub TCTRL1: u32,
-    pub TFLG1: u32,
-    pub LDVAL2: u32,
-    pub CVAL2: u32,
-    pub TCTRL2: u32,
-    pub TFLG2: u32,
-    pub LDVAL3: u32,
-    pub CVAL3: u32,
-    pub TCTRL3: u32,
-    pub TFLG3: u32,
+    pub LDVAL_0: u32,
+    pub CVAL_0: u32,
+    pub TCTRL_0: u32,
+    pub TFLG_0: u32,
+    pub LDVAL_1: u32,
+    pub CVAL_1: u32,
+    pub TCTRL_1: u32,
+    pub TFLG_1: u32,
+    pub LDVAL_2: u32,
+    pub CVAL_2: u32,
+    pub TCTRL_2: u32,
+    pub TFLG_2: u32,
+    pub LDVAL_3: u32,
+    pub CVAL_3: u32,
+    pub TCTRL_3: u32,
+    pub TFLG_3: u32,
 }
 pub struct Instance<const N: u8> {
     #[cfg_attr(feature = "nosync", allow(unused))]
@@ -449,22 +449,22 @@ impl PIT {
         MCR: 0x00000002,
         LTMR64H: 0x00000000,
         LTMR64L: 0x00000000,
-        LDVAL0: 0x00000000,
-        CVAL0: 0x00000000,
-        TCTRL0: 0x00000000,
-        TFLG0: 0x00000000,
-        LDVAL1: 0x00000000,
-        CVAL1: 0x00000000,
-        TCTRL1: 0x00000000,
-        TFLG1: 0x00000000,
-        LDVAL2: 0x00000000,
-        CVAL2: 0x00000000,
-        TCTRL2: 0x00000000,
-        TFLG2: 0x00000000,
-        LDVAL3: 0x00000000,
-        CVAL3: 0x00000000,
-        TCTRL3: 0x00000000,
-        TFLG3: 0x00000000,
+        LDVAL_0: 0x00000000,
+        CVAL_0: 0x00000000,
+        TCTRL_0: 0x00000000,
+        TFLG_0: 0x00000000,
+        LDVAL_1: 0x00000000,
+        CVAL_1: 0x00000000,
+        TCTRL_1: 0x00000000,
+        TFLG_1: 0x00000000,
+        LDVAL_2: 0x00000000,
+        CVAL_2: 0x00000000,
+        TCTRL_2: 0x00000000,
+        TFLG_2: 0x00000000,
+        LDVAL_3: 0x00000000,
+        CVAL_3: 0x00000000,
+        TCTRL_3: 0x00000000,
+        TFLG_3: 0x00000000,
     };
 
     /// Safe access to PIT

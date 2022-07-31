@@ -938,7 +938,7 @@ pub mod FCTRL20 {
 }
 
 /// Counter Register
-pub mod SMCNT0 {
+pub mod SMCNT_0 {
 
     /// Counter Register Bits
     pub mod CNT {
@@ -956,7 +956,7 @@ pub mod SMCNT0 {
 }
 
 /// Initial Count Register
-pub mod SMINIT0 {
+pub mod SMINIT_0 {
 
     /// Initial Count Register Bits
     pub mod INIT {
@@ -974,7 +974,7 @@ pub mod SMINIT0 {
 }
 
 /// Control 2 Register
-pub mod SMCTRL20 {
+pub mod SMCTRL2_0 {
 
     /// Clock Source Select
     pub mod CLK_SEL {
@@ -1215,7 +1215,7 @@ pub mod SMCTRL20 {
 }
 
 /// Control Register
-pub mod SMCTRL0 {
+pub mod SMCTRL_0 {
 
     /// Double Switching Enable
     pub mod DBLEN {
@@ -1482,7 +1482,7 @@ pub mod SMCTRL0 {
 }
 
 /// Value Register 0
-pub mod SMVAL00 {
+pub mod SMVAL0_0 {
 
     /// Value Register 0
     pub mod VAL0 {
@@ -1500,7 +1500,7 @@ pub mod SMVAL00 {
 }
 
 /// Fractional Value Register 1
-pub mod SMFRACVAL10 {
+pub mod SMFRACVAL1_0 {
 
     /// Fractional Value 1 Register
     pub mod FRACVAL1 {
@@ -1518,7 +1518,7 @@ pub mod SMFRACVAL10 {
 }
 
 /// Value Register 1
-pub mod SMVAL10 {
+pub mod SMVAL1_0 {
 
     /// Value Register 1
     pub mod VAL1 {
@@ -1536,7 +1536,7 @@ pub mod SMVAL10 {
 }
 
 /// Fractional Value Register 2
-pub mod SMFRACVAL20 {
+pub mod SMFRACVAL2_0 {
 
     /// Fractional Value 2
     pub mod FRACVAL2 {
@@ -1554,7 +1554,7 @@ pub mod SMFRACVAL20 {
 }
 
 /// Value Register 2
-pub mod SMVAL20 {
+pub mod SMVAL2_0 {
 
     /// Value Register 2
     pub mod VAL2 {
@@ -1572,7 +1572,7 @@ pub mod SMVAL20 {
 }
 
 /// Fractional Value Register 3
-pub mod SMFRACVAL30 {
+pub mod SMFRACVAL3_0 {
 
     /// Fractional Value 3
     pub mod FRACVAL3 {
@@ -1590,7 +1590,7 @@ pub mod SMFRACVAL30 {
 }
 
 /// Value Register 3
-pub mod SMVAL30 {
+pub mod SMVAL3_0 {
 
     /// Value Register 3
     pub mod VAL3 {
@@ -1608,7 +1608,7 @@ pub mod SMVAL30 {
 }
 
 /// Fractional Value Register 4
-pub mod SMFRACVAL40 {
+pub mod SMFRACVAL4_0 {
 
     /// Fractional Value 4
     pub mod FRACVAL4 {
@@ -1626,7 +1626,7 @@ pub mod SMFRACVAL40 {
 }
 
 /// Value Register 4
-pub mod SMVAL40 {
+pub mod SMVAL4_0 {
 
     /// Value Register 4
     pub mod VAL4 {
@@ -1644,7 +1644,7 @@ pub mod SMVAL40 {
 }
 
 /// Fractional Value Register 5
-pub mod SMFRACVAL50 {
+pub mod SMFRACVAL5_0 {
 
     /// Fractional Value 5
     pub mod FRACVAL5 {
@@ -1662,7 +1662,7 @@ pub mod SMFRACVAL50 {
 }
 
 /// Value Register 5
-pub mod SMVAL50 {
+pub mod SMVAL5_0 {
 
     /// Value Register 5
     pub mod VAL5 {
@@ -1680,7 +1680,7 @@ pub mod SMVAL50 {
 }
 
 /// Fractional Control Register
-pub mod SMFRCTRL0 {
+pub mod SMFRCTRL_0 {
 
     /// Fractional Cycle PWM Period Enable
     pub mod FRAC1_EN {
@@ -1782,7 +1782,7 @@ pub mod SMFRCTRL0 {
 }
 
 /// Output Control Register
-pub mod SMOCTRL0 {
+pub mod SMOCTRL_0 {
 
     /// PWM_X Fault State
     pub mod PWMXFS {
@@ -1972,7 +1972,7 @@ pub mod SMOCTRL0 {
 }
 
 /// Status Register
-pub mod SMSTS0 {
+pub mod SMSTS_0 {
 
     /// Compare Flags
     pub mod CMPF {
@@ -2144,7 +2144,7 @@ pub mod SMSTS0 {
 }
 
 /// Interrupt Enable Register
-pub mod SMINTEN0 {
+pub mod SMINTEN_0 {
 
     /// Compare Interrupt Enables
     pub mod CMPIE {
@@ -2337,7 +2337,7 @@ pub mod SMINTEN0 {
 }
 
 /// DMA Enable Register
-pub mod SMDMAEN0 {
+pub mod SMDMAEN_0 {
 
     /// Capture X0 FIFO DMA Enable
     pub mod CX0DE {
@@ -2494,7 +2494,7 @@ pub mod SMDMAEN0 {
 }
 
 /// Output Trigger Control Register
-pub mod SMTCTRL0 {
+pub mod SMTCTRL_0 {
 
     /// Output Trigger Enables
     pub mod OUT_TRIG_EN {
@@ -2582,7 +2582,7 @@ pub mod SMTCTRL0 {
 }
 
 /// Fault Disable Mapping Register 0
-pub mod SMDISMAP00 {
+pub mod SMDISMAP0_0 {
 
     /// PWM_A Fault Disable Mask 0
     pub mod DIS0A {
@@ -2628,7 +2628,7 @@ pub mod SMDISMAP00 {
 }
 
 /// Fault Disable Mapping Register 1
-pub mod SMDISMAP10 {
+pub mod SMDISMAP1_0 {
 
     /// PWM_A Fault Disable Mask 1
     pub mod DIS1A {
@@ -2674,7 +2674,7 @@ pub mod SMDISMAP10 {
 }
 
 /// Deadtime Count Register 0
-pub mod SMDTCNT00 {
+pub mod SMDTCNT0_0 {
 
     /// DTCNT0
     pub mod DTCNT0 {
@@ -2692,7 +2692,7 @@ pub mod SMDTCNT00 {
 }
 
 /// Deadtime Count Register 1
-pub mod SMDTCNT10 {
+pub mod SMDTCNT1_0 {
 
     /// DTCNT1
     pub mod DTCNT1 {
@@ -2710,7 +2710,7 @@ pub mod SMDTCNT10 {
 }
 
 /// Capture Control A Register
-pub mod SMCAPTCTRLA0 {
+pub mod SMCAPTCTRLA_0 {
 
     /// Arm A
     pub mod ARMA {
@@ -2894,7 +2894,7 @@ pub mod SMCAPTCTRLA0 {
 }
 
 /// Capture Compare A Register
-pub mod SMCAPTCOMPA0 {
+pub mod SMCAPTCOMPA_0 {
 
     /// Edge Compare A
     pub mod EDGCMPA {
@@ -2926,7 +2926,7 @@ pub mod SMCAPTCOMPA0 {
 }
 
 /// Capture Control B Register
-pub mod SMCAPTCTRLB0 {
+pub mod SMCAPTCTRLB_0 {
 
     /// Arm B
     pub mod ARMB {
@@ -3110,7 +3110,7 @@ pub mod SMCAPTCTRLB0 {
 }
 
 /// Capture Compare B Register
-pub mod SMCAPTCOMPB0 {
+pub mod SMCAPTCOMPB_0 {
 
     /// Edge Compare B
     pub mod EDGCMPB {
@@ -3142,7 +3142,7 @@ pub mod SMCAPTCOMPB0 {
 }
 
 /// Capture Control X Register
-pub mod SMCAPTCTRLX0 {
+pub mod SMCAPTCTRLX_0 {
 
     /// Arm X
     pub mod ARMX {
@@ -3326,7 +3326,7 @@ pub mod SMCAPTCTRLX0 {
 }
 
 /// Capture Compare X Register
-pub mod SMCAPTCOMPX0 {
+pub mod SMCAPTCOMPX_0 {
 
     /// Edge Compare X
     pub mod EDGCMPX {
@@ -3358,7 +3358,7 @@ pub mod SMCAPTCOMPX0 {
 }
 
 /// Capture Value 0 Register
-pub mod SMCVAL00 {
+pub mod SMCVAL0_0 {
 
     /// CAPTVAL0
     pub mod CAPTVAL0 {
@@ -3376,7 +3376,7 @@ pub mod SMCVAL00 {
 }
 
 /// Capture Value 0 Cycle Register
-pub mod SMCVAL0CYC0 {
+pub mod SMCVAL0CYC_0 {
 
     /// CVAL0CYC
     pub mod CVAL0CYC {
@@ -3394,7 +3394,7 @@ pub mod SMCVAL0CYC0 {
 }
 
 /// Capture Value 1 Register
-pub mod SMCVAL10 {
+pub mod SMCVAL1_0 {
 
     /// CAPTVAL1
     pub mod CAPTVAL1 {
@@ -3412,7 +3412,7 @@ pub mod SMCVAL10 {
 }
 
 /// Capture Value 1 Cycle Register
-pub mod SMCVAL1CYC0 {
+pub mod SMCVAL1CYC_0 {
 
     /// CVAL1CYC
     pub mod CVAL1CYC {
@@ -3430,7 +3430,7 @@ pub mod SMCVAL1CYC0 {
 }
 
 /// Capture Value 2 Register
-pub mod SMCVAL20 {
+pub mod SMCVAL2_0 {
 
     /// CAPTVAL2
     pub mod CAPTVAL2 {
@@ -3448,7 +3448,7 @@ pub mod SMCVAL20 {
 }
 
 /// Capture Value 2 Cycle Register
-pub mod SMCVAL2CYC0 {
+pub mod SMCVAL2CYC_0 {
 
     /// CVAL2CYC
     pub mod CVAL2CYC {
@@ -3466,7 +3466,7 @@ pub mod SMCVAL2CYC0 {
 }
 
 /// Capture Value 3 Register
-pub mod SMCVAL30 {
+pub mod SMCVAL3_0 {
 
     /// CAPTVAL3
     pub mod CAPTVAL3 {
@@ -3484,7 +3484,7 @@ pub mod SMCVAL30 {
 }
 
 /// Capture Value 3 Cycle Register
-pub mod SMCVAL3CYC0 {
+pub mod SMCVAL3CYC_0 {
 
     /// CVAL3CYC
     pub mod CVAL3CYC {
@@ -3502,7 +3502,7 @@ pub mod SMCVAL3CYC0 {
 }
 
 /// Capture Value 4 Register
-pub mod SMCVAL40 {
+pub mod SMCVAL4_0 {
 
     /// CAPTVAL4
     pub mod CAPTVAL4 {
@@ -3520,7 +3520,7 @@ pub mod SMCVAL40 {
 }
 
 /// Capture Value 4 Cycle Register
-pub mod SMCVAL4CYC0 {
+pub mod SMCVAL4CYC_0 {
 
     /// CVAL4CYC
     pub mod CVAL4CYC {
@@ -3538,7 +3538,7 @@ pub mod SMCVAL4CYC0 {
 }
 
 /// Capture Value 5 Register
-pub mod SMCVAL50 {
+pub mod SMCVAL5_0 {
 
     /// CAPTVAL5
     pub mod CAPTVAL5 {
@@ -3556,7 +3556,7 @@ pub mod SMCVAL50 {
 }
 
 /// Capture Value 5 Cycle Register
-pub mod SMCVAL5CYC0 {
+pub mod SMCVAL5CYC_0 {
 
     /// CVAL5CYC
     pub mod CVAL5CYC {
@@ -3574,1453 +3574,1453 @@ pub mod SMCVAL5CYC0 {
 }
 
 /// Counter Register
-pub mod SMCNT1 {
-    pub use super::SMCNT0::CNT;
+pub mod SMCNT_1 {
+    pub use super::SMCNT_0::CNT;
 }
 
 /// Initial Count Register
-pub mod SMINIT1 {
-    pub use super::SMINIT0::INIT;
+pub mod SMINIT_1 {
+    pub use super::SMINIT_0::INIT;
 }
 
 /// Control 2 Register
-pub mod SMCTRL21 {
-    pub use super::SMCTRL20::CLK_SEL;
-    pub use super::SMCTRL20::DBGEN;
-    pub use super::SMCTRL20::FORCE;
-    pub use super::SMCTRL20::FORCE_SEL;
-    pub use super::SMCTRL20::FRCEN;
-    pub use super::SMCTRL20::INDEP;
-    pub use super::SMCTRL20::INIT_SEL;
-    pub use super::SMCTRL20::PWM23_INIT;
-    pub use super::SMCTRL20::PWM45_INIT;
-    pub use super::SMCTRL20::PWMX_INIT;
-    pub use super::SMCTRL20::RELOAD_SEL;
-    pub use super::SMCTRL20::WAITEN;
+pub mod SMCTRL2_1 {
+    pub use super::SMCTRL2_0::CLK_SEL;
+    pub use super::SMCTRL2_0::DBGEN;
+    pub use super::SMCTRL2_0::FORCE;
+    pub use super::SMCTRL2_0::FORCE_SEL;
+    pub use super::SMCTRL2_0::FRCEN;
+    pub use super::SMCTRL2_0::INDEP;
+    pub use super::SMCTRL2_0::INIT_SEL;
+    pub use super::SMCTRL2_0::PWM23_INIT;
+    pub use super::SMCTRL2_0::PWM45_INIT;
+    pub use super::SMCTRL2_0::PWMX_INIT;
+    pub use super::SMCTRL2_0::RELOAD_SEL;
+    pub use super::SMCTRL2_0::WAITEN;
 }
 
 /// Control Register
-pub mod SMCTRL1 {
-    pub use super::SMCTRL0::COMPMODE;
-    pub use super::SMCTRL0::DBLEN;
-    pub use super::SMCTRL0::DBLX;
-    pub use super::SMCTRL0::DT;
-    pub use super::SMCTRL0::FULL;
-    pub use super::SMCTRL0::HALF;
-    pub use super::SMCTRL0::LDFQ;
-    pub use super::SMCTRL0::LDMOD;
-    pub use super::SMCTRL0::PRSC;
-    pub use super::SMCTRL0::SPLIT;
+pub mod SMCTRL_1 {
+    pub use super::SMCTRL_0::COMPMODE;
+    pub use super::SMCTRL_0::DBLEN;
+    pub use super::SMCTRL_0::DBLX;
+    pub use super::SMCTRL_0::DT;
+    pub use super::SMCTRL_0::FULL;
+    pub use super::SMCTRL_0::HALF;
+    pub use super::SMCTRL_0::LDFQ;
+    pub use super::SMCTRL_0::LDMOD;
+    pub use super::SMCTRL_0::PRSC;
+    pub use super::SMCTRL_0::SPLIT;
 }
 
 /// Value Register 0
-pub mod SMVAL01 {
-    pub use super::SMVAL00::VAL0;
+pub mod SMVAL0_1 {
+    pub use super::SMVAL0_0::VAL0;
 }
 
 /// Fractional Value Register 1
-pub mod SMFRACVAL11 {
-    pub use super::SMFRACVAL10::FRACVAL1;
+pub mod SMFRACVAL1_1 {
+    pub use super::SMFRACVAL1_0::FRACVAL1;
 }
 
 /// Value Register 1
-pub mod SMVAL11 {
-    pub use super::SMVAL10::VAL1;
+pub mod SMVAL1_1 {
+    pub use super::SMVAL1_0::VAL1;
 }
 
 /// Fractional Value Register 2
-pub mod SMFRACVAL21 {
-    pub use super::SMFRACVAL20::FRACVAL2;
+pub mod SMFRACVAL2_1 {
+    pub use super::SMFRACVAL2_0::FRACVAL2;
 }
 
 /// Value Register 2
-pub mod SMVAL21 {
-    pub use super::SMVAL20::VAL2;
+pub mod SMVAL2_1 {
+    pub use super::SMVAL2_0::VAL2;
 }
 
 /// Fractional Value Register 3
-pub mod SMFRACVAL31 {
-    pub use super::SMFRACVAL30::FRACVAL3;
+pub mod SMFRACVAL3_1 {
+    pub use super::SMFRACVAL3_0::FRACVAL3;
 }
 
 /// Value Register 3
-pub mod SMVAL31 {
-    pub use super::SMVAL30::VAL3;
+pub mod SMVAL3_1 {
+    pub use super::SMVAL3_0::VAL3;
 }
 
 /// Fractional Value Register 4
-pub mod SMFRACVAL41 {
-    pub use super::SMFRACVAL40::FRACVAL4;
+pub mod SMFRACVAL4_1 {
+    pub use super::SMFRACVAL4_0::FRACVAL4;
 }
 
 /// Value Register 4
-pub mod SMVAL41 {
-    pub use super::SMVAL40::VAL4;
+pub mod SMVAL4_1 {
+    pub use super::SMVAL4_0::VAL4;
 }
 
 /// Fractional Value Register 5
-pub mod SMFRACVAL51 {
-    pub use super::SMFRACVAL50::FRACVAL5;
+pub mod SMFRACVAL5_1 {
+    pub use super::SMFRACVAL5_0::FRACVAL5;
 }
 
 /// Value Register 5
-pub mod SMVAL51 {
-    pub use super::SMVAL50::VAL5;
+pub mod SMVAL5_1 {
+    pub use super::SMVAL5_0::VAL5;
 }
 
 /// Fractional Control Register
-pub mod SMFRCTRL1 {
-    pub use super::SMFRCTRL0::FRAC1_EN;
-    pub use super::SMFRCTRL0::FRAC23_EN;
-    pub use super::SMFRCTRL0::FRAC45_EN;
-    pub use super::SMFRCTRL0::FRAC_PU;
-    pub use super::SMFRCTRL0::TEST;
+pub mod SMFRCTRL_1 {
+    pub use super::SMFRCTRL_0::FRAC1_EN;
+    pub use super::SMFRCTRL_0::FRAC23_EN;
+    pub use super::SMFRCTRL_0::FRAC45_EN;
+    pub use super::SMFRCTRL_0::FRAC_PU;
+    pub use super::SMFRCTRL_0::TEST;
 }
 
 /// Output Control Register
-pub mod SMOCTRL1 {
-    pub use super::SMOCTRL0::POLA;
-    pub use super::SMOCTRL0::POLB;
-    pub use super::SMOCTRL0::POLX;
-    pub use super::SMOCTRL0::PWMAFS;
-    pub use super::SMOCTRL0::PWMA_IN;
-    pub use super::SMOCTRL0::PWMBFS;
-    pub use super::SMOCTRL0::PWMB_IN;
-    pub use super::SMOCTRL0::PWMXFS;
-    pub use super::SMOCTRL0::PWMX_IN;
+pub mod SMOCTRL_1 {
+    pub use super::SMOCTRL_0::POLA;
+    pub use super::SMOCTRL_0::POLB;
+    pub use super::SMOCTRL_0::POLX;
+    pub use super::SMOCTRL_0::PWMAFS;
+    pub use super::SMOCTRL_0::PWMA_IN;
+    pub use super::SMOCTRL_0::PWMBFS;
+    pub use super::SMOCTRL_0::PWMB_IN;
+    pub use super::SMOCTRL_0::PWMXFS;
+    pub use super::SMOCTRL_0::PWMX_IN;
 }
 
 /// Status Register
-pub mod SMSTS1 {
-    pub use super::SMSTS0::CFA0;
-    pub use super::SMSTS0::CFA1;
-    pub use super::SMSTS0::CFB0;
-    pub use super::SMSTS0::CFB1;
-    pub use super::SMSTS0::CFX0;
-    pub use super::SMSTS0::CFX1;
-    pub use super::SMSTS0::CMPF;
-    pub use super::SMSTS0::REF;
-    pub use super::SMSTS0::RF;
-    pub use super::SMSTS0::RUF;
+pub mod SMSTS_1 {
+    pub use super::SMSTS_0::CFA0;
+    pub use super::SMSTS_0::CFA1;
+    pub use super::SMSTS_0::CFB0;
+    pub use super::SMSTS_0::CFB1;
+    pub use super::SMSTS_0::CFX0;
+    pub use super::SMSTS_0::CFX1;
+    pub use super::SMSTS_0::CMPF;
+    pub use super::SMSTS_0::REF;
+    pub use super::SMSTS_0::RF;
+    pub use super::SMSTS_0::RUF;
 }
 
 /// Interrupt Enable Register
-pub mod SMINTEN1 {
-    pub use super::SMINTEN0::CA0IE;
-    pub use super::SMINTEN0::CA1IE;
-    pub use super::SMINTEN0::CB0IE;
-    pub use super::SMINTEN0::CB1IE;
-    pub use super::SMINTEN0::CMPIE;
-    pub use super::SMINTEN0::CX0IE;
-    pub use super::SMINTEN0::CX1IE;
-    pub use super::SMINTEN0::REIE;
-    pub use super::SMINTEN0::RIE;
+pub mod SMINTEN_1 {
+    pub use super::SMINTEN_0::CA0IE;
+    pub use super::SMINTEN_0::CA1IE;
+    pub use super::SMINTEN_0::CB0IE;
+    pub use super::SMINTEN_0::CB1IE;
+    pub use super::SMINTEN_0::CMPIE;
+    pub use super::SMINTEN_0::CX0IE;
+    pub use super::SMINTEN_0::CX1IE;
+    pub use super::SMINTEN_0::REIE;
+    pub use super::SMINTEN_0::RIE;
 }
 
 /// DMA Enable Register
-pub mod SMDMAEN1 {
-    pub use super::SMDMAEN0::CA0DE;
-    pub use super::SMDMAEN0::CA1DE;
-    pub use super::SMDMAEN0::CAPTDE;
-    pub use super::SMDMAEN0::CB0DE;
-    pub use super::SMDMAEN0::CB1DE;
-    pub use super::SMDMAEN0::CX0DE;
-    pub use super::SMDMAEN0::CX1DE;
-    pub use super::SMDMAEN0::FAND;
-    pub use super::SMDMAEN0::VALDE;
+pub mod SMDMAEN_1 {
+    pub use super::SMDMAEN_0::CA0DE;
+    pub use super::SMDMAEN_0::CA1DE;
+    pub use super::SMDMAEN_0::CAPTDE;
+    pub use super::SMDMAEN_0::CB0DE;
+    pub use super::SMDMAEN_0::CB1DE;
+    pub use super::SMDMAEN_0::CX0DE;
+    pub use super::SMDMAEN_0::CX1DE;
+    pub use super::SMDMAEN_0::FAND;
+    pub use super::SMDMAEN_0::VALDE;
 }
 
 /// Output Trigger Control Register
-pub mod SMTCTRL1 {
-    pub use super::SMTCTRL0::OUT_TRIG_EN;
-    pub use super::SMTCTRL0::PWAOT0;
-    pub use super::SMTCTRL0::PWBOT1;
-    pub use super::SMTCTRL0::TRGFRQ;
+pub mod SMTCTRL_1 {
+    pub use super::SMTCTRL_0::OUT_TRIG_EN;
+    pub use super::SMTCTRL_0::PWAOT0;
+    pub use super::SMTCTRL_0::PWBOT1;
+    pub use super::SMTCTRL_0::TRGFRQ;
 }
 
 /// Fault Disable Mapping Register 0
-pub mod SMDISMAP01 {
-    pub use super::SMDISMAP00::DIS0A;
-    pub use super::SMDISMAP00::DIS0B;
-    pub use super::SMDISMAP00::DIS0X;
+pub mod SMDISMAP0_1 {
+    pub use super::SMDISMAP0_0::DIS0A;
+    pub use super::SMDISMAP0_0::DIS0B;
+    pub use super::SMDISMAP0_0::DIS0X;
 }
 
 /// Fault Disable Mapping Register 1
-pub mod SMDISMAP11 {
-    pub use super::SMDISMAP10::DIS1A;
-    pub use super::SMDISMAP10::DIS1B;
-    pub use super::SMDISMAP10::DIS1X;
+pub mod SMDISMAP1_1 {
+    pub use super::SMDISMAP1_0::DIS1A;
+    pub use super::SMDISMAP1_0::DIS1B;
+    pub use super::SMDISMAP1_0::DIS1X;
 }
 
 /// Deadtime Count Register 0
-pub mod SMDTCNT01 {
-    pub use super::SMDTCNT00::DTCNT0;
+pub mod SMDTCNT0_1 {
+    pub use super::SMDTCNT0_0::DTCNT0;
 }
 
 /// Deadtime Count Register 1
-pub mod SMDTCNT11 {
-    pub use super::SMDTCNT10::DTCNT1;
+pub mod SMDTCNT1_1 {
+    pub use super::SMDTCNT1_0::DTCNT1;
 }
 
 /// Capture Control A Register
-pub mod SMCAPTCTRLA1 {
-    pub use super::SMCAPTCTRLA0::ARMA;
-    pub use super::SMCAPTCTRLA0::CA0CNT;
-    pub use super::SMCAPTCTRLA0::CA1CNT;
-    pub use super::SMCAPTCTRLA0::CFAWM;
-    pub use super::SMCAPTCTRLA0::EDGA0;
-    pub use super::SMCAPTCTRLA0::EDGA1;
-    pub use super::SMCAPTCTRLA0::EDGCNTA_EN;
-    pub use super::SMCAPTCTRLA0::INP_SELA;
-    pub use super::SMCAPTCTRLA0::ONESHOTA;
+pub mod SMCAPTCTRLA_1 {
+    pub use super::SMCAPTCTRLA_0::ARMA;
+    pub use super::SMCAPTCTRLA_0::CA0CNT;
+    pub use super::SMCAPTCTRLA_0::CA1CNT;
+    pub use super::SMCAPTCTRLA_0::CFAWM;
+    pub use super::SMCAPTCTRLA_0::EDGA0;
+    pub use super::SMCAPTCTRLA_0::EDGA1;
+    pub use super::SMCAPTCTRLA_0::EDGCNTA_EN;
+    pub use super::SMCAPTCTRLA_0::INP_SELA;
+    pub use super::SMCAPTCTRLA_0::ONESHOTA;
 }
 
 /// Capture Compare A Register
-pub mod SMCAPTCOMPA1 {
-    pub use super::SMCAPTCOMPA0::EDGCMPA;
-    pub use super::SMCAPTCOMPA0::EDGCNTA;
+pub mod SMCAPTCOMPA_1 {
+    pub use super::SMCAPTCOMPA_0::EDGCMPA;
+    pub use super::SMCAPTCOMPA_0::EDGCNTA;
 }
 
 /// Capture Control B Register
-pub mod SMCAPTCTRLB1 {
-    pub use super::SMCAPTCTRLB0::ARMB;
-    pub use super::SMCAPTCTRLB0::CB0CNT;
-    pub use super::SMCAPTCTRLB0::CB1CNT;
-    pub use super::SMCAPTCTRLB0::CFBWM;
-    pub use super::SMCAPTCTRLB0::EDGB0;
-    pub use super::SMCAPTCTRLB0::EDGB1;
-    pub use super::SMCAPTCTRLB0::EDGCNTB_EN;
-    pub use super::SMCAPTCTRLB0::INP_SELB;
-    pub use super::SMCAPTCTRLB0::ONESHOTB;
+pub mod SMCAPTCTRLB_1 {
+    pub use super::SMCAPTCTRLB_0::ARMB;
+    pub use super::SMCAPTCTRLB_0::CB0CNT;
+    pub use super::SMCAPTCTRLB_0::CB1CNT;
+    pub use super::SMCAPTCTRLB_0::CFBWM;
+    pub use super::SMCAPTCTRLB_0::EDGB0;
+    pub use super::SMCAPTCTRLB_0::EDGB1;
+    pub use super::SMCAPTCTRLB_0::EDGCNTB_EN;
+    pub use super::SMCAPTCTRLB_0::INP_SELB;
+    pub use super::SMCAPTCTRLB_0::ONESHOTB;
 }
 
 /// Capture Compare B Register
-pub mod SMCAPTCOMPB1 {
-    pub use super::SMCAPTCOMPB0::EDGCMPB;
-    pub use super::SMCAPTCOMPB0::EDGCNTB;
+pub mod SMCAPTCOMPB_1 {
+    pub use super::SMCAPTCOMPB_0::EDGCMPB;
+    pub use super::SMCAPTCOMPB_0::EDGCNTB;
 }
 
 /// Capture Control X Register
-pub mod SMCAPTCTRLX1 {
-    pub use super::SMCAPTCTRLX0::ARMX;
-    pub use super::SMCAPTCTRLX0::CFXWM;
-    pub use super::SMCAPTCTRLX0::CX0CNT;
-    pub use super::SMCAPTCTRLX0::CX1CNT;
-    pub use super::SMCAPTCTRLX0::EDGCNTX_EN;
-    pub use super::SMCAPTCTRLX0::EDGX0;
-    pub use super::SMCAPTCTRLX0::EDGX1;
-    pub use super::SMCAPTCTRLX0::INP_SELX;
-    pub use super::SMCAPTCTRLX0::ONESHOTX;
+pub mod SMCAPTCTRLX_1 {
+    pub use super::SMCAPTCTRLX_0::ARMX;
+    pub use super::SMCAPTCTRLX_0::CFXWM;
+    pub use super::SMCAPTCTRLX_0::CX0CNT;
+    pub use super::SMCAPTCTRLX_0::CX1CNT;
+    pub use super::SMCAPTCTRLX_0::EDGCNTX_EN;
+    pub use super::SMCAPTCTRLX_0::EDGX0;
+    pub use super::SMCAPTCTRLX_0::EDGX1;
+    pub use super::SMCAPTCTRLX_0::INP_SELX;
+    pub use super::SMCAPTCTRLX_0::ONESHOTX;
 }
 
 /// Capture Compare X Register
-pub mod SMCAPTCOMPX1 {
-    pub use super::SMCAPTCOMPX0::EDGCMPX;
-    pub use super::SMCAPTCOMPX0::EDGCNTX;
+pub mod SMCAPTCOMPX_1 {
+    pub use super::SMCAPTCOMPX_0::EDGCMPX;
+    pub use super::SMCAPTCOMPX_0::EDGCNTX;
 }
 
 /// Capture Value 0 Register
-pub mod SMCVAL01 {
-    pub use super::SMCVAL00::CAPTVAL0;
+pub mod SMCVAL0_1 {
+    pub use super::SMCVAL0_0::CAPTVAL0;
 }
 
 /// Capture Value 0 Cycle Register
-pub mod SMCVAL0CYC1 {
-    pub use super::SMCVAL0CYC0::CVAL0CYC;
+pub mod SMCVAL0CYC_1 {
+    pub use super::SMCVAL0CYC_0::CVAL0CYC;
 }
 
 /// Capture Value 1 Register
-pub mod SMCVAL11 {
-    pub use super::SMCVAL10::CAPTVAL1;
+pub mod SMCVAL1_1 {
+    pub use super::SMCVAL1_0::CAPTVAL1;
 }
 
 /// Capture Value 1 Cycle Register
-pub mod SMCVAL1CYC1 {
-    pub use super::SMCVAL1CYC0::CVAL1CYC;
+pub mod SMCVAL1CYC_1 {
+    pub use super::SMCVAL1CYC_0::CVAL1CYC;
 }
 
 /// Capture Value 2 Register
-pub mod SMCVAL21 {
-    pub use super::SMCVAL20::CAPTVAL2;
+pub mod SMCVAL2_1 {
+    pub use super::SMCVAL2_0::CAPTVAL2;
 }
 
 /// Capture Value 2 Cycle Register
-pub mod SMCVAL2CYC1 {
-    pub use super::SMCVAL2CYC0::CVAL2CYC;
+pub mod SMCVAL2CYC_1 {
+    pub use super::SMCVAL2CYC_0::CVAL2CYC;
 }
 
 /// Capture Value 3 Register
-pub mod SMCVAL31 {
-    pub use super::SMCVAL30::CAPTVAL3;
+pub mod SMCVAL3_1 {
+    pub use super::SMCVAL3_0::CAPTVAL3;
 }
 
 /// Capture Value 3 Cycle Register
-pub mod SMCVAL3CYC1 {
-    pub use super::SMCVAL3CYC0::CVAL3CYC;
+pub mod SMCVAL3CYC_1 {
+    pub use super::SMCVAL3CYC_0::CVAL3CYC;
 }
 
 /// Capture Value 4 Register
-pub mod SMCVAL41 {
-    pub use super::SMCVAL40::CAPTVAL4;
+pub mod SMCVAL4_1 {
+    pub use super::SMCVAL4_0::CAPTVAL4;
 }
 
 /// Capture Value 4 Cycle Register
-pub mod SMCVAL4CYC1 {
-    pub use super::SMCVAL4CYC0::CVAL4CYC;
+pub mod SMCVAL4CYC_1 {
+    pub use super::SMCVAL4CYC_0::CVAL4CYC;
 }
 
 /// Capture Value 5 Register
-pub mod SMCVAL51 {
-    pub use super::SMCVAL50::CAPTVAL5;
+pub mod SMCVAL5_1 {
+    pub use super::SMCVAL5_0::CAPTVAL5;
 }
 
 /// Capture Value 5 Cycle Register
-pub mod SMCVAL5CYC1 {
-    pub use super::SMCVAL5CYC0::CVAL5CYC;
+pub mod SMCVAL5CYC_1 {
+    pub use super::SMCVAL5CYC_0::CVAL5CYC;
 }
 
 /// Counter Register
-pub mod SMCNT2 {
-    pub use super::SMCNT0::CNT;
+pub mod SMCNT_2 {
+    pub use super::SMCNT_0::CNT;
 }
 
 /// Initial Count Register
-pub mod SMINIT2 {
-    pub use super::SMINIT0::INIT;
+pub mod SMINIT_2 {
+    pub use super::SMINIT_0::INIT;
 }
 
 /// Control 2 Register
-pub mod SMCTRL22 {
-    pub use super::SMCTRL20::CLK_SEL;
-    pub use super::SMCTRL20::DBGEN;
-    pub use super::SMCTRL20::FORCE;
-    pub use super::SMCTRL20::FORCE_SEL;
-    pub use super::SMCTRL20::FRCEN;
-    pub use super::SMCTRL20::INDEP;
-    pub use super::SMCTRL20::INIT_SEL;
-    pub use super::SMCTRL20::PWM23_INIT;
-    pub use super::SMCTRL20::PWM45_INIT;
-    pub use super::SMCTRL20::PWMX_INIT;
-    pub use super::SMCTRL20::RELOAD_SEL;
-    pub use super::SMCTRL20::WAITEN;
+pub mod SMCTRL2_2 {
+    pub use super::SMCTRL2_0::CLK_SEL;
+    pub use super::SMCTRL2_0::DBGEN;
+    pub use super::SMCTRL2_0::FORCE;
+    pub use super::SMCTRL2_0::FORCE_SEL;
+    pub use super::SMCTRL2_0::FRCEN;
+    pub use super::SMCTRL2_0::INDEP;
+    pub use super::SMCTRL2_0::INIT_SEL;
+    pub use super::SMCTRL2_0::PWM23_INIT;
+    pub use super::SMCTRL2_0::PWM45_INIT;
+    pub use super::SMCTRL2_0::PWMX_INIT;
+    pub use super::SMCTRL2_0::RELOAD_SEL;
+    pub use super::SMCTRL2_0::WAITEN;
 }
 
 /// Control Register
-pub mod SMCTRL2 {
-    pub use super::SMCTRL0::COMPMODE;
-    pub use super::SMCTRL0::DBLEN;
-    pub use super::SMCTRL0::DBLX;
-    pub use super::SMCTRL0::DT;
-    pub use super::SMCTRL0::FULL;
-    pub use super::SMCTRL0::HALF;
-    pub use super::SMCTRL0::LDFQ;
-    pub use super::SMCTRL0::LDMOD;
-    pub use super::SMCTRL0::PRSC;
-    pub use super::SMCTRL0::SPLIT;
+pub mod SMCTRL_2 {
+    pub use super::SMCTRL_0::COMPMODE;
+    pub use super::SMCTRL_0::DBLEN;
+    pub use super::SMCTRL_0::DBLX;
+    pub use super::SMCTRL_0::DT;
+    pub use super::SMCTRL_0::FULL;
+    pub use super::SMCTRL_0::HALF;
+    pub use super::SMCTRL_0::LDFQ;
+    pub use super::SMCTRL_0::LDMOD;
+    pub use super::SMCTRL_0::PRSC;
+    pub use super::SMCTRL_0::SPLIT;
 }
 
 /// Value Register 0
-pub mod SMVAL02 {
-    pub use super::SMVAL00::VAL0;
+pub mod SMVAL0_2 {
+    pub use super::SMVAL0_0::VAL0;
 }
 
 /// Fractional Value Register 1
-pub mod SMFRACVAL12 {
-    pub use super::SMFRACVAL10::FRACVAL1;
+pub mod SMFRACVAL1_2 {
+    pub use super::SMFRACVAL1_0::FRACVAL1;
 }
 
 /// Value Register 1
-pub mod SMVAL12 {
-    pub use super::SMVAL10::VAL1;
+pub mod SMVAL1_2 {
+    pub use super::SMVAL1_0::VAL1;
 }
 
 /// Fractional Value Register 2
-pub mod SMFRACVAL22 {
-    pub use super::SMFRACVAL20::FRACVAL2;
+pub mod SMFRACVAL2_2 {
+    pub use super::SMFRACVAL2_0::FRACVAL2;
 }
 
 /// Value Register 2
-pub mod SMVAL22 {
-    pub use super::SMVAL20::VAL2;
+pub mod SMVAL2_2 {
+    pub use super::SMVAL2_0::VAL2;
 }
 
 /// Fractional Value Register 3
-pub mod SMFRACVAL32 {
-    pub use super::SMFRACVAL30::FRACVAL3;
+pub mod SMFRACVAL3_2 {
+    pub use super::SMFRACVAL3_0::FRACVAL3;
 }
 
 /// Value Register 3
-pub mod SMVAL32 {
-    pub use super::SMVAL30::VAL3;
+pub mod SMVAL3_2 {
+    pub use super::SMVAL3_0::VAL3;
 }
 
 /// Fractional Value Register 4
-pub mod SMFRACVAL42 {
-    pub use super::SMFRACVAL40::FRACVAL4;
+pub mod SMFRACVAL4_2 {
+    pub use super::SMFRACVAL4_0::FRACVAL4;
 }
 
 /// Value Register 4
-pub mod SMVAL42 {
-    pub use super::SMVAL40::VAL4;
+pub mod SMVAL4_2 {
+    pub use super::SMVAL4_0::VAL4;
 }
 
 /// Fractional Value Register 5
-pub mod SMFRACVAL52 {
-    pub use super::SMFRACVAL50::FRACVAL5;
+pub mod SMFRACVAL5_2 {
+    pub use super::SMFRACVAL5_0::FRACVAL5;
 }
 
 /// Value Register 5
-pub mod SMVAL52 {
-    pub use super::SMVAL50::VAL5;
+pub mod SMVAL5_2 {
+    pub use super::SMVAL5_0::VAL5;
 }
 
 /// Fractional Control Register
-pub mod SMFRCTRL2 {
-    pub use super::SMFRCTRL0::FRAC1_EN;
-    pub use super::SMFRCTRL0::FRAC23_EN;
-    pub use super::SMFRCTRL0::FRAC45_EN;
-    pub use super::SMFRCTRL0::FRAC_PU;
-    pub use super::SMFRCTRL0::TEST;
+pub mod SMFRCTRL_2 {
+    pub use super::SMFRCTRL_0::FRAC1_EN;
+    pub use super::SMFRCTRL_0::FRAC23_EN;
+    pub use super::SMFRCTRL_0::FRAC45_EN;
+    pub use super::SMFRCTRL_0::FRAC_PU;
+    pub use super::SMFRCTRL_0::TEST;
 }
 
 /// Output Control Register
-pub mod SMOCTRL2 {
-    pub use super::SMOCTRL0::POLA;
-    pub use super::SMOCTRL0::POLB;
-    pub use super::SMOCTRL0::POLX;
-    pub use super::SMOCTRL0::PWMAFS;
-    pub use super::SMOCTRL0::PWMA_IN;
-    pub use super::SMOCTRL0::PWMBFS;
-    pub use super::SMOCTRL0::PWMB_IN;
-    pub use super::SMOCTRL0::PWMXFS;
-    pub use super::SMOCTRL0::PWMX_IN;
+pub mod SMOCTRL_2 {
+    pub use super::SMOCTRL_0::POLA;
+    pub use super::SMOCTRL_0::POLB;
+    pub use super::SMOCTRL_0::POLX;
+    pub use super::SMOCTRL_0::PWMAFS;
+    pub use super::SMOCTRL_0::PWMA_IN;
+    pub use super::SMOCTRL_0::PWMBFS;
+    pub use super::SMOCTRL_0::PWMB_IN;
+    pub use super::SMOCTRL_0::PWMXFS;
+    pub use super::SMOCTRL_0::PWMX_IN;
 }
 
 /// Status Register
-pub mod SMSTS2 {
-    pub use super::SMSTS0::CFA0;
-    pub use super::SMSTS0::CFA1;
-    pub use super::SMSTS0::CFB0;
-    pub use super::SMSTS0::CFB1;
-    pub use super::SMSTS0::CFX0;
-    pub use super::SMSTS0::CFX1;
-    pub use super::SMSTS0::CMPF;
-    pub use super::SMSTS0::REF;
-    pub use super::SMSTS0::RF;
-    pub use super::SMSTS0::RUF;
+pub mod SMSTS_2 {
+    pub use super::SMSTS_0::CFA0;
+    pub use super::SMSTS_0::CFA1;
+    pub use super::SMSTS_0::CFB0;
+    pub use super::SMSTS_0::CFB1;
+    pub use super::SMSTS_0::CFX0;
+    pub use super::SMSTS_0::CFX1;
+    pub use super::SMSTS_0::CMPF;
+    pub use super::SMSTS_0::REF;
+    pub use super::SMSTS_0::RF;
+    pub use super::SMSTS_0::RUF;
 }
 
 /// Interrupt Enable Register
-pub mod SMINTEN2 {
-    pub use super::SMINTEN0::CA0IE;
-    pub use super::SMINTEN0::CA1IE;
-    pub use super::SMINTEN0::CB0IE;
-    pub use super::SMINTEN0::CB1IE;
-    pub use super::SMINTEN0::CMPIE;
-    pub use super::SMINTEN0::CX0IE;
-    pub use super::SMINTEN0::CX1IE;
-    pub use super::SMINTEN0::REIE;
-    pub use super::SMINTEN0::RIE;
+pub mod SMINTEN_2 {
+    pub use super::SMINTEN_0::CA0IE;
+    pub use super::SMINTEN_0::CA1IE;
+    pub use super::SMINTEN_0::CB0IE;
+    pub use super::SMINTEN_0::CB1IE;
+    pub use super::SMINTEN_0::CMPIE;
+    pub use super::SMINTEN_0::CX0IE;
+    pub use super::SMINTEN_0::CX1IE;
+    pub use super::SMINTEN_0::REIE;
+    pub use super::SMINTEN_0::RIE;
 }
 
 /// DMA Enable Register
-pub mod SMDMAEN2 {
-    pub use super::SMDMAEN0::CA0DE;
-    pub use super::SMDMAEN0::CA1DE;
-    pub use super::SMDMAEN0::CAPTDE;
-    pub use super::SMDMAEN0::CB0DE;
-    pub use super::SMDMAEN0::CB1DE;
-    pub use super::SMDMAEN0::CX0DE;
-    pub use super::SMDMAEN0::CX1DE;
-    pub use super::SMDMAEN0::FAND;
-    pub use super::SMDMAEN0::VALDE;
+pub mod SMDMAEN_2 {
+    pub use super::SMDMAEN_0::CA0DE;
+    pub use super::SMDMAEN_0::CA1DE;
+    pub use super::SMDMAEN_0::CAPTDE;
+    pub use super::SMDMAEN_0::CB0DE;
+    pub use super::SMDMAEN_0::CB1DE;
+    pub use super::SMDMAEN_0::CX0DE;
+    pub use super::SMDMAEN_0::CX1DE;
+    pub use super::SMDMAEN_0::FAND;
+    pub use super::SMDMAEN_0::VALDE;
 }
 
 /// Output Trigger Control Register
-pub mod SMTCTRL2 {
-    pub use super::SMTCTRL0::OUT_TRIG_EN;
-    pub use super::SMTCTRL0::PWAOT0;
-    pub use super::SMTCTRL0::PWBOT1;
-    pub use super::SMTCTRL0::TRGFRQ;
+pub mod SMTCTRL_2 {
+    pub use super::SMTCTRL_0::OUT_TRIG_EN;
+    pub use super::SMTCTRL_0::PWAOT0;
+    pub use super::SMTCTRL_0::PWBOT1;
+    pub use super::SMTCTRL_0::TRGFRQ;
 }
 
 /// Fault Disable Mapping Register 0
-pub mod SMDISMAP02 {
-    pub use super::SMDISMAP00::DIS0A;
-    pub use super::SMDISMAP00::DIS0B;
-    pub use super::SMDISMAP00::DIS0X;
+pub mod SMDISMAP0_2 {
+    pub use super::SMDISMAP0_0::DIS0A;
+    pub use super::SMDISMAP0_0::DIS0B;
+    pub use super::SMDISMAP0_0::DIS0X;
 }
 
 /// Fault Disable Mapping Register 1
-pub mod SMDISMAP12 {
-    pub use super::SMDISMAP10::DIS1A;
-    pub use super::SMDISMAP10::DIS1B;
-    pub use super::SMDISMAP10::DIS1X;
+pub mod SMDISMAP1_2 {
+    pub use super::SMDISMAP1_0::DIS1A;
+    pub use super::SMDISMAP1_0::DIS1B;
+    pub use super::SMDISMAP1_0::DIS1X;
 }
 
 /// Deadtime Count Register 0
-pub mod SMDTCNT02 {
-    pub use super::SMDTCNT00::DTCNT0;
+pub mod SMDTCNT0_2 {
+    pub use super::SMDTCNT0_0::DTCNT0;
 }
 
 /// Deadtime Count Register 1
-pub mod SMDTCNT12 {
-    pub use super::SMDTCNT10::DTCNT1;
+pub mod SMDTCNT1_2 {
+    pub use super::SMDTCNT1_0::DTCNT1;
 }
 
 /// Capture Control A Register
-pub mod SMCAPTCTRLA2 {
-    pub use super::SMCAPTCTRLA0::ARMA;
-    pub use super::SMCAPTCTRLA0::CA0CNT;
-    pub use super::SMCAPTCTRLA0::CA1CNT;
-    pub use super::SMCAPTCTRLA0::CFAWM;
-    pub use super::SMCAPTCTRLA0::EDGA0;
-    pub use super::SMCAPTCTRLA0::EDGA1;
-    pub use super::SMCAPTCTRLA0::EDGCNTA_EN;
-    pub use super::SMCAPTCTRLA0::INP_SELA;
-    pub use super::SMCAPTCTRLA0::ONESHOTA;
+pub mod SMCAPTCTRLA_2 {
+    pub use super::SMCAPTCTRLA_0::ARMA;
+    pub use super::SMCAPTCTRLA_0::CA0CNT;
+    pub use super::SMCAPTCTRLA_0::CA1CNT;
+    pub use super::SMCAPTCTRLA_0::CFAWM;
+    pub use super::SMCAPTCTRLA_0::EDGA0;
+    pub use super::SMCAPTCTRLA_0::EDGA1;
+    pub use super::SMCAPTCTRLA_0::EDGCNTA_EN;
+    pub use super::SMCAPTCTRLA_0::INP_SELA;
+    pub use super::SMCAPTCTRLA_0::ONESHOTA;
 }
 
 /// Capture Compare A Register
-pub mod SMCAPTCOMPA2 {
-    pub use super::SMCAPTCOMPA0::EDGCMPA;
-    pub use super::SMCAPTCOMPA0::EDGCNTA;
+pub mod SMCAPTCOMPA_2 {
+    pub use super::SMCAPTCOMPA_0::EDGCMPA;
+    pub use super::SMCAPTCOMPA_0::EDGCNTA;
 }
 
 /// Capture Control B Register
-pub mod SMCAPTCTRLB2 {
-    pub use super::SMCAPTCTRLB0::ARMB;
-    pub use super::SMCAPTCTRLB0::CB0CNT;
-    pub use super::SMCAPTCTRLB0::CB1CNT;
-    pub use super::SMCAPTCTRLB0::CFBWM;
-    pub use super::SMCAPTCTRLB0::EDGB0;
-    pub use super::SMCAPTCTRLB0::EDGB1;
-    pub use super::SMCAPTCTRLB0::EDGCNTB_EN;
-    pub use super::SMCAPTCTRLB0::INP_SELB;
-    pub use super::SMCAPTCTRLB0::ONESHOTB;
+pub mod SMCAPTCTRLB_2 {
+    pub use super::SMCAPTCTRLB_0::ARMB;
+    pub use super::SMCAPTCTRLB_0::CB0CNT;
+    pub use super::SMCAPTCTRLB_0::CB1CNT;
+    pub use super::SMCAPTCTRLB_0::CFBWM;
+    pub use super::SMCAPTCTRLB_0::EDGB0;
+    pub use super::SMCAPTCTRLB_0::EDGB1;
+    pub use super::SMCAPTCTRLB_0::EDGCNTB_EN;
+    pub use super::SMCAPTCTRLB_0::INP_SELB;
+    pub use super::SMCAPTCTRLB_0::ONESHOTB;
 }
 
 /// Capture Compare B Register
-pub mod SMCAPTCOMPB2 {
-    pub use super::SMCAPTCOMPB0::EDGCMPB;
-    pub use super::SMCAPTCOMPB0::EDGCNTB;
+pub mod SMCAPTCOMPB_2 {
+    pub use super::SMCAPTCOMPB_0::EDGCMPB;
+    pub use super::SMCAPTCOMPB_0::EDGCNTB;
 }
 
 /// Capture Control X Register
-pub mod SMCAPTCTRLX2 {
-    pub use super::SMCAPTCTRLX0::ARMX;
-    pub use super::SMCAPTCTRLX0::CFXWM;
-    pub use super::SMCAPTCTRLX0::CX0CNT;
-    pub use super::SMCAPTCTRLX0::CX1CNT;
-    pub use super::SMCAPTCTRLX0::EDGCNTX_EN;
-    pub use super::SMCAPTCTRLX0::EDGX0;
-    pub use super::SMCAPTCTRLX0::EDGX1;
-    pub use super::SMCAPTCTRLX0::INP_SELX;
-    pub use super::SMCAPTCTRLX0::ONESHOTX;
+pub mod SMCAPTCTRLX_2 {
+    pub use super::SMCAPTCTRLX_0::ARMX;
+    pub use super::SMCAPTCTRLX_0::CFXWM;
+    pub use super::SMCAPTCTRLX_0::CX0CNT;
+    pub use super::SMCAPTCTRLX_0::CX1CNT;
+    pub use super::SMCAPTCTRLX_0::EDGCNTX_EN;
+    pub use super::SMCAPTCTRLX_0::EDGX0;
+    pub use super::SMCAPTCTRLX_0::EDGX1;
+    pub use super::SMCAPTCTRLX_0::INP_SELX;
+    pub use super::SMCAPTCTRLX_0::ONESHOTX;
 }
 
 /// Capture Compare X Register
-pub mod SMCAPTCOMPX2 {
-    pub use super::SMCAPTCOMPX0::EDGCMPX;
-    pub use super::SMCAPTCOMPX0::EDGCNTX;
+pub mod SMCAPTCOMPX_2 {
+    pub use super::SMCAPTCOMPX_0::EDGCMPX;
+    pub use super::SMCAPTCOMPX_0::EDGCNTX;
 }
 
 /// Capture Value 0 Register
-pub mod SMCVAL02 {
-    pub use super::SMCVAL00::CAPTVAL0;
+pub mod SMCVAL0_2 {
+    pub use super::SMCVAL0_0::CAPTVAL0;
 }
 
 /// Capture Value 0 Cycle Register
-pub mod SMCVAL0CYC2 {
-    pub use super::SMCVAL0CYC0::CVAL0CYC;
+pub mod SMCVAL0CYC_2 {
+    pub use super::SMCVAL0CYC_0::CVAL0CYC;
 }
 
 /// Capture Value 1 Register
-pub mod SMCVAL12 {
-    pub use super::SMCVAL10::CAPTVAL1;
+pub mod SMCVAL1_2 {
+    pub use super::SMCVAL1_0::CAPTVAL1;
 }
 
 /// Capture Value 1 Cycle Register
-pub mod SMCVAL1CYC2 {
-    pub use super::SMCVAL1CYC0::CVAL1CYC;
+pub mod SMCVAL1CYC_2 {
+    pub use super::SMCVAL1CYC_0::CVAL1CYC;
 }
 
 /// Capture Value 2 Register
-pub mod SMCVAL22 {
-    pub use super::SMCVAL20::CAPTVAL2;
+pub mod SMCVAL2_2 {
+    pub use super::SMCVAL2_0::CAPTVAL2;
 }
 
 /// Capture Value 2 Cycle Register
-pub mod SMCVAL2CYC2 {
-    pub use super::SMCVAL2CYC0::CVAL2CYC;
+pub mod SMCVAL2CYC_2 {
+    pub use super::SMCVAL2CYC_0::CVAL2CYC;
 }
 
 /// Capture Value 3 Register
-pub mod SMCVAL32 {
-    pub use super::SMCVAL30::CAPTVAL3;
+pub mod SMCVAL3_2 {
+    pub use super::SMCVAL3_0::CAPTVAL3;
 }
 
 /// Capture Value 3 Cycle Register
-pub mod SMCVAL3CYC2 {
-    pub use super::SMCVAL3CYC0::CVAL3CYC;
+pub mod SMCVAL3CYC_2 {
+    pub use super::SMCVAL3CYC_0::CVAL3CYC;
 }
 
 /// Capture Value 4 Register
-pub mod SMCVAL42 {
-    pub use super::SMCVAL40::CAPTVAL4;
+pub mod SMCVAL4_2 {
+    pub use super::SMCVAL4_0::CAPTVAL4;
 }
 
 /// Capture Value 4 Cycle Register
-pub mod SMCVAL4CYC2 {
-    pub use super::SMCVAL4CYC0::CVAL4CYC;
+pub mod SMCVAL4CYC_2 {
+    pub use super::SMCVAL4CYC_0::CVAL4CYC;
 }
 
 /// Capture Value 5 Register
-pub mod SMCVAL52 {
-    pub use super::SMCVAL50::CAPTVAL5;
+pub mod SMCVAL5_2 {
+    pub use super::SMCVAL5_0::CAPTVAL5;
 }
 
 /// Capture Value 5 Cycle Register
-pub mod SMCVAL5CYC2 {
-    pub use super::SMCVAL5CYC0::CVAL5CYC;
+pub mod SMCVAL5CYC_2 {
+    pub use super::SMCVAL5CYC_0::CVAL5CYC;
 }
 
 /// Counter Register
-pub mod SMCNT3 {
-    pub use super::SMCNT0::CNT;
+pub mod SMCNT_3 {
+    pub use super::SMCNT_0::CNT;
 }
 
 /// Initial Count Register
-pub mod SMINIT3 {
-    pub use super::SMINIT0::INIT;
+pub mod SMINIT_3 {
+    pub use super::SMINIT_0::INIT;
 }
 
 /// Control 2 Register
-pub mod SMCTRL23 {
-    pub use super::SMCTRL20::CLK_SEL;
-    pub use super::SMCTRL20::DBGEN;
-    pub use super::SMCTRL20::FORCE;
-    pub use super::SMCTRL20::FORCE_SEL;
-    pub use super::SMCTRL20::FRCEN;
-    pub use super::SMCTRL20::INDEP;
-    pub use super::SMCTRL20::INIT_SEL;
-    pub use super::SMCTRL20::PWM23_INIT;
-    pub use super::SMCTRL20::PWM45_INIT;
-    pub use super::SMCTRL20::PWMX_INIT;
-    pub use super::SMCTRL20::RELOAD_SEL;
-    pub use super::SMCTRL20::WAITEN;
+pub mod SMCTRL2_3 {
+    pub use super::SMCTRL2_0::CLK_SEL;
+    pub use super::SMCTRL2_0::DBGEN;
+    pub use super::SMCTRL2_0::FORCE;
+    pub use super::SMCTRL2_0::FORCE_SEL;
+    pub use super::SMCTRL2_0::FRCEN;
+    pub use super::SMCTRL2_0::INDEP;
+    pub use super::SMCTRL2_0::INIT_SEL;
+    pub use super::SMCTRL2_0::PWM23_INIT;
+    pub use super::SMCTRL2_0::PWM45_INIT;
+    pub use super::SMCTRL2_0::PWMX_INIT;
+    pub use super::SMCTRL2_0::RELOAD_SEL;
+    pub use super::SMCTRL2_0::WAITEN;
 }
 
 /// Control Register
-pub mod SMCTRL3 {
-    pub use super::SMCTRL0::COMPMODE;
-    pub use super::SMCTRL0::DBLEN;
-    pub use super::SMCTRL0::DBLX;
-    pub use super::SMCTRL0::DT;
-    pub use super::SMCTRL0::FULL;
-    pub use super::SMCTRL0::HALF;
-    pub use super::SMCTRL0::LDFQ;
-    pub use super::SMCTRL0::LDMOD;
-    pub use super::SMCTRL0::PRSC;
-    pub use super::SMCTRL0::SPLIT;
+pub mod SMCTRL_3 {
+    pub use super::SMCTRL_0::COMPMODE;
+    pub use super::SMCTRL_0::DBLEN;
+    pub use super::SMCTRL_0::DBLX;
+    pub use super::SMCTRL_0::DT;
+    pub use super::SMCTRL_0::FULL;
+    pub use super::SMCTRL_0::HALF;
+    pub use super::SMCTRL_0::LDFQ;
+    pub use super::SMCTRL_0::LDMOD;
+    pub use super::SMCTRL_0::PRSC;
+    pub use super::SMCTRL_0::SPLIT;
 }
 
 /// Value Register 0
-pub mod SMVAL03 {
-    pub use super::SMVAL00::VAL0;
+pub mod SMVAL0_3 {
+    pub use super::SMVAL0_0::VAL0;
 }
 
 /// Fractional Value Register 1
-pub mod SMFRACVAL13 {
-    pub use super::SMFRACVAL10::FRACVAL1;
+pub mod SMFRACVAL1_3 {
+    pub use super::SMFRACVAL1_0::FRACVAL1;
 }
 
 /// Value Register 1
-pub mod SMVAL13 {
-    pub use super::SMVAL10::VAL1;
+pub mod SMVAL1_3 {
+    pub use super::SMVAL1_0::VAL1;
 }
 
 /// Fractional Value Register 2
-pub mod SMFRACVAL23 {
-    pub use super::SMFRACVAL20::FRACVAL2;
+pub mod SMFRACVAL2_3 {
+    pub use super::SMFRACVAL2_0::FRACVAL2;
 }
 
 /// Value Register 2
-pub mod SMVAL23 {
-    pub use super::SMVAL20::VAL2;
+pub mod SMVAL2_3 {
+    pub use super::SMVAL2_0::VAL2;
 }
 
 /// Fractional Value Register 3
-pub mod SMFRACVAL33 {
-    pub use super::SMFRACVAL30::FRACVAL3;
+pub mod SMFRACVAL3_3 {
+    pub use super::SMFRACVAL3_0::FRACVAL3;
 }
 
 /// Value Register 3
-pub mod SMVAL33 {
-    pub use super::SMVAL30::VAL3;
+pub mod SMVAL3_3 {
+    pub use super::SMVAL3_0::VAL3;
 }
 
 /// Fractional Value Register 4
-pub mod SMFRACVAL43 {
-    pub use super::SMFRACVAL40::FRACVAL4;
+pub mod SMFRACVAL4_3 {
+    pub use super::SMFRACVAL4_0::FRACVAL4;
 }
 
 /// Value Register 4
-pub mod SMVAL43 {
-    pub use super::SMVAL40::VAL4;
+pub mod SMVAL4_3 {
+    pub use super::SMVAL4_0::VAL4;
 }
 
 /// Fractional Value Register 5
-pub mod SMFRACVAL53 {
-    pub use super::SMFRACVAL50::FRACVAL5;
+pub mod SMFRACVAL5_3 {
+    pub use super::SMFRACVAL5_0::FRACVAL5;
 }
 
 /// Value Register 5
-pub mod SMVAL53 {
-    pub use super::SMVAL50::VAL5;
+pub mod SMVAL5_3 {
+    pub use super::SMVAL5_0::VAL5;
 }
 
 /// Fractional Control Register
-pub mod SMFRCTRL3 {
-    pub use super::SMFRCTRL0::FRAC1_EN;
-    pub use super::SMFRCTRL0::FRAC23_EN;
-    pub use super::SMFRCTRL0::FRAC45_EN;
-    pub use super::SMFRCTRL0::FRAC_PU;
-    pub use super::SMFRCTRL0::TEST;
+pub mod SMFRCTRL_3 {
+    pub use super::SMFRCTRL_0::FRAC1_EN;
+    pub use super::SMFRCTRL_0::FRAC23_EN;
+    pub use super::SMFRCTRL_0::FRAC45_EN;
+    pub use super::SMFRCTRL_0::FRAC_PU;
+    pub use super::SMFRCTRL_0::TEST;
 }
 
 /// Output Control Register
-pub mod SMOCTRL3 {
-    pub use super::SMOCTRL0::POLA;
-    pub use super::SMOCTRL0::POLB;
-    pub use super::SMOCTRL0::POLX;
-    pub use super::SMOCTRL0::PWMAFS;
-    pub use super::SMOCTRL0::PWMA_IN;
-    pub use super::SMOCTRL0::PWMBFS;
-    pub use super::SMOCTRL0::PWMB_IN;
-    pub use super::SMOCTRL0::PWMXFS;
-    pub use super::SMOCTRL0::PWMX_IN;
+pub mod SMOCTRL_3 {
+    pub use super::SMOCTRL_0::POLA;
+    pub use super::SMOCTRL_0::POLB;
+    pub use super::SMOCTRL_0::POLX;
+    pub use super::SMOCTRL_0::PWMAFS;
+    pub use super::SMOCTRL_0::PWMA_IN;
+    pub use super::SMOCTRL_0::PWMBFS;
+    pub use super::SMOCTRL_0::PWMB_IN;
+    pub use super::SMOCTRL_0::PWMXFS;
+    pub use super::SMOCTRL_0::PWMX_IN;
 }
 
 /// Status Register
-pub mod SMSTS3 {
-    pub use super::SMSTS0::CFA0;
-    pub use super::SMSTS0::CFA1;
-    pub use super::SMSTS0::CFB0;
-    pub use super::SMSTS0::CFB1;
-    pub use super::SMSTS0::CFX0;
-    pub use super::SMSTS0::CFX1;
-    pub use super::SMSTS0::CMPF;
-    pub use super::SMSTS0::REF;
-    pub use super::SMSTS0::RF;
-    pub use super::SMSTS0::RUF;
+pub mod SMSTS_3 {
+    pub use super::SMSTS_0::CFA0;
+    pub use super::SMSTS_0::CFA1;
+    pub use super::SMSTS_0::CFB0;
+    pub use super::SMSTS_0::CFB1;
+    pub use super::SMSTS_0::CFX0;
+    pub use super::SMSTS_0::CFX1;
+    pub use super::SMSTS_0::CMPF;
+    pub use super::SMSTS_0::REF;
+    pub use super::SMSTS_0::RF;
+    pub use super::SMSTS_0::RUF;
 }
 
 /// Interrupt Enable Register
-pub mod SMINTEN3 {
-    pub use super::SMINTEN0::CA0IE;
-    pub use super::SMINTEN0::CA1IE;
-    pub use super::SMINTEN0::CB0IE;
-    pub use super::SMINTEN0::CB1IE;
-    pub use super::SMINTEN0::CMPIE;
-    pub use super::SMINTEN0::CX0IE;
-    pub use super::SMINTEN0::CX1IE;
-    pub use super::SMINTEN0::REIE;
-    pub use super::SMINTEN0::RIE;
+pub mod SMINTEN_3 {
+    pub use super::SMINTEN_0::CA0IE;
+    pub use super::SMINTEN_0::CA1IE;
+    pub use super::SMINTEN_0::CB0IE;
+    pub use super::SMINTEN_0::CB1IE;
+    pub use super::SMINTEN_0::CMPIE;
+    pub use super::SMINTEN_0::CX0IE;
+    pub use super::SMINTEN_0::CX1IE;
+    pub use super::SMINTEN_0::REIE;
+    pub use super::SMINTEN_0::RIE;
 }
 
 /// DMA Enable Register
-pub mod SMDMAEN3 {
-    pub use super::SMDMAEN0::CA0DE;
-    pub use super::SMDMAEN0::CA1DE;
-    pub use super::SMDMAEN0::CAPTDE;
-    pub use super::SMDMAEN0::CB0DE;
-    pub use super::SMDMAEN0::CB1DE;
-    pub use super::SMDMAEN0::CX0DE;
-    pub use super::SMDMAEN0::CX1DE;
-    pub use super::SMDMAEN0::FAND;
-    pub use super::SMDMAEN0::VALDE;
+pub mod SMDMAEN_3 {
+    pub use super::SMDMAEN_0::CA0DE;
+    pub use super::SMDMAEN_0::CA1DE;
+    pub use super::SMDMAEN_0::CAPTDE;
+    pub use super::SMDMAEN_0::CB0DE;
+    pub use super::SMDMAEN_0::CB1DE;
+    pub use super::SMDMAEN_0::CX0DE;
+    pub use super::SMDMAEN_0::CX1DE;
+    pub use super::SMDMAEN_0::FAND;
+    pub use super::SMDMAEN_0::VALDE;
 }
 
 /// Output Trigger Control Register
-pub mod SMTCTRL3 {
-    pub use super::SMTCTRL0::OUT_TRIG_EN;
-    pub use super::SMTCTRL0::PWAOT0;
-    pub use super::SMTCTRL0::PWBOT1;
-    pub use super::SMTCTRL0::TRGFRQ;
+pub mod SMTCTRL_3 {
+    pub use super::SMTCTRL_0::OUT_TRIG_EN;
+    pub use super::SMTCTRL_0::PWAOT0;
+    pub use super::SMTCTRL_0::PWBOT1;
+    pub use super::SMTCTRL_0::TRGFRQ;
 }
 
 /// Fault Disable Mapping Register 0
-pub mod SMDISMAP03 {
-    pub use super::SMDISMAP00::DIS0A;
-    pub use super::SMDISMAP00::DIS0B;
-    pub use super::SMDISMAP00::DIS0X;
+pub mod SMDISMAP0_3 {
+    pub use super::SMDISMAP0_0::DIS0A;
+    pub use super::SMDISMAP0_0::DIS0B;
+    pub use super::SMDISMAP0_0::DIS0X;
 }
 
 /// Fault Disable Mapping Register 1
-pub mod SMDISMAP13 {
-    pub use super::SMDISMAP10::DIS1A;
-    pub use super::SMDISMAP10::DIS1B;
-    pub use super::SMDISMAP10::DIS1X;
+pub mod SMDISMAP1_3 {
+    pub use super::SMDISMAP1_0::DIS1A;
+    pub use super::SMDISMAP1_0::DIS1B;
+    pub use super::SMDISMAP1_0::DIS1X;
 }
 
 /// Deadtime Count Register 0
-pub mod SMDTCNT03 {
-    pub use super::SMDTCNT00::DTCNT0;
+pub mod SMDTCNT0_3 {
+    pub use super::SMDTCNT0_0::DTCNT0;
 }
 
 /// Deadtime Count Register 1
-pub mod SMDTCNT13 {
-    pub use super::SMDTCNT10::DTCNT1;
+pub mod SMDTCNT1_3 {
+    pub use super::SMDTCNT1_0::DTCNT1;
 }
 
 /// Capture Control A Register
-pub mod SMCAPTCTRLA3 {
-    pub use super::SMCAPTCTRLA0::ARMA;
-    pub use super::SMCAPTCTRLA0::CA0CNT;
-    pub use super::SMCAPTCTRLA0::CA1CNT;
-    pub use super::SMCAPTCTRLA0::CFAWM;
-    pub use super::SMCAPTCTRLA0::EDGA0;
-    pub use super::SMCAPTCTRLA0::EDGA1;
-    pub use super::SMCAPTCTRLA0::EDGCNTA_EN;
-    pub use super::SMCAPTCTRLA0::INP_SELA;
-    pub use super::SMCAPTCTRLA0::ONESHOTA;
+pub mod SMCAPTCTRLA_3 {
+    pub use super::SMCAPTCTRLA_0::ARMA;
+    pub use super::SMCAPTCTRLA_0::CA0CNT;
+    pub use super::SMCAPTCTRLA_0::CA1CNT;
+    pub use super::SMCAPTCTRLA_0::CFAWM;
+    pub use super::SMCAPTCTRLA_0::EDGA0;
+    pub use super::SMCAPTCTRLA_0::EDGA1;
+    pub use super::SMCAPTCTRLA_0::EDGCNTA_EN;
+    pub use super::SMCAPTCTRLA_0::INP_SELA;
+    pub use super::SMCAPTCTRLA_0::ONESHOTA;
 }
 
 /// Capture Compare A Register
-pub mod SMCAPTCOMPA3 {
-    pub use super::SMCAPTCOMPA0::EDGCMPA;
-    pub use super::SMCAPTCOMPA0::EDGCNTA;
+pub mod SMCAPTCOMPA_3 {
+    pub use super::SMCAPTCOMPA_0::EDGCMPA;
+    pub use super::SMCAPTCOMPA_0::EDGCNTA;
 }
 
 /// Capture Control B Register
-pub mod SMCAPTCTRLB3 {
-    pub use super::SMCAPTCTRLB0::ARMB;
-    pub use super::SMCAPTCTRLB0::CB0CNT;
-    pub use super::SMCAPTCTRLB0::CB1CNT;
-    pub use super::SMCAPTCTRLB0::CFBWM;
-    pub use super::SMCAPTCTRLB0::EDGB0;
-    pub use super::SMCAPTCTRLB0::EDGB1;
-    pub use super::SMCAPTCTRLB0::EDGCNTB_EN;
-    pub use super::SMCAPTCTRLB0::INP_SELB;
-    pub use super::SMCAPTCTRLB0::ONESHOTB;
+pub mod SMCAPTCTRLB_3 {
+    pub use super::SMCAPTCTRLB_0::ARMB;
+    pub use super::SMCAPTCTRLB_0::CB0CNT;
+    pub use super::SMCAPTCTRLB_0::CB1CNT;
+    pub use super::SMCAPTCTRLB_0::CFBWM;
+    pub use super::SMCAPTCTRLB_0::EDGB0;
+    pub use super::SMCAPTCTRLB_0::EDGB1;
+    pub use super::SMCAPTCTRLB_0::EDGCNTB_EN;
+    pub use super::SMCAPTCTRLB_0::INP_SELB;
+    pub use super::SMCAPTCTRLB_0::ONESHOTB;
 }
 
 /// Capture Compare B Register
-pub mod SMCAPTCOMPB3 {
-    pub use super::SMCAPTCOMPB0::EDGCMPB;
-    pub use super::SMCAPTCOMPB0::EDGCNTB;
+pub mod SMCAPTCOMPB_3 {
+    pub use super::SMCAPTCOMPB_0::EDGCMPB;
+    pub use super::SMCAPTCOMPB_0::EDGCNTB;
 }
 
 /// Capture Control X Register
-pub mod SMCAPTCTRLX3 {
-    pub use super::SMCAPTCTRLX0::ARMX;
-    pub use super::SMCAPTCTRLX0::CFXWM;
-    pub use super::SMCAPTCTRLX0::CX0CNT;
-    pub use super::SMCAPTCTRLX0::CX1CNT;
-    pub use super::SMCAPTCTRLX0::EDGCNTX_EN;
-    pub use super::SMCAPTCTRLX0::EDGX0;
-    pub use super::SMCAPTCTRLX0::EDGX1;
-    pub use super::SMCAPTCTRLX0::INP_SELX;
-    pub use super::SMCAPTCTRLX0::ONESHOTX;
+pub mod SMCAPTCTRLX_3 {
+    pub use super::SMCAPTCTRLX_0::ARMX;
+    pub use super::SMCAPTCTRLX_0::CFXWM;
+    pub use super::SMCAPTCTRLX_0::CX0CNT;
+    pub use super::SMCAPTCTRLX_0::CX1CNT;
+    pub use super::SMCAPTCTRLX_0::EDGCNTX_EN;
+    pub use super::SMCAPTCTRLX_0::EDGX0;
+    pub use super::SMCAPTCTRLX_0::EDGX1;
+    pub use super::SMCAPTCTRLX_0::INP_SELX;
+    pub use super::SMCAPTCTRLX_0::ONESHOTX;
 }
 
 /// Capture Compare X Register
-pub mod SMCAPTCOMPX3 {
-    pub use super::SMCAPTCOMPX0::EDGCMPX;
-    pub use super::SMCAPTCOMPX0::EDGCNTX;
+pub mod SMCAPTCOMPX_3 {
+    pub use super::SMCAPTCOMPX_0::EDGCMPX;
+    pub use super::SMCAPTCOMPX_0::EDGCNTX;
 }
 
 /// Capture Value 0 Register
-pub mod SMCVAL03 {
-    pub use super::SMCVAL00::CAPTVAL0;
+pub mod SMCVAL0_3 {
+    pub use super::SMCVAL0_0::CAPTVAL0;
 }
 
 /// Capture Value 0 Cycle Register
-pub mod SMCVAL0CYC3 {
-    pub use super::SMCVAL0CYC0::CVAL0CYC;
+pub mod SMCVAL0CYC_3 {
+    pub use super::SMCVAL0CYC_0::CVAL0CYC;
 }
 
 /// Capture Value 1 Register
-pub mod SMCVAL13 {
-    pub use super::SMCVAL10::CAPTVAL1;
+pub mod SMCVAL1_3 {
+    pub use super::SMCVAL1_0::CAPTVAL1;
 }
 
 /// Capture Value 1 Cycle Register
-pub mod SMCVAL1CYC3 {
-    pub use super::SMCVAL1CYC0::CVAL1CYC;
+pub mod SMCVAL1CYC_3 {
+    pub use super::SMCVAL1CYC_0::CVAL1CYC;
 }
 
 /// Capture Value 2 Register
-pub mod SMCVAL23 {
-    pub use super::SMCVAL20::CAPTVAL2;
+pub mod SMCVAL2_3 {
+    pub use super::SMCVAL2_0::CAPTVAL2;
 }
 
 /// Capture Value 2 Cycle Register
-pub mod SMCVAL2CYC3 {
-    pub use super::SMCVAL2CYC0::CVAL2CYC;
+pub mod SMCVAL2CYC_3 {
+    pub use super::SMCVAL2CYC_0::CVAL2CYC;
 }
 
 /// Capture Value 3 Register
-pub mod SMCVAL33 {
-    pub use super::SMCVAL30::CAPTVAL3;
+pub mod SMCVAL3_3 {
+    pub use super::SMCVAL3_0::CAPTVAL3;
 }
 
 /// Capture Value 3 Cycle Register
-pub mod SMCVAL3CYC3 {
-    pub use super::SMCVAL3CYC0::CVAL3CYC;
+pub mod SMCVAL3CYC_3 {
+    pub use super::SMCVAL3CYC_0::CVAL3CYC;
 }
 
 /// Capture Value 4 Register
-pub mod SMCVAL43 {
-    pub use super::SMCVAL40::CAPTVAL4;
+pub mod SMCVAL4_3 {
+    pub use super::SMCVAL4_0::CAPTVAL4;
 }
 
 /// Capture Value 4 Cycle Register
-pub mod SMCVAL4CYC3 {
-    pub use super::SMCVAL4CYC0::CVAL4CYC;
+pub mod SMCVAL4CYC_3 {
+    pub use super::SMCVAL4CYC_0::CVAL4CYC;
 }
 
 /// Capture Value 5 Register
-pub mod SMCVAL53 {
-    pub use super::SMCVAL50::CAPTVAL5;
+pub mod SMCVAL5_3 {
+    pub use super::SMCVAL5_0::CAPTVAL5;
 }
 
 /// Capture Value 5 Cycle Register
-pub mod SMCVAL5CYC3 {
-    pub use super::SMCVAL5CYC0::CVAL5CYC;
+pub mod SMCVAL5CYC_3 {
+    pub use super::SMCVAL5CYC_0::CVAL5CYC;
 }
 #[repr(C)]
 pub struct RegisterBlock {
     /// Counter Register
-    pub SMCNT0: RORegister<u16>,
+    pub SMCNT_0: RORegister<u16>,
 
     /// Initial Count Register
-    pub SMINIT0: RWRegister<u16>,
+    pub SMINIT_0: RWRegister<u16>,
 
     /// Control 2 Register
-    pub SMCTRL20: RWRegister<u16>,
+    pub SMCTRL2_0: RWRegister<u16>,
 
     /// Control Register
-    pub SMCTRL0: RWRegister<u16>,
+    pub SMCTRL_0: RWRegister<u16>,
 
     _reserved1: [u16; 1],
 
     /// Value Register 0
-    pub SMVAL00: RWRegister<u16>,
+    pub SMVAL0_0: RWRegister<u16>,
 
     /// Fractional Value Register 1
-    pub SMFRACVAL10: RWRegister<u16>,
+    pub SMFRACVAL1_0: RWRegister<u16>,
 
     /// Value Register 1
-    pub SMVAL10: RWRegister<u16>,
+    pub SMVAL1_0: RWRegister<u16>,
 
     /// Fractional Value Register 2
-    pub SMFRACVAL20: RWRegister<u16>,
+    pub SMFRACVAL2_0: RWRegister<u16>,
 
     /// Value Register 2
-    pub SMVAL20: RWRegister<u16>,
+    pub SMVAL2_0: RWRegister<u16>,
 
     /// Fractional Value Register 3
-    pub SMFRACVAL30: RWRegister<u16>,
+    pub SMFRACVAL3_0: RWRegister<u16>,
 
     /// Value Register 3
-    pub SMVAL30: RWRegister<u16>,
+    pub SMVAL3_0: RWRegister<u16>,
 
     /// Fractional Value Register 4
-    pub SMFRACVAL40: RWRegister<u16>,
+    pub SMFRACVAL4_0: RWRegister<u16>,
 
     /// Value Register 4
-    pub SMVAL40: RWRegister<u16>,
+    pub SMVAL4_0: RWRegister<u16>,
 
     /// Fractional Value Register 5
-    pub SMFRACVAL50: RWRegister<u16>,
+    pub SMFRACVAL5_0: RWRegister<u16>,
 
     /// Value Register 5
-    pub SMVAL50: RWRegister<u16>,
+    pub SMVAL5_0: RWRegister<u16>,
 
     /// Fractional Control Register
-    pub SMFRCTRL0: RWRegister<u16>,
+    pub SMFRCTRL_0: RWRegister<u16>,
 
     /// Output Control Register
-    pub SMOCTRL0: RWRegister<u16>,
+    pub SMOCTRL_0: RWRegister<u16>,
 
     /// Status Register
-    pub SMSTS0: RWRegister<u16>,
+    pub SMSTS_0: RWRegister<u16>,
 
     /// Interrupt Enable Register
-    pub SMINTEN0: RWRegister<u16>,
+    pub SMINTEN_0: RWRegister<u16>,
 
     /// DMA Enable Register
-    pub SMDMAEN0: RWRegister<u16>,
+    pub SMDMAEN_0: RWRegister<u16>,
 
     /// Output Trigger Control Register
-    pub SMTCTRL0: RWRegister<u16>,
+    pub SMTCTRL_0: RWRegister<u16>,
 
     /// Fault Disable Mapping Register 0
-    pub SMDISMAP00: RWRegister<u16>,
+    pub SMDISMAP0_0: RWRegister<u16>,
 
     /// Fault Disable Mapping Register 1
-    pub SMDISMAP10: RWRegister<u16>,
+    pub SMDISMAP1_0: RWRegister<u16>,
 
     /// Deadtime Count Register 0
-    pub SMDTCNT00: RWRegister<u16>,
+    pub SMDTCNT0_0: RWRegister<u16>,
 
     /// Deadtime Count Register 1
-    pub SMDTCNT10: RWRegister<u16>,
+    pub SMDTCNT1_0: RWRegister<u16>,
 
     /// Capture Control A Register
-    pub SMCAPTCTRLA0: RWRegister<u16>,
+    pub SMCAPTCTRLA_0: RWRegister<u16>,
 
     /// Capture Compare A Register
-    pub SMCAPTCOMPA0: RWRegister<u16>,
+    pub SMCAPTCOMPA_0: RWRegister<u16>,
 
     /// Capture Control B Register
-    pub SMCAPTCTRLB0: RWRegister<u16>,
+    pub SMCAPTCTRLB_0: RWRegister<u16>,
 
     /// Capture Compare B Register
-    pub SMCAPTCOMPB0: RWRegister<u16>,
+    pub SMCAPTCOMPB_0: RWRegister<u16>,
 
     /// Capture Control X Register
-    pub SMCAPTCTRLX0: RWRegister<u16>,
+    pub SMCAPTCTRLX_0: RWRegister<u16>,
 
     /// Capture Compare X Register
-    pub SMCAPTCOMPX0: RWRegister<u16>,
+    pub SMCAPTCOMPX_0: RWRegister<u16>,
 
     /// Capture Value 0 Register
-    pub SMCVAL00: RORegister<u16>,
+    pub SMCVAL0_0: RORegister<u16>,
 
     /// Capture Value 0 Cycle Register
-    pub SMCVAL0CYC0: RORegister<u16>,
+    pub SMCVAL0CYC_0: RORegister<u16>,
 
     /// Capture Value 1 Register
-    pub SMCVAL10: RORegister<u16>,
+    pub SMCVAL1_0: RORegister<u16>,
 
     /// Capture Value 1 Cycle Register
-    pub SMCVAL1CYC0: RORegister<u16>,
+    pub SMCVAL1CYC_0: RORegister<u16>,
 
     /// Capture Value 2 Register
-    pub SMCVAL20: RORegister<u16>,
+    pub SMCVAL2_0: RORegister<u16>,
 
     /// Capture Value 2 Cycle Register
-    pub SMCVAL2CYC0: RORegister<u16>,
+    pub SMCVAL2CYC_0: RORegister<u16>,
 
     /// Capture Value 3 Register
-    pub SMCVAL30: RORegister<u16>,
+    pub SMCVAL3_0: RORegister<u16>,
 
     /// Capture Value 3 Cycle Register
-    pub SMCVAL3CYC0: RORegister<u16>,
+    pub SMCVAL3CYC_0: RORegister<u16>,
 
     /// Capture Value 4 Register
-    pub SMCVAL40: RORegister<u16>,
+    pub SMCVAL4_0: RORegister<u16>,
 
     /// Capture Value 4 Cycle Register
-    pub SMCVAL4CYC0: RORegister<u16>,
+    pub SMCVAL4CYC_0: RORegister<u16>,
 
     /// Capture Value 5 Register
-    pub SMCVAL50: RORegister<u16>,
+    pub SMCVAL5_0: RORegister<u16>,
 
     /// Capture Value 5 Cycle Register
-    pub SMCVAL5CYC0: RORegister<u16>,
+    pub SMCVAL5CYC_0: RORegister<u16>,
 
     _reserved2: [u32; 2],
 
     /// Counter Register
-    pub SMCNT1: RORegister<u16>,
+    pub SMCNT_1: RORegister<u16>,
 
     /// Initial Count Register
-    pub SMINIT1: RWRegister<u16>,
+    pub SMINIT_1: RWRegister<u16>,
 
     /// Control 2 Register
-    pub SMCTRL21: RWRegister<u16>,
+    pub SMCTRL2_1: RWRegister<u16>,
 
     /// Control Register
-    pub SMCTRL1: RWRegister<u16>,
+    pub SMCTRL_1: RWRegister<u16>,
 
     _reserved3: [u16; 1],
 
     /// Value Register 0
-    pub SMVAL01: RWRegister<u16>,
+    pub SMVAL0_1: RWRegister<u16>,
 
     /// Fractional Value Register 1
-    pub SMFRACVAL11: RWRegister<u16>,
+    pub SMFRACVAL1_1: RWRegister<u16>,
 
     /// Value Register 1
-    pub SMVAL11: RWRegister<u16>,
+    pub SMVAL1_1: RWRegister<u16>,
 
     /// Fractional Value Register 2
-    pub SMFRACVAL21: RWRegister<u16>,
+    pub SMFRACVAL2_1: RWRegister<u16>,
 
     /// Value Register 2
-    pub SMVAL21: RWRegister<u16>,
+    pub SMVAL2_1: RWRegister<u16>,
 
     /// Fractional Value Register 3
-    pub SMFRACVAL31: RWRegister<u16>,
+    pub SMFRACVAL3_1: RWRegister<u16>,
 
     /// Value Register 3
-    pub SMVAL31: RWRegister<u16>,
+    pub SMVAL3_1: RWRegister<u16>,
 
     /// Fractional Value Register 4
-    pub SMFRACVAL41: RWRegister<u16>,
+    pub SMFRACVAL4_1: RWRegister<u16>,
 
     /// Value Register 4
-    pub SMVAL41: RWRegister<u16>,
+    pub SMVAL4_1: RWRegister<u16>,
 
     /// Fractional Value Register 5
-    pub SMFRACVAL51: RWRegister<u16>,
+    pub SMFRACVAL5_1: RWRegister<u16>,
 
     /// Value Register 5
-    pub SMVAL51: RWRegister<u16>,
+    pub SMVAL5_1: RWRegister<u16>,
 
     /// Fractional Control Register
-    pub SMFRCTRL1: RWRegister<u16>,
+    pub SMFRCTRL_1: RWRegister<u16>,
 
     /// Output Control Register
-    pub SMOCTRL1: RWRegister<u16>,
+    pub SMOCTRL_1: RWRegister<u16>,
 
     /// Status Register
-    pub SMSTS1: RWRegister<u16>,
+    pub SMSTS_1: RWRegister<u16>,
 
     /// Interrupt Enable Register
-    pub SMINTEN1: RWRegister<u16>,
+    pub SMINTEN_1: RWRegister<u16>,
 
     /// DMA Enable Register
-    pub SMDMAEN1: RWRegister<u16>,
+    pub SMDMAEN_1: RWRegister<u16>,
 
     /// Output Trigger Control Register
-    pub SMTCTRL1: RWRegister<u16>,
+    pub SMTCTRL_1: RWRegister<u16>,
 
     /// Fault Disable Mapping Register 0
-    pub SMDISMAP01: RWRegister<u16>,
+    pub SMDISMAP0_1: RWRegister<u16>,
 
     /// Fault Disable Mapping Register 1
-    pub SMDISMAP11: RWRegister<u16>,
+    pub SMDISMAP1_1: RWRegister<u16>,
 
     /// Deadtime Count Register 0
-    pub SMDTCNT01: RWRegister<u16>,
+    pub SMDTCNT0_1: RWRegister<u16>,
 
     /// Deadtime Count Register 1
-    pub SMDTCNT11: RWRegister<u16>,
+    pub SMDTCNT1_1: RWRegister<u16>,
 
     /// Capture Control A Register
-    pub SMCAPTCTRLA1: RWRegister<u16>,
+    pub SMCAPTCTRLA_1: RWRegister<u16>,
 
     /// Capture Compare A Register
-    pub SMCAPTCOMPA1: RWRegister<u16>,
+    pub SMCAPTCOMPA_1: RWRegister<u16>,
 
     /// Capture Control B Register
-    pub SMCAPTCTRLB1: RWRegister<u16>,
+    pub SMCAPTCTRLB_1: RWRegister<u16>,
 
     /// Capture Compare B Register
-    pub SMCAPTCOMPB1: RWRegister<u16>,
+    pub SMCAPTCOMPB_1: RWRegister<u16>,
 
     /// Capture Control X Register
-    pub SMCAPTCTRLX1: RWRegister<u16>,
+    pub SMCAPTCTRLX_1: RWRegister<u16>,
 
     /// Capture Compare X Register
-    pub SMCAPTCOMPX1: RWRegister<u16>,
+    pub SMCAPTCOMPX_1: RWRegister<u16>,
 
     /// Capture Value 0 Register
-    pub SMCVAL01: RORegister<u16>,
+    pub SMCVAL0_1: RORegister<u16>,
 
     /// Capture Value 0 Cycle Register
-    pub SMCVAL0CYC1: RORegister<u16>,
+    pub SMCVAL0CYC_1: RORegister<u16>,
 
     /// Capture Value 1 Register
-    pub SMCVAL11: RORegister<u16>,
+    pub SMCVAL1_1: RORegister<u16>,
 
     /// Capture Value 1 Cycle Register
-    pub SMCVAL1CYC1: RORegister<u16>,
+    pub SMCVAL1CYC_1: RORegister<u16>,
 
     /// Capture Value 2 Register
-    pub SMCVAL21: RORegister<u16>,
+    pub SMCVAL2_1: RORegister<u16>,
 
     /// Capture Value 2 Cycle Register
-    pub SMCVAL2CYC1: RORegister<u16>,
+    pub SMCVAL2CYC_1: RORegister<u16>,
 
     /// Capture Value 3 Register
-    pub SMCVAL31: RORegister<u16>,
+    pub SMCVAL3_1: RORegister<u16>,
 
     /// Capture Value 3 Cycle Register
-    pub SMCVAL3CYC1: RORegister<u16>,
+    pub SMCVAL3CYC_1: RORegister<u16>,
 
     /// Capture Value 4 Register
-    pub SMCVAL41: RORegister<u16>,
+    pub SMCVAL4_1: RORegister<u16>,
 
     /// Capture Value 4 Cycle Register
-    pub SMCVAL4CYC1: RORegister<u16>,
+    pub SMCVAL4CYC_1: RORegister<u16>,
 
     /// Capture Value 5 Register
-    pub SMCVAL51: RORegister<u16>,
+    pub SMCVAL5_1: RORegister<u16>,
 
     /// Capture Value 5 Cycle Register
-    pub SMCVAL5CYC1: RORegister<u16>,
+    pub SMCVAL5CYC_1: RORegister<u16>,
 
     _reserved4: [u32; 2],
 
     /// Counter Register
-    pub SMCNT2: RORegister<u16>,
+    pub SMCNT_2: RORegister<u16>,
 
     /// Initial Count Register
-    pub SMINIT2: RWRegister<u16>,
+    pub SMINIT_2: RWRegister<u16>,
 
     /// Control 2 Register
-    pub SMCTRL22: RWRegister<u16>,
+    pub SMCTRL2_2: RWRegister<u16>,
 
     /// Control Register
-    pub SMCTRL2: RWRegister<u16>,
+    pub SMCTRL_2: RWRegister<u16>,
 
     _reserved5: [u16; 1],
 
     /// Value Register 0
-    pub SMVAL02: RWRegister<u16>,
+    pub SMVAL0_2: RWRegister<u16>,
 
     /// Fractional Value Register 1
-    pub SMFRACVAL12: RWRegister<u16>,
+    pub SMFRACVAL1_2: RWRegister<u16>,
 
     /// Value Register 1
-    pub SMVAL12: RWRegister<u16>,
+    pub SMVAL1_2: RWRegister<u16>,
 
     /// Fractional Value Register 2
-    pub SMFRACVAL22: RWRegister<u16>,
+    pub SMFRACVAL2_2: RWRegister<u16>,
 
     /// Value Register 2
-    pub SMVAL22: RWRegister<u16>,
+    pub SMVAL2_2: RWRegister<u16>,
 
     /// Fractional Value Register 3
-    pub SMFRACVAL32: RWRegister<u16>,
+    pub SMFRACVAL3_2: RWRegister<u16>,
 
     /// Value Register 3
-    pub SMVAL32: RWRegister<u16>,
+    pub SMVAL3_2: RWRegister<u16>,
 
     /// Fractional Value Register 4
-    pub SMFRACVAL42: RWRegister<u16>,
+    pub SMFRACVAL4_2: RWRegister<u16>,
 
     /// Value Register 4
-    pub SMVAL42: RWRegister<u16>,
+    pub SMVAL4_2: RWRegister<u16>,
 
     /// Fractional Value Register 5
-    pub SMFRACVAL52: RWRegister<u16>,
+    pub SMFRACVAL5_2: RWRegister<u16>,
 
     /// Value Register 5
-    pub SMVAL52: RWRegister<u16>,
+    pub SMVAL5_2: RWRegister<u16>,
 
     /// Fractional Control Register
-    pub SMFRCTRL2: RWRegister<u16>,
+    pub SMFRCTRL_2: RWRegister<u16>,
 
     /// Output Control Register
-    pub SMOCTRL2: RWRegister<u16>,
+    pub SMOCTRL_2: RWRegister<u16>,
 
     /// Status Register
-    pub SMSTS2: RWRegister<u16>,
+    pub SMSTS_2: RWRegister<u16>,
 
     /// Interrupt Enable Register
-    pub SMINTEN2: RWRegister<u16>,
+    pub SMINTEN_2: RWRegister<u16>,
 
     /// DMA Enable Register
-    pub SMDMAEN2: RWRegister<u16>,
+    pub SMDMAEN_2: RWRegister<u16>,
 
     /// Output Trigger Control Register
-    pub SMTCTRL2: RWRegister<u16>,
+    pub SMTCTRL_2: RWRegister<u16>,
 
     /// Fault Disable Mapping Register 0
-    pub SMDISMAP02: RWRegister<u16>,
+    pub SMDISMAP0_2: RWRegister<u16>,
 
     /// Fault Disable Mapping Register 1
-    pub SMDISMAP12: RWRegister<u16>,
+    pub SMDISMAP1_2: RWRegister<u16>,
 
     /// Deadtime Count Register 0
-    pub SMDTCNT02: RWRegister<u16>,
+    pub SMDTCNT0_2: RWRegister<u16>,
 
     /// Deadtime Count Register 1
-    pub SMDTCNT12: RWRegister<u16>,
+    pub SMDTCNT1_2: RWRegister<u16>,
 
     /// Capture Control A Register
-    pub SMCAPTCTRLA2: RWRegister<u16>,
+    pub SMCAPTCTRLA_2: RWRegister<u16>,
 
     /// Capture Compare A Register
-    pub SMCAPTCOMPA2: RWRegister<u16>,
+    pub SMCAPTCOMPA_2: RWRegister<u16>,
 
     /// Capture Control B Register
-    pub SMCAPTCTRLB2: RWRegister<u16>,
+    pub SMCAPTCTRLB_2: RWRegister<u16>,
 
     /// Capture Compare B Register
-    pub SMCAPTCOMPB2: RWRegister<u16>,
+    pub SMCAPTCOMPB_2: RWRegister<u16>,
 
     /// Capture Control X Register
-    pub SMCAPTCTRLX2: RWRegister<u16>,
+    pub SMCAPTCTRLX_2: RWRegister<u16>,
 
     /// Capture Compare X Register
-    pub SMCAPTCOMPX2: RWRegister<u16>,
+    pub SMCAPTCOMPX_2: RWRegister<u16>,
 
     /// Capture Value 0 Register
-    pub SMCVAL02: RORegister<u16>,
+    pub SMCVAL0_2: RORegister<u16>,
 
     /// Capture Value 0 Cycle Register
-    pub SMCVAL0CYC2: RORegister<u16>,
+    pub SMCVAL0CYC_2: RORegister<u16>,
 
     /// Capture Value 1 Register
-    pub SMCVAL12: RORegister<u16>,
+    pub SMCVAL1_2: RORegister<u16>,
 
     /// Capture Value 1 Cycle Register
-    pub SMCVAL1CYC2: RORegister<u16>,
+    pub SMCVAL1CYC_2: RORegister<u16>,
 
     /// Capture Value 2 Register
-    pub SMCVAL22: RORegister<u16>,
+    pub SMCVAL2_2: RORegister<u16>,
 
     /// Capture Value 2 Cycle Register
-    pub SMCVAL2CYC2: RORegister<u16>,
+    pub SMCVAL2CYC_2: RORegister<u16>,
 
     /// Capture Value 3 Register
-    pub SMCVAL32: RORegister<u16>,
+    pub SMCVAL3_2: RORegister<u16>,
 
     /// Capture Value 3 Cycle Register
-    pub SMCVAL3CYC2: RORegister<u16>,
+    pub SMCVAL3CYC_2: RORegister<u16>,
 
     /// Capture Value 4 Register
-    pub SMCVAL42: RORegister<u16>,
+    pub SMCVAL4_2: RORegister<u16>,
 
     /// Capture Value 4 Cycle Register
-    pub SMCVAL4CYC2: RORegister<u16>,
+    pub SMCVAL4CYC_2: RORegister<u16>,
 
     /// Capture Value 5 Register
-    pub SMCVAL52: RORegister<u16>,
+    pub SMCVAL5_2: RORegister<u16>,
 
     /// Capture Value 5 Cycle Register
-    pub SMCVAL5CYC2: RORegister<u16>,
+    pub SMCVAL5CYC_2: RORegister<u16>,
 
     _reserved6: [u32; 2],
 
     /// Counter Register
-    pub SMCNT3: RORegister<u16>,
+    pub SMCNT_3: RORegister<u16>,
 
     /// Initial Count Register
-    pub SMINIT3: RWRegister<u16>,
+    pub SMINIT_3: RWRegister<u16>,
 
     /// Control 2 Register
-    pub SMCTRL23: RWRegister<u16>,
+    pub SMCTRL2_3: RWRegister<u16>,
 
     /// Control Register
-    pub SMCTRL3: RWRegister<u16>,
+    pub SMCTRL_3: RWRegister<u16>,
 
     _reserved7: [u16; 1],
 
     /// Value Register 0
-    pub SMVAL03: RWRegister<u16>,
+    pub SMVAL0_3: RWRegister<u16>,
 
     /// Fractional Value Register 1
-    pub SMFRACVAL13: RWRegister<u16>,
+    pub SMFRACVAL1_3: RWRegister<u16>,
 
     /// Value Register 1
-    pub SMVAL13: RWRegister<u16>,
+    pub SMVAL1_3: RWRegister<u16>,
 
     /// Fractional Value Register 2
-    pub SMFRACVAL23: RWRegister<u16>,
+    pub SMFRACVAL2_3: RWRegister<u16>,
 
     /// Value Register 2
-    pub SMVAL23: RWRegister<u16>,
+    pub SMVAL2_3: RWRegister<u16>,
 
     /// Fractional Value Register 3
-    pub SMFRACVAL33: RWRegister<u16>,
+    pub SMFRACVAL3_3: RWRegister<u16>,
 
     /// Value Register 3
-    pub SMVAL33: RWRegister<u16>,
+    pub SMVAL3_3: RWRegister<u16>,
 
     /// Fractional Value Register 4
-    pub SMFRACVAL43: RWRegister<u16>,
+    pub SMFRACVAL4_3: RWRegister<u16>,
 
     /// Value Register 4
-    pub SMVAL43: RWRegister<u16>,
+    pub SMVAL4_3: RWRegister<u16>,
 
     /// Fractional Value Register 5
-    pub SMFRACVAL53: RWRegister<u16>,
+    pub SMFRACVAL5_3: RWRegister<u16>,
 
     /// Value Register 5
-    pub SMVAL53: RWRegister<u16>,
+    pub SMVAL5_3: RWRegister<u16>,
 
     /// Fractional Control Register
-    pub SMFRCTRL3: RWRegister<u16>,
+    pub SMFRCTRL_3: RWRegister<u16>,
 
     /// Output Control Register
-    pub SMOCTRL3: RWRegister<u16>,
+    pub SMOCTRL_3: RWRegister<u16>,
 
     /// Status Register
-    pub SMSTS3: RWRegister<u16>,
+    pub SMSTS_3: RWRegister<u16>,
 
     /// Interrupt Enable Register
-    pub SMINTEN3: RWRegister<u16>,
+    pub SMINTEN_3: RWRegister<u16>,
 
     /// DMA Enable Register
-    pub SMDMAEN3: RWRegister<u16>,
+    pub SMDMAEN_3: RWRegister<u16>,
 
     /// Output Trigger Control Register
-    pub SMTCTRL3: RWRegister<u16>,
+    pub SMTCTRL_3: RWRegister<u16>,
 
     /// Fault Disable Mapping Register 0
-    pub SMDISMAP03: RWRegister<u16>,
+    pub SMDISMAP0_3: RWRegister<u16>,
 
     /// Fault Disable Mapping Register 1
-    pub SMDISMAP13: RWRegister<u16>,
+    pub SMDISMAP1_3: RWRegister<u16>,
 
     /// Deadtime Count Register 0
-    pub SMDTCNT03: RWRegister<u16>,
+    pub SMDTCNT0_3: RWRegister<u16>,
 
     /// Deadtime Count Register 1
-    pub SMDTCNT13: RWRegister<u16>,
+    pub SMDTCNT1_3: RWRegister<u16>,
 
     /// Capture Control A Register
-    pub SMCAPTCTRLA3: RWRegister<u16>,
+    pub SMCAPTCTRLA_3: RWRegister<u16>,
 
     /// Capture Compare A Register
-    pub SMCAPTCOMPA3: RWRegister<u16>,
+    pub SMCAPTCOMPA_3: RWRegister<u16>,
 
     /// Capture Control B Register
-    pub SMCAPTCTRLB3: RWRegister<u16>,
+    pub SMCAPTCTRLB_3: RWRegister<u16>,
 
     /// Capture Compare B Register
-    pub SMCAPTCOMPB3: RWRegister<u16>,
+    pub SMCAPTCOMPB_3: RWRegister<u16>,
 
     /// Capture Control X Register
-    pub SMCAPTCTRLX3: RWRegister<u16>,
+    pub SMCAPTCTRLX_3: RWRegister<u16>,
 
     /// Capture Compare X Register
-    pub SMCAPTCOMPX3: RWRegister<u16>,
+    pub SMCAPTCOMPX_3: RWRegister<u16>,
 
     /// Capture Value 0 Register
-    pub SMCVAL03: RORegister<u16>,
+    pub SMCVAL0_3: RORegister<u16>,
 
     /// Capture Value 0 Cycle Register
-    pub SMCVAL0CYC3: RORegister<u16>,
+    pub SMCVAL0CYC_3: RORegister<u16>,
 
     /// Capture Value 1 Register
-    pub SMCVAL13: RORegister<u16>,
+    pub SMCVAL1_3: RORegister<u16>,
 
     /// Capture Value 1 Cycle Register
-    pub SMCVAL1CYC3: RORegister<u16>,
+    pub SMCVAL1CYC_3: RORegister<u16>,
 
     /// Capture Value 2 Register
-    pub SMCVAL23: RORegister<u16>,
+    pub SMCVAL2_3: RORegister<u16>,
 
     /// Capture Value 2 Cycle Register
-    pub SMCVAL2CYC3: RORegister<u16>,
+    pub SMCVAL2CYC_3: RORegister<u16>,
 
     /// Capture Value 3 Register
-    pub SMCVAL33: RORegister<u16>,
+    pub SMCVAL3_3: RORegister<u16>,
 
     /// Capture Value 3 Cycle Register
-    pub SMCVAL3CYC3: RORegister<u16>,
+    pub SMCVAL3CYC_3: RORegister<u16>,
 
     /// Capture Value 4 Register
-    pub SMCVAL43: RORegister<u16>,
+    pub SMCVAL4_3: RORegister<u16>,
 
     /// Capture Value 4 Cycle Register
-    pub SMCVAL4CYC3: RORegister<u16>,
+    pub SMCVAL4CYC_3: RORegister<u16>,
 
     /// Capture Value 5 Register
-    pub SMCVAL53: RORegister<u16>,
+    pub SMCVAL5_3: RORegister<u16>,
 
     /// Capture Value 5 Cycle Register
-    pub SMCVAL5CYC3: RORegister<u16>,
+    pub SMCVAL5CYC_3: RORegister<u16>,
 
     _reserved8: [u32; 2],
 
@@ -5058,178 +5058,178 @@ pub struct RegisterBlock {
     pub FCTRL20: RWRegister<u16>,
 }
 pub struct ResetValues {
-    pub SMCNT0: u16,
-    pub SMINIT0: u16,
-    pub SMCTRL20: u16,
-    pub SMCTRL0: u16,
-    pub SMVAL00: u16,
-    pub SMFRACVAL10: u16,
-    pub SMVAL10: u16,
-    pub SMFRACVAL20: u16,
-    pub SMVAL20: u16,
-    pub SMFRACVAL30: u16,
-    pub SMVAL30: u16,
-    pub SMFRACVAL40: u16,
-    pub SMVAL40: u16,
-    pub SMFRACVAL50: u16,
-    pub SMVAL50: u16,
-    pub SMFRCTRL0: u16,
-    pub SMOCTRL0: u16,
-    pub SMSTS0: u16,
-    pub SMINTEN0: u16,
-    pub SMDMAEN0: u16,
-    pub SMTCTRL0: u16,
-    pub SMDISMAP00: u16,
-    pub SMDISMAP10: u16,
-    pub SMDTCNT00: u16,
-    pub SMDTCNT10: u16,
-    pub SMCAPTCTRLA0: u16,
-    pub SMCAPTCOMPA0: u16,
-    pub SMCAPTCTRLB0: u16,
-    pub SMCAPTCOMPB0: u16,
-    pub SMCAPTCTRLX0: u16,
-    pub SMCAPTCOMPX0: u16,
-    pub SMCVAL00: u16,
-    pub SMCVAL0CYC0: u16,
-    pub SMCVAL10: u16,
-    pub SMCVAL1CYC0: u16,
-    pub SMCVAL20: u16,
-    pub SMCVAL2CYC0: u16,
-    pub SMCVAL30: u16,
-    pub SMCVAL3CYC0: u16,
-    pub SMCVAL40: u16,
-    pub SMCVAL4CYC0: u16,
-    pub SMCVAL50: u16,
-    pub SMCVAL5CYC0: u16,
-    pub SMCNT1: u16,
-    pub SMINIT1: u16,
-    pub SMCTRL21: u16,
-    pub SMCTRL1: u16,
-    pub SMVAL01: u16,
-    pub SMFRACVAL11: u16,
-    pub SMVAL11: u16,
-    pub SMFRACVAL21: u16,
-    pub SMVAL21: u16,
-    pub SMFRACVAL31: u16,
-    pub SMVAL31: u16,
-    pub SMFRACVAL41: u16,
-    pub SMVAL41: u16,
-    pub SMFRACVAL51: u16,
-    pub SMVAL51: u16,
-    pub SMFRCTRL1: u16,
-    pub SMOCTRL1: u16,
-    pub SMSTS1: u16,
-    pub SMINTEN1: u16,
-    pub SMDMAEN1: u16,
-    pub SMTCTRL1: u16,
-    pub SMDISMAP01: u16,
-    pub SMDISMAP11: u16,
-    pub SMDTCNT01: u16,
-    pub SMDTCNT11: u16,
-    pub SMCAPTCTRLA1: u16,
-    pub SMCAPTCOMPA1: u16,
-    pub SMCAPTCTRLB1: u16,
-    pub SMCAPTCOMPB1: u16,
-    pub SMCAPTCTRLX1: u16,
-    pub SMCAPTCOMPX1: u16,
-    pub SMCVAL01: u16,
-    pub SMCVAL0CYC1: u16,
-    pub SMCVAL11: u16,
-    pub SMCVAL1CYC1: u16,
-    pub SMCVAL21: u16,
-    pub SMCVAL2CYC1: u16,
-    pub SMCVAL31: u16,
-    pub SMCVAL3CYC1: u16,
-    pub SMCVAL41: u16,
-    pub SMCVAL4CYC1: u16,
-    pub SMCVAL51: u16,
-    pub SMCVAL5CYC1: u16,
-    pub SMCNT2: u16,
-    pub SMINIT2: u16,
-    pub SMCTRL22: u16,
-    pub SMCTRL2: u16,
-    pub SMVAL02: u16,
-    pub SMFRACVAL12: u16,
-    pub SMVAL12: u16,
-    pub SMFRACVAL22: u16,
-    pub SMVAL22: u16,
-    pub SMFRACVAL32: u16,
-    pub SMVAL32: u16,
-    pub SMFRACVAL42: u16,
-    pub SMVAL42: u16,
-    pub SMFRACVAL52: u16,
-    pub SMVAL52: u16,
-    pub SMFRCTRL2: u16,
-    pub SMOCTRL2: u16,
-    pub SMSTS2: u16,
-    pub SMINTEN2: u16,
-    pub SMDMAEN2: u16,
-    pub SMTCTRL2: u16,
-    pub SMDISMAP02: u16,
-    pub SMDISMAP12: u16,
-    pub SMDTCNT02: u16,
-    pub SMDTCNT12: u16,
-    pub SMCAPTCTRLA2: u16,
-    pub SMCAPTCOMPA2: u16,
-    pub SMCAPTCTRLB2: u16,
-    pub SMCAPTCOMPB2: u16,
-    pub SMCAPTCTRLX2: u16,
-    pub SMCAPTCOMPX2: u16,
-    pub SMCVAL02: u16,
-    pub SMCVAL0CYC2: u16,
-    pub SMCVAL12: u16,
-    pub SMCVAL1CYC2: u16,
-    pub SMCVAL22: u16,
-    pub SMCVAL2CYC2: u16,
-    pub SMCVAL32: u16,
-    pub SMCVAL3CYC2: u16,
-    pub SMCVAL42: u16,
-    pub SMCVAL4CYC2: u16,
-    pub SMCVAL52: u16,
-    pub SMCVAL5CYC2: u16,
-    pub SMCNT3: u16,
-    pub SMINIT3: u16,
-    pub SMCTRL23: u16,
-    pub SMCTRL3: u16,
-    pub SMVAL03: u16,
-    pub SMFRACVAL13: u16,
-    pub SMVAL13: u16,
-    pub SMFRACVAL23: u16,
-    pub SMVAL23: u16,
-    pub SMFRACVAL33: u16,
-    pub SMVAL33: u16,
-    pub SMFRACVAL43: u16,
-    pub SMVAL43: u16,
-    pub SMFRACVAL53: u16,
-    pub SMVAL53: u16,
-    pub SMFRCTRL3: u16,
-    pub SMOCTRL3: u16,
-    pub SMSTS3: u16,
-    pub SMINTEN3: u16,
-    pub SMDMAEN3: u16,
-    pub SMTCTRL3: u16,
-    pub SMDISMAP03: u16,
-    pub SMDISMAP13: u16,
-    pub SMDTCNT03: u16,
-    pub SMDTCNT13: u16,
-    pub SMCAPTCTRLA3: u16,
-    pub SMCAPTCOMPA3: u16,
-    pub SMCAPTCTRLB3: u16,
-    pub SMCAPTCOMPB3: u16,
-    pub SMCAPTCTRLX3: u16,
-    pub SMCAPTCOMPX3: u16,
-    pub SMCVAL03: u16,
-    pub SMCVAL0CYC3: u16,
-    pub SMCVAL13: u16,
-    pub SMCVAL1CYC3: u16,
-    pub SMCVAL23: u16,
-    pub SMCVAL2CYC3: u16,
-    pub SMCVAL33: u16,
-    pub SMCVAL3CYC3: u16,
-    pub SMCVAL43: u16,
-    pub SMCVAL4CYC3: u16,
-    pub SMCVAL53: u16,
-    pub SMCVAL5CYC3: u16,
+    pub SMCNT_0: u16,
+    pub SMINIT_0: u16,
+    pub SMCTRL2_0: u16,
+    pub SMCTRL_0: u16,
+    pub SMVAL0_0: u16,
+    pub SMFRACVAL1_0: u16,
+    pub SMVAL1_0: u16,
+    pub SMFRACVAL2_0: u16,
+    pub SMVAL2_0: u16,
+    pub SMFRACVAL3_0: u16,
+    pub SMVAL3_0: u16,
+    pub SMFRACVAL4_0: u16,
+    pub SMVAL4_0: u16,
+    pub SMFRACVAL5_0: u16,
+    pub SMVAL5_0: u16,
+    pub SMFRCTRL_0: u16,
+    pub SMOCTRL_0: u16,
+    pub SMSTS_0: u16,
+    pub SMINTEN_0: u16,
+    pub SMDMAEN_0: u16,
+    pub SMTCTRL_0: u16,
+    pub SMDISMAP0_0: u16,
+    pub SMDISMAP1_0: u16,
+    pub SMDTCNT0_0: u16,
+    pub SMDTCNT1_0: u16,
+    pub SMCAPTCTRLA_0: u16,
+    pub SMCAPTCOMPA_0: u16,
+    pub SMCAPTCTRLB_0: u16,
+    pub SMCAPTCOMPB_0: u16,
+    pub SMCAPTCTRLX_0: u16,
+    pub SMCAPTCOMPX_0: u16,
+    pub SMCVAL0_0: u16,
+    pub SMCVAL0CYC_0: u16,
+    pub SMCVAL1_0: u16,
+    pub SMCVAL1CYC_0: u16,
+    pub SMCVAL2_0: u16,
+    pub SMCVAL2CYC_0: u16,
+    pub SMCVAL3_0: u16,
+    pub SMCVAL3CYC_0: u16,
+    pub SMCVAL4_0: u16,
+    pub SMCVAL4CYC_0: u16,
+    pub SMCVAL5_0: u16,
+    pub SMCVAL5CYC_0: u16,
+    pub SMCNT_1: u16,
+    pub SMINIT_1: u16,
+    pub SMCTRL2_1: u16,
+    pub SMCTRL_1: u16,
+    pub SMVAL0_1: u16,
+    pub SMFRACVAL1_1: u16,
+    pub SMVAL1_1: u16,
+    pub SMFRACVAL2_1: u16,
+    pub SMVAL2_1: u16,
+    pub SMFRACVAL3_1: u16,
+    pub SMVAL3_1: u16,
+    pub SMFRACVAL4_1: u16,
+    pub SMVAL4_1: u16,
+    pub SMFRACVAL5_1: u16,
+    pub SMVAL5_1: u16,
+    pub SMFRCTRL_1: u16,
+    pub SMOCTRL_1: u16,
+    pub SMSTS_1: u16,
+    pub SMINTEN_1: u16,
+    pub SMDMAEN_1: u16,
+    pub SMTCTRL_1: u16,
+    pub SMDISMAP0_1: u16,
+    pub SMDISMAP1_1: u16,
+    pub SMDTCNT0_1: u16,
+    pub SMDTCNT1_1: u16,
+    pub SMCAPTCTRLA_1: u16,
+    pub SMCAPTCOMPA_1: u16,
+    pub SMCAPTCTRLB_1: u16,
+    pub SMCAPTCOMPB_1: u16,
+    pub SMCAPTCTRLX_1: u16,
+    pub SMCAPTCOMPX_1: u16,
+    pub SMCVAL0_1: u16,
+    pub SMCVAL0CYC_1: u16,
+    pub SMCVAL1_1: u16,
+    pub SMCVAL1CYC_1: u16,
+    pub SMCVAL2_1: u16,
+    pub SMCVAL2CYC_1: u16,
+    pub SMCVAL3_1: u16,
+    pub SMCVAL3CYC_1: u16,
+    pub SMCVAL4_1: u16,
+    pub SMCVAL4CYC_1: u16,
+    pub SMCVAL5_1: u16,
+    pub SMCVAL5CYC_1: u16,
+    pub SMCNT_2: u16,
+    pub SMINIT_2: u16,
+    pub SMCTRL2_2: u16,
+    pub SMCTRL_2: u16,
+    pub SMVAL0_2: u16,
+    pub SMFRACVAL1_2: u16,
+    pub SMVAL1_2: u16,
+    pub SMFRACVAL2_2: u16,
+    pub SMVAL2_2: u16,
+    pub SMFRACVAL3_2: u16,
+    pub SMVAL3_2: u16,
+    pub SMFRACVAL4_2: u16,
+    pub SMVAL4_2: u16,
+    pub SMFRACVAL5_2: u16,
+    pub SMVAL5_2: u16,
+    pub SMFRCTRL_2: u16,
+    pub SMOCTRL_2: u16,
+    pub SMSTS_2: u16,
+    pub SMINTEN_2: u16,
+    pub SMDMAEN_2: u16,
+    pub SMTCTRL_2: u16,
+    pub SMDISMAP0_2: u16,
+    pub SMDISMAP1_2: u16,
+    pub SMDTCNT0_2: u16,
+    pub SMDTCNT1_2: u16,
+    pub SMCAPTCTRLA_2: u16,
+    pub SMCAPTCOMPA_2: u16,
+    pub SMCAPTCTRLB_2: u16,
+    pub SMCAPTCOMPB_2: u16,
+    pub SMCAPTCTRLX_2: u16,
+    pub SMCAPTCOMPX_2: u16,
+    pub SMCVAL0_2: u16,
+    pub SMCVAL0CYC_2: u16,
+    pub SMCVAL1_2: u16,
+    pub SMCVAL1CYC_2: u16,
+    pub SMCVAL2_2: u16,
+    pub SMCVAL2CYC_2: u16,
+    pub SMCVAL3_2: u16,
+    pub SMCVAL3CYC_2: u16,
+    pub SMCVAL4_2: u16,
+    pub SMCVAL4CYC_2: u16,
+    pub SMCVAL5_2: u16,
+    pub SMCVAL5CYC_2: u16,
+    pub SMCNT_3: u16,
+    pub SMINIT_3: u16,
+    pub SMCTRL2_3: u16,
+    pub SMCTRL_3: u16,
+    pub SMVAL0_3: u16,
+    pub SMFRACVAL1_3: u16,
+    pub SMVAL1_3: u16,
+    pub SMFRACVAL2_3: u16,
+    pub SMVAL2_3: u16,
+    pub SMFRACVAL3_3: u16,
+    pub SMVAL3_3: u16,
+    pub SMFRACVAL4_3: u16,
+    pub SMVAL4_3: u16,
+    pub SMFRACVAL5_3: u16,
+    pub SMVAL5_3: u16,
+    pub SMFRCTRL_3: u16,
+    pub SMOCTRL_3: u16,
+    pub SMSTS_3: u16,
+    pub SMINTEN_3: u16,
+    pub SMDMAEN_3: u16,
+    pub SMTCTRL_3: u16,
+    pub SMDISMAP0_3: u16,
+    pub SMDISMAP1_3: u16,
+    pub SMDTCNT0_3: u16,
+    pub SMDTCNT1_3: u16,
+    pub SMCAPTCTRLA_3: u16,
+    pub SMCAPTCOMPA_3: u16,
+    pub SMCAPTCTRLB_3: u16,
+    pub SMCAPTCOMPB_3: u16,
+    pub SMCAPTCTRLX_3: u16,
+    pub SMCAPTCOMPX_3: u16,
+    pub SMCVAL0_3: u16,
+    pub SMCVAL0CYC_3: u16,
+    pub SMCVAL1_3: u16,
+    pub SMCVAL1CYC_3: u16,
+    pub SMCVAL2_3: u16,
+    pub SMCVAL2CYC_3: u16,
+    pub SMCVAL3_3: u16,
+    pub SMCVAL3CYC_3: u16,
+    pub SMCVAL4_3: u16,
+    pub SMCVAL4CYC_3: u16,
+    pub SMCVAL5_3: u16,
+    pub SMCVAL5CYC_3: u16,
     pub OUTEN: u16,
     pub MASK: u16,
     pub SWCOUT: u16,
@@ -5340,178 +5340,178 @@ impl PWM {
         FFILT0: 0x00000000,
         FTST0: 0x00000000,
         FCTRL20: 0x00000000,
-        SMCNT0: 0x00000000,
-        SMINIT0: 0x00000000,
-        SMCTRL20: 0x00000000,
-        SMCTRL0: 0x00000400,
-        SMVAL00: 0x00000000,
-        SMFRACVAL10: 0x00000000,
-        SMVAL10: 0x00000000,
-        SMFRACVAL20: 0x00000000,
-        SMVAL20: 0x00000000,
-        SMFRACVAL30: 0x00000000,
-        SMVAL30: 0x00000000,
-        SMFRACVAL40: 0x00000000,
-        SMVAL40: 0x00000000,
-        SMFRACVAL50: 0x00000000,
-        SMVAL50: 0x00000000,
-        SMFRCTRL0: 0x00000000,
-        SMOCTRL0: 0x00000000,
-        SMSTS0: 0x00000000,
-        SMINTEN0: 0x00000000,
-        SMDMAEN0: 0x00000000,
-        SMTCTRL0: 0x00000000,
-        SMDISMAP00: 0x0000FFFF,
-        SMDISMAP10: 0x0000FFFF,
-        SMDTCNT00: 0x000007FF,
-        SMDTCNT10: 0x000007FF,
-        SMCAPTCTRLA0: 0x00000000,
-        SMCAPTCOMPA0: 0x00000000,
-        SMCAPTCTRLB0: 0x00000000,
-        SMCAPTCOMPB0: 0x00000000,
-        SMCAPTCTRLX0: 0x00000000,
-        SMCAPTCOMPX0: 0x00000000,
-        SMCVAL00: 0x00000000,
-        SMCVAL0CYC0: 0x00000000,
-        SMCVAL10: 0x00000000,
-        SMCVAL1CYC0: 0x00000000,
-        SMCVAL20: 0x00000000,
-        SMCVAL2CYC0: 0x00000000,
-        SMCVAL30: 0x00000000,
-        SMCVAL3CYC0: 0x00000000,
-        SMCVAL40: 0x00000000,
-        SMCVAL4CYC0: 0x00000000,
-        SMCVAL50: 0x00000000,
-        SMCVAL5CYC0: 0x00000000,
-        SMCNT1: 0x00000000,
-        SMINIT1: 0x00000000,
-        SMCTRL21: 0x00000000,
-        SMCTRL1: 0x00000400,
-        SMVAL01: 0x00000000,
-        SMFRACVAL11: 0x00000000,
-        SMVAL11: 0x00000000,
-        SMFRACVAL21: 0x00000000,
-        SMVAL21: 0x00000000,
-        SMFRACVAL31: 0x00000000,
-        SMVAL31: 0x00000000,
-        SMFRACVAL41: 0x00000000,
-        SMVAL41: 0x00000000,
-        SMFRACVAL51: 0x00000000,
-        SMVAL51: 0x00000000,
-        SMFRCTRL1: 0x00000000,
-        SMOCTRL1: 0x00000000,
-        SMSTS1: 0x00000000,
-        SMINTEN1: 0x00000000,
-        SMDMAEN1: 0x00000000,
-        SMTCTRL1: 0x00000000,
-        SMDISMAP01: 0x0000FFFF,
-        SMDISMAP11: 0x0000FFFF,
-        SMDTCNT01: 0x000007FF,
-        SMDTCNT11: 0x000007FF,
-        SMCAPTCTRLA1: 0x00000000,
-        SMCAPTCOMPA1: 0x00000000,
-        SMCAPTCTRLB1: 0x00000000,
-        SMCAPTCOMPB1: 0x00000000,
-        SMCAPTCTRLX1: 0x00000000,
-        SMCAPTCOMPX1: 0x00000000,
-        SMCVAL01: 0x00000000,
-        SMCVAL0CYC1: 0x00000000,
-        SMCVAL11: 0x00000000,
-        SMCVAL1CYC1: 0x00000000,
-        SMCVAL21: 0x00000000,
-        SMCVAL2CYC1: 0x00000000,
-        SMCVAL31: 0x00000000,
-        SMCVAL3CYC1: 0x00000000,
-        SMCVAL41: 0x00000000,
-        SMCVAL4CYC1: 0x00000000,
-        SMCVAL51: 0x00000000,
-        SMCVAL5CYC1: 0x00000000,
-        SMCNT2: 0x00000000,
-        SMINIT2: 0x00000000,
-        SMCTRL22: 0x00000000,
-        SMCTRL2: 0x00000400,
-        SMVAL02: 0x00000000,
-        SMFRACVAL12: 0x00000000,
-        SMVAL12: 0x00000000,
-        SMFRACVAL22: 0x00000000,
-        SMVAL22: 0x00000000,
-        SMFRACVAL32: 0x00000000,
-        SMVAL32: 0x00000000,
-        SMFRACVAL42: 0x00000000,
-        SMVAL42: 0x00000000,
-        SMFRACVAL52: 0x00000000,
-        SMVAL52: 0x00000000,
-        SMFRCTRL2: 0x00000000,
-        SMOCTRL2: 0x00000000,
-        SMSTS2: 0x00000000,
-        SMINTEN2: 0x00000000,
-        SMDMAEN2: 0x00000000,
-        SMTCTRL2: 0x00000000,
-        SMDISMAP02: 0x0000FFFF,
-        SMDISMAP12: 0x0000FFFF,
-        SMDTCNT02: 0x000007FF,
-        SMDTCNT12: 0x000007FF,
-        SMCAPTCTRLA2: 0x00000000,
-        SMCAPTCOMPA2: 0x00000000,
-        SMCAPTCTRLB2: 0x00000000,
-        SMCAPTCOMPB2: 0x00000000,
-        SMCAPTCTRLX2: 0x00000000,
-        SMCAPTCOMPX2: 0x00000000,
-        SMCVAL02: 0x00000000,
-        SMCVAL0CYC2: 0x00000000,
-        SMCVAL12: 0x00000000,
-        SMCVAL1CYC2: 0x00000000,
-        SMCVAL22: 0x00000000,
-        SMCVAL2CYC2: 0x00000000,
-        SMCVAL32: 0x00000000,
-        SMCVAL3CYC2: 0x00000000,
-        SMCVAL42: 0x00000000,
-        SMCVAL4CYC2: 0x00000000,
-        SMCVAL52: 0x00000000,
-        SMCVAL5CYC2: 0x00000000,
-        SMCNT3: 0x00000000,
-        SMINIT3: 0x00000000,
-        SMCTRL23: 0x00000000,
-        SMCTRL3: 0x00000400,
-        SMVAL03: 0x00000000,
-        SMFRACVAL13: 0x00000000,
-        SMVAL13: 0x00000000,
-        SMFRACVAL23: 0x00000000,
-        SMVAL23: 0x00000000,
-        SMFRACVAL33: 0x00000000,
-        SMVAL33: 0x00000000,
-        SMFRACVAL43: 0x00000000,
-        SMVAL43: 0x00000000,
-        SMFRACVAL53: 0x00000000,
-        SMVAL53: 0x00000000,
-        SMFRCTRL3: 0x00000000,
-        SMOCTRL3: 0x00000000,
-        SMSTS3: 0x00000000,
-        SMINTEN3: 0x00000000,
-        SMDMAEN3: 0x00000000,
-        SMTCTRL3: 0x00000000,
-        SMDISMAP03: 0x0000FFFF,
-        SMDISMAP13: 0x0000FFFF,
-        SMDTCNT03: 0x000007FF,
-        SMDTCNT13: 0x000007FF,
-        SMCAPTCTRLA3: 0x00000000,
-        SMCAPTCOMPA3: 0x00000000,
-        SMCAPTCTRLB3: 0x00000000,
-        SMCAPTCOMPB3: 0x00000000,
-        SMCAPTCTRLX3: 0x00000000,
-        SMCAPTCOMPX3: 0x00000000,
-        SMCVAL03: 0x00000000,
-        SMCVAL0CYC3: 0x00000000,
-        SMCVAL13: 0x00000000,
-        SMCVAL1CYC3: 0x00000000,
-        SMCVAL23: 0x00000000,
-        SMCVAL2CYC3: 0x00000000,
-        SMCVAL33: 0x00000000,
-        SMCVAL3CYC3: 0x00000000,
-        SMCVAL43: 0x00000000,
-        SMCVAL4CYC3: 0x00000000,
-        SMCVAL53: 0x00000000,
-        SMCVAL5CYC3: 0x00000000,
+        SMCNT_0: 0x00000000,
+        SMINIT_0: 0x00000000,
+        SMCTRL2_0: 0x00000000,
+        SMCTRL_0: 0x00000400,
+        SMVAL0_0: 0x00000000,
+        SMFRACVAL1_0: 0x00000000,
+        SMVAL1_0: 0x00000000,
+        SMFRACVAL2_0: 0x00000000,
+        SMVAL2_0: 0x00000000,
+        SMFRACVAL3_0: 0x00000000,
+        SMVAL3_0: 0x00000000,
+        SMFRACVAL4_0: 0x00000000,
+        SMVAL4_0: 0x00000000,
+        SMFRACVAL5_0: 0x00000000,
+        SMVAL5_0: 0x00000000,
+        SMFRCTRL_0: 0x00000000,
+        SMOCTRL_0: 0x00000000,
+        SMSTS_0: 0x00000000,
+        SMINTEN_0: 0x00000000,
+        SMDMAEN_0: 0x00000000,
+        SMTCTRL_0: 0x00000000,
+        SMDISMAP0_0: 0x0000FFFF,
+        SMDISMAP1_0: 0x0000FFFF,
+        SMDTCNT0_0: 0x000007FF,
+        SMDTCNT1_0: 0x000007FF,
+        SMCAPTCTRLA_0: 0x00000000,
+        SMCAPTCOMPA_0: 0x00000000,
+        SMCAPTCTRLB_0: 0x00000000,
+        SMCAPTCOMPB_0: 0x00000000,
+        SMCAPTCTRLX_0: 0x00000000,
+        SMCAPTCOMPX_0: 0x00000000,
+        SMCVAL0_0: 0x00000000,
+        SMCVAL0CYC_0: 0x00000000,
+        SMCVAL1_0: 0x00000000,
+        SMCVAL1CYC_0: 0x00000000,
+        SMCVAL2_0: 0x00000000,
+        SMCVAL2CYC_0: 0x00000000,
+        SMCVAL3_0: 0x00000000,
+        SMCVAL3CYC_0: 0x00000000,
+        SMCVAL4_0: 0x00000000,
+        SMCVAL4CYC_0: 0x00000000,
+        SMCVAL5_0: 0x00000000,
+        SMCVAL5CYC_0: 0x00000000,
+        SMCNT_1: 0x00000000,
+        SMINIT_1: 0x00000000,
+        SMCTRL2_1: 0x00000000,
+        SMCTRL_1: 0x00000400,
+        SMVAL0_1: 0x00000000,
+        SMFRACVAL1_1: 0x00000000,
+        SMVAL1_1: 0x00000000,
+        SMFRACVAL2_1: 0x00000000,
+        SMVAL2_1: 0x00000000,
+        SMFRACVAL3_1: 0x00000000,
+        SMVAL3_1: 0x00000000,
+        SMFRACVAL4_1: 0x00000000,
+        SMVAL4_1: 0x00000000,
+        SMFRACVAL5_1: 0x00000000,
+        SMVAL5_1: 0x00000000,
+        SMFRCTRL_1: 0x00000000,
+        SMOCTRL_1: 0x00000000,
+        SMSTS_1: 0x00000000,
+        SMINTEN_1: 0x00000000,
+        SMDMAEN_1: 0x00000000,
+        SMTCTRL_1: 0x00000000,
+        SMDISMAP0_1: 0x0000FFFF,
+        SMDISMAP1_1: 0x0000FFFF,
+        SMDTCNT0_1: 0x000007FF,
+        SMDTCNT1_1: 0x000007FF,
+        SMCAPTCTRLA_1: 0x00000000,
+        SMCAPTCOMPA_1: 0x00000000,
+        SMCAPTCTRLB_1: 0x00000000,
+        SMCAPTCOMPB_1: 0x00000000,
+        SMCAPTCTRLX_1: 0x00000000,
+        SMCAPTCOMPX_1: 0x00000000,
+        SMCVAL0_1: 0x00000000,
+        SMCVAL0CYC_1: 0x00000000,
+        SMCVAL1_1: 0x00000000,
+        SMCVAL1CYC_1: 0x00000000,
+        SMCVAL2_1: 0x00000000,
+        SMCVAL2CYC_1: 0x00000000,
+        SMCVAL3_1: 0x00000000,
+        SMCVAL3CYC_1: 0x00000000,
+        SMCVAL4_1: 0x00000000,
+        SMCVAL4CYC_1: 0x00000000,
+        SMCVAL5_1: 0x00000000,
+        SMCVAL5CYC_1: 0x00000000,
+        SMCNT_2: 0x00000000,
+        SMINIT_2: 0x00000000,
+        SMCTRL2_2: 0x00000000,
+        SMCTRL_2: 0x00000400,
+        SMVAL0_2: 0x00000000,
+        SMFRACVAL1_2: 0x00000000,
+        SMVAL1_2: 0x00000000,
+        SMFRACVAL2_2: 0x00000000,
+        SMVAL2_2: 0x00000000,
+        SMFRACVAL3_2: 0x00000000,
+        SMVAL3_2: 0x00000000,
+        SMFRACVAL4_2: 0x00000000,
+        SMVAL4_2: 0x00000000,
+        SMFRACVAL5_2: 0x00000000,
+        SMVAL5_2: 0x00000000,
+        SMFRCTRL_2: 0x00000000,
+        SMOCTRL_2: 0x00000000,
+        SMSTS_2: 0x00000000,
+        SMINTEN_2: 0x00000000,
+        SMDMAEN_2: 0x00000000,
+        SMTCTRL_2: 0x00000000,
+        SMDISMAP0_2: 0x0000FFFF,
+        SMDISMAP1_2: 0x0000FFFF,
+        SMDTCNT0_2: 0x000007FF,
+        SMDTCNT1_2: 0x000007FF,
+        SMCAPTCTRLA_2: 0x00000000,
+        SMCAPTCOMPA_2: 0x00000000,
+        SMCAPTCTRLB_2: 0x00000000,
+        SMCAPTCOMPB_2: 0x00000000,
+        SMCAPTCTRLX_2: 0x00000000,
+        SMCAPTCOMPX_2: 0x00000000,
+        SMCVAL0_2: 0x00000000,
+        SMCVAL0CYC_2: 0x00000000,
+        SMCVAL1_2: 0x00000000,
+        SMCVAL1CYC_2: 0x00000000,
+        SMCVAL2_2: 0x00000000,
+        SMCVAL2CYC_2: 0x00000000,
+        SMCVAL3_2: 0x00000000,
+        SMCVAL3CYC_2: 0x00000000,
+        SMCVAL4_2: 0x00000000,
+        SMCVAL4CYC_2: 0x00000000,
+        SMCVAL5_2: 0x00000000,
+        SMCVAL5CYC_2: 0x00000000,
+        SMCNT_3: 0x00000000,
+        SMINIT_3: 0x00000000,
+        SMCTRL2_3: 0x00000000,
+        SMCTRL_3: 0x00000400,
+        SMVAL0_3: 0x00000000,
+        SMFRACVAL1_3: 0x00000000,
+        SMVAL1_3: 0x00000000,
+        SMFRACVAL2_3: 0x00000000,
+        SMVAL2_3: 0x00000000,
+        SMFRACVAL3_3: 0x00000000,
+        SMVAL3_3: 0x00000000,
+        SMFRACVAL4_3: 0x00000000,
+        SMVAL4_3: 0x00000000,
+        SMFRACVAL5_3: 0x00000000,
+        SMVAL5_3: 0x00000000,
+        SMFRCTRL_3: 0x00000000,
+        SMOCTRL_3: 0x00000000,
+        SMSTS_3: 0x00000000,
+        SMINTEN_3: 0x00000000,
+        SMDMAEN_3: 0x00000000,
+        SMTCTRL_3: 0x00000000,
+        SMDISMAP0_3: 0x0000FFFF,
+        SMDISMAP1_3: 0x0000FFFF,
+        SMDTCNT0_3: 0x000007FF,
+        SMDTCNT1_3: 0x000007FF,
+        SMCAPTCTRLA_3: 0x00000000,
+        SMCAPTCOMPA_3: 0x00000000,
+        SMCAPTCTRLB_3: 0x00000000,
+        SMCAPTCOMPB_3: 0x00000000,
+        SMCAPTCTRLX_3: 0x00000000,
+        SMCAPTCOMPX_3: 0x00000000,
+        SMCVAL0_3: 0x00000000,
+        SMCVAL0CYC_3: 0x00000000,
+        SMCVAL1_3: 0x00000000,
+        SMCVAL1CYC_3: 0x00000000,
+        SMCVAL2_3: 0x00000000,
+        SMCVAL2CYC_3: 0x00000000,
+        SMCVAL3_3: 0x00000000,
+        SMCVAL3CYC_3: 0x00000000,
+        SMCVAL4_3: 0x00000000,
+        SMCVAL4CYC_3: 0x00000000,
+        SMCVAL5_3: 0x00000000,
+        SMCVAL5CYC_3: 0x00000000,
     };
 
     /// Safe access to PWM
