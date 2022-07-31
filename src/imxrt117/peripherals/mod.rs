@@ -296,9 +296,6 @@ pub mod xrdc2_d;
 pub mod cdog;
 
 #[cfg(any(feature = "doc", feature = "imxrt1176_cm4", feature = "imxrt1176_cm7"))]
-pub mod cm7_gpio;
-
-#[cfg(any(feature = "doc", feature = "imxrt1176_cm4", feature = "imxrt1176_cm7"))]
 pub mod gpio;
 
 #[cfg(any(feature = "doc", feature = "imxrt1176_cm4", feature = "imxrt1176_cm7"))]

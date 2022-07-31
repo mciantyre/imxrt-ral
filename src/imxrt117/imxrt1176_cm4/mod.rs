@@ -108,7 +108,6 @@ pub use super::instances::sram;
 pub use super::instances::ssarc_hp;
 pub use super::instances::ssarc_lp;
 pub use super::instances::xrdc2_d;
-pub mod cm7_gpio;
 pub mod gpio;
 pub mod lmem;
 pub mod mcm;
@@ -295,10 +294,8 @@ pub struct Peripherals {
     pub XRDC2_D0: xrdc2_d::Instance<0>,
     pub XRDC2_D1: xrdc2_d::Instance<1>,
     pub CDOG: cdog::Instance<0>,
-    pub CM7_GPIO2: cm7_gpio::Instance<2>,
-    pub CM7_GPIO3: cm7_gpio::Instance<3>,
-    pub GPIO1: gpio::Instance<1>,
     pub GPIO2: gpio::Instance<2>,
+    pub GPIO1: gpio::Instance<1>,
     pub GPIO3: gpio::Instance<3>,
     pub GPIO4: gpio::Instance<4>,
     pub GPIO5: gpio::Instance<5>,
@@ -501,10 +498,8 @@ impl Peripherals {
             XRDC2_D0: xrdc2_d::XRDC2_D0::steal(),
             XRDC2_D1: xrdc2_d::XRDC2_D1::steal(),
             CDOG: cdog::CDOG::steal(),
-            CM7_GPIO2: cm7_gpio::CM7_GPIO2::steal(),
-            CM7_GPIO3: cm7_gpio::CM7_GPIO3::steal(),
-            GPIO1: gpio::GPIO1::steal(),
             GPIO2: gpio::GPIO2::steal(),
+            GPIO1: gpio::GPIO1::steal(),
             GPIO3: gpio::GPIO3::steal(),
             GPIO4: gpio::GPIO4::steal(),
             GPIO5: gpio::GPIO5::steal(),
