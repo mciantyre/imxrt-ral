@@ -2890,7 +2890,7 @@ pub mod ENDPTCTRL0 {
     }
 }
 
-/// Endpoint Control 1
+/// Endpoint Control
 pub mod ENDPTCTRL1 {
 
     /// RXS
@@ -3062,7 +3062,7 @@ pub mod ENDPTCTRL1 {
     }
 }
 
-/// Endpoint Control 2
+/// Endpoint Control
 pub mod ENDPTCTRL2 {
     pub use super::ENDPTCTRL1::RXD;
     pub use super::ENDPTCTRL1::RXE;
@@ -3078,7 +3078,7 @@ pub mod ENDPTCTRL2 {
     pub use super::ENDPTCTRL1::TXT;
 }
 
-/// Endpoint Control 3
+/// Endpoint Control
 pub mod ENDPTCTRL3 {
     pub use super::ENDPTCTRL1::RXD;
     pub use super::ENDPTCTRL1::RXE;
@@ -3094,7 +3094,7 @@ pub mod ENDPTCTRL3 {
     pub use super::ENDPTCTRL1::TXT;
 }
 
-/// Endpoint Control 4
+/// Endpoint Control
 pub mod ENDPTCTRL4 {
     pub use super::ENDPTCTRL1::RXD;
     pub use super::ENDPTCTRL1::RXE;
@@ -3110,7 +3110,7 @@ pub mod ENDPTCTRL4 {
     pub use super::ENDPTCTRL1::TXT;
 }
 
-/// Endpoint Control 5
+/// Endpoint Control
 pub mod ENDPTCTRL5 {
     pub use super::ENDPTCTRL1::RXD;
     pub use super::ENDPTCTRL1::RXE;
@@ -3126,7 +3126,7 @@ pub mod ENDPTCTRL5 {
     pub use super::ENDPTCTRL1::TXT;
 }
 
-/// Endpoint Control 6
+/// Endpoint Control
 pub mod ENDPTCTRL6 {
     pub use super::ENDPTCTRL1::RXD;
     pub use super::ENDPTCTRL1::RXE;
@@ -3142,7 +3142,7 @@ pub mod ENDPTCTRL6 {
     pub use super::ENDPTCTRL1::TXT;
 }
 
-/// Endpoint Control 7
+/// Endpoint Control
 pub mod ENDPTCTRL7 {
     pub use super::ENDPTCTRL1::RXD;
     pub use super::ENDPTCTRL1::RXE;
@@ -3286,7 +3286,7 @@ pub struct RegisterBlock {
     pub ENDPTFLUSH: RWRegister<u32>,
 
     /// Endpoint Status
-    pub ENDPTSTAT: RORegister<u32>,
+    pub ENDPTSTAT: RWRegister<u32>,
 
     /// Endpoint Complete
     pub ENDPTCOMPLETE: RWRegister<u32>,
@@ -3294,25 +3294,25 @@ pub struct RegisterBlock {
     /// Endpoint Control0
     pub ENDPTCTRL0: RWRegister<u32>,
 
-    /// Endpoint Control 1
+    /// Endpoint Control
     pub ENDPTCTRL1: RWRegister<u32>,
 
-    /// Endpoint Control 2
+    /// Endpoint Control
     pub ENDPTCTRL2: RWRegister<u32>,
 
-    /// Endpoint Control 3
+    /// Endpoint Control
     pub ENDPTCTRL3: RWRegister<u32>,
 
-    /// Endpoint Control 4
+    /// Endpoint Control
     pub ENDPTCTRL4: RWRegister<u32>,
 
-    /// Endpoint Control 5
+    /// Endpoint Control
     pub ENDPTCTRL5: RWRegister<u32>,
 
-    /// Endpoint Control 6
+    /// Endpoint Control
     pub ENDPTCTRL6: RWRegister<u32>,
 
-    /// Endpoint Control 7
+    /// Endpoint Control
     pub ENDPTCTRL7: RWRegister<u32>,
 }
 pub struct ResetValues {

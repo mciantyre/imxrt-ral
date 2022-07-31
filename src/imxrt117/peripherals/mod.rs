@@ -134,10 +134,10 @@ pub mod enet_1g;
 pub mod enet;
 
 #[cfg(any(feature = "doc", feature = "imxrt1176_cm4", feature = "imxrt1176_cm7"))]
-pub mod usb_otg;
+pub mod usb;
 
 #[cfg(any(feature = "doc", feature = "imxrt1176_cm4", feature = "imxrt1176_cm7"))]
-pub mod usbnc_otg;
+pub mod usbnc;
 
 #[cfg(any(feature = "doc", feature = "imxrt1176_cm4", feature = "imxrt1176_cm7"))]
 pub mod usbphy;

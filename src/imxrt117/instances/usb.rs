@@ -4,10 +4,10 @@
 //!
 //! Used by: imxrt1176_cm4, imxrt1176_cm7
 
-pub use crate::imxrt117::peripherals::usb_otg::Instance;
-pub use crate::imxrt117::peripherals::usb_otg::{RegisterBlock, ResetValues};
+pub use crate::imxrt117::peripherals::usb::Instance;
+pub use crate::imxrt117::peripherals::usb::{RegisterBlock, ResetValues};
 
-pub use crate::imxrt117::peripherals::usb_otg::{
+pub use crate::imxrt117::peripherals::usb::{
     ASYNCLISTADDR, BURSTSIZE, CAPLENGTH, CONFIGFLAG, DCCPARAMS, DCIVERSION, DEVICEADDR,
     ENDPTCOMPLETE, ENDPTCTRL0, ENDPTCTRL1, ENDPTCTRL2, ENDPTCTRL3, ENDPTCTRL4, ENDPTCTRL5,
     ENDPTCTRL6, ENDPTCTRL7, ENDPTFLUSH, ENDPTNAK, ENDPTNAKEN, ENDPTPRIME, ENDPTSETUPSTAT,
@@ -18,34 +18,34 @@ pub use crate::imxrt117::peripherals::usb_otg::{
 #[cfg(not(feature = "nosync"))]
 use core::sync::atomic::{AtomicBool, Ordering};
 
-/// The USB_OTG1 peripheral instance.
+/// The USB1 peripheral instance.
 #[cfg(not(feature = "doc"))]
-pub type USB_OTG1 = Instance<1>;
+pub type USB1 = Instance<1>;
 
-/// The USB_OTG1 peripheral instance.
+/// The USB1 peripheral instance.
 ///
 /// This is a new type only for documentation purposes. When
 /// compiling for a target, this is defined as
 ///
 /// ```rust
-/// pub type USB_OTG1 = Instance<1>;
+/// pub type USB1 = Instance<1>;
 /// ```
 #[cfg(feature = "doc")]
-pub struct USB_OTG1 {
+pub struct USB1 {
     #[allow(unused)] // Only for documentation generation.
     addr: u32,
 }
 
-impl crate::private::Sealed for USB_OTG1 {}
-impl crate::Valid for USB_OTG1 {
+impl crate::private::Sealed for USB1 {}
+impl crate::Valid for USB1 {
     fn take() -> Option<Self> {
-        <USB_OTG1>::take()
+        <USB1>::take()
     }
     fn release(self) {
-        <USB_OTG1>::release(self);
+        <USB1>::release(self);
     }
     unsafe fn steal() -> Self {
-        <USB_OTG1>::steal()
+        <USB1>::steal()
     }
 }
 
@@ -53,18 +53,18 @@ impl crate::Valid for USB_OTG1 {
 #[allow(renamed_and_removed_lints)]
 #[allow(private_no_mangle_statics)]
 #[no_mangle]
-static USB_OTG1_TAKEN: AtomicBool = AtomicBool::new(false);
+static USB1_TAKEN: AtomicBool = AtomicBool::new(false);
 
-/// Access functions for the USB_OTG1 peripheral instance
+/// Access functions for the USB1 peripheral instance
 #[cfg(not(feature = "nosync"))]
-impl USB_OTG1 {
+impl USB1 {
     const INSTANCE: Self = Self {
         addr: 0x40430000,
         #[cfg(not(feature = "doc"))]
         intrs: &[crate::interrupt::USB_OTG1],
     };
 
-    /// Reset values for each field in USB_OTG1
+    /// Reset values for each field in USB1
     pub const reset: ResetValues = ResetValues {
         ID: 0xE4A1FA05,
         HWGENERAL: 0x00000015,
@@ -112,7 +112,7 @@ impl USB_OTG1 {
         ENDPTCTRL7: 0x00000000,
     };
 
-    /// Safe access to USB_OTG1
+    /// Safe access to USB1
     ///
     /// This function returns `Some(Instance)` if this instance is not
     /// currently taken, and `None` if it is. This ensures that if you
@@ -126,7 +126,7 @@ impl USB_OTG1 {
     /// provides access to the peripheral's registers.
     #[inline]
     pub fn take() -> Option<Self> {
-        let taken = USB_OTG1_TAKEN.swap(true, Ordering::SeqCst);
+        let taken = USB1_TAKEN.swap(true, Ordering::SeqCst);
         if taken {
             None
         } else {
@@ -134,7 +134,7 @@ impl USB_OTG1 {
         }
     }
 
-    /// Release exclusive access to USB_OTG1
+    /// Release exclusive access to USB1
     ///
     /// This function allows you to return an `Instance` so that it
     /// is available to `take()` again. This function will panic if
@@ -142,35 +142,35 @@ impl USB_OTG1 {
     /// already taken.
     #[inline]
     pub fn release(_: Self) {
-        let taken = USB_OTG1_TAKEN.swap(false, Ordering::SeqCst);
+        let taken = USB1_TAKEN.swap(false, Ordering::SeqCst);
         assert!(taken, "Released a peripheral which was not taken");
     }
 
-    /// Unsafely steal USB_OTG1
+    /// Unsafely steal USB1
     ///
     /// This function is similar to take() but forcibly takes the
     /// Instance, marking it as taken irregardless of its previous
     /// state.
     #[inline]
     pub unsafe fn steal() -> Self {
-        USB_OTG1_TAKEN.store(true, Ordering::SeqCst);
+        USB1_TAKEN.store(true, Ordering::SeqCst);
         Self::INSTANCE
     }
 }
 
-impl USB_OTG1 {
-    /// The interrupts associated with USB_OTG1
+impl USB1 {
+    /// The interrupts associated with USB1
     #[cfg(not(feature = "doc"))]
     pub const INTERRUPTS: [crate::Interrupt; 1] = [crate::interrupt::USB_OTG1];
 
-    /// The interrupts associated with USB_OTG1
+    /// The interrupts associated with USB1
     ///
     /// Note: the values are invalid for a documentation build.
     #[cfg(feature = "doc")]
     pub const INTERRUPTS: [crate::Interrupt; 0] = [];
 }
 
-/// Raw pointer to USB_OTG1
+/// Raw pointer to USB1
 ///
 /// Dereferencing this is unsafe because you are not ensured unique
 /// access to the peripheral, so you may encounter data races with
@@ -179,36 +179,36 @@ impl USB_OTG1 {
 ///
 /// This constant is provided for ease of use in unsafe code: you can
 /// simply call for example `write_reg!(gpio, GPIOA, ODR, 1);`.
-pub const USB_OTG1: *const RegisterBlock = 0x40430000 as *const _;
+pub const USB1: *const RegisterBlock = 0x40430000 as *const _;
 
-/// The USB_OTG2 peripheral instance.
+/// The USB2 peripheral instance.
 #[cfg(not(feature = "doc"))]
-pub type USB_OTG2 = Instance<2>;
+pub type USB2 = Instance<2>;
 
-/// The USB_OTG2 peripheral instance.
+/// The USB2 peripheral instance.
 ///
 /// This is a new type only for documentation purposes. When
 /// compiling for a target, this is defined as
 ///
 /// ```rust
-/// pub type USB_OTG2 = Instance<2>;
+/// pub type USB2 = Instance<2>;
 /// ```
 #[cfg(feature = "doc")]
-pub struct USB_OTG2 {
+pub struct USB2 {
     #[allow(unused)] // Only for documentation generation.
     addr: u32,
 }
 
-impl crate::private::Sealed for USB_OTG2 {}
-impl crate::Valid for USB_OTG2 {
+impl crate::private::Sealed for USB2 {}
+impl crate::Valid for USB2 {
     fn take() -> Option<Self> {
-        <USB_OTG2>::take()
+        <USB2>::take()
     }
     fn release(self) {
-        <USB_OTG2>::release(self);
+        <USB2>::release(self);
     }
     unsafe fn steal() -> Self {
-        <USB_OTG2>::steal()
+        <USB2>::steal()
     }
 }
 
@@ -216,18 +216,18 @@ impl crate::Valid for USB_OTG2 {
 #[allow(renamed_and_removed_lints)]
 #[allow(private_no_mangle_statics)]
 #[no_mangle]
-static USB_OTG2_TAKEN: AtomicBool = AtomicBool::new(false);
+static USB2_TAKEN: AtomicBool = AtomicBool::new(false);
 
-/// Access functions for the USB_OTG2 peripheral instance
+/// Access functions for the USB2 peripheral instance
 #[cfg(not(feature = "nosync"))]
-impl USB_OTG2 {
+impl USB2 {
     const INSTANCE: Self = Self {
         addr: 0x4042c000,
         #[cfg(not(feature = "doc"))]
         intrs: &[crate::interrupt::USB_OTG2],
     };
 
-    /// Reset values for each field in USB_OTG2
+    /// Reset values for each field in USB2
     pub const reset: ResetValues = ResetValues {
         ID: 0xE4A1FA05,
         HWGENERAL: 0x00000015,
@@ -275,7 +275,7 @@ impl USB_OTG2 {
         ENDPTCTRL7: 0x00000000,
     };
 
-    /// Safe access to USB_OTG2
+    /// Safe access to USB2
     ///
     /// This function returns `Some(Instance)` if this instance is not
     /// currently taken, and `None` if it is. This ensures that if you
@@ -289,7 +289,7 @@ impl USB_OTG2 {
     /// provides access to the peripheral's registers.
     #[inline]
     pub fn take() -> Option<Self> {
-        let taken = USB_OTG2_TAKEN.swap(true, Ordering::SeqCst);
+        let taken = USB2_TAKEN.swap(true, Ordering::SeqCst);
         if taken {
             None
         } else {
@@ -297,7 +297,7 @@ impl USB_OTG2 {
         }
     }
 
-    /// Release exclusive access to USB_OTG2
+    /// Release exclusive access to USB2
     ///
     /// This function allows you to return an `Instance` so that it
     /// is available to `take()` again. This function will panic if
@@ -305,35 +305,35 @@ impl USB_OTG2 {
     /// already taken.
     #[inline]
     pub fn release(_: Self) {
-        let taken = USB_OTG2_TAKEN.swap(false, Ordering::SeqCst);
+        let taken = USB2_TAKEN.swap(false, Ordering::SeqCst);
         assert!(taken, "Released a peripheral which was not taken");
     }
 
-    /// Unsafely steal USB_OTG2
+    /// Unsafely steal USB2
     ///
     /// This function is similar to take() but forcibly takes the
     /// Instance, marking it as taken irregardless of its previous
     /// state.
     #[inline]
     pub unsafe fn steal() -> Self {
-        USB_OTG2_TAKEN.store(true, Ordering::SeqCst);
+        USB2_TAKEN.store(true, Ordering::SeqCst);
         Self::INSTANCE
     }
 }
 
-impl USB_OTG2 {
-    /// The interrupts associated with USB_OTG2
+impl USB2 {
+    /// The interrupts associated with USB2
     #[cfg(not(feature = "doc"))]
     pub const INTERRUPTS: [crate::Interrupt; 1] = [crate::interrupt::USB_OTG2];
 
-    /// The interrupts associated with USB_OTG2
+    /// The interrupts associated with USB2
     ///
     /// Note: the values are invalid for a documentation build.
     #[cfg(feature = "doc")]
     pub const INTERRUPTS: [crate::Interrupt; 0] = [];
 }
 
-/// Raw pointer to USB_OTG2
+/// Raw pointer to USB2
 ///
 /// Dereferencing this is unsafe because you are not ensured unique
 /// access to the peripheral, so you may encounter data races with
@@ -342,4 +342,4 @@ impl USB_OTG2 {
 ///
 /// This constant is provided for ease of use in unsafe code: you can
 /// simply call for example `write_reg!(gpio, GPIOA, ODR, 1);`.
-pub const USB_OTG2: *const RegisterBlock = 0x4042c000 as *const _;
+pub const USB2: *const RegisterBlock = 0x4042c000 as *const _;

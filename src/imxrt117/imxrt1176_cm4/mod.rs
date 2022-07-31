@@ -68,9 +68,9 @@ pub use super::instances::semc;
 pub use super::instances::spdif;
 pub use super::instances::src;
 pub use super::instances::tmr;
-pub use super::instances::usb_otg;
+pub use super::instances::usb;
 pub use super::instances::usbhsdcd;
-pub use super::instances::usbnc_otg;
+pub use super::instances::usbnc;
 pub use super::instances::usbphy;
 pub use super::instances::usdhc;
 pub use super::instances::video_mux;
@@ -220,10 +220,10 @@ pub struct Peripherals {
     pub USDHC2: usdhc::Instance<2>,
     pub ENET_1G: enet_1g::Instance<0>,
     pub ENET: enet::Instance<0>,
-    pub USB_OTG1: usb_otg::Instance<1>,
-    pub USB_OTG2: usb_otg::Instance<2>,
-    pub USBNC_OTG1: usbnc_otg::Instance<1>,
-    pub USBNC_OTG2: usbnc_otg::Instance<2>,
+    pub USB1: usb::Instance<1>,
+    pub USB2: usb::Instance<2>,
+    pub USBNC1: usbnc::Instance<1>,
+    pub USBNC2: usbnc::Instance<2>,
     pub USBPHY1: usbphy::Instance<1>,
     pub USBPHY2: usbphy::Instance<2>,
     pub USBHSDCD1: usbhsdcd::Instance<1>,
@@ -424,10 +424,10 @@ impl Peripherals {
             USDHC2: usdhc::USDHC2::steal(),
             ENET_1G: enet_1g::ENET_1G::steal(),
             ENET: enet::ENET::steal(),
-            USB_OTG1: usb_otg::USB_OTG1::steal(),
-            USB_OTG2: usb_otg::USB_OTG2::steal(),
-            USBNC_OTG1: usbnc_otg::USBNC_OTG1::steal(),
-            USBNC_OTG2: usbnc_otg::USBNC_OTG2::steal(),
+            USB1: usb::USB1::steal(),
+            USB2: usb::USB2::steal(),
+            USBNC1: usbnc::USBNC1::steal(),
+            USBNC2: usbnc::USBNC2::steal(),
             USBPHY1: usbphy::USBPHY1::steal(),
             USBPHY2: usbphy::USBPHY2::steal(),
             USBHSDCD1: usbhsdcd::USBHSDCD1::steal(),
