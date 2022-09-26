@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"mod":[["REFLOCK","Sample clock reference delay line locked."],["REFSEL","Sample clock reference delay line delay cell number selection."],["SLVLOCK","Sample clock slave delay line locked."],["SLVSEL","Sample clock slave delay line delay cell number selection ."]]};
