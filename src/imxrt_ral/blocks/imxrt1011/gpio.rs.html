@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1011/gpio.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>gpio.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1011/gpio.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>gpio.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../../../normalize.css"><link rel="stylesheet" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../../../ayu.css" disabled><link rel="stylesheet" href="../../../../dark.css" disabled><link rel="stylesheet" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"></nav><main><div class="width-limiter"><nav class="sub"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><form class="search-form"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><pre class="src-line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -674,681 +674,681 @@
 <span id="674">674</span>
 <span id="675">675</span>
 <span id="676">676</span>
-</pre><pre class="rust"><code><span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO&quot;</span>]</span>
-<span class="attribute">#[<span class="ident">repr</span>(<span class="ident">C</span>)]</span>
-<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">RegisterBlock</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO data register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">DR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO direction register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">GDIR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO pad status register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">PSR</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO interrupt configuration register1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">ICR1</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO interrupt configuration register2&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">ICR2</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO interrupt mask register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">IMR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO interrupt status register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">ISR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO edge select register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">EDGE_SEL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="ident">_reserved0</span>: [<span class="ident">u8</span>; <span class="number">0x64</span>],
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO data register SET&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">DR_SET</span>: <span class="ident"><span class="kw">crate</span>::WORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO data register CLEAR&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">DR_CLEAR</span>: <span class="ident"><span class="kw">crate</span>::WORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO data register TOGGLE&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">DR_TOGGLE</span>: <span class="ident"><span class="kw">crate</span>::WORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
+</pre><pre class="rust"><code><span class="attribute">#[doc = <span class="string">&quot;GPIO&quot;</span>]
+#[repr(C)]
+</span><span class="kw">pub struct </span>RegisterBlock {
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO data register&quot;</span>]
+    </span><span class="kw">pub </span>DR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO direction register&quot;</span>]
+    </span><span class="kw">pub </span>GDIR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO pad status register&quot;</span>]
+    </span><span class="kw">pub </span>PSR: <span class="kw">crate</span>::RORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO interrupt configuration register1&quot;</span>]
+    </span><span class="kw">pub </span>ICR1: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO interrupt configuration register2&quot;</span>]
+    </span><span class="kw">pub </span>ICR2: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO interrupt mask register&quot;</span>]
+    </span><span class="kw">pub </span>IMR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO interrupt status register&quot;</span>]
+    </span><span class="kw">pub </span>ISR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO edge select register&quot;</span>]
+    </span><span class="kw">pub </span>EDGE_SEL: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    _reserved0: [u8; <span class="number">0x64</span>],
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO data register SET&quot;</span>]
+    </span><span class="kw">pub </span>DR_SET: <span class="kw">crate</span>::WORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO data register CLEAR&quot;</span>]
+    </span><span class="kw">pub </span>DR_CLEAR: <span class="kw">crate</span>::WORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO data register TOGGLE&quot;</span>]
+    </span><span class="kw">pub </span>DR_TOGGLE: <span class="kw">crate</span>::WORegister&lt;u32&gt;,
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO data register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;DR&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO direction register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">GDIR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GDIR&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">GDIR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;GPIO data register&quot;</span>]
+</span><span class="kw">pub mod </span>DR {
+    <span class="attribute">#[doc = <span class="string">&quot;DR&quot;</span>]
+    </span><span class="kw">pub mod </span>DR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO pad status register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">PSR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PSR&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">PSR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;GPIO direction register&quot;</span>]
+</span><span class="kw">pub mod </span>GDIR {
+    <span class="attribute">#[doc = <span class="string">&quot;GDIR&quot;</span>]
+    </span><span class="kw">pub mod </span>GDIR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO interrupt configuration register1&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR1</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR0&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR0</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR1</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR2&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR2</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">4</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR3&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR3</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">6</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR4&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR4</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR5&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR5</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">10</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR6&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR6</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">12</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR7&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR7</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">14</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR8&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR8</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">16</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR9&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR9</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">18</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR10&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR10</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">20</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR11&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR11</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">22</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR12&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR12</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">24</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR13&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR13</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">26</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR14&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR14</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">28</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR15&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR15</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">30</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
+<span class="attribute">#[doc = <span class="string">&quot;GPIO pad status register&quot;</span>]
+</span><span class="kw">pub mod </span>PSR {
+    <span class="attribute">#[doc = <span class="string">&quot;PSR&quot;</span>]
+    </span><span class="kw">pub mod </span>PSR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO interrupt configuration register2&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR2</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR16&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR16</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+<span class="attribute">#[doc = <span class="string">&quot;GPIO interrupt configuration register1&quot;</span>]
+</span><span class="kw">pub mod </span>ICR1 {
+    <span class="attribute">#[doc = <span class="string">&quot;ICR0&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR0 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR17&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR17</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR1&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR1 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR18&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR18</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">4</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR2&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR2 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">4</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR19&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR19</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">6</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR3&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR3 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">6</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR20&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR20</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR4&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR4 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR21&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR21</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">10</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR5&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR5 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">10</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR22&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR22</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">12</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR6&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR6 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">12</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR23&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR23</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">14</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR7&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR7 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">14</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR24&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR24</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">16</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR8&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR8 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">16</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR25&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR25</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">18</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR9&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR9 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">18</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR26&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR26</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">20</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR10&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR10 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">20</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR27&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR27</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">22</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR11&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR11 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">22</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR28&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR28</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">24</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR12&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR12 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">24</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR29&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR29</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">26</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR13&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR13 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">26</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR30&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR30</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">28</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR14&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR14 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">28</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ICR31&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ICR31</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">30</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LOW_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIGH_LEVEL</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RISING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FALLING_EDGE</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ICR15&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR15 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">30</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO interrupt mask register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">IMR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;IMR&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">IMR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;GPIO interrupt configuration register2&quot;</span>]
+</span><span class="kw">pub mod </span>ICR2 {
+    <span class="attribute">#[doc = <span class="string">&quot;ICR16&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR16 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR17&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR17 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR18&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR18 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">4</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR19&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR19 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">6</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR20&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR20 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR21&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR21 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">10</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR22&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR22 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">12</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR23&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR23 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">14</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR24&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR24 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">16</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR25&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR25 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">18</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR26&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR26 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">20</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR27&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR27 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">22</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR28&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR28 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">24</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR29&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR29 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">26</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR30&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR30 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">28</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ICR31&quot;</span>]
+    </span><span class="kw">pub mod </span>ICR31 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">30</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is low-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>LOW_LEVEL: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is high-level sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>HIGH_LEVEL: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is rising-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>RISING_EDGE: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Interrupt n is falling-edge sensitive.&quot;</span>]
+            </span><span class="kw">pub const </span>FALLING_EDGE: u32 = <span class="number">0x03</span>;
+        }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO interrupt status register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ISR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ISR&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ISR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;GPIO interrupt mask register&quot;</span>]
+</span><span class="kw">pub mod </span>IMR {
+    <span class="attribute">#[doc = <span class="string">&quot;IMR&quot;</span>]
+    </span><span class="kw">pub mod </span>IMR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO edge select register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">EDGE_SEL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO_EDGE_SEL&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">GPIO_EDGE_SEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;GPIO interrupt status register&quot;</span>]
+</span><span class="kw">pub mod </span>ISR {
+    <span class="attribute">#[doc = <span class="string">&quot;ISR&quot;</span>]
+    </span><span class="kw">pub mod </span>ISR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO data register SET&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DR_SET</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;DR_SET&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DR_SET</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;GPIO edge select register&quot;</span>]
+</span><span class="kw">pub mod </span>EDGE_SEL {
+    <span class="attribute">#[doc = <span class="string">&quot;GPIO_EDGE_SEL&quot;</span>]
+    </span><span class="kw">pub mod </span>GPIO_EDGE_SEL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO data register CLEAR&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DR_CLEAR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;DR_CLEAR&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DR_CLEAR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;GPIO data register SET&quot;</span>]
+</span><span class="kw">pub mod </span>DR_SET {
+    <span class="attribute">#[doc = <span class="string">&quot;DR_SET&quot;</span>]
+    </span><span class="kw">pub mod </span>DR_SET {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;GPIO data register TOGGLE&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DR_TOGGLE</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;DR_TOGGLE&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DR_TOGGLE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;GPIO data register CLEAR&quot;</span>]
+</span><span class="kw">pub mod </span>DR_CLEAR {
+    <span class="attribute">#[doc = <span class="string">&quot;DR_CLEAR&quot;</span>]
+    </span><span class="kw">pub mod </span>DR_CLEAR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;GPIO data register TOGGLE&quot;</span>]
+</span><span class="kw">pub mod </span>DR_TOGGLE {
+    <span class="attribute">#[doc = <span class="string">&quot;DR_TOGGLE&quot;</span>]
+    </span><span class="kw">pub mod </span>DR_TOGGLE {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
 </code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0 (a55dd71d5 2022-09-19)" ></div></body></html>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.66.0 (69f9c33d7 2022-12-12)" ></div></body></html>

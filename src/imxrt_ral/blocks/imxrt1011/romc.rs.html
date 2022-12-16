@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1011/romc.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>romc.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1011/romc.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>romc.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../../../normalize.css"><link rel="stylesheet" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../../../ayu.css" disabled><link rel="stylesheet" href="../../../../dark.css" disabled><link rel="stylesheet" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"></nav><main><div class="width-limiter"><nav class="sub"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><form class="search-form"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><pre class="src-line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -127,134 +127,134 @@
 <span id="127">127</span>
 <span id="128">128</span>
 <span id="129">129</span>
-</pre><pre class="rust"><code><span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC&quot;</span>]</span>
-<span class="attribute">#[<span class="ident">repr</span>(<span class="ident">C</span>)]</span>
-<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">RegisterBlock</span> {
-    <span class="ident">_reserved0</span>: [<span class="ident">u8</span>; <span class="number">0xd4</span>],
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Data Registers&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">ROMPATCHD</span>: [<span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>; <span class="number">8usize</span>],
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">ROMPATCHCNTL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Enable Register High&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">ROMPATCHENH</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Enable Register Low&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">ROMPATCHENL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Address Registers&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">ROMPATCHA</span>: [<span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>; <span class="number">16usize</span>],
-    <span class="ident">_reserved1</span>: [<span class="ident">u8</span>; <span class="number">0xc8</span>],
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Status Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">ROMPATCHSR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
+</pre><pre class="rust"><code><span class="attribute">#[doc = <span class="string">&quot;ROMC&quot;</span>]
+#[repr(C)]
+</span><span class="kw">pub struct </span>RegisterBlock {
+    _reserved0: [u8; <span class="number">0xd4</span>],
+    <span class="attribute">#[doc = <span class="string">&quot;ROMC Data Registers&quot;</span>]
+    </span><span class="kw">pub </span>ROMPATCHD: [<span class="kw">crate</span>::RWRegister&lt;u32&gt;; <span class="number">8usize</span>],
+    <span class="attribute">#[doc = <span class="string">&quot;ROMC Control Register&quot;</span>]
+    </span><span class="kw">pub </span>ROMPATCHCNTL: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;ROMC Enable Register High&quot;</span>]
+    </span><span class="kw">pub </span>ROMPATCHENH: <span class="kw">crate</span>::RORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;ROMC Enable Register Low&quot;</span>]
+    </span><span class="kw">pub </span>ROMPATCHENL: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;ROMC Address Registers&quot;</span>]
+    </span><span class="kw">pub </span>ROMPATCHA: [<span class="kw">crate</span>::RWRegister&lt;u32&gt;; <span class="number">16usize</span>],
+    _reserved1: [u8; <span class="number">0xc8</span>],
+    <span class="attribute">#[doc = <span class="string">&quot;ROMC Status Register&quot;</span>]
+    </span><span class="kw">pub </span>ROMPATCHSR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Data Registers&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ROMPATCHD</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Data Fix Registers - Stores the data used for 1-word data fix operations&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DATAX</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;ROMC Data Registers&quot;</span>]
+</span><span class="kw">pub mod </span>ROMPATCHD {
+    <span class="attribute">#[doc = <span class="string">&quot;Data Fix Registers - Stores the data used for 1-word data fix operations&quot;</span>]
+    </span><span class="kw">pub mod </span>DATAX {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ROMPATCHCNTL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Data Fix Enable - Controls the use of the first 8 address comparators for 1-word data fix or for code patch routine&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DATAFIX</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Address comparator triggers a opcode patch&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DATAFIX_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Address comparator triggers a data fix&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DATAFIX_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+<span class="attribute">#[doc = <span class="string">&quot;ROMC Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>ROMPATCHCNTL {
+    <span class="attribute">#[doc = <span class="string">&quot;Data Fix Enable - Controls the use of the first 8 address comparators for 1-word data fix or for code patch routine&quot;</span>]
+    </span><span class="kw">pub mod </span>DATAFIX {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Address comparator triggers a opcode patch&quot;</span>]
+            </span><span class="kw">pub const </span>DATAFIX_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Address comparator triggers a data fix&quot;</span>]
+            </span><span class="kw">pub const </span>DATAFIX_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Disable -- This bit, when set, disables all ROMC operations&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DIS</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">29</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Does not affect any ROMC functions (default)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DIS_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Disable all ROMC functions: data fixing, and opcode patching&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DIS_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Enable Register Low&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ROMPATCHENL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Enable Address Comparator - This bit enables the corresponding address comparator to trigger an event&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ENABLE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Address comparator disabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ENABLE_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Address comparator enabled, ROMC will trigger a opcode patch or data fix event upon matching of the associated address&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ENABLE_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;ROMC Disable -- This bit, when set, disables all ROMC operations&quot;</span>]
+    </span><span class="kw">pub mod </span>DIS {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">29</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Does not affect any ROMC functions (default)&quot;</span>]
+            </span><span class="kw">pub const </span>DIS_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Disable all ROMC functions: data fixing, and opcode patching&quot;</span>]
+            </span><span class="kw">pub const </span>DIS_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Address Registers&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ROMPATCHA</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;THUMB Comparator Select - Indicates that this address will trigger a THUMB opcode patch or an Arm opcode patch&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">THUMBX</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Arm patch&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">THUMBX_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;THUMB patch (ignore if data fix)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">THUMBX_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+<span class="attribute">#[doc = <span class="string">&quot;ROMC Enable Register Low&quot;</span>]
+</span><span class="kw">pub mod </span>ROMPATCHENL {
+    <span class="attribute">#[doc = <span class="string">&quot;Enable Address Comparator - This bit enables the corresponding address comparator to trigger an event&quot;</span>]
+    </span><span class="kw">pub mod </span>ENABLE {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Address comparator disabled&quot;</span>]
+            </span><span class="kw">pub const </span>ENABLE_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Address comparator enabled, ROMC will trigger a opcode patch or data fix event upon matching of the associated address&quot;</span>]
+            </span><span class="kw">pub const </span>ENABLE_1: u32 = <span class="number">0x01</span>;
         }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Address Comparator Registers - Indicates the memory address to be watched&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADDRX</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">1</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x003f_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Status Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ROMPATCHSR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC Source Number - Binary encoding of the number of the address comparator which has an address match in the most recent patch event on ROMC AHB&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SOURCE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x3f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Address Comparator 0 matched&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SOURCE_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Address Comparator 1 matched&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SOURCE_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Address Comparator 15 matched&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SOURCE_15</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x0f</span>;
+<span class="attribute">#[doc = <span class="string">&quot;ROMC Address Registers&quot;</span>]
+</span><span class="kw">pub mod </span>ROMPATCHA {
+    <span class="attribute">#[doc = <span class="string">&quot;THUMB Comparator Select - Indicates that this address will trigger a THUMB opcode patch or an Arm opcode patch&quot;</span>]
+    </span><span class="kw">pub mod </span>THUMBX {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Arm patch&quot;</span>]
+            </span><span class="kw">pub const </span>THUMBX_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;THUMB patch (ignore if data fix)&quot;</span>]
+            </span><span class="kw">pub const </span>THUMBX_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ROMC AHB Multiple Address Comparator matches Indicator - Indicates that multiple address comparator matches occurred&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SW</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">17</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no event or comparator collisions&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SW_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;a collision has occurred&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SW_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Address Comparator Registers - Indicates the memory address to be watched&quot;</span>]
+    </span><span class="kw">pub mod </span>ADDRX {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">1</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x003f_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;ROMC Status Register&quot;</span>]
+</span><span class="kw">pub mod </span>ROMPATCHSR {
+    <span class="attribute">#[doc = <span class="string">&quot;ROMC Source Number - Binary encoding of the number of the address comparator which has an address match in the most recent patch event on ROMC AHB&quot;</span>]
+    </span><span class="kw">pub mod </span>SOURCE {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x3f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Address Comparator 0 matched&quot;</span>]
+            </span><span class="kw">pub const </span>SOURCE_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Address Comparator 1 matched&quot;</span>]
+            </span><span class="kw">pub const </span>SOURCE_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Address Comparator 15 matched&quot;</span>]
+            </span><span class="kw">pub const </span>SOURCE_15: u32 = <span class="number">0x0f</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;ROMC AHB Multiple Address Comparator matches Indicator - Indicates that multiple address comparator matches occurred&quot;</span>]
+    </span><span class="kw">pub mod </span>SW {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">17</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;no event or comparator collisions&quot;</span>]
+            </span><span class="kw">pub const </span>SW_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;a collision has occurred&quot;</span>]
+            </span><span class="kw">pub const </span>SW_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
 </code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0 (a55dd71d5 2022-09-19)" ></div></body></html>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.66.0 (69f9c33d7 2022-12-12)" ></div></body></html>

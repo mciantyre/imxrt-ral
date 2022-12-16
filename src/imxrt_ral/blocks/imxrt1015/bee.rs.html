@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1015/bee.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>bee.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1015/bee.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>bee.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../../../normalize.css"><link rel="stylesheet" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../../../ayu.css" disabled><link rel="stylesheet" href="../../../../dark.css" disabled><link rel="stylesheet" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"></nav><main><div class="width-limiter"><nav class="sub"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><form class="search-form"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><pre class="src-line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -477,484 +477,484 @@
 <span id="477">477</span>
 <span id="478">478</span>
 <span id="479">479</span>
-</pre><pre class="rust"><code><span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Bus Encryption Engine&quot;</span>]</span>
-<span class="attribute">#[<span class="ident">repr</span>(<span class="ident">C</span>)]</span>
-<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">RegisterBlock</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;BEE Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTRL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">ADDR_OFFSET0</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">ADDR_OFFSET1</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">AES_KEY0_W0</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">AES_KEY0_W1</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">AES_KEY0_W2</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">AES_KEY0_W3</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">STATUS</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTR_NONCE0_W0</span>: <span class="ident"><span class="kw">crate</span>::WORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTR_NONCE0_W1</span>: <span class="ident"><span class="kw">crate</span>::WORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTR_NONCE0_W2</span>: <span class="ident"><span class="kw">crate</span>::WORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTR_NONCE0_W3</span>: <span class="ident"><span class="kw">crate</span>::WORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTR_NONCE1_W0</span>: <span class="ident"><span class="kw">crate</span>::WORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTR_NONCE1_W1</span>: <span class="ident"><span class="kw">crate</span>::WORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTR_NONCE1_W2</span>: <span class="ident"><span class="kw">crate</span>::WORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTR_NONCE1_W3</span>: <span class="ident"><span class="kw">crate</span>::WORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">REGION1_TOP</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">REGION1_BOT</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
+</pre><pre class="rust"><code><span class="attribute">#[doc = <span class="string">&quot;Bus Encryption Engine&quot;</span>]
+#[repr(C)]
+</span><span class="kw">pub struct </span>RegisterBlock {
+    <span class="attribute">#[doc = <span class="string">&quot;BEE Control Register&quot;</span>]
+    </span><span class="kw">pub </span>CTRL: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>ADDR_OFFSET0: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>ADDR_OFFSET1: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>AES_KEY0_W0: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>AES_KEY0_W1: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>AES_KEY0_W2: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>AES_KEY0_W3: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>STATUS: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>CTR_NONCE0_W0: <span class="kw">crate</span>::WORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>CTR_NONCE0_W1: <span class="kw">crate</span>::WORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>CTR_NONCE0_W2: <span class="kw">crate</span>::WORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>CTR_NONCE0_W3: <span class="kw">crate</span>::WORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>CTR_NONCE1_W0: <span class="kw">crate</span>::WORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>CTR_NONCE1_W1: <span class="kw">crate</span>::WORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>CTR_NONCE1_W2: <span class="kw">crate</span>::WORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>CTR_NONCE1_W3: <span class="kw">crate</span>::WORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>REGION1_TOP: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub </span>REGION1_BOT: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;BEE Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;BEE enable bit&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">BEE_ENABLE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Disable BEE&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">BEE_ENABLE_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Enable BEE&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">BEE_ENABLE_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+<span class="attribute">#[doc = <span class="string">&quot;BEE Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>CTRL {
+    <span class="attribute">#[doc = <span class="string">&quot;BEE enable bit&quot;</span>]
+    </span><span class="kw">pub mod </span>BEE_ENABLE {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Disable BEE&quot;</span>]
+            </span><span class="kw">pub const </span>BEE_ENABLE_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Enable BEE&quot;</span>]
+            </span><span class="kw">pub const </span>BEE_ENABLE_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Clock enable input, low inactive&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL_CLK_EN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">1</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Clock enable input, low inactive&quot;</span>]
+    </span><span class="kw">pub mod </span>CTRL_CLK_EN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">1</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Soft reset input, low active&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL_SFTRST_N</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Soft reset input, low active&quot;</span>]
+    </span><span class="kw">pub mod </span>CTRL_SFTRST_N {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;AES-128 key is ready&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">KEY_VALID</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">4</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;AES-128 key is ready&quot;</span>]
+    </span><span class="kw">pub mod </span>KEY_VALID {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">4</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;AES key region select&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">KEY_REGION_SEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">5</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Load AES key for region0&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">KEY_REGION_SEL_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Load AES key for region1&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">KEY_REGION_SEL_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;AES key region select&quot;</span>]
+    </span><span class="kw">pub mod </span>KEY_REGION_SEL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">5</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Load AES key for region0&quot;</span>]
+            </span><span class="kw">pub const </span>KEY_REGION_SEL_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Load AES key for region1&quot;</span>]
+            </span><span class="kw">pub const </span>KEY_REGION_SEL_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Enable access permission control When AC_PROT_EN is asserted, all encrypted regions are limited to be ARM core access only&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">AC_PROT_EN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">6</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Enable access permission control When AC_PROT_EN is asserted, all encrypted regions are limited to be ARM core access only&quot;</span>]
+    </span><span class="kw">pub mod </span>AC_PROT_EN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">6</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Endian swap control for the 16 bytes input and output data of AES core.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LITTLE_ENDIAN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;The input and output data of the AES core is swapped as below: {B15,B14,B13,B12,B11,B10,B9,B8, B7,B6,B5,B4,B3,B2,B1,B0} swap to {B0,B1,B2,B3,B4,B5,B6,B7, B8,B9,B10,B11,B12,B13,B14,B15}, where B0~B15 refers to Byte0 to Byte15.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LITTLE_ENDIAN_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;The input and output data of AES core is not swapped.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LITTLE_ENDIAN_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Endian swap control for the 16 bytes input and output data of AES core.&quot;</span>]
+    </span><span class="kw">pub mod </span>LITTLE_ENDIAN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;The input and output data of the AES core is swapped as below: {B15,B14,B13,B12,B11,B10,B9,B8, B7,B6,B5,B4,B3,B2,B1,B0} swap to {B0,B1,B2,B3,B4,B5,B6,B7, B8,B9,B10,B11,B12,B13,B14,B15}, where B0~B15 refers to Byte0 to Byte15.&quot;</span>]
+            </span><span class="kw">pub const </span>LITTLE_ENDIAN_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;The input and output data of AES core is not swapped.&quot;</span>]
+            </span><span class="kw">pub const </span>LITTLE_ENDIAN_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Security level of the allowed access for memory region0&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SECURITY_LEVEL_R0</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Security level of the allowed access for memory region0&quot;</span>]
+    </span><span class="kw">pub mod </span>SECURITY_LEVEL_R0 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;AES mode of region0&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL_AES_MODE_R0</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">10</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ECB&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CTRL_AES_MODE_R0_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;CTR&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CTRL_AES_MODE_R0_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;AES mode of region0&quot;</span>]
+    </span><span class="kw">pub mod </span>CTRL_AES_MODE_R0 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">10</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;ECB&quot;</span>]
+            </span><span class="kw">pub const </span>CTRL_AES_MODE_R0_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;CTR&quot;</span>]
+            </span><span class="kw">pub const </span>CTRL_AES_MODE_R0_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Security level of the allowed access for memory region1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SECURITY_LEVEL_R1</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">12</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Security level of the allowed access for memory region1&quot;</span>]
+    </span><span class="kw">pub mod </span>SECURITY_LEVEL_R1 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">12</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;AES mode of region1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL_AES_MODE_R1</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">14</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ECB&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CTRL_AES_MODE_R1_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;CTR&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CTRL_AES_MODE_R1_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;AES mode of region1&quot;</span>]
+    </span><span class="kw">pub mod </span>CTRL_AES_MODE_R1 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">14</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;ECB&quot;</span>]
+            </span><span class="kw">pub const </span>CTRL_AES_MODE_R1_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;CTR&quot;</span>]
+            </span><span class="kw">pub const </span>CTRL_AES_MODE_R1_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for bee_enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">BEE_ENABLE_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">16</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for bee_enable&quot;</span>]
+    </span><span class="kw">pub mod </span>BEE_ENABLE_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">16</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for ctrl_clk_en&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL_CLK_EN_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">17</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for ctrl_clk_en&quot;</span>]
+    </span><span class="kw">pub mod </span>CTRL_CLK_EN_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">17</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for ctrl_sftrst&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL_SFTRST_N_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">18</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for ctrl_sftrst&quot;</span>]
+    </span><span class="kw">pub mod </span>CTRL_SFTRST_N_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">18</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for region1 address boundary&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REGION1_ADDR_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">19</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for region1 address boundary&quot;</span>]
+    </span><span class="kw">pub mod </span>REGION1_ADDR_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">19</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for key_valid&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">KEY_VALID_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">20</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for key_valid&quot;</span>]
+    </span><span class="kw">pub mod </span>KEY_VALID_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">20</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for key_region_sel&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">KEY_REGION_SEL_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">21</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for key_region_sel&quot;</span>]
+    </span><span class="kw">pub mod </span>KEY_REGION_SEL_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">21</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for ac_prot&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">AC_PROT_EN_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">22</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for ac_prot&quot;</span>]
+    </span><span class="kw">pub mod </span>AC_PROT_EN_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">22</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for little_endian&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LITTLE_ENDIAN_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">23</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for little_endian&quot;</span>]
+    </span><span class="kw">pub mod </span>LITTLE_ENDIAN_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">23</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bits for security_level_r0&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SECURITY_LEVEL_R0_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">24</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bits for security_level_r0&quot;</span>]
+    </span><span class="kw">pub mod </span>SECURITY_LEVEL_R0_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">24</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for region0 ctrl_aes_mode&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL_AES_MODE_R0_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">26</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for region0 ctrl_aes_mode&quot;</span>]
+    </span><span class="kw">pub mod </span>CTRL_AES_MODE_R0_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">26</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for region0 AES key&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REGION0_KEY_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">27</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for region0 AES key&quot;</span>]
+    </span><span class="kw">pub mod </span>REGION0_KEY_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">27</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bits for security_level_r1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SECURITY_LEVEL_R1_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">28</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bits for security_level_r1&quot;</span>]
+    </span><span class="kw">pub mod </span>SECURITY_LEVEL_R1_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">28</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for region1 ctrl_aes_mode&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL_AES_MODE_R1_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">30</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for region1 ctrl_aes_mode&quot;</span>]
+    </span><span class="kw">pub mod </span>CTRL_AES_MODE_R1_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">30</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bit for region1 AES key&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REGION1_KEY_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">31</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADDR_OFFSET0</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Signed offset for BEE region 0&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADDR_OFFSET0</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bits for addr_offset0&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADDR_OFFSET0_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">16</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bit for region1 AES key&quot;</span>]
+    </span><span class="kw">pub mod </span>REGION1_KEY_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">31</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADDR_OFFSET1</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Signed offset for BEE region 1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADDR_OFFSET1</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>ADDR_OFFSET0 {
+    <span class="attribute">#[doc = <span class="string">&quot;Signed offset for BEE region 0&quot;</span>]
+    </span><span class="kw">pub mod </span>ADDR_OFFSET0 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lock bits for addr_offset1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADDR_OFFSET1_LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">16</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">AES_KEY0_W0</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;AES 128 key from software&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">KEY0</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bits for addr_offset0&quot;</span>]
+    </span><span class="kw">pub mod </span>ADDR_OFFSET0_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">16</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">AES_KEY0_W1</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;AES 128 key from software&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">KEY1</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>ADDR_OFFSET1 {
+    <span class="attribute">#[doc = <span class="string">&quot;Signed offset for BEE region 1&quot;</span>]
+    </span><span class="kw">pub mod </span>ADDR_OFFSET1 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Lock bits for addr_offset1&quot;</span>]
+    </span><span class="kw">pub mod </span>ADDR_OFFSET1_LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">16</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">AES_KEY0_W2</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;AES 128 key from software&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">KEY2</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>AES_KEY0_W0 {
+    <span class="attribute">#[doc = <span class="string">&quot;AES 128 key from software&quot;</span>]
+    </span><span class="kw">pub mod </span>KEY0 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">AES_KEY0_W3</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;AES 128 key from software&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">KEY3</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>AES_KEY0_W1 {
+    <span class="attribute">#[doc = <span class="string">&quot;AES 128 key from software&quot;</span>]
+    </span><span class="kw">pub mod </span>KEY1 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">STATUS</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;bit 7: Protected region-3 access violation bit 6: Protected region-2 access violation bit 5: Protected region-1 access violation bit 4: Protected region-0 access violation bit 3: Region-1 read channel security violation bit 2: Read channel illegal access detected bit 1: Region-0 read channel security violation bit 0: Disable abort&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">IRQ_VEC</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;1&#39;b1: BEE is idle; 1&#39;b0: BEE is active&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">BEE_IDLE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>AES_KEY0_W2 {
+    <span class="attribute">#[doc = <span class="string">&quot;AES 128 key from software&quot;</span>]
+    </span><span class="kw">pub mod </span>KEY2 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTR_NONCE0_W0</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Nonce0 from software for CTR, for region0. Nonce0={Nonce03,Nonce02,Nonce01,Nonce00}&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">NONCE00</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>AES_KEY0_W3 {
+    <span class="attribute">#[doc = <span class="string">&quot;AES 128 key from software&quot;</span>]
+    </span><span class="kw">pub mod </span>KEY3 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTR_NONCE0_W1</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Nonce0 from software for CTR, for region0. Nonce0={Nonce03,Nonce02,Nonce01,Nonce00}&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">NONCE01</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>STATUS {
+    <span class="attribute">#[doc = <span class="string">&quot;bit 7: Protected region-3 access violation bit 6: Protected region-2 access violation bit 5: Protected region-1 access violation bit 4: Protected region-0 access violation bit 3: Region-1 read channel security violation bit 2: Read channel illegal access detected bit 1: Region-0 read channel security violation bit 0: Disable abort&quot;</span>]
+    </span><span class="kw">pub mod </span>IRQ_VEC {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;1&#39;b1: BEE is idle; 1&#39;b0: BEE is active&quot;</span>]
+    </span><span class="kw">pub mod </span>BEE_IDLE {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTR_NONCE0_W2</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Nonce0 from software for CTR, for region0. Nonce0={Nonce03,Nonce02,Nonce01,Nonce00}&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">NONCE02</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>CTR_NONCE0_W0 {
+    <span class="attribute">#[doc = <span class="string">&quot;Nonce0 from software for CTR, for region0. Nonce0={Nonce03,Nonce02,Nonce01,Nonce00}&quot;</span>]
+    </span><span class="kw">pub mod </span>NONCE00 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTR_NONCE0_W3</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Nonce0 from software for CTR, for region0. Nonce0={Nonce03,Nonce02,Nonce01,Nonce00}&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">NONCE03</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>CTR_NONCE0_W1 {
+    <span class="attribute">#[doc = <span class="string">&quot;Nonce0 from software for CTR, for region0. Nonce0={Nonce03,Nonce02,Nonce01,Nonce00}&quot;</span>]
+    </span><span class="kw">pub mod </span>NONCE01 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTR_NONCE1_W0</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Nonce1 from software for CTR, for region1. Nonce1={Nonce13,Nonce12,Nonce11,Nonce10}&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">NONCE10</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>CTR_NONCE0_W2 {
+    <span class="attribute">#[doc = <span class="string">&quot;Nonce0 from software for CTR, for region0. Nonce0={Nonce03,Nonce02,Nonce01,Nonce00}&quot;</span>]
+    </span><span class="kw">pub mod </span>NONCE02 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTR_NONCE1_W1</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Nonce1 from software for CTR, for region1. Nonce1={Nonce13,Nonce12,Nonce11,Nonce10}&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">NONCE11</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>CTR_NONCE0_W3 {
+    <span class="attribute">#[doc = <span class="string">&quot;Nonce0 from software for CTR, for region0. Nonce0={Nonce03,Nonce02,Nonce01,Nonce00}&quot;</span>]
+    </span><span class="kw">pub mod </span>NONCE03 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTR_NONCE1_W2</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Nonce1 from software for CTR, for region1. Nonce1={Nonce13,Nonce12,Nonce11,Nonce10}&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">NONCE12</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>CTR_NONCE1_W0 {
+    <span class="attribute">#[doc = <span class="string">&quot;Nonce1 from software for CTR, for region1. Nonce1={Nonce13,Nonce12,Nonce11,Nonce10}&quot;</span>]
+    </span><span class="kw">pub mod </span>NONCE10 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTR_NONCE1_W3</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Nonce1 from software for CTR, for region1. Nonce1={Nonce13,Nonce12,Nonce11,Nonce10}&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">NONCE13</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>CTR_NONCE1_W1 {
+    <span class="attribute">#[doc = <span class="string">&quot;Nonce1 from software for CTR, for region1. Nonce1={Nonce13,Nonce12,Nonce11,Nonce10}&quot;</span>]
+    </span><span class="kw">pub mod </span>NONCE11 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REGION1_TOP</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Address upper limit of region1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REGION1_TOP</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>CTR_NONCE1_W2 {
+    <span class="attribute">#[doc = <span class="string">&quot;Nonce1 from software for CTR, for region1. Nonce1={Nonce13,Nonce12,Nonce11,Nonce10}&quot;</span>]
+    </span><span class="kw">pub mod </span>NONCE12 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REGION1_BOT</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Address lower limit of region1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REGION1_BOT</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0xffff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>CTR_NONCE1_W3 {
+    <span class="attribute">#[doc = <span class="string">&quot;Nonce1 from software for CTR, for region1. Nonce1={Nonce13,Nonce12,Nonce11,Nonce10}&quot;</span>]
+    </span><span class="kw">pub mod </span>NONCE13 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>REGION1_TOP {
+    <span class="attribute">#[doc = <span class="string">&quot;Address upper limit of region1&quot;</span>]
+    </span><span class="kw">pub mod </span>REGION1_TOP {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+</span><span class="kw">pub mod </span>REGION1_BOT {
+    <span class="attribute">#[doc = <span class="string">&quot;Address lower limit of region1&quot;</span>]
+    </span><span class="kw">pub mod </span>REGION1_BOT {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0xffff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
 </code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0 (a55dd71d5 2022-09-19)" ></div></body></html>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.66.0 (69f9c33d7 2022-12-12)" ></div></body></html>

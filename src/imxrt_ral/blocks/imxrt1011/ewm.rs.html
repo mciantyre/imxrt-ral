@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1011/ewm.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>ewm.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1011/ewm.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>ewm.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../../../normalize.css"><link rel="stylesheet" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../../../ayu.css" disabled><link rel="stylesheet" href="../../../../dark.css" disabled><link rel="stylesheet" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"></nav><main><div class="width-limiter"><nav class="sub"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><form class="search-form"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><pre class="src-line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -104,111 +104,111 @@
 <span id="104">104</span>
 <span id="105">105</span>
 <span id="106">106</span>
-</pre><pre class="rust"><code><span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;EWM&quot;</span>]</span>
-<span class="attribute">#[<span class="ident">repr</span>(<span class="ident">C</span>)]</span>
-<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">RegisterBlock</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTRL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u8</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Service Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SERV</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u8</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare Low Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CMPL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u8</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare High Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CMPH</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u8</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Clock Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CLKCTRL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u8</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Clock Prescaler Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CLKPRESCALER</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u8</span><span class="op">&gt;</span>,
+</pre><pre class="rust"><code><span class="attribute">#[doc = <span class="string">&quot;EWM&quot;</span>]
+#[repr(C)]
+</span><span class="kw">pub struct </span>RegisterBlock {
+    <span class="attribute">#[doc = <span class="string">&quot;Control Register&quot;</span>]
+    </span><span class="kw">pub </span>CTRL: <span class="kw">crate</span>::RWRegister&lt;u8&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Service Register&quot;</span>]
+    </span><span class="kw">pub </span>SERV: <span class="kw">crate</span>::RWRegister&lt;u8&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Compare Low Register&quot;</span>]
+    </span><span class="kw">pub </span>CMPL: <span class="kw">crate</span>::RWRegister&lt;u8&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Compare High Register&quot;</span>]
+    </span><span class="kw">pub </span>CMPH: <span class="kw">crate</span>::RWRegister&lt;u8&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Clock Control Register&quot;</span>]
+    </span><span class="kw">pub </span>CLKCTRL: <span class="kw">crate</span>::RWRegister&lt;u8&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Clock Prescaler Register&quot;</span>]
+    </span><span class="kw">pub </span>CLKPRESCALER: <span class="kw">crate</span>::RWRegister&lt;u8&gt;,
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;EWM enable.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">EWMEN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>CTRL {
+    <span class="attribute">#[doc = <span class="string">&quot;EWM enable.&quot;</span>]
+    </span><span class="kw">pub mod </span>EWMEN {
+        <span class="kw">pub const </span>offset: u8 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u8 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;EWM_in&#39;s Assertion State Select.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ASSIN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">1</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;EWM_in&#39;s Assertion State Select.&quot;</span>]
+    </span><span class="kw">pub mod </span>ASSIN {
+        <span class="kw">pub const </span>offset: u8 = <span class="number">1</span>;
+        <span class="kw">pub const </span>mask: u8 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input Enable.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">INEN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Input Enable.&quot;</span>]
+    </span><span class="kw">pub mod </span>INEN {
+        <span class="kw">pub const </span>offset: u8 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u8 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Interrupt Enable.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">INTEN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">3</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Service Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SERV</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SERVICE&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SERVICE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0xff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;Interrupt Enable.&quot;</span>]
+    </span><span class="kw">pub mod </span>INTEN {
+        <span class="kw">pub const </span>offset: u8 = <span class="number">3</span>;
+        <span class="kw">pub const </span>mask: u8 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare Low Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CMPL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;COMPAREL&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">COMPAREL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0xff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;Service Register&quot;</span>]
+</span><span class="kw">pub mod </span>SERV {
+    <span class="attribute">#[doc = <span class="string">&quot;SERVICE&quot;</span>]
+    </span><span class="kw">pub mod </span>SERVICE {
+        <span class="kw">pub const </span>offset: u8 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u8 = <span class="number">0xff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare High Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CMPH</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;COMPAREH&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">COMPAREH</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0xff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;Compare Low Register&quot;</span>]
+</span><span class="kw">pub mod </span>CMPL {
+    <span class="attribute">#[doc = <span class="string">&quot;COMPAREL&quot;</span>]
+    </span><span class="kw">pub mod </span>COMPAREL {
+        <span class="kw">pub const </span>offset: u8 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u8 = <span class="number">0xff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Clock Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CLKCTRL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;CLKSEL&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CLKSEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;Compare High Register&quot;</span>]
+</span><span class="kw">pub mod </span>CMPH {
+    <span class="attribute">#[doc = <span class="string">&quot;COMPAREH&quot;</span>]
+    </span><span class="kw">pub mod </span>COMPAREH {
+        <span class="kw">pub const </span>offset: u8 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u8 = <span class="number">0xff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Clock Prescaler Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CLKPRESCALER</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;CLK_DIV&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CLK_DIV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u8</span> <span class="op">=</span> <span class="number">0xff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;Clock Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>CLKCTRL {
+    <span class="attribute">#[doc = <span class="string">&quot;CLKSEL&quot;</span>]
+    </span><span class="kw">pub mod </span>CLKSEL {
+        <span class="kw">pub const </span>offset: u8 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u8 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Clock Prescaler Register&quot;</span>]
+</span><span class="kw">pub mod </span>CLKPRESCALER {
+    <span class="attribute">#[doc = <span class="string">&quot;CLK_DIV&quot;</span>]
+    </span><span class="kw">pub mod </span>CLK_DIV {
+        <span class="kw">pub const </span>offset: u8 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u8 = <span class="number">0xff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
 </code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0 (a55dd71d5 2022-09-19)" ></div></body></html>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.66.0 (69f9c33d7 2022-12-12)" ></div></body></html>

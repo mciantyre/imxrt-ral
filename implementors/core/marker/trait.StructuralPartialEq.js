@@ -1,3 +1,3 @@
-(function() {var implementors = {};
-implementors["imxrt_ral"] = [{"text":"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.64.0/core/marker/trait.StructuralPartialEq.html\" title=\"trait core::marker::StructuralPartialEq\">StructuralPartialEq</a> for <a class=\"enum\" href=\"imxrt_ral/enum.Interrupt.html\" title=\"enum imxrt_ral::Interrupt\">Interrupt</a>","synthetic":false,"types":["imxrt_ral::imxrt1062::Interrupt"]}];
-if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
+(function() {var implementors = {
+"imxrt_ral":[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.66.0/core/marker/trait.StructuralPartialEq.html\" title=\"trait core::marker::StructuralPartialEq\">StructuralPartialEq</a> for <a class=\"enum\" href=\"imxrt_ral/enum.Interrupt.html\" title=\"enum imxrt_ral::Interrupt\">Interrupt</a>"]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

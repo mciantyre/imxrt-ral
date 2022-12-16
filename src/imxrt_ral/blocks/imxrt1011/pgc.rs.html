@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1011/pgc.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>pgc.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1011/pgc.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>pgc.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../../../normalize.css"><link rel="stylesheet" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../../../ayu.css" disabled><link rel="stylesheet" href="../../../../dark.css" disabled><link rel="stylesheet" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"></nav><main><div class="width-limiter"><nav class="sub"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><form class="search-form"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><pre class="src-line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -160,167 +160,167 @@
 <span id="160">160</span>
 <span id="161">161</span>
 <span id="162">162</span>
-</pre><pre class="rust"><code><span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC&quot;</span>]</span>
-<span class="attribute">#[<span class="ident">repr</span>(<span class="ident">C</span>)]</span>
-<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">RegisterBlock</span> {
-    <span class="ident">_reserved0</span>: [<span class="ident">u8</span>; <span class="number">0x0220</span>],
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC Mega Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">MEGA_CTRL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC Mega Power Up Sequence Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">MEGA_PUPSCR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC Mega Pull Down Sequence Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">MEGA_PDNSCR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC Mega Power Gating Controller Status Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">MEGA_SR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="ident">_reserved1</span>: [<span class="ident">u8</span>; <span class="number">0x70</span>],
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC CPU Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CPU_CTRL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC CPU Power Up Sequence Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CPU_PUPSCR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC CPU Pull Down Sequence Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CPU_PDNSCR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC CPU Power Gating Controller Status Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CPU_SR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
+</pre><pre class="rust"><code><span class="attribute">#[doc = <span class="string">&quot;PGC&quot;</span>]
+#[repr(C)]
+</span><span class="kw">pub struct </span>RegisterBlock {
+    _reserved0: [u8; <span class="number">0x0220</span>],
+    <span class="attribute">#[doc = <span class="string">&quot;PGC Mega Control Register&quot;</span>]
+    </span><span class="kw">pub </span>MEGA_CTRL: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;PGC Mega Power Up Sequence Control Register&quot;</span>]
+    </span><span class="kw">pub </span>MEGA_PUPSCR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;PGC Mega Pull Down Sequence Control Register&quot;</span>]
+    </span><span class="kw">pub </span>MEGA_PDNSCR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;PGC Mega Power Gating Controller Status Register&quot;</span>]
+    </span><span class="kw">pub </span>MEGA_SR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    _reserved1: [u8; <span class="number">0x70</span>],
+    <span class="attribute">#[doc = <span class="string">&quot;PGC CPU Control Register&quot;</span>]
+    </span><span class="kw">pub </span>CPU_CTRL: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;PGC CPU Power Up Sequence Control Register&quot;</span>]
+    </span><span class="kw">pub </span>CPU_PUPSCR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;PGC CPU Pull Down Sequence Control Register&quot;</span>]
+    </span><span class="kw">pub </span>CPU_PDNSCR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;PGC CPU Power Gating Controller Status Register&quot;</span>]
+    </span><span class="kw">pub </span>CPU_SR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC Mega Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">MEGA_CTRL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Power Control PCR must not change from power-down request (pdn_req) assertion until the target subsystem is completely powered up&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">PCR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Do not switch off power even if pdn_req is asserted.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PCR_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Switch off power when pdn_req is asserted.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PCR_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+<span class="attribute">#[doc = <span class="string">&quot;PGC Mega Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>MEGA_CTRL {
+    <span class="attribute">#[doc = <span class="string">&quot;Power Control PCR must not change from power-down request (pdn_req) assertion until the target subsystem is completely powered up&quot;</span>]
+    </span><span class="kw">pub mod </span>PCR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Do not switch off power even if pdn_req is asserted.&quot;</span>]
+            </span><span class="kw">pub const </span>PCR_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Switch off power when pdn_req is asserted.&quot;</span>]
+            </span><span class="kw">pub const </span>PCR_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC Mega Power Up Sequence Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">MEGA_PUPSCR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;After a power-up request (pup_req assertion), the PGC waits a number of IPG clocks equal to the value of SW before asserting power toggle on/off signal (switch_b)&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SW</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x3f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;PGC Mega Power Up Sequence Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>MEGA_PUPSCR {
+    <span class="attribute">#[doc = <span class="string">&quot;After a power-up request (pup_req assertion), the PGC waits a number of IPG clocks equal to the value of SW before asserting power toggle on/off signal (switch_b)&quot;</span>]
+    </span><span class="kw">pub mod </span>SW {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x3f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;After asserting power toggle on/off signal (switch_b), the PGC waits a number of IPG clocks equal to the value of SW2ISO before negating isolation&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SW2ISO</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x3f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC Mega Pull Down Sequence Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">MEGA_PDNSCR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;After a power-down request (pdn_req assertion), the PGC waits a number of IPG clocks equal to the value of ISO before asserting isolation&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ISO</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x3f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;After asserting isolation, the PGC waits a number of IPG clocks equal to the value of ISO2SW before negating power toggle on/off signal (switch_b)&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ISO2SW</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x3f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;After asserting power toggle on/off signal (switch_b), the PGC waits a number of IPG clocks equal to the value of SW2ISO before negating isolation&quot;</span>]
+    </span><span class="kw">pub mod </span>SW2ISO {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x3f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC Mega Power Gating Controller Status Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">MEGA_SR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Power status&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">PSR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;The target subsystem was not powered down for the previous power-down request.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PSR_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;The target subsystem was powered down for the previous power-down request.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PSR_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+<span class="attribute">#[doc = <span class="string">&quot;PGC Mega Pull Down Sequence Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>MEGA_PDNSCR {
+    <span class="attribute">#[doc = <span class="string">&quot;After a power-down request (pdn_req assertion), the PGC waits a number of IPG clocks equal to the value of ISO before asserting isolation&quot;</span>]
+    </span><span class="kw">pub mod </span>ISO {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x3f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;After asserting isolation, the PGC waits a number of IPG clocks equal to the value of ISO2SW before negating power toggle on/off signal (switch_b)&quot;</span>]
+    </span><span class="kw">pub mod </span>ISO2SW {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x3f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;PGC Mega Power Gating Controller Status Register&quot;</span>]
+</span><span class="kw">pub mod </span>MEGA_SR {
+    <span class="attribute">#[doc = <span class="string">&quot;Power status&quot;</span>]
+    </span><span class="kw">pub mod </span>PSR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;The target subsystem was not powered down for the previous power-down request.&quot;</span>]
+            </span><span class="kw">pub const </span>PSR_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;The target subsystem was powered down for the previous power-down request.&quot;</span>]
+            </span><span class="kw">pub const </span>PSR_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC CPU Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CPU_CTRL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Power Control PCR must not change from power-down request (pdn_req) assertion until the target subsystem is completely powered up&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">PCR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Do not switch off power even if pdn_req is asserted.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PCR_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Switch off power when pdn_req is asserted.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PCR_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+<span class="attribute">#[doc = <span class="string">&quot;PGC CPU Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>CPU_CTRL {
+    <span class="attribute">#[doc = <span class="string">&quot;Power Control PCR must not change from power-down request (pdn_req) assertion until the target subsystem is completely powered up&quot;</span>]
+    </span><span class="kw">pub mod </span>PCR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Do not switch off power even if pdn_req is asserted.&quot;</span>]
+            </span><span class="kw">pub const </span>PCR_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Switch off power when pdn_req is asserted.&quot;</span>]
+            </span><span class="kw">pub const </span>PCR_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC CPU Power Up Sequence Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CPU_PUPSCR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;There are two different silicon revisions: 1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SW</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x3f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;PGC CPU Power Up Sequence Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>CPU_PUPSCR {
+    <span class="attribute">#[doc = <span class="string">&quot;There are two different silicon revisions: 1&quot;</span>]
+    </span><span class="kw">pub mod </span>SW {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x3f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;There are two different silicon revisions: 1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SW2ISO</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x3f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC CPU Pull Down Sequence Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CPU_PDNSCR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;After a power-down request (pdn_req assertion), the PGC waits a number of 32k clocks equal to the value of ISO before asserting isolation&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ISO</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x3f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;After asserting isolation, the PGC waits a number of 32k clocks equal to the value of ISO2SW before negating&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ISO2SW</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x3f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;There are two different silicon revisions: 1&quot;</span>]
+    </span><span class="kw">pub mod </span>SW2ISO {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x3f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PGC CPU Power Gating Controller Status Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CPU_SR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Power status&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">PSR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;The target subsystem was not powered down for the previous power-down request.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PSR_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;The target subsystem was powered down for the previous power-down request.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PSR_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+<span class="attribute">#[doc = <span class="string">&quot;PGC CPU Pull Down Sequence Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>CPU_PDNSCR {
+    <span class="attribute">#[doc = <span class="string">&quot;After a power-down request (pdn_req assertion), the PGC waits a number of 32k clocks equal to the value of ISO before asserting isolation&quot;</span>]
+    </span><span class="kw">pub mod </span>ISO {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x3f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;After asserting isolation, the PGC waits a number of 32k clocks equal to the value of ISO2SW before negating&quot;</span>]
+    </span><span class="kw">pub mod </span>ISO2SW {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x3f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;PGC CPU Power Gating Controller Status Register&quot;</span>]
+</span><span class="kw">pub mod </span>CPU_SR {
+    <span class="attribute">#[doc = <span class="string">&quot;Power status&quot;</span>]
+    </span><span class="kw">pub mod </span>PSR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;The target subsystem was not powered down for the previous power-down request.&quot;</span>]
+            </span><span class="kw">pub const </span>PSR_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;The target subsystem was powered down for the previous power-down request.&quot;</span>]
+            </span><span class="kw">pub const </span>PSR_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
 </code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0 (a55dd71d5 2022-09-19)" ></div></body></html>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.66.0 (69f9c33d7 2022-12-12)" ></div></body></html>

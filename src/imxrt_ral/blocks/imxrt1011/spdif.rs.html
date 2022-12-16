@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1011/spdif.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>spdif.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1011/spdif.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>spdif.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../../../normalize.css"><link rel="stylesheet" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../../../ayu.css" disabled><link rel="stylesheet" href="../../../../dark.css" disabled><link rel="stylesheet" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"></nav><main><div class="width-limiter"><nav class="sub"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><form class="search-form"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><pre class="src-line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -753,760 +753,760 @@
 <span id="753">753</span>
 <span id="754">754</span>
 <span id="755">755</span>
-</pre><pre class="rust"><code><span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF&quot;</span>]</span>
-<span class="attribute">#[<span class="ident">repr</span>(<span class="ident">C</span>)]</span>
-<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">RegisterBlock</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF Configuration Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SCR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;CDText Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SRCD</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PhaseConfig Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SRPC</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;InterruptEn Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SIE</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;InterruptClear Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SIC</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFRxLeft Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SRL</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFRxRight Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SRR</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFRxCChannel_h Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SRCSH</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFRxCChannel_l Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SRCSL</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;UchannelRx Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SRU</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;QchannelRx Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SRQ</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFTxLeft Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">STL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFTxRight Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">STR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFTxCChannelCons_h Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">STCSCH</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFTxCChannelCons_l Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">STCSCL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="ident">_reserved0</span>: [<span class="ident">u8</span>; <span class="number">0x08</span>],
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;FreqMeas Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">SRFM</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="ident">_reserved1</span>: [<span class="ident">u8</span>; <span class="number">0x08</span>],
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFTxClk Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">STC</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
+</pre><pre class="rust"><code><span class="attribute">#[doc = <span class="string">&quot;SPDIF&quot;</span>]
+#[repr(C)]
+</span><span class="kw">pub struct </span>RegisterBlock {
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF Configuration Register&quot;</span>]
+    </span><span class="kw">pub </span>SCR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;CDText Control Register&quot;</span>]
+    </span><span class="kw">pub </span>SRCD: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;PhaseConfig Register&quot;</span>]
+    </span><span class="kw">pub </span>SRPC: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;InterruptEn Register&quot;</span>]
+    </span><span class="kw">pub </span>SIE: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;InterruptClear Register&quot;</span>]
+    </span><span class="kw">pub </span>SIC: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIFRxLeft Register&quot;</span>]
+    </span><span class="kw">pub </span>SRL: <span class="kw">crate</span>::RORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIFRxRight Register&quot;</span>]
+    </span><span class="kw">pub </span>SRR: <span class="kw">crate</span>::RORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIFRxCChannel_h Register&quot;</span>]
+    </span><span class="kw">pub </span>SRCSH: <span class="kw">crate</span>::RORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIFRxCChannel_l Register&quot;</span>]
+    </span><span class="kw">pub </span>SRCSL: <span class="kw">crate</span>::RORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;UchannelRx Register&quot;</span>]
+    </span><span class="kw">pub </span>SRU: <span class="kw">crate</span>::RORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;QchannelRx Register&quot;</span>]
+    </span><span class="kw">pub </span>SRQ: <span class="kw">crate</span>::RORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIFTxLeft Register&quot;</span>]
+    </span><span class="kw">pub </span>STL: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIFTxRight Register&quot;</span>]
+    </span><span class="kw">pub </span>STR: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIFTxCChannelCons_h Register&quot;</span>]
+    </span><span class="kw">pub </span>STCSCH: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIFTxCChannelCons_l Register&quot;</span>]
+    </span><span class="kw">pub </span>STCSCL: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    _reserved0: [u8; <span class="number">0x08</span>],
+    <span class="attribute">#[doc = <span class="string">&quot;FreqMeas Register&quot;</span>]
+    </span><span class="kw">pub </span>SRFM: <span class="kw">crate</span>::RORegister&lt;u32&gt;,
+    _reserved1: [u8; <span class="number">0x08</span>],
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIFTxClk Register&quot;</span>]
+    </span><span class="kw">pub </span>STC: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF Configuration Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SCR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">USRC_SEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No embedded U channel&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">USRC_SEL_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;U channel from SPDIF receive block (CD mode)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">USRC_SEL_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;U channel from on chip transmitter&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">USRC_SEL_3</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+<span class="attribute">#[doc = <span class="string">&quot;SPDIF Configuration Register&quot;</span>]
+</span><span class="kw">pub mod </span>SCR {
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>USRC_SEL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No embedded U channel&quot;</span>]
+            </span><span class="kw">pub const </span>USRC_SEL_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;U channel from SPDIF receive block (CD mode)&quot;</span>]
+            </span><span class="kw">pub const </span>USRC_SEL_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;U channel from on chip transmitter&quot;</span>]
+            </span><span class="kw">pub const </span>USRC_SEL_3: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXSEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x07</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Off and output 0&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXSEL_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Feed-through SPDIFIN&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXSEL_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Tx Normal operation&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXSEL_5</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x05</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>TXSEL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x07 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Off and output 0&quot;</span>]
+            </span><span class="kw">pub const </span>TXSEL_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Feed-through SPDIFIN&quot;</span>]
+            </span><span class="kw">pub const </span>TXSEL_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Tx Normal operation&quot;</span>]
+            </span><span class="kw">pub const </span>TXSEL_5: u32 = <span class="number">0x05</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">VALCTRL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">5</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Outgoing Validity always set&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">VALCTRL_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Outgoing Validity always clear&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">VALCTRL_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>VALCTRL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">5</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Outgoing Validity always set&quot;</span>]
+            </span><span class="kw">pub const </span>VALCTRL_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Outgoing Validity always clear&quot;</span>]
+            </span><span class="kw">pub const </span>VALCTRL_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;DMA Transmit Request Enable (Tx FIFO empty)&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DMA_TX_EN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;DMA Transmit Request Enable (Tx FIFO empty)&quot;</span>]
+    </span><span class="kw">pub mod </span>DMA_TX_EN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;DMA Receive Request Enable (RX FIFO full)&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DMA_RX_EN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">9</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;DMA Receive Request Enable (RX FIFO full)&quot;</span>]
+    </span><span class="kw">pub mod </span>DMA_RX_EN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">9</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXFIFO_CTRL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">10</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Send out digital zero on SPDIF Tx&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXFIFO_CTRL_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Tx Normal operation&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXFIFO_CTRL_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Reset to 1 sample remaining&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXFIFO_CTRL_2</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>TXFIFO_CTRL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">10</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Send out digital zero on SPDIF Tx&quot;</span>]
+            </span><span class="kw">pub const </span>TXFIFO_CTRL_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Tx Normal operation&quot;</span>]
+            </span><span class="kw">pub const </span>TXFIFO_CTRL_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Reset to 1 sample remaining&quot;</span>]
+            </span><span class="kw">pub const </span>TXFIFO_CTRL_2: u32 = <span class="number">0x02</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;When write 1 to this bit, it will cause SPDIF software reset&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SOFT_RESET</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">12</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;When write 1 to this bit, it will cause SPDIF software reset&quot;</span>]
+    </span><span class="kw">pub mod </span>SOFT_RESET {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">12</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;When write 1 to this bit, it will cause SPDIF enter low-power mode&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LOW_POWER</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">13</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;When write 1 to this bit, it will cause SPDIF enter low-power mode&quot;</span>]
+    </span><span class="kw">pub mod </span>LOW_POWER {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">13</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXFIFOEMPTY_SEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">15</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Empty interrupt if 0 sample in Tx left and right FIFOs&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXFIFOEMPTY_SEL_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Empty interrupt if at most 4 sample in Tx left and right FIFOs&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXFIFOEMPTY_SEL_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Empty interrupt if at most 8 sample in Tx left and right FIFOs&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXFIFOEMPTY_SEL_2</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Empty interrupt if at most 12 sample in Tx left and right FIFOs&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXFIFOEMPTY_SEL_3</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>TXFIFOEMPTY_SEL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">15</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Empty interrupt if 0 sample in Tx left and right FIFOs&quot;</span>]
+            </span><span class="kw">pub const </span>TXFIFOEMPTY_SEL_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Empty interrupt if at most 4 sample in Tx left and right FIFOs&quot;</span>]
+            </span><span class="kw">pub const </span>TXFIFOEMPTY_SEL_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Empty interrupt if at most 8 sample in Tx left and right FIFOs&quot;</span>]
+            </span><span class="kw">pub const </span>TXFIFOEMPTY_SEL_2: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Empty interrupt if at most 12 sample in Tx left and right FIFOs&quot;</span>]
+            </span><span class="kw">pub const </span>TXFIFOEMPTY_SEL_3: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXAUTOSYNC</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">17</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Tx FIFO auto sync off&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXAUTOSYNC_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Tx FIFO auto sync on&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXAUTOSYNC_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>TXAUTOSYNC {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">17</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Tx FIFO auto sync off&quot;</span>]
+            </span><span class="kw">pub const </span>TXAUTOSYNC_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Tx FIFO auto sync on&quot;</span>]
+            </span><span class="kw">pub const </span>TXAUTOSYNC_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXAUTOSYNC</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">18</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Rx FIFO auto sync off&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXAUTOSYNC_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;RxFIFO auto sync on&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXAUTOSYNC_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>RXAUTOSYNC {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">18</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Rx FIFO auto sync off&quot;</span>]
+            </span><span class="kw">pub const </span>RXAUTOSYNC_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;RxFIFO auto sync on&quot;</span>]
+            </span><span class="kw">pub const </span>RXAUTOSYNC_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXFIFOFULL_SEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">19</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Full interrupt if at least 1 sample in Rx left and right FIFOs&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXFIFOFULL_SEL_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Full interrupt if at least 4 sample in Rx left and right FIFOs&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXFIFOFULL_SEL_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Full interrupt if at least 8 sample in Rx left and right FIFOs&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXFIFOFULL_SEL_2</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Full interrupt if at least 16 sample in Rx left and right FIFO&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXFIFOFULL_SEL_3</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>RXFIFOFULL_SEL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">19</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Full interrupt if at least 1 sample in Rx left and right FIFOs&quot;</span>]
+            </span><span class="kw">pub const </span>RXFIFOFULL_SEL_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Full interrupt if at least 4 sample in Rx left and right FIFOs&quot;</span>]
+            </span><span class="kw">pub const </span>RXFIFOFULL_SEL_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Full interrupt if at least 8 sample in Rx left and right FIFOs&quot;</span>]
+            </span><span class="kw">pub const </span>RXFIFOFULL_SEL_2: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Full interrupt if at least 16 sample in Rx left and right FIFO&quot;</span>]
+            </span><span class="kw">pub const </span>RXFIFOFULL_SEL_3: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXFIFO_RST</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">21</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Normal operation&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXFIFO_RST_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Reset register to 1 sample remaining&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXFIFO_RST_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>RXFIFO_RST {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">21</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Normal operation&quot;</span>]
+            </span><span class="kw">pub const </span>RXFIFO_RST_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Reset register to 1 sample remaining&quot;</span>]
+            </span><span class="kw">pub const </span>RXFIFO_RST_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXFIFO_OFF_ON</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">22</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF Rx FIFO is on&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXFIFO_OFF_ON_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF Rx FIFO is off. Does not accept data from interface&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXFIFO_OFF_ON_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>RXFIFO_OFF_ON {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">22</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;SPDIF Rx FIFO is on&quot;</span>]
+            </span><span class="kw">pub const </span>RXFIFO_OFF_ON_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;SPDIF Rx FIFO is off. Does not accept data from interface&quot;</span>]
+            </span><span class="kw">pub const </span>RXFIFO_OFF_ON_1: u32 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXFIFO_CTRL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">23</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Normal operation&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXFIFO_CTRL_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Always read zero from Rx data register&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RXFIFO_CTRL_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;CDText Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SRCD</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">USYNCMODE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">1</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Non-CD data&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">USYNCMODE_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;CD user channel subcode&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">USYNCMODE_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>RXFIFO_CTRL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">23</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Normal operation&quot;</span>]
+            </span><span class="kw">pub const </span>RXFIFO_CTRL_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Always read zero from Rx data register&quot;</span>]
+            </span><span class="kw">pub const </span>RXFIFO_CTRL_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;PhaseConfig Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SRPC</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Gain selection:&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">GAINSEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">3</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x07</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;24*(2**10)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">GAINSEL_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;16*(2**10)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">GAINSEL_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;12*(2**10)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">GAINSEL_2</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;8*(2**10)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">GAINSEL_3</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;6*(2**10)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">GAINSEL_4</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x04</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;4*(2**10)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">GAINSEL_5</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x05</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;3*(2**10)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">GAINSEL_6</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x06</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;LOCK bit to show that the internal DPLL is locked, read only&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">6</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Clock source selection, all other settings not shown are reserved:&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CLKSRC_SEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x0f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;if (DPLL Locked) SPDIF_RxClk else REF_CLK_32K (XTALOSC)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CLKSRC_SEL_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;if (DPLL Locked) SPDIF_RxClk else tx_clk (SPDIF0_CLK_ROOT)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CLKSRC_SEL_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;if (DPLL Locked) SPDIF_RxClk else SPDIF_EXT_CLK&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CLKSRC_SEL_3</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;REF_CLK_32K (XTALOSC)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CLKSRC_SEL_5</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x05</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;tx_clk (SPDIF0_CLK_ROOT)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CLKSRC_SEL_6</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x06</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF_EXT_CLK&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CLKSRC_SEL_8</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x08</span>;
+<span class="attribute">#[doc = <span class="string">&quot;CDText Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>SRCD {
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>USYNCMODE {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">1</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Non-CD data&quot;</span>]
+            </span><span class="kw">pub const </span>USYNCMODE_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;CD user channel subcode&quot;</span>]
+            </span><span class="kw">pub const </span>USYNCMODE_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;InterruptEn Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SIE</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF Rx FIFO full, can&#39;t be cleared with reg. IntClear. To clear it, read from Rx FIFO.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXFIFOFUL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF Tx FIFO empty, can&#39;t be cleared with reg. IntClear. To clear it, write toTx FIFO.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXEM</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">1</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receiver loss of lock&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LOCKLOSS</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Rx FIFO resync&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXFIFORESYN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">3</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Rx FIFO underrun/overrun&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXFIFOUNOV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">4</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;U/Q Channel framing error&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">UQERR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">5</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;U/Q Channel sync found&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">UQSYNC</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">6</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Q Channel receive register overrun&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">QRXOV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Q Channel receive register full, can&#39;t be cleared with reg&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">QRXFUL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;U Channel receive register overrun&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">URXOV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">9</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;U Channel receive register full, can&#39;t be cleared with reg&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">URXFUL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">10</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receiver found parity bit error&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">BITERR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">14</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receiver found illegal symbol&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SYMERR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">15</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF validity flag no good&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">VALNOGOOD</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">16</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receive change in value of control channel&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CNEW</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">17</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF Tx FIFO resync&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXRESYN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">18</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF Tx FIFO under/overrun&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXUNOV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">19</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receiver&#39;s DPLL is locked&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">20</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;InterruptClear Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SIC</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receiver loss of lock&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LOCKLOSS</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Rx FIFO resync&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXFIFORESYN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">3</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Rx FIFO underrun/overrun&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXFIFOUNOV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">4</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;U/Q Channel framing error&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">UQERR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">5</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;U/Q Channel sync found&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">UQSYNC</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">6</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Q Channel receive register overrun&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">QRXOV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;U Channel receive register overrun&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">URXOV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">9</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receiver found parity bit error&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">BITERR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">14</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receiver found illegal symbol&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SYMERR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">15</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF validity flag no good&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">VALNOGOOD</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">16</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receive change in value of control channel&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CNEW</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">17</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF Tx FIFO resync&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXRESYN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">18</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF Tx FIFO under/overrun&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXUNOV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">19</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receiver&#39;s DPLL is locked&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LOCK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">20</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFRxLeft Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SRL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Processor receive SPDIF data left&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXDATALEFT</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x00ff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFRxRight Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SRR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Processor receive SPDIF data right&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXDATARIGHT</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x00ff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFRxCChannel_h Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SRCSH</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receive C channel register, contains first 24 bits of C channel without interpretation&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXCCHANNEL_H</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x00ff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFRxCChannel_l Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SRCSL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receive C channel register, contains next 24 bits of C channel without interpretation&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXCCHANNEL_L</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x00ff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;UchannelRx Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SRU</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receive U channel register, contains next 3 U channel bytes&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXUCHANNEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x00ff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;QchannelRx Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SRQ</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF receive Q channel register, contains next 3 Q channel bytes&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RXQCHANNEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x00ff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFTxLeft Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">STL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF transmit left channel data. It is write-only, and always returns zeros when read&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXDATALEFT</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x00ff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFTxRight Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">STR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF transmit right channel data. It is write-only, and always returns zeros when read&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXDATARIGHT</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x00ff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFTxCChannelCons_h Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">STCSCH</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF transmit Cons&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXCCHANNELCONS_H</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x00ff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFTxCChannelCons_l Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">STCSCL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIF transmit Cons&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXCCHANNELCONS_L</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x00ff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;FreqMeas Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SRFM</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Frequency measurement data&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">FREQMEAS</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x00ff_ffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;SPDIFTxClk Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">STC</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Divider factor (1-128)&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXCLK_DF</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x7f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;divider factor is 1&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXCLK_DF_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;divider factor is 2&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXCLK_DF_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;divider factor is 128&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXCLK_DF_127</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x7f</span>;
+<span class="attribute">#[doc = <span class="string">&quot;PhaseConfig Register&quot;</span>]
+</span><span class="kw">pub mod </span>SRPC {
+    <span class="attribute">#[doc = <span class="string">&quot;Gain selection:&quot;</span>]
+    </span><span class="kw">pub mod </span>GAINSEL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">3</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x07 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;24*(2**10)&quot;</span>]
+            </span><span class="kw">pub const </span>GAINSEL_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;16*(2**10)&quot;</span>]
+            </span><span class="kw">pub const </span>GAINSEL_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;12*(2**10)&quot;</span>]
+            </span><span class="kw">pub const </span>GAINSEL_2: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;8*(2**10)&quot;</span>]
+            </span><span class="kw">pub const </span>GAINSEL_3: u32 = <span class="number">0x03</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;6*(2**10)&quot;</span>]
+            </span><span class="kw">pub const </span>GAINSEL_4: u32 = <span class="number">0x04</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;4*(2**10)&quot;</span>]
+            </span><span class="kw">pub const </span>GAINSEL_5: u32 = <span class="number">0x05</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;3*(2**10)&quot;</span>]
+            </span><span class="kw">pub const </span>GAINSEL_6: u32 = <span class="number">0x06</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Spdif transfer clock enable. When data is going to be transfered, this bit should be set to1.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TX_ALL_CLK_EN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;disable transfer clock.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TX_ALL_CLK_EN_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;enable transfer clock.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TX_ALL_CLK_EN_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;LOCK bit to show that the internal DPLL is locked, read only&quot;</span>]
+    </span><span class="kw">pub mod </span>LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">6</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Clock source selection, all other settings not shown are reserved:&quot;</span>]
+    </span><span class="kw">pub mod </span>CLKSRC_SEL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x0f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;if (DPLL Locked) SPDIF_RxClk else REF_CLK_32K (XTALOSC)&quot;</span>]
+            </span><span class="kw">pub const </span>CLKSRC_SEL_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;if (DPLL Locked) SPDIF_RxClk else tx_clk (SPDIF0_CLK_ROOT)&quot;</span>]
+            </span><span class="kw">pub const </span>CLKSRC_SEL_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;if (DPLL Locked) SPDIF_RxClk else SPDIF_EXT_CLK&quot;</span>]
+            </span><span class="kw">pub const </span>CLKSRC_SEL_3: u32 = <span class="number">0x03</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;REF_CLK_32K (XTALOSC)&quot;</span>]
+            </span><span class="kw">pub const </span>CLKSRC_SEL_5: u32 = <span class="number">0x05</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;tx_clk (SPDIF0_CLK_ROOT)&quot;</span>]
+            </span><span class="kw">pub const </span>CLKSRC_SEL_6: u32 = <span class="number">0x06</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;SPDIF_EXT_CLK&quot;</span>]
+            </span><span class="kw">pub const </span>CLKSRC_SEL_8: u32 = <span class="number">0x08</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no description available&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TXCLK_SOURCE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x07</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;XTALOSC input (XTALOSC clock)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXCLK_SOURCE_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;tx_clk input (from SPDIF0_CLK_ROOT. See CCM.)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXCLK_SOURCE_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;tx_clk1 (from SAI1)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXCLK_SOURCE_2</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;tx_clk2 SPDIF_EXT_CLK, from pads&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXCLK_SOURCE_3</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;tx_clk3 (from SAI2)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXCLK_SOURCE_4</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x04</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ipg_clk input (frequency divided)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXCLK_SOURCE_5</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x05</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;tx_clk4 (from SAI3)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TXCLK_SOURCE_6</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x06</span>;
+}
+<span class="attribute">#[doc = <span class="string">&quot;InterruptEn Register&quot;</span>]
+</span><span class="kw">pub mod </span>SIE {
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF Rx FIFO full, can&#39;t be cleared with reg. IntClear. To clear it, read from Rx FIFO.&quot;</span>]
+    </span><span class="kw">pub mod </span>RXFIFOFUL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF Tx FIFO empty, can&#39;t be cleared with reg. IntClear. To clear it, write toTx FIFO.&quot;</span>]
+    </span><span class="kw">pub mod </span>TXEM {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">1</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receiver loss of lock&quot;</span>]
+    </span><span class="kw">pub mod </span>LOCKLOSS {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Rx FIFO resync&quot;</span>]
+    </span><span class="kw">pub mod </span>RXFIFORESYN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">3</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Rx FIFO underrun/overrun&quot;</span>]
+    </span><span class="kw">pub mod </span>RXFIFOUNOV {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">4</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;U/Q Channel framing error&quot;</span>]
+    </span><span class="kw">pub mod </span>UQERR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">5</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;U/Q Channel sync found&quot;</span>]
+    </span><span class="kw">pub mod </span>UQSYNC {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">6</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Q Channel receive register overrun&quot;</span>]
+    </span><span class="kw">pub mod </span>QRXOV {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Q Channel receive register full, can&#39;t be cleared with reg&quot;</span>]
+    </span><span class="kw">pub mod </span>QRXFUL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;U Channel receive register overrun&quot;</span>]
+    </span><span class="kw">pub mod </span>URXOV {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">9</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;U Channel receive register full, can&#39;t be cleared with reg&quot;</span>]
+    </span><span class="kw">pub mod </span>URXFUL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">10</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receiver found parity bit error&quot;</span>]
+    </span><span class="kw">pub mod </span>BITERR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">14</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receiver found illegal symbol&quot;</span>]
+    </span><span class="kw">pub mod </span>SYMERR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">15</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF validity flag no good&quot;</span>]
+    </span><span class="kw">pub mod </span>VALNOGOOD {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">16</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receive change in value of control channel&quot;</span>]
+    </span><span class="kw">pub mod </span>CNEW {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">17</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF Tx FIFO resync&quot;</span>]
+    </span><span class="kw">pub mod </span>TXRESYN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">18</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF Tx FIFO under/overrun&quot;</span>]
+    </span><span class="kw">pub mod </span>TXUNOV {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">19</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receiver&#39;s DPLL is locked&quot;</span>]
+    </span><span class="kw">pub mod </span>LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">20</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;InterruptClear Register&quot;</span>]
+</span><span class="kw">pub mod </span>SIC {
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receiver loss of lock&quot;</span>]
+    </span><span class="kw">pub mod </span>LOCKLOSS {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Rx FIFO resync&quot;</span>]
+    </span><span class="kw">pub mod </span>RXFIFORESYN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">3</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Rx FIFO underrun/overrun&quot;</span>]
+    </span><span class="kw">pub mod </span>RXFIFOUNOV {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">4</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;U/Q Channel framing error&quot;</span>]
+    </span><span class="kw">pub mod </span>UQERR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">5</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;U/Q Channel sync found&quot;</span>]
+    </span><span class="kw">pub mod </span>UQSYNC {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">6</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Q Channel receive register overrun&quot;</span>]
+    </span><span class="kw">pub mod </span>QRXOV {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;U Channel receive register overrun&quot;</span>]
+    </span><span class="kw">pub mod </span>URXOV {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">9</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receiver found parity bit error&quot;</span>]
+    </span><span class="kw">pub mod </span>BITERR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">14</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receiver found illegal symbol&quot;</span>]
+    </span><span class="kw">pub mod </span>SYMERR {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">15</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF validity flag no good&quot;</span>]
+    </span><span class="kw">pub mod </span>VALNOGOOD {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">16</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receive change in value of control channel&quot;</span>]
+    </span><span class="kw">pub mod </span>CNEW {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">17</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF Tx FIFO resync&quot;</span>]
+    </span><span class="kw">pub mod </span>TXRESYN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">18</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF Tx FIFO under/overrun&quot;</span>]
+    </span><span class="kw">pub mod </span>TXUNOV {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">19</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receiver&#39;s DPLL is locked&quot;</span>]
+    </span><span class="kw">pub mod </span>LOCK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">20</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;SPDIFRxLeft Register&quot;</span>]
+</span><span class="kw">pub mod </span>SRL {
+    <span class="attribute">#[doc = <span class="string">&quot;Processor receive SPDIF data left&quot;</span>]
+    </span><span class="kw">pub mod </span>RXDATALEFT {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x00ff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;SPDIFRxRight Register&quot;</span>]
+</span><span class="kw">pub mod </span>SRR {
+    <span class="attribute">#[doc = <span class="string">&quot;Processor receive SPDIF data right&quot;</span>]
+    </span><span class="kw">pub mod </span>RXDATARIGHT {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x00ff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;SPDIFRxCChannel_h Register&quot;</span>]
+</span><span class="kw">pub mod </span>SRCSH {
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receive C channel register, contains first 24 bits of C channel without interpretation&quot;</span>]
+    </span><span class="kw">pub mod </span>RXCCHANNEL_H {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x00ff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;SPDIFRxCChannel_l Register&quot;</span>]
+</span><span class="kw">pub mod </span>SRCSL {
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receive C channel register, contains next 24 bits of C channel without interpretation&quot;</span>]
+    </span><span class="kw">pub mod </span>RXCCHANNEL_L {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x00ff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;UchannelRx Register&quot;</span>]
+</span><span class="kw">pub mod </span>SRU {
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receive U channel register, contains next 3 U channel bytes&quot;</span>]
+    </span><span class="kw">pub mod </span>RXUCHANNEL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x00ff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;QchannelRx Register&quot;</span>]
+</span><span class="kw">pub mod </span>SRQ {
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF receive Q channel register, contains next 3 Q channel bytes&quot;</span>]
+    </span><span class="kw">pub mod </span>RXQCHANNEL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x00ff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;SPDIFTxLeft Register&quot;</span>]
+</span><span class="kw">pub mod </span>STL {
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF transmit left channel data. It is write-only, and always returns zeros when read&quot;</span>]
+    </span><span class="kw">pub mod </span>TXDATALEFT {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x00ff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;SPDIFTxRight Register&quot;</span>]
+</span><span class="kw">pub mod </span>STR {
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF transmit right channel data. It is write-only, and always returns zeros when read&quot;</span>]
+    </span><span class="kw">pub mod </span>TXDATARIGHT {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x00ff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;SPDIFTxCChannelCons_h Register&quot;</span>]
+</span><span class="kw">pub mod </span>STCSCH {
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF transmit Cons&quot;</span>]
+    </span><span class="kw">pub mod </span>TXCCHANNELCONS_H {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x00ff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;SPDIFTxCChannelCons_l Register&quot;</span>]
+</span><span class="kw">pub mod </span>STCSCL {
+    <span class="attribute">#[doc = <span class="string">&quot;SPDIF transmit Cons&quot;</span>]
+    </span><span class="kw">pub mod </span>TXCCHANNELCONS_L {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x00ff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;FreqMeas Register&quot;</span>]
+</span><span class="kw">pub mod </span>SRFM {
+    <span class="attribute">#[doc = <span class="string">&quot;Frequency measurement data&quot;</span>]
+    </span><span class="kw">pub mod </span>FREQMEAS {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x00ff_ffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;SPDIFTxClk Register&quot;</span>]
+</span><span class="kw">pub mod </span>STC {
+    <span class="attribute">#[doc = <span class="string">&quot;Divider factor (1-128)&quot;</span>]
+    </span><span class="kw">pub mod </span>TXCLK_DF {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x7f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;divider factor is 1&quot;</span>]
+            </span><span class="kw">pub const </span>TXCLK_DF_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;divider factor is 2&quot;</span>]
+            </span><span class="kw">pub const </span>TXCLK_DF_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;divider factor is 128&quot;</span>]
+            </span><span class="kw">pub const </span>TXCLK_DF_127: u32 = <span class="number">0x7f</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;system clock divider factor, 2~512.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SYSCLK_DF</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">11</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01ff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;no clock signal&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SYSCLK_DF_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;divider factor is 2&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SYSCLK_DF_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;divider factor is 512&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SYSCLK_DF_511</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01ff</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Spdif transfer clock enable. When data is going to be transfered, this bit should be set to1.&quot;</span>]
+    </span><span class="kw">pub mod </span>TX_ALL_CLK_EN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;disable transfer clock.&quot;</span>]
+            </span><span class="kw">pub const </span>TX_ALL_CLK_EN_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;enable transfer clock.&quot;</span>]
+            </span><span class="kw">pub const </span>TX_ALL_CLK_EN_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;no description available&quot;</span>]
+    </span><span class="kw">pub mod </span>TXCLK_SOURCE {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x07 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;XTALOSC input (XTALOSC clock)&quot;</span>]
+            </span><span class="kw">pub const </span>TXCLK_SOURCE_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;tx_clk input (from SPDIF0_CLK_ROOT. See CCM.)&quot;</span>]
+            </span><span class="kw">pub const </span>TXCLK_SOURCE_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;tx_clk1 (from SAI1)&quot;</span>]
+            </span><span class="kw">pub const </span>TXCLK_SOURCE_2: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;tx_clk2 SPDIF_EXT_CLK, from pads&quot;</span>]
+            </span><span class="kw">pub const </span>TXCLK_SOURCE_3: u32 = <span class="number">0x03</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;tx_clk3 (from SAI2)&quot;</span>]
+            </span><span class="kw">pub const </span>TXCLK_SOURCE_4: u32 = <span class="number">0x04</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;ipg_clk input (frequency divided)&quot;</span>]
+            </span><span class="kw">pub const </span>TXCLK_SOURCE_5: u32 = <span class="number">0x05</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;tx_clk4 (from SAI3)&quot;</span>]
+            </span><span class="kw">pub const </span>TXCLK_SOURCE_6: u32 = <span class="number">0x06</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;system clock divider factor, 2~512.&quot;</span>]
+    </span><span class="kw">pub mod </span>SYSCLK_DF {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">11</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01ff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;no clock signal&quot;</span>]
+            </span><span class="kw">pub const </span>SYSCLK_DF_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;divider factor is 2&quot;</span>]
+            </span><span class="kw">pub const </span>SYSCLK_DF_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;divider factor is 512&quot;</span>]
+            </span><span class="kw">pub const </span>SYSCLK_DF_511: u32 = <span class="number">0x01ff</span>;
         }
     }
 }
 </code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0 (a55dd71d5 2022-09-19)" ></div></body></html>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.66.0 (69f9c33d7 2022-12-12)" ></div></body></html>

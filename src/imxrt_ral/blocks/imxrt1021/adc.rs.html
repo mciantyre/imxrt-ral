@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1021/adc.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>adc.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1021/adc.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>adc.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../../../normalize.css"><link rel="stylesheet" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../../../ayu.css" disabled><link rel="stylesheet" href="../../../../dark.css" disabled><link rel="stylesheet" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"></nav><main><div class="width-limiter"><nav class="sub"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><form class="search-form"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><pre class="src-line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -477,484 +477,484 @@
 <span id="477">477</span>
 <span id="478">478</span>
 <span id="479">479</span>
-</pre><pre class="rust"><code><span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Analog-to-Digital Converter&quot;</span>]</span>
-<span class="attribute">#[<span class="ident">repr</span>(<span class="ident">C</span>)]</span>
-<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">RegisterBlock</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Control register for hardware triggers&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">HC0</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Control register for hardware triggers&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">HC</span>: [<span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>; <span class="number">7usize</span>],
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Status register for HW triggers&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">HS</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Data result register for HW triggers&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">R0</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Data result register for HW triggers&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">R</span>: [<span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>; <span class="number">7usize</span>],
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Configuration register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CFG</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;General control register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">GC</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;General status register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">GS</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare value register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CV</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Offset correction value register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">OFS</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Calibration value register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CAL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>,
+</pre><pre class="rust"><code><span class="attribute">#[doc = <span class="string">&quot;Analog-to-Digital Converter&quot;</span>]
+#[repr(C)]
+</span><span class="kw">pub struct </span>RegisterBlock {
+    <span class="attribute">#[doc = <span class="string">&quot;Control register for hardware triggers&quot;</span>]
+    </span><span class="kw">pub </span>HC0: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Control register for hardware triggers&quot;</span>]
+    </span><span class="kw">pub </span>HC: [<span class="kw">crate</span>::RWRegister&lt;u32&gt;; <span class="number">7usize</span>],
+    <span class="attribute">#[doc = <span class="string">&quot;Status register for HW triggers&quot;</span>]
+    </span><span class="kw">pub </span>HS: <span class="kw">crate</span>::RORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Data result register for HW triggers&quot;</span>]
+    </span><span class="kw">pub </span>R0: <span class="kw">crate</span>::RORegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Data result register for HW triggers&quot;</span>]
+    </span><span class="kw">pub </span>R: [<span class="kw">crate</span>::RORegister&lt;u32&gt;; <span class="number">7usize</span>],
+    <span class="attribute">#[doc = <span class="string">&quot;Configuration register&quot;</span>]
+    </span><span class="kw">pub </span>CFG: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;General control register&quot;</span>]
+    </span><span class="kw">pub </span>GC: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;General status register&quot;</span>]
+    </span><span class="kw">pub </span>GS: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Compare value register&quot;</span>]
+    </span><span class="kw">pub </span>CV: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Offset correction value register&quot;</span>]
+    </span><span class="kw">pub </span>OFS: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Calibration value register&quot;</span>]
+    </span><span class="kw">pub </span>CAL: <span class="kw">crate</span>::RWRegister&lt;u32&gt;,
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Control register for hardware triggers&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">HC0</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input Channel Select&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADCH</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x1f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;External channel selection from ADC_ETC&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADCH_16</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x10</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;VREFSH = internal channel, for ADC self-test, hard connected to VRH internally&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADCH_25</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x19</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion Disabled. Hardware Triggers will not initiate any conversion.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADCH_31</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x1f</span>;
+<span class="attribute">#[doc = <span class="string">&quot;Control register for hardware triggers&quot;</span>]
+</span><span class="kw">pub mod </span>HC0 {
+    <span class="attribute">#[doc = <span class="string">&quot;Input Channel Select&quot;</span>]
+    </span><span class="kw">pub mod </span>ADCH {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x1f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;External channel selection from ADC_ETC&quot;</span>]
+            </span><span class="kw">pub const </span>ADCH_16: u32 = <span class="number">0x10</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;VREFSH = internal channel, for ADC self-test, hard connected to VRH internally&quot;</span>]
+            </span><span class="kw">pub const </span>ADCH_25: u32 = <span class="number">0x19</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Conversion Disabled. Hardware Triggers will not initiate any conversion.&quot;</span>]
+            </span><span class="kw">pub const </span>ADCH_31: u32 = <span class="number">0x1f</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion Complete Interrupt Enable/Disable Control&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">AIEN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion complete interrupt disabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AIEN_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion complete interrupt enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AIEN_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Control register for hardware triggers&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">HC</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input Channel Select&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADCH</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x1f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;External channel selection from ADC_ETC&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADCH_16</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x10</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;VREFSH = internal channel, for ADC self-test, hard connected to VRH internally&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADCH_25</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x19</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion Disabled. Hardware Triggers will not initiate any conversion.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADCH_31</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x1f</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion Complete Interrupt Enable/Disable Control&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">AIEN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion complete interrupt disabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AIEN_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion complete interrupt enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AIEN_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Conversion Complete Interrupt Enable/Disable Control&quot;</span>]
+    </span><span class="kw">pub mod </span>AIEN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Conversion complete interrupt disabled&quot;</span>]
+            </span><span class="kw">pub const </span>AIEN_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Conversion complete interrupt enabled&quot;</span>]
+            </span><span class="kw">pub const </span>AIEN_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Status register for HW triggers&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">HS</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion Complete Flag&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">COCO0</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Data result register for HW triggers&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R0</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Data (result of an ADC conversion)&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CDATA</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x0fff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Data result register for HW triggers&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Data (result of an ADC conversion)&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CDATA</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x0fff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Configuration register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CFG</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input Clock Select&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADICLK</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;IPG clock&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADICLK_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;IPG clock divided by 2&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADICLK_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Asynchronous clock (ADACK)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADICLK_3</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
+<span class="attribute">#[doc = <span class="string">&quot;Control register for hardware triggers&quot;</span>]
+</span><span class="kw">pub mod </span>HC {
+    <span class="attribute">#[doc = <span class="string">&quot;Input Channel Select&quot;</span>]
+    </span><span class="kw">pub mod </span>ADCH {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x1f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;External channel selection from ADC_ETC&quot;</span>]
+            </span><span class="kw">pub const </span>ADCH_16: u32 = <span class="number">0x10</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;VREFSH = internal channel, for ADC self-test, hard connected to VRH internally&quot;</span>]
+            </span><span class="kw">pub const </span>ADCH_25: u32 = <span class="number">0x19</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Conversion Disabled. Hardware Triggers will not initiate any conversion.&quot;</span>]
+            </span><span class="kw">pub const </span>ADCH_31: u32 = <span class="number">0x1f</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion Mode Selection&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">MODE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;8-bit conversion&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">MODE_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;10-bit conversion&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">MODE_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;12-bit conversion&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">MODE_2</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Long Sample Time Configuration&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADLSMP</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">4</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Short sample mode.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADLSMP_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Long sample mode.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADLSMP_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Clock Divide Select&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADIV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">5</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input clock&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADIV_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input clock / 2&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADIV_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input clock / 4&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADIV_2</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input clock / 8&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADIV_3</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Low-Power Configuration&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADLPC</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ADC hard block not in low power mode.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADLPC_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;ADC hard block in low power mode.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADLPC_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Defines the sample time duration&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADSTS</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Sample period (ADC clocks) = 2 if ADLSMP=0b Sample period (ADC clocks) = 12 if ADLSMP=1b&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADSTS_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Sample period (ADC clocks) = 4 if ADLSMP=0b Sample period (ADC clocks) = 16 if ADLSMP=1b&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADSTS_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Sample period (ADC clocks) = 6 if ADLSMP=0b Sample period (ADC clocks) = 20 if ADLSMP=1b&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADSTS_2</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Sample period (ADC clocks) = 8 if ADLSMP=0b Sample period (ADC clocks) = 24 if ADLSMP=1b&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADSTS_3</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;High Speed Configuration&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADHSC</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">10</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Normal conversion selected.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADHSC_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;High speed conversion selected.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADHSC_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Voltage Reference Selection&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REFSEL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">11</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Selects VREFH/VREFL as reference voltage.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">REFSEL_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion Trigger Select&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADTRG</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">13</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Software trigger selected&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADTRG_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Hardware trigger selected&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADTRG_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Hardware Average select&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">AVGS</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">14</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;4 samples averaged&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AVGS_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;8 samples averaged&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AVGS_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;16 samples averaged&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AVGS_2</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x02</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;32 samples averaged&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AVGS_3</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x03</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Data Overwrite Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">OVWREN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">16</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Disable the overwriting. Existing Data in Data result register will not be overwritten by subsequent converted data.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">OVWREN_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Enable the overwriting.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">OVWREN_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Conversion Complete Interrupt Enable/Disable Control&quot;</span>]
+    </span><span class="kw">pub mod </span>AIEN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Conversion complete interrupt disabled&quot;</span>]
+            </span><span class="kw">pub const </span>AIEN_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Conversion complete interrupt enabled&quot;</span>]
+            </span><span class="kw">pub const </span>AIEN_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;General control register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">GC</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Asynchronous clock output enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADACKEN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Asynchronous clock output disabled; Asynchronous clock only enabled if selected by ADICLK and a conversion is active.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADACKEN_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Asynchronous clock and clock output enabled regardless of the state of the ADC&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADACKEN_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;DMA Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DMAEN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">1</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;DMA disabled (default)&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DMAEN_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;DMA enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DMAEN_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare Function Range Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ACREN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Range function disabled. Only the compare value 1 of ADC_CV register (CV1) is compared.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ACREN_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Range function enabled. Both compare values of ADC_CV registers (CV1 and CV2) are compared.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ACREN_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare Function Greater Than Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ACFGT</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">3</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Configures \&quot;Less Than Threshold, Outside Range Not Inclusive and Inside Range Not Inclusive\&quot; functionality based on the values placed in the ADC_CV register.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ACFGT_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Configures \&quot;Greater Than Or Equal To Threshold, Outside Range Inclusive and Inside Range Inclusive\&quot; functionality based on the values placed in the ADC_CV registers.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ACFGT_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare Function Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ACFE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">4</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare function disabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ACFE_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare function enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ACFE_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Hardware average enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">AVGE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">5</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Hardware average function disabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AVGE_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Hardware average function enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AVGE_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Continuous Conversion Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADCO</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">6</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;One conversion or one set of conversions if the hardware average function is enabled (AVGE=1) after initiating a conversion.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADCO_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Continuous conversions or sets of conversions if the hardware average function is enabled (AVGE=1) after initiating a conversion.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADCO_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Calibration&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CAL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;Status register for HW triggers&quot;</span>]
+</span><span class="kw">pub mod </span>HS {
+    <span class="attribute">#[doc = <span class="string">&quot;Conversion Complete Flag&quot;</span>]
+    </span><span class="kw">pub mod </span>COCO0 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;General status register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">GS</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion Active&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ADACT</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion not in progress.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADACT_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Conversion in progress.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ADACT_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+<span class="attribute">#[doc = <span class="string">&quot;Data result register for HW triggers&quot;</span>]
+</span><span class="kw">pub mod </span>R0 {
+    <span class="attribute">#[doc = <span class="string">&quot;Data (result of an ADC conversion)&quot;</span>]
+    </span><span class="kw">pub mod </span>CDATA {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x0fff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Data result register for HW triggers&quot;</span>]
+</span><span class="kw">pub mod </span>R {
+    <span class="attribute">#[doc = <span class="string">&quot;Data (result of an ADC conversion)&quot;</span>]
+    </span><span class="kw">pub mod </span>CDATA {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x0fff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Configuration register&quot;</span>]
+</span><span class="kw">pub mod </span>CFG {
+    <span class="attribute">#[doc = <span class="string">&quot;Input Clock Select&quot;</span>]
+    </span><span class="kw">pub mod </span>ADICLK {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;IPG clock&quot;</span>]
+            </span><span class="kw">pub const </span>ADICLK_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;IPG clock divided by 2&quot;</span>]
+            </span><span class="kw">pub const </span>ADICLK_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Asynchronous clock (ADACK)&quot;</span>]
+            </span><span class="kw">pub const </span>ADICLK_3: u32 = <span class="number">0x03</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Calibration Failed Flag&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CALF</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">1</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Calibration completed normally.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CALF_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Calibration failed. ADC accuracy specifications are not guaranteed.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CALF_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Conversion Mode Selection&quot;</span>]
+    </span><span class="kw">pub mod </span>MODE {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;8-bit conversion&quot;</span>]
+            </span><span class="kw">pub const </span>MODE_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;10-bit conversion&quot;</span>]
+            </span><span class="kw">pub const </span>MODE_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;12-bit conversion&quot;</span>]
+            </span><span class="kw">pub const </span>MODE_2: u32 = <span class="number">0x02</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Asynchronous wakeup interrupt status&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">AWKST</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No asynchronous interrupt.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AWKST_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Asynchronous wake up interrupt occurred in stop mode.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">AWKST_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Long Sample Time Configuration&quot;</span>]
+    </span><span class="kw">pub mod </span>ADLSMP {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">4</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Short sample mode.&quot;</span>]
+            </span><span class="kw">pub const </span>ADLSMP_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Long sample mode.&quot;</span>]
+            </span><span class="kw">pub const </span>ADLSMP_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Clock Divide Select&quot;</span>]
+    </span><span class="kw">pub mod </span>ADIV {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">5</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Input clock&quot;</span>]
+            </span><span class="kw">pub const </span>ADIV_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Input clock / 2&quot;</span>]
+            </span><span class="kw">pub const </span>ADIV_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Input clock / 4&quot;</span>]
+            </span><span class="kw">pub const </span>ADIV_2: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Input clock / 8&quot;</span>]
+            </span><span class="kw">pub const </span>ADIV_3: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Low-Power Configuration&quot;</span>]
+    </span><span class="kw">pub mod </span>ADLPC {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;ADC hard block not in low power mode.&quot;</span>]
+            </span><span class="kw">pub const </span>ADLPC_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;ADC hard block in low power mode.&quot;</span>]
+            </span><span class="kw">pub const </span>ADLPC_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Defines the sample time duration&quot;</span>]
+    </span><span class="kw">pub mod </span>ADSTS {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Sample period (ADC clocks) = 2 if ADLSMP=0b Sample period (ADC clocks) = 12 if ADLSMP=1b&quot;</span>]
+            </span><span class="kw">pub const </span>ADSTS_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Sample period (ADC clocks) = 4 if ADLSMP=0b Sample period (ADC clocks) = 16 if ADLSMP=1b&quot;</span>]
+            </span><span class="kw">pub const </span>ADSTS_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Sample period (ADC clocks) = 6 if ADLSMP=0b Sample period (ADC clocks) = 20 if ADLSMP=1b&quot;</span>]
+            </span><span class="kw">pub const </span>ADSTS_2: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Sample period (ADC clocks) = 8 if ADLSMP=0b Sample period (ADC clocks) = 24 if ADLSMP=1b&quot;</span>]
+            </span><span class="kw">pub const </span>ADSTS_3: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;High Speed Configuration&quot;</span>]
+    </span><span class="kw">pub mod </span>ADHSC {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">10</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Normal conversion selected.&quot;</span>]
+            </span><span class="kw">pub const </span>ADHSC_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;High speed conversion selected.&quot;</span>]
+            </span><span class="kw">pub const </span>ADHSC_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Voltage Reference Selection&quot;</span>]
+    </span><span class="kw">pub mod </span>REFSEL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">11</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Selects VREFH/VREFL as reference voltage.&quot;</span>]
+            </span><span class="kw">pub const </span>REFSEL_0: u32 = <span class="number">0</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Conversion Trigger Select&quot;</span>]
+    </span><span class="kw">pub mod </span>ADTRG {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">13</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Software trigger selected&quot;</span>]
+            </span><span class="kw">pub const </span>ADTRG_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Hardware trigger selected&quot;</span>]
+            </span><span class="kw">pub const </span>ADTRG_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Hardware Average select&quot;</span>]
+    </span><span class="kw">pub mod </span>AVGS {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">14</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x03 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;4 samples averaged&quot;</span>]
+            </span><span class="kw">pub const </span>AVGS_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;8 samples averaged&quot;</span>]
+            </span><span class="kw">pub const </span>AVGS_1: u32 = <span class="number">0x01</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;16 samples averaged&quot;</span>]
+            </span><span class="kw">pub const </span>AVGS_2: u32 = <span class="number">0x02</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;32 samples averaged&quot;</span>]
+            </span><span class="kw">pub const </span>AVGS_3: u32 = <span class="number">0x03</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Data Overwrite Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>OVWREN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">16</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Disable the overwriting. Existing Data in Data result register will not be overwritten by subsequent converted data.&quot;</span>]
+            </span><span class="kw">pub const </span>OVWREN_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Enable the overwriting.&quot;</span>]
+            </span><span class="kw">pub const </span>OVWREN_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare value register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CV</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare Value 1&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CV1</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x0fff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;General control register&quot;</span>]
+</span><span class="kw">pub mod </span>GC {
+    <span class="attribute">#[doc = <span class="string">&quot;Asynchronous clock output enable&quot;</span>]
+    </span><span class="kw">pub mod </span>ADACKEN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Asynchronous clock output disabled; Asynchronous clock only enabled if selected by ADICLK and a conversion is active.&quot;</span>]
+            </span><span class="kw">pub const </span>ADACKEN_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Asynchronous clock and clock output enabled regardless of the state of the ADC&quot;</span>]
+            </span><span class="kw">pub const </span>ADACKEN_1: u32 = <span class="number">0x01</span>;
+        }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare Value 2&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CV2</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">16</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x0fff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+    <span class="attribute">#[doc = <span class="string">&quot;DMA Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>DMAEN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">1</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;DMA disabled (default)&quot;</span>]
+            </span><span class="kw">pub const </span>DMAEN_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;DMA enabled&quot;</span>]
+            </span><span class="kw">pub const </span>DMAEN_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Compare Function Range Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>ACREN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Range function disabled. Only the compare value 1 of ADC_CV register (CV1) is compared.&quot;</span>]
+            </span><span class="kw">pub const </span>ACREN_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Range function enabled. Both compare values of ADC_CV registers (CV1 and CV2) are compared.&quot;</span>]
+            </span><span class="kw">pub const </span>ACREN_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Compare Function Greater Than Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>ACFGT {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">3</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Configures \&quot;Less Than Threshold, Outside Range Not Inclusive and Inside Range Not Inclusive\&quot; functionality based on the values placed in the ADC_CV register.&quot;</span>]
+            </span><span class="kw">pub const </span>ACFGT_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Configures \&quot;Greater Than Or Equal To Threshold, Outside Range Inclusive and Inside Range Inclusive\&quot; functionality based on the values placed in the ADC_CV registers.&quot;</span>]
+            </span><span class="kw">pub const </span>ACFGT_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Compare Function Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>ACFE {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">4</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Compare function disabled&quot;</span>]
+            </span><span class="kw">pub const </span>ACFE_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Compare function enabled&quot;</span>]
+            </span><span class="kw">pub const </span>ACFE_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Hardware average enable&quot;</span>]
+    </span><span class="kw">pub mod </span>AVGE {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">5</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Hardware average function disabled&quot;</span>]
+            </span><span class="kw">pub const </span>AVGE_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Hardware average function enabled&quot;</span>]
+            </span><span class="kw">pub const </span>AVGE_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Continuous Conversion Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>ADCO {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">6</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;One conversion or one set of conversions if the hardware average function is enabled (AVGE=1) after initiating a conversion.&quot;</span>]
+            </span><span class="kw">pub const </span>ADCO_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Continuous conversions or sets of conversions if the hardware average function is enabled (AVGE=1) after initiating a conversion.&quot;</span>]
+            </span><span class="kw">pub const </span>ADCO_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Calibration&quot;</span>]
+    </span><span class="kw">pub mod </span>CAL {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Offset correction value register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">OFS</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Offset value&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">OFS</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x0fff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;General status register&quot;</span>]
+</span><span class="kw">pub mod </span>GS {
+    <span class="attribute">#[doc = <span class="string">&quot;Conversion Active&quot;</span>]
+    </span><span class="kw">pub mod </span>ADACT {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Conversion not in progress.&quot;</span>]
+            </span><span class="kw">pub const </span>ADACT_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Conversion in progress.&quot;</span>]
+            </span><span class="kw">pub const </span>ADACT_1: u32 = <span class="number">0x01</span>;
+        }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Sign bit&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SIGN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">12</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;The offset value is added with the raw result&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SIGN_0</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;The offset value is subtracted from the raw converted value&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SIGN_1</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Calibration Failed Flag&quot;</span>]
+    </span><span class="kw">pub mod </span>CALF {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">1</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Calibration completed normally.&quot;</span>]
+            </span><span class="kw">pub const </span>CALF_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Calibration failed. ADC accuracy specifications are not guaranteed.&quot;</span>]
+            </span><span class="kw">pub const </span>CALF_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Asynchronous wakeup interrupt status&quot;</span>]
+    </span><span class="kw">pub mod </span>AWKST {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No asynchronous interrupt.&quot;</span>]
+            </span><span class="kw">pub const </span>AWKST_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Asynchronous wake up interrupt occurred in stop mode.&quot;</span>]
+            </span><span class="kw">pub const </span>AWKST_1: u32 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Calibration value register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CAL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Calibration Result Value&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CAL_CODE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">0x0f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;Compare value register&quot;</span>]
+</span><span class="kw">pub mod </span>CV {
+    <span class="attribute">#[doc = <span class="string">&quot;Compare Value 1&quot;</span>]
+    </span><span class="kw">pub mod </span>CV1 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x0fff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Compare Value 2&quot;</span>]
+    </span><span class="kw">pub mod </span>CV2 {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">16</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x0fff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Offset correction value register&quot;</span>]
+</span><span class="kw">pub mod </span>OFS {
+    <span class="attribute">#[doc = <span class="string">&quot;Offset value&quot;</span>]
+    </span><span class="kw">pub mod </span>OFS {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x0fff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Sign bit&quot;</span>]
+    </span><span class="kw">pub mod </span>SIGN {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">12</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;The offset value is added with the raw result&quot;</span>]
+            </span><span class="kw">pub const </span>SIGN_0: u32 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;The offset value is subtracted from the raw converted value&quot;</span>]
+            </span><span class="kw">pub const </span>SIGN_1: u32 = <span class="number">0x01</span>;
+        }
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Calibration value register&quot;</span>]
+</span><span class="kw">pub mod </span>CAL {
+    <span class="attribute">#[doc = <span class="string">&quot;Calibration Result Value&quot;</span>]
+    </span><span class="kw">pub mod </span>CAL_CODE {
+        <span class="kw">pub const </span>offset: u32 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u32 = <span class="number">0x0f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
 </code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0 (a55dd71d5 2022-09-19)" ></div></body></html>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.66.0 (69f9c33d7 2022-12-12)" ></div></body></html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1021/enc.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>enc.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../../../imxrt_ral/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/./blocks/imxrt1021/enc.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>enc.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../../../normalize.css"><link rel="stylesheet" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../../../ayu.css" disabled><link rel="stylesheet" href="../../../../dark.css" disabled><link rel="stylesheet" href="../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../storage.js"></script><script defer src="../../../../source-script.js"></script><script defer src="../../../../source-files.js"></script><script defer src="../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"></nav><main><div class="width-limiter"><nav class="sub"><a class="sub-logo-container" href="../../../../imxrt_ral/index.html"><img class="rust-logo" src="../../../../rust-logo.svg" alt="logo"></a><form class="search-form"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../wheel.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><pre class="src-line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -721,728 +721,728 @@
 <span id="721">721</span>
 <span id="722">722</span>
 <span id="723">723</span>
-</pre><pre class="rust"><code><span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Quadrature Decoder&quot;</span>]</span>
-<span class="attribute">#[<span class="ident">repr</span>(<span class="ident">C</span>)]</span>
-<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">RegisterBlock</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Control Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTRL</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input Filter Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">FILT</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Watchdog Timeout Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">WTR</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Position Difference Counter Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">POSD</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Position Difference Hold Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">POSDH</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Revolution Counter Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">REV</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Revolution Hold Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">REVH</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Upper Position Counter Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">UPOS</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lower Position Counter Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">LPOS</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Upper Position Hold Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">UPOSH</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lower Position Hold Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">LPOSH</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Upper Initialization Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">UINIT</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lower Initialization Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">LINIT</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input Monitor Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">IMR</span>: <span class="ident"><span class="kw">crate</span>::RORegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Test Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">TST</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Control 2 Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">CTRL2</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Upper Modulus Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">UMOD</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lower Modulus Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">LMOD</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Upper Position Compare Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">UCOMP</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lower Position Compare Register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="ident">LCOMP</span>: <span class="ident"><span class="kw">crate</span>::RWRegister</span><span class="op">&lt;</span><span class="ident">u16</span><span class="op">&gt;</span>,
+</pre><pre class="rust"><code><span class="attribute">#[doc = <span class="string">&quot;Quadrature Decoder&quot;</span>]
+#[repr(C)]
+</span><span class="kw">pub struct </span>RegisterBlock {
+    <span class="attribute">#[doc = <span class="string">&quot;Control Register&quot;</span>]
+    </span><span class="kw">pub </span>CTRL: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Input Filter Register&quot;</span>]
+    </span><span class="kw">pub </span>FILT: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Watchdog Timeout Register&quot;</span>]
+    </span><span class="kw">pub </span>WTR: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Position Difference Counter Register&quot;</span>]
+    </span><span class="kw">pub </span>POSD: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Position Difference Hold Register&quot;</span>]
+    </span><span class="kw">pub </span>POSDH: <span class="kw">crate</span>::RORegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Revolution Counter Register&quot;</span>]
+    </span><span class="kw">pub </span>REV: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Revolution Hold Register&quot;</span>]
+    </span><span class="kw">pub </span>REVH: <span class="kw">crate</span>::RORegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Upper Position Counter Register&quot;</span>]
+    </span><span class="kw">pub </span>UPOS: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Lower Position Counter Register&quot;</span>]
+    </span><span class="kw">pub </span>LPOS: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Upper Position Hold Register&quot;</span>]
+    </span><span class="kw">pub </span>UPOSH: <span class="kw">crate</span>::RORegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Lower Position Hold Register&quot;</span>]
+    </span><span class="kw">pub </span>LPOSH: <span class="kw">crate</span>::RORegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Upper Initialization Register&quot;</span>]
+    </span><span class="kw">pub </span>UINIT: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Lower Initialization Register&quot;</span>]
+    </span><span class="kw">pub </span>LINIT: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Input Monitor Register&quot;</span>]
+    </span><span class="kw">pub </span>IMR: <span class="kw">crate</span>::RORegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Test Register&quot;</span>]
+    </span><span class="kw">pub </span>TST: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Control 2 Register&quot;</span>]
+    </span><span class="kw">pub </span>CTRL2: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Upper Modulus Register&quot;</span>]
+    </span><span class="kw">pub </span>UMOD: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Lower Modulus Register&quot;</span>]
+    </span><span class="kw">pub </span>LMOD: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Upper Position Compare Register&quot;</span>]
+    </span><span class="kw">pub </span>UCOMP: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
+    <span class="attribute">#[doc = <span class="string">&quot;Lower Position Compare Register&quot;</span>]
+    </span><span class="kw">pub </span>LCOMP: <span class="kw">crate</span>::RWRegister&lt;u16&gt;,
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Control Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare Interrupt Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CMPIE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare interrupt is disabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CMPIE_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare interrupt is enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CMPIE_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+<span class="attribute">#[doc = <span class="string">&quot;Control Register&quot;</span>]
+</span><span class="kw">pub mod </span>CTRL {
+    <span class="attribute">#[doc = <span class="string">&quot;Compare Interrupt Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>CMPIE {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Compare interrupt is disabled&quot;</span>]
+            </span><span class="kw">pub const </span>CMPIE_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Compare interrupt is enabled&quot;</span>]
+            </span><span class="kw">pub const </span>CMPIE_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Compare Interrupt Request&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CMPIRQ</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">1</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No match has occurred&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CMPIRQ_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;COMP match has occurred&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CMPIRQ_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Compare Interrupt Request&quot;</span>]
+    </span><span class="kw">pub mod </span>CMPIRQ {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">1</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No match has occurred&quot;</span>]
+            </span><span class="kw">pub const </span>CMPIRQ_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;COMP match has occurred&quot;</span>]
+            </span><span class="kw">pub const </span>CMPIRQ_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Watchdog Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">WDE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Watchdog timer is disabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">WDE_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Watchdog timer is enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">WDE_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Watchdog Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>WDE {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Watchdog timer is disabled&quot;</span>]
+            </span><span class="kw">pub const </span>WDE_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Watchdog timer is enabled&quot;</span>]
+            </span><span class="kw">pub const </span>WDE_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Watchdog Timeout Interrupt Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DIE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">3</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Watchdog timer interrupt is disabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DIE_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Watchdog timer interrupt is enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DIE_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Watchdog Timeout Interrupt Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>DIE {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">3</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Watchdog timer interrupt is disabled&quot;</span>]
+            </span><span class="kw">pub const </span>DIE_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Watchdog timer interrupt is enabled&quot;</span>]
+            </span><span class="kw">pub const </span>DIE_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Watchdog Timeout Interrupt Request&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DIRQ</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">4</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No interrupt has occurred&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DIRQ_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Watchdog timeout interrupt has occurred&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DIRQ_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Watchdog Timeout Interrupt Request&quot;</span>]
+    </span><span class="kw">pub mod </span>DIRQ {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">4</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No interrupt has occurred&quot;</span>]
+            </span><span class="kw">pub const </span>DIRQ_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Watchdog timeout interrupt has occurred&quot;</span>]
+            </span><span class="kw">pub const </span>DIRQ_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Use Negative Edge of INDEX Pulse&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">XNE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">5</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Use positive transition edge of INDEX pulse&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">XNE_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Use negative transition edge of INDEX pulse&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">XNE_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Use Negative Edge of INDEX Pulse&quot;</span>]
+    </span><span class="kw">pub mod </span>XNE {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">5</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Use positive transition edge of INDEX pulse&quot;</span>]
+            </span><span class="kw">pub const </span>XNE_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Use negative transition edge of INDEX pulse&quot;</span>]
+            </span><span class="kw">pub const </span>XNE_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;INDEX Triggered Initialization of Position Counters UPOS and LPOS&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">XIP</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">6</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No action&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">XIP_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;INDEX pulse initializes the position counter&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">XIP_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;INDEX Triggered Initialization of Position Counters UPOS and LPOS&quot;</span>]
+    </span><span class="kw">pub mod </span>XIP {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">6</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No action&quot;</span>]
+            </span><span class="kw">pub const </span>XIP_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;INDEX pulse initializes the position counter&quot;</span>]
+            </span><span class="kw">pub const </span>XIP_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;INDEX Pulse Interrupt Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">XIE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;INDEX pulse interrupt is disabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">XIE_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;INDEX pulse interrupt is enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">XIE_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;INDEX Pulse Interrupt Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>XIE {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;INDEX pulse interrupt is disabled&quot;</span>]
+            </span><span class="kw">pub const </span>XIE_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;INDEX pulse interrupt is enabled&quot;</span>]
+            </span><span class="kw">pub const </span>XIE_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;INDEX Pulse Interrupt Request&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">XIRQ</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No interrupt has occurred&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">XIRQ_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;INDEX pulse interrupt has occurred&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">XIRQ_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;INDEX Pulse Interrupt Request&quot;</span>]
+    </span><span class="kw">pub mod </span>XIRQ {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No interrupt has occurred&quot;</span>]
+            </span><span class="kw">pub const </span>XIRQ_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;INDEX pulse interrupt has occurred&quot;</span>]
+            </span><span class="kw">pub const </span>XIRQ_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Enable Signal Phase Count Mode&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">PH1</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">9</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Use standard quadrature decoder where PHASEA and PHASEB represent a two phase quadrature signal.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PH1_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Bypass the quadrature decoder. A positive transition of the PHASEA input generates a count signal. The PHASEB input and the REV bit control the counter direction. If CTRL\\[REV\\] = 0, PHASEB = 0, then count up If CTRL\\[REV\\] = 0, PHASEB = 1, then count down If CTRL\\[REV\\] = 1, PHASEB = 0, then count down If CTRL\\[REV\\] = 1, PHASEB = 1, then count up&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PH1_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Enable Signal Phase Count Mode&quot;</span>]
+    </span><span class="kw">pub mod </span>PH1 {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">9</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Use standard quadrature decoder where PHASEA and PHASEB represent a two phase quadrature signal.&quot;</span>]
+            </span><span class="kw">pub const </span>PH1_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Bypass the quadrature decoder. A positive transition of the PHASEA input generates a count signal. The PHASEB input and the REV bit control the counter direction. If CTRL\\[REV\\] = 0, PHASEB = 0, then count up If CTRL\\[REV\\] = 0, PHASEB = 1, then count down If CTRL\\[REV\\] = 1, PHASEB = 0, then count down If CTRL\\[REV\\] = 1, PHASEB = 1, then count up&quot;</span>]
+            </span><span class="kw">pub const </span>PH1_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Enable Reverse Direction Counting&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">10</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Count normally&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">REV_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Count in the reverse direction&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">REV_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Enable Reverse Direction Counting&quot;</span>]
+    </span><span class="kw">pub mod </span>REV {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">10</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Count normally&quot;</span>]
+            </span><span class="kw">pub const </span>REV_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Count in the reverse direction&quot;</span>]
+            </span><span class="kw">pub const </span>REV_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Software Triggered Initialization of Position Counters UPOS and LPOS&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SWIP</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">11</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No action&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SWIP_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Initialize position counter&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SWIP_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Software Triggered Initialization of Position Counters UPOS and LPOS&quot;</span>]
+    </span><span class="kw">pub mod </span>SWIP {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">11</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No action&quot;</span>]
+            </span><span class="kw">pub const </span>SWIP_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Initialize position counter&quot;</span>]
+            </span><span class="kw">pub const </span>SWIP_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Use Negative Edge of HOME Input&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">HNE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">12</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Use positive going edge-to-trigger initialization of position counters UPOS and LPOS&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HNE_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Use negative going edge-to-trigger initialization of position counters UPOS and LPOS&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HNE_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Use Negative Edge of HOME Input&quot;</span>]
+    </span><span class="kw">pub mod </span>HNE {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">12</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Use positive going edge-to-trigger initialization of position counters UPOS and LPOS&quot;</span>]
+            </span><span class="kw">pub const </span>HNE_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Use negative going edge-to-trigger initialization of position counters UPOS and LPOS&quot;</span>]
+            </span><span class="kw">pub const </span>HNE_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Enable HOME to Initialize Position Counters UPOS and LPOS&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">HIP</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">13</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No action&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIP_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;HOME signal initializes the position counter&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIP_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Enable HOME to Initialize Position Counters UPOS and LPOS&quot;</span>]
+    </span><span class="kw">pub mod </span>HIP {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">13</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No action&quot;</span>]
+            </span><span class="kw">pub const </span>HIP_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;HOME signal initializes the position counter&quot;</span>]
+            </span><span class="kw">pub const </span>HIP_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;HOME Interrupt Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">HIE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">14</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Disable HOME interrupts&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIE_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Enable HOME interrupts&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIE_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;HOME Interrupt Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>HIE {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">14</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Disable HOME interrupts&quot;</span>]
+            </span><span class="kw">pub const </span>HIE_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Enable HOME interrupts&quot;</span>]
+            </span><span class="kw">pub const </span>HIE_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;HOME Signal Transition Interrupt Request&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">HIRQ</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">15</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No interrupt&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIRQ_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;HOME signal transition interrupt request&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIRQ_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input Filter Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">FILT</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input Filter Sample Period&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">FILT_PER</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input Filter Sample Count&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">FILT_CNT</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x07</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Watchdog Timeout Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">WTR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;WDOG\\[15:0\\] is a binary representation of the number of clock cycles plus one that the watchdog timer counts before timing out and optionally generating an interrupt&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">WDOG</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Position Difference Counter Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">POSD</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read/write register contains the position change in value occurring between each read of the position register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">POSD</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Position Difference Hold Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">POSDH</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read-only register contains a snapshot of the value of the POSD register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">POSDH</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Revolution Counter Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REV</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read/write register contains the current value of the revolution counter.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REV</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Revolution Hold Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REVH</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read-only register contains a snapshot of the value of the REV register.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REVH</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Upper Position Counter Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">UPOS</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read/write register contains the upper (most significant) half of the position counter&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">POS</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lower Position Counter Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LPOS</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read/write register contains the lower (least significant) half of the position counter&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">POS</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Upper Position Hold Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">UPOSH</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read-only register contains a snapshot of the UPOS register.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">POSH</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lower Position Hold Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LPOSH</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read-only register contains a snapshot of the LPOS register.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">POSH</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Upper Initialization Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">UINIT</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read/write register contains the value to be used to initialize the upper half of the position counter (UPOS)&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">INIT</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lower Initialization Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LINIT</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read/write register contains the value to be used to initialize the lower half of the position counter (LPOS)&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">INIT</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Input Monitor Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">IMR</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This is the raw HOME input.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">HOME</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This is the raw INDEX input.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">INDEX</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">1</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This is the raw PHASEB input.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">PHB</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This is the raw PHASEA input.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">PHA</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">3</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This is the filtered version of HOME input.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">FHOM</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">4</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This is the filtered version of INDEX input.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">FIND</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">5</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This is the filtered version of PHASEB input.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">FPHB</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">6</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This is the filtered version of PHASEA input.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">FPHA</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-}
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Test Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TST</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;These bits hold the number of quadrature advances to generate.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TEST_COUNT</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;These bits hold the period of quadrature phase in IPBus clock cycles.&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TEST_PERIOD</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x1f</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Quadrature Decoder Negative Signal&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">QDN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">13</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Leaves quadrature decoder signal in a positive direction&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">QDN_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Generates a negative quadrature decoder signal&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">QDN_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Test Counter Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TCE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">14</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Test count is not enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TCE_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Test count is enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TCE_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Test Mode Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">TEN</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">15</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Test module is not enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TEN_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Test module is enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TEN_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;HOME Signal Transition Interrupt Request&quot;</span>]
+    </span><span class="kw">pub mod </span>HIRQ {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">15</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No interrupt&quot;</span>]
+            </span><span class="kw">pub const </span>HIRQ_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;HOME signal transition interrupt request&quot;</span>]
+            </span><span class="kw">pub const </span>HIRQ_1: u16 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Control 2 Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">CTRL2</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Update Hold Registers&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">UPDHLD</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Disable updates of hold registers on rising edge of TRIGGER&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">UPDHLD_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Enable updates of hold registers on rising edge of TRIGGER&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">UPDHLD_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+<span class="attribute">#[doc = <span class="string">&quot;Input Filter Register&quot;</span>]
+</span><span class="kw">pub mod </span>FILT {
+    <span class="attribute">#[doc = <span class="string">&quot;Input Filter Sample Period&quot;</span>]
+    </span><span class="kw">pub mod </span>FILT_PER {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Input Filter Sample Count&quot;</span>]
+    </span><span class="kw">pub mod </span>FILT_CNT {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x07 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Watchdog Timeout Register&quot;</span>]
+</span><span class="kw">pub mod </span>WTR {
+    <span class="attribute">#[doc = <span class="string">&quot;WDOG\\[15:0\\] is a binary representation of the number of clock cycles plus one that the watchdog timer counts before timing out and optionally generating an interrupt&quot;</span>]
+    </span><span class="kw">pub mod </span>WDOG {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Position Difference Counter Register&quot;</span>]
+</span><span class="kw">pub mod </span>POSD {
+    <span class="attribute">#[doc = <span class="string">&quot;This read/write register contains the position change in value occurring between each read of the position register&quot;</span>]
+    </span><span class="kw">pub mod </span>POSD {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Position Difference Hold Register&quot;</span>]
+</span><span class="kw">pub mod </span>POSDH {
+    <span class="attribute">#[doc = <span class="string">&quot;This read-only register contains a snapshot of the value of the POSD register&quot;</span>]
+    </span><span class="kw">pub mod </span>POSDH {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Revolution Counter Register&quot;</span>]
+</span><span class="kw">pub mod </span>REV {
+    <span class="attribute">#[doc = <span class="string">&quot;This read/write register contains the current value of the revolution counter.&quot;</span>]
+    </span><span class="kw">pub mod </span>REV {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Revolution Hold Register&quot;</span>]
+</span><span class="kw">pub mod </span>REVH {
+    <span class="attribute">#[doc = <span class="string">&quot;This read-only register contains a snapshot of the value of the REV register.&quot;</span>]
+    </span><span class="kw">pub mod </span>REVH {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Upper Position Counter Register&quot;</span>]
+</span><span class="kw">pub mod </span>UPOS {
+    <span class="attribute">#[doc = <span class="string">&quot;This read/write register contains the upper (most significant) half of the position counter&quot;</span>]
+    </span><span class="kw">pub mod </span>POS {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Lower Position Counter Register&quot;</span>]
+</span><span class="kw">pub mod </span>LPOS {
+    <span class="attribute">#[doc = <span class="string">&quot;This read/write register contains the lower (least significant) half of the position counter&quot;</span>]
+    </span><span class="kw">pub mod </span>POS {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Upper Position Hold Register&quot;</span>]
+</span><span class="kw">pub mod </span>UPOSH {
+    <span class="attribute">#[doc = <span class="string">&quot;This read-only register contains a snapshot of the UPOS register.&quot;</span>]
+    </span><span class="kw">pub mod </span>POSH {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Lower Position Hold Register&quot;</span>]
+</span><span class="kw">pub mod </span>LPOSH {
+    <span class="attribute">#[doc = <span class="string">&quot;This read-only register contains a snapshot of the LPOS register.&quot;</span>]
+    </span><span class="kw">pub mod </span>POSH {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Upper Initialization Register&quot;</span>]
+</span><span class="kw">pub mod </span>UINIT {
+    <span class="attribute">#[doc = <span class="string">&quot;This read/write register contains the value to be used to initialize the upper half of the position counter (UPOS)&quot;</span>]
+    </span><span class="kw">pub mod </span>INIT {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Lower Initialization Register&quot;</span>]
+</span><span class="kw">pub mod </span>LINIT {
+    <span class="attribute">#[doc = <span class="string">&quot;This read/write register contains the value to be used to initialize the lower half of the position counter (LPOS)&quot;</span>]
+    </span><span class="kw">pub mod </span>INIT {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Input Monitor Register&quot;</span>]
+</span><span class="kw">pub mod </span>IMR {
+    <span class="attribute">#[doc = <span class="string">&quot;This is the raw HOME input.&quot;</span>]
+    </span><span class="kw">pub mod </span>HOME {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;This is the raw INDEX input.&quot;</span>]
+    </span><span class="kw">pub mod </span>INDEX {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">1</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;This is the raw PHASEB input.&quot;</span>]
+    </span><span class="kw">pub mod </span>PHB {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;This is the raw PHASEA input.&quot;</span>]
+    </span><span class="kw">pub mod </span>PHA {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">3</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;This is the filtered version of HOME input.&quot;</span>]
+    </span><span class="kw">pub mod </span>FHOM {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">4</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;This is the filtered version of INDEX input.&quot;</span>]
+    </span><span class="kw">pub mod </span>FIND {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">5</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;This is the filtered version of PHASEB input.&quot;</span>]
+    </span><span class="kw">pub mod </span>FPHB {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">6</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;This is the filtered version of PHASEA input.&quot;</span>]
+    </span><span class="kw">pub mod </span>FPHA {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Test Register&quot;</span>]
+</span><span class="kw">pub mod </span>TST {
+    <span class="attribute">#[doc = <span class="string">&quot;These bits hold the number of quadrature advances to generate.&quot;</span>]
+    </span><span class="kw">pub mod </span>TEST_COUNT {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;These bits hold the period of quadrature phase in IPBus clock cycles.&quot;</span>]
+    </span><span class="kw">pub mod </span>TEST_PERIOD {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x1f </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Quadrature Decoder Negative Signal&quot;</span>]
+    </span><span class="kw">pub mod </span>QDN {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">13</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Leaves quadrature decoder signal in a positive direction&quot;</span>]
+            </span><span class="kw">pub const </span>QDN_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Generates a negative quadrature decoder signal&quot;</span>]
+            </span><span class="kw">pub const </span>QDN_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Update Position Registers&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">UPDPOS</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">1</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No action for POSD, REV, UPOS and LPOS on rising edge of TRIGGER&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">UPDPOS_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Clear POSD, REV, UPOS and LPOS on rising edge of TRIGGER&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">UPDPOS_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Test Counter Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>TCE {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">14</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Test count is not enabled&quot;</span>]
+            </span><span class="kw">pub const </span>TCE_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Test count is enabled&quot;</span>]
+            </span><span class="kw">pub const </span>TCE_1: u16 = <span class="number">0x01</span>;
         }
     }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Enable Modulo Counting&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">MOD</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">2</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Disable modulo counting&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">MOD_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Enable modulo counting&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">MOD_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Count Direction Flag&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">DIR</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">3</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Last count was in the down direction&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DIR_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Last count was in the up direction&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DIR_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Roll-under Interrupt Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RUIE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">4</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Roll-under interrupt is disabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RUIE_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Roll-under interrupt is enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RUIE_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Roll-under Interrupt Request&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RUIRQ</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">5</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No roll-under has occurred&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RUIRQ_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Roll-under has occurred&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RUIRQ_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Roll-over Interrupt Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ROIE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">6</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Roll-over interrupt is disabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ROIE_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Roll-over interrupt is enabled&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ROIE_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Roll-over Interrupt Request&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">ROIRQ</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">7</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No roll-over has occurred&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ROIRQ_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Roll-over has occurred&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ROIRQ_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Revolution Counter Modulus Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">REVMOD</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">8</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Use INDEX pulse to increment/decrement revolution counter (REV).&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">REVMOD_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Use modulus counting roll-over/under to increment/decrement revolution counter (REV).&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">REVMOD_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Output Control&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">OUTCTL</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">9</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;POSMATCH pulses when a match occurs between the position counters (POS) and the compare value (COMP).&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">OUTCTL_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;POSMATCH pulses when the UPOS, LPOS, REV, or POSD registers are read.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">OUTCTL_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Simultaneous PHASEA and PHASEB Change Interrupt Enable&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SABIE</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">10</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Simultaneous PHASEA and PHASEB change interrupt disabled.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SABIE_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Simultaneous PHASEA and PHASEB change interrupt enabled.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SABIE_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
-        }
-    }
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Simultaneous PHASEA and PHASEB Change Interrupt Request&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">SABIRQ</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">11</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;No simultaneous change of PHASEA and PHASEB has occurred.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SABIRQ_0</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-            <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;A simultaneous change of PHASEA and PHASEB has occurred.&quot;</span>]</span>
-            <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SABIRQ_1</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0x01</span>;
+    <span class="attribute">#[doc = <span class="string">&quot;Test Mode Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>TEN {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">15</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Test module is not enabled&quot;</span>]
+            </span><span class="kw">pub const </span>TEN_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Test module is enabled&quot;</span>]
+            </span><span class="kw">pub const </span>TEN_1: u16 = <span class="number">0x01</span>;
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Upper Modulus Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">UMOD</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read/write register contains the upper (most significant) half of the modulus register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">MOD</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;Control 2 Register&quot;</span>]
+</span><span class="kw">pub mod </span>CTRL2 {
+    <span class="attribute">#[doc = <span class="string">&quot;Update Hold Registers&quot;</span>]
+    </span><span class="kw">pub mod </span>UPDHLD {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Disable updates of hold registers on rising edge of TRIGGER&quot;</span>]
+            </span><span class="kw">pub const </span>UPDHLD_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Enable updates of hold registers on rising edge of TRIGGER&quot;</span>]
+            </span><span class="kw">pub const </span>UPDHLD_1: u16 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Update Position Registers&quot;</span>]
+    </span><span class="kw">pub mod </span>UPDPOS {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">1</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No action for POSD, REV, UPOS and LPOS on rising edge of TRIGGER&quot;</span>]
+            </span><span class="kw">pub const </span>UPDPOS_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Clear POSD, REV, UPOS and LPOS on rising edge of TRIGGER&quot;</span>]
+            </span><span class="kw">pub const </span>UPDPOS_1: u16 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Enable Modulo Counting&quot;</span>]
+    </span><span class="kw">pub mod </span>MOD {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">2</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Disable modulo counting&quot;</span>]
+            </span><span class="kw">pub const </span>MOD_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Enable modulo counting&quot;</span>]
+            </span><span class="kw">pub const </span>MOD_1: u16 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Count Direction Flag&quot;</span>]
+    </span><span class="kw">pub mod </span>DIR {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">3</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Last count was in the down direction&quot;</span>]
+            </span><span class="kw">pub const </span>DIR_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Last count was in the up direction&quot;</span>]
+            </span><span class="kw">pub const </span>DIR_1: u16 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Roll-under Interrupt Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>RUIE {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">4</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Roll-under interrupt is disabled&quot;</span>]
+            </span><span class="kw">pub const </span>RUIE_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Roll-under interrupt is enabled&quot;</span>]
+            </span><span class="kw">pub const </span>RUIE_1: u16 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Roll-under Interrupt Request&quot;</span>]
+    </span><span class="kw">pub mod </span>RUIRQ {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">5</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No roll-under has occurred&quot;</span>]
+            </span><span class="kw">pub const </span>RUIRQ_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Roll-under has occurred&quot;</span>]
+            </span><span class="kw">pub const </span>RUIRQ_1: u16 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Roll-over Interrupt Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>ROIE {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">6</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Roll-over interrupt is disabled&quot;</span>]
+            </span><span class="kw">pub const </span>ROIE_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Roll-over interrupt is enabled&quot;</span>]
+            </span><span class="kw">pub const </span>ROIE_1: u16 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Roll-over Interrupt Request&quot;</span>]
+    </span><span class="kw">pub mod </span>ROIRQ {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">7</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No roll-over has occurred&quot;</span>]
+            </span><span class="kw">pub const </span>ROIRQ_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Roll-over has occurred&quot;</span>]
+            </span><span class="kw">pub const </span>ROIRQ_1: u16 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Revolution Counter Modulus Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>REVMOD {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">8</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Use INDEX pulse to increment/decrement revolution counter (REV).&quot;</span>]
+            </span><span class="kw">pub const </span>REVMOD_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Use modulus counting roll-over/under to increment/decrement revolution counter (REV).&quot;</span>]
+            </span><span class="kw">pub const </span>REVMOD_1: u16 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Output Control&quot;</span>]
+    </span><span class="kw">pub mod </span>OUTCTL {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">9</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;POSMATCH pulses when a match occurs between the position counters (POS) and the compare value (COMP).&quot;</span>]
+            </span><span class="kw">pub const </span>OUTCTL_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;POSMATCH pulses when the UPOS, LPOS, REV, or POSD registers are read.&quot;</span>]
+            </span><span class="kw">pub const </span>OUTCTL_1: u16 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Simultaneous PHASEA and PHASEB Change Interrupt Enable&quot;</span>]
+    </span><span class="kw">pub mod </span>SABIE {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">10</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;Simultaneous PHASEA and PHASEB change interrupt disabled.&quot;</span>]
+            </span><span class="kw">pub const </span>SABIE_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;Simultaneous PHASEA and PHASEB change interrupt enabled.&quot;</span>]
+            </span><span class="kw">pub const </span>SABIE_1: u16 = <span class="number">0x01</span>;
+        }
+    }
+    <span class="attribute">#[doc = <span class="string">&quot;Simultaneous PHASEA and PHASEB Change Interrupt Request&quot;</span>]
+    </span><span class="kw">pub mod </span>SABIRQ {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">11</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0x01 </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {
+            <span class="attribute">#[doc = <span class="string">&quot;No simultaneous change of PHASEA and PHASEB has occurred.&quot;</span>]
+            </span><span class="kw">pub const </span>SABIRQ_0: u16 = <span class="number">0</span>;
+            <span class="attribute">#[doc = <span class="string">&quot;A simultaneous change of PHASEA and PHASEB has occurred.&quot;</span>]
+            </span><span class="kw">pub const </span>SABIRQ_1: u16 = <span class="number">0x01</span>;
+        }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lower Modulus Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LMOD</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read/write register contains the lower (least significant) half of the modulus register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">MOD</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;Upper Modulus Register&quot;</span>]
+</span><span class="kw">pub mod </span>UMOD {
+    <span class="attribute">#[doc = <span class="string">&quot;This read/write register contains the upper (most significant) half of the modulus register&quot;</span>]
+    </span><span class="kw">pub mod </span>MOD {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Upper Position Compare Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">UCOMP</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read/write register contains the upper (most significant) half of the position compare register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">COMP</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;Lower Modulus Register&quot;</span>]
+</span><span class="kw">pub mod </span>LMOD {
+    <span class="attribute">#[doc = <span class="string">&quot;This read/write register contains the lower (least significant) half of the modulus register&quot;</span>]
+    </span><span class="kw">pub mod </span>MOD {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Lower Position Compare Register&quot;</span>]</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">LCOMP</span> {
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;This read/write register contains the lower (least significant) half of the position compare register&quot;</span>]</span>
-    <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">COMP</span> {
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">offset</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">mask</span>: <span class="ident">u16</span> <span class="op">=</span> <span class="number">0xffff</span> <span class="op">&lt;</span><span class="op">&lt;</span> <span class="ident">offset</span>;
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">R</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">W</span> {}
-        <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">RW</span> {}
+<span class="attribute">#[doc = <span class="string">&quot;Upper Position Compare Register&quot;</span>]
+</span><span class="kw">pub mod </span>UCOMP {
+    <span class="attribute">#[doc = <span class="string">&quot;This read/write register contains the upper (most significant) half of the position compare register&quot;</span>]
+    </span><span class="kw">pub mod </span>COMP {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
+    }
+}
+<span class="attribute">#[doc = <span class="string">&quot;Lower Position Compare Register&quot;</span>]
+</span><span class="kw">pub mod </span>LCOMP {
+    <span class="attribute">#[doc = <span class="string">&quot;This read/write register contains the lower (least significant) half of the position compare register&quot;</span>]
+    </span><span class="kw">pub mod </span>COMP {
+        <span class="kw">pub const </span>offset: u16 = <span class="number">0</span>;
+        <span class="kw">pub const </span>mask: u16 = <span class="number">0xffff </span>&lt;&lt; offset;
+        <span class="kw">pub mod </span>R {}
+        <span class="kw">pub mod </span>W {}
+        <span class="kw">pub mod </span>RW {}
     }
 }
 </code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0 (a55dd71d5 2022-09-19)" ></div></body></html>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../../../" data-current-crate="imxrt_ral" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.66.0 (69f9c33d7 2022-12-12)" ></div></body></html>
