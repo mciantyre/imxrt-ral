@@ -3511,13 +3511,6 @@
 <span id="3511">3511</span>
 <span id="3512">3512</span>
 <span id="3513">3513</span>
-<span id="3514">3514</span>
-<span id="3515">3515</span>
-<span id="3516">3516</span>
-<span id="3517">3517</span>
-<span id="3518">3518</span>
-<span id="3519">3519</span>
-<span id="3520">3520</span>
 </pre><pre class="rust"><code><span class="attribute">#[derive(Copy, Clone, Debug, PartialEq, Eq)]
 </span><span class="kw">pub enum </span>Interrupt {
     <span class="attribute">#[doc = <span class="string">&quot;0 - DMA0_DMA16&quot;</span>]
@@ -7029,13 +7022,6 @@
             XBARB3: xbarb::XBARB3::instance(),
             XTALOSC24M: xtalosc24m::XTALOSC24M::instance(),
         }
-    }
-    <span class="attribute">#[doc = <span class="string">r&quot; This method should only be called by RTIC v1. Users should prefer&quot;</span>]
-    #[doc = <span class="string">r&quot; [`instances()`](crate::Instances::instances).&quot;</span>]
-    #[doc(hidden)]
-    #[inline]
-    </span><span class="kw">pub const unsafe fn </span>steal() -&gt; <span class="self">Self </span>{
-        <span class="self">Self</span>::instances()
     }
 }
 </code></pre></div>
