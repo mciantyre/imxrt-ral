@@ -3233,7 +3233,7 @@ pub mod lpuart {
     pub const LPUART7: *const RegisterBlock = 0x4457_0000 as *const RegisterBlock;
     #[doc = "LPUART"]
     pub const LPUART12: *const RegisterBlock = 0x4458_0000 as *const RegisterBlock;
-    #[path = "blocks/imxrt1011/lpuart.rs"]
+    #[path = "blocks/imxrt1189_cm33/lpuart.rs"]
     mod blocks;
     pub use blocks::*;
     pub type Instance<const N: u8> = crate::Instance<RegisterBlock, N>;

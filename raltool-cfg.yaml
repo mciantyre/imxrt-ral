@@ -256,8 +256,6 @@ combines:
     # doesn't like those extra registers, so it doesn't treat them as equivalent. The LP*
     # blocks on the 1000 and 1170 series represent the minimal support for these peripherals,
     # so it should be safe to use this minimal subset on the 1180.
-    - block: lpuart::Lpuart1
-      mcu: imxrt1011
     - block: lpspi::Lpspi1
       mcu: imxrt1011
     - block: lpi2c::Lpi2c1
