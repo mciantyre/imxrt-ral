@@ -19,11 +19,11 @@ impl Rename {
             }
         };
 
-        super::map_device_names(ir, &renamer);
-        super::map_block_names(ir, &renamer);
-        super::map_fieldset_names(ir, &renamer);
-        super::map_enum_names(ir, &renamer);
-        super::map_device_peripheral_names(ir, &renamer);
+        super::map_device_names(ir, renamer);
+        super::map_block_names(ir, renamer);
+        super::map_fieldset_names(ir, renamer);
+        super::map_enum_names(ir, renamer);
+        super::map_device_peripheral_names(ir, renamer);
 
         Ok(())
     }

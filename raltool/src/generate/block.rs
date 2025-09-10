@@ -260,13 +260,13 @@ impl Block<'_> {
             }
         });
     }
-    fn subblocks(&self) -> impl Iterator<Item = &Block> {
+    fn subblocks(&self) -> impl Iterator<Item = &Block<'_>> {
         self.members.iter().filter_map(|mem| match mem {
             Member::Block { block, .. } => Some(block),
             _ => None,
         })
     }
-    fn registers(&self) -> impl Iterator<Item = &Register> {
+    fn registers(&self) -> impl Iterator<Item = &Register<'_>> {
         self.members.iter().filter_map(|mem| match mem {
             Member::Register(reg) => Some(reg),
             _ => None,

@@ -80,7 +80,7 @@ impl<'ir, E> CompareIr<'ir, E> {
 type IrPath<'ir> = &'ir str;
 
 /// Extract the part of the IR path that describes the peripheral.
-fn peripheral_part(path: IrPath) -> &str {
+fn peripheral_part(path: IrPath<'_>) -> &str {
     path.split("::")
         .next()
         .expect("IR paths are separated by ::")
@@ -329,7 +329,7 @@ impl<'ir, E> VersionLookup<'ir, E> {
         Self::new(equiv, map)
     }
 
-    fn get(&self, ir: &ir::IR, path: &str) -> Option<&Version<E>> {
+    fn get(&self, ir: &ir::IR, path: &str) -> Option<&Version<'_, E>> {
         self.versions
             .get(path)
             .and_then(|versions| versions.iter().find(|version| version.is_used_by(ir)))
@@ -353,7 +353,7 @@ impl<'ir> IrVersions<'ir> {
         let exclusions: Vec<_> = config
             .never_combine
             .iter()
-            .map(|path| Regex::new(&path).unwrap())
+            .map(|path| Regex::new(path).unwrap())
             .collect();
         let exclusions = &exclusions;
 
@@ -395,15 +395,15 @@ impl<'ir> IrVersions<'ir> {
         }
     }
     /// Access an enum version that corresponds to this IR.
-    pub fn get_enum(&self, ir: &ir::IR, path: &str) -> Option<&EnumVersion> {
+    pub fn get_enum(&self, ir: &ir::IR, path: &str) -> Option<&EnumVersion<'_>> {
         self.enums.get(ir, path)
     }
     /// Access a fieldset version that corresponds to this IR.
-    pub fn get_fieldset(&self, ir: &ir::IR, path: &str) -> Option<&FieldSetVersion> {
+    pub fn get_fieldset(&self, ir: &ir::IR, path: &str) -> Option<&FieldSetVersion<'_>> {
         self.fieldsets.get(ir, path)
     }
     /// Access a block version that corresponds to this IR.
-    pub fn get_block(&self, ir: &ir::IR, path: &str) -> Option<&BlockVersion> {
+    pub fn get_block(&self, ir: &ir::IR, path: &str) -> Option<&BlockVersion<'_>> {
         self.blocks.get(ir, path)
     }
 }
@@ -427,7 +427,7 @@ impl<T> std::cmp::Eq for RefHash<'_, T> {}
 
 impl<T> Clone for RefHash<'_, T> {
     fn clone(&self) -> Self {
-        Self(self.0)
+        *self
     }
 }
 

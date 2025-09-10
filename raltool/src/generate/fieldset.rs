@@ -46,7 +46,7 @@ pub fn render(ir: &IR, fs: &FieldSet) -> Result<TokenStream> {
                     }
                     items
                 })
-                .unwrap_or_else(TokenStream::new)
+                .unwrap_or_default()
         };
 
         let reads = enum_tokenize(&f.enum_read);

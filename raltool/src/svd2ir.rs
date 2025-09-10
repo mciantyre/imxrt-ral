@@ -304,7 +304,7 @@ pub fn convert_svd(svd: &svd::Device) -> anyhow::Result<IR> {
         }
         irqs.sort_by_key(|i| &i.name);
 
-        for (_n, &i) in irqs.iter().enumerate() {
+        for &i in irqs.iter() {
             let iname = i.name.to_ascii_uppercase();
 
             if !device.interrupts.iter().any(|j| j.name == iname) {

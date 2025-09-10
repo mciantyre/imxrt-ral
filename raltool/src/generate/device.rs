@@ -76,7 +76,7 @@ pub fn render(_opts: &super::Options, _ir: &IR, d: &Device) -> Result<TokenStrea
             }
 
             let name = Ident::new(&peripheral.name, span);
-            let address = util::hex(peripheral.base_address as u64);
+            let address = util::hex(peripheral.base_address);
             let doc = util::doc(&peripheral.description);
 
             consts.extend(quote! {
@@ -200,7 +200,7 @@ pub fn render(_opts: &super::Options, _ir: &IR, d: &Device) -> Result<TokenStrea
         };
 
         let mod_name = Ident::new(mod_name, span);
-        let number_fn = number_fn.unwrap_or(quote!());
+        let number_fn = number_fn.unwrap_or_default();
         peripherals.extend(quote! {
             #[path = "."]
             pub mod #mod_name {

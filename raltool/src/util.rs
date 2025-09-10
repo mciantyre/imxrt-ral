@@ -11,19 +11,19 @@ pub const BITS_PER_BYTE: u32 = 8;
 const BLACKLIST_CHARS: &[char] = &['(', ')', '[', ']', '/', ' ', '-'];
 
 pub trait ToSanitizedPascalCase {
-    fn to_sanitized_pascal_case(&self) -> Cow<str>;
+    fn to_sanitized_pascal_case(&self) -> Cow<'_, str>;
 }
 
 pub trait ToSanitizedUpperCase {
-    fn to_sanitized_upper_case(&self) -> Cow<str>;
+    fn to_sanitized_upper_case(&self) -> Cow<'_, str>;
 }
 
 pub trait ToSanitizedSnakeCase {
-    fn to_sanitized_snake_case(&self) -> Cow<str>;
+    fn to_sanitized_snake_case(&self) -> Cow<'_, str>;
 }
 
 impl ToSanitizedSnakeCase for str {
-    fn to_sanitized_snake_case(&self) -> Cow<str> {
+    fn to_sanitized_snake_case(&self) -> Cow<'_, str> {
         macro_rules! keywords {
             ($s:expr, $($kw:ident),+,) => {
                 Cow::from(match &$s.to_lowercase()[..] {
@@ -107,7 +107,7 @@ impl ToSanitizedSnakeCase for str {
 }
 
 impl ToSanitizedUpperCase for str {
-    fn to_sanitized_upper_case(&self) -> Cow<str> {
+    fn to_sanitized_upper_case(&self) -> Cow<'_, str> {
         let s = self.replace(BLACKLIST_CHARS, "");
 
         match s.chars().next().unwrap_or('\0') {
@@ -120,7 +120,7 @@ impl ToSanitizedUpperCase for str {
 }
 
 impl ToSanitizedPascalCase for str {
-    fn to_sanitized_pascal_case(&self) -> Cow<str> {
+    fn to_sanitized_pascal_case(&self) -> Cow<'_, str> {
         let s = self.replace(BLACKLIST_CHARS, "");
 
         match s.chars().next().unwrap_or('\0') {
