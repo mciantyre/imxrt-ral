@@ -8,13 +8,6 @@ For more information, see [the README][README].
 Select your chip and enable its feature flag. See [the README][README] for more
 information on available chip features.
 
-There are two ways to interact with peripherals and registers:
-
-1. Fabricate a peripheral _instance_ with the unsafe `instance()` method.
-2. Interact directly with the peripheral pointers, and mark all accesses as `unsafe`.
-
-## Fabricate a peripheral instance
-
 ```no_run
 use imxrt_ral as ral;
 use ral::lpuart;
@@ -34,22 +27,6 @@ It's helpful to design drivers to peripheral instances, since register accesses 
 not need an `unsafe` block. The driver assumes that it has complete ownership
 of the instance, and uses the instance to manage the hardware. See the [Usage](#usage) section
 for more ideas.
-
-## Interact directly with pointers
-
-```no_run
-use imxrt_ral as ral;
-use ral::lpuart;
-
-let version = unsafe { ral::read_reg!(lpuart, lpuart::LPUART2, VERID) };
-# let byte = 0;
-unsafe { ral::modify_reg!(lpuart, lpuart::LPUART2, CTRL, TE: 1, RE: 1) };
-unsafe { ral::write_reg!(lpuart, lpuart::LPUART2, DATA, byte) };
-```
-
-If you're familiar with using C for embedded code, this is C mode. You're
-responsible for making sure that register accesses are coordinated across all contexts.
-You also need to coordinate with anyone who's using the instance API.
 
 ## Register access macros
 
@@ -263,7 +240,7 @@ struct GpioDriver {
 impl GpioDriver {
     pub fn new<const N: u8>(gpio: gpio::Instance<N>) -> GpioDriver {
         // Instance derefs to a register block
-        let register: *const gpio::RegisterBlock = &*gpio;
+        let register: *const gpio::RegisterBlock = gpio.as_ptr();
         // Safety: pointer points to static peripheral memory,
         // which will outlive the gpio Instance.
         let register = unsafe { &*register };
@@ -429,18 +406,20 @@ pub struct Lpuart<const N: u8> {
 
 impl<const N: u8> Lpuart<N> {
     pub fn new(inst: lpuart::Instance<N>) -> Self {
-        let ptr: *const lpuart::RegisterBlock = &*inst;
+        let ptr: *const lpuart::RegisterBlock = inst.as_ptr();
         // Safety: pointer truly points to static memory.
         Self { ptr: unsafe { &*ptr }}
     }
     pub fn release(self) -> lpuart::Instance<N> {
+        let ptr: *const lpuart::RegisterBlock = self.ptr;
+
         // Safety: The N associated with this type
         // is still associated with its register block.
         // We're not accidentally returning Instance<1>
         // when we have a reference to Instance<2>.
         //
         // The pointer points to valid LPUART memory.
-        unsafe { lpuart::Instance::new(self.ptr) }
+        unsafe { lpuart::Instance::new(ptr.cast_mut()) }
     }
 }
 ```
@@ -462,7 +441,7 @@ pub struct AnyLpuart {
 
 impl AnyLpuart {
     pub fn new<const N: u8>(inst: lpuart::Instance<N>) -> Self {
-        let ptr: *const lpuart::RegisterBlock = &*inst;
+        let ptr: *const lpuart::RegisterBlock = inst.as_ptr();
         // Safety: pointer truly points to static memory.
         Self { ptr: unsafe { &*ptr }}
     }

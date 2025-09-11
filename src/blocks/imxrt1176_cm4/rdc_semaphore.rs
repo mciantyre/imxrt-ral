@@ -2,20 +2,21 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "Gate Register"]
-    pub GATE: [crate::RWRegister<u8>; 64usize],
+    pub GATE: [u8; 64usize],
     _reserved0: [u8; 0x02],
     #[doc = "Reset Gate Read"]
-    pub RSTGT_R: crate::RWRegister<u16>,
+    pub RSTGT_R: u16,
 }
 #[doc = "Gate Register"]
 pub mod GATE {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine."]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const GTFSM_0: u8 = 0;
             #[doc = "The gate has been locked by processor with master_index = 0."]
@@ -49,38 +50,45 @@ pub mod GATE {
             #[doc = "The gate has been locked by processor with master_index = 14."]
             pub const GTFSM_15: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Read-only bits. They indicate which domain had currently locked the gate."]
     pub mod LDOM {
         pub const offset: u8 = 4;
         pub const mask: u8 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is locked by domain 0. (True if the field GTFSM does not equal to 0000.)"]
             pub const LDOM_0: u8 = 0;
             #[doc = "The gate has been locked by domain 1."]
             pub const LDOM_1: u8 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Reset Gate Read"]
 pub mod RSTGT_R {
+    pub use crate::RW as access;
     #[doc = "Reset Gate Bus Master"]
     pub mod RSTGMS {
         pub const offset: u16 = 0;
         pub const mask: u16 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Reset Gate Finite State Machine"]
     pub mod RSTGSM {
         pub const offset: u16 = 4;
         pub const mask: u16 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Idle, waiting for the first data pattern write."]
             pub const RSTGSM_0: u16 = 0;
             #[doc = "Waiting for the second data pattern write."]
@@ -90,13 +98,17 @@ pub mod RSTGT_R {
             #[doc = "This state encoding is never used and therefore reserved."]
             pub const RSTGSM_3: u16 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Reset Gate Number"]
     pub mod RSTGTN {
         pub const offset: u16 = 8;
         pub const mask: u16 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }

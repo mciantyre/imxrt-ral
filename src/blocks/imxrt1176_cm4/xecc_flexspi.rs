@@ -2,400 +2,481 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "ECC Control Register"]
-    pub ECC_CTRL: crate::RWRegister<u32>,
+    pub ECC_CTRL: u32,
     #[doc = "Error Interrupt Status Register"]
-    pub ERR_STATUS: crate::RWRegister<u32>,
+    pub ERR_STATUS: u32,
     #[doc = "Error Interrupt Status Enable Register"]
-    pub ERR_STAT_EN: crate::RWRegister<u32>,
+    pub ERR_STAT_EN: u32,
     #[doc = "Error Interrupt Enable Register"]
-    pub ERR_SIG_EN: crate::RWRegister<u32>,
+    pub ERR_SIG_EN: u32,
     #[doc = "Error Injection On Write Data"]
-    pub ERR_DATA_INJ: crate::RWRegister<u32>,
+    pub ERR_DATA_INJ: u32,
     #[doc = "Error Injection On ECC Code of Write Data"]
-    pub ERR_ECC_INJ: crate::RWRegister<u32>,
+    pub ERR_ECC_INJ: u32,
     #[doc = "Single Error Address"]
-    pub SINGLE_ERR_ADDR: crate::RORegister<u32>,
+    pub SINGLE_ERR_ADDR: u32,
     #[doc = "Single Error Read Data"]
-    pub SINGLE_ERR_DATA: crate::RORegister<u32>,
+    pub SINGLE_ERR_DATA: u32,
     #[doc = "Single Error ECC Code"]
-    pub SINGLE_ERR_ECC: crate::RORegister<u32>,
+    pub SINGLE_ERR_ECC: u32,
     #[doc = "Single Error Bit Position"]
-    pub SINGLE_ERR_POS: crate::RORegister<u32>,
+    pub SINGLE_ERR_POS: u32,
     #[doc = "Single Error Bit Field"]
-    pub SINGLE_ERR_BIT_FIELD: crate::RORegister<u32>,
+    pub SINGLE_ERR_BIT_FIELD: u32,
     #[doc = "Multiple Error Address"]
-    pub MULTI_ERR_ADDR: crate::RORegister<u32>,
+    pub MULTI_ERR_ADDR: u32,
     #[doc = "Multiple Error Read Data"]
-    pub MULTI_ERR_DATA: crate::RORegister<u32>,
+    pub MULTI_ERR_DATA: u32,
     #[doc = "Multiple Error ECC code"]
-    pub MULTI_ERR_ECC: crate::RORegister<u32>,
+    pub MULTI_ERR_ECC: u32,
     #[doc = "Multiple Error Bit Field"]
-    pub MULTI_ERR_BIT_FIELD: crate::RORegister<u32>,
+    pub MULTI_ERR_BIT_FIELD: u32,
     #[doc = "ECC Region 0 Base Address"]
-    pub ECC_BASE_ADDR0: crate::RWRegister<u32>,
+    pub ECC_BASE_ADDR0: u32,
     #[doc = "ECC Region 0 End Address"]
-    pub ECC_END_ADDR0: crate::RWRegister<u32>,
+    pub ECC_END_ADDR0: u32,
     #[doc = "ECC Region 1 Base Address"]
-    pub ECC_BASE_ADDR1: crate::RWRegister<u32>,
+    pub ECC_BASE_ADDR1: u32,
     #[doc = "ECC Region 1 End Address"]
-    pub ECC_END_ADDR1: crate::RWRegister<u32>,
+    pub ECC_END_ADDR1: u32,
     #[doc = "ECC Region 2 Base Address"]
-    pub ECC_BASE_ADDR2: crate::RWRegister<u32>,
+    pub ECC_BASE_ADDR2: u32,
     #[doc = "ECC Region 2 End Address"]
-    pub ECC_END_ADDR2: crate::RWRegister<u32>,
+    pub ECC_END_ADDR2: u32,
     #[doc = "ECC Region 3 Base Address"]
-    pub ECC_BASE_ADDR3: crate::RWRegister<u32>,
+    pub ECC_BASE_ADDR3: u32,
     #[doc = "ECC Region 3 End Address"]
-    pub ECC_END_ADDR3: crate::RWRegister<u32>,
+    pub ECC_END_ADDR3: u32,
 }
 #[doc = "ECC Control Register"]
 pub mod ECC_CTRL {
+    pub use crate::RW as access;
     #[doc = "ECC Function Enable"]
     pub mod ECC_EN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable"]
             pub const ECC_EN_0: u32 = 0;
             #[doc = "Enable"]
             pub const ECC_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Write ECC Encode Function Enable"]
     pub mod WECC_EN {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable"]
             pub const WECC_EN_0: u32 = 0;
             #[doc = "Enable"]
             pub const WECC_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Read ECC Function Enable"]
     pub mod RECC_EN {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable"]
             pub const RECC_EN_0: u32 = 0;
             #[doc = "Enable"]
             pub const RECC_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Swap Data Enable"]
     pub mod SWAP_EN {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable"]
             pub const SWAP_EN_0: u32 = 0;
             #[doc = "Enable"]
             pub const SWAP_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Error Interrupt Status Register"]
 pub mod ERR_STATUS {
+    pub use crate::RW as access;
     #[doc = "Single Bit Error"]
     pub mod SINGLE_ERR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Single bit error does not happen."]
             pub const SINGLE_ERR_0: u32 = 0;
             #[doc = "Single bit error happens."]
             pub const SINGLE_ERR_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Multiple Bits Error"]
     pub mod MULTI_ERR {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Multiple bits error does not happen."]
             pub const MULTI_ERR_0: u32 = 0;
             #[doc = "Multiple bits error happens."]
             pub const MULTI_ERR_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Error Interrupt Status Enable Register"]
 pub mod ERR_STAT_EN {
+    pub use crate::RW as access;
     #[doc = "Single Bit Error Status Enable"]
     pub mod SINGLE_ERR_STAT_EN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Masked"]
             pub const SINGLE_ERR_STAT_EN_0: u32 = 0;
             #[doc = "Enabled"]
             pub const SINGLE_ERR_STAT_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Multiple Bits Error Status Enable"]
     pub mod MULIT_ERR_STAT_EN {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Masked"]
             pub const MULIT_ERR_STAT_EN_0: u32 = 0;
             #[doc = "Enabled"]
             pub const MULIT_ERR_STAT_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Error Interrupt Enable Register"]
 pub mod ERR_SIG_EN {
+    pub use crate::RW as access;
     #[doc = "Single Bit Error Interrupt Enable"]
     pub mod SINGLE_ERR_SIG_EN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Masked"]
             pub const SINGLE_ERR_SIG_EN_0: u32 = 0;
             #[doc = "Enabled"]
             pub const SINGLE_ERR_SIG_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Multiple Bits Error Interrupt Enable"]
     pub mod MULTI_ERR_SIG_EN {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Masked"]
             pub const MULTI_ERR_SIG_EN_0: u32 = 0;
             #[doc = "Enabled"]
             pub const MULTI_ERR_SIG_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Error Injection On Write Data"]
 pub mod ERR_DATA_INJ {
+    pub use crate::RW as access;
     #[doc = "Error Injection On Write Data"]
     pub mod ERR_DATA_INJ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Error Injection On ECC Code of Write Data"]
 pub mod ERR_ECC_INJ {
+    pub use crate::RW as access;
     #[doc = "Error Injection On ECC Code of Write Data"]
     pub mod ERR_ECC_INJ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Single Error Address"]
 pub mod SINGLE_ERR_ADDR {
+    pub use crate::RO as access;
     #[doc = "Single Error Address"]
     pub mod SINGLE_ERR_ADDR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Single Error Read Data"]
 pub mod SINGLE_ERR_DATA {
+    pub use crate::RO as access;
     #[doc = "Single Error Read Data"]
     pub mod SINGLE_ERR_DATA {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Single Error ECC Code"]
 pub mod SINGLE_ERR_ECC {
+    pub use crate::RO as access;
     #[doc = "Single Error ECC code"]
     pub mod SINGLE_ERR_ECC {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Single Error Bit Position"]
 pub mod SINGLE_ERR_POS {
+    pub use crate::RO as access;
     #[doc = "Single Error bit Position"]
     pub mod SINGLE_ERR_POS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Single Error Bit Field"]
 pub mod SINGLE_ERR_BIT_FIELD {
+    pub use crate::RO as access;
     #[doc = "Single Error Bit Field"]
     pub mod SINGLE_ERR_BIT_FIELD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Multiple Error Address"]
 pub mod MULTI_ERR_ADDR {
+    pub use crate::RO as access;
     #[doc = "Multiple Error Address"]
     pub mod MULTI_ERR_ADDR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Multiple Error Read Data"]
 pub mod MULTI_ERR_DATA {
+    pub use crate::RO as access;
     #[doc = "Multiple Error Read Data"]
     pub mod MULTI_ERR_DATA {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Multiple Error ECC code"]
 pub mod MULTI_ERR_ECC {
+    pub use crate::RO as access;
     #[doc = "Multiple Error ECC code"]
     pub mod MULTI_ERR_ECC {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Multiple Error Bit Field"]
 pub mod MULTI_ERR_BIT_FIELD {
+    pub use crate::RO as access;
     #[doc = "Multiple Error Bit Field"]
     pub mod MULTI_ERR_BIT_FIELD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ECC Region 0 Base Address"]
 pub mod ECC_BASE_ADDR0 {
+    pub use crate::RW as access;
     #[doc = "ECC Region 0 Base Address"]
     pub mod ECC_BASE_ADDR0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ECC Region 0 End Address"]
 pub mod ECC_END_ADDR0 {
+    pub use crate::RW as access;
     #[doc = "ECC Region 0 End Address"]
     pub mod ECC_END_ADDR0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ECC Region 1 Base Address"]
 pub mod ECC_BASE_ADDR1 {
+    pub use crate::RW as access;
     #[doc = "ECC Region 1 Base Address"]
     pub mod ECC_BASE_ADDR1 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ECC Region 1 End Address"]
 pub mod ECC_END_ADDR1 {
+    pub use crate::RW as access;
     #[doc = "ECC Region 1 End Address"]
     pub mod ECC_END_ADDR1 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ECC Region 2 Base Address"]
 pub mod ECC_BASE_ADDR2 {
+    pub use crate::RW as access;
     #[doc = "ECC Region 2 Base Address"]
     pub mod ECC_BASE_ADDR2 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ECC Region 2 End Address"]
 pub mod ECC_END_ADDR2 {
+    pub use crate::RW as access;
     #[doc = "ECC Region 2 End Address"]
     pub mod ECC_END_ADDR2 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ECC Region 3 Base Address"]
 pub mod ECC_BASE_ADDR3 {
+    pub use crate::RW as access;
     #[doc = "ECC Region 3 Base Address"]
     pub mod ECC_BASE_ADDR3 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ECC Region 3 End Address"]
 pub mod ECC_END_ADDR3 {
+    pub use crate::RW as access;
     #[doc = "ECC Region 3 End Address"]
     pub mod ECC_END_ADDR3 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }

@@ -2,197 +2,210 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "Module Control Register"]
-    pub MCR: crate::RWRegister<u32>,
+    pub MCR: u32,
     #[doc = "IO Mux Control Register"]
-    pub IOCR: crate::RWRegister<u32>,
+    pub IOCR: u32,
     #[doc = "Master Bus (AXI) Control Register 0"]
-    pub BMCR0: crate::RWRegister<u32>,
+    pub BMCR0: u32,
     #[doc = "Master Bus (AXI) Control Register 1"]
-    pub BMCR1: crate::RWRegister<u32>,
+    pub BMCR1: u32,
     #[doc = "Base Register 0 (For SDRAM CS0 device)"]
-    pub BR0: crate::RWRegister<u32>,
+    pub BR0: u32,
     #[doc = "Base Register 1 (For SDRAM CS1 device)"]
-    pub BR1: crate::RWRegister<u32>,
+    pub BR1: u32,
     #[doc = "Base Register 2 (For SDRAM CS2 device)"]
-    pub BR2: crate::RWRegister<u32>,
+    pub BR2: u32,
     #[doc = "Base Register 3 (For SDRAM CS3 device)"]
-    pub BR3: crate::RWRegister<u32>,
+    pub BR3: u32,
     #[doc = "Base Register 4 (For NAND device)"]
-    pub BR4: crate::RWRegister<u32>,
+    pub BR4: u32,
     #[doc = "Base Register 5 (For NOR device)"]
-    pub BR5: crate::RWRegister<u32>,
+    pub BR5: u32,
     #[doc = "Base Register 6 (For PSRAM device)"]
-    pub BR6: crate::RWRegister<u32>,
+    pub BR6: u32,
     #[doc = "Base Register 7 (For DBI-B (MIPI Display Bus Interface Type B) device)"]
-    pub BR7: crate::RWRegister<u32>,
+    pub BR7: u32,
     #[doc = "Base Register 8 (For NAND device)"]
-    pub BR8: crate::RWRegister<u32>,
+    pub BR8: u32,
     _reserved0: [u8; 0x04],
     #[doc = "Interrupt Enable Register"]
-    pub INTEN: crate::RWRegister<u32>,
+    pub INTEN: u32,
     #[doc = "Interrupt Enable Register"]
-    pub INTR: crate::RWRegister<u32>,
+    pub INTR: u32,
     #[doc = "SDRAM control register 0"]
-    pub SDRAMCR0: crate::RWRegister<u32>,
+    pub SDRAMCR0: u32,
     #[doc = "SDRAM control register 1"]
-    pub SDRAMCR1: crate::RWRegister<u32>,
+    pub SDRAMCR1: u32,
     #[doc = "SDRAM control register 2"]
-    pub SDRAMCR2: crate::RWRegister<u32>,
+    pub SDRAMCR2: u32,
     #[doc = "SDRAM control register 3"]
-    pub SDRAMCR3: crate::RWRegister<u32>,
+    pub SDRAMCR3: u32,
     #[doc = "NAND control register 0"]
-    pub NANDCR0: crate::RWRegister<u32>,
+    pub NANDCR0: u32,
     #[doc = "NAND control register 1"]
-    pub NANDCR1: crate::RWRegister<u32>,
+    pub NANDCR1: u32,
     #[doc = "NAND control register 2"]
-    pub NANDCR2: crate::RWRegister<u32>,
+    pub NANDCR2: u32,
     #[doc = "NAND control register 3"]
-    pub NANDCR3: crate::RWRegister<u32>,
+    pub NANDCR3: u32,
     #[doc = "NOR control register 0"]
-    pub NORCR0: crate::RWRegister<u32>,
+    pub NORCR0: u32,
     #[doc = "NOR control register 1"]
-    pub NORCR1: crate::RWRegister<u32>,
+    pub NORCR1: u32,
     #[doc = "NOR control register 2"]
-    pub NORCR2: crate::RWRegister<u32>,
+    pub NORCR2: u32,
     #[doc = "NOR control register 3"]
-    pub NORCR3: crate::RWRegister<u32>,
+    pub NORCR3: u32,
     #[doc = "SRAM control register 0"]
-    pub SRAMCR0: crate::RWRegister<u32>,
+    pub SRAMCR0: u32,
     #[doc = "SRAM control register 1"]
-    pub SRAMCR1: crate::RWRegister<u32>,
+    pub SRAMCR1: u32,
     #[doc = "SRAM control register 2"]
-    pub SRAMCR2: crate::RWRegister<u32>,
+    pub SRAMCR2: u32,
     #[doc = "SRAM control register 3"]
-    pub SRAMCR3: crate::RWRegister<u32>,
+    pub SRAMCR3: u32,
     #[doc = "DBI-B control register 0"]
-    pub DBICR0: crate::RWRegister<u32>,
+    pub DBICR0: u32,
     #[doc = "DBI-B control register 1"]
-    pub DBICR1: crate::RWRegister<u32>,
+    pub DBICR1: u32,
     _reserved1: [u8; 0x08],
     #[doc = "IP Command control register 0"]
-    pub IPCR0: crate::RWRegister<u32>,
+    pub IPCR0: u32,
     #[doc = "IP Command control register 1"]
-    pub IPCR1: crate::RWRegister<u32>,
+    pub IPCR1: u32,
     #[doc = "IP Command control register 2"]
-    pub IPCR2: crate::RWRegister<u32>,
+    pub IPCR2: u32,
     #[doc = "IP Command register"]
-    pub IPCMD: crate::RWRegister<u32>,
+    pub IPCMD: u32,
     #[doc = "TX DATA register (for IP Command)"]
-    pub IPTXDAT: crate::RWRegister<u32>,
+    pub IPTXDAT: u32,
     _reserved2: [u8; 0x0c],
     #[doc = "RX DATA register (for IP Command)"]
-    pub IPRXDAT: crate::RORegister<u32>,
+    pub IPRXDAT: u32,
     _reserved3: [u8; 0x0c],
     #[doc = "Status register 0"]
-    pub STS0: crate::RORegister<u32>,
+    pub STS0: u32,
     #[doc = "Status register 1"]
-    pub STS1: crate::RORegister<u32>,
+    pub STS1: u32,
     #[doc = "Status register 2"]
-    pub STS2: crate::RORegister<u32>,
+    pub STS2: u32,
     #[doc = "Status register 3"]
-    pub STS3: crate::RORegister<u32>,
+    pub STS3: u32,
     #[doc = "Status register 4"]
-    pub STS4: crate::RORegister<u32>,
+    pub STS4: u32,
     #[doc = "Status register 5"]
-    pub STS5: crate::RORegister<u32>,
+    pub STS5: u32,
     #[doc = "Status register 6"]
-    pub STS6: crate::RORegister<u32>,
+    pub STS6: u32,
     #[doc = "Status register 7"]
-    pub STS7: crate::RORegister<u32>,
+    pub STS7: u32,
     #[doc = "Status register 8"]
-    pub STS8: crate::RORegister<u32>,
+    pub STS8: u32,
     #[doc = "Status register 9"]
-    pub STS9: crate::RORegister<u32>,
+    pub STS9: u32,
     #[doc = "Status register 10"]
-    pub STS10: crate::RORegister<u32>,
+    pub STS10: u32,
     #[doc = "Status register 11"]
-    pub STS11: crate::RORegister<u32>,
+    pub STS11: u32,
     #[doc = "Status register 12"]
-    pub STS12: crate::RORegister<u32>,
+    pub STS12: u32,
     #[doc = "Status register 13"]
-    pub STS13: crate::RORegister<u32>,
+    pub STS13: u32,
     #[doc = "Status register 14"]
-    pub STS14: crate::RORegister<u32>,
+    pub STS14: u32,
     #[doc = "Status register 15"]
-    pub STS15: crate::RORegister<u32>,
+    pub STS15: u32,
 }
 #[doc = "Module Control Register"]
 pub mod MCR {
+    pub use crate::RW as access;
     #[doc = "Software Reset"]
     pub mod SWRST {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Module Disable"]
     pub mod MDIS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Module enabled"]
             pub const MDIS_0: u32 = 0;
             #[doc = "Master disabled."]
             pub const MDIS_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "DQS (read strobe) mode"]
     pub mod DQSMD {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Dummy read strobe loopbacked internally"]
             pub const DQSMD_0: u32 = 0;
             #[doc = "Dummy read strobe loopbacked from DQS pad"]
             pub const DQSMD_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WAIT/RDY# polarity for NOR/PSRAM"]
     pub mod WPOL0 {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Low active"]
             pub const WPOL0_0: u32 = 0;
             #[doc = "High active"]
             pub const WPOL0_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WAIT/RDY# polarity for NAND"]
     pub mod WPOL1 {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Low active"]
             pub const WPOL1_0: u32 = 0;
             #[doc = "High active"]
             pub const WPOL1_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Command Execution timeout cycles"]
     pub mod CTO {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Bus timeout cycles"]
     pub mod BTO {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "255*1"]
             pub const BTO_0: u32 = 0;
             #[doc = "255*2 - 255*2^30"]
@@ -216,17 +229,20 @@ pub mod MCR {
             #[doc = "255*2^31"]
             pub const BTO_31: u32 = 0x1f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IO Mux Control Register"]
 pub mod IOCR {
+    pub use crate::RW as access;
     #[doc = "SEMC_A8 output selection"]
     pub mod MUX_A8 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "SDRAM Address bit (A8)"]
             pub const MUX_A8_0: u32 = 0;
             #[doc = "NAND CE#"]
@@ -244,14 +260,16 @@ pub mod IOCR {
             #[doc = "SDRAM Address bit (A8)"]
             pub const MUX_A8_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SEMC_CSX0 output selection"]
     pub mod MUX_CSX0 {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "NOR/PSRAM Address bit 24 (A24)"]
             pub const MUX_CSX0_0: u32 = 0;
             #[doc = "SDRAM CS1"]
@@ -269,14 +287,16 @@ pub mod IOCR {
             #[doc = "DBI CSX"]
             pub const MUX_CSX0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SEMC_CSX1 output selection"]
     pub mod MUX_CSX1 {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "NOR/PSRAM Address bit 25 (A25)"]
             pub const MUX_CSX1_0: u32 = 0;
             #[doc = "SDRAM CS1"]
@@ -294,14 +314,16 @@ pub mod IOCR {
             #[doc = "DBI CSX"]
             pub const MUX_CSX1_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SEMC_CSX2 output selection"]
     pub mod MUX_CSX2 {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "NOR/PSRAM Address bit 26 (A26)"]
             pub const MUX_CSX2_0: u32 = 0;
             #[doc = "SDRAM CS1"]
@@ -319,14 +341,16 @@ pub mod IOCR {
             #[doc = "DBI CSX"]
             pub const MUX_CSX2_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SEMC_CSX3 output selection"]
     pub mod MUX_CSX3 {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "NOR/PSRAM Address bit 27 (A27)"]
             pub const MUX_CSX3_0: u32 = 0;
             #[doc = "SDRAM CS1"]
@@ -344,14 +368,16 @@ pub mod IOCR {
             #[doc = "DBI CSX"]
             pub const MUX_CSX3_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SEMC_RDY function selection"]
     pub mod MUX_RDY {
         pub const offset: u32 = 15;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "NAND Ready/Wait# input"]
             pub const MUX_RDY_0: u32 = 0;
             #[doc = "SDRAM CS1"]
@@ -369,103 +395,128 @@ pub mod IOCR {
             #[doc = "NOR/PSRAM Address bit 27"]
             pub const MUX_RDY_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Master Bus (AXI) Control Register 0"]
 pub mod BMCR0 {
+    pub use crate::RW as access;
     #[doc = "Weight of QoS"]
     pub mod WQOS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Weight of Aging"]
     pub mod WAGE {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Weight of Slave Hit (no read/write switch)"]
     pub mod WSH {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Weight of Slave Hit (Read/Write switch)"]
     pub mod WRWS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Master Bus (AXI) Control Register 1"]
 pub mod BMCR1 {
+    pub use crate::RW as access;
     #[doc = "Weight of QoS"]
     pub mod WQOS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Weight of Aging"]
     pub mod WAGE {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Weight of Page Hit"]
     pub mod WPH {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Weight of Read/Write switch"]
     pub mod WRWS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Weight of Bank Rotation"]
     pub mod WBR {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Base Register 0 (For SDRAM CS0 device)"]
 pub mod BR0 {
+    pub use crate::RW as access;
     #[doc = "Valid"]
     pub mod VLD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Memory size"]
     pub mod MS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "4KB"]
             pub const MS_0: u32 = 0;
             #[doc = "8KB"]
@@ -531,33 +582,40 @@ pub mod BR0 {
             #[doc = "4GB"]
             pub const MS_31: u32 = 0x1f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Base Address"]
     pub mod BA {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x000f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Base Register 1 (For SDRAM CS1 device)"]
 pub mod BR1 {
+    pub use crate::RW as access;
     #[doc = "Valid"]
     pub mod VLD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Memory size"]
     pub mod MS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "4KB"]
             pub const MS_0: u32 = 0;
             #[doc = "8KB"]
@@ -623,33 +681,40 @@ pub mod BR1 {
             #[doc = "4GB"]
             pub const MS_31: u32 = 0x1f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Base Address"]
     pub mod BA {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x000f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Base Register 2 (For SDRAM CS2 device)"]
 pub mod BR2 {
+    pub use crate::RW as access;
     #[doc = "Valid"]
     pub mod VLD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Memory size"]
     pub mod MS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "4KB"]
             pub const MS_0: u32 = 0;
             #[doc = "8KB"]
@@ -715,33 +780,40 @@ pub mod BR2 {
             #[doc = "4GB"]
             pub const MS_31: u32 = 0x1f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Base Address"]
     pub mod BA {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x000f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Base Register 3 (For SDRAM CS3 device)"]
 pub mod BR3 {
+    pub use crate::RW as access;
     #[doc = "Valid"]
     pub mod VLD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Memory size"]
     pub mod MS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "4KB"]
             pub const MS_0: u32 = 0;
             #[doc = "8KB"]
@@ -807,33 +879,40 @@ pub mod BR3 {
             #[doc = "4GB"]
             pub const MS_31: u32 = 0x1f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Base Address"]
     pub mod BA {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x000f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Base Register 4 (For NAND device)"]
 pub mod BR4 {
+    pub use crate::RW as access;
     #[doc = "Valid"]
     pub mod VLD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Memory size"]
     pub mod MS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "4KB"]
             pub const MS_0: u32 = 0;
             #[doc = "8KB"]
@@ -899,33 +978,40 @@ pub mod BR4 {
             #[doc = "4GB"]
             pub const MS_31: u32 = 0x1f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Base Address"]
     pub mod BA {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x000f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Base Register 5 (For NOR device)"]
 pub mod BR5 {
+    pub use crate::RW as access;
     #[doc = "Valid"]
     pub mod VLD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Memory size"]
     pub mod MS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "4KB"]
             pub const MS_0: u32 = 0;
             #[doc = "8KB"]
@@ -991,33 +1077,40 @@ pub mod BR5 {
             #[doc = "4GB"]
             pub const MS_31: u32 = 0x1f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Base Address"]
     pub mod BA {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x000f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Base Register 6 (For PSRAM device)"]
 pub mod BR6 {
+    pub use crate::RW as access;
     #[doc = "Valid"]
     pub mod VLD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Memory size"]
     pub mod MS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "4KB"]
             pub const MS_0: u32 = 0;
             #[doc = "8KB"]
@@ -1083,33 +1176,40 @@ pub mod BR6 {
             #[doc = "4GB"]
             pub const MS_31: u32 = 0x1f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Base Address"]
     pub mod BA {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x000f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Base Register 7 (For DBI-B (MIPI Display Bus Interface Type B) device)"]
 pub mod BR7 {
+    pub use crate::RW as access;
     #[doc = "Valid"]
     pub mod VLD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Memory size"]
     pub mod MS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "4KB"]
             pub const MS_0: u32 = 0;
             #[doc = "8KB"]
@@ -1175,33 +1275,40 @@ pub mod BR7 {
             #[doc = "4GB"]
             pub const MS_31: u32 = 0x1f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Base Address"]
     pub mod BA {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x000f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Base Register 8 (For NAND device)"]
 pub mod BR8 {
+    pub use crate::RW as access;
     #[doc = "Valid"]
     pub mod VLD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Memory size"]
     pub mod MS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "4KB"]
             pub const MS_0: u32 = 0;
             #[doc = "8KB"]
@@ -1267,150 +1374,183 @@ pub mod BR8 {
             #[doc = "4GB"]
             pub const MS_31: u32 = 0x1f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Base Address"]
     pub mod BA {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x000f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Interrupt Enable Register"]
 pub mod INTEN {
+    pub use crate::RW as access;
     #[doc = "IP command done interrupt enable"]
     pub mod IPCMDDONEEN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP command error interrupt enable"]
     pub mod IPCMDERREN {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AXI command error interrupt enable"]
     pub mod AXICMDERREN {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AXI bus error interrupt enable"]
     pub mod AXIBUSERREN {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This bit enable/disable the NDPAGEEND interrupt generation."]
     pub mod NDPAGEENDEN {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable"]
             pub const NDPAGEENDEN_0: u32 = 0;
             #[doc = "Enable"]
             pub const NDPAGEENDEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This bit enable/disable the NDNOPEND interrupt generation."]
     pub mod NDNOPENDEN {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable"]
             pub const NDNOPENDEN_0: u32 = 0;
             #[doc = "Enable"]
             pub const NDNOPENDEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Interrupt Enable Register"]
 pub mod INTR {
+    pub use crate::RW as access;
     #[doc = "IP command normal done interrupt"]
     pub mod IPCMDDONE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP command error done interrupt"]
     pub mod IPCMDERR {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AXI command error interrupt"]
     pub mod AXICMDERR {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AXI bus error interrupt"]
     pub mod AXIBUSERR {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This interrupt is generated when the last address of one page in NAND device is written by AXI command"]
     pub mod NDPAGEEND {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This interrupt is generated when all pending AXI write command to NAND is finished on NAND interface."]
     pub mod NDNOPEND {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SDRAM control register 0"]
 pub mod SDRAMCR0 {
+    pub use crate::RW as access;
     #[doc = "Port Size"]
     pub mod PS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "8bit"]
             pub const PS_0: u32 = 0;
             #[doc = "16bit"]
             pub const PS_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Burst Length"]
     pub mod BL {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "1"]
             pub const BL_0: u32 = 0;
             #[doc = "2"]
@@ -1428,14 +1568,16 @@ pub mod SDRAMCR0 {
             #[doc = "8"]
             pub const BL_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Column address bit number"]
     pub mod COL {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "12 bit"]
             pub const COL_0: u32 = 0;
             #[doc = "11 bit"]
@@ -1445,14 +1587,16 @@ pub mod SDRAMCR0 {
             #[doc = "9 bit"]
             pub const COL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CAS Latency"]
     pub mod CL {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "1"]
             pub const CL_0: u32 = 0;
             #[doc = "1"]
@@ -1462,92 +1606,114 @@ pub mod SDRAMCR0 {
             #[doc = "3"]
             pub const CL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SDRAM control register 1"]
 pub mod SDRAMCR1 {
+    pub use crate::RW as access;
     #[doc = "PRECHARGE to ACT/Refresh wait time"]
     pub mod PRE2ACT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ACT to Read/Write wait time"]
     pub mod ACT2RW {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Refresh recovery time"]
     pub mod RFRC {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Write recovery time"]
     pub mod WRC {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CKE OFF minimum time"]
     pub mod CKEOFF {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ACT to Precharge minimum time"]
     pub mod ACT2PRE {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SDRAM control register 2"]
 pub mod SDRAMCR2 {
+    pub use crate::RW as access;
     #[doc = "Self Refresh Recovery time"]
     pub mod SRRC {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Refresh to Refresh wait time"]
     pub mod REF2REF {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ACT to ACT wait time"]
     pub mod ACT2ACT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SDRAM Idle timeout"]
     pub mod ITO {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "IDLE timeout period is 256*Prescale period."]
             pub const ITO_0: u32 = 0;
             #[doc = "IDLE timeout period is ITO*Prescale period."]
@@ -1569,25 +1735,30 @@ pub mod SDRAMCR2 {
             #[doc = "IDLE timeout period is ITO*Prescale period."]
             pub const ITO_9: u32 = 0x09;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SDRAM control register 3"]
 pub mod SDRAMCR3 {
+    pub use crate::RW as access;
     #[doc = "Refresh enable"]
     pub mod REN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Refresh burst length"]
     pub mod REBL {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "1"]
             pub const REBL_0: u32 = 0;
             #[doc = "2"]
@@ -1605,14 +1776,16 @@ pub mod SDRAMCR3 {
             #[doc = "8"]
             pub const REBL_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Prescaler timer period"]
     pub mod PRESCALE {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "256*16 cycle"]
             pub const PRESCALE_0: u32 = 0;
             #[doc = "PRESCALE*16 cycle"]
@@ -1634,14 +1807,16 @@ pub mod SDRAMCR3 {
             #[doc = "PRESCALE*16 cycle"]
             pub const PRESCALE_9: u32 = 0x09;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Refresh timer period"]
     pub mod RT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "256*Prescaler period"]
             pub const RT_0: u32 = 0;
             #[doc = "RT*Prescaler period"]
@@ -1663,14 +1838,16 @@ pub mod SDRAMCR3 {
             #[doc = "RT*Prescaler period"]
             pub const RT_9: u32 = 0x09;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Refresh urgent threshold"]
     pub mod UT {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "256*Prescaler period"]
             pub const UT_0: u32 = 0;
             #[doc = "UT*Prescaler period"]
@@ -1692,30 +1869,35 @@ pub mod SDRAMCR3 {
             #[doc = "UT*Prescaler period"]
             pub const UT_9: u32 = 0x09;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "NAND control register 0"]
 pub mod NANDCR0 {
+    pub use crate::RW as access;
     #[doc = "Port Size"]
     pub mod PS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "8bit"]
             pub const PS_0: u32 = 0;
             #[doc = "16bit"]
             pub const PS_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Burst Length"]
     pub mod BL {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "1"]
             pub const BL_0: u32 = 0;
             #[doc = "2"]
@@ -1733,27 +1915,31 @@ pub mod NANDCR0 {
             #[doc = "64"]
             pub const BL_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "EDO mode enabled"]
     pub mod EDO {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "EDO mode disabled"]
             pub const EDO_0: u32 = 0;
             #[doc = "EDO mode enabled"]
             pub const EDO_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Column address bit number"]
     pub mod COL {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "16"]
             pub const COL_0: u32 = 0;
             #[doc = "15"]
@@ -1771,167 +1957,207 @@ pub mod NANDCR0 {
             #[doc = "9"]
             pub const COL_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "NAND control register 1"]
 pub mod NANDCR1 {
+    pub use crate::RW as access;
     #[doc = "CE setup time"]
     pub mod CES {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CE hold time"]
     pub mod CEH {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WE# LOW time"]
     pub mod WEL {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WE# HIGH time"]
     pub mod WEH {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RE# LOW time"]
     pub mod REL {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RE# HIGH time"]
     pub mod REH {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Turnaround time"]
     pub mod TA {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CE# interval time"]
     pub mod CEITV {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "NAND control register 2"]
 pub mod NANDCR2 {
+    pub use crate::RW as access;
     #[doc = "WE# HIGH to RE# LOW wait time"]
     pub mod TWHR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RE# HIGH to WE# LOW wait time"]
     pub mod TRHW {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ALE to WRITE Data start wait time"]
     pub mod TADL {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Ready to RE# LOW min wait time"]
     pub mod TRR {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WE# HIGH to busy wait time"]
     pub mod TWB {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "NAND control register 3"]
 pub mod NANDCR3 {
+    pub use crate::RW as access;
     #[doc = "NAND option bit 1"]
     pub mod NDOPT1 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "NAND option bit 2"]
     pub mod NDOPT2 {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "NAND option bit 3"]
     pub mod NDOPT3 {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "NOR control register 0"]
 pub mod NORCR0 {
+    pub use crate::RW as access;
     #[doc = "Port Size"]
     pub mod PS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "8bit"]
             pub const PS_0: u32 = 0;
             #[doc = "16bit"]
             pub const PS_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Burst Length"]
     pub mod BL {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "1"]
             pub const BL_0: u32 = 0;
             #[doc = "2"]
@@ -1949,14 +2175,16 @@ pub mod NORCR0 {
             #[doc = "64"]
             pub const BL_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Address Mode"]
     pub mod AM {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Address/Data MUX mode"]
             pub const AM_0: u32 = 0;
             #[doc = "Advanced Address/Data MUX mode"]
@@ -1966,27 +2194,31 @@ pub mod NORCR0 {
             #[doc = "Address/Data non-MUX mode"]
             pub const AM_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ADV# polarity"]
     pub mod ADVP {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ADV# is Low Active. In ASYNC mode, device sample address with ADV# rise edge; In SYNC mode, device sample address when ADV# is LOW."]
             pub const ADVP_0: u32 = 0;
             #[doc = "ADV# is High Active. In ASYNC mode, device sample address with ADV# fall edge; In SYNC mode, device sample address when ADV# is HIGH."]
             pub const ADVP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Column Address bit width"]
     pub mod COL {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "12 Bits"]
             pub const COL_0: u32 = 0;
             #[doc = "11 Bits"]
@@ -2020,156 +2252,197 @@ pub mod NORCR0 {
             #[doc = "12 Bits"]
             pub const COL_15: u32 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "NOR control register 1"]
 pub mod NORCR1 {
+    pub use crate::RW as access;
     #[doc = "CE setup time cycle"]
     pub mod CES {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CE hold min time (CEH+1) cycle"]
     pub mod CEH {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Address setup time"]
     pub mod AS {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Address hold time"]
     pub mod AH {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WE LOW time (WEL+1) cycle"]
     pub mod WEL {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WE HIGH time (WEH+1) cycle"]
     pub mod WEH {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RE LOW time (REL+1) cycle"]
     pub mod REL {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RE HIGH time (REH+1) cycle"]
     pub mod REH {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "NOR control register 2"]
 pub mod NORCR2 {
+    pub use crate::RW as access;
     #[doc = "Write Data setup time (WDS+1) cycle"]
     pub mod WDS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Write Data hold time (WDH+1) cycle"]
     pub mod WDH {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Turnaround time cycle"]
     pub mod TA {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Address to write data hold time cycle"]
     pub mod AWDH {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Latency count"]
     pub mod LC {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Read cycle time"]
     pub mod RD {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CE# interval min time"]
     pub mod CEITV {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
+}
+#[doc = "NOR control register 3"]
+pub mod NORCR3 {
+    pub use crate::RW as access;
 }
 #[doc = "SRAM control register 0"]
 pub mod SRAMCR0 {
+    pub use crate::RW as access;
     #[doc = "Port Size"]
     pub mod PS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "8bit"]
             pub const PS_0: u32 = 0;
             #[doc = "16bit"]
             pub const PS_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Burst Length"]
     pub mod BL {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "1"]
             pub const BL_0: u32 = 0;
             #[doc = "2"]
@@ -2187,14 +2460,16 @@ pub mod SRAMCR0 {
             #[doc = "64"]
             pub const BL_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Address Mode"]
     pub mod AM {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Address/Data MUX mode"]
             pub const AM_0: u32 = 0;
             #[doc = "Advanced Address/Data MUX mode"]
@@ -2204,27 +2479,31 @@ pub mod SRAMCR0 {
             #[doc = "Address/Data non-MUX mode"]
             pub const AM_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ADV# polarity"]
     pub mod ADVP {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ADV# is Low Active. In ASYNC mode, device sample address with ADV# rise edge; In SYNC mode, device sample address when ADV# is LOW."]
             pub const ADVP_0: u32 = 0;
             #[doc = "ADV# is High Active. In ASYNC mode, device sample address with ADV# fall edge; In SYNC mode, device sample address when ADV# is HIGH."]
             pub const ADVP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Column Address bit width"]
     pub mod COL {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "12 Bits"]
             pub const COL_0: u32 = 0;
             #[doc = "11 Bits"]
@@ -2258,156 +2537,197 @@ pub mod SRAMCR0 {
             #[doc = "12 Bits"]
             pub const COL_15: u32 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SRAM control register 1"]
 pub mod SRAMCR1 {
+    pub use crate::RW as access;
     #[doc = "CE setup time cycle"]
     pub mod CES {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CE hold min time (CEH+1) cycle"]
     pub mod CEH {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Address setup time"]
     pub mod AS {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Address hold time"]
     pub mod AH {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WE LOW time (WEL+1) cycle"]
     pub mod WEL {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WE HIGH time (WEH+1) cycle"]
     pub mod WEH {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RE LOW time (REL+1) cycle"]
     pub mod REL {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RE HIGH time (REH+1) cycle"]
     pub mod REH {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SRAM control register 2"]
 pub mod SRAMCR2 {
+    pub use crate::RW as access;
     #[doc = "Write Data setup time (WDS+1) cycle"]
     pub mod WDS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Write Data hold time (WDH+1) cycle"]
     pub mod WDH {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Turnaround time cycle"]
     pub mod TA {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Address to write data hold time cycle"]
     pub mod AWDH {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Latency count"]
     pub mod LC {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Read cycle time"]
     pub mod RD {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CE# interval min time"]
     pub mod CEITV {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
+}
+#[doc = "SRAM control register 3"]
+pub mod SRAMCR3 {
+    pub use crate::RW as access;
 }
 #[doc = "DBI-B control register 0"]
 pub mod DBICR0 {
+    pub use crate::RW as access;
     #[doc = "Port Size"]
     pub mod PS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "8bit"]
             pub const PS_0: u32 = 0;
             #[doc = "16bit"]
             pub const PS_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Burst Length"]
     pub mod BL {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "1"]
             pub const BL_0: u32 = 0;
             #[doc = "2"]
@@ -2425,14 +2745,16 @@ pub mod DBICR0 {
             #[doc = "64"]
             pub const BL_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Column Address bit width"]
     pub mod COL {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "12 Bits"]
             pub const COL_0: u32 = 0;
             #[doc = "11 Bits"]
@@ -2466,103 +2788,128 @@ pub mod DBICR0 {
             #[doc = "12 Bits"]
             pub const COL_15: u32 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "DBI-B control register 1"]
 pub mod DBICR1 {
+    pub use crate::RW as access;
     #[doc = "CSX Setup Time"]
     pub mod CES {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CSX Hold Time"]
     pub mod CEH {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WRX Low Time"]
     pub mod WEL {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WRX High Time"]
     pub mod WEH {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RDX Low Time bit \\[3:0\\]"]
     pub mod REL {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RDX High Time bit \\[3:0\\]"]
     pub mod REH {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CSX interval min time"]
     pub mod CEITV {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RDX Low Time bit \\[5:4\\]"]
     pub mod REL2 {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RDX High Time bit \\[5:4\\]"]
     pub mod REH2 {
         pub const offset: u32 = 30;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP Command control register 0"]
 pub mod IPCR0 {
+    pub use crate::RW as access;
     #[doc = "Slave address"]
     pub mod SA {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP Command control register 1"]
 pub mod IPCR1 {
+    pub use crate::RW as access;
     #[doc = "Data Size in Byte"]
     pub mod DATSZ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "4"]
             pub const DATSZ_0: u32 = 0;
             #[doc = "1"]
@@ -2580,152 +2927,237 @@ pub mod IPCR1 {
             #[doc = "4"]
             pub const DATSZ_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP Command control register 2"]
 pub mod IPCR2 {
+    pub use crate::RW as access;
     #[doc = "Byte Mask for Byte 0 (IPTXD bit 7:0)"]
     pub mod BM0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Byte Unmasked"]
             pub const BM0_0: u32 = 0;
             #[doc = "Byte Masked"]
             pub const BM0_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Byte Mask for Byte 1 (IPTXD bit 15:8)"]
     pub mod BM1 {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Byte Unmasked"]
             pub const BM1_0: u32 = 0;
             #[doc = "Byte Masked"]
             pub const BM1_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Byte Mask for Byte 2 (IPTXD bit 23:16)"]
     pub mod BM2 {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Byte Unmasked"]
             pub const BM2_0: u32 = 0;
             #[doc = "Byte Masked"]
             pub const BM2_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Byte Mask for Byte 3 (IPTXD bit 31:24)"]
     pub mod BM3 {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Byte Unmasked"]
             pub const BM3_0: u32 = 0;
             #[doc = "Byte Masked"]
             pub const BM3_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP Command register"]
 pub mod IPCMD {
+    pub use crate::RW as access;
     #[doc = "SDRAM Commands: 0x8: READ 0x9: WRITE 0xA: MODESET 0xB: ACTIVE 0xC: AUTO REFRESH 0xD: SELF REFRESH 0xE: PRECHARGE 0xF: PRECHARGE ALL Others: RSVD SELF REFRESH will be sent to all SDRAM devices because they shared same SEMC_CLK pin"]
     pub mod CMD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This field should be written with 0xA55A when trigging an IP command."]
     pub mod KEY {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "TX DATA register (for IP Command)"]
 pub mod IPTXDAT {
+    pub use crate::RW as access;
     #[doc = "no description available"]
     pub mod DAT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "RX DATA register (for IP Command)"]
 pub mod IPRXDAT {
+    pub use crate::RO as access;
     #[doc = "no description available"]
     pub mod DAT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Status register 0"]
 pub mod STS0 {
+    pub use crate::RO as access;
     #[doc = "Indicating whether SEMC is in IDLE state."]
     pub mod IDLE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Indicating NAND device Ready/WAIT# pin level."]
     pub mod NARDY {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "NAND device is not ready"]
             pub const NARDY_0: u32 = 0;
             #[doc = "NAND device is ready"]
             pub const NARDY_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
+}
+#[doc = "Status register 1"]
+pub mod STS1 {
+    pub use crate::RO as access;
 }
 #[doc = "Status register 2"]
 pub mod STS2 {
+    pub use crate::RO as access;
     #[doc = "This field indicating whether there is pending AXI command (write) to NAND device."]
     pub mod NDWRPEND {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "No pending"]
             pub const NDWRPEND_0: u32 = 0;
             #[doc = "Pending"]
             pub const NDWRPEND_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
+}
+#[doc = "Status register 3"]
+pub mod STS3 {
+    pub use crate::RO as access;
+}
+#[doc = "Status register 4"]
+pub mod STS4 {
+    pub use crate::RO as access;
+}
+#[doc = "Status register 5"]
+pub mod STS5 {
+    pub use crate::RO as access;
+}
+#[doc = "Status register 6"]
+pub mod STS6 {
+    pub use crate::RO as access;
+}
+#[doc = "Status register 7"]
+pub mod STS7 {
+    pub use crate::RO as access;
+}
+#[doc = "Status register 8"]
+pub mod STS8 {
+    pub use crate::RO as access;
+}
+#[doc = "Status register 9"]
+pub mod STS9 {
+    pub use crate::RO as access;
+}
+#[doc = "Status register 10"]
+pub mod STS10 {
+    pub use crate::RO as access;
+}
+#[doc = "Status register 11"]
+pub mod STS11 {
+    pub use crate::RO as access;
 }
 #[doc = "Status register 12"]
 pub mod STS12 {
+    pub use crate::RO as access;
     #[doc = "This field indicating the last write address (AXI command) to NAND device (without base address in SEMC_BR4)."]
     pub mod NDADDR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
+}
+#[doc = "Status register 13"]
+pub mod STS13 {
+    pub use crate::RO as access;
+}
+#[doc = "Status register 14"]
+pub mod STS14 {
+    pub use crate::RO as access;
+}
+#[doc = "Status register 15"]
+pub mod STS15 {
+    pub use crate::RO as access;
 }

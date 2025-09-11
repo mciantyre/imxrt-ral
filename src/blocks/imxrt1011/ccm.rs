@@ -2,93 +2,98 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "CCM Control Register"]
-    pub CCR: crate::RWRegister<u32>,
+    pub CCR: u32,
     _reserved0: [u8; 0x04],
     #[doc = "CCM Status Register"]
-    pub CSR: crate::RORegister<u32>,
+    pub CSR: u32,
     #[doc = "CCM Clock Switcher Register"]
-    pub CCSR: crate::RWRegister<u32>,
+    pub CCSR: u32,
     _reserved1: [u8; 0x04],
     #[doc = "CCM Bus Clock Divider Register"]
-    pub CBCDR: crate::RWRegister<u32>,
+    pub CBCDR: u32,
     #[doc = "CCM Bus Clock Multiplexer Register"]
-    pub CBCMR: crate::RWRegister<u32>,
+    pub CBCMR: u32,
     #[doc = "CCM Serial Clock Multiplexer Register 1"]
-    pub CSCMR1: crate::RWRegister<u32>,
+    pub CSCMR1: u32,
     #[doc = "CCM Serial Clock Multiplexer Register 2"]
-    pub CSCMR2: crate::RWRegister<u32>,
+    pub CSCMR2: u32,
     #[doc = "CCM Serial Clock Divider Register 1"]
-    pub CSCDR1: crate::RWRegister<u32>,
+    pub CSCDR1: u32,
     #[doc = "CCM Clock Divider Register"]
-    pub CS1CDR: crate::RWRegister<u32>,
+    pub CS1CDR: u32,
     _reserved2: [u8; 0x04],
     #[doc = "CCM D1 Clock Divider Register"]
-    pub CDCDR: crate::RWRegister<u32>,
+    pub CDCDR: u32,
     _reserved3: [u8; 0x04],
     #[doc = "CCM Serial Clock Divider Register 2"]
-    pub CSCDR2: crate::RWRegister<u32>,
+    pub CSCDR2: u32,
     _reserved4: [u8; 0x0c],
     #[doc = "CCM Divider Handshake In-Process Register"]
-    pub CDHIPR: crate::RORegister<u32>,
+    pub CDHIPR: u32,
     _reserved5: [u8; 0x08],
     #[doc = "CCM Low Power Control Register"]
-    pub CLPCR: crate::RWRegister<u32>,
+    pub CLPCR: u32,
     #[doc = "CCM Interrupt Status Register"]
-    pub CISR: crate::RWRegister<u32>,
+    pub CISR: u32,
     #[doc = "CCM Interrupt Mask Register"]
-    pub CIMR: crate::RWRegister<u32>,
+    pub CIMR: u32,
     #[doc = "CCM Clock Output Source Register"]
-    pub CCOSR: crate::RWRegister<u32>,
+    pub CCOSR: u32,
     #[doc = "CCM General Purpose Register"]
-    pub CGPR: crate::RWRegister<u32>,
+    pub CGPR: u32,
     #[doc = "CCM Clock Gating Register 0"]
-    pub CCGR0: crate::RWRegister<u32>,
+    pub CCGR0: u32,
     #[doc = "CCM Clock Gating Register 1"]
-    pub CCGR1: crate::RWRegister<u32>,
+    pub CCGR1: u32,
     #[doc = "CCM Clock Gating Register 2"]
-    pub CCGR2: crate::RWRegister<u32>,
+    pub CCGR2: u32,
     #[doc = "CCM Clock Gating Register 3"]
-    pub CCGR3: crate::RWRegister<u32>,
+    pub CCGR3: u32,
     #[doc = "CCM Clock Gating Register 4"]
-    pub CCGR4: crate::RWRegister<u32>,
+    pub CCGR4: u32,
     #[doc = "CCM Clock Gating Register 5"]
-    pub CCGR5: crate::RWRegister<u32>,
+    pub CCGR5: u32,
     #[doc = "CCM Clock Gating Register 6"]
-    pub CCGR6: crate::RWRegister<u32>,
+    pub CCGR6: u32,
     _reserved6: [u8; 0x04],
     #[doc = "CCM Module Enable Overide Register"]
-    pub CMEOR: crate::RWRegister<u32>,
+    pub CMEOR: u32,
 }
 #[doc = "CCM Control Register"]
 pub mod CCR {
+    pub use crate::RW as access;
     #[doc = "Oscillator ready counter value. These bits define value of 32KHz counter, that serve as counter for oscillator lock time (count to n+1 ckil's). This is used for oscillator lock time. Current estimation is ~5ms. This counter will be used in ignition sequence and in wake from stop sequence if sbyos bit was defined, to notify that on chip oscillator output is ready for the dpll_ip to use and only then the gate in dpll_ip can be opened."]
     pub mod OSCNT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "On chip oscillator enable bit - this bit value is reflected on the output cosc_en"]
     pub mod COSC_EN {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "disable on chip oscillator"]
             pub const COSC_EN_0: u32 = 0;
             #[doc = "enable on chip oscillator"]
             pub const COSC_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Counter for analog_reg_bypass signal assertion after standby voltage request by PMIC_STBY_REQ"]
     pub mod REG_BYPASS_COUNT {
         pub const offset: u32 = 21;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "no delay"]
             pub const REG_BYPASS_COUNT_0: u32 = 0;
             #[doc = "1 CKIL clock period delay"]
@@ -96,88 +101,103 @@ pub mod CCR {
             #[doc = "63 CKIL clock periods delay"]
             pub const REG_BYPASS_COUNT_63: u32 = 0x3f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Enable for REG_BYPASS_COUNTER"]
     pub mod RBC_EN {
         pub const offset: u32 = 27;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "REG_BYPASS_COUNTER disabled"]
             pub const RBC_EN_0: u32 = 0;
             #[doc = "REG_BYPASS_COUNTER enabled."]
             pub const RBC_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Status Register"]
 pub mod CSR {
+    pub use crate::RO as access;
     #[doc = "Status of the value of CCM_REF_EN_B output of ccm"]
     pub mod REF_EN_B {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "value of CCM_REF_EN_B is '0'"]
             pub const REF_EN_B_0: u32 = 0;
             #[doc = "value of CCM_REF_EN_B is '1'"]
             pub const REF_EN_B_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Status indication of CAMP2."]
     pub mod CAMP2_READY {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "CAMP2 is not ready."]
             pub const CAMP2_READY_0: u32 = 0;
             #[doc = "CAMP2 is ready."]
             pub const CAMP2_READY_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Status indication of on board oscillator"]
     pub mod COSC_READY {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "on board oscillator is not ready."]
             pub const COSC_READY_0: u32 = 0;
             #[doc = "on board oscillator is ready."]
             pub const COSC_READY_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Clock Switcher Register"]
 pub mod CCSR {
+    pub use crate::RW as access;
     #[doc = "Selects source to generate pll3_sw_clk. This bit should only be used for testing purposes."]
     pub mod PLL3_SW_CLK_SEL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "pll3_main_clk"]
             pub const PLL3_SW_CLK_SEL_0: u32 = 0;
             #[doc = "pll3 bypass clock"]
             pub const PLL3_SW_CLK_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Bus Clock Divider Register"]
 pub mod CBCDR {
+    pub use crate::RW as access;
     #[doc = "Divider for ipg podf."]
     pub mod IPG_PODF {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divide by 1"]
             pub const IPG_PODF_0: u32 = 0;
             #[doc = "divide by 2"]
@@ -187,14 +207,16 @@ pub mod CBCDR {
             #[doc = "divide by 4"]
             pub const IPG_PODF_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for AHB PODF"]
     pub mod AHB_PODF {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divide by 1"]
             pub const AHB_PODF_0: u32 = 0;
             #[doc = "divide by 2"]
@@ -212,30 +234,35 @@ pub mod CBCDR {
             #[doc = "divide by 8"]
             pub const AHB_PODF_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Selector for peripheral main clock"]
     pub mod PERIPH_CLK_SEL {
         pub const offset: u32 = 25;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock selected by CCM_CBCMR\\[CORE_CLK_PRE_SEL\\]"]
             pub const PERIPH_CLK_SEL_0: u32 = 0;
             #[doc = "derive clock selected by CCM_CBCMR\\[PERIPH_CLK2_SEL\\]"]
             pub const PERIPH_CLK_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Bus Clock Multiplexer Register"]
 pub mod CBCMR {
+    pub use crate::RW as access;
     #[doc = "Selector for lpspi clock multiplexer"]
     pub mod LPSPI_CLK_SEL {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from PLL3 PFD1 clk"]
             pub const LPSPI_CLK_SEL_0: u32 = 0;
             #[doc = "derive clock from PLL3 PFD0"]
@@ -245,14 +272,16 @@ pub mod CBCMR {
             #[doc = "derive clock from PLL2 PFD2"]
             pub const LPSPI_CLK_SEL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Selector for peripheral clk2 clock multiplexer"]
     pub mod PERIPH_CLK2_SEL {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from pll3_sw_clk"]
             pub const PERIPH_CLK2_SEL_0: u32 = 0;
             #[doc = "derive clock from osc_clk"]
@@ -260,14 +289,16 @@ pub mod CBCMR {
             #[doc = "derive clock from pll2_bypass_clk"]
             pub const PERIPH_CLK2_SEL_2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Selector for Trace clock multiplexer"]
     pub mod TRACE_CLK_SEL {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from PLL2"]
             pub const TRACE_CLK_SEL_0: u32 = 0;
             #[doc = "derive clock from PLL2 PFD2"]
@@ -277,14 +308,16 @@ pub mod CBCMR {
             #[doc = "derive clock from PLL2 PFD1"]
             pub const TRACE_CLK_SEL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Selector for pre_periph clock multiplexer"]
     pub mod PRE_PERIPH_CLK_SEL {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from PLL2"]
             pub const PRE_PERIPH_CLK_SEL_0: u32 = 0;
             #[doc = "derive clock from PLL3 PFD3"]
@@ -294,14 +327,16 @@ pub mod CBCMR {
             #[doc = "derive clock from PLL6"]
             pub const PRE_PERIPH_CLK_SEL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for LPSPI. Divider should be updated when output clock is gated."]
     pub mod LPSPI_PODF {
         pub const offset: u32 = 26;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divide by 1"]
             pub const LPSPI_PODF_0: u32 = 0;
             #[doc = "divide by 2"]
@@ -335,17 +370,20 @@ pub mod CBCMR {
             #[doc = "divide by 16"]
             pub const LPSPI_PODF_15: u32 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Serial Clock Multiplexer Register 1"]
 pub mod CSCMR1 {
+    pub use crate::RW as access;
     #[doc = "Divider for perclk podf."]
     pub mod PERCLK_PODF {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Divide by 1"]
             pub const DIVIDE_1: u32 = 0;
             #[doc = "Divide by 2"]
@@ -475,27 +513,31 @@ pub mod CSCMR1 {
             #[doc = "Divide by 64"]
             pub const DIVIDE_64: u32 = 0x3f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Selector for the perclk clock multiplexor"]
     pub mod PERCLK_CLK_SEL {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from ipg clk root"]
             pub const PERCLK_CLK_SEL_0: u32 = 0;
             #[doc = "derive clock from osc_clk"]
             pub const PERCLK_CLK_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Selector for sai1 clock multiplexer"]
     pub mod SAI1_CLK_SEL {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from PLL3 PFD2"]
             pub const SAI1_CLK_SEL_0: u32 = 0;
             #[doc = "derive from pll3_sw_clk"]
@@ -503,14 +545,16 @@ pub mod CSCMR1 {
             #[doc = "derive clock from PLL4"]
             pub const SAI1_CLK_SEL_2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Selector for sai3 clock multiplexer"]
     pub mod SAI3_CLK_SEL {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from PLL3 PFD2"]
             pub const SAI3_CLK_SEL_0: u32 = 0;
             #[doc = "derive from pll3_sw_clk"]
@@ -518,14 +562,16 @@ pub mod CSCMR1 {
             #[doc = "derive clock from PLL4"]
             pub const SAI3_CLK_SEL_2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for flexspi clock root."]
     pub mod FLEXSPI_PODF {
         pub const offset: u32 = 23;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divide by 1"]
             pub const FLEXSPI_PODF_0: u32 = 0;
             #[doc = "divide by 2"]
@@ -543,14 +589,16 @@ pub mod CSCMR1 {
             #[doc = "divide by 8"]
             pub const FLEXSPI_PODF_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Selector for flexspi clock multiplexer"]
     pub mod FLEXSPI_CLK_SEL {
         pub const offset: u32 = 29;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from PLL2"]
             pub const FLEXSPI_CLK_SEL_0: u32 = 0;
             #[doc = "derive clock from pll3_sw_clk"]
@@ -560,30 +608,35 @@ pub mod CSCMR1 {
             #[doc = "derive clock from PLL3 PFD0"]
             pub const FLEXSPI_CLK_SEL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Select for source of flexspi_clk_root"]
     pub mod FLEXSPI_CLK_SRC {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock selected by CCM_CSCMR1\\[FLEXSPI_CLK_SEL\\]"]
             pub const FLEXSPI_CLK_SRC_0: u32 = 0;
             #[doc = "derive clock selected by CCM_CBCMR\\[PERIPH_CLK2_ SEL\\]"]
             pub const FLEXSPI_CLK_SRC_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Serial Clock Multiplexer Register 2"]
 pub mod CSCMR2 {
+    pub use crate::RW as access;
     #[doc = "Selector for flexio1 clock multiplexer"]
     pub mod FLEXIO1_CLK_SEL {
         pub const offset: u32 = 19;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from PLL4 divided clock"]
             pub const FLEXIO1_CLK_SEL_0: u32 = 0;
             #[doc = "derive clock from PLL3 PFD2 clock"]
@@ -593,14 +646,16 @@ pub mod CSCMR2 {
             #[doc = "derive clock from pll3_sw_clk"]
             pub const FLEXIO1_CLK_SEL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for ADC alt_clk, as the list below (other values reserved)."]
     pub mod ADC_ACLK_PODF {
         pub const offset: u32 = 27;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "pll3_sw_clk / 8"]
             pub const ADC_ACLK_PODF_7: u32 = 0x07;
             #[doc = "pll3_sw_clk / 12"]
@@ -608,30 +663,35 @@ pub mod CSCMR2 {
             #[doc = "pll3_sw_clk / 16"]
             pub const ADC_ACLK_PODF_15: u32 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Enable ADC alt_clk, so that ADC alt_clk can be driven be divided pll3_sw_clk."]
     pub mod ADC_ACLK_EN {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ADC alt_clk source is disabled"]
             pub const ADC_ACLK_EN_0: u32 = 0;
             #[doc = "ADC alt_clk source is enabled"]
             pub const ADC_ACLK_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Serial Clock Divider Register 1"]
 pub mod CSCDR1 {
+    pub use crate::RW as access;
     #[doc = "Divider for uart clock podf."]
     pub mod UART_CLK_PODF {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Divide by 1"]
             pub const DIVIDE_1: u32 = 0;
             #[doc = "Divide by 2"]
@@ -761,14 +821,16 @@ pub mod CSCDR1 {
             #[doc = "Divide by 64"]
             pub const DIVIDE_64: u32 = 0x3f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Selector for the UART clock multiplexor"]
     pub mod UART_CLK_SEL {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from pll3_80m"]
             pub const UART_CLK_SEL_0: u32 = 0;
             #[doc = "derive clock from osc_clk"]
@@ -776,14 +838,16 @@ pub mod CSCDR1 {
             #[doc = "derive clock from per_clk_root"]
             pub const UART_CLK_SEL_2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for trace clock. Divider should be updated when output clock is gated."]
     pub mod TRACE_PODF {
         pub const offset: u32 = 25;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divide by 1"]
             pub const TRACE_PODF_0: u32 = 0;
             #[doc = "divide by 2"]
@@ -817,17 +881,20 @@ pub mod CSCDR1 {
             #[doc = "divide by 16"]
             pub const TRACE_PODF_15: u32 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Clock Divider Register"]
 pub mod CS1CDR {
+    pub use crate::RW as access;
     #[doc = "Divider for sai1 clock podf. The input clock to this divider should be lower than 300Mhz, the predivider can be used to achieve this."]
     pub mod SAI1_CLK_PODF {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Divide by 1"]
             pub const DIVIDE_1: u32 = 0;
             #[doc = "Divide by 2"]
@@ -957,14 +1024,16 @@ pub mod CS1CDR {
             #[doc = "Divide by 64"]
             pub const DIVIDE_64: u32 = 0x3f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for sai1 clock pred."]
     pub mod SAI1_CLK_PRED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divide by 1"]
             pub const SAI1_CLK_PRED_0: u32 = 0;
             #[doc = "divide by 2"]
@@ -982,14 +1051,16 @@ pub mod CS1CDR {
             #[doc = "divide by 8"]
             pub const SAI1_CLK_PRED_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for flexio1 clock."]
     pub mod FLEXIO1_CLK_PRED {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divide by 1"]
             pub const FLEXIO1_CLK_PRED_0: u32 = 0;
             #[doc = "divide by 2"]
@@ -1007,14 +1078,16 @@ pub mod CS1CDR {
             #[doc = "divide by 8"]
             pub const FLEXIO1_CLK_PRED_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for sai3 clock podf. The input clock to this divider should be lower than 300Mhz, the predivider can be used to achieve this."]
     pub mod SAI3_CLK_PODF {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Divide by 1"]
             pub const DIVIDE_1: u32 = 0;
             #[doc = "Divide by 2"]
@@ -1144,14 +1217,16 @@ pub mod CS1CDR {
             #[doc = "Divide by 64"]
             pub const DIVIDE_64: u32 = 0x3f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for sai3 clock pred."]
     pub mod SAI3_CLK_PRED {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divide by 1"]
             pub const SAI3_CLK_PRED_0: u32 = 0;
             #[doc = "divide by 2"]
@@ -1169,14 +1244,16 @@ pub mod CS1CDR {
             #[doc = "divide by 8"]
             pub const SAI3_CLK_PRED_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for flexio1 clock. Divider should be updated when output clock is gated."]
     pub mod FLEXIO1_CLK_PODF {
         pub const offset: u32 = 25;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Divide by 1"]
             pub const DIVIDE_1: u32 = 0;
             #[doc = "Divide by 2"]
@@ -1210,17 +1287,20 @@ pub mod CS1CDR {
             #[doc = "Divide by 16"]
             pub const DIVIDE_16: u32 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM D1 Clock Divider Register"]
 pub mod CDCDR {
+    pub use crate::RW as access;
     #[doc = "Selector for spdif0 clock multiplexer"]
     pub mod SPDIF0_CLK_SEL {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from PLL4"]
             pub const SPDIF0_CLK_SEL_0: u32 = 0;
             #[doc = "derive clock from PLL3 PFD2"]
@@ -1228,14 +1308,16 @@ pub mod CDCDR {
             #[doc = "derive clock from pll3_sw_clk"]
             pub const SPDIF0_CLK_SEL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for spdif0 clock podf. Divider should be updated when output clock is gated."]
     pub mod SPDIF0_CLK_PODF {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Divide by 1"]
             pub const DIVIDE_1: u32 = 0;
             #[doc = "Divide by 2"]
@@ -1253,14 +1335,16 @@ pub mod CDCDR {
             #[doc = "Divide by 8"]
             pub const DIVIDE_8: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for spdif0 clock pred. Divider should be updated when output clock is gated."]
     pub mod SPDIF0_CLK_PRED {
         pub const offset: u32 = 25;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Divide by 1"]
             pub const DIVIDE_1: u32 = 0;
             #[doc = "Divide by 2"]
@@ -1278,30 +1362,35 @@ pub mod CDCDR {
             #[doc = "Divide by 8"]
             pub const DIVIDE_8: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Serial Clock Divider Register 2"]
 pub mod CSCDR2 {
+    pub use crate::RW as access;
     #[doc = "Selector for the LPI2C clock multiplexor"]
     pub mod LPI2C_CLK_SEL {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "derive clock from pll3_60m"]
             pub const LPI2C_CLK_SEL_0: u32 = 0;
             #[doc = "derive clock from osc_clk"]
             pub const LPI2C_CLK_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider for lpi2c clock podf. Divider should be updated when output clock is gated. The input clock to this divider should be lower than 300Mhz, the predivider can be used to achieve this."]
     pub mod LPI2C_CLK_PODF {
         pub const offset: u32 = 19;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Divide by 1"]
             pub const DIVIDE_1: u32 = 0;
             #[doc = "Divide by 2"]
@@ -1431,72 +1520,84 @@ pub mod CSCDR2 {
             #[doc = "Divide by 64"]
             pub const DIVIDE_64: u32 = 0x3f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Divider Handshake In-Process Register"]
 pub mod CDHIPR {
+    pub use crate::RO as access;
     #[doc = "Busy indicator for ahb_podf."]
     pub mod AHB_PODF_BUSY {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divider is not busy and its value represents the actual division."]
             pub const AHB_PODF_BUSY_0: u32 = 0;
             #[doc = "divider is busy with handshake process with module. The value read in the divider represents the previous value of the division factor, and after the handshake the written value of the ahb_podf will be applied."]
             pub const AHB_PODF_BUSY_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Busy indicator for flexspi_podf."]
     pub mod FLEXSPI_PODF_BUSY {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divider is not busy and its value represents the actual division."]
             pub const FLEXSPI_PODF_BUSY_0: u32 = 0;
             #[doc = "divider is busy with handshake process with module. The value read in the divider represents the previous value of the division factor, and after the handshake the written value of the flexspi_podf will be applied."]
             pub const FLEXSPI_PODF_BUSY_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Busy indicator for perclk_podf."]
     pub mod PERCLK_PODF_BUSY {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divider is not busy and its value represents the actual division."]
             pub const PERCLK_PODF_BUSY_0: u32 = 0;
             #[doc = "divider is busy with handshake process with module. The value read in the divider represents the previous value of the division factor, and after the handshake the written value of the perclk_podf will be applied."]
             pub const PERCLK_PODF_BUSY_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Busy indicator for periph_clk_sel mux control."]
     pub mod PERIPH_CLK_SEL_BUSY {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "mux is not busy and its value represents the actual division."]
             pub const PERIPH_CLK_SEL_BUSY_0: u32 = 0;
             #[doc = "mux is busy with handshake process with module. The value read in the periph_clk_sel represents the previous value of select, and after the handshake periph_clk_sel value will be applied."]
             pub const PERIPH_CLK_SEL_BUSY_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Low Power Control Register"]
 pub mod CLPCR {
+    pub use crate::RW as access;
     #[doc = "Setting the low power mode that system will enter on next assertion of dsm_request signal."]
     pub mod LPM {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Remain in run mode"]
             pub const LPM_0: u32 = 0;
             #[doc = "Transfer to wait mode"]
@@ -1504,66 +1605,76 @@ pub mod CLPCR {
             #[doc = "Transfer to stop mode"]
             pub const LPM_2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Define if ARM clocks (arm_clk, soc_mxclk, soc_pclk, soc_dbg_pclk, vl_wrck) will be disabled on wait mode"]
     pub mod ARM_CLK_DIS_ON_LPM {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ARM clock enabled on wait mode."]
             pub const ARM_CLK_DIS_ON_LPM_0: u32 = 0;
             #[doc = "ARM clock disabled on wait mode. ."]
             pub const ARM_CLK_DIS_ON_LPM_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Standby clock oscillator bit"]
     pub mod SBYOS {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "On-chip oscillator will not be powered down, after next entrance to STOP mode. (CCM_REF_EN_B will remain asserted - '0' and cosc_pwrdown will remain de asserted - '0')"]
             pub const SBYOS_0: u32 = 0;
             #[doc = "On-chip oscillator will be powered down, after next entrance to STOP mode. (CCM_REF_EN_B will be deasserted - '1' and cosc_pwrdown will be asserted - '1'). When returning from STOP mode, external oscillator will be enabled again, on-chip oscillator will return to oscillator mode, and after oscnt count, CCM will continue with the exit from the STOP mode process."]
             pub const SBYOS_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "dis_ref_osc - in run mode, software can manually control closing of external reference oscillator clock, i"]
     pub mod DIS_REF_OSC {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "external high frequency oscillator will be enabled, i.e. CCM_REF_EN_B = '0'."]
             pub const DIS_REF_OSC_0: u32 = 0;
             #[doc = "external high frequency oscillator will be disabled, i.e. CCM_REF_EN_B = '1'"]
             pub const DIS_REF_OSC_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Voltage standby request bit"]
     pub mod VSTBY {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Voltage will not be changed to standby voltage after next entrance to STOP mode. ( PMIC_STBY_REQ will remain negated - '0')"]
             pub const VSTBY_0: u32 = 0;
             #[doc = "Voltage will be requested to change to standby voltage after next entrance to stop mode. ( PMIC_STBY_REQ will be asserted - '1')."]
             pub const VSTBY_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Standby counter definition"]
     pub mod STBY_COUNT {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "CCM will wait (1*pmic_delay_scaler)+1 ckil clock cycles"]
             pub const STBY_COUNT_0: u32 = 0;
             #[doc = "CCM will wait (3*pmic_delay_scaler)+1 ckil clock cycles"]
@@ -1573,231 +1684,268 @@ pub mod CLPCR {
             #[doc = "CCM will wait (15*pmic_delay_scaler)+1 ckil clock cycles"]
             pub const STBY_COUNT_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "In run mode, software can manually control powering down of on chip oscillator, i"]
     pub mod COSC_PWRDOWN {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "On chip oscillator will not be powered down, i.e. cosc_pwrdown = '0'."]
             pub const COSC_PWRDOWN_0: u32 = 0;
             #[doc = "On chip oscillator will be powered down, i.e. cosc_pwrdown = '1'."]
             pub const COSC_PWRDOWN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Mask WFI of core0 for entering low power mode Assertion of all bits\\[27:22\\] will generate low power mode request"]
     pub mod MASK_CORE0_WFI {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "WFI of core0 is not masked"]
             pub const MASK_CORE0_WFI_0: u32 = 0;
             #[doc = "WFI of core0 is masked"]
             pub const MASK_CORE0_WFI_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Mask SCU IDLE for entering low power mode Assertion of all bits\\[27:22\\] will generate low power mode request"]
     pub mod MASK_SCU_IDLE {
         pub const offset: u32 = 26;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "SCU IDLE is not masked"]
             pub const MASK_SCU_IDLE_0: u32 = 0;
             #[doc = "SCU IDLE is masked"]
             pub const MASK_SCU_IDLE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Mask L2CC IDLE for entering low power mode"]
     pub mod MASK_L2CC_IDLE {
         pub const offset: u32 = 27;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "L2CC IDLE is not masked"]
             pub const MASK_L2CC_IDLE_0: u32 = 0;
             #[doc = "L2CC IDLE is masked"]
             pub const MASK_L2CC_IDLE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Interrupt Status Register"]
 pub mod CISR {
+    pub use crate::RW as access;
     #[doc = "CCM interrupt request 2 generated due to lock of all enabled and not bypaseed PLLs"]
     pub mod LRF_PLL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "interrupt is not generated due to lock ready of all enabled and not bypaseed PLLs"]
             pub const LRF_PLL_0: u32 = 0;
             #[doc = "interrupt generated due to lock ready of all enabled and not bypaseed PLLs"]
             pub const LRF_PLL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CCM interrupt request 2 generated due to on board oscillator ready, i"]
     pub mod COSC_READY {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "interrupt is not generated due to on board oscillator ready"]
             pub const COSC_READY_0: u32 = 0;
             #[doc = "interrupt generated due to on board oscillator ready"]
             pub const COSC_READY_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CCM interrupt request 1 generated due to frequency change of flexspi_podf"]
     pub mod FLEXSPI_PODF_LOADED {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "interrupt is not generated due to frequency change of flexspi_podf"]
             pub const FLEXSPI_PODF_LOADED_0: u32 = 0;
             #[doc = "interrupt generated due to frequency change of flexspi_podf"]
             pub const FLEXSPI_PODF_LOADED_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CCM interrupt request 1 generated due to frequency change of perclk_podf"]
     pub mod PERCLK_PODF_LOADED {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "interrupt is not generated due to frequency change of perclk_podf"]
             pub const PERCLK_PODF_LOADED_0: u32 = 0;
             #[doc = "interrupt generated due to frequency change of perclk_podf"]
             pub const PERCLK_PODF_LOADED_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CCM interrupt request 1 generated due to frequency change of ahb_podf"]
     pub mod AHB_PODF_LOADED {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "interrupt is not generated due to frequency change of ahb_podf"]
             pub const AHB_PODF_LOADED_0: u32 = 0;
             #[doc = "interrupt generated due to frequency change of ahb_podf"]
             pub const AHB_PODF_LOADED_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CCM interrupt request 1 generated due to update of periph_clk_sel."]
     pub mod PERIPH_CLK_SEL_LOADED {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "interrupt is not generated due to update of periph_clk_sel."]
             pub const PERIPH_CLK_SEL_LOADED_0: u32 = 0;
             #[doc = "interrupt generated due to update of periph_clk_sel."]
             pub const PERIPH_CLK_SEL_LOADED_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Interrupt Mask Register"]
 pub mod CIMR {
+    pub use crate::RW as access;
     #[doc = "mask interrupt generation due to lrf of PLLs"]
     pub mod MASK_LRF_PLL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "don't mask interrupt due to lrf of PLLs - interrupt will be created"]
             pub const MASK_LRF_PLL_0: u32 = 0;
             #[doc = "mask interrupt due to lrf of PLLs"]
             pub const MASK_LRF_PLL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "mask interrupt generation due to on board oscillator ready"]
     pub mod MASK_COSC_READY {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "don't mask interrupt due to on board oscillator ready - interrupt will be created"]
             pub const MASK_COSC_READY_0: u32 = 0;
             #[doc = "mask interrupt due to on board oscillator ready"]
             pub const MASK_COSC_READY_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "mask interrupt generation due to update of flexspi_podf"]
     pub mod MASK_FLEXSPI_PODF_LOADED {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "don't mask interrupt due to update of flexspi_podf"]
             pub const MASK_FLEXSPI_PODF_LOADED_0: u32 = 0;
             #[doc = "mask interrupt due to update of flexspi_podf"]
             pub const MASK_FLEXSPI_PODF_LOADED_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "mask interrupt generation due to update of perclk_podf"]
     pub mod MASK_PERCLK_PODF_LOADED {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "don't mask interrupt due to update of perclk_podf"]
             pub const MASK_PERCLK_PODF_LOADED_0: u32 = 0;
             #[doc = "mask interrupt due to update of perclk_podf"]
             pub const MASK_PERCLK_PODF_LOADED_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "mask interrupt generation due to frequency change of ahb_podf"]
     pub mod MASK_AHB_PODF_LOADED {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "don't mask interrupt due to frequency change of ahb_podf - interrupt will be created"]
             pub const MASK_AHB_PODF_LOADED_0: u32 = 0;
             #[doc = "mask interrupt due to frequency change of ahb_podf"]
             pub const MASK_AHB_PODF_LOADED_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "mask interrupt generation due to update of periph_clk_sel."]
     pub mod MASK_PERIPH_CLK_SEL_LOADED {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "don't mask interrupt due to update of periph_clk_sel - interrupt will be created"]
             pub const MASK_PERIPH_CLK_SEL_LOADED_0: u32 = 0;
             #[doc = "mask interrupt due to update of periph_clk_sel"]
             pub const MASK_PERIPH_CLK_SEL_LOADED_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Clock Output Source Register"]
 pub mod CCOSR {
+    pub use crate::RW as access;
     #[doc = "Selection of the clock to be generated on CCM_CLKO1"]
     pub mod CLKO1_SEL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "pll3_sw_clk (divided by 2)"]
             pub const CLKO1_SEL_0: u32 = 0;
             #[doc = "PLL2 (divided by 2)"]
@@ -1813,14 +1961,16 @@ pub mod CCOSR {
             #[doc = "pll4_main_clk"]
             pub const CLKO1_SEL_15: u32 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Setting the divider of CCM_CLKO1"]
     pub mod CLKO1_DIV {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divide by 1"]
             pub const CLKO1_DIV_0: u32 = 0;
             #[doc = "divide by 2"]
@@ -1838,40 +1988,46 @@ pub mod CCOSR {
             #[doc = "divide by 8"]
             pub const CLKO1_DIV_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Enable of CCM_CLKO1 clock"]
     pub mod CLKO1_EN {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "CCM_CLKO1 disabled."]
             pub const CLKO1_EN_0: u32 = 0;
             #[doc = "CCM_CLKO1 enabled."]
             pub const CLKO1_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CCM_CLKO1 output to reflect CCM_CLKO1 or CCM_CLKO2 clocks"]
     pub mod CLK_OUT_SEL {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "CCM_CLKO1 output drives CCM_CLKO1 clock"]
             pub const CLK_OUT_SEL_0: u32 = 0;
             #[doc = "CCM_CLKO1 output drives CCM_CLKO2 clock"]
             pub const CLK_OUT_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Selection of the clock to be generated on CCM_CLKO2"]
     pub mod CLKO2_SEL {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "lpi2c_clk_root"]
             pub const CLKO2_SEL_6: u32 = 0x06;
             #[doc = "osc_clk"]
@@ -1891,14 +2047,16 @@ pub mod CCOSR {
             #[doc = "spdif0_clk_root"]
             pub const CLKO2_SEL_29: u32 = 0x1d;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Setting the divider of CCM_CLKO2"]
     pub mod CLKO2_DIV {
         pub const offset: u32 = 21;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "divide by 1"]
             pub const CLKO2_DIV_0: u32 = 0;
             #[doc = "divide by 2"]
@@ -1916,56 +2074,65 @@ pub mod CCOSR {
             #[doc = "divide by 8"]
             pub const CLKO2_DIV_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Enable of CCM_CLKO2 clock"]
     pub mod CLKO2_EN {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "CCM_CLKO2 disabled."]
             pub const CLKO2_EN_0: u32 = 0;
             #[doc = "CCM_CLKO2 enabled."]
             pub const CLKO2_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM General Purpose Register"]
 pub mod CGPR {
+    pub use crate::RW as access;
     #[doc = "Defines clock dividion of clock for stby_count (pmic delay counter)"]
     pub mod PMIC_DELAY_SCALER {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "clock is not divided"]
             pub const PMIC_DELAY_SCALER_0: u32 = 0;
             #[doc = "clock is divided /8"]
             pub const PMIC_DELAY_SCALER_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Defines the value of the output signal cgpr_dout\\[4\\]. Gate of program supply for efuse programing"]
     pub mod EFUSE_PROG_SUPPLY_GATE {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "fuse programing supply voltage is gated off to the efuse module"]
             pub const EFUSE_PROG_SUPPLY_GATE_0: u32 = 0;
             #[doc = "allow fuse programing."]
             pub const EFUSE_PROG_SUPPLY_GATE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "System memory DS control"]
     pub mod SYS_MEM_DS_CTRL {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable memory DS mode always"]
             pub const SYS_MEM_DS_CTRL_0: u32 = 0;
             #[doc = "Enable memory (outside ARM platform) DS mode when system STOP and PLL are disabled"]
@@ -1973,574 +2140,714 @@ pub mod CGPR {
             #[doc = "enable memory (outside ARM platform) DS mode when system is in STOP mode"]
             pub const SYS_MEM_DS_CTRL_2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Fast PLL enable."]
     pub mod FPL {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Engage PLL enable default way."]
             pub const FPL_0: u32 = 0;
             #[doc = "Engage PLL enable 3 CKIL clocks earlier at exiting low power mode (STOP). Should be used only if 24MHz OSC was active in low power mode."]
             pub const FPL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Control for the Deep Sleep signal to the ARM Platform memories with additional control logic based on the ARM WFI signal"]
     pub mod INT_MEM_CLK_LPM {
         pub const offset: u32 = 17;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable the clock to the ARM platform memories when entering Low Power Mode"]
             pub const INT_MEM_CLK_LPM_0: u32 = 0;
             #[doc = "Keep the clocks to the ARM platform memories enabled only if an interrupt is pending when entering Low Power Modes (WAIT and STOP without power gating)"]
             pub const INT_MEM_CLK_LPM_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Clock Gating Register 0"]
 pub mod CCGR0 {
+    pub use crate::RW as access;
     #[doc = "aips_tz1 clocks (aips_tz1_clk_enable)"]
     pub mod CG0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "aips_tz2 clocks (aips_tz2_clk_enable)"]
     pub mod CG1 {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "mqs clock ( mqs_hmclk_clock_enable)"]
     pub mod CG2 {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "flexspi_exsc clock (flexspi_exsc_clk_enable)"]
     pub mod CG3 {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "sim_m_clk_r_clk_enable"]
     pub mod CG4 {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "dcp clock (dcp_clk_enable)"]
     pub mod CG5 {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "lpuart3 clock (lpuart3_clk_enable)"]
     pub mod CG6 {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "trace clock (trace_clk_enable)"]
     pub mod CG11 {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "gpt2 bus clocks (gpt2_bus_clk_enable)"]
     pub mod CG12 {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "gpt2 serial clocks (gpt2_serial_clk_enable)"]
     pub mod CG13 {
         pub const offset: u32 = 26;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "lpuart2 clock (lpuart2_clk_enable)"]
     pub mod CG14 {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "gpio2_clocks (gpio2_clk_enable)"]
     pub mod CG15 {
         pub const offset: u32 = 30;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Clock Gating Register 1"]
 pub mod CCGR1 {
+    pub use crate::RW as access;
     #[doc = "lpspi1 clocks (lpspi1_clk_enable)"]
     pub mod CG0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "lpspi2 clocks (lpspi2_clk_enable)"]
     pub mod CG1 {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "pit clocks (pit_clk_enable)"]
     pub mod CG6 {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "adc1 clock (adc1_clk_enable)"]
     pub mod CG8 {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "gpt1 bus clock (gpt_clk_enable)"]
     pub mod CG10 {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "gpt1 serial clock (gpt_serial_clk_enable)"]
     pub mod CG11 {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "lpuart4 clock (lpuart4_clk_enable)"]
     pub mod CG12 {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "gpio1 clock (gpio1_clk_enable)"]
     pub mod CG13 {
         pub const offset: u32 = 26;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "csu clock (csu_clk_enable)"]
     pub mod CG14 {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "gpio5 clock (gpio5_clk_enable)"]
     pub mod CG15 {
         pub const offset: u32 = 30;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Clock Gating Register 2"]
 pub mod CCGR2 {
+    pub use crate::RW as access;
     #[doc = "ocram_exsc clock (ocram_exsc_clk_enable)"]
     pub mod CG0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "iomuxc_snvs clock (iomuxc_snvs_clk_enable)"]
     pub mod CG2 {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "lpi2c1 clock (lpi2c1_clk_enable)"]
     pub mod CG3 {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "lpi2c2 clock (lpi2c2_clk_enable)"]
     pub mod CG4 {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "OCOTP_CTRL clock (iim_clk_enable)"]
     pub mod CG6 {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "xbar1 clock (xbar1_clk_enable)"]
     pub mod CG11 {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Clock Gating Register 3"]
 pub mod CCGR3 {
+    pub use crate::RW as access;
     #[doc = "aoi1 clock (aoi1_clk_enable)"]
     pub mod CG4 {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ewm clocks (ewm_clk_enable)"]
     pub mod CG7 {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "wdog1 clock (wdog1_clk_enable)"]
     pub mod CG8 {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "flexram clock (flexram_clk_enable)"]
     pub mod CG9 {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "The OCRAM clock cannot be turned off when the CM cache is running on this device."]
     pub mod CG14 {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "iomuxc_snvs_gpr clock (iomuxc_snvs_gpr_clk_enable)"]
     pub mod CG15 {
         pub const offset: u32 = 30;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Clock Gating Register 4"]
 pub mod CCGR4 {
+    pub use crate::RW as access;
     #[doc = "sim_m7_clk_r_enable"]
     pub mod CG0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "iomuxc clock (iomuxc_clk_enable)"]
     pub mod CG1 {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "iomuxc gpr clock (iomuxc_gpr_clk_enable)"]
     pub mod CG2 {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "sim_m7 clock (sim_m7_clk_enable)"]
     pub mod CG4 {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "sim_m clocks (sim_m_clk_enable)"]
     pub mod CG6 {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "sim_ems clocks (sim_ems_clk_enable)"]
     pub mod CG7 {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "pwm1 clocks (pwm1_clk_enable)"]
     pub mod CG8 {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "dma_ps clocks (dma_ps_clk_enable)"]
     pub mod CG15 {
         pub const offset: u32 = 30;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Clock Gating Register 5"]
 pub mod CCGR5 {
+    pub use crate::RW as access;
     #[doc = "rom clock (rom_clk_enable)"]
     pub mod CG0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "flexio1 clock (flexio1_clk_enable)"]
     pub mod CG1 {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "wdog3 clock (wdog3_clk_enable)"]
     pub mod CG2 {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "dma clock (dma_clk_enable)"]
     pub mod CG3 {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "kpp clock (kpp_clk_enable)"]
     pub mod CG4 {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "wdog2 clock (wdog2_clk_enable)"]
     pub mod CG5 {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "spdif clock (spdif_clk_enable)"]
     pub mod CG7 {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "sai1 clock (sai1_clk_enable)"]
     pub mod CG9 {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "sai3 clock (sai3_clk_enable)"]
     pub mod CG11 {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "lpuart1 clock (lpuart1_clk_enable)"]
     pub mod CG12 {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "snvs_hp clock (snvs_hp_clk_enable)"]
     pub mod CG14 {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "snvs_lp clock (snvs_lp_clk_enable)"]
     pub mod CG15 {
         pub const offset: u32 = 30;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Clock Gating Register 6"]
 pub mod CCGR6 {
+    pub use crate::RW as access;
     #[doc = "usboh3 clock (usboh3_clk_enable)"]
     pub mod CG0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "dcdc clocks (dcdc_clk_enable)"]
     pub mod CG3 {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "flexspi clocks (flexspi_clk_enable) sim_ems_clk_enable must also be cleared, when flexspi_clk_enable is cleared"]
     pub mod CG5 {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "trng clock (trng_clk_enable)"]
     pub mod CG6 {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "sim_per clock (sim_per_clk_enable)"]
     pub mod CG10 {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "anadig clocks (anadig_clk_enable)"]
     pub mod CG11 {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM Module Enable Overide Register"]
 pub mod CMEOR {
+    pub use crate::RW as access;
     #[doc = "Overide clock enable signal from GPT - clock will not be gated based on GPT's signal 'ipg_enable_clk'"]
     pub mod MOD_EN_OV_GPT {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "don't override module enable signal"]
             pub const MOD_EN_OV_GPT_0: u32 = 0;
             #[doc = "override module enable signal"]
             pub const MOD_EN_OV_GPT_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Overide clock enable signal from PIT - clock will not be gated based on PIT's signal 'ipg_enable_clk'"]
     pub mod MOD_EN_OV_PIT {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "don't override module enable signal"]
             pub const MOD_EN_OV_PIT_0: u32 = 0;
             #[doc = "override module enable signal"]
             pub const MOD_EN_OV_PIT_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Overide clock enable signal from TRNG"]
     pub mod MOD_EN_OV_TRNG {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "don't override module enable signal"]
             pub const MOD_EN_OV_TRNG_0: u32 = 0;
             #[doc = "override module enable signal"]
             pub const MOD_EN_OV_TRNG_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }

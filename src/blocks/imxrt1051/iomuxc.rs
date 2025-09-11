@@ -3,819 +3,820 @@
 pub struct RegisterBlock {
     _reserved0: [u8; 0x14],
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_00 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_00: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_00: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_01 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_01: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_01: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_02 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_02: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_02: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_03 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_03: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_03: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_04 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_04: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_04: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_05 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_05: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_05: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_06 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_06: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_06: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_07 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_07: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_07: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_08 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_08: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_08: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_09 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_09: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_09: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_10 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_10: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_10: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_11 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_11: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_11: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_12 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_12: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_12: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_13 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_13: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_13: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_14 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_14: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_14: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_15 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_15: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_15: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_16 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_16: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_16: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_17 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_17: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_17: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_18 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_18: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_18: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_19 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_19: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_19: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_20 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_20: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_20: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_21 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_21: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_21: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_22 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_22: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_22: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_23 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_23: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_23: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_24 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_24: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_24: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_25 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_25: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_25: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_26 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_26: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_26: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_27 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_27: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_27: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_28 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_28: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_28: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_29 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_29: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_29: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_30 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_30: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_30: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_31 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_31: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_31: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_32 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_32: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_32: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_33 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_33: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_33: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_34 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_34: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_34: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_35 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_35: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_35: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_36 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_36: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_36: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_37 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_37: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_37: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_38 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_38: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_38: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_39 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_39: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_39: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_40 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_40: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_40: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_41 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_EMC_41: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_EMC_41: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_00 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_00: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_00: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_01 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_01: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_01: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_02 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_02: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_02: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_03 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_03: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_03: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_04 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_04: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_04: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_05 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_05: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_05: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_06 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_06: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_06: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_07 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_07: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_07: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_08 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_08: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_08: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_09 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_09: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_09: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_10 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_10: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_10: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_11 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_11: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_11: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_12 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_12: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_12: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_13 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_13: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_13: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_14 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_14: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_14: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_15 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B0_15: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B0_15: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_00 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_00: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_00: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_01 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_01: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_01: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_02 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_02: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_02: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_03 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_03: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_03: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_04 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_04: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_04: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_05 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_05: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_05: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_06 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_06: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_06: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_07 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_07: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_07: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_08 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_08: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_08: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_09 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_09: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_09: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_10 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_10: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_10: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_11 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_11: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_11: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_12 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_12: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_12: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_13 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_13: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_13: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_14 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_14: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_14: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_15 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_AD_B1_15: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_AD_B1_15: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_00 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_00: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_00: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_01 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_01: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_01: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_02 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_02: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_02: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_03 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_03: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_03: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_04 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_04: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_04: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_05 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_05: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_05: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_06 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_06: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_06: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_07 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_07: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_07: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_08 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_08: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_08: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_09 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_09: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_09: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_10 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_10: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_10: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_11 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_11: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_11: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_12 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_12: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_12: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_13 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_13: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_13: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_14 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_14: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_14: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B0_15 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B0_15: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B0_15: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_00 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_00: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_00: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_01 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_01: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_01: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_02 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_02: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_02: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_03 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_03: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_03: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_04 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_04: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_04: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_05 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_05: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_05: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_06 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_06: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_06: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_07 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_07: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_07: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_08 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_08: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_08: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_09 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_09: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_09: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_10 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_10: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_10: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_11 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_11: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_11: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_12 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_12: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_12: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_13 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_13: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_13: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_14 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_14: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_14: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_B1_15 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_B1_15: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_B1_15: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_00 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B0_00: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B0_00: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_01 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B0_01: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B0_01: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_02 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B0_02: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B0_02: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_03 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B0_03: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B0_03: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_04 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B0_04: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B0_04: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_05 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B0_05: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B0_05: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_00 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_00: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_00: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_01 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_01: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_01: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_02 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_02: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_02: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_03 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_03: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_03: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_04 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_04: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_04: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_05 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_05: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_05: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_06 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_06: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_06: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_07 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_07: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_07: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_08 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_08: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_08: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_09 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_09: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_09: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_10 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_10: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_10: u32,
     #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_11 SW MUX Control Register"]
-    pub SW_MUX_CTL_PAD_GPIO_SD_B1_11: crate::RWRegister<u32>,
+    pub SW_MUX_CTL_PAD_GPIO_SD_B1_11: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_00 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_00: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_00: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_01 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_01: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_01: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_02 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_02: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_02: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_03 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_03: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_03: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_04 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_04: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_04: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_05 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_05: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_05: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_06 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_06: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_06: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_07 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_07: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_07: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_08 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_08: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_08: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_09 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_09: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_09: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_10 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_10: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_10: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_11 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_11: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_11: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_12 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_12: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_12: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_13 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_13: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_13: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_14 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_14: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_14: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_15 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_15: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_15: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_16 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_16: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_16: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_17 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_17: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_17: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_18 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_18: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_18: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_19 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_19: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_19: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_20 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_20: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_20: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_21 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_21: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_21: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_22 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_22: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_22: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_23 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_23: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_23: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_24 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_24: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_24: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_25 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_25: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_25: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_26 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_26: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_26: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_27 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_27: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_27: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_28 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_28: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_28: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_29 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_29: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_29: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_30 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_30: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_30: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_31 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_31: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_31: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_32 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_32: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_32: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_33 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_33: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_33: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_34 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_34: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_34: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_35 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_35: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_35: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_36 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_36: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_36: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_37 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_37: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_37: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_38 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_38: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_38: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_39 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_39: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_39: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_40 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_40: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_40: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_41 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_EMC_41: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_EMC_41: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_00 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_00: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_00: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_01 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_01: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_01: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_02 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_02: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_02: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_03 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_03: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_03: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_04 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_04: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_04: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_05 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_05: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_05: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_06 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_06: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_06: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_07 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_07: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_07: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_08 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_08: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_08: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_09 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_09: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_09: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_10 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_10: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_10: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_11 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_11: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_11: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_12 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_12: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_12: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_13 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_13: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_13: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_14 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_14: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_14: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_15 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B0_15: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B0_15: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_00 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_00: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_00: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_01 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_01: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_01: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_02 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_02: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_02: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_03 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_03: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_03: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_04 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_04: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_04: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_05 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_05: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_05: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_06 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_06: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_06: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_07 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_07: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_07: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_08 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_08: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_08: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_09 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_09: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_09: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_10 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_10: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_10: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_11 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_11: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_11: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_12 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_12: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_12: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_13 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_13: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_13: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_14 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_14: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_14: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_15 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_AD_B1_15: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_AD_B1_15: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_00 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_00: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_00: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_01 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_01: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_01: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_02 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_02: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_02: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_03 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_03: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_03: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_04 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_04: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_04: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_05 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_05: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_05: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_06 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_06: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_06: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_07 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_07: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_07: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_08 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_08: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_08: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_09 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_09: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_09: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_10 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_10: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_10: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_11 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_11: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_11: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_12 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_12: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_12: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_13 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_13: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_13: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_14 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_14: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_14: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B0_15 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B0_15: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B0_15: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_00 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_00: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_00: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_01 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_01: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_01: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_02 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_02: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_02: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_03 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_03: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_03: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_04 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_04: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_04: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_05 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_05: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_05: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_06 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_06: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_06: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_07 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_07: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_07: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_08 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_08: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_08: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_09 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_09: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_09: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_10 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_10: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_10: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_11 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_11: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_11: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_12 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_12: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_12: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_13 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_13: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_13: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_14 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_14: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_14: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_B1_15 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_B1_15: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_B1_15: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_00 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B0_00: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B0_00: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_01 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B0_01: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B0_01: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_02 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B0_02: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B0_02: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_03 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B0_03: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B0_03: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_04 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B0_04: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B0_04: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_05 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B0_05: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B0_05: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_00 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_00: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_00: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_01 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_01: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_01: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_02 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_02: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_02: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_03 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_03: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_03: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_04 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_04: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_04: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_05 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_05: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_05: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_06 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_06: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_06: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_07 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_07: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_07: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_08 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_08: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_08: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_09 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_09: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_09: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_10 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_10: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_10: u32,
     #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_11 SW PAD Control Register"]
-    pub SW_PAD_CTL_PAD_GPIO_SD_B1_11: crate::RWRegister<u32>,
+    pub SW_PAD_CTL_PAD_GPIO_SD_B1_11: u32,
     #[doc = "ANATOP_USB_OTG1_ID_SELECT_INPUT DAISY Register"]
-    pub ANATOP_USB_OTG1_ID_SELECT_INPUT: crate::RWRegister<u32>,
+    pub ANATOP_USB_OTG1_ID_SELECT_INPUT: u32,
     #[doc = "ANATOP_USB_OTG2_ID_SELECT_INPUT DAISY Register"]
-    pub ANATOP_USB_OTG2_ID_SELECT_INPUT: crate::RWRegister<u32>,
+    pub ANATOP_USB_OTG2_ID_SELECT_INPUT: u32,
     #[doc = "CCM_PMIC_READY_SELECT_INPUT DAISY Register"]
-    pub CCM_PMIC_READY_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CCM_PMIC_READY_SELECT_INPUT: u32,
     #[doc = "CSI_DATA02_SELECT_INPUT DAISY Register"]
-    pub CSI_DATA02_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CSI_DATA02_SELECT_INPUT: u32,
     #[doc = "CSI_DATA03_SELECT_INPUT DAISY Register"]
-    pub CSI_DATA03_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CSI_DATA03_SELECT_INPUT: u32,
     #[doc = "CSI_DATA04_SELECT_INPUT DAISY Register"]
-    pub CSI_DATA04_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CSI_DATA04_SELECT_INPUT: u32,
     #[doc = "CSI_DATA05_SELECT_INPUT DAISY Register"]
-    pub CSI_DATA05_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CSI_DATA05_SELECT_INPUT: u32,
     #[doc = "CSI_DATA06_SELECT_INPUT DAISY Register"]
-    pub CSI_DATA06_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CSI_DATA06_SELECT_INPUT: u32,
     #[doc = "CSI_DATA07_SELECT_INPUT DAISY Register"]
-    pub CSI_DATA07_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CSI_DATA07_SELECT_INPUT: u32,
     #[doc = "CSI_DATA08_SELECT_INPUT DAISY Register"]
-    pub CSI_DATA08_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CSI_DATA08_SELECT_INPUT: u32,
     #[doc = "CSI_DATA09_SELECT_INPUT DAISY Register"]
-    pub CSI_DATA09_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CSI_DATA09_SELECT_INPUT: u32,
     #[doc = "CSI_HSYNC_SELECT_INPUT DAISY Register"]
-    pub CSI_HSYNC_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CSI_HSYNC_SELECT_INPUT: u32,
     #[doc = "CSI_PIXCLK_SELECT_INPUT DAISY Register"]
-    pub CSI_PIXCLK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CSI_PIXCLK_SELECT_INPUT: u32,
     #[doc = "CSI_VSYNC_SELECT_INPUT DAISY Register"]
-    pub CSI_VSYNC_SELECT_INPUT: crate::RWRegister<u32>,
+    pub CSI_VSYNC_SELECT_INPUT: u32,
     #[doc = "ENET_IPG_CLK_RMII_SELECT_INPUT DAISY Register"]
-    pub ENET_IPG_CLK_RMII_SELECT_INPUT: crate::RWRegister<u32>,
+    pub ENET_IPG_CLK_RMII_SELECT_INPUT: u32,
     #[doc = "ENET_MDIO_SELECT_INPUT DAISY Register"]
-    pub ENET_MDIO_SELECT_INPUT: crate::RWRegister<u32>,
+    pub ENET_MDIO_SELECT_INPUT: u32,
     #[doc = "ENET0_RXDATA_SELECT_INPUT DAISY Register"]
-    pub ENET0_RXDATA_SELECT_INPUT: crate::RWRegister<u32>,
+    pub ENET0_RXDATA_SELECT_INPUT: u32,
     #[doc = "ENET1_RXDATA_SELECT_INPUT DAISY Register"]
-    pub ENET1_RXDATA_SELECT_INPUT: crate::RWRegister<u32>,
+    pub ENET1_RXDATA_SELECT_INPUT: u32,
     #[doc = "ENET_RXEN_SELECT_INPUT DAISY Register"]
-    pub ENET_RXEN_SELECT_INPUT: crate::RWRegister<u32>,
+    pub ENET_RXEN_SELECT_INPUT: u32,
     #[doc = "ENET_RXERR_SELECT_INPUT DAISY Register"]
-    pub ENET_RXERR_SELECT_INPUT: crate::RWRegister<u32>,
+    pub ENET_RXERR_SELECT_INPUT: u32,
     #[doc = "ENET0_TIMER_SELECT_INPUT DAISY Register"]
-    pub ENET0_TIMER_SELECT_INPUT: crate::RWRegister<u32>,
+    pub ENET0_TIMER_SELECT_INPUT: u32,
     #[doc = "ENET_TXCLK_SELECT_INPUT DAISY Register"]
-    pub ENET_TXCLK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub ENET_TXCLK_SELECT_INPUT: u32,
     #[doc = "FLEXCAN1_RX_SELECT_INPUT DAISY Register"]
-    pub FLEXCAN1_RX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXCAN1_RX_SELECT_INPUT: u32,
     #[doc = "FLEXCAN2_RX_SELECT_INPUT DAISY Register"]
-    pub FLEXCAN2_RX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXCAN2_RX_SELECT_INPUT: u32,
     #[doc = "FLEXPWM1_PWMA3_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM1_PWMA3_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM1_PWMA3_SELECT_INPUT: u32,
     #[doc = "FLEXPWM1_PWMA0_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM1_PWMA0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM1_PWMA0_SELECT_INPUT: u32,
     #[doc = "FLEXPWM1_PWMA1_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM1_PWMA1_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM1_PWMA1_SELECT_INPUT: u32,
     #[doc = "FLEXPWM1_PWMA2_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM1_PWMA2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM1_PWMA2_SELECT_INPUT: u32,
     #[doc = "FLEXPWM1_PWMB3_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM1_PWMB3_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM1_PWMB3_SELECT_INPUT: u32,
     #[doc = "FLEXPWM1_PWMB0_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM1_PWMB0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM1_PWMB0_SELECT_INPUT: u32,
     #[doc = "FLEXPWM1_PWMB1_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM1_PWMB1_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM1_PWMB1_SELECT_INPUT: u32,
     #[doc = "FLEXPWM1_PWMB2_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM1_PWMB2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM1_PWMB2_SELECT_INPUT: u32,
     #[doc = "FLEXPWM2_PWMA3_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM2_PWMA3_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM2_PWMA3_SELECT_INPUT: u32,
     #[doc = "FLEXPWM2_PWMA0_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM2_PWMA0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM2_PWMA0_SELECT_INPUT: u32,
     #[doc = "FLEXPWM2_PWMA1_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM2_PWMA1_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM2_PWMA1_SELECT_INPUT: u32,
     #[doc = "FLEXPWM2_PWMA2_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM2_PWMA2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM2_PWMA2_SELECT_INPUT: u32,
     #[doc = "FLEXPWM2_PWMB3_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM2_PWMB3_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM2_PWMB3_SELECT_INPUT: u32,
     #[doc = "FLEXPWM2_PWMB0_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM2_PWMB0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM2_PWMB0_SELECT_INPUT: u32,
     #[doc = "FLEXPWM2_PWMB1_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM2_PWMB1_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM2_PWMB1_SELECT_INPUT: u32,
     #[doc = "FLEXPWM2_PWMB2_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM2_PWMB2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM2_PWMB2_SELECT_INPUT: u32,
     #[doc = "FLEXPWM4_PWMA0_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM4_PWMA0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM4_PWMA0_SELECT_INPUT: u32,
     #[doc = "FLEXPWM4_PWMA1_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM4_PWMA1_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM4_PWMA1_SELECT_INPUT: u32,
     #[doc = "FLEXPWM4_PWMA2_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM4_PWMA2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM4_PWMA2_SELECT_INPUT: u32,
     #[doc = "FLEXPWM4_PWMA3_SELECT_INPUT DAISY Register"]
-    pub FLEXPWM4_PWMA3_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXPWM4_PWMA3_SELECT_INPUT: u32,
     #[doc = "FLEXSPIA_DQS_SELECT_INPUT DAISY Register"]
-    pub FLEXSPIA_DQS_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXSPIA_DQS_SELECT_INPUT: u32,
     #[doc = "FLEXSPIA_DATA0_SELECT_INPUT DAISY Register"]
-    pub FLEXSPIA_DATA0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXSPIA_DATA0_SELECT_INPUT: u32,
     #[doc = "FLEXSPIA_DATA1_SELECT_INPUT DAISY Register"]
-    pub FLEXSPIA_DATA1_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXSPIA_DATA1_SELECT_INPUT: u32,
     #[doc = "FLEXSPIA_DATA2_SELECT_INPUT DAISY Register"]
-    pub FLEXSPIA_DATA2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXSPIA_DATA2_SELECT_INPUT: u32,
     #[doc = "FLEXSPIA_DATA3_SELECT_INPUT DAISY Register"]
-    pub FLEXSPIA_DATA3_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXSPIA_DATA3_SELECT_INPUT: u32,
     #[doc = "FLEXSPIB_DATA0_SELECT_INPUT DAISY Register"]
-    pub FLEXSPIB_DATA0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXSPIB_DATA0_SELECT_INPUT: u32,
     #[doc = "FLEXSPIB_DATA1_SELECT_INPUT DAISY Register"]
-    pub FLEXSPIB_DATA1_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXSPIB_DATA1_SELECT_INPUT: u32,
     #[doc = "FLEXSPIB_DATA2_SELECT_INPUT DAISY Register"]
-    pub FLEXSPIB_DATA2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXSPIB_DATA2_SELECT_INPUT: u32,
     #[doc = "FLEXSPIB_DATA3_SELECT_INPUT DAISY Register"]
-    pub FLEXSPIB_DATA3_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXSPIB_DATA3_SELECT_INPUT: u32,
     #[doc = "FLEXSPIA_SCK_SELECT_INPUT DAISY Register"]
-    pub FLEXSPIA_SCK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub FLEXSPIA_SCK_SELECT_INPUT: u32,
     #[doc = "LPI2C1_SCL_SELECT_INPUT DAISY Register"]
-    pub LPI2C1_SCL_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPI2C1_SCL_SELECT_INPUT: u32,
     #[doc = "LPI2C1_SDA_SELECT_INPUT DAISY Register"]
-    pub LPI2C1_SDA_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPI2C1_SDA_SELECT_INPUT: u32,
     #[doc = "LPI2C2_SCL_SELECT_INPUT DAISY Register"]
-    pub LPI2C2_SCL_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPI2C2_SCL_SELECT_INPUT: u32,
     #[doc = "LPI2C2_SDA_SELECT_INPUT DAISY Register"]
-    pub LPI2C2_SDA_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPI2C2_SDA_SELECT_INPUT: u32,
     #[doc = "LPI2C3_SCL_SELECT_INPUT DAISY Register"]
-    pub LPI2C3_SCL_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPI2C3_SCL_SELECT_INPUT: u32,
     #[doc = "LPI2C3_SDA_SELECT_INPUT DAISY Register"]
-    pub LPI2C3_SDA_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPI2C3_SDA_SELECT_INPUT: u32,
     #[doc = "LPI2C4_SCL_SELECT_INPUT DAISY Register"]
-    pub LPI2C4_SCL_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPI2C4_SCL_SELECT_INPUT: u32,
     #[doc = "LPI2C4_SDA_SELECT_INPUT DAISY Register"]
-    pub LPI2C4_SDA_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPI2C4_SDA_SELECT_INPUT: u32,
     #[doc = "LPSPI1_PCS0_SELECT_INPUT DAISY Register"]
-    pub LPSPI1_PCS0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI1_PCS0_SELECT_INPUT: u32,
     #[doc = "LPSPI1_SCK_SELECT_INPUT DAISY Register"]
-    pub LPSPI1_SCK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI1_SCK_SELECT_INPUT: u32,
     #[doc = "LPSPI1_SDI_SELECT_INPUT DAISY Register"]
-    pub LPSPI1_SDI_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI1_SDI_SELECT_INPUT: u32,
     #[doc = "LPSPI1_SDO_SELECT_INPUT DAISY Register"]
-    pub LPSPI1_SDO_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI1_SDO_SELECT_INPUT: u32,
     #[doc = "LPSPI2_PCS0_SELECT_INPUT DAISY Register"]
-    pub LPSPI2_PCS0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI2_PCS0_SELECT_INPUT: u32,
     #[doc = "LPSPI2_SCK_SELECT_INPUT DAISY Register"]
-    pub LPSPI2_SCK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI2_SCK_SELECT_INPUT: u32,
     #[doc = "LPSPI2_SDI_SELECT_INPUT DAISY Register"]
-    pub LPSPI2_SDI_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI2_SDI_SELECT_INPUT: u32,
     #[doc = "LPSPI2_SDO_SELECT_INPUT DAISY Register"]
-    pub LPSPI2_SDO_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI2_SDO_SELECT_INPUT: u32,
     #[doc = "LPSPI3_PCS0_SELECT_INPUT DAISY Register"]
-    pub LPSPI3_PCS0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI3_PCS0_SELECT_INPUT: u32,
     #[doc = "LPSPI3_SCK_SELECT_INPUT DAISY Register"]
-    pub LPSPI3_SCK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI3_SCK_SELECT_INPUT: u32,
     #[doc = "LPSPI3_SDI_SELECT_INPUT DAISY Register"]
-    pub LPSPI3_SDI_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI3_SDI_SELECT_INPUT: u32,
     #[doc = "LPSPI3_SDO_SELECT_INPUT DAISY Register"]
-    pub LPSPI3_SDO_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI3_SDO_SELECT_INPUT: u32,
     #[doc = "LPSPI4_PCS0_SELECT_INPUT DAISY Register"]
-    pub LPSPI4_PCS0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI4_PCS0_SELECT_INPUT: u32,
     #[doc = "LPSPI4_SCK_SELECT_INPUT DAISY Register"]
-    pub LPSPI4_SCK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI4_SCK_SELECT_INPUT: u32,
     #[doc = "LPSPI4_SDI_SELECT_INPUT DAISY Register"]
-    pub LPSPI4_SDI_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI4_SDI_SELECT_INPUT: u32,
     #[doc = "LPSPI4_SDO_SELECT_INPUT DAISY Register"]
-    pub LPSPI4_SDO_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPSPI4_SDO_SELECT_INPUT: u32,
     #[doc = "LPUART2_RX_SELECT_INPUT DAISY Register"]
-    pub LPUART2_RX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART2_RX_SELECT_INPUT: u32,
     #[doc = "LPUART2_TX_SELECT_INPUT DAISY Register"]
-    pub LPUART2_TX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART2_TX_SELECT_INPUT: u32,
     #[doc = "LPUART3_CTS_B_SELECT_INPUT DAISY Register"]
-    pub LPUART3_CTS_B_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART3_CTS_B_SELECT_INPUT: u32,
     #[doc = "LPUART3_RX_SELECT_INPUT DAISY Register"]
-    pub LPUART3_RX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART3_RX_SELECT_INPUT: u32,
     #[doc = "LPUART3_TX_SELECT_INPUT DAISY Register"]
-    pub LPUART3_TX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART3_TX_SELECT_INPUT: u32,
     #[doc = "LPUART4_RX_SELECT_INPUT DAISY Register"]
-    pub LPUART4_RX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART4_RX_SELECT_INPUT: u32,
     #[doc = "LPUART4_TX_SELECT_INPUT DAISY Register"]
-    pub LPUART4_TX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART4_TX_SELECT_INPUT: u32,
     #[doc = "LPUART5_RX_SELECT_INPUT DAISY Register"]
-    pub LPUART5_RX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART5_RX_SELECT_INPUT: u32,
     #[doc = "LPUART5_TX_SELECT_INPUT DAISY Register"]
-    pub LPUART5_TX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART5_TX_SELECT_INPUT: u32,
     #[doc = "LPUART6_RX_SELECT_INPUT DAISY Register"]
-    pub LPUART6_RX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART6_RX_SELECT_INPUT: u32,
     #[doc = "LPUART6_TX_SELECT_INPUT DAISY Register"]
-    pub LPUART6_TX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART6_TX_SELECT_INPUT: u32,
     #[doc = "LPUART7_RX_SELECT_INPUT DAISY Register"]
-    pub LPUART7_RX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART7_RX_SELECT_INPUT: u32,
     #[doc = "LPUART7_TX_SELECT_INPUT DAISY Register"]
-    pub LPUART7_TX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART7_TX_SELECT_INPUT: u32,
     #[doc = "LPUART8_RX_SELECT_INPUT DAISY Register"]
-    pub LPUART8_RX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART8_RX_SELECT_INPUT: u32,
     #[doc = "LPUART8_TX_SELECT_INPUT DAISY Register"]
-    pub LPUART8_TX_SELECT_INPUT: crate::RWRegister<u32>,
+    pub LPUART8_TX_SELECT_INPUT: u32,
     #[doc = "NMI_GLUE_NMI_SELECT_INPUT DAISY Register"]
-    pub NMI_SELECT_INPUT: crate::RWRegister<u32>,
+    pub NMI_SELECT_INPUT: u32,
     #[doc = "QTIMER2_TIMER0_SELECT_INPUT DAISY Register"]
-    pub QTIMER2_TIMER0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub QTIMER2_TIMER0_SELECT_INPUT: u32,
     #[doc = "QTIMER2_TIMER1_SELECT_INPUT DAISY Register"]
-    pub QTIMER2_TIMER1_SELECT_INPUT: crate::RWRegister<u32>,
+    pub QTIMER2_TIMER1_SELECT_INPUT: u32,
     #[doc = "QTIMER2_TIMER2_SELECT_INPUT DAISY Register"]
-    pub QTIMER2_TIMER2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub QTIMER2_TIMER2_SELECT_INPUT: u32,
     #[doc = "QTIMER2_TIMER3_SELECT_INPUT DAISY Register"]
-    pub QTIMER2_TIMER3_SELECT_INPUT: crate::RWRegister<u32>,
+    pub QTIMER2_TIMER3_SELECT_INPUT: u32,
     #[doc = "QTIMER3_TIMER0_SELECT_INPUT DAISY Register"]
-    pub QTIMER3_TIMER0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub QTIMER3_TIMER0_SELECT_INPUT: u32,
     #[doc = "QTIMER3_TIMER1_SELECT_INPUT DAISY Register"]
-    pub QTIMER3_TIMER1_SELECT_INPUT: crate::RWRegister<u32>,
+    pub QTIMER3_TIMER1_SELECT_INPUT: u32,
     #[doc = "QTIMER3_TIMER2_SELECT_INPUT DAISY Register"]
-    pub QTIMER3_TIMER2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub QTIMER3_TIMER2_SELECT_INPUT: u32,
     #[doc = "QTIMER3_TIMER3_SELECT_INPUT DAISY Register"]
-    pub QTIMER3_TIMER3_SELECT_INPUT: crate::RWRegister<u32>,
+    pub QTIMER3_TIMER3_SELECT_INPUT: u32,
     #[doc = "SAI1_MCLK2_SELECT_INPUT DAISY Register"]
-    pub SAI1_MCLK2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI1_MCLK2_SELECT_INPUT: u32,
     #[doc = "SAI1_RX_BCLK_SELECT_INPUT DAISY Register"]
-    pub SAI1_RX_BCLK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI1_RX_BCLK_SELECT_INPUT: u32,
     #[doc = "SAI1_RX_DATA0_SELECT_INPUT DAISY Register"]
-    pub SAI1_RX_DATA0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI1_RX_DATA0_SELECT_INPUT: u32,
     #[doc = "SAI1_RX_DATA1_SELECT_INPUT DAISY Register"]
-    pub SAI1_RX_DATA1_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI1_RX_DATA1_SELECT_INPUT: u32,
     #[doc = "SAI1_RX_DATA2_SELECT_INPUT DAISY Register"]
-    pub SAI1_RX_DATA2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI1_RX_DATA2_SELECT_INPUT: u32,
     #[doc = "SAI1_RX_DATA3_SELECT_INPUT DAISY Register"]
-    pub SAI1_RX_DATA3_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI1_RX_DATA3_SELECT_INPUT: u32,
     #[doc = "SAI1_RX_SYNC_SELECT_INPUT DAISY Register"]
-    pub SAI1_RX_SYNC_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI1_RX_SYNC_SELECT_INPUT: u32,
     #[doc = "SAI1_TX_BCLK_SELECT_INPUT DAISY Register"]
-    pub SAI1_TX_BCLK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI1_TX_BCLK_SELECT_INPUT: u32,
     #[doc = "SAI1_TX_SYNC_SELECT_INPUT DAISY Register"]
-    pub SAI1_TX_SYNC_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI1_TX_SYNC_SELECT_INPUT: u32,
     #[doc = "SAI2_MCLK2_SELECT_INPUT DAISY Register"]
-    pub SAI2_MCLK2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI2_MCLK2_SELECT_INPUT: u32,
     #[doc = "SAI2_RX_BCLK_SELECT_INPUT DAISY Register"]
-    pub SAI2_RX_BCLK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI2_RX_BCLK_SELECT_INPUT: u32,
     #[doc = "SAI2_RX_DATA0_SELECT_INPUT DAISY Register"]
-    pub SAI2_RX_DATA0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI2_RX_DATA0_SELECT_INPUT: u32,
     #[doc = "SAI2_RX_SYNC_SELECT_INPUT DAISY Register"]
-    pub SAI2_RX_SYNC_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI2_RX_SYNC_SELECT_INPUT: u32,
     #[doc = "SAI2_TX_BCLK_SELECT_INPUT DAISY Register"]
-    pub SAI2_TX_BCLK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI2_TX_BCLK_SELECT_INPUT: u32,
     #[doc = "SAI2_TX_SYNC_SELECT_INPUT DAISY Register"]
-    pub SAI2_TX_SYNC_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SAI2_TX_SYNC_SELECT_INPUT: u32,
     #[doc = "SPDIF_IN_SELECT_INPUT DAISY Register"]
-    pub SPDIF_IN_SELECT_INPUT: crate::RWRegister<u32>,
+    pub SPDIF_IN_SELECT_INPUT: u32,
     #[doc = "USB_OTG2_OC_SELECT_INPUT DAISY Register"]
-    pub USB_OTG2_OC_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USB_OTG2_OC_SELECT_INPUT: u32,
     #[doc = "USB_OTG1_OC_SELECT_INPUT DAISY Register"]
-    pub USB_OTG1_OC_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USB_OTG1_OC_SELECT_INPUT: u32,
     #[doc = "USDHC1_CD_B_SELECT_INPUT DAISY Register"]
-    pub USDHC1_CD_B_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC1_CD_B_SELECT_INPUT: u32,
     #[doc = "USDHC1_WP_SELECT_INPUT DAISY Register"]
-    pub USDHC1_WP_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC1_WP_SELECT_INPUT: u32,
     #[doc = "USDHC2_CLK_SELECT_INPUT DAISY Register"]
-    pub USDHC2_CLK_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_CLK_SELECT_INPUT: u32,
     #[doc = "USDHC2_CD_B_SELECT_INPUT DAISY Register"]
-    pub USDHC2_CD_B_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_CD_B_SELECT_INPUT: u32,
     #[doc = "USDHC2_CMD_SELECT_INPUT DAISY Register"]
-    pub USDHC2_CMD_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_CMD_SELECT_INPUT: u32,
     #[doc = "USDHC2_DATA0_SELECT_INPUT DAISY Register"]
-    pub USDHC2_DATA0_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_DATA0_SELECT_INPUT: u32,
     #[doc = "USDHC2_DATA1_SELECT_INPUT DAISY Register"]
-    pub USDHC2_DATA1_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_DATA1_SELECT_INPUT: u32,
     #[doc = "USDHC2_DATA2_SELECT_INPUT DAISY Register"]
-    pub USDHC2_DATA2_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_DATA2_SELECT_INPUT: u32,
     #[doc = "USDHC2_DATA3_SELECT_INPUT DAISY Register"]
-    pub USDHC2_DATA3_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_DATA3_SELECT_INPUT: u32,
     #[doc = "USDHC2_DATA4_SELECT_INPUT DAISY Register"]
-    pub USDHC2_DATA4_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_DATA4_SELECT_INPUT: u32,
     #[doc = "USDHC2_DATA5_SELECT_INPUT DAISY Register"]
-    pub USDHC2_DATA5_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_DATA5_SELECT_INPUT: u32,
     #[doc = "USDHC2_DATA6_SELECT_INPUT DAISY Register"]
-    pub USDHC2_DATA6_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_DATA6_SELECT_INPUT: u32,
     #[doc = "USDHC2_DATA7_SELECT_INPUT DAISY Register"]
-    pub USDHC2_DATA7_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_DATA7_SELECT_INPUT: u32,
     #[doc = "USDHC2_WP_SELECT_INPUT DAISY Register"]
-    pub USDHC2_WP_SELECT_INPUT: crate::RWRegister<u32>,
+    pub USDHC2_WP_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN02_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN02_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN02_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN03_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN03_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN03_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN04_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN04_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN04_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN05_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN05_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN05_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN06_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN06_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN06_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN07_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN07_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN07_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN08_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN08_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN08_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN09_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN09_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN09_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN17_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN17_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN17_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN18_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN18_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN18_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN20_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN20_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN20_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN22_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN22_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN22_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN23_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN23_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN23_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN24_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN24_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN24_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN14_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN14_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN14_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN15_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN15_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN15_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN16_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN16_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN16_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN25_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN25_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN25_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN19_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN19_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN19_SELECT_INPUT: u32,
     #[doc = "XBAR1_IN23_SELECT_INPUT DAISY Register"]
-    pub XBAR1_IN21_SELECT_INPUT: crate::RWRegister<u32>,
+    pub XBAR1_IN21_SELECT_INPUT: u32,
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_00 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_00 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA00 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA00 of instance: flexpwm4"]
@@ -829,30 +830,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_00 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO00 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_00"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_01 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_01 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA01 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMB00 of instance: flexpwm4"]
@@ -866,30 +872,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_01 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO01 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_01"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_02 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_02 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA02 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA01 of instance: flexpwm4"]
@@ -903,30 +914,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_02 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO02 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_02"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_03 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_03 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA03 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMB01 of instance: flexpwm4"]
@@ -940,30 +956,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_03 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO03 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_03"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_04 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_04 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA04 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA02 of instance: flexpwm4"]
@@ -977,30 +998,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_04 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO04 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_04"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_05 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_05 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA05 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMB02 of instance: flexpwm4"]
@@ -1014,30 +1040,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_05 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO05 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_05"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_06 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_06 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA06 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMA00 of instance: flexpwm2"]
@@ -1051,30 +1082,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_06 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO06 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_06"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_07 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_07 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA07 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMB00 of instance: flexpwm2"]
@@ -1088,30 +1124,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_07 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO07 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_07"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_08 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_08 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DM00 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMA01 of instance: flexpwm2"]
@@ -1125,30 +1166,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_08 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO08 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_08"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_09 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_09 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR00 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMB01 of instance: flexpwm2"]
@@ -1162,30 +1208,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_09 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO09 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_09"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_10 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_10 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR01 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMA02 of instance: flexpwm2"]
@@ -1199,30 +1250,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_10 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO10 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_10"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_11 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_11 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR02 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMB02 of instance: flexpwm2"]
@@ -1236,30 +1292,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_11 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO11 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_11"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_12 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_12 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR03 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_IN24 of instance: xbar1"]
@@ -1273,30 +1334,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_12 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO12 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_12"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_13 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_13 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR04 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_IN25 of instance: xbar1"]
@@ -1310,30 +1376,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_13 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO13 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_13"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_14 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_14 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR05 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT19 of instance: xbar1"]
@@ -1347,30 +1418,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_14 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO14 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_14"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_15 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_15 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR06 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_IN20 of instance: xbar1"]
@@ -1384,30 +1460,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_15 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO15 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_15"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_16 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_16 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR07 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_IN21 of instance: xbar1"]
@@ -1421,30 +1502,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_16 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO16 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_16"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_17 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_17 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR08 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA03 of instance: flexpwm4"]
@@ -1458,30 +1544,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_17 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO17 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_17"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_18 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_18 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR09 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMB03 of instance: flexpwm4"]
@@ -1497,30 +1588,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_18 {
             #[doc = "Select mux mode: ALT6 mux port: SNVS_VIO_5_CTL of instance: snvs_hp"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_18"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_19 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_19 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR11 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMA03 of instance: flexpwm2"]
@@ -1536,30 +1632,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_19 {
             #[doc = "Select mux mode: ALT6 mux port: SNVS_VIO_5 of instance: snvs_hp"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_19"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_20 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_20 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR12 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMB03 of instance: flexpwm2"]
@@ -1573,30 +1674,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_20 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO20 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_20"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_21 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_21 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_BA0 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMA03 of instance: flexpwm3"]
@@ -1610,30 +1716,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_21 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO21 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_21"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_22 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_22 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_BA1 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMB03 of instance: flexpwm3"]
@@ -1647,30 +1758,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_22 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO22 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_22"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_23 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_23 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_ADDR10 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA00 of instance: flexpwm1"]
@@ -1684,30 +1800,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_23 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO23 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_23"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_24 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_24 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_CAS of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB00 of instance: flexpwm1"]
@@ -1721,30 +1842,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_24 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO24 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_24"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_25 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_25 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_RAS of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA01 of instance: flexpwm1"]
@@ -1758,30 +1884,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_25 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO25 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_25"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_26 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_26 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_CLK of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB01 of instance: flexpwm1"]
@@ -1795,30 +1926,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_26 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO26 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_26"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_27 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_27 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_CKE of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA02 of instance: flexpwm1"]
@@ -1832,30 +1968,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_27 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO27 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_27"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_28 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_28 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_WE of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB02 of instance: flexpwm1"]
@@ -1869,30 +2010,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_28 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO28 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_28"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_29 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_29 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_CS0 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMA00 of instance: flexpwm3"]
@@ -1906,30 +2052,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_29 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO29 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_29"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_30 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_30 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA08 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMB00 of instance: flexpwm3"]
@@ -1943,30 +2094,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_30 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO30 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_30"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_31 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_31 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA09 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMA01 of instance: flexpwm3"]
@@ -1980,30 +2136,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_31 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO4_IO31 of instance: gpio4"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_31"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_32 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_32 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA10 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMB01 of instance: flexpwm3"]
@@ -2017,30 +2178,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_32 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO18 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_32"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_33 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_33 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA11 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMA02 of instance: flexpwm3"]
@@ -2054,30 +2220,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_33 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO19 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_33"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_34 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_34 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA12 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM3_PWMB02 of instance: flexpwm3"]
@@ -2091,30 +2262,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_34 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO20 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_34"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_35 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_35 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA13 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT18 of instance: xbar1"]
@@ -2130,30 +2306,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_35 {
             #[doc = "Select mux mode: ALT6 mux port: USDHC1_CD_B of instance: usdhc1"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_35"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_36 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_36 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA14 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_IN22 of instance: xbar1"]
@@ -2169,30 +2350,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_36 {
             #[doc = "Select mux mode: ALT6 mux port: USDHC1_WP of instance: usdhc1"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_36"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_37 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_37 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DATA15 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_IN23 of instance: xbar1"]
@@ -2208,30 +2394,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_37 {
             #[doc = "Select mux mode: ALT6 mux port: USDHC2_WP of instance: usdhc2"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_37"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_38 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_38 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DM01 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA03 of instance: flexpwm1"]
@@ -2247,30 +2438,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_38 {
             #[doc = "Select mux mode: ALT6 mux port: USDHC2_VSELECT of instance: usdhc2"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_38"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_39 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_39 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_DQS of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB03 of instance: flexpwm1"]
@@ -2286,30 +2482,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_39 {
             #[doc = "Select mux mode: ALT6 mux port: USDHC2_CD_B of instance: usdhc2"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_39"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_40 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_40 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_RDY of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: GPT2_CAPTURE2 of instance: gpt2"]
@@ -2325,30 +2526,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_40 {
             #[doc = "Select mux mode: ALT6 mux port: USDHC2_RESET_B of instance: usdhc2"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_40"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_EMC_41 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_EMC_41 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_CSX00 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: GPT2_CAPTURE1 of instance: gpt2"]
@@ -2364,30 +2570,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_EMC_41 {
             #[doc = "Select mux mode: ALT6 mux port: USDHC1_VSELECT of instance: usdhc1"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_EMC_41"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_00 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_00 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXPWM2_PWMA03 of instance: flexpwm2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT14 of instance: xbar1"]
@@ -2405,30 +2616,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_00 {
             #[doc = "Select mux mode: ALT7 mux port: LPSPI3_SCK of instance: lpspi3"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_00"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_01 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_01 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXPWM2_PWMB03 of instance: flexpwm2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT15 of instance: xbar1"]
@@ -2446,30 +2662,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_01 {
             #[doc = "Select mux mode: ALT7 mux port: LPSPI3_SDO of instance: lpspi3"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_01"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_02 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_02 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXCAN2_TX of instance: flexcan2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT16 of instance: xbar1"]
@@ -2487,30 +2708,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_02 {
             #[doc = "Select mux mode: ALT7 mux port: LPSPI3_SDI of instance: lpspi3"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_02"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_03 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_03 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXCAN2_RX of instance: flexcan2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT17 of instance: xbar1"]
@@ -2528,30 +2754,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_03 {
             #[doc = "Select mux mode: ALT7 mux port: LPSPI3_PCS0 of instance: lpspi3"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_03"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_04 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_04 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SRC_BOOT_MODE00 of instance: src"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: MQS_RIGHT of instance: mqs"]
@@ -2569,30 +2800,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_04 {
             #[doc = "Select mux mode: ALT7 mux port: LPSPI3_PCS1 of instance: lpspi3"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_04"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_05 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_05 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SRC_BOOT_MODE01 of instance: src"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: MQS_LEFT of instance: mqs"]
@@ -2610,30 +2846,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_05 {
             #[doc = "Select mux mode: ALT7 mux port: LPSPI3_PCS2 of instance: lpspi3"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_05"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_06 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_06 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: JTAG_TMS of instance: jtag_mux"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: GPT2_COMPARE1 of instance: gpt2"]
@@ -2651,30 +2892,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_06 {
             #[doc = "Select mux mode: ALT7 mux port: LPSPI3_PCS3 of instance: lpspi3"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_06"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_07 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_07 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: JTAG_TCK of instance: jtag_mux"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: GPT2_COMPARE2 of instance: gpt2"]
@@ -2692,30 +2938,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_07 {
             #[doc = "Select mux mode: ALT7 mux port: ENET_1588_EVENT3_OUT of instance: enet"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_07"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_08 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_08 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: JTAG_MOD of instance: jtag_mux"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: GPT2_COMPARE3 of instance: gpt2"]
@@ -2733,30 +2984,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_08 {
             #[doc = "Select mux mode: ALT7 mux port: ENET_1588_EVENT3_IN of instance: enet"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_08"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_09 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_09 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: JTAG_TDI of instance: jtag_mux"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM2_PWMA03 of instance: flexpwm2"]
@@ -2774,30 +3030,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_09 {
             #[doc = "Select mux mode: ALT7 mux port: GPT2_CLK of instance: gpt2"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_09"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_10 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_10 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: JTAG_TDO of instance: jtag_mux"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA03 of instance: flexpwm1"]
@@ -2815,30 +3076,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_10 {
             #[doc = "Select mux mode: ALT7 mux port: ENET_1588_EVENT0_OUT of instance: enet"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_10"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_11 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_11 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: JTAG_TRSTB of instance: jtag_mux"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB03 of instance: flexpwm1"]
@@ -2856,30 +3122,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_11 {
             #[doc = "Select mux mode: ALT7 mux port: ENET_1588_EVENT0_IN of instance: enet"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_11"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_12 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_12 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LPI2C4_SCL of instance: lpi2c4"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: CCM_PMIC_READY of instance: ccm"]
@@ -2897,30 +3168,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_12 {
             #[doc = "Select mux mode: ALT7 mux port: NMI_GLUE_NMI of instance: nmi_glue"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_12"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_13 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_13 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LPI2C4_SDA of instance: lpi2c4"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: GPT1_CLK of instance: gpt1"]
@@ -2938,30 +3214,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_13 {
             #[doc = "Select mux mode: ALT7 mux port: REF_CLK_24M of instance: anatop"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_13"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_14 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_14 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USB_OTG2_OC of instance: usb"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_IN24 of instance: xbar1"]
@@ -2977,30 +3258,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_14 {
             #[doc = "Select mux mode: ALT6 mux port: FLEXCAN2_TX of instance: flexcan2"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_14"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B0_15 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_15 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USB_OTG2_PWR of instance: usb"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_IN25 of instance: xbar1"]
@@ -3018,30 +3304,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B0_15 {
             #[doc = "Select mux mode: ALT7 mux port: WDOG1_WDOG_RST_B_DEB of instance: wdog1"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B0_15"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_00 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_00 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USB_OTG2_ID of instance: anatop"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER3_TIMER0 of instance: qtimer3"]
@@ -3059,30 +3350,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_00 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_ROW07 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_00"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_01 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_01 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USB_OTG1_PWR of instance: usb"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER3_TIMER1 of instance: qtimer3"]
@@ -3100,30 +3396,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_01 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_COL07 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_01"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_02 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_02 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USB_OTG1_ID of instance: anatop"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER3_TIMER2 of instance: qtimer3"]
@@ -3141,30 +3442,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_02 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_ROW06 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_02"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_03 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_03 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USB_OTG1_OC of instance: usb"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER3_TIMER3 of instance: qtimer3"]
@@ -3182,30 +3488,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_03 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_COL06 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_03"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_04 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_04 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIB_DATA03 of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: ENET_MDC of instance: enet"]
@@ -3223,30 +3534,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_04 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_ROW05 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_04"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_05 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_05 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIB_DATA02 of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: ENET_MDIO of instance: enet"]
@@ -3264,30 +3580,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_05 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_COL05 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_05"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_06 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_06 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIB_DATA01 of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: LPI2C3_SDA of instance: lpi2c3"]
@@ -3305,30 +3626,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_06 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_ROW04 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_06"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_07 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_07 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIB_DATA00 of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: LPI2C3_SCL of instance: lpi2c3"]
@@ -3346,30 +3672,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_07 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_COL04 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_07"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_08 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_08 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIA_SS1_B of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA00 of instance: flexpwm4"]
@@ -3387,30 +3718,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_08 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_ROW03 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_08"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_09 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_09 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIA_DQS of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA01 of instance: flexpwm4"]
@@ -3428,30 +3764,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_09 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_COL03 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_09"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_10 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_10 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIA_DATA03 of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: WDOG1_B of instance: wdog1"]
@@ -3469,30 +3810,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_10 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_ROW02 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_10"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_11 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_11 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIA_DATA02 of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: EWM_OUT_B of instance: ewm"]
@@ -3510,30 +3856,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_11 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_COL02 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_11"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_12 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_12 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIA_DATA01 of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: ACMP_OUT00 of instance: acmp"]
@@ -3551,30 +3902,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_12 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_ROW01 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_12"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_13 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_13 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIA_DATA00 of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: ACMP_OUT01 of instance: acmp"]
@@ -3592,30 +3948,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_13 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_COL01 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_13"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_14 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_14 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIA_SCLK of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: ACMP_OUT02 of instance: acmp"]
@@ -3633,30 +3994,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_14 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_ROW00 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_14"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_AD_B1_15 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_15 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: FLEXSPIA_SS0_B of instance: flexspi"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: ACMP_OUT03 of instance: acmp"]
@@ -3674,30 +4040,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_AD_B1_15 {
             #[doc = "Select mux mode: ALT7 mux port: KPP_COL00 of instance: kpp"]
             pub const ALT7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_AD_B1_15"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_00 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_00 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_CLK of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER1_TIMER0 of instance: qtimer1"]
@@ -3713,30 +4084,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_00 {
             #[doc = "Select mux mode: ALT6 mux port: SEMC_CSX01 of instance: semc"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_00"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_01 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_01 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_ENABLE of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER1_TIMER1 of instance: qtimer1"]
@@ -3752,30 +4128,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_01 {
             #[doc = "Select mux mode: ALT6 mux port: SEMC_CSX02 of instance: semc"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_01"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_02 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_02 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_HSYNC of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER1_TIMER2 of instance: qtimer1"]
@@ -3791,30 +4172,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_02 {
             #[doc = "Select mux mode: ALT6 mux port: SEMC_CSX03 of instance: semc"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_02"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_03 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_03 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_VSYNC of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER2_TIMER0 of instance: qtimer2"]
@@ -3830,30 +4216,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_03 {
             #[doc = "Select mux mode: ALT6 mux port: WDOG2_RESET_B_DEB of instance: wdog2"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_03"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_04 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_04 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA00 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER2_TIMER1 of instance: qtimer2"]
@@ -3869,30 +4260,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_04 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG00 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_04"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_05 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_05 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA01 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER2_TIMER2 of instance: qtimer2"]
@@ -3908,30 +4304,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_05 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG01 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_05"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_06 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_06 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA02 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER3_TIMER0 of instance: qtimer3"]
@@ -3947,30 +4348,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_06 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG02 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_06"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_07 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_07 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA03 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER3_TIMER1 of instance: qtimer3"]
@@ -3986,30 +4392,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_07 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG03 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_07"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_08 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_08 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA04 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER3_TIMER2 of instance: qtimer3"]
@@ -4025,30 +4436,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_08 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG04 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_08"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_09 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_09 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA05 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER4_TIMER0 of instance: qtimer4"]
@@ -4064,30 +4480,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_09 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG05 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_09"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_10 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_10 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA06 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER4_TIMER1 of instance: qtimer4"]
@@ -4103,30 +4524,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_10 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG06 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_10"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_11 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_11 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA07 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER4_TIMER2 of instance: qtimer4"]
@@ -4142,30 +4568,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_11 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG07 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_11"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_12 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_12 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA08 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT10 of instance: xbar1"]
@@ -4181,30 +4612,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_12 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG08 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_12"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_13 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_13 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA09 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT11 of instance: xbar1"]
@@ -4220,30 +4656,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_13 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG09 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_13"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_14 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_14 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA10 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT12 of instance: xbar1"]
@@ -4259,30 +4700,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_14 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG10 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_14"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B0_15 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B0_15 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA11 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT13 of instance: xbar1"]
@@ -4298,30 +4744,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B0_15 {
             #[doc = "Select mux mode: ALT6 mux port: SRC_BOOT_CFG11 of instance: src"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B0_15"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_00 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_00 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA12 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT14 of instance: xbar1"]
@@ -4337,30 +4788,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_00 {
             #[doc = "Select mux mode: ALT6 mux port: FLEXPWM1_PWMA03 of instance: flexpwm1"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_00"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_01 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_01 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA13 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT15 of instance: xbar1"]
@@ -4376,30 +4832,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_01 {
             #[doc = "Select mux mode: ALT6 mux port: FLEXPWM1_PWMB03 of instance: flexpwm1"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_01"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_02 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_02 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA14 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT16 of instance: xbar1"]
@@ -4415,30 +4876,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_02 {
             #[doc = "Select mux mode: ALT6 mux port: FLEXPWM2_PWMA03 of instance: flexpwm2"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_02"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_03 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_03 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA15 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: XBAR1_INOUT17 of instance: xbar1"]
@@ -4454,30 +4920,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_03 {
             #[doc = "Select mux mode: ALT6 mux port: FLEXPWM2_PWMB03 of instance: flexpwm2"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_03"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_04 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_04 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA16 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: LPSPI4_PCS0 of instance: lpspi4"]
@@ -4491,30 +4962,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_04 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO20 of instance: gpio2"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_04"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_05 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_05 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA17 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: LPSPI4_SDI of instance: lpspi4"]
@@ -4528,30 +5004,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_05 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO21 of instance: gpio2"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_05"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_06 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_06 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA18 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: LPSPI4_SDO of instance: lpspi4"]
@@ -4565,30 +5046,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_06 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO22 of instance: gpio2"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_06"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_07 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_07 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA19 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: LPSPI4_SCK of instance: lpspi4"]
@@ -4602,30 +5088,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_07 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO2_IO23 of instance: gpio2"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_07"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_08 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_08 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA20 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER1_TIMER3 of instance: qtimer1"]
@@ -4641,30 +5132,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_08 {
             #[doc = "Select mux mode: ALT6 mux port: FLEXCAN2_TX of instance: flexcan2"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_08"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_09 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_09 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA21 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER2_TIMER3 of instance: qtimer2"]
@@ -4680,30 +5176,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_09 {
             #[doc = "Select mux mode: ALT6 mux port: FLEXCAN2_RX of instance: flexcan2"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_09"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_10 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_10 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA22 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER3_TIMER3 of instance: qtimer3"]
@@ -4719,30 +5220,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_10 {
             #[doc = "Select mux mode: ALT6 mux port: ENET_REF_CLK of instance: enet"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_10"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_11 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_11 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: LCD_DATA23 of instance: lcdif"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: QTIMER4_TIMER3 of instance: qtimer4"]
@@ -4758,30 +5264,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_11 {
             #[doc = "Select mux mode: ALT6 mux port: LPSPI4_PCS3 of instance: lpspi4"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_11"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_12 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_12 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT1 mux port: LPUART5_TX of instance: lpuart5"]
             pub const ALT1: u32 = 0x01;
             #[doc = "Select mux mode: ALT2 mux port: CSI_PIXCLK of instance: csi"]
@@ -4795,30 +5306,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_12 {
             #[doc = "Select mux mode: ALT6 mux port: USDHC1_CD_B of instance: usdhc1"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_12"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_13 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_13 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: WDOG1_B of instance: wdog1"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: LPUART5_RX of instance: lpuart5"]
@@ -4834,30 +5350,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_13 {
             #[doc = "Select mux mode: ALT6 mux port: USDHC1_WP of instance: usdhc1"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_13"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_14 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_14 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: ENET_MDC of instance: enet"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA02 of instance: flexpwm4"]
@@ -4873,30 +5394,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_14 {
             #[doc = "Select mux mode: ALT6 mux port: USDHC1_VSELECT of instance: usdhc1"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_14"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_B1_15 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_B1_15 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: ENET_MDIO of instance: enet"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM4_PWMA03 of instance: flexpwm4"]
@@ -4912,30 +5438,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_B1_15 {
             #[doc = "Select mux mode: ALT6 mux port: USDHC1_RESET_B of instance: usdhc1"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_B1_15"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_00 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_00 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC1_CMD of instance: usdhc1"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA00 of instance: flexpwm1"]
@@ -4951,30 +5482,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_00 {
             #[doc = "Select mux mode: ALT6 mux port: FLEXSPIA_SS1_B of instance: flexspi"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B0_00"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_01 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_01 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC1_CLK of instance: usdhc1"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB00 of instance: flexpwm1"]
@@ -4990,30 +5526,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_01 {
             #[doc = "Select mux mode: ALT6 mux port: FLEXSPIB_SS1_B of instance: flexspi"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B0_01"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_02 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_02 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC1_DATA0 of instance: usdhc1"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA01 of instance: flexpwm1"]
@@ -5027,30 +5568,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_02 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO14 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B0_02"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_03 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_03 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC1_DATA1 of instance: usdhc1"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB01 of instance: flexpwm1"]
@@ -5064,30 +5610,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_03 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO15 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B0_03"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_04 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_04 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC1_DATA2 of instance: usdhc1"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMA02 of instance: flexpwm1"]
@@ -5103,30 +5654,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_04 {
             #[doc = "Select mux mode: ALT6 mux port: CCM_CLKO1 of instance: ccm"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B0_04"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B0_05 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_05 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC1_DATA3 of instance: usdhc1"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXPWM1_PWMB02 of instance: flexpwm1"]
@@ -5142,30 +5698,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B0_05 {
             #[doc = "Select mux mode: ALT6 mux port: CCM_CLKO2 of instance: ccm"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B0_05"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_00 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_00 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA3 of instance: usdhc2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIB_DATA03 of instance: flexspi"]
@@ -5179,30 +5740,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_00 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO00 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_00"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_01 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_01 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA2 of instance: usdhc2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIB_DATA02 of instance: flexspi"]
@@ -5216,30 +5782,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_01 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO01 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_01"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_02 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_02 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA1 of instance: usdhc2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIB_DATA01 of instance: flexspi"]
@@ -5255,30 +5826,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_02 {
             #[doc = "Select mux mode: ALT6 mux port: CCM_WAIT of instance: ccm"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_02"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_03 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_03 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA0 of instance: usdhc2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIB_DATA00 of instance: flexspi"]
@@ -5294,30 +5870,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_03 {
             #[doc = "Select mux mode: ALT6 mux port: CCM_PMIC_READY of instance: ccm"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_03"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_04 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_04 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC2_CLK of instance: usdhc2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIB_SCLK of instance: flexspi"]
@@ -5333,30 +5914,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_04 {
             #[doc = "Select mux mode: ALT6 mux port: CCM_STOP of instance: ccm"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_04"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_05 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_05 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC2_CMD of instance: usdhc2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIA_DQS of instance: flexspi"]
@@ -5370,30 +5956,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_05 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO05 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_05"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_06 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_06 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC2_RESET_B of instance: usdhc2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIA_SS0_B of instance: flexspi"]
@@ -5407,30 +5998,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_06 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO06 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_06"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_07 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_07 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: SEMC_CSX01 of instance: semc"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIA_SCLK of instance: flexspi"]
@@ -5444,30 +6040,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_07 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO07 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_07"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_08 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_08 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA4 of instance: usdhc2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIA_DATA00 of instance: flexspi"]
@@ -5483,30 +6084,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_08 {
             #[doc = "Select mux mode: ALT6 mux port: SEMC_CSX02 of instance: semc"]
             pub const ALT6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_08"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_09 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_09 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA5 of instance: usdhc2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIA_DATA01 of instance: flexspi"]
@@ -5520,30 +6126,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_09 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO09 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_09"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_10 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_10 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA6 of instance: usdhc2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIA_DATA02 of instance: flexspi"]
@@ -5557,30 +6168,35 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_10 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO10 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_10"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_MUX_CTL_PAD_GPIO_SD_B1_11 SW MUX Control Register"]
 pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_11 {
+    pub use crate::RW as access;
     #[doc = "MUX Mode Select Field."]
     pub mod MUX_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select mux mode: ALT0 mux port: USDHC2_DATA7 of instance: usdhc2"]
             pub const ALT0: u32 = 0;
             #[doc = "Select mux mode: ALT1 mux port: FLEXSPIA_DATA03 of instance: flexspi"]
@@ -5594,43 +6210,50 @@ pub mod SW_MUX_CTL_PAD_GPIO_SD_B1_11 {
             #[doc = "Select mux mode: ALT5 mux port: GPIO3_IO11 of instance: gpio3"]
             pub const ALT5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Input On Field."]
     pub mod SION {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input Path is determined by functionality"]
             pub const DISABLED: u32 = 0;
             #[doc = "Force input path of pad GPIO_SD_B1_11"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_00 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_00 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -5648,14 +6271,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_00 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -5665,53 +6290,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_00 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -5721,43 +6354,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_00 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_01 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_01 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -5775,14 +6415,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_01 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -5792,53 +6434,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_01 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -5848,43 +6498,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_01 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_02 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_02 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -5902,14 +6559,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_02 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -5919,53 +6578,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_02 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -5975,43 +6642,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_02 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_03 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_03 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -6029,14 +6703,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_03 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -6046,53 +6722,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_03 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -6102,43 +6786,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_03 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_04 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_04 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -6156,14 +6847,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_04 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -6173,53 +6866,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_04 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -6229,43 +6930,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_04 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_05 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_05 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -6283,14 +6991,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_05 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -6300,53 +7010,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_05 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -6356,43 +7074,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_05 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_06 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_06 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -6410,14 +7135,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_06 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -6427,53 +7154,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_06 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -6483,43 +7218,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_06 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_07 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_07 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -6537,14 +7279,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_07 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -6554,53 +7298,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_07 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -6610,43 +7362,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_07 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_08 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_08 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -6664,14 +7423,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_08 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -6681,53 +7442,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_08 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -6737,43 +7506,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_08 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_09 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_09 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -6791,14 +7567,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_09 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -6808,53 +7586,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_09 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -6864,43 +7650,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_09 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_10 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_10 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -6918,14 +7711,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_10 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -6935,53 +7730,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_10 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -6991,43 +7794,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_10 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_11 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_11 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -7045,14 +7855,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_11 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -7062,53 +7874,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_11 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -7118,43 +7938,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_11 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_12 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_12 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -7172,14 +7999,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_12 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -7189,53 +8018,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_12 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -7245,43 +8082,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_12 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_13 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_13 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -7299,14 +8143,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_13 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -7316,53 +8162,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_13 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -7372,43 +8226,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_13 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_14 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_14 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -7426,14 +8287,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_14 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -7443,53 +8306,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_14 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -7499,43 +8370,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_14 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_15 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_15 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -7553,14 +8431,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_15 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -7570,53 +8450,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_15 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -7626,43 +8514,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_15 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_16 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_16 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -7680,14 +8575,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_16 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -7697,53 +8594,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_16 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -7753,43 +8658,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_16 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_17 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_17 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -7807,14 +8719,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_17 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -7824,53 +8738,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_17 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -7880,43 +8802,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_17 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_18 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_18 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -7934,14 +8863,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_18 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -7951,53 +8882,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_18 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -8007,43 +8946,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_18 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_19 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_19 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -8061,14 +9007,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_19 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -8078,53 +9026,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_19 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -8134,43 +9090,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_19 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_20 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_20 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -8188,14 +9151,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_20 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -8205,53 +9170,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_20 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -8261,43 +9234,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_20 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_21 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_21 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -8315,14 +9295,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_21 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -8332,53 +9314,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_21 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -8388,43 +9378,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_21 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_22 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_22 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -8442,14 +9439,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_22 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -8459,53 +9458,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_22 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -8515,43 +9522,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_22 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_23 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_23 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -8569,14 +9583,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_23 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -8586,53 +9602,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_23 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -8642,43 +9666,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_23 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_24 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_24 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -8696,14 +9727,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_24 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -8713,53 +9746,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_24 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -8769,43 +9810,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_24 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_25 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_25 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -8823,14 +9871,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_25 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -8840,53 +9890,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_25 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -8896,43 +9954,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_25 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_26 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_26 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -8950,14 +10015,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_26 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -8967,53 +10034,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_26 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -9023,43 +10098,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_26 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_27 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_27 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -9077,14 +10159,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_27 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -9094,53 +10178,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_27 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -9150,43 +10242,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_27 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_28 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_28 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -9204,14 +10303,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_28 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -9221,53 +10322,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_28 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -9277,43 +10386,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_28 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_29 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_29 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -9331,14 +10447,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_29 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -9348,53 +10466,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_29 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -9404,43 +10530,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_29 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_30 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_30 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -9458,14 +10591,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_30 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -9475,53 +10610,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_30 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -9531,43 +10674,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_30 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_31 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_31 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -9585,14 +10735,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_31 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -9602,53 +10754,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_31 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -9658,43 +10818,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_31 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_32 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_32 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -9712,14 +10879,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_32 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -9729,53 +10898,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_32 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -9785,43 +10962,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_32 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_33 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_33 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -9839,14 +11023,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_33 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -9856,53 +11042,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_33 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -9912,43 +11106,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_33 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_34 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_34 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -9966,14 +11167,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_34 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -9983,53 +11186,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_34 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -10039,43 +11250,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_34 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_35 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_35 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -10093,14 +11311,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_35 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -10110,53 +11330,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_35 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -10166,43 +11394,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_35 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_36 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_36 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -10220,14 +11455,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_36 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -10237,53 +11474,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_36 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -10293,43 +11538,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_36 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_37 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_37 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -10347,14 +11599,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_37 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -10364,53 +11618,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_37 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -10420,43 +11682,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_37 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_38 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_38 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -10474,14 +11743,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_38 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -10491,53 +11762,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_38 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -10547,43 +11826,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_38 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_39 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_39 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -10601,14 +11887,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_39 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -10618,53 +11906,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_39 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -10674,43 +11970,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_39 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_40 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_40 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -10728,14 +12031,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_40 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -10745,53 +12050,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_40 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -10801,43 +12114,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_40 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_EMC_41 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_EMC_41 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -10855,14 +12175,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_41 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -10872,53 +12194,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_41 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -10928,43 +12258,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_EMC_41 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_00 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_00 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -10982,14 +12319,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_00 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -10999,53 +12338,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_00 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -11055,43 +12402,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_00 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_01 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_01 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -11109,14 +12463,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_01 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -11126,53 +12482,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_01 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -11182,43 +12546,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_01 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_02 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_02 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -11236,14 +12607,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_02 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -11253,53 +12626,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_02 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -11309,43 +12690,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_02 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_03 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_03 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -11363,14 +12751,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_03 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -11380,53 +12770,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_03 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -11436,43 +12834,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_03 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_04 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_04 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -11490,14 +12895,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_04 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -11507,53 +12914,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_04 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -11563,43 +12978,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_04 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_05 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_05 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -11617,14 +13039,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_05 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -11634,53 +13058,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_05 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -11690,43 +13122,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_05 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_06 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_06 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -11744,14 +13183,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_06 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -11761,53 +13202,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_06 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -11817,43 +13266,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_06 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_07 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_07 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -11871,14 +13327,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_07 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -11888,53 +13346,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_07 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -11944,43 +13410,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_07 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_08 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_08 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -11998,14 +13471,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_08 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -12015,53 +13490,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_08 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -12071,43 +13554,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_08 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_09 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_09 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -12125,14 +13615,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_09 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -12142,53 +13634,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_09 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -12198,43 +13698,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_09 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_10 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_10 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -12252,14 +13759,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_10 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -12269,53 +13778,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_10 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -12325,43 +13842,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_10 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_11 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_11 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -12379,14 +13903,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_11 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -12396,53 +13922,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_11 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -12452,43 +13986,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_11 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_12 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_12 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -12506,14 +14047,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_12 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -12523,53 +14066,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_12 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -12579,43 +14130,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_12 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_13 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_13 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -12633,14 +14191,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_13 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -12650,53 +14210,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_13 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -12706,43 +14274,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_13 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_14 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_14 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -12760,14 +14335,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_14 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -12777,53 +14354,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_14 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -12833,43 +14418,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_14 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B0_15 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_15 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -12887,14 +14479,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_15 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -12904,53 +14498,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_15 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -12960,43 +14562,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B0_15 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_00 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_00 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -13014,14 +14623,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_00 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -13031,53 +14642,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_00 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -13087,43 +14706,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_00 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_01 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_01 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -13141,14 +14767,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_01 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -13158,53 +14786,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_01 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -13214,43 +14850,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_01 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_02 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_02 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -13268,14 +14911,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_02 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -13285,53 +14930,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_02 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -13341,43 +14994,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_02 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_03 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_03 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -13395,14 +15055,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_03 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -13412,53 +15074,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_03 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -13468,43 +15138,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_03 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_04 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_04 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -13522,14 +15199,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_04 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -13539,53 +15218,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_04 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -13595,43 +15282,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_04 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_05 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_05 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -13649,14 +15343,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_05 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -13666,53 +15362,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_05 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -13722,43 +15426,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_05 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_06 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_06 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -13776,14 +15487,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_06 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -13793,53 +15506,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_06 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -13849,43 +15570,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_06 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_07 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_07 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -13903,14 +15631,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_07 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -13920,53 +15650,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_07 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -13976,43 +15714,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_07 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_08 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_08 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -14030,14 +15775,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_08 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -14047,53 +15794,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_08 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -14103,43 +15858,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_08 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_09 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_09 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -14157,14 +15919,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_09 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -14174,53 +15938,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_09 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -14230,43 +16002,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_09 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_10 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_10 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -14284,14 +16063,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_10 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -14301,53 +16082,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_10 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -14357,43 +16146,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_10 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_11 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_11 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -14411,14 +16207,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_11 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -14428,53 +16226,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_11 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -14484,43 +16290,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_11 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_12 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_12 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -14538,14 +16351,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_12 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -14555,53 +16370,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_12 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -14611,43 +16434,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_12 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_13 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_13 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -14665,14 +16495,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_13 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -14682,53 +16514,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_13 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -14738,43 +16578,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_13 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_14 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_14 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -14792,14 +16639,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_14 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -14809,53 +16658,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_14 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -14865,43 +16722,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_14 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_AD_B1_15 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_15 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -14919,14 +16783,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_15 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -14936,53 +16802,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_15 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -14992,43 +16866,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_AD_B1_15 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_00 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_00 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -15046,14 +16927,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_00 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -15063,53 +16946,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_00 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -15119,43 +17010,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_00 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_01 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_01 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -15173,14 +17071,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_01 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -15190,53 +17090,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_01 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -15246,43 +17154,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_01 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_02 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_02 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -15300,14 +17215,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_02 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -15317,53 +17234,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_02 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -15373,43 +17298,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_02 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_03 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_03 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -15427,14 +17359,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_03 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -15444,53 +17378,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_03 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -15500,43 +17442,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_03 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_04 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_04 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -15554,14 +17503,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_04 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -15571,53 +17522,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_04 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -15627,43 +17586,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_04 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_05 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_05 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -15681,14 +17647,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_05 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -15698,53 +17666,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_05 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -15754,43 +17730,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_05 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_06 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_06 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -15808,14 +17791,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_06 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -15825,53 +17810,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_06 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -15881,43 +17874,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_06 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_07 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_07 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -15935,14 +17935,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_07 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -15952,53 +17954,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_07 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -16008,43 +18018,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_07 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_08 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_08 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -16062,14 +18079,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_08 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -16079,53 +18098,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_08 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -16135,43 +18162,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_08 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_09 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_09 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -16189,14 +18223,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_09 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -16206,53 +18242,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_09 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -16262,43 +18306,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_09 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_10 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_10 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -16316,14 +18367,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_10 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -16333,53 +18386,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_10 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -16389,43 +18450,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_10 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_11 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_11 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -16443,14 +18511,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_11 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -16460,53 +18530,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_11 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -16516,43 +18594,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_11 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_12 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_12 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -16570,14 +18655,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_12 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -16587,53 +18674,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_12 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -16643,43 +18738,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_12 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_13 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_13 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -16697,14 +18799,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_13 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -16714,53 +18818,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_13 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -16770,43 +18882,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_13 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_14 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_14 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -16824,14 +18943,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_14 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -16841,53 +18962,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_14 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -16897,43 +19026,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_14 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B0_15 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B0_15 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -16951,14 +19087,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_15 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -16968,53 +19106,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_15 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -17024,43 +19170,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B0_15 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_00 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_00 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -17078,14 +19231,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_00 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -17095,53 +19250,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_00 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -17151,43 +19314,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_00 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_01 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_01 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -17205,14 +19375,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_01 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -17222,53 +19394,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_01 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -17278,43 +19458,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_01 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_02 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_02 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -17332,14 +19519,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_02 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -17349,53 +19538,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_02 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -17405,43 +19602,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_02 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_03 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_03 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -17459,14 +19663,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_03 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -17476,53 +19682,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_03 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -17532,43 +19746,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_03 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_04 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_04 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -17586,14 +19807,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_04 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -17603,53 +19826,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_04 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -17659,43 +19890,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_04 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_05 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_05 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -17713,14 +19951,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_05 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -17730,53 +19970,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_05 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -17786,43 +20034,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_05 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_06 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_06 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -17840,14 +20095,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_06 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -17857,53 +20114,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_06 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -17913,43 +20178,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_06 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_07 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_07 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -17967,14 +20239,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_07 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -17984,53 +20258,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_07 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -18040,43 +20322,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_07 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_08 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_08 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -18094,14 +20383,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_08 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -18111,53 +20402,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_08 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -18167,43 +20466,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_08 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_09 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_09 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -18221,14 +20527,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_09 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -18238,53 +20546,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_09 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -18294,43 +20610,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_09 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_10 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_10 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -18348,14 +20671,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_10 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -18365,53 +20690,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_10 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -18421,43 +20754,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_10 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_11 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_11 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -18475,14 +20815,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_11 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -18492,53 +20834,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_11 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -18548,43 +20898,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_11 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_12 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_12 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -18602,14 +20959,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_12 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -18619,53 +20978,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_12 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -18675,43 +21042,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_12 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_13 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_13 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -18729,14 +21103,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_13 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -18746,53 +21122,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_13 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -18802,43 +21186,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_13 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_14 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_14 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -18856,14 +21247,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_14 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -18873,53 +21266,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_14 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -18929,43 +21330,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_14 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_B1_15 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_B1_15 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -18983,14 +21391,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_15 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -19000,53 +21410,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_15 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -19056,43 +21474,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_B1_15 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_00 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_00 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -19110,14 +21535,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_00 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -19127,53 +21554,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_00 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -19183,43 +21618,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_00 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_01 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_01 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -19237,14 +21679,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_01 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -19254,53 +21698,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_01 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -19310,43 +21762,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_01 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_02 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_02 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -19364,14 +21823,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_02 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -19381,53 +21842,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_02 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -19437,43 +21906,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_02 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_03 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_03 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -19491,14 +21967,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_03 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -19508,53 +21986,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_03 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -19564,43 +22050,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_03 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_04 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_04 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -19618,14 +22111,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_04 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -19635,53 +22130,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_04 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -19691,43 +22194,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_04 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B0_05 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_05 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -19745,14 +22255,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_05 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -19762,53 +22274,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_05 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -19818,43 +22338,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B0_05 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_00 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_00 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -19872,14 +22399,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_00 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -19889,53 +22418,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_00 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -19945,43 +22482,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_00 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_01 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_01 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -19999,14 +22543,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_01 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -20016,53 +22562,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_01 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -20072,43 +22626,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_01 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_02 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_02 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -20126,14 +22687,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_02 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -20143,53 +22706,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_02 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -20199,43 +22770,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_02 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_03 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_03 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -20253,14 +22831,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_03 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -20270,53 +22850,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_03 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -20326,43 +22914,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_03 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_04 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_04 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -20380,14 +22975,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_04 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -20397,53 +22994,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_04 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -20453,43 +23058,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_04 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_05 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_05 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -20507,14 +23119,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_05 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -20524,53 +23138,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_05 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -20580,43 +23202,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_05 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_06 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_06 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -20634,14 +23263,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_06 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -20651,53 +23282,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_06 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -20707,43 +23346,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_06 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_07 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_07 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -20761,14 +23407,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_07 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -20778,53 +23426,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_07 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -20834,43 +23490,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_07 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_08 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_08 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -20888,14 +23551,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_08 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -20905,53 +23570,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_08 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -20961,43 +23634,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_08 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_09 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_09 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -21015,14 +23695,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_09 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -21032,53 +23714,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_09 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -21088,43 +23778,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_09 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_10 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_10 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -21142,14 +23839,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_10 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -21159,53 +23858,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_10 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -21215,43 +23922,50 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_10 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SW_PAD_CTL_PAD_GPIO_SD_B1_11 SW PAD Control Register"]
 pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_11 {
+    pub use crate::RW as access;
     #[doc = "Slew Rate Field"]
     pub mod SRE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Slow Slew Rate"]
             pub const SRE_0_SLOW_SLEW_RATE: u32 = 0;
             #[doc = "Fast Slew Rate"]
             pub const SRE_1_FAST_SLEW_RATE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Drive Strength Field"]
     pub mod DSE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "output driver disabled;"]
             pub const DSE_0_OUTPUT_DRIVER_DISABLED: u32 = 0;
             #[doc = "R0(150 Ohm @ 3.3V, 260 Ohm@1.8V)"]
@@ -21269,14 +23983,16 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_11 {
             #[doc = "R0/7"]
             pub const DSE_7_R0_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Speed Field"]
     pub mod SPEED {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "low(50MHz)"]
             pub const SPEED_0_LOW_50MHZ: u32 = 0;
             #[doc = "medium(100MHz)"]
@@ -21286,53 +24002,61 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_11 {
             #[doc = "max(200MHz)"]
             pub const SPEED_3_MAX_200MHZ: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Open Drain Enable Field"]
     pub mod ODE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Open Drain Disabled"]
             pub const ODE_0_OPEN_DRAIN_DISABLED: u32 = 0;
             #[doc = "Open Drain Enabled"]
             pub const ODE_1_OPEN_DRAIN_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Enable Field"]
     pub mod PKE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pull/Keeper Disabled"]
             pub const PKE_0_PULL_KEEPER_DISABLED: u32 = 0;
             #[doc = "Pull/Keeper Enabled"]
             pub const PKE_1_PULL_KEEPER_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull / Keep Select Field"]
     pub mod PUE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Keeper"]
             pub const PUE_0_KEEPER: u32 = 0;
             #[doc = "Pull"]
             pub const PUE_1_PULL: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pull Up / Down Config. Field"]
     pub mod PUS {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "100K Ohm Pull Down"]
             pub const PUS_0_100K_OHM_PULL_DOWN: u32 = 0;
             #[doc = "47K Ohm Pull Up"]
@@ -21342,62 +24066,73 @@ pub mod SW_PAD_CTL_PAD_GPIO_SD_B1_11 {
             #[doc = "22K Ohm Pull Up"]
             pub const PUS_3_22K_OHM_PULL_UP: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Hyst. Enable Field"]
     pub mod HYS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Hysteresis Disabled"]
             pub const HYS_0_HYSTERESIS_DISABLED: u32 = 0;
             #[doc = "Hysteresis Enabled"]
             pub const HYS_1_HYSTERESIS_ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ANATOP_USB_OTG1_ID_SELECT_INPUT DAISY Register"]
 pub mod ANATOP_USB_OTG1_ID_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_01 for Mode: ALT3"]
             pub const GPIO_AD_B0_01_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_02 for Mode: ALT0"]
             pub const GPIO_AD_B1_02_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ANATOP_USB_OTG2_ID_SELECT_INPUT DAISY Register"]
 pub mod ANATOP_USB_OTG2_ID_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_00 for Mode: ALT3"]
             pub const GPIO_AD_B0_00_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_00 for Mode: ALT0"]
             pub const GPIO_AD_B1_00_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CCM_PMIC_READY_SELECT_INPUT DAISY Register"]
 pub mod CCM_PMIC_READY_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_03 for Mode: ALT6"]
             pub const GPIO_SD_B1_03_ALT6: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_12 for Mode: ALT1"]
@@ -21409,145 +24144,172 @@ pub mod CCM_PMIC_READY_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_EMC_32 for Mode: ALT3"]
             pub const GPIO_EMC_32_ALT3: u32 = 0x04;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CSI_DATA02_SELECT_INPUT DAISY Register"]
 pub mod CSI_DATA02_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_15 for Mode: ALT4"]
             pub const GPIO_AD_B1_15_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_11 for Mode: ALT4"]
             pub const GPIO_AD_B0_11_ALT4: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CSI_DATA03_SELECT_INPUT DAISY Register"]
 pub mod CSI_DATA03_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_14 for Mode: ALT4"]
             pub const GPIO_AD_B1_14_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_10 for Mode: ALT4"]
             pub const GPIO_AD_B0_10_ALT4: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CSI_DATA04_SELECT_INPUT DAISY Register"]
 pub mod CSI_DATA04_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_13 for Mode: ALT4"]
             pub const GPIO_AD_B1_13_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_09 for Mode: ALT4"]
             pub const GPIO_AD_B0_09_ALT4: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CSI_DATA05_SELECT_INPUT DAISY Register"]
 pub mod CSI_DATA05_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_12 for Mode: ALT4"]
             pub const GPIO_AD_B1_12_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_08 for Mode: ALT4"]
             pub const GPIO_AD_B0_08_ALT4: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CSI_DATA06_SELECT_INPUT DAISY Register"]
 pub mod CSI_DATA06_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_11 for Mode: ALT4"]
             pub const GPIO_AD_B1_11_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_07 for Mode: ALT4"]
             pub const GPIO_AD_B0_07_ALT4: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CSI_DATA07_SELECT_INPUT DAISY Register"]
 pub mod CSI_DATA07_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_10 for Mode: ALT4"]
             pub const GPIO_AD_B1_10_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_06 for Mode: ALT4"]
             pub const GPIO_AD_B0_06_ALT4: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CSI_DATA08_SELECT_INPUT DAISY Register"]
 pub mod CSI_DATA08_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_09 for Mode: ALT4"]
             pub const GPIO_AD_B1_09_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_05 for Mode: ALT4"]
             pub const GPIO_AD_B0_05_ALT4: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CSI_DATA09_SELECT_INPUT DAISY Register"]
 pub mod CSI_DATA09_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_08 for Mode: ALT4"]
             pub const GPIO_AD_B1_08_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_04 for Mode: ALT4"]
             pub const GPIO_AD_B0_04_ALT4: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CSI_HSYNC_SELECT_INPUT DAISY Register"]
 pub mod CSI_HSYNC_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_15 for Mode: ALT4"]
             pub const GPIO_AD_B0_15_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_07 for Mode: ALT4"]
@@ -21555,33 +24317,39 @@ pub mod CSI_HSYNC_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_14 for Mode: ALT2"]
             pub const GPIO_B1_14_ALT2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CSI_PIXCLK_SELECT_INPUT DAISY Register"]
 pub mod CSI_PIXCLK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_04 for Mode: ALT4"]
             pub const GPIO_AD_B1_04_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_12 for Mode: ALT2"]
             pub const GPIO_B1_12_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "CSI_VSYNC_SELECT_INPUT DAISY Register"]
 pub mod CSI_VSYNC_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_14 for Mode: ALT4"]
             pub const GPIO_AD_B0_14_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_06 for Mode: ALT4"]
@@ -21589,33 +24357,39 @@ pub mod CSI_VSYNC_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_13 for Mode: ALT2"]
             pub const GPIO_B1_13_ALT2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ENET_IPG_CLK_RMII_SELECT_INPUT DAISY Register"]
 pub mod ENET_IPG_CLK_RMII_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_25 for Mode: ALT4"]
             pub const GPIO_EMC_25_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_10 for Mode: ALT6"]
             pub const GPIO_B1_10_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ENET_MDIO_SELECT_INPUT DAISY Register"]
 pub mod ENET_MDIO_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_05 for Mode: ALT1"]
             pub const GPIO_AD_B1_05_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_41 for Mode: ALT4"]
@@ -21623,81 +24397,96 @@ pub mod ENET_MDIO_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_15 for Mode: ALT0"]
             pub const GPIO_B1_15_ALT0: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ENET0_RXDATA_SELECT_INPUT DAISY Register"]
 pub mod ENET0_RXDATA_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_20 for Mode: ALT3"]
             pub const GPIO_EMC_20_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_04 for Mode: ALT3"]
             pub const GPIO_B1_04_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ENET1_RXDATA_SELECT_INPUT DAISY Register"]
 pub mod ENET1_RXDATA_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_19 for Mode: ALT3"]
             pub const GPIO_EMC_19_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_05 for Mode: ALT3"]
             pub const GPIO_B1_05_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ENET_RXEN_SELECT_INPUT DAISY Register"]
 pub mod ENET_RXEN_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_23 for Mode: ALT3"]
             pub const GPIO_EMC_23_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_06 for Mode: ALT3"]
             pub const GPIO_B1_06_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ENET_RXERR_SELECT_INPUT DAISY Register"]
 pub mod ENET_RXERR_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_26 for Mode: ALT3"]
             pub const GPIO_EMC_26_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_11 for Mode: ALT3"]
             pub const GPIO_B1_11_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ENET0_TIMER_SELECT_INPUT DAISY Register"]
 pub mod ENET0_TIMER_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_15 for Mode: ALT3"]
             pub const GPIO_AD_B0_15_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_11 for Mode: ALT7"]
@@ -21705,33 +24494,39 @@ pub mod ENET0_TIMER_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_12 for Mode: ALT3"]
             pub const GPIO_B1_12_ALT3: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "ENET_TXCLK_SELECT_INPUT DAISY Register"]
 pub mod ENET_TXCLK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_25 for Mode: ALT3"]
             pub const GPIO_EMC_25_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_10 for Mode: ALT3"]
             pub const GPIO_B1_10_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXCAN1_RX_SELECT_INPUT DAISY Register"]
 pub mod FLEXCAN1_RX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_03 for Mode: ALT4"]
             pub const GPIO_SD_B1_03_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_18 for Mode: ALT3"]
@@ -21741,17 +24536,20 @@ pub mod FLEXCAN1_RX_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B0_03 for Mode: ALT2"]
             pub const GPIO_B0_03_ALT2: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXCAN2_RX_SELECT_INPUT DAISY Register"]
 pub mod FLEXCAN2_RX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_10 for Mode: ALT3"]
             pub const GPIO_EMC_10_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_03 for Mode: ALT0"]
@@ -21761,17 +24559,20 @@ pub mod FLEXCAN2_RX_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_09 for Mode: ALT6"]
             pub const GPIO_B1_09_ALT6: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM1_PWMA3_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM1_PWMA3_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_00 for Mode: ALT2"]
             pub const GPIO_SD_B1_00_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_12 for Mode: ALT4"]
@@ -21783,65 +24584,77 @@ pub mod FLEXPWM1_PWMA3_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_00 for Mode: ALT6"]
             pub const GPIO_B1_00_ALT6: u32 = 0x04;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM1_PWMA0_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM1_PWMA0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_23 for Mode: ALT1"]
             pub const GPIO_EMC_23_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_00 for Mode: ALT1"]
             pub const GPIO_SD_B0_00_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM1_PWMA1_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM1_PWMA1_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_25 for Mode: ALT1"]
             pub const GPIO_EMC_25_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_02 for Mode: ALT1"]
             pub const GPIO_SD_B0_02_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM1_PWMA2_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM1_PWMA2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_27 for Mode: ALT1"]
             pub const GPIO_EMC_27_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_04 for Mode: ALT1"]
             pub const GPIO_SD_B0_04_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM1_PWMB3_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM1_PWMB3_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_01 for Mode: ALT2"]
             pub const GPIO_SD_B1_01_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_13 for Mode: ALT4"]
@@ -21853,65 +24666,77 @@ pub mod FLEXPWM1_PWMB3_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_01 for Mode: ALT6"]
             pub const GPIO_B1_01_ALT6: u32 = 0x04;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM1_PWMB0_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM1_PWMB0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_24 for Mode: ALT1"]
             pub const GPIO_EMC_24_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_01 for Mode: ALT1"]
             pub const GPIO_SD_B0_01_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM1_PWMB1_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM1_PWMB1_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_26 for Mode: ALT1"]
             pub const GPIO_EMC_26_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_03 for Mode: ALT1"]
             pub const GPIO_SD_B0_03_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM1_PWMB2_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM1_PWMB2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_28 for Mode: ALT1"]
             pub const GPIO_EMC_28_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_05 for Mode: ALT1"]
             pub const GPIO_SD_B0_05_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM2_PWMA3_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM2_PWMA3_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_02 for Mode: ALT2"]
             pub const GPIO_SD_B1_02_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_19 for Mode: ALT1"]
@@ -21923,65 +24748,77 @@ pub mod FLEXPWM2_PWMA3_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_02 for Mode: ALT6"]
             pub const GPIO_B1_02_ALT6: u32 = 0x04;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM2_PWMA0_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM2_PWMA0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_06 for Mode: ALT1"]
             pub const GPIO_EMC_06_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_06 for Mode: ALT2"]
             pub const GPIO_B0_06_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM2_PWMA1_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM2_PWMA1_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_08 for Mode: ALT1"]
             pub const GPIO_EMC_08_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_08 for Mode: ALT2"]
             pub const GPIO_B0_08_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM2_PWMA2_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM2_PWMA2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_10 for Mode: ALT1"]
             pub const GPIO_EMC_10_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_10 for Mode: ALT2"]
             pub const GPIO_B0_10_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM2_PWMB3_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM2_PWMB3_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_03 for Mode: ALT2"]
             pub const GPIO_SD_B1_03_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_20 for Mode: ALT1"]
@@ -21991,353 +24828,419 @@ pub mod FLEXPWM2_PWMB3_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_03 for Mode: ALT6"]
             pub const GPIO_B1_03_ALT6: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM2_PWMB0_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM2_PWMB0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_07 for Mode: ALT1"]
             pub const GPIO_EMC_07_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_07 for Mode: ALT2"]
             pub const GPIO_B0_07_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM2_PWMB1_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM2_PWMB1_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_09 for Mode: ALT1"]
             pub const GPIO_EMC_09_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_09 for Mode: ALT2"]
             pub const GPIO_B0_09_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM2_PWMB2_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM2_PWMB2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_11 for Mode: ALT1"]
             pub const GPIO_EMC_11_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_11 for Mode: ALT2"]
             pub const GPIO_B0_11_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM4_PWMA0_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM4_PWMA0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_00 for Mode: ALT1"]
             pub const GPIO_EMC_00_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_08 for Mode: ALT1"]
             pub const GPIO_AD_B1_08_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM4_PWMA1_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM4_PWMA1_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_02 for Mode: ALT1"]
             pub const GPIO_EMC_02_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_09 for Mode: ALT1"]
             pub const GPIO_AD_B1_09_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM4_PWMA2_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM4_PWMA2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_04 for Mode: ALT1"]
             pub const GPIO_EMC_04_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_14 for Mode: ALT1"]
             pub const GPIO_B1_14_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXPWM4_PWMA3_SELECT_INPUT DAISY Register"]
 pub mod FLEXPWM4_PWMA3_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_17 for Mode: ALT1"]
             pub const GPIO_EMC_17_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_15 for Mode: ALT1"]
             pub const GPIO_B1_15_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXSPIA_DQS_SELECT_INPUT DAISY Register"]
 pub mod FLEXSPIA_DQS_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_05 for Mode: ALT1"]
             pub const GPIO_SD_B1_05_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_09 for Mode: ALT0"]
             pub const GPIO_AD_B1_09_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXSPIA_DATA0_SELECT_INPUT DAISY Register"]
 pub mod FLEXSPIA_DATA0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_08 for Mode: ALT1"]
             pub const GPIO_SD_B1_08_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_13 for Mode: ALT0"]
             pub const GPIO_AD_B1_13_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXSPIA_DATA1_SELECT_INPUT DAISY Register"]
 pub mod FLEXSPIA_DATA1_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_09 for Mode: ALT1"]
             pub const GPIO_SD_B1_09_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_12 for Mode: ALT0"]
             pub const GPIO_AD_B1_12_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXSPIA_DATA2_SELECT_INPUT DAISY Register"]
 pub mod FLEXSPIA_DATA2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_10 for Mode: ALT1"]
             pub const GPIO_SD_B1_10_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_11 for Mode: ALT0"]
             pub const GPIO_AD_B1_11_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXSPIA_DATA3_SELECT_INPUT DAISY Register"]
 pub mod FLEXSPIA_DATA3_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_11 for Mode: ALT1"]
             pub const GPIO_SD_B1_11_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_10 for Mode: ALT0"]
             pub const GPIO_AD_B1_10_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXSPIB_DATA0_SELECT_INPUT DAISY Register"]
 pub mod FLEXSPIB_DATA0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_03 for Mode: ALT1"]
             pub const GPIO_SD_B1_03_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_07 for Mode: ALT0"]
             pub const GPIO_AD_B1_07_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXSPIB_DATA1_SELECT_INPUT DAISY Register"]
 pub mod FLEXSPIB_DATA1_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_02 for Mode: ALT1"]
             pub const GPIO_SD_B1_02_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_06 for Mode: ALT0"]
             pub const GPIO_AD_B1_06_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXSPIB_DATA2_SELECT_INPUT DAISY Register"]
 pub mod FLEXSPIB_DATA2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_01 for Mode: ALT1"]
             pub const GPIO_SD_B1_01_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_05 for Mode: ALT0"]
             pub const GPIO_AD_B1_05_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXSPIB_DATA3_SELECT_INPUT DAISY Register"]
 pub mod FLEXSPIB_DATA3_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_00 for Mode: ALT1"]
             pub const GPIO_SD_B1_00_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_04 for Mode: ALT0"]
             pub const GPIO_AD_B1_04_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FLEXSPIA_SCK_SELECT_INPUT DAISY Register"]
 pub mod FLEXSPIA_SCK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_07 for Mode: ALT1"]
             pub const GPIO_SD_B1_07_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_14 for Mode: ALT0"]
             pub const GPIO_AD_B1_14_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPI2C1_SCL_SELECT_INPUT DAISY Register"]
 pub mod LPI2C1_SCL_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_04 for Mode: ALT2"]
             pub const GPIO_SD_B1_04_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_00 for Mode: ALT3"]
             pub const GPIO_AD_B1_00_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPI2C1_SDA_SELECT_INPUT DAISY Register"]
 pub mod LPI2C1_SDA_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_05 for Mode: ALT2"]
             pub const GPIO_SD_B1_05_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_01 for Mode: ALT3"]
             pub const GPIO_AD_B1_01_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPI2C2_SCL_SELECT_INPUT DAISY Register"]
 pub mod LPI2C2_SCL_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_11 for Mode: ALT3"]
             pub const GPIO_SD_B1_11_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_04 for Mode: ALT2"]
             pub const GPIO_B0_04_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPI2C2_SDA_SELECT_INPUT DAISY Register"]
 pub mod LPI2C2_SDA_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_10 for Mode: ALT3"]
             pub const GPIO_SD_B1_10_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_05 for Mode: ALT2"]
             pub const GPIO_B0_05_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPI2C3_SCL_SELECT_INPUT DAISY Register"]
 pub mod LPI2C3_SCL_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_22 for Mode: ALT2"]
             pub const GPIO_EMC_22_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_00 for Mode: ALT2"]
@@ -22345,17 +25248,20 @@ pub mod LPI2C3_SCL_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_AD_B1_07 for Mode: ALT1"]
             pub const GPIO_AD_B1_07_ALT1: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPI2C3_SDA_SELECT_INPUT DAISY Register"]
 pub mod LPI2C3_SDA_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_21 for Mode: ALT2"]
             pub const GPIO_EMC_21_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_01 for Mode: ALT2"]
@@ -22363,353 +25269,419 @@ pub mod LPI2C3_SDA_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_AD_B1_06 for Mode: ALT1"]
             pub const GPIO_AD_B1_06_ALT1: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPI2C4_SCL_SELECT_INPUT DAISY Register"]
 pub mod LPI2C4_SCL_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_12 for Mode: ALT2"]
             pub const GPIO_EMC_12_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_12 for Mode: ALT0"]
             pub const GPIO_AD_B0_12_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPI2C4_SDA_SELECT_INPUT DAISY Register"]
 pub mod LPI2C4_SDA_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_11 for Mode: ALT2"]
             pub const GPIO_EMC_11_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_13 for Mode: ALT0"]
             pub const GPIO_AD_B0_13_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI1_PCS0_SELECT_INPUT DAISY Register"]
 pub mod LPSPI1_PCS0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B0_01 for Mode: ALT4"]
             pub const GPIO_SD_B0_01_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_30 for Mode: ALT3"]
             pub const GPIO_EMC_30_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI1_SCK_SELECT_INPUT DAISY Register"]
 pub mod LPSPI1_SCK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_27 for Mode: ALT3"]
             pub const GPIO_EMC_27_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_00 for Mode: ALT4"]
             pub const GPIO_SD_B0_00_ALT4: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI1_SDI_SELECT_INPUT DAISY Register"]
 pub mod LPSPI1_SDI_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_29 for Mode: ALT3"]
             pub const GPIO_EMC_29_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_03 for Mode: ALT4"]
             pub const GPIO_SD_B0_03_ALT4: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI1_SDO_SELECT_INPUT DAISY Register"]
 pub mod LPSPI1_SDO_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_28 for Mode: ALT3"]
             pub const GPIO_EMC_28_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_02 for Mode: ALT4"]
             pub const GPIO_SD_B0_02_ALT4: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI2_PCS0_SELECT_INPUT DAISY Register"]
 pub mod LPSPI2_PCS0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_06 for Mode: ALT4"]
             pub const GPIO_SD_B1_06_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_01 for Mode: ALT2"]
             pub const GPIO_EMC_01_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI2_SCK_SELECT_INPUT DAISY Register"]
 pub mod LPSPI2_SCK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_07 for Mode: ALT4"]
             pub const GPIO_SD_B1_07_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_00 for Mode: ALT2"]
             pub const GPIO_EMC_00_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI2_SDI_SELECT_INPUT DAISY Register"]
 pub mod LPSPI2_SDI_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_09 for Mode: ALT4"]
             pub const GPIO_SD_B1_09_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_03 for Mode: ALT2"]
             pub const GPIO_EMC_03_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI2_SDO_SELECT_INPUT DAISY Register"]
 pub mod LPSPI2_SDO_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_08 for Mode: ALT4"]
             pub const GPIO_SD_B1_08_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_02 for Mode: ALT2"]
             pub const GPIO_EMC_02_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI3_PCS0_SELECT_INPUT DAISY Register"]
 pub mod LPSPI3_PCS0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_03 for Mode: ALT7"]
             pub const GPIO_AD_B0_03_ALT7: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_12 for Mode: ALT2"]
             pub const GPIO_AD_B1_12_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI3_SCK_SELECT_INPUT DAISY Register"]
 pub mod LPSPI3_SCK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_00 for Mode: ALT7"]
             pub const GPIO_AD_B0_00_ALT7: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_15 for Mode: ALT2"]
             pub const GPIO_AD_B1_15: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI3_SDI_SELECT_INPUT DAISY Register"]
 pub mod LPSPI3_SDI_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_02 for Mode: ALT7"]
             pub const GPIO_AD_B0_02_ALT7: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_13 for Mode: ALT2"]
             pub const GPIO_AD_B1_13_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI3_SDO_SELECT_INPUT DAISY Register"]
 pub mod LPSPI3_SDO_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_01 for Mode: ALT7"]
             pub const GPIO_AD_B0_01_ALT7: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_14 for Mode: ALT2"]
             pub const GPIO_AD_B1_14_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI4_PCS0_SELECT_INPUT DAISY Register"]
 pub mod LPSPI4_PCS0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_B0_00 for Mode: ALT3"]
             pub const GPIO_B0_00_ALT3: u32 = 0;
             #[doc = "Selecting Pad:GPIO_B1_04 for Mode: ALT1"]
             pub const GPIO_B1_04_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI4_SCK_SELECT_INPUT DAISY Register"]
 pub mod LPSPI4_SCK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_B0_03 for Mode: ALT3"]
             pub const GPIO_B0_03_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_07 for Mode: ALT1"]
             pub const GPIO_B1_07_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI4_SDI_SELECT_INPUT DAISY Register"]
 pub mod LPSPI4_SDI_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_B0_01 for Mode: ALT3"]
             pub const GPIO_B0_01_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_05 for Mode: ALT1"]
             pub const GPIO_B1_05_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPSPI4_SDO_SELECT_INPUT DAISY Register"]
 pub mod LPSPI4_SDO_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_B0_02 for Mode: ALT3"]
             pub const GPIO_B0_02_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_06 for Mode: ALT1"]
             pub const GPIO_B1_06_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART2_RX_SELECT_INPUT DAISY Register"]
 pub mod LPUART2_RX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_10 for Mode: ALT2"]
             pub const GPIO_SD_B1_10_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_03 for Mode: ALT2"]
             pub const GPIO_AD_B1_03_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART2_TX_SELECT_INPUT DAISY Register"]
 pub mod LPUART2_TX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_11 for Mode: ALT2"]
             pub const GPIO_SD_B1_11_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_02 for Mode: ALT2"]
             pub const GPIO_AD_B1_02_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART3_CTS_B_SELECT_INPUT DAISY Register"]
 pub mod LPUART3_CTS_B_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_15 for Mode: ALT2"]
             pub const GPIO_EMC_15_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_04 for Mode: ALT2"]
             pub const GPIO_AD_B1_04_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART3_RX_SELECT_INPUT DAISY Register"]
 pub mod LPUART3_RX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_07 for Mode: ALT2"]
             pub const GPIO_AD_B1_07_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_14 for Mode: ALT2"]
@@ -22717,17 +25689,20 @@ pub mod LPUART3_RX_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B0_09 for Mode: ALT3"]
             pub const GPIO_B0_09_ALT3: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART3_TX_SELECT_INPUT DAISY Register"]
 pub mod LPUART3_TX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_06 for Mode: ALT2"]
             pub const GPIO_AD_B1_06_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_13 for Mode: ALT2"]
@@ -22735,17 +25710,20 @@ pub mod LPUART3_TX_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B0_08 for Mode: ALT3"]
             pub const GPIO_B0_08_ALT3: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART4_RX_SELECT_INPUT DAISY Register"]
 pub mod LPUART4_RX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_01 for Mode: ALT4"]
             pub const GPIO_SD_B1_01_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_20 for Mode: ALT2"]
@@ -22753,17 +25731,20 @@ pub mod LPUART4_RX_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_01 for Mode: ALT2"]
             pub const GPIO_B1_01_ALT2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART4_TX_SELECT_INPUT DAISY Register"]
 pub mod LPUART4_TX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_00 for Mode: ALT4"]
             pub const GPIO_SD_B1_00_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_19 for Mode: ALT2"]
@@ -22771,113 +25752,134 @@ pub mod LPUART4_TX_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_00 for Mode: ALT2"]
             pub const GPIO_B1_00_ALT2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART5_RX_SELECT_INPUT DAISY Register"]
 pub mod LPUART5_RX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_24 for Mode: ALT2"]
             pub const GPIO_EMC_24_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_13 for Mode: ALT1"]
             pub const GPIO_B1_13_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART5_TX_SELECT_INPUT DAISY Register"]
 pub mod LPUART5_TX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_23 for Mode: ALT2"]
             pub const GPIO_EMC_23_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_12 for Mode: ALT1"]
             pub const GPIO_B1_12_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART6_RX_SELECT_INPUT DAISY Register"]
 pub mod LPUART6_RX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_26 for Mode: ALT2"]
             pub const GPIO_EMC_26_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_03 for Mode: ALT2"]
             pub const GPIO_AD_B0_03_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART6_TX_SELECT_INPUT DAISY Register"]
 pub mod LPUART6_TX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_25 for Mode: ALT2"]
             pub const GPIO_EMC_25_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_02 for Mode: ALT2"]
             pub const GPIO_AD_B0_02_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART7_RX_SELECT_INPUT DAISY Register"]
 pub mod LPUART7_RX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_09 for Mode: ALT2"]
             pub const GPIO_SD_B1_09_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_32 for Mode: ALT2"]
             pub const GPIO_EMC_32_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART7_TX_SELECT_INPUT DAISY Register"]
 pub mod LPUART7_TX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_08 for Mode: ALT2"]
             pub const GPIO_SD_B1_08_ALT2: u32 = 0;
             #[doc = "Selecting Pad:GPIO_EMC_31 for Mode: ALT2"]
             pub const GPIO_EMC_31_ALT2: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART8_RX_SELECT_INPUT DAISY Register"]
 pub mod LPUART8_RX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B0_05 for Mode: ALT2"]
             pub const GPIO_SD_B0_05_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_11 for Mode: ALT2"]
@@ -22885,17 +25887,20 @@ pub mod LPUART8_RX_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_EMC_39 for Mode: ALT2"]
             pub const GPIO_EMC_39_ALT2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LPUART8_TX_SELECT_INPUT DAISY Register"]
 pub mod LPUART8_TX_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B0_04 for Mode: ALT2"]
             pub const GPIO_SD_B0_04_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_10 for Mode: ALT2"]
@@ -22903,97 +25908,115 @@ pub mod LPUART8_TX_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_EMC_38 for Mode: ALT2"]
             pub const GPIO_EMC_38_ALT2: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "NMI_GLUE_NMI_SELECT_INPUT DAISY Register"]
 pub mod NMI_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_12 for Mode: ALT7"]
             pub const GPIO_AD_B0_12_ALT7: u32 = 0;
             #[doc = "Selecting Pad: WAKEUP for Mode: ALT7"]
             pub const WAKEUP_ALT7: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "QTIMER2_TIMER0_SELECT_INPUT DAISY Register"]
 pub mod QTIMER2_TIMER0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_19 for Mode: ALT4"]
             pub const GPIO_EMC_19_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_03 for Mode: ALT1"]
             pub const GPIO_B0_03_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "QTIMER2_TIMER1_SELECT_INPUT DAISY Register"]
 pub mod QTIMER2_TIMER1_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_20 for Mode: ALT4"]
             pub const GPIO_EMC_20_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_04 for Mode: ALT1"]
             pub const GPIO_B0_04_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "QTIMER2_TIMER2_SELECT_INPUT DAISY Register"]
 pub mod QTIMER2_TIMER2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_21 for Mode: ALT4"]
             pub const GPIO_EMC_21_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_05 for Mode: ALT1"]
             pub const GPIO_B0_05_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "QTIMER2_TIMER3_SELECT_INPUT DAISY Register"]
 pub mod QTIMER2_TIMER3_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_22 for Mode: ALT4"]
             pub const GPIO_EMC_22_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_09 for Mode: ALT1"]
             pub const GPIO_B1_09_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "QTIMER3_TIMER0_SELECT_INPUT DAISY Register"]
 pub mod QTIMER3_TIMER0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_15 for Mode: ALT4"]
             pub const GPIO_EMC_15_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_00 for Mode: ALT1"]
@@ -23001,17 +26024,20 @@ pub mod QTIMER3_TIMER0_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B0_06 for Mode: ALT1"]
             pub const GPIO_B0_06_ALT1: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "QTIMER3_TIMER1_SELECT_INPUT DAISY Register"]
 pub mod QTIMER3_TIMER1_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_01 for Mode: ALT1"]
             pub const GPIO_AD_B1_01_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_16 for Mode: ALT4"]
@@ -23019,17 +26045,20 @@ pub mod QTIMER3_TIMER1_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B0_07 for Mode: ALT1"]
             pub const GPIO_B0_07_ALT1: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "QTIMER3_TIMER2_SELECT_INPUT DAISY Register"]
 pub mod QTIMER3_TIMER2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_17 for Mode: ALT4"]
             pub const GPIO_EMC_17_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_02 for Mode: ALT1"]
@@ -23037,17 +26066,20 @@ pub mod QTIMER3_TIMER2_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B0_08 for Mode: ALT1"]
             pub const GPIO_B0_08_ALT1: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "QTIMER3_TIMER3_SELECT_INPUT DAISY Register"]
 pub mod QTIMER3_TIMER3_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_18 for Mode: ALT4"]
             pub const GPIO_EMC_18_ALT4: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_03 for Mode: ALT1"]
@@ -23055,17 +26087,20 @@ pub mod QTIMER3_TIMER3_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_10 for Mode: ALT1"]
             pub const GPIO_B1_10_ALT1: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI1_MCLK2_SELECT_INPUT DAISY Register"]
 pub mod SAI1_MCLK2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_03 for Mode: ALT3"]
             pub const GPIO_SD_B1_03_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_09 for Mode: ALT3"]
@@ -23073,17 +26108,20 @@ pub mod SAI1_MCLK2_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B0_13 for Mode: ALT3"]
             pub const GPIO_B0_13_ALT3: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI1_RX_BCLK_SELECT_INPUT DAISY Register"]
 pub mod SAI1_RX_BCLK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_05 for Mode: ALT3"]
             pub const GPIO_SD_B1_05_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_11 for Mode: ALT3"]
@@ -23091,17 +26129,20 @@ pub mod SAI1_RX_BCLK_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B0_15 for Mode: ALT3"]
             pub const GPIO_B0_15_ALT3: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI1_RX_DATA0_SELECT_INPUT DAISY Register"]
 pub mod SAI1_RX_DATA0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_06 for Mode: ALT3"]
             pub const GPIO_SD_B1_06_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_12 for Mode: ALT3"]
@@ -23109,65 +26150,77 @@ pub mod SAI1_RX_DATA0_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_00 for Mode: ALT3"]
             pub const GPIO_B1_00_ALT3: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI1_RX_DATA1_SELECT_INPUT DAISY Register"]
 pub mod SAI1_RX_DATA1_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_00 for Mode: ALT3"]
             pub const GPIO_SD_B1_00_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_10 for Mode: ALT3"]
             pub const GPIO_B0_10_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI1_RX_DATA2_SELECT_INPUT DAISY Register"]
 pub mod SAI1_RX_DATA2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_01 for Mode: ALT3"]
             pub const GPIO_SD_B1_01_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_11 for Mode: ALT3"]
             pub const GPIO_B0_11_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI1_RX_DATA3_SELECT_INPUT DAISY Register"]
 pub mod SAI1_RX_DATA3_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_02 for Mode: ALT3"]
             pub const GPIO_SD_B1_02_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B0_12 for Mode: ALT3"]
             pub const GPIO_B0_12_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI1_RX_SYNC_SELECT_INPUT DAISY Register"]
 pub mod SAI1_RX_SYNC_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_04 for Mode: ALT3"]
             pub const GPIO_SD_B1_04_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_10 for Mode: ALT3"]
@@ -23175,17 +26228,20 @@ pub mod SAI1_RX_SYNC_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B0_14 for Mode: ALT3"]
             pub const GPIO_B0_14_ALT3: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI1_TX_BCLK_SELECT_INPUT DAISY Register"]
 pub mod SAI1_TX_BCLK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_08 for Mode: ALT3"]
             pub const GPIO_SD_B1_08_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_14 for Mode: ALT3"]
@@ -23193,17 +26249,20 @@ pub mod SAI1_TX_BCLK_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_02 for Mode: ALT3"]
             pub const GPIO_B1_02_ALT3: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI1_TX_SYNC_SELECT_INPUT DAISY Register"]
 pub mod SAI1_TX_SYNC_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_09 for Mode: ALT3"]
             pub const GPIO_SD_B1_09_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_15 for Mode: ALT3"]
@@ -23211,161 +26270,191 @@ pub mod SAI1_TX_SYNC_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_03 for Mode: ALT3"]
             pub const GPIO_B1_03_ALT3: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI2_MCLK2_SELECT_INPUT DAISY Register"]
 pub mod SAI2_MCLK2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_07 for Mode: ALT2"]
             pub const GPIO_EMC_07_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_10 for Mode: ALT3"]
             pub const GPIO_AD_B0_10_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI2_RX_BCLK_SELECT_INPUT DAISY Register"]
 pub mod SAI2_RX_BCLK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_10 for Mode: ALT2"]
             pub const GPIO_EMC_10_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_06 for Mode: ALT3"]
             pub const GPIO_AD_B0_06_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI2_RX_DATA0_SELECT_INPUT DAISY Register"]
 pub mod SAI2_RX_DATA0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_08 for Mode: ALT2"]
             pub const GPIO_EMC_08_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_08 for Mode: ALT3"]
             pub const GPIO_AD_B0_08_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI2_RX_SYNC_SELECT_INPUT DAISY Register"]
 pub mod SAI2_RX_SYNC_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_09 for Mode: ALT2"]
             pub const GPIO_EMC_09_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_07 for Mode: ALT3"]
             pub const GPIO_AD_B0_07_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI2_TX_BCLK_SELECT_INPUT DAISY Register"]
 pub mod SAI2_TX_BCLK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_06 for Mode: ALT2"]
             pub const GPIO_EMC_06_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_05 for Mode: ALT3"]
             pub const GPIO_AD_B0_05_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SAI2_TX_SYNC_SELECT_INPUT DAISY Register"]
 pub mod SAI2_TX_SYNC_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_05 for Mode: ALT2"]
             pub const GPIO_EMC_05_ALT2: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_04 for Mode: ALT3"]
             pub const GPIO_AD_B0_04_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "SPDIF_IN_SELECT_INPUT DAISY Register"]
 pub mod SPDIF_IN_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B1_03 for Mode: ALT3"]
             pub const GPIO_AD_B1_03_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_16 for Mode: ALT3"]
             pub const GPIO_EMC_16_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USB_OTG2_OC_SELECT_INPUT DAISY Register"]
 pub mod USB_OTG2_OC_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_14 for Mode: ALT0"]
             pub const GPIO_AD_B0_14_ALT0: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_40 for Mode: ALT3"]
             pub const GPIO_EMC_40_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USB_OTG1_OC_SELECT_INPUT DAISY Register"]
 pub mod USB_OTG1_OC_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_03 for Mode: ALT3"]
             pub const GPIO_AD_B0_03_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_03 for Mode: ALT0"]
             pub const GPIO_AD_B1_03_ALT0: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC1_CD_B_SELECT_INPUT DAISY Register"]
 pub mod USDHC1_CD_B_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_35 for Mode: ALT6"]
             pub const GPIO_EMC_35_ALT6: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_02 for Mode: ALT6"]
@@ -23373,17 +26462,20 @@ pub mod USDHC1_CD_B_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_12 for Mode: ALT6"]
             pub const GPIO_B1_12_ALT6: u32 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC1_WP_SELECT_INPUT DAISY Register"]
 pub mod USDHC1_WP_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_12 for Mode: ALT3"]
             pub const GPIO_EMC_12_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_36for Mode: ALT6"]
@@ -23393,337 +26485,400 @@ pub mod USDHC1_WP_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_13 for Mode: ALT6"]
             pub const GPIO_B1_13_ALT6: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_CLK_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_CLK_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_04 for Mode: ALT0"]
             pub const GPIO_SD_B1_04_ALT0: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_09 for Mode: ALT6"]
             pub const GPIO_AD_B1_09_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_CD_B_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_CD_B_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad:GPIO_AD_B1_03 for Mode: ALT6"]
             pub const GPIO_AD_B1_03_ALT6: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_39 for Mode: ALT6"]
             pub const GPIO_EMC_39_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_CMD_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_CMD_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_05 for Mode: ALT0"]
             pub const GPIO_SD_B1_05_ALT0: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_08 for Mode: ALT6"]
             pub const GPIO_AD_B1_08_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_DATA0_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_DATA0_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_03 for Mode: ALT0"]
             pub const GPIO_SD_B1_03_ALT0: u32 = 0;
             #[doc = "Selecting Pad:GPIO_AD_B1_04 for Mode: ALT6"]
             pub const GPIO_AD_B1_04_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_DATA1_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_DATA1_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_02 for Mode: ALT0"]
             pub const GPIO_SD_B1_02_ALT0: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_05 for Mode: ALT6"]
             pub const GPIO_AD_B1_05_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_DATA2_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_DATA2_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_01 for Mode: ALT0"]
             pub const GPIO_SD_B1_01_ALT0: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_06 for Mode: ALT6"]
             pub const GPIO_AD_B1_06_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_DATA3_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_DATA3_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_00 for Mode: ALT0"]
             pub const GPIO_SD_B1_00_ALT0: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_07 for Mode: ALT6"]
             pub const GPIO_AD_B1_07_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_DATA4_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_DATA4_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_08 for Mode: ALT0"]
             pub const GPIO_SD_B1_08_ALT0: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_12 for Mode: ALT6"]
             pub const GPIO_AD_B1_12_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_DATA5_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_DATA5_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_09 for Mode: ALT0"]
             pub const GPIO_SD_B1_09_ALT0: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_13 for Mode: ALT6"]
             pub const GPIO_AD_B1_13_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_DATA6_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_DATA6_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_10 for Mode: ALT0"]
             pub const GPIO_SD_B1_10_ALT0: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_14 for Mode: ALT6"]
             pub const GPIO_AD_B1_14_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_DATA7_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_DATA7_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_SD_B1_11 for Mode: ALT0"]
             pub const GPIO_SD_B1_11_ALT0: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_15 for Mode: ALT6"]
             pub const GPIO_AD_B1_15_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "USDHC2_WP_SELECT_INPUT DAISY Register"]
 pub mod USDHC2_WP_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_37 for Mode: ALT6"]
             pub const GPIO_EMC_37_ALT6: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B1_10 for Mode: ALT6"]
             pub const GPIO_AD_B1_10_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN02_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN02_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_00 for Mode: ALT3"]
             pub const GPIO_EMC_00_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_14 for Mode: ALT3"]
             pub const GPIO_B1_14_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN03_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN03_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_01 for Mode: ALT3"]
             pub const GPIO_EMC_01_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_15 for Mode: ALT3"]
             pub const GPIO_B1_15_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN04_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN04_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_02 for Mode: ALT3"]
             pub const GPIO_EMC_02_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_00 for Mode: ALT3"]
             pub const GPIO_SD_B0_00_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN05_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN05_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_03 for Mode: ALT3"]
             pub const GPIO_EMC_03_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_01 for Mode: ALT3"]
             pub const GPIO_SD_B0_01_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN06_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN06_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_04 for Mode: ALT3"]
             pub const GPIO_EMC_04_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_02 for Mode: ALT3"]
             pub const GPIO_SD_B0_02_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN07_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN07_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_05 for Mode: ALT3"]
             pub const GPIO_EMC_05_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_03 for Mode: ALT3"]
             pub const GPIO_SD_B0_03_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN08_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN08_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_06 for Mode: ALT3"]
             pub const GPIO_EMC_06_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_04 for Mode: ALT3"]
             pub const GPIO_SD_B0_04_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN09_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN09_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_07 for Mode: ALT3"]
             pub const GPIO_EMC_07_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_SD_B0_05 for Mode: ALT3"]
             pub const GPIO_SD_B0_05_ALT3: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN17_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN17_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_08 for Mode: ALT3"]
             pub const GPIO_EMC_08_ALT3: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_03 for Mode: ALT1"]
@@ -23733,181 +26888,216 @@ pub mod XBAR1_IN17_SELECT_INPUT {
             #[doc = "Selecting Pad: GPIO_B1_03 for Mode: ALT1"]
             pub const GPIO_B1_03_ALT1: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN18_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN18_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_35 for Mode: ALT1"]
             pub const GPIO_EMC_35_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_06 for Mode: ALT6"]
             pub const GPIO_AD_B0_06_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN20_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN20_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_15 for Mode: ALT1"]
             pub const GPIO_EMC_15_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_08 for Mode: ALT6"]
             pub const GPIO_AD_B0_08_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN22_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN22_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_36 for Mode: ALT1"]
             pub const GPIO_EMC_36_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_10 for Mode: ALT6"]
             pub const GPIO_AD_B0_10_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN23_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN23_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_37 for Mode: ALT1"]
             pub const GPIO_EMC_37_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_11 for Mode: ALT6"]
             pub const GPIO_AD_B0_11_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN24_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN24_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_12 for Mode: ALT1"]
             pub const GPIO_EMC_12_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_14 for Mode: ALT1"]
             pub const GPIO_AD_B0_14_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN14_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN14_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_00 for Mode: ALT1"]
             pub const GPIO_AD_B0_00_ALT1: u32 = 0;
             #[doc = "Selecting Pad:GPIO_B1_00 for Mode: ALT1"]
             pub const GPIO_B1_00_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN15_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN15_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_01 for Mode: ALT1"]
             pub const GPIO_AD_B0_01_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_01 for Mode: ALT1"]
             pub const GPIO_B1_01_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN16_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN16_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_02 for Mode: ALT1"]
             pub const GPIO_AD_B0_02_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_B1_02 for Mode: ALT1"]
             pub const GPIO_B1_02_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN25_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN25_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_AD_B0_15 for Mode: ALT1"]
             pub const GPIO_AD_B0_15_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_EMC_13 for Mode: ALT1"]
             pub const GPIO_EMC_13_ALT1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN19_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN19_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_14 for Mode: ALT1"]
             pub const GPIO_EMC_14_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_07 for Mode: ALT6"]
             pub const GPIO_AD_B0_07_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "XBAR1_IN23_SELECT_INPUT DAISY Register"]
 pub mod XBAR1_IN21_SELECT_INPUT {
+    pub use crate::RW as access;
     #[doc = "Selecting Pads Involved in Daisy Chain."]
     pub mod DAISY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Selecting Pad: GPIO_EMC_16 for Mode: ALT1"]
             pub const GPIO_EMC_16_ALT1: u32 = 0;
             #[doc = "Selecting Pad: GPIO_AD_B0_09 for Mode: ALT6"]
             pub const GPIO_AD_B0_09_ALT6: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }

@@ -142,9 +142,16 @@ pub fn render(ir: &IR, opts: &Options) -> Result<()> {
     root.items.extend(quote!(
         #![doc = include_str!("../doc.md")]
         #![no_std]
-        #![allow(non_camel_case_types, non_snake_case, non_upper_case_globals, clippy::self_named_constructors, clippy::module_inception)]
+        #![allow(non_camel_case_types, non_snake_case, non_upper_case_globals, unused_imports, clippy::self_named_constructors, clippy::module_inception)]
 
-        pub use ral_registers::{RWRegister, RORegister, WORegister, read_reg, write_reg, modify_reg};
+        pub use ral_registers::{read_reg, write_reg, modify_reg, Access};
+
+        /// Read-only access.
+        pub const RO: Access = Access::RO;
+        /// Write-only access.
+        pub const WO: Access = Access::WO;
+        /// Read-write access.
+        pub const RW: Access = Access::RW;
 
         /// An owned peripheral of type `T`, instance `N`.
         ///
@@ -180,18 +187,12 @@ pub fn render(ir: &IR, opts: &Options) -> Result<()> {
         /// you're only responsible for ensuring safety concern 3 from `new()`.
         #[repr(transparent)]
         pub struct Instance<T, const N: u8> {
-            ptr: core::ptr::NonNull<T>,
+            inner: ral_registers::Instance<T>,
         }
 
-        impl<T, const N: u8> core::ops::Deref for Instance<T, N> {
-            type Target = T;
-            #[inline]
-            fn deref(&self) -> &Self::Target {
-                // Safety: User provided a pointer that points to static MMIO.
-                // This implies non-null, initialized, aligned, and dereferenceable.
-                unsafe { self.ptr.as_ref() }
-            }
-        }
+        // Safety: construction safety requirements meet the trait's
+        // safety requirements.
+        unsafe impl<T, const N: u8> ral_registers::Inst for Instance<T, N> {}
 
         impl<T, const N: u8> Instance<T, N> {
             /// Create an arbitrary `Instance` from a pointer to `T`.
@@ -200,10 +201,14 @@ pub fn render(ir: &IR, opts: &Options) -> Result<()> {
             ///
             /// See [the struct docs](Instance) for the safety contract.
             #[inline]
-            pub const unsafe fn new(ptr: *const T) -> Self {
-                // Casting *const _ to *mut _ is OK. The mutable pointer never
-                // escapes Instance.
-                Self { ptr: core::ptr::NonNull::new_unchecked(ptr as *mut _) }
+            pub const unsafe fn new(ptr: *mut T) -> Self {
+                Self { inner: ral_registers::Instance::new_unchecked(ptr) }
+            }
+
+            /// Returns the inner pointer.
+            #[inline(always)]
+            pub const fn as_ptr(&self) -> *mut T {
+                self.inner.as_ptr()
             }
         }
 

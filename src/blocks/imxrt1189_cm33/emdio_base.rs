@@ -3,67 +3,72 @@
 pub struct RegisterBlock {
     _reserved0: [u8; 0x1c00],
     #[doc = "External MDIO configuration register"]
-    pub EMDIO_CFG: crate::RWRegister<u32>,
+    pub EMDIO_CFG: u32,
     #[doc = "External MDIO interface control register"]
-    pub EMDIO_CTL: crate::RWRegister<u32>,
+    pub EMDIO_CTL: u32,
     #[doc = "External MDIO interface data register"]
-    pub EMDIO_DATA: crate::RWRegister<u32>,
+    pub EMDIO_DATA: u32,
     #[doc = "External MDIO register address register"]
-    pub EMDIO_ADDR: crate::RWRegister<u32>,
+    pub EMDIO_ADDR: u32,
     #[doc = "External MDIO status register"]
-    pub EMDIO_STAT: crate::RORegister<u32>,
+    pub EMDIO_STAT: u32,
     _reserved1: [u8; 0x0c],
     #[doc = "PHY status configuration register"]
-    pub PHY_STATUS_CFG: crate::RWRegister<u32>,
+    pub PHY_STATUS_CFG: u32,
     #[doc = "PHY status control register"]
-    pub PHY_STATUS_CTL: crate::RWRegister<u32>,
+    pub PHY_STATUS_CTL: u32,
     #[doc = "PHY status data register"]
-    pub PHY_STATUS_DATA: crate::RORegister<u32>,
+    pub PHY_STATUS_DATA: u32,
     #[doc = "PHY status register address register"]
-    pub PHY_STATUS_ADDR: crate::RWRegister<u32>,
+    pub PHY_STATUS_ADDR: u32,
     #[doc = "PHY status event register"]
-    pub PHY_STATUS_EVENT: crate::RWRegister<u32>,
+    pub PHY_STATUS_EVENT: u32,
     #[doc = "PHY status mask register"]
-    pub PHY_STATUS_MASK: crate::RWRegister<u32>,
+    pub PHY_STATUS_MASK: u32,
     _reserved2: [u8; 0x08],
     #[doc = "MDIO configuration register"]
-    pub MDIO_CFG: crate::RORegister<u32>,
+    pub MDIO_CFG: u32,
 }
 #[doc = "External MDIO configuration register"]
 pub mod EMDIO_CFG {
+    pub use crate::RW as access;
     #[doc = "Busy 2 (same as bit 31)"]
     pub mod BSY2 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "An MDIO transaction is not occurring; software may access other MDIO registers."]
             pub const ZERO: u32 = 0;
             #[doc = "An MDIO transaction is occurring."]
             pub const ONE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MDIO Read Error"]
     pub mod MDIO_RD_ER {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "No error"]
             pub const ZERO: u32 = 0;
             #[doc = "The last read transaction received no response from a PHY; any data read should be considered invalid (for example, the PHY address does not match any PHY available on the MDIO bus)."]
             pub const ONE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MDIO Hold Time"]
     pub mod MDIO_HOLD {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "1 NETC cycle"]
             pub const NETC1: u32 = 0;
             #[doc = "3 NETC cycles"]
@@ -81,366 +86,451 @@ pub mod EMDIO_CFG {
             #[doc = "15 NETC cycles"]
             pub const NETC15: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MDIO Preamble Disable"]
     pub mod PRE_DIS {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Generation of MDIO preamble is enabled (default operation)."]
             pub const ZERO: u32 = 0;
             #[doc = "Generation of MDIO preamble is disabled"]
             pub const ONE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Enable Clause 45 Support"]
     pub mod ENC45 {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Clause 22 transactions are used."]
             pub const ZERO: u32 = 0;
             #[doc = "Clause 45 transactions are used."]
             pub const ONE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MDIO Clock Divisor"]
     pub mod MDIO_CLK_DIV {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01ff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Returns the virtual port ID."]
     pub mod WHOAMI {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Extended HOLD"]
     pub mod EHOLD {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Normal operation. MDIO hold time is specified in ."]
             pub const ZERO: u32 = 0;
             #[doc = "Extended Operation"]
             pub const ONE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Negative Edge"]
     pub mod NEG {
         pub const offset: u32 = 23;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Normal operation - positive edge"]
             pub const NORMAL: u32 = 0;
             #[doc = "MDIO is driven by master on MDC negative edge (default for external MDIOs)"]
             pub const NEGATIVE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Address Error"]
     pub mod ADDR_ERR {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Normal"]
             pub const NORMAL: u32 = 0;
             #[doc = "Error. An access control violation has occurred. The request address used does not match the MDIO PHY's address (clause 22) or MDIO port address (clause 45) assigned."]
             pub const ERROR: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MDIO Command Completion Interrupt Enable Mask"]
     pub mod CIM {
         pub const offset: u32 = 29;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Masked"]
             pub const MASKED: u32 = 0;
             #[doc = "Enabled"]
             pub const ENABLED: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MDIO Command Completion"]
     pub mod CMP {
         pub const offset: u32 = 30;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "An MDIO command completion did not occur."]
             pub const ZERO: u32 = 0;
             #[doc = "An MDIO command completion occurred."]
             pub const ONE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Busy 1"]
     pub mod BSY1 {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "An MDIO transaction is not occurring; software may access other MDIO registers."]
             pub const ZERO: u32 = 0;
             #[doc = "An MDIO transaction is occurring."]
             pub const ONE: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "External MDIO interface control register"]
 pub mod EMDIO_CTL {
+    pub use crate::RW as access;
     #[doc = "5-bit MDIO device address (Clause 45) / register address (Clause 22)"]
     pub mod DEV_ADDR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "5-bit MDIO port address (Clause 45) / PHY address (Clause 22)"]
     pub mod PORT_ADDR {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MDIO read with address post-increment initiation. Self-clearing once transaction is complete."]
     pub mod POST_INC {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MDIO read initiation."]
     pub mod READ {
         pub const offset: u32 = 15;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MDIO busy"]
     pub mod BSY {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "External MDIO interface data register"]
 pub mod EMDIO_DATA {
+    pub use crate::RW as access;
     #[doc = "16-bit MDIO data."]
     pub mod MDIO_DATA {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "External MDIO register address register"]
 pub mod EMDIO_ADDR {
+    pub use crate::RW as access;
     #[doc = "MDIO PHY register address."]
     pub mod REGADDR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "External MDIO status register"]
 pub mod EMDIO_STAT {
+    pub use crate::RO as access;
     #[doc = "Global MDIO busy"]
     pub mod BSY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "PHY white list"]
     pub mod WHT_LIST {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "PHY white list enable"]
     pub mod WHT_LIST_ENA {
         pub const offset: u32 = 15;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Port ID"]
     pub mod PORT_ID {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Port ID"]
     pub mod REQ_TYPE {
         pub const offset: u32 = 19;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "PHY status configuration register"]
 pub mod PHY_STATUS_CFG {
+    pub use crate::RW as access;
     #[doc = "MDIO busy"]
     pub mod BSY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MDIO read error"]
     pub mod MDIO_RD_ER {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "PHY status read interval"]
     pub mod STATUS_INTERVAL {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "PHY status control register"]
 pub mod PHY_STATUS_CTL {
+    pub use crate::RW as access;
     #[doc = "5-bit MDIO device address (Clause 45) / register address (Clause 22)"]
     pub mod DEV_ADDR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "5-bit MDIO port address (Clause 45) / PHY address (Clause 22)"]
     pub mod PORT_ADDR {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "PHY status data register"]
 pub mod PHY_STATUS_DATA {
+    pub use crate::RO as access;
     #[doc = "16-bit MDIO data"]
     pub mod MDIO_DATA {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Current count"]
     pub mod CURR_CNT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "PHY status register address register"]
 pub mod PHY_STATUS_ADDR {
+    pub use crate::RW as access;
     #[doc = "MDIO PHY register address. Address of the register within the Clause 45 PHY device from which data is to be read."]
     pub mod REGADDR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "PHY status event register"]
 pub mod PHY_STATUS_EVENT {
+    pub use crate::RW as access;
     #[doc = "Status event high-to-low. Set to 1 if a 1->0 transition on a corresponding data bit has occurred. Write 1 to clear."]
     pub mod STATUS_EVENT_HL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Status event low-to-high. Set to 1 if a 0->1 transition on a corresponding data bit has occurred. Write 1 to clear."]
     pub mod STATUS_EVENT_LH {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "PHY status mask register"]
 pub mod PHY_STATUS_MASK {
+    pub use crate::RW as access;
     #[doc = "Status high-to-low mask. If set to 1, assert an interrupt if the corresponding event bit is set."]
     pub mod STATUS_MASK_HL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Status mask low-to-high. If set to 1, assert an interrupt if the corresponding event bit is set."]
     pub mod STATUS_MASK_LH {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "MDIO configuration register"]
 pub mod MDIO_CFG {
+    pub use crate::RO as access;
     #[doc = "MDIO pin mode"]
     pub mod MDIO_MODE {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MDC pin mode"]
     pub mod MDC_MODE {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }

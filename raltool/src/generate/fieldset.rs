@@ -25,6 +25,22 @@ pub fn render(ir: &IR, fs: &FieldSet) -> Result<TokenStream> {
             f.name
         );
 
+        let access = if let Some(access) = field_access(ir, f) {
+            let access = match access {
+                Access::Read => quote!(crate::RO),
+                Access::Write => quote!(crate::WO),
+                Access::ReadWrite => quote!(crate::RW),
+            };
+            quote! {
+                pub use #access as access;
+            }
+        } else {
+            // Adopt the register's access.
+            quote!(
+                pub use super::access;
+            )
+        };
+
         let name = Ident::new(&f.name, span);
         let bit_offset = proc_macro2::Literal::u32_unsuffixed(f.bit_offset);
         let mask = util::hex(1u64.wrapping_shl(f.bit_size.0).wrapping_sub(1));
@@ -58,12 +74,59 @@ pub fn render(ir: &IR, fs: &FieldSet) -> Result<TokenStream> {
             pub mod #name {
                 pub const offset: #ty = #bit_offset;
                 pub const mask: #ty = #mask << offset;
-                pub mod R { #reads }
-                pub mod W { #writes }
-                pub mod RW { #reads_writes }
+
+                #access
+
+                #[doc(hidden)]
+                pub mod vals {
+                    #reads
+                    #writes
+                    #reads_writes
+                }
+
+                #[doc(inline)]
+                pub use vals::*;
             }
         });
     }
 
     Ok(quote! { #items })
+}
+
+/// Show that a fieldset's variants are fully within
+/// the RO, WO, or RW group. Return that access.
+///
+/// We don't expect some variants to be in RO while
+/// others are in WO, for instance. I suppose this
+/// is legal, but not something we're expecting to
+/// see.
+fn field_access(ir: &IR, field: &Field) -> Option<Access> {
+    let count = |enum_path: &Option<String>| -> usize {
+        enum_path
+            .as_ref()
+            .and_then(|enum_path| ir.enums.get(enum_path))
+            .map(|enums| enums.variants.len())
+            .unwrap_or_default()
+    };
+
+    let variants = [
+        count(&field.enum_read),
+        count(&field.enum_write),
+        count(&field.enum_readwrite),
+    ];
+
+    let accesses = [Access::Read, Access::Write, Access::ReadWrite];
+
+    assert_eq!(
+        variants.iter().copied().sum::<usize>(),
+        variants.iter().copied().max().unwrap(),
+        "{} has fieldsets with different kinds of access",
+        field.name
+    );
+
+    accesses
+        .into_iter()
+        .zip(variants)
+        .find(|(_, count)| *count != 0)
+        .map(|(access, _)| access)
 }

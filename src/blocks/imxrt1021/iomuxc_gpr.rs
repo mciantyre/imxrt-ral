@@ -2,67 +2,72 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "GPR0 General Purpose Register"]
-    pub GPR0: crate::RORegister<u32>,
+    pub GPR0: u32,
     #[doc = "GPR1 General Purpose Register"]
-    pub GPR1: crate::RWRegister<u32>,
+    pub GPR1: u32,
     #[doc = "GPR2 General Purpose Register"]
-    pub GPR2: crate::RWRegister<u32>,
+    pub GPR2: u32,
     #[doc = "GPR3 General Purpose Register"]
-    pub GPR3: crate::RWRegister<u32>,
+    pub GPR3: u32,
     #[doc = "GPR4 General Purpose Register"]
-    pub GPR4: crate::RWRegister<u32>,
+    pub GPR4: u32,
     #[doc = "GPR5 General Purpose Register"]
-    pub GPR5: crate::RWRegister<u32>,
+    pub GPR5: u32,
     #[doc = "GPR6 General Purpose Register"]
-    pub GPR6: crate::RWRegister<u32>,
+    pub GPR6: u32,
     #[doc = "GPR7 General Purpose Register"]
-    pub GPR7: crate::RWRegister<u32>,
+    pub GPR7: u32,
     #[doc = "GPR8 General Purpose Register"]
-    pub GPR8: crate::RWRegister<u32>,
+    pub GPR8: u32,
     #[doc = "GPR9 General Purpose Register"]
-    pub GPR9: crate::RORegister<u32>,
+    pub GPR9: u32,
     #[doc = "GPR10 General Purpose Register"]
-    pub GPR10: crate::RWRegister<u32>,
+    pub GPR10: u32,
     #[doc = "GPR11 General Purpose Register"]
-    pub GPR11: crate::RWRegister<u32>,
+    pub GPR11: u32,
     #[doc = "GPR12 General Purpose Register"]
-    pub GPR12: crate::RWRegister<u32>,
+    pub GPR12: u32,
     #[doc = "GPR13 General Purpose Register"]
-    pub GPR13: crate::RWRegister<u32>,
+    pub GPR13: u32,
     #[doc = "GPR14 General Purpose Register"]
-    pub GPR14: crate::RWRegister<u32>,
+    pub GPR14: u32,
     #[doc = "GPR15 General Purpose Register"]
-    pub GPR15: crate::RORegister<u32>,
+    pub GPR15: u32,
     #[doc = "GPR16 General Purpose Register"]
-    pub GPR16: crate::RWRegister<u32>,
+    pub GPR16: u32,
     #[doc = "GPR17 General Purpose Register"]
-    pub GPR17: crate::RWRegister<u32>,
+    pub GPR17: u32,
     #[doc = "GPR18 General Purpose Register"]
-    pub GPR18: crate::RWRegister<u32>,
+    pub GPR18: u32,
     #[doc = "GPR19 General Purpose Register"]
-    pub GPR19: crate::RWRegister<u32>,
+    pub GPR19: u32,
     #[doc = "GPR20 General Purpose Register"]
-    pub GPR20: crate::RWRegister<u32>,
+    pub GPR20: u32,
     #[doc = "GPR21 General Purpose Register"]
-    pub GPR21: crate::RWRegister<u32>,
+    pub GPR21: u32,
     #[doc = "GPR22 General Purpose Register"]
-    pub GPR22: crate::RWRegister<u32>,
+    pub GPR22: u32,
     #[doc = "GPR23 General Purpose Register"]
-    pub GPR23: crate::RWRegister<u32>,
+    pub GPR23: u32,
     #[doc = "GPR24 General Purpose Register"]
-    pub GPR24: crate::RWRegister<u32>,
+    pub GPR24: u32,
     #[doc = "GPR25 General Purpose Register"]
-    pub GPR25: crate::RWRegister<u32>,
+    pub GPR25: u32,
+}
+#[doc = "GPR0 General Purpose Register"]
+pub mod GPR0 {
+    pub use crate::RO as access;
 }
 #[doc = "GPR1 General Purpose Register"]
 pub mod GPR1 {
+    pub use crate::RW as access;
     #[doc = "SAI1 MCLK1 source select"]
     pub mod SAI1_MCLK1_SEL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ccm.ssi1_clk_root"]
             pub const SAI1_MCLK1_SEL_0: u32 = 0;
             #[doc = "ccm.ssi2_clk_root"]
@@ -76,14 +81,16 @@ pub mod GPR1 {
             #[doc = "iomux.sai3_ipg_clk_sai_mclk"]
             pub const SAI1_MCLK1_SEL_5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SAI1 MCLK2 source select"]
     pub mod SAI1_MCLK2_SEL {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ccm.ssi1_clk_root"]
             pub const SAI1_MCLK2_SEL_0: u32 = 0;
             #[doc = "ccm.ssi2_clk_root"]
@@ -97,14 +104,16 @@ pub mod GPR1 {
             #[doc = "iomux.sai3_ipg_clk_sai_mclk"]
             pub const SAI1_MCLK2_SEL_5: u32 = 0x05;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SAI1 MCLK3 source select"]
     pub mod SAI1_MCLK3_SEL {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ccm.spdif0_clk_root"]
             pub const SAI1_MCLK3_SEL_0: u32 = 0;
             #[doc = "SPDIF_EXT_CLK"]
@@ -114,14 +123,16 @@ pub mod GPR1 {
             #[doc = "spdif.spdif_outclock"]
             pub const SAI1_MCLK3_SEL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SAI2 MCLK3 source select"]
     pub mod SAI2_MCLK3_SEL {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ccm.spdif0_clk_root"]
             pub const SAI2_MCLK3_SEL_0: u32 = 0;
             #[doc = "SPDIF_EXT_CLK"]
@@ -131,14 +142,16 @@ pub mod GPR1 {
             #[doc = "spdif.spdif_outclock"]
             pub const SAI2_MCLK3_SEL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SAI3 MCLK3 source select"]
     pub mod SAI3_MCLK3_SEL {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ccm.spdif0_clk_root"]
             pub const SAI3_MCLK3_SEL_0: u32 = 0;
             #[doc = "SPDIF_EXT_CLK"]
@@ -148,186 +161,215 @@ pub mod GPR1 {
             #[doc = "spdif.spdif_outclock"]
             pub const SAI3_MCLK3_SEL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Global interrupt bit (connected to ARM M7 IRQ#41)"]
     pub mod GINT {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Global interrupt request is not asserted."]
             pub const GINT_0: u32 = 0;
             #[doc = "Global interrupt request is asserted."]
             pub const GINT_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ENET1 reference clock mode select."]
     pub mod ENET1_CLK_SEL {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ENET1 TX reference clock driven by ref_enetpll."]
             pub const ENET1_CLK_SEL_0: u32 = 0;
             #[doc = "Gets ENET1 TX reference clock from the ENET1_TX_CLK pin. In this use case, an external OSC provides the clock for both the external PHY and the internal controller."]
             pub const ENET1_CLK_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "USB Exposure mode"]
     pub mod USB_EXP_MODE {
         pub const offset: u32 = 15;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Exposure mode is disabled."]
             pub const USB_EXP_MODE_0: u32 = 0;
             #[doc = "Exposure mode is enabled."]
             pub const USB_EXP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ENET1_TX_CLK data direction control"]
     pub mod ENET1_TX_CLK_DIR {
         pub const offset: u32 = 17;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ENET1_TX_CLK output driver is disabled"]
             pub const ENET1_TX_CLK_DIR_0: u32 = 0;
             #[doc = "ENET1_TX_CLK output driver is enabled"]
             pub const ENET1_TX_CLK_DIR_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "sai1.MCLK signal direction control"]
     pub mod SAI1_MCLK_DIR {
         pub const offset: u32 = 19;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "sai1.MCLK is input signal"]
             pub const SAI1_MCLK_DIR_0: u32 = 0;
             #[doc = "sai1.MCLK is output signal"]
             pub const SAI1_MCLK_DIR_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "sai2.MCLK signal direction control"]
     pub mod SAI2_MCLK_DIR {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "sai2.MCLK is input signal"]
             pub const SAI2_MCLK_DIR_0: u32 = 0;
             #[doc = "sai2.MCLK is output signal"]
             pub const SAI2_MCLK_DIR_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "sai3.MCLK signal direction control"]
     pub mod SAI3_MCLK_DIR {
         pub const offset: u32 = 21;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "sai3.MCLK is input signal"]
             pub const SAI3_MCLK_DIR_0: u32 = 0;
             #[doc = "sai3.MCLK is output signal"]
             pub const SAI3_MCLK_DIR_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Exclusive monitor response select of illegal command"]
     pub mod EXC_MON {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "OKAY response"]
             pub const EXC_MON_0: u32 = 0;
             #[doc = "SLVError response (default)"]
             pub const EXC_MON_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ENET ipg_clk_s clock gating enable"]
     pub mod ENET_IPG_CLK_S_EN {
         pub const offset: u32 = 23;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ipg_clk_s is gated when there is no IPS access"]
             pub const ENET_IPG_CLK_S_EN_0: u32 = 0;
             #[doc = "ipg_clk_s is always on"]
             pub const ENET_IPG_CLK_S_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ARM CM7 platform AHB clock enable"]
     pub mod CM7_FORCE_HCLK_EN {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "AHB clock is not running (gated)"]
             pub const CM7_FORCE_HCLK_EN_0: u32 = 0;
             #[doc = "AHB clock is running (enabled)"]
             pub const CM7_FORCE_HCLK_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR2 General Purpose Register"]
 pub mod GPR2 {
+    pub use crate::RW as access;
     #[doc = "enable power saving features on L2 memory"]
     pub mod L2_MEM_EN_POWERSAVING {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "none memory power saving features enabled, SHUTDOWN/DEEPSLEEP/LIGHTSLEEP will have no effect"]
             pub const L2_MEM_EN_POWERSAVING_0: u32 = 0;
             #[doc = "memory power saving features enabled, set SHUTDOWN/DEEPSLEEP/LIGHTSLEEP(priority high to low) to enable power saving levels"]
             pub const L2_MEM_EN_POWERSAVING_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Automatically gate off RAM clock when RAM is not accessed."]
     pub mod RAM_AUTO_CLK_GATING_EN {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "disable automatically gate off RAM clock"]
             pub const RAM_AUTO_CLK_GATING_EN_0: u32 = 0;
             #[doc = "enable automatically gate off RAM clock"]
             pub const RAM_AUTO_CLK_GATING_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "control how memory enter Deep Sleep mode (shutdown periphery power, but maintain memory contents, outputs of memory are pulled low)"]
     pub mod L2_MEM_DEEPSLEEP {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "no force sleep control supported, memory deep sleep mode only entered when whole system in stop mode"]
             pub const L2_MEM_DEEPSLEEP_0: u32 = 0;
             #[doc = "force memory into deep sleep mode"]
             pub const L2_MEM_DEEPSLEEP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Divider ratio control for mclk from hmclk. mclk frequency = 1/(n+1) * hmclk frequency."]
     pub mod MQS_CLK_DIV {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "mclk frequency = 1/1 * hmclk frequency"]
             pub const DIVIDE_1: u32 = 0;
             #[doc = "mclk frequency = 1/2 * hmclk frequency"]
@@ -841,1822 +883,2112 @@ pub mod GPR2 {
             #[doc = "mclk frequency = 1/256 * hmclk frequency"]
             pub const DIVIDE_256: u32 = 0xff;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MQS software reset"]
     pub mod MQS_SW_RST {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Exit software reset for MQS"]
             pub const MQS_SW_RST_0: u32 = 0;
             #[doc = "Enable software reset for MQS"]
             pub const MQS_SW_RST_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "MQS enable."]
     pub mod MQS_EN {
         pub const offset: u32 = 25;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable MQS"]
             pub const MQS_EN_0: u32 = 0;
             #[doc = "Enable MQS"]
             pub const MQS_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Used to control the PWM oversampling rate compared with mclk."]
     pub mod MQS_OVERSAMPLE {
         pub const offset: u32 = 26;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "32"]
             pub const MQS_OVERSAMPLE_0: u32 = 0;
             #[doc = "64"]
             pub const MQS_OVERSAMPLE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "QTIMER1 timer counter freeze"]
     pub mod QTIMER1_TMR_CNTS_FREEZE {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "timer counter work normally"]
             pub const QTIMER1_TMR_CNTS_FREEZE_0: u32 = 0;
             #[doc = "reset counter and ouput flags"]
             pub const QTIMER1_TMR_CNTS_FREEZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "QTIMER2 timer counter freeze"]
     pub mod QTIMER2_TMR_CNTS_FREEZE {
         pub const offset: u32 = 29;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "timer counter work normally"]
             pub const QTIMER2_TMR_CNTS_FREEZE_0: u32 = 0;
             #[doc = "reset counter and ouput flags"]
             pub const QTIMER2_TMR_CNTS_FREEZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR3 General Purpose Register"]
 pub mod GPR3 {
+    pub use crate::RW as access;
     #[doc = "OCRAM_CTL\\[3\\] - write address pipeline control bit"]
     pub mod OCRAM_CTL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Select 128-bit dcp key from 256-bit key from snvs/ocotp"]
     pub mod DCP_KEY_SEL {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select \\[127:0\\] from snvs/ocotp key as dcp key"]
             pub const DCP_KEY_SEL_0: u32 = 0;
             #[doc = "Select \\[255:128\\] from snvs/ocotp key as dcp key"]
             pub const DCP_KEY_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This field shows the OCRAM pipeline settings status, controlled by OCRAM_CTL bits respectively"]
     pub mod OCRAM_STATUS {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "read data pipeline configuration valid"]
             pub const OCRAM_STATUS_0: u32 = 0;
             #[doc = "read data pipeline control bit changed"]
             pub const OCRAM_STATUS_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR4 General Purpose Register"]
 pub mod GPR4 {
+    pub use crate::RW as access;
     #[doc = "EDMA stop request."]
     pub mod EDMA_STOP_REQ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const EDMA_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const EDMA_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CAN1 stop request."]
     pub mod CAN1_STOP_REQ {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const CAN1_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const CAN1_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CAN2 stop request."]
     pub mod CAN2_STOP_REQ {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const CAN2_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const CAN2_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "TRNG stop request."]
     pub mod TRNG_STOP_REQ {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const TRNG_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const TRNG_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ENET stop request."]
     pub mod ENET_STOP_REQ {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const ENET_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const ENET_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SAI1 stop request."]
     pub mod SAI1_STOP_REQ {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const SAI1_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const SAI1_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SAI2 stop request."]
     pub mod SAI2_STOP_REQ {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const SAI2_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const SAI2_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SAI3 stop request."]
     pub mod SAI3_STOP_REQ {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const SAI3_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const SAI3_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SEMC stop request."]
     pub mod SEMC_STOP_REQ {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const SEMC_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const SEMC_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "PIT stop request."]
     pub mod PIT_STOP_REQ {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const PIT_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const PIT_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "FlexSPI stop request."]
     pub mod FLEXSPI_STOP_REQ {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const FLEXSPI_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const FLEXSPI_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "FlexIO1 stop request."]
     pub mod FLEXIO1_STOP_REQ {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const FLEXIO1_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const FLEXIO1_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "EDMA stop acknowledge. This is a status (read-only) bit"]
     pub mod EDMA_STOP_ACK {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "EDMA stop acknowledge is not asserted"]
             pub const EDMA_STOP_ACK_0: u32 = 0;
             #[doc = "EDMA stop acknowledge is asserted (EDMA is in STOP mode)."]
             pub const EDMA_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CAN1 stop acknowledge."]
     pub mod CAN1_STOP_ACK {
         pub const offset: u32 = 17;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "CAN1 stop acknowledge is not asserted"]
             pub const CAN1_STOP_ACK_0: u32 = 0;
             #[doc = "CAN1 stop acknowledge is asserted"]
             pub const CAN1_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CAN2 stop acknowledge."]
     pub mod CAN2_STOP_ACK {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "CAN2 stop acknowledge is not asserted"]
             pub const CAN2_STOP_ACK_0: u32 = 0;
             #[doc = "CAN2 stop acknowledge is asserted"]
             pub const CAN2_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "TRNG stop acknowledge"]
     pub mod TRNG_STOP_ACK {
         pub const offset: u32 = 19;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "TRNG stop acknowledge is not asserted"]
             pub const TRNG_STOP_ACK_0: u32 = 0;
             #[doc = "TRNG stop acknowledge is asserted"]
             pub const TRNG_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ENET stop acknowledge."]
     pub mod ENET_STOP_ACK {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ENET stop acknowledge is not asserted"]
             pub const ENET_STOP_ACK_0: u32 = 0;
             #[doc = "ENET stop acknowledge is asserted"]
             pub const ENET_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SAI1 stop acknowledge"]
     pub mod SAI1_STOP_ACK {
         pub const offset: u32 = 21;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "SAI1 stop acknowledge is not asserted"]
             pub const SAI1_STOP_ACK_0: u32 = 0;
             #[doc = "SAI1 stop acknowledge is asserted"]
             pub const SAI1_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SAI2 stop acknowledge"]
     pub mod SAI2_STOP_ACK {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "SAI2 stop acknowledge is not asserted"]
             pub const SAI2_STOP_ACK_0: u32 = 0;
             #[doc = "SAI2 stop acknowledge is asserted"]
             pub const SAI2_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SAI3 stop acknowledge"]
     pub mod SAI3_STOP_ACK {
         pub const offset: u32 = 23;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "SAI3 stop acknowledge is not asserted"]
             pub const SAI3_STOP_ACK_0: u32 = 0;
             #[doc = "SAI3 stop acknowledge is asserted"]
             pub const SAI3_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SEMC stop acknowledge"]
     pub mod SEMC_STOP_ACK {
         pub const offset: u32 = 25;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "SEMC stop acknowledge is not asserted"]
             pub const SEMC_STOP_ACK_0: u32 = 0;
             #[doc = "SEMC stop acknowledge is asserted"]
             pub const SEMC_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "PIT stop acknowledge"]
     pub mod PIT_STOP_ACK {
         pub const offset: u32 = 26;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "PIT stop acknowledge is not asserted"]
             pub const PIT_STOP_ACK_0: u32 = 0;
             #[doc = "PIT stop acknowledge is asserted"]
             pub const PIT_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "FLEXSPI stop acknowledge"]
     pub mod FLEXSPI_STOP_ACK {
         pub const offset: u32 = 27;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "FLEXSPI stop acknowledge is not asserted"]
             pub const FLEXSPI_STOP_ACK_0: u32 = 0;
             #[doc = "FLEXSPI stop acknowledge is asserted"]
             pub const FLEXSPI_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "FLEXIO1 stop acknowledge"]
     pub mod FLEXIO1_STOP_ACK {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "FLEXIO1 stop acknowledge is not asserted"]
             pub const FLEXIO1_STOP_ACK_0: u32 = 0;
             #[doc = "FLEXIO1 stop acknowledge is asserted"]
             pub const FLEXIO1_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR5 General Purpose Register"]
 pub mod GPR5 {
+    pub use crate::RW as access;
     #[doc = "WDOG1 Timeout Mask"]
     pub mod WDOG1_MASK {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "WDOG1 Timeout behaves normally"]
             pub const WDOG1_MASK_0: u32 = 0;
             #[doc = "WDOG1 Timeout is masked"]
             pub const WDOG1_MASK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "WDOG2 Timeout Mask"]
     pub mod WDOG2_MASK {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "WDOG2 Timeout behaves normally"]
             pub const WDOG2_MASK_0: u32 = 0;
             #[doc = "WDOG2 Timeout is masked"]
             pub const WDOG2_MASK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "GPT2 input capture channel 1 source select"]
     pub mod GPT2_CAPIN1_SEL {
         pub const offset: u32 = 23;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "source from GPT2_CAPTURE1"]
             pub const GPT2_CAPIN1_SEL_0: u32 = 0;
             #[doc = "source from ENET_1588_EVENT3_OUT (chnnal 3 of IEEE 1588 timer)"]
             pub const GPT2_CAPIN1_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ENET input timer event3 source select"]
     pub mod ENET_EVENT3IN_SEL {
         pub const offset: u32 = 25;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "event3 source input from ENET_1588_EVENT3_IN"]
             pub const ENET_EVENT3IN_SEL_0: u32 = 0;
             #[doc = "event3 source input from GPT2.GPT_COMPARE1"]
             pub const ENET_EVENT3IN_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "GPT1 1 MHz clock source select"]
     pub mod VREF_1M_CLK_GPT1 {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "GPT1 ipg_clk_highfreq driven by IPG_PERCLK"]
             pub const VREF_1M_CLK_GPT1_0: u32 = 0;
             #[doc = "GPT1 ipg_clk_highfreq driven by anatop 1 MHz clock"]
             pub const VREF_1M_CLK_GPT1_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "GPT2 1 MHz clock source select"]
     pub mod VREF_1M_CLK_GPT2 {
         pub const offset: u32 = 29;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "GPT2 ipg_clk_highfreq driven by IPG_PERCLK"]
             pub const VREF_1M_CLK_GPT2_0: u32 = 0;
             #[doc = "GPT2 ipg_clk_highfreq driven by anatop 1 MHz clock"]
             pub const VREF_1M_CLK_GPT2_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR6 General Purpose Register"]
 pub mod GPR6 {
+    pub use crate::RW as access;
     #[doc = "QTIMER1 TMR0 input select"]
     pub mod QTIMER1_TRM0_INPUT_SEL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "input from IOMUX"]
             pub const QTIMER1_TRM0_INPUT_SEL_0: u32 = 0;
             #[doc = "input from XBAR"]
             pub const QTIMER1_TRM0_INPUT_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "QTIMER1 TMR1 input select"]
     pub mod QTIMER1_TRM1_INPUT_SEL {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "input from IOMUX"]
             pub const QTIMER1_TRM1_INPUT_SEL_0: u32 = 0;
             #[doc = "input from XBAR"]
             pub const QTIMER1_TRM1_INPUT_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "QTIMER1 TMR2 input select"]
     pub mod QTIMER1_TRM2_INPUT_SEL {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "input from IOMUX"]
             pub const QTIMER1_TRM2_INPUT_SEL_0: u32 = 0;
             #[doc = "input from XBAR"]
             pub const QTIMER1_TRM2_INPUT_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "QTIMER1 TMR3 input select"]
     pub mod QTIMER1_TRM3_INPUT_SEL {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "input from IOMUX"]
             pub const QTIMER1_TRM3_INPUT_SEL_0: u32 = 0;
             #[doc = "input from XBAR"]
             pub const QTIMER1_TRM3_INPUT_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "QTIMER2 TMR0 input select"]
     pub mod QTIMER2_TRM0_INPUT_SEL {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "input from IOMUX"]
             pub const QTIMER2_TRM0_INPUT_SEL_0: u32 = 0;
             #[doc = "input from XBAR"]
             pub const QTIMER2_TRM0_INPUT_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "QTIMER2 TMR1 input select"]
     pub mod QTIMER2_TRM1_INPUT_SEL {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "input from IOMUX"]
             pub const QTIMER2_TRM1_INPUT_SEL_0: u32 = 0;
             #[doc = "input from XBAR"]
             pub const QTIMER2_TRM1_INPUT_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "QTIMER2 TMR2 input select"]
     pub mod QTIMER2_TRM2_INPUT_SEL {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "input from IOMUX"]
             pub const QTIMER2_TRM2_INPUT_SEL_0: u32 = 0;
             #[doc = "input from XBAR"]
             pub const QTIMER2_TRM2_INPUT_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "QTIMER2 TMR3 input select"]
     pub mod QTIMER2_TRM3_INPUT_SEL {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "input from IOMUX"]
             pub const QTIMER2_TRM3_INPUT_SEL_0: u32 = 0;
             #[doc = "input from XBAR"]
             pub const QTIMER2_TRM3_INPUT_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT4 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_4 {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_4_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_4_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT5 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_5 {
         pub const offset: u32 = 17;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_5_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_5_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT6 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_6 {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_6_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_6_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT7 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_7 {
         pub const offset: u32 = 19;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_7_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_7_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT8 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_8 {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_8_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_8_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT9 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_9 {
         pub const offset: u32 = 21;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_9_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_9_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT10 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_10 {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_10_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_10_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT11 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_11 {
         pub const offset: u32 = 23;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_11_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_11_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT12 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_12 {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_12_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_12_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT13 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_13 {
         pub const offset: u32 = 25;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_13_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_13_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT14 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_14 {
         pub const offset: u32 = 26;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_14_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_14_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT15 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_15 {
         pub const offset: u32 = 27;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_15_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_15_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT16 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_16 {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_16_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_16_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT17 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_17 {
         pub const offset: u32 = 29;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_17_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_17_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT18 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_18 {
         pub const offset: u32 = 30;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_18_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_18_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IOMUXC XBAR_INOUT19 function direction select"]
     pub mod IOMUXC_XBAR_DIR_SEL_19 {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "XBAR_INOUT as input"]
             pub const IOMUXC_XBAR_DIR_SEL_19_0: u32 = 0;
             #[doc = "XBAR_INOUT as output"]
             pub const IOMUXC_XBAR_DIR_SEL_19_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR7 General Purpose Register"]
 pub mod GPR7 {
+    pub use crate::RW as access;
     #[doc = "LPI2C1 stop request"]
     pub mod LPI2C1_STOP_REQ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPI2C1_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPI2C1_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C2 stop request"]
     pub mod LPI2C2_STOP_REQ {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPI2C2_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPI2C2_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C3 stop request"]
     pub mod LPI2C3_STOP_REQ {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPI2C3_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPI2C3_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C4 stop request"]
     pub mod LPI2C4_STOP_REQ {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPI2C4_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPI2C4_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI1 stop request"]
     pub mod LPSPI1_STOP_REQ {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPSPI1_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPSPI1_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI2 stop request"]
     pub mod LPSPI2_STOP_REQ {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPSPI2_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPSPI2_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI3 stop request"]
     pub mod LPSPI3_STOP_REQ {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPSPI3_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPSPI3_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI4 stop request"]
     pub mod LPSPI4_STOP_REQ {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPSPI4_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPSPI4_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART1 stop request"]
     pub mod LPUART1_STOP_REQ {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPUART1_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPUART1_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART1 stop request"]
     pub mod LPUART2_STOP_REQ {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPUART2_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPUART2_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART3 stop request"]
     pub mod LPUART3_STOP_REQ {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPUART3_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPUART3_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART4 stop request"]
     pub mod LPUART4_STOP_REQ {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPUART4_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPUART4_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART5 stop request"]
     pub mod LPUART5_STOP_REQ {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPUART5_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPUART5_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART6 stop request"]
     pub mod LPUART6_STOP_REQ {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPUART6_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPUART6_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART7 stop request"]
     pub mod LPUART7_STOP_REQ {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPUART7_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPUART7_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART8 stop request"]
     pub mod LPUART8_STOP_REQ {
         pub const offset: u32 = 15;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop request off"]
             pub const LPUART8_STOP_REQ_0: u32 = 0;
             #[doc = "stop request on"]
             pub const LPUART8_STOP_REQ_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C1 stop acknowledge"]
     pub mod LPI2C1_STOP_ACK {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPI2C1_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted (the module is in Stop mode)"]
             pub const LPI2C1_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C2 stop acknowledge"]
     pub mod LPI2C2_STOP_ACK {
         pub const offset: u32 = 17;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPI2C2_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPI2C2_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C3 stop acknowledge"]
     pub mod LPI2C3_STOP_ACK {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPI2C3_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPI2C3_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C4 stop acknowledge"]
     pub mod LPI2C4_STOP_ACK {
         pub const offset: u32 = 19;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPI2C4_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPI2C4_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI1 stop acknowledge"]
     pub mod LPSPI1_STOP_ACK {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPSPI1_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPSPI1_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI2 stop acknowledge"]
     pub mod LPSPI2_STOP_ACK {
         pub const offset: u32 = 21;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPSPI2_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPSPI2_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI3 stop acknowledge"]
     pub mod LPSPI3_STOP_ACK {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPSPI3_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPSPI3_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI4 stop acknowledge"]
     pub mod LPSPI4_STOP_ACK {
         pub const offset: u32 = 23;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPSPI4_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPSPI4_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART1 stop acknowledge"]
     pub mod LPUART1_STOP_ACK {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPUART1_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPUART1_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART1 stop acknowledge"]
     pub mod LPUART2_STOP_ACK {
         pub const offset: u32 = 25;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPUART2_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPUART2_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART3 stop acknowledge"]
     pub mod LPUART3_STOP_ACK {
         pub const offset: u32 = 26;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPUART3_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPUART3_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART4 stop acknowledge"]
     pub mod LPUART4_STOP_ACK {
         pub const offset: u32 = 27;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPUART4_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPUART4_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART5 stop acknowledge"]
     pub mod LPUART5_STOP_ACK {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPUART5_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPUART5_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART6 stop acknowledge"]
     pub mod LPUART6_STOP_ACK {
         pub const offset: u32 = 29;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPUART6_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPUART6_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART7 stop acknowledge"]
     pub mod LPUART7_STOP_ACK {
         pub const offset: u32 = 30;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPUART7_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted"]
             pub const LPUART7_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART8 stop acknowledge"]
     pub mod LPUART8_STOP_ACK {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "stop acknowledge is not asserted"]
             pub const LPUART8_STOP_ACK_0: u32 = 0;
             #[doc = "stop acknowledge is asserted (the module is in Stop mode)"]
             pub const LPUART8_STOP_ACK_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR8 General Purpose Register"]
 pub mod GPR8 {
+    pub use crate::RW as access;
     #[doc = "LPI2C1 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPI2C1_IPG_STOP_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPI2C1_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPI2C1_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C1 ipg_doze mode"]
     pub mod LPI2C1_IPG_DOZE {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPI2C1_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPI2C1_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C2 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPI2C2_IPG_STOP_MODE {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPI2C2_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPI2C2_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C2 ipg_doze mode"]
     pub mod LPI2C2_IPG_DOZE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPI2C2_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPI2C2_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C3 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPI2C3_IPG_STOP_MODE {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPI2C3_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPI2C3_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C3 ipg_doze mode"]
     pub mod LPI2C3_IPG_DOZE {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPI2C3_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPI2C3_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C4 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPI2C4_IPG_STOP_MODE {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPI2C4_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPI2C4_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPI2C4 ipg_doze mode"]
     pub mod LPI2C4_IPG_DOZE {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPI2C4_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPI2C4_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI1 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPSPI1_IPG_STOP_MODE {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPSPI1_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPSPI1_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI1 ipg_doze mode"]
     pub mod LPSPI1_IPG_DOZE {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPSPI1_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPSPI1_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI2 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPSPI2_IPG_STOP_MODE {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPSPI2_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPSPI2_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI2 ipg_doze mode"]
     pub mod LPSPI2_IPG_DOZE {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPSPI2_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPSPI2_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI3 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPSPI3_IPG_STOP_MODE {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPSPI3_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPSPI3_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI3 ipg_doze mode"]
     pub mod LPSPI3_IPG_DOZE {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPSPI3_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPSPI3_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI4 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPSPI4_IPG_STOP_MODE {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPSPI4_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPSPI4_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSPI4 ipg_doze mode"]
     pub mod LPSPI4_IPG_DOZE {
         pub const offset: u32 = 15;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPSPI4_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPSPI4_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART1 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPUART1_IPG_STOP_MODE {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPUART1_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPUART1_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART1 ipg_doze mode"]
     pub mod LPUART1_IPG_DOZE {
         pub const offset: u32 = 17;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPUART1_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPUART1_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART2 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPUART2_IPG_STOP_MODE {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPUART2_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPUART2_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART2 ipg_doze mode"]
     pub mod LPUART2_IPG_DOZE {
         pub const offset: u32 = 19;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPUART2_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPUART2_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART3 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPUART3_IPG_STOP_MODE {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPUART3_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPUART3_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART3 ipg_doze mode"]
     pub mod LPUART3_IPG_DOZE {
         pub const offset: u32 = 21;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPUART3_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPUART3_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART4 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPUART4_IPG_STOP_MODE {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPUART4_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPUART4_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART4 ipg_doze mode"]
     pub mod LPUART4_IPG_DOZE {
         pub const offset: u32 = 23;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPUART4_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPUART4_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART5 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPUART5_IPG_STOP_MODE {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPUART5_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPUART5_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART5 ipg_doze mode"]
     pub mod LPUART5_IPG_DOZE {
         pub const offset: u32 = 25;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPUART5_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPUART5_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART6 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPUART6_IPG_STOP_MODE {
         pub const offset: u32 = 26;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPUART6_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPUART6_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART6 ipg_doze mode"]
     pub mod LPUART6_IPG_DOZE {
         pub const offset: u32 = 27;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPUART6_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPUART6_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART7 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPUART7_IPG_STOP_MODE {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPUART7_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPUART7_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART7 ipg_doze mode"]
     pub mod LPUART7_IPG_DOZE {
         pub const offset: u32 = 29;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPUART7_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPUART7_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART8 stop mode selection, cannot change when ipg_stop is asserted."]
     pub mod LPUART8_IPG_STOP_MODE {
         pub const offset: u32 = 30;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "the module is functional in Stop mode"]
             pub const LPUART8_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "the module is NOT functional in Stop mode, when this bit is equal to 1 and ipg_stop is asserted"]
             pub const LPUART8_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPUART8 ipg_doze mode"]
     pub mod LPUART8_IPG_DOZE {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "not in doze mode"]
             pub const LPUART8_IPG_DOZE_0: u32 = 0;
             #[doc = "in doze mode"]
             pub const LPUART8_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
+}
+#[doc = "GPR9 General Purpose Register"]
+pub mod GPR9 {
+    pub use crate::RO as access;
 }
 #[doc = "GPR10 General Purpose Register"]
 pub mod GPR10 {
+    pub use crate::RW as access;
     #[doc = "ARM non-secure (non-invasive) debug enable"]
     pub mod NIDEN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Debug turned off."]
             pub const NIDEN_0: u32 = 0;
             #[doc = "Debug enabled (default)."]
             pub const NIDEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ARM invasive debug enable"]
     pub mod DBG_EN {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Debug turned off."]
             pub const DBG_EN_0: u32 = 0;
             #[doc = "Debug enabled (default)."]
             pub const DBG_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Security error response enable for all security gaskets (on both AHB and AXI buses)"]
     pub mod SEC_ERR_RESP {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "OKEY response"]
             pub const SEC_ERR_RESP_0: u32 = 0;
             #[doc = "SLVError (default)"]
             pub const SEC_ERR_RESP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "DCP Key selection bit."]
     pub mod DCPKEY_OCOTP_OR_KEYMUX {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Select key from Key MUX (SNVS/OTPMK)."]
             pub const DCPKEY_OCOTP_OR_KEYMUX_0: u32 = 0;
             #[doc = "Select key from OCOTP (SW_GP2)."]
             pub const DCPKEY_OCOTP_OR_KEYMUX_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "OCRAM TrustZone (TZ) enable."]
     pub mod OCRAM_TZ_EN {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The TrustZone feature is disabled. Entire OCRAM space is available for all access types (secure/non-secure/user/supervisor)."]
             pub const OCRAM_TZ_EN_0: u32 = 0;
             #[doc = "The TrustZone feature is enabled. Access to address in the range specified by \\[ENDADDR:STARTADDR\\] follows the execution mode access policy described in CSU chapter."]
             pub const OCRAM_TZ_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "OCRAM TrustZone (TZ) start address"]
     pub mod OCRAM_TZ_ADDR {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Lock NIDEN field for changes"]
     pub mod LOCK_NIDEN {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Field is not locked"]
             pub const LOCK_NIDEN_0: u32 = 0;
             #[doc = "Field is locked (read access only)"]
             pub const LOCK_NIDEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Lock DBG_EN field for changes"]
     pub mod LOCK_DBG_EN {
         pub const offset: u32 = 17;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Field is not locked"]
             pub const LOCK_DBG_EN_0: u32 = 0;
             #[doc = "Field is locked (read access only)"]
             pub const LOCK_DBG_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Lock SEC_ERR_RESP field for changes"]
     pub mod LOCK_SEC_ERR_RESP {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Field is not locked"]
             pub const LOCK_SEC_ERR_RESP_0: u32 = 0;
             #[doc = "Field is locked (read access only)"]
             pub const LOCK_SEC_ERR_RESP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Lock DCP Key OCOTP/Key MUX selection bit"]
     pub mod LOCK_DCPKEY_OCOTP_OR_KEYMUX {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Field is not locked"]
             pub const LOCK_DCPKEY_OCOTP_OR_KEYMUX_0: u32 = 0;
             #[doc = "Field is locked (read access only)"]
             pub const LOCK_DCPKEY_OCOTP_OR_KEYMUX_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Lock OCRAM_TZ_EN field for changes"]
     pub mod LOCK_OCRAM_TZ_EN {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Field is not locked"]
             pub const LOCK_OCRAM_TZ_EN_0: u32 = 0;
             #[doc = "Field is locked (read access only)"]
             pub const LOCK_OCRAM_TZ_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Lock OCRAM_TZ_ADDR field for changes"]
     pub mod LOCK_OCRAM_TZ_ADDR {
         pub const offset: u32 = 25;
         pub const mask: u32 = 0x7f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Field is not locked"]
             pub const LOCK_OCRAM_TZ_ADDR_0: u32 = 0;
             #[doc = "Field is locked (read access only)"]
             pub const LOCK_OCRAM_TZ_ADDR_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR11 General Purpose Register"]
 pub mod GPR11 {
+    pub use crate::RW as access;
     #[doc = "Access control of memory region-0"]
     pub mod M7_APC_AC_R0_CTRL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "No access protection"]
             pub const M7_APC_AC_R0_CTRL_0: u32 = 0;
             #[doc = "M7 debug protection enabled"]
@@ -2666,14 +2998,16 @@ pub mod GPR11 {
             #[doc = "Both M7 debug and FlexSPI access are protected"]
             pub const M7_APC_AC_R0_CTRL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Access control of memory region-1"]
     pub mod M7_APC_AC_R1_CTRL {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "No access protection"]
             pub const M7_APC_AC_R1_CTRL_0: u32 = 0;
             #[doc = "M7 debug protection enabled"]
@@ -2683,14 +3017,16 @@ pub mod GPR11 {
             #[doc = "Both M7 debug and FlexSPI access are protected"]
             pub const M7_APC_AC_R1_CTRL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Access control of memory region-2"]
     pub mod M7_APC_AC_R2_CTRL {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "No access protection"]
             pub const M7_APC_AC_R2_CTRL_0: u32 = 0;
             #[doc = "M7 debug protection enabled"]
@@ -2700,14 +3036,16 @@ pub mod GPR11 {
             #[doc = "Both M7 debug and FlexSPI access are protected"]
             pub const M7_APC_AC_R2_CTRL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Access control of memory region-3"]
     pub mod M7_APC_AC_R3_CTRL {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "No access protection"]
             pub const M7_APC_AC_R3_CTRL_0: u32 = 0;
             #[doc = "M7 debug protection enabled"]
@@ -2717,318 +3055,373 @@ pub mod GPR11 {
             #[doc = "Both M7 debug and FlexSPI access are protected"]
             pub const M7_APC_AC_R3_CTRL_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "BEE data decryption of memory region-n (n = 3 to 0)"]
     pub mod BEE_DE_RX_EN {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Lock M7_APC_AC_R0_CTRL field for changes"]
     pub mod LOCK_M7_APC_AC_R0_CTRL {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Lock M7_APC_AC_R1_CTRL field for changes"]
     pub mod LOCK_M7_APC_AC_R1_CTRL {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Lock M7_APC_AC_R2_CTRL field for changes"]
     pub mod LOCK_M7_APC_AC_R2_CTRL {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Lock M7_APC_AC_R3_CTRL field for changes"]
     pub mod LOCK_M7_APC_AC_R3_CTRL {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Lock BEE_DE_RX_EN\\[n\\] (n = 3 to 0) field for changes"]
     pub mod LOCK_BEE_DE_RX_EN {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR12 General Purpose Register"]
 pub mod GPR12 {
+    pub use crate::RW as access;
     #[doc = "FlexIO1 stop mode selection. Cannot change when ipg_stop is asserted."]
     pub mod FLEXIO1_IPG_STOP_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "FlexIO1 is functional in Stop mode."]
             pub const FLEXIO1_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "When this bit is equal to 1'b1 and ipg_stop is asserted, FlexIO1 is not functional in Stop mode."]
             pub const FLEXIO1_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "FLEXIO1 ipg_doze mode"]
     pub mod FLEXIO1_IPG_DOZE {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "FLEXIO1 is not in doze mode"]
             pub const FLEXIO1_IPG_DOZE_0: u32 = 0;
             #[doc = "FLEXIO1 is in doze mode"]
             pub const FLEXIO1_IPG_DOZE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ACMP stop mode selection. Cannot change when ipg_stop is asserted."]
     pub mod ACMP_IPG_STOP_MODE {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ACMP is functional in Stop mode."]
             pub const ACMP_IPG_STOP_MODE_0: u32 = 0;
             #[doc = "When this bit is equal to 1'b1 and ipg_stop is asserted, ACMP is not functional in Stop mode."]
             pub const ACMP_IPG_STOP_MODE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR13 General Purpose Register"]
 pub mod GPR13 {
+    pub use crate::RW as access;
     #[doc = "uSDHC block cacheable attribute value of AXI read transactions"]
     pub mod ARCACHE_USDHC {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Cacheable attribute is off for read transactions."]
             pub const ARCACHE_USDHC_0: u32 = 0;
             #[doc = "Cacheable attribute is on for read transactions."]
             pub const ARCACHE_USDHC_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "uSDHC block cacheable attribute value of AXI write transactions"]
     pub mod AWCACHE_USDHC {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Cacheable attribute is off for write transactions."]
             pub const AWCACHE_USDHC_0: u32 = 0;
             #[doc = "Cacheable attribute is on for write transactions."]
             pub const AWCACHE_USDHC_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ENET block cacheable attribute value of AXI transactions"]
     pub mod CACHE_ENET {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Cacheable attribute is off for read/write transactions."]
             pub const CACHE_ENET_0: u32 = 0;
             #[doc = "Cacheable attribute is on for read/write transactions."]
             pub const CACHE_ENET_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "USB block cacheable attribute value of AXI transactions"]
     pub mod CACHE_USB {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Cacheable attribute is off for read/write transactions."]
             pub const CACHE_USB_0: u32 = 0;
             #[doc = "Cacheable attribute is on for read/write transactions."]
             pub const CACHE_USB_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR14 General Purpose Register"]
 pub mod GPR14 {
+    pub use crate::RW as access;
     #[doc = "reduces ACMP1 internal bias current by 30%"]
     pub mod ACMP1_CMP_IGEN_TRIM_DN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "no reduce"]
             pub const ACMP1_CMP_IGEN_TRIM_DN_0: u32 = 0;
             #[doc = "reduces"]
             pub const ACMP1_CMP_IGEN_TRIM_DN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "reduces ACMP2 internal bias current by 30%"]
     pub mod ACMP2_CMP_IGEN_TRIM_DN {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "no reduce"]
             pub const ACMP2_CMP_IGEN_TRIM_DN_0: u32 = 0;
             #[doc = "reduces"]
             pub const ACMP2_CMP_IGEN_TRIM_DN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "reduces ACMP3 internal bias current by 30%"]
     pub mod ACMP3_CMP_IGEN_TRIM_DN {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "no reduce"]
             pub const ACMP3_CMP_IGEN_TRIM_DN_0: u32 = 0;
             #[doc = "reduces"]
             pub const ACMP3_CMP_IGEN_TRIM_DN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "reduces ACMP4 internal bias current by 30%"]
     pub mod ACMP4_CMP_IGEN_TRIM_DN {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "no reduce"]
             pub const ACMP4_CMP_IGEN_TRIM_DN_0: u32 = 0;
             #[doc = "reduces"]
             pub const ACMP4_CMP_IGEN_TRIM_DN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "increases ACMP1 internal bias current by 30%"]
     pub mod ACMP1_CMP_IGEN_TRIM_UP {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "no increase"]
             pub const ACMP1_CMP_IGEN_TRIM_UP_0: u32 = 0;
             #[doc = "increases"]
             pub const ACMP1_CMP_IGEN_TRIM_UP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "increases ACMP2 internal bias current by 30%"]
     pub mod ACMP2_CMP_IGEN_TRIM_UP {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "no increase"]
             pub const ACMP2_CMP_IGEN_TRIM_UP_0: u32 = 0;
             #[doc = "increases"]
             pub const ACMP2_CMP_IGEN_TRIM_UP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "increases ACMP3 internal bias current by 30%"]
     pub mod ACMP3_CMP_IGEN_TRIM_UP {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "no increase"]
             pub const ACMP3_CMP_IGEN_TRIM_UP_0: u32 = 0;
             #[doc = "increases"]
             pub const ACMP3_CMP_IGEN_TRIM_UP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "increases ACMP4 internal bias current by 30%"]
     pub mod ACMP4_CMP_IGEN_TRIM_UP {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "no increase"]
             pub const ACMP4_CMP_IGEN_TRIM_UP_0: u32 = 0;
             #[doc = "increases"]
             pub const ACMP4_CMP_IGEN_TRIM_UP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ACMP1 sample_lv source select"]
     pub mod ACMP1_SAMPLE_SYNC_EN {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "select XBAR output"]
             pub const ACMP1_SAMPLE_SYNC_EN_0: u32 = 0;
             #[doc = "select synced sample_lv"]
             pub const ACMP1_SAMPLE_SYNC_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ACMP2 sample_lv source select"]
     pub mod ACMP2_SAMPLE_SYNC_EN {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "select XBAR output"]
             pub const ACMP2_SAMPLE_SYNC_EN_0: u32 = 0;
             #[doc = "select synced sample_lv"]
             pub const ACMP2_SAMPLE_SYNC_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ACMP3 sample_lv source select"]
     pub mod ACMP3_SAMPLE_SYNC_EN {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "select XBAR output"]
             pub const ACMP3_SAMPLE_SYNC_EN_0: u32 = 0;
             #[doc = "select synced sample_lv"]
             pub const ACMP3_SAMPLE_SYNC_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ACMP4 sample_lv source select"]
     pub mod ACMP4_SAMPLE_SYNC_EN {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "select XBAR output"]
             pub const ACMP4_SAMPLE_SYNC_EN_0: u32 = 0;
             #[doc = "select synced sample_lv"]
             pub const ACMP4_SAMPLE_SYNC_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "ITCM total size configuration"]
     pub mod CM7_CFGITCMSZ {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "0 KB (No ITCM)"]
             pub const CM7_CFGITCMSZ_0: u32 = 0;
             #[doc = "4 KB"]
@@ -3046,14 +3439,16 @@ pub mod GPR14 {
             #[doc = "256 KB"]
             pub const CM7_CFGITCMSZ_9: u32 = 0x09;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "DTCM total size configuration"]
     pub mod CM7_CFGDTCMSZ {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "0 KB (No DTCM)"]
             pub const CM7_CFGDTCMSZ_0: u32 = 0;
             #[doc = "4 KB"]
@@ -3071,250 +3466,306 @@ pub mod GPR14 {
             #[doc = "256 KB"]
             pub const CM7_CFGDTCMSZ_9: u32 = 0x09;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
+}
+#[doc = "GPR15 General Purpose Register"]
+pub mod GPR15 {
+    pub use crate::RO as access;
 }
 #[doc = "GPR16 General Purpose Register"]
 pub mod GPR16 {
+    pub use crate::RW as access;
     #[doc = "ITCM enable initialization out of reset"]
     pub mod INIT_ITCM_EN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ITCM is disabled"]
             pub const INIT_ITCM_EN_0: u32 = 0;
             #[doc = "ITCM is enabled"]
             pub const INIT_ITCM_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "DTCM enable initialization out of reset"]
     pub mod INIT_DTCM_EN {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "DTCM is disabled"]
             pub const INIT_DTCM_EN_0: u32 = 0;
             #[doc = "DTCM is enabled"]
             pub const INIT_DTCM_EN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "FlexRAM bank config source select"]
     pub mod FLEXRAM_BANK_CFG_SEL {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "use fuse value to config"]
             pub const FLEXRAM_BANK_CFG_SEL_0: u32 = 0;
             #[doc = "use FLEXRAM_BANK_CFG to config"]
             pub const FLEXRAM_BANK_CFG_SEL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR17 General Purpose Register"]
 pub mod GPR17 {
+    pub use crate::RW as access;
     #[doc = "FlexRAM bank config value"]
     pub mod FLEXRAM_BANK_CFG {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR18 General Purpose Register"]
 pub mod GPR18 {
+    pub use crate::RW as access;
     #[doc = "lock M7_APC_AC_R0_BOT field for changes"]
     pub mod LOCK_M7_APC_AC_R0_BOT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Register field \\[31:1\\] is not locked"]
             pub const LOCK_M7_APC_AC_R0_BOT_0: u32 = 0;
             #[doc = "Register field \\[31:1\\] is locked (read access only)"]
             pub const LOCK_M7_APC_AC_R0_BOT_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "APC end address of memory region-0"]
     pub mod M7_APC_AC_R0_BOT {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x1fff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR19 General Purpose Register"]
 pub mod GPR19 {
+    pub use crate::RW as access;
     #[doc = "lock M7_APC_AC_R0_TOP field for changes"]
     pub mod LOCK_M7_APC_AC_R0_TOP {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Register field \\[31:1\\] is not locked"]
             pub const LOCK_M7_APC_AC_R0_TOP_0: u32 = 0;
             #[doc = "Register field \\[31:1\\] is locked (read access only)"]
             pub const LOCK_M7_APC_AC_R0_TOP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "APC start address of memory region-0"]
     pub mod M7_APC_AC_R0_TOP {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x1fff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR20 General Purpose Register"]
 pub mod GPR20 {
+    pub use crate::RW as access;
     #[doc = "lock M7_APC_AC_R1_BOT field for changes"]
     pub mod LOCK_M7_APC_AC_R1_BOT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Register field \\[31:1\\] is not locked"]
             pub const LOCK_M7_APC_AC_R1_BOT_0: u32 = 0;
             #[doc = "Register field \\[31:1\\] is locked (read access only)"]
             pub const LOCK_M7_APC_AC_R1_BOT_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "APC end address of memory region-1"]
     pub mod M7_APC_AC_R1_BOT {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x1fff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR21 General Purpose Register"]
 pub mod GPR21 {
+    pub use crate::RW as access;
     #[doc = "lock M7_APC_AC_R1_TOP field for changes"]
     pub mod LOCK_M7_APC_AC_R1_TOP {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Register field \\[31:1\\] is not locked"]
             pub const LOCK_M7_APC_AC_R1_TOP_0: u32 = 0;
             #[doc = "Register field \\[31:1\\] is locked (read access only)"]
             pub const LOCK_M7_APC_AC_R1_TOP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "APC start address of memory region-1"]
     pub mod M7_APC_AC_R1_TOP {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x1fff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR22 General Purpose Register"]
 pub mod GPR22 {
+    pub use crate::RW as access;
     #[doc = "lock M7_APC_AC_R2_BOT field for changes"]
     pub mod LOCK_M7_APC_AC_R2_BOT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Register field \\[31:1\\] is not locked"]
             pub const LOCK_M7_APC_AC_R2_BOT_0: u32 = 0;
             #[doc = "Register field \\[31:1\\] is locked (read access only)"]
             pub const LOCK_M7_APC_AC_R2_BOT_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "APC end address of memory region-2"]
     pub mod M7_APC_AC_R2_BOT {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x1fff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR23 General Purpose Register"]
 pub mod GPR23 {
+    pub use crate::RW as access;
     #[doc = "lock M7_APC_AC_R2_TOP field for changes"]
     pub mod LOCK_M7_APC_AC_R2_TOP {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Register field \\[31:1\\] is not locked"]
             pub const LOCK_M7_APC_AC_R2_TOP_0: u32 = 0;
             #[doc = "Register field \\[31:1\\] is locked (read access only)"]
             pub const LOCK_M7_APC_AC_R2_TOP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "APC start address of memory region-2"]
     pub mod M7_APC_AC_R2_TOP {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x1fff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR24 General Purpose Register"]
 pub mod GPR24 {
+    pub use crate::RW as access;
     #[doc = "lock M7_APC_AC_R3_BOT field for changes"]
     pub mod LOCK_M7_APC_AC_R3_BOT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Register field \\[31:1\\] is not locked"]
             pub const LOCK_M7_APC_AC_R3_BOT_0: u32 = 0;
             #[doc = "Register field \\[31:1\\] is locked (read access only)"]
             pub const LOCK_M7_APC_AC_R3_BOT_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "APC end address of memory region-3"]
     pub mod M7_APC_AC_R3_BOT {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x1fff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "GPR25 General Purpose Register"]
 pub mod GPR25 {
+    pub use crate::RW as access;
     #[doc = "lock M7_APC_AC_R3_TOP field for changes"]
     pub mod LOCK_M7_APC_AC_R3_TOP {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Register field \\[31:1\\] is not locked"]
             pub const LOCK_M7_APC_AC_R3_TOP_0: u32 = 0;
             #[doc = "Register field \\[31:1\\] is locked (read access only)"]
             pub const LOCK_M7_APC_AC_R3_TOP_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "APC start address of memory region-3"]
     pub mod M7_APC_AC_R3_TOP {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x1fff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }

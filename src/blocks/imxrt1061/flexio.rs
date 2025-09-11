@@ -2,312 +2,367 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "Version ID Register"]
-    pub VERID: crate::RORegister<u32>,
+    pub VERID: u32,
     #[doc = "Parameter Register"]
-    pub PARAM: crate::RORegister<u32>,
+    pub PARAM: u32,
     #[doc = "FlexIO Control Register"]
-    pub CTRL: crate::RWRegister<u32>,
+    pub CTRL: u32,
     #[doc = "Pin State Register"]
-    pub PIN: crate::RORegister<u32>,
+    pub PIN: u32,
     #[doc = "Shifter Status Register"]
-    pub SHIFTSTAT: crate::RWRegister<u32>,
+    pub SHIFTSTAT: u32,
     #[doc = "Shifter Error Register"]
-    pub SHIFTERR: crate::RWRegister<u32>,
+    pub SHIFTERR: u32,
     #[doc = "Timer Status Register"]
-    pub TIMSTAT: crate::RWRegister<u32>,
+    pub TIMSTAT: u32,
     _reserved0: [u8; 0x04],
     #[doc = "Shifter Status Interrupt Enable"]
-    pub SHIFTSIEN: crate::RWRegister<u32>,
+    pub SHIFTSIEN: u32,
     #[doc = "Shifter Error Interrupt Enable"]
-    pub SHIFTEIEN: crate::RWRegister<u32>,
+    pub SHIFTEIEN: u32,
     #[doc = "Timer Interrupt Enable Register"]
-    pub TIMIEN: crate::RWRegister<u32>,
+    pub TIMIEN: u32,
     _reserved1: [u8; 0x04],
     #[doc = "Shifter Status DMA Enable"]
-    pub SHIFTSDEN: crate::RWRegister<u32>,
+    pub SHIFTSDEN: u32,
     _reserved2: [u8; 0x0c],
     #[doc = "Shifter State Register"]
-    pub SHIFTSTATE: crate::RWRegister<u32>,
+    pub SHIFTSTATE: u32,
     _reserved3: [u8; 0x3c],
     #[doc = "Shifter Control N Register"]
-    pub SHIFTCTL: [crate::RWRegister<u32>; 8usize],
+    pub SHIFTCTL: [u32; 8usize],
     _reserved4: [u8; 0x60],
     #[doc = "Shifter Configuration N Register"]
-    pub SHIFTCFG: [crate::RWRegister<u32>; 8usize],
+    pub SHIFTCFG: [u32; 8usize],
     _reserved5: [u8; 0xe0],
     #[doc = "Shifter Buffer N Register"]
-    pub SHIFTBUF: [crate::RWRegister<u32>; 8usize],
+    pub SHIFTBUF: [u32; 8usize],
     _reserved6: [u8; 0x60],
     #[doc = "Shifter Buffer N Bit Swapped Register"]
-    pub SHIFTBUFBIS: [crate::RWRegister<u32>; 8usize],
+    pub SHIFTBUFBIS: [u32; 8usize],
     _reserved7: [u8; 0x60],
     #[doc = "Shifter Buffer N Byte Swapped Register"]
-    pub SHIFTBUFBYS: [crate::RWRegister<u32>; 8usize],
+    pub SHIFTBUFBYS: [u32; 8usize],
     _reserved8: [u8; 0x60],
     #[doc = "Shifter Buffer N Bit Byte Swapped Register"]
-    pub SHIFTBUFBBS: [crate::RWRegister<u32>; 8usize],
+    pub SHIFTBUFBBS: [u32; 8usize],
     _reserved9: [u8; 0x60],
     #[doc = "Timer Control N Register"]
-    pub TIMCTL: [crate::RWRegister<u32>; 8usize],
+    pub TIMCTL: [u32; 8usize],
     _reserved10: [u8; 0x60],
     #[doc = "Timer Configuration N Register"]
-    pub TIMCFG: [crate::RWRegister<u32>; 8usize],
+    pub TIMCFG: [u32; 8usize],
     _reserved11: [u8; 0x60],
     #[doc = "Timer Compare N Register"]
-    pub TIMCMP: [crate::RWRegister<u32>; 8usize],
+    pub TIMCMP: [u32; 8usize],
     _reserved12: [u8; 0x0160],
     #[doc = "Shifter Buffer N Nibble Byte Swapped Register"]
-    pub SHIFTBUFNBS: [crate::RWRegister<u32>; 8usize],
+    pub SHIFTBUFNBS: [u32; 8usize],
     _reserved13: [u8; 0x60],
     #[doc = "Shifter Buffer N Half Word Swapped Register"]
-    pub SHIFTBUFHWS: [crate::RWRegister<u32>; 8usize],
+    pub SHIFTBUFHWS: [u32; 8usize],
     _reserved14: [u8; 0x60],
     #[doc = "Shifter Buffer N Nibble Swapped Register"]
-    pub SHIFTBUFNIS: [crate::RWRegister<u32>; 8usize],
+    pub SHIFTBUFNIS: [u32; 8usize],
 }
 #[doc = "Version ID Register"]
 pub mod VERID {
+    pub use crate::RO as access;
     #[doc = "Feature Specification Number"]
     pub mod FEATURE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Standard features implemented."]
             pub const FEATURE_0: u32 = 0;
             #[doc = "Supports state, logic and parallel modes."]
             pub const FEATURE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Minor Version Number"]
     pub mod MINOR {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Major Version Number"]
     pub mod MAJOR {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Parameter Register"]
 pub mod PARAM {
+    pub use crate::RO as access;
     #[doc = "Shifter Number"]
     pub mod SHIFTER {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Number"]
     pub mod TIMER {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Pin Number"]
     pub mod PIN {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Trigger Number"]
     pub mod TRIGGER {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "FlexIO Control Register"]
 pub mod CTRL {
+    pub use crate::RW as access;
     #[doc = "FlexIO Enable"]
     pub mod FLEXEN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "FlexIO module is disabled."]
             pub const FLEXEN_0: u32 = 0;
             #[doc = "FlexIO module is enabled."]
             pub const FLEXEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software Reset"]
     pub mod SWRST {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Software reset is disabled"]
             pub const SWRST_0: u32 = 0;
             #[doc = "Software reset is enabled, all FlexIO registers except the Control Register are reset."]
             pub const SWRST_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Fast Access"]
     pub mod FASTACC {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Configures for normal register accesses to FlexIO"]
             pub const FASTACC_0: u32 = 0;
             #[doc = "Configures for fast register accesses to FlexIO"]
             pub const FASTACC_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Debug Enable"]
     pub mod DBGE {
         pub const offset: u32 = 30;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "FlexIO is disabled in debug modes."]
             pub const DBGE_0: u32 = 0;
             #[doc = "FlexIO is enabled in debug modes"]
             pub const DBGE_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Doze Enable"]
     pub mod DOZEN {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "FlexIO enabled in Doze modes."]
             pub const DOZEN_0: u32 = 0;
             #[doc = "FlexIO disabled in Doze modes."]
             pub const DOZEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Pin State Register"]
 pub mod PIN {
+    pub use crate::RO as access;
     #[doc = "Pin Data Input"]
     pub mod PDI {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Status Register"]
 pub mod SHIFTSTAT {
+    pub use crate::RW as access;
     #[doc = "Shifter Status Flag"]
     pub mod SSF {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Error Register"]
 pub mod SHIFTERR {
+    pub use crate::RW as access;
     #[doc = "Shifter Error Flags"]
     pub mod SEF {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Timer Status Register"]
 pub mod TIMSTAT {
+    pub use crate::RW as access;
     #[doc = "Timer Status Flags"]
     pub mod TSF {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Status Interrupt Enable"]
 pub mod SHIFTSIEN {
+    pub use crate::RW as access;
     #[doc = "Shifter Status Interrupt Enable"]
     pub mod SSIE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Error Interrupt Enable"]
 pub mod SHIFTEIEN {
+    pub use crate::RW as access;
     #[doc = "Shifter Error Interrupt Enable"]
     pub mod SEIE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Timer Interrupt Enable Register"]
 pub mod TIMIEN {
+    pub use crate::RW as access;
     #[doc = "Timer Status Interrupt Enable"]
     pub mod TEIE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Status DMA Enable"]
 pub mod SHIFTSDEN {
+    pub use crate::RW as access;
     #[doc = "Shifter Status DMA Enable"]
     pub mod SSDE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter State Register"]
 pub mod SHIFTSTATE {
+    pub use crate::RW as access;
     #[doc = "Current State Pointer"]
     pub mod STATE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Control N Register"]
 pub mod SHIFTCTL {
+    pub use crate::RW as access;
     #[doc = "Shifter Mode"]
     pub mod SMOD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disabled."]
             pub const SMOD_0: u32 = 0;
             #[doc = "Receive mode. Captures the current Shifter content into the SHIFTBUF on expiration of the Timer."]
@@ -323,35 +378,41 @@ pub mod SHIFTCTL {
             #[doc = "Logic mode. SHIFTBUF contents are used for implementing programmable logic look up table."]
             pub const SMOD_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Shifter Pin Polarity"]
     pub mod PINPOL {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pin is active high"]
             pub const PINPOL_0: u32 = 0;
             #[doc = "Pin is active low"]
             pub const PINPOL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Shifter Pin Select"]
     pub mod PINSEL {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Shifter Pin Configuration"]
     pub mod PINCFG {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Shifter pin output disabled"]
             pub const PINCFG_0: u32 = 0;
             #[doc = "Shifter pin open drain or bidirectional output enable"]
@@ -361,38 +422,45 @@ pub mod SHIFTCTL {
             #[doc = "Shifter pin output"]
             pub const PINCFG_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Polarity"]
     pub mod TIMPOL {
         pub const offset: u32 = 23;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Shift on posedge of Shift clock"]
             pub const TIMPOL_0: u32 = 0;
             #[doc = "Shift on negedge of Shift clock"]
             pub const TIMPOL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Select"]
     pub mod TIMSEL {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Configuration N Register"]
 pub mod SHIFTCFG {
+    pub use crate::RW as access;
     #[doc = "Shifter Start bit"]
     pub mod SSTART {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Start bit disabled for transmitter/receiver/match store, transmitter loads data on enable"]
             pub const SSTART_0: u32 = 0;
             #[doc = "Start bit disabled for transmitter/receiver/match store, transmitter loads data on first shift"]
@@ -402,14 +470,16 @@ pub mod SHIFTCFG {
             #[doc = "Transmitter outputs start bit value 1 before loading data on first shift, receiver/match store sets error flag if start bit is not 1"]
             pub const SSTART_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Shifter Stop bit"]
     pub mod SSTOP {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Stop bit disabled for transmitter/receiver/match store"]
             pub const SSTOP_0: u32 = 0;
             #[doc = "Transmitter outputs stop bit value 0 on store, receiver/match store sets error flag if stop bit is not 0"]
@@ -417,82 +487,101 @@ pub mod SHIFTCFG {
             #[doc = "Transmitter outputs stop bit value 1 on store, receiver/match store sets error flag if stop bit is not 1"]
             pub const SSTOP_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Input Source"]
     pub mod INSRC {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pin"]
             pub const INSRC_0: u32 = 0;
             #[doc = "Shifter N+1 Output"]
             pub const INSRC_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Parallel Width"]
     pub mod PWIDTH {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Buffer N Register"]
 pub mod SHIFTBUF {
+    pub use crate::RW as access;
     #[doc = "Shift Buffer"]
     pub mod SHIFTBUF {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Buffer N Bit Swapped Register"]
 pub mod SHIFTBUFBIS {
+    pub use crate::RW as access;
     #[doc = "Shift Buffer"]
     pub mod SHIFTBUFBIS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Buffer N Byte Swapped Register"]
 pub mod SHIFTBUFBYS {
+    pub use crate::RW as access;
     #[doc = "Shift Buffer"]
     pub mod SHIFTBUFBYS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Buffer N Bit Byte Swapped Register"]
 pub mod SHIFTBUFBBS {
+    pub use crate::RW as access;
     #[doc = "Shift Buffer"]
     pub mod SHIFTBUFBBS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Timer Control N Register"]
 pub mod TIMCTL {
+    pub use crate::RW as access;
     #[doc = "Timer Mode"]
     pub mod TIMOD {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Timer Disabled."]
             pub const TIMOD_0: u32 = 0;
             #[doc = "Dual 8-bit counters baud mode."]
@@ -502,35 +591,41 @@ pub mod TIMCTL {
             #[doc = "Single 16-bit counter mode."]
             pub const TIMOD_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Pin Polarity"]
     pub mod PINPOL {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Pin is active high"]
             pub const PINPOL_0: u32 = 0;
             #[doc = "Pin is active low"]
             pub const PINPOL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Pin Select"]
     pub mod PINSEL {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Pin Configuration"]
     pub mod PINCFG {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Timer pin output disabled"]
             pub const PINCFG_0: u32 = 0;
             #[doc = "Timer pin open drain or bidirectional output enable"]
@@ -540,64 +635,75 @@ pub mod TIMCTL {
             #[doc = "Timer pin output"]
             pub const PINCFG_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Trigger Source"]
     pub mod TRGSRC {
         pub const offset: u32 = 22;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "External trigger selected"]
             pub const TRGSRC_0: u32 = 0;
             #[doc = "Internal trigger selected"]
             pub const TRGSRC_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Trigger Polarity"]
     pub mod TRGPOL {
         pub const offset: u32 = 23;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Trigger active high"]
             pub const TRGPOL_0: u32 = 0;
             #[doc = "Trigger active low"]
             pub const TRGPOL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Trigger Select"]
     pub mod TRGSEL {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Timer Configuration N Register"]
 pub mod TIMCFG {
+    pub use crate::RW as access;
     #[doc = "Timer Start Bit"]
     pub mod TSTART {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Start bit disabled"]
             pub const TSTART_0: u32 = 0;
             #[doc = "Start bit enabled"]
             pub const TSTART_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Stop Bit"]
     pub mod TSTOP {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Stop bit disabled"]
             pub const TSTOP_0: u32 = 0;
             #[doc = "Stop bit is enabled on timer compare"]
@@ -607,14 +713,16 @@ pub mod TIMCFG {
             #[doc = "Stop bit is enabled on timer compare and timer disable"]
             pub const TSTOP_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Enable"]
     pub mod TIMENA {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Timer always enabled"]
             pub const TIMENA_0: u32 = 0;
             #[doc = "Timer enabled on Timer N-1 enable"]
@@ -632,14 +740,16 @@ pub mod TIMCFG {
             #[doc = "Timer enabled on Trigger rising or falling edge"]
             pub const TIMENA_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Disable"]
     pub mod TIMDIS {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Timer never disabled"]
             pub const TIMDIS_0: u32 = 0;
             #[doc = "Timer disabled on Timer N-1 disable"]
@@ -655,14 +765,16 @@ pub mod TIMCFG {
             #[doc = "Timer disabled on Trigger falling edge"]
             pub const TIMDIS_6: u32 = 0x06;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Reset"]
     pub mod TIMRST {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Timer never reset"]
             pub const TIMRST_0: u32 = 0;
             #[doc = "Timer reset on Timer Pin equal to Timer Output"]
@@ -676,14 +788,16 @@ pub mod TIMCFG {
             #[doc = "Timer reset on Trigger rising or falling edge"]
             pub const TIMRST_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Decrement"]
     pub mod TIMDEC {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Decrement counter on FlexIO clock, Shift clock equals Timer output."]
             pub const TIMDEC_0: u32 = 0;
             #[doc = "Decrement counter on Trigger input (both edges), Shift clock equals Timer output."]
@@ -693,14 +807,16 @@ pub mod TIMCFG {
             #[doc = "Decrement counter on Trigger input (both edges), Shift clock equals Trigger input."]
             pub const TIMDEC_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Output"]
     pub mod TIMOUT {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Timer output is logic one when enabled and is not affected by timer reset"]
             pub const TIMOUT_0: u32 = 0;
             #[doc = "Timer output is logic zero when enabled and is not affected by timer reset"]
@@ -710,49 +826,63 @@ pub mod TIMCFG {
             #[doc = "Timer output is logic zero when enabled and on timer reset"]
             pub const TIMOUT_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Timer Compare N Register"]
 pub mod TIMCMP {
+    pub use crate::RW as access;
     #[doc = "Timer Compare Value"]
     pub mod CMP {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Buffer N Nibble Byte Swapped Register"]
 pub mod SHIFTBUFNBS {
+    pub use crate::RW as access;
     #[doc = "Shift Buffer"]
     pub mod SHIFTBUFNBS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Buffer N Half Word Swapped Register"]
 pub mod SHIFTBUFHWS {
+    pub use crate::RW as access;
     #[doc = "Shift Buffer"]
     pub mod SHIFTBUFHWS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Shifter Buffer N Nibble Swapped Register"]
 pub mod SHIFTBUFNIS {
+    pub use crate::RW as access;
     #[doc = "Shift Buffer"]
     pub mod SHIFTBUFNIS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }

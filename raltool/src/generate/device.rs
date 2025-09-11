@@ -81,7 +81,7 @@ pub fn render(_opts: &super::Options, _ir: &IR, d: &Device) -> Result<TokenStrea
 
             consts.extend(quote! {
                 #doc
-                pub const #name: *const RegisterBlock = #address as *const RegisterBlock;
+                pub const #name: *mut RegisterBlock = #address as *mut RegisterBlock;
             });
         }
 

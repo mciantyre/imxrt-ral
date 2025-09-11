@@ -3,164 +3,197 @@
 pub struct RegisterBlock {
     _reserved0: [u8; 0x0510],
     #[doc = "PMU_LDO_LPSR_ANA_REGISTER"]
-    pub PMU_LDO_LPSR_ANA: crate::RWRegister<u32>,
+    pub PMU_LDO_LPSR_ANA: u32,
     _reserved1: [u8; 0x0c],
     #[doc = "PMU_LDO_LPSR_DIG_2_REGISTER"]
-    pub PMU_LDO_LPSR_DIG_2: crate::RWRegister<u32>,
+    pub PMU_LDO_LPSR_DIG_2: u32,
     _reserved2: [u8; 0x0c],
     #[doc = "PMU_LDO_LPSR_DIG_REGISTER"]
-    pub PMU_LDO_LPSR_DIG: crate::RWRegister<u32>,
+    pub PMU_LDO_LPSR_DIG: u32,
 }
 #[doc = "PMU_LDO_LPSR_ANA_REGISTER"]
 pub mod PMU_LDO_LPSR_ANA {
+    pub use crate::RW as access;
     #[doc = "reg_lp_en"]
     pub mod REG_LP_EN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "reg_disable"]
     pub mod REG_DISABLE {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "pull_down_2ma_en"]
     pub mod PULL_DOWN_2MA_EN {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSR_ANA_CONTROL_MODE"]
     pub mod LPSR_ANA_CONTROL_MODE {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "SW Control"]
             pub const SW: u32 = 0;
             #[doc = "HW Control"]
             pub const HW: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "bypass_mode_en"]
     pub mod BYPASS_MODE_EN {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "standby_en"]
     pub mod STANDBY_EN {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "always_4ma_pulldown_en"]
     pub mod ALWAYS_4MA_PULLDOWN_EN {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Track Mode Enable"]
     pub mod TRACK_MODE_EN {
         pub const offset: u32 = 19;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Normal use"]
             pub const NORMAL: u32 = 0;
             #[doc = "Switch preparation"]
             pub const SWITCH: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "pull_down_20ua_en"]
     pub mod PULL_DOWN_20UA_EN {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "PMU_LDO_LPSR_DIG_2_REGISTER"]
 pub mod PMU_LDO_LPSR_DIG_2 {
+    pub use crate::RW as access;
     #[doc = "voltage_step_inc"]
     pub mod VOLTAGE_STEP_INC {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "PMU_LDO_LPSR_DIG_REGISTER"]
 pub mod PMU_LDO_LPSR_DIG {
+    pub use crate::RW as access;
     #[doc = "ENABLE_ILIMIT"]
     pub mod REG_EN {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "LPSR_DIG_CONTROL_MODE"]
     pub mod LPSR_DIG_CONTROL_MODE {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "SW Control"]
             pub const SW: u32 = 0;
             #[doc = "HW Control"]
             pub const HW: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "standby_en"]
     pub mod STANDBY_EN {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "tracking_mode"]
     pub mod TRACKING_MODE {
         pub const offset: u32 = 17;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "bypass_mode"]
     pub mod BYPASS_MODE {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "VOLTAGE_SELECT"]
     pub mod VOLTAGE_SELECT {
         pub const offset: u32 = 20;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Stable Voltage (range)"]
             pub const BITVAL0: u32 = 0;
             #[doc = "Stable Voltage (range)"]
@@ -226,5 +259,7 @@ pub mod PMU_LDO_LPSR_DIG {
             #[doc = "Stable Voltage (range)"]
             pub const BITVAL31: u32 = 0x1f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }

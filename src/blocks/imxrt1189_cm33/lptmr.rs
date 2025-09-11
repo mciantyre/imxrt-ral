@@ -2,75 +2,84 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "Control Status"]
-    pub CSR: crate::RWRegister<u32>,
+    pub CSR: u32,
     #[doc = "Prescaler and Glitch Filter"]
-    pub PSR: crate::RWRegister<u32>,
+    pub PSR: u32,
     #[doc = "Compare"]
-    pub CMR: crate::RWRegister<u32>,
+    pub CMR: u32,
     #[doc = "Counter"]
-    pub CNR: crate::RWRegister<u32>,
+    pub CNR: u32,
 }
 #[doc = "Control Status"]
 pub mod CSR {
+    pub use crate::RW as access;
     #[doc = "Timer Enable"]
     pub mod TEN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable"]
             pub const TEN0: u32 = 0;
             #[doc = "Enable"]
             pub const TEN1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Mode Select"]
     pub mod TMS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Time Counter"]
             pub const TMS0: u32 = 0;
             #[doc = "Pulse Counter"]
             pub const TMS1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Free-Running Counter"]
     pub mod TFC {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Reset when TCF asserts"]
             pub const TFC0: u32 = 0;
             #[doc = "Reset on overflow"]
             pub const TFC1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Pin Polarity"]
     pub mod TPP {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Active-high"]
             pub const TPP0: u32 = 0;
             #[doc = "Active-low"]
             pub const TPP1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Pin Select"]
     pub mod TPS {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Input 0"]
             pub const TPS00: u32 = 0;
             #[doc = "Input 1"]
@@ -80,56 +89,65 @@ pub mod CSR {
             #[doc = "Input 3"]
             pub const TPS11: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Interrupt Enable"]
     pub mod TIE {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable"]
             pub const TIE0: u32 = 0;
             #[doc = "Enable"]
             pub const TIE1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer Compare Flag"]
     pub mod TCF {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {
+        pub use crate::RO as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "CNR != (CMR + 1)"]
             pub const TCF0: u32 = 0;
             #[doc = "CNR = (CMR + 1)"]
             pub const TCF1: u32 = 0x01;
         }
-        pub mod W {}
-        pub mod RW {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timer DMA Request Enable"]
     pub mod TDRE {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable"]
             pub const TRDE0: u32 = 0;
             #[doc = "Enable"]
             pub const TRDE1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Prescaler and Glitch Filter"]
 pub mod PSR {
+    pub use crate::RW as access;
     #[doc = "Prescaler and Glitch Filter Clock Select"]
     pub mod PCS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Clock 0"]
             pub const PCS00: u32 = 0;
             #[doc = "Clock 1"]
@@ -139,27 +157,31 @@ pub mod PSR {
             #[doc = "Clock 3"]
             pub const PCS11: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Prescaler and Glitch Filter Bypass"]
     pub mod PBYP {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Prescaler and glitch filter enable"]
             pub const PBYP0: u32 = 0;
             #[doc = "Prescaler and glitch filter bypass"]
             pub const PBYP1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Prescaler and Glitch Filter Value"]
     pub mod PRESCALE {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Prescaler divides the prescaler clock by 2; glitch filter does not support this configuration"]
             pub const PRESCALE0000: u32 = 0;
             #[doc = "Prescaler divides the prescaler clock by 4; glitch filter recognizes change on input pin after two rising clock edges"]
@@ -193,27 +215,35 @@ pub mod PSR {
             #[doc = "Prescaler divides the prescaler clock by 65,536; glitch filter recognizes change on input pin after 32,768 rising clock edges"]
             pub const PRESCALE1111: u32 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Compare"]
 pub mod CMR {
+    pub use crate::RW as access;
     #[doc = "Compare Value"]
     pub mod COMPARE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Counter"]
 pub mod CNR {
+    pub use crate::RW as access;
     #[doc = "Counter Value"]
     pub mod COUNTER {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }

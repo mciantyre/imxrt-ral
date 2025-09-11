@@ -200,7 +200,7 @@ impl<'ir> Block<'ir> {
         ir: &'ir ir::IR,
         stride: Option<NonZeroUsize>,
     ) -> Self {
-        let module = path.split("::").last().unwrap().to_lowercase();
+        let module = path.split("::").last().unwrap().to_uppercase();
         let mut reservation_id = 0usize;
         let members = layout_members(&block.items, ir, &mut reservation_id);
 
@@ -461,20 +461,14 @@ impl Member<'_> {
                 size,
                 len,
                 doc,
-                access,
                 ..
             }) => {
                 assert!(*len > 0, "There's at least one register");
-                let register = match access {
-                    ir::Access::Read => quote!(crate::RORegister),
-                    ir::Access::Write => quote!(crate::WORegister),
-                    ir::Access::ReadWrite => quote!(crate::RWRegister),
-                };
                 let reg_ty = size.type_token();
                 let ty = if *len == 1 {
-                    quote!(#register<#reg_ty>)
+                    quote!(#reg_ty)
                 } else {
-                    quote!([#register<#reg_ty>; #len])
+                    quote!([#reg_ty; #len])
                 };
                 let span = Span::call_site();
                 let name = Ident::new(name, span);
@@ -515,22 +509,34 @@ fn render_module(block: &Block, ir: &ir::IR) -> Result<TokenStream> {
     let mut tokens = TokenStream::new();
     block.render_into(&mut tokens);
     block.registers().try_for_each(|reg| -> Result<()> {
-        if let Some(fieldset) = reg
+        let span = Span::call_site();
+        let name = Ident::new(&reg.name, span);
+        let doc = util::doc(&reg.doc.map(ToString::to_string));
+
+        let access = match reg.access {
+            ir::Access::ReadWrite => quote!(crate::RW),
+            ir::Access::Read => quote!(crate::RO),
+            ir::Access::Write => quote!(crate::WO),
+        };
+
+        let field_modules = if let Some(fieldset) = reg
             .fieldset
             .as_ref()
             .and_then(|fieldset| ir.fieldsets.get(*fieldset))
         {
-            let span = Span::call_site();
-            let name = Ident::new(&reg.name, span);
-            let doc = util::doc(&reg.doc.map(ToString::to_string));
-            let field_modules = super::fieldset::render(ir, fieldset)?;
-            tokens.extend(quote! {
-                #doc
-                pub mod #name {
-                    #field_modules
-                }
-            });
-        }
+            super::fieldset::render(ir, fieldset)?
+        } else {
+            TokenStream::new()
+        };
+
+        tokens.extend(quote! {
+            #doc
+            pub mod #name {
+                pub use #access as access;
+                #field_modules
+            }
+        });
+
         Ok(())
     })?;
 

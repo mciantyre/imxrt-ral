@@ -57,9 +57,9 @@ fn main() -> ! {
     // Disable the PIT, just in case it was used by the boot ROM
     ral::write_reg!(ral::pit, pit, MCR, MDIS: MDIS_1);
     // Reset channel 0 control; we'll use channel 0 for our timer
-    ral::write_reg!(ral::pit::timer, &pit.TIMER[0], TCTRL, 0);
+    ral::write_reg!(ral::pit, pit, TIMER[0].TCTRL, 0);
     // Set the counter value
-    ral::write_reg!(ral::pit::timer, &pit.TIMER[0], LDVAL, PIT_PERIOD_US);
+    ral::write_reg!(ral::pit, pit, TIMER[0].LDVAL, PIT_PERIOD_US);
     // Enable the PIT timer
     ral::modify_reg!(ral::pit, pit, MCR, MDIS: MDIS_0);
 
@@ -73,12 +73,12 @@ fn main() -> ! {
         }
 
         // Start counting!
-        ral::write_reg!(ral::pit::timer, &pit.TIMER[0], TCTRL, TEN: 1);
+        ral::write_reg!(ral::pit,  pit, TIMER[0].TCTRL, TEN: 1);
         // Are we done?
-        while ral::read_reg!(ral::pit::timer, &pit.TIMER[0], TFLG, TIF == 0) {}
+        while ral::read_reg!(ral::pit, pit, TIMER[0].TFLG, TIF == 0) {}
         // We're done; clear the flag
-        ral::write_reg!(ral::pit::timer, &pit.TIMER[0], TFLG, TIF: 1);
+        ral::write_reg!(ral::pit,  pit, TIMER[0].TFLG, TIF: 1);
         // Turn off the timer
-        ral::write_reg!(ral::pit::timer, &pit.TIMER[0], TCTRL, TEN: 0);
+        ral::write_reg!(ral::pit,  pit, TIMER[0].TCTRL, TEN: 0);
     }
 }

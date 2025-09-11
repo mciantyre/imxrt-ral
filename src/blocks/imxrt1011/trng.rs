@@ -2,78 +2,79 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "Miscellaneous Control Register"]
-    pub MCTL: crate::RWRegister<u32>,
+    pub MCTL: u32,
     #[doc = "Statistical Check Miscellaneous Register"]
-    pub SCMISC: crate::RWRegister<u32>,
+    pub SCMISC: u32,
     #[doc = "Poker Range Register"]
-    pub PKRRNG: crate::RWRegister<u32>,
+    pub PKRRNG: u32,
     #[doc = "Poker Maximum Limit Register"]
-    pub PKRMAX: crate::RWRegister<u32>,
+    pub PKRMAX: u32,
     #[doc = "Seed Control Register"]
-    pub SDCTL: crate::RWRegister<u32>,
+    pub SDCTL: u32,
     #[doc = "Sparse Bit Limit Register"]
-    pub SBLIM: crate::RWRegister<u32>,
+    pub SBLIM: u32,
     #[doc = "Frequency Count Minimum Limit Register"]
-    pub FRQMIN: crate::RWRegister<u32>,
+    pub FRQMIN: u32,
     #[doc = "Frequency Count Maximum Limit Register"]
-    pub FRQMAX: crate::RWRegister<u32>,
+    pub FRQMAX: u32,
     #[doc = "Statistical Check Monobit Limit Register"]
-    pub SCML: crate::RWRegister<u32>,
+    pub SCML: u32,
     #[doc = "Statistical Check Run Length 1 Limit Register"]
-    pub SCR1L: crate::RWRegister<u32>,
+    pub SCR1L: u32,
     #[doc = "Statistical Check Run Length 2 Limit Register"]
-    pub SCR2L: crate::RWRegister<u32>,
+    pub SCR2L: u32,
     #[doc = "Statistical Check Run Length 3 Limit Register"]
-    pub SCR3L: crate::RWRegister<u32>,
+    pub SCR3L: u32,
     #[doc = "Statistical Check Run Length 4 Limit Register"]
-    pub SCR4L: crate::RWRegister<u32>,
+    pub SCR4L: u32,
     #[doc = "Statistical Check Run Length 5 Limit Register"]
-    pub SCR5L: crate::RWRegister<u32>,
+    pub SCR5L: u32,
     #[doc = "Statistical Check Run Length 6+ Limit Register"]
-    pub SCR6PL: crate::RWRegister<u32>,
+    pub SCR6PL: u32,
     #[doc = "Status Register"]
-    pub STATUS: crate::RORegister<u32>,
+    pub STATUS: u32,
     #[doc = "Entropy Read Register"]
-    pub ENT: [crate::RORegister<u32>; 16usize],
+    pub ENT: [u32; 16usize],
     #[doc = "Statistical Check Poker Count 1 and 0 Register"]
-    pub PKRCNT10: crate::RORegister<u32>,
+    pub PKRCNT10: u32,
     #[doc = "Statistical Check Poker Count 3 and 2 Register"]
-    pub PKRCNT32: crate::RORegister<u32>,
+    pub PKRCNT32: u32,
     #[doc = "Statistical Check Poker Count 5 and 4 Register"]
-    pub PKRCNT54: crate::RORegister<u32>,
+    pub PKRCNT54: u32,
     #[doc = "Statistical Check Poker Count 7 and 6 Register"]
-    pub PKRCNT76: crate::RORegister<u32>,
+    pub PKRCNT76: u32,
     #[doc = "Statistical Check Poker Count 9 and 8 Register"]
-    pub PKRCNT98: crate::RORegister<u32>,
+    pub PKRCNT98: u32,
     #[doc = "Statistical Check Poker Count B and A Register"]
-    pub PKRCNTBA: crate::RORegister<u32>,
+    pub PKRCNTBA: u32,
     #[doc = "Statistical Check Poker Count D and C Register"]
-    pub PKRCNTDC: crate::RORegister<u32>,
+    pub PKRCNTDC: u32,
     #[doc = "Statistical Check Poker Count F and E Register"]
-    pub PKRCNTFE: crate::RORegister<u32>,
+    pub PKRCNTFE: u32,
     #[doc = "Security Configuration Register"]
-    pub SEC_CFG: crate::RWRegister<u32>,
+    pub SEC_CFG: u32,
     #[doc = "Interrupt Control Register"]
-    pub INT_CTRL: crate::RWRegister<u32>,
+    pub INT_CTRL: u32,
     #[doc = "Mask Register"]
-    pub INT_MASK: crate::RWRegister<u32>,
+    pub INT_MASK: u32,
     #[doc = "Interrupt Status Register"]
-    pub INT_STATUS: crate::RORegister<u32>,
+    pub INT_STATUS: u32,
     _reserved0: [u8; 0x40],
     #[doc = "Version ID Register (MS)"]
-    pub VID1: crate::RORegister<u32>,
+    pub VID1: u32,
     #[doc = "Version ID Register (LS)"]
-    pub VID2: crate::RORegister<u32>,
+    pub VID2: u32,
 }
 #[doc = "Miscellaneous Control Register"]
 pub mod MCTL {
+    pub use crate::RW as access;
     #[doc = "Sample Mode"]
     pub mod SAMP_MODE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "use Von Neumann data into both Entropy shifter and Statistical Checker"]
             pub const SAMP_MODE_0: u32 = 0;
             #[doc = "use raw data into both Entropy shifter and Statistical Checker"]
@@ -83,14 +84,16 @@ pub mod MCTL {
             #[doc = "undefined/reserved."]
             pub const SAMP_MODE_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Oscillator Divide"]
     pub mod OSC_DIV {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "use ring oscillator with no divide"]
             pub const OSC_DIV_0: u32 = 0;
             #[doc = "use ring oscillator divided-by-2"]
@@ -100,870 +103,1078 @@ pub mod MCTL {
             #[doc = "use ring oscillator divided-by-8"]
             pub const OSC_DIV_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This bit is unused. Always reads zero."]
     pub mod UNUSED4 {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This bit is unused. Always reads zero."]
     pub mod UNUSED5 {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Reset Defaults"]
     pub mod RST_DEF {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Force System Clock"]
     pub mod FOR_SCLK {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Read only: Frequency Count Fail"]
     pub mod FCT_FAIL {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Read only: Frequency Count Valid. Indicates that a valid frequency count may be read from FRQCNT."]
     pub mod FCT_VAL {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Read only: Entropy Valid"]
     pub mod ENT_VAL {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Read only: Test point inside ring oscillator."]
     pub mod TST_OUT {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Read: Error status"]
     pub mod ERR {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "TRNG_OK_TO_STOP"]
     pub mod TSTOP_OK {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Long run count continues between entropy generations"]
     pub mod LRUN_CONT {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Programming Mode Select"]
     pub mod PRGM {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Miscellaneous Register"]
 pub mod SCMISC {
+    pub use crate::RW as access;
     #[doc = "LONG RUN MAX LIMIT"]
     pub mod LRUN_MAX {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RETRY COUNT"]
     pub mod RTY_CT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Poker Range Register"]
 pub mod PKRRNG {
+    pub use crate::RW as access;
     #[doc = "Poker Range"]
     pub mod PKR_RNG {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Poker Maximum Limit Register"]
 pub mod PKRMAX {
+    pub use crate::RW as access;
     #[doc = "Poker Maximum Limit."]
     pub mod PKR_MAX {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x00ff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Seed Control Register"]
 pub mod SDCTL {
+    pub use crate::RW as access;
     #[doc = "Sample Size"]
     pub mod SAMP_SIZE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Entropy Delay"]
     pub mod ENT_DLY {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Sparse Bit Limit Register"]
 pub mod SBLIM {
+    pub use crate::RW as access;
     #[doc = "Sparse Bit Limit"]
     pub mod SB_LIM {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x03ff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Frequency Count Minimum Limit Register"]
 pub mod FRQMIN {
+    pub use crate::RW as access;
     #[doc = "Frequency Count Minimum Limit"]
     pub mod FRQ_MIN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x003f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Frequency Count Maximum Limit Register"]
 pub mod FRQMAX {
+    pub use crate::RW as access;
     #[doc = "Frequency Counter Maximum Limit"]
     pub mod FRQ_MAX {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x003f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Monobit Limit Register"]
 pub mod SCML {
+    pub use crate::RW as access;
     #[doc = "Monobit Maximum Limit"]
     pub mod MONO_MAX {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Monobit Range"]
     pub mod MONO_RNG {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Run Length 1 Limit Register"]
 pub mod SCR1L {
+    pub use crate::RW as access;
     #[doc = "Run Length 1 Maximum Limit"]
     pub mod RUN1_MAX {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x7fff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Run Length 1 Range"]
     pub mod RUN1_RNG {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x7fff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Run Length 2 Limit Register"]
 pub mod SCR2L {
+    pub use crate::RW as access;
     #[doc = "Run Length 2 Maximum Limit"]
     pub mod RUN2_MAX {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x3fff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Run Length 2 Range"]
     pub mod RUN2_RNG {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x3fff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Run Length 3 Limit Register"]
 pub mod SCR3L {
+    pub use crate::RW as access;
     #[doc = "Run Length 3 Maximum Limit"]
     pub mod RUN3_MAX {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x1fff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Run Length 3 Range"]
     pub mod RUN3_RNG {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x1fff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Run Length 4 Limit Register"]
 pub mod SCR4L {
+    pub use crate::RW as access;
     #[doc = "Run Length 4 Maximum Limit"]
     pub mod RUN4_MAX {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0fff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Run Length 4 Range"]
     pub mod RUN4_RNG {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0fff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Run Length 5 Limit Register"]
 pub mod SCR5L {
+    pub use crate::RW as access;
     #[doc = "Run Length 5 Maximum Limit"]
     pub mod RUN5_MAX {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07ff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Run Length 5 Range"]
     pub mod RUN5_RNG {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x07ff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Run Length 6+ Limit Register"]
 pub mod SCR6PL {
+    pub use crate::RW as access;
     #[doc = "Run Length 6+ Maximum Limit"]
     pub mod RUN6P_MAX {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x07ff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Run Length 6+ Range"]
     pub mod RUN6P_RNG {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x07ff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Status Register"]
 pub mod STATUS {
+    pub use crate::RO as access;
     #[doc = "Test Fail, 1-Bit Run, Sampling 0s. If TF1BR0=1, the 1-Bit Run, Sampling 0s Test has failed."]
     pub mod TF1BR0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, 1-Bit Run, Sampling 1s. If TF1BR1=1, the 1-Bit Run, Sampling 1s Test has failed."]
     pub mod TF1BR1 {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, 2-Bit Run, Sampling 0s. If TF2BR0=1, the 2-Bit Run, Sampling 0s Test has failed."]
     pub mod TF2BR0 {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, 2-Bit Run, Sampling 1s. If TF2BR1=1, the 2-Bit Run, Sampling 1s Test has failed."]
     pub mod TF2BR1 {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, 3-Bit Run, Sampling 0s. If TF3BR0=1, the 3-Bit Run, Sampling 0s Test has failed."]
     pub mod TF3BR0 {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, 3-Bit Run, Sampling 1s. If TF3BR1=1, the 3-Bit Run, Sampling 1s Test has failed."]
     pub mod TF3BR1 {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, 4-Bit Run, Sampling 0s. If TF4BR0=1, the 4-Bit Run, Sampling 0s Test has failed."]
     pub mod TF4BR0 {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, 4-Bit Run, Sampling 1s. If TF4BR1=1, the 4-Bit Run, Sampling 1s Test has failed."]
     pub mod TF4BR1 {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, 5-Bit Run, Sampling 0s. If TF5BR0=1, the 5-Bit Run, Sampling 0s Test has failed."]
     pub mod TF5BR0 {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, 5-Bit Run, Sampling 1s. If TF5BR1=1, the 5-Bit Run, Sampling 1s Test has failed."]
     pub mod TF5BR1 {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, 6 Plus Bit Run, Sampling 0s"]
     pub mod TF6PBR0 {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, 6 Plus Bit Run, Sampling 1s"]
     pub mod TF6PBR1 {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, Sparse Bit. If TFSB=1, the Sparse Bit Test has failed."]
     pub mod TFSB {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, Long Run. If TFLR=1, the Long Run Test has failed."]
     pub mod TFLR {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, Poker. If TFP=1, the Poker Test has failed."]
     pub mod TFP {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Test Fail, Mono Bit. If TFMB=1, the Mono Bit Test has failed."]
     pub mod TFMB {
         pub const offset: u32 = 15;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "RETRY COUNT"]
     pub mod RETRY_CT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Entropy Read Register"]
 pub mod ENT {
+    pub use crate::RO as access;
     #[doc = "Entropy Value"]
     pub mod ENT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Poker Count 1 and 0 Register"]
 pub mod PKRCNT10 {
+    pub use crate::RO as access;
     #[doc = "Poker 0h Count"]
     pub mod PKR_0_CT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Poker 1h Count"]
     pub mod PKR_1_CT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Poker Count 3 and 2 Register"]
 pub mod PKRCNT32 {
+    pub use crate::RO as access;
     #[doc = "Poker 2h Count"]
     pub mod PKR_2_CT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Poker 3h Count"]
     pub mod PKR_3_CT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Poker Count 5 and 4 Register"]
 pub mod PKRCNT54 {
+    pub use crate::RO as access;
     #[doc = "Poker 4h Count"]
     pub mod PKR_4_CT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Poker 5h Count"]
     pub mod PKR_5_CT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Poker Count 7 and 6 Register"]
 pub mod PKRCNT76 {
+    pub use crate::RO as access;
     #[doc = "Poker 6h Count"]
     pub mod PKR_6_CT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Poker 7h Count"]
     pub mod PKR_7_CT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Poker Count 9 and 8 Register"]
 pub mod PKRCNT98 {
+    pub use crate::RO as access;
     #[doc = "Poker 8h Count"]
     pub mod PKR_8_CT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Poker 9h Count"]
     pub mod PKR_9_CT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Poker Count B and A Register"]
 pub mod PKRCNTBA {
+    pub use crate::RO as access;
     #[doc = "Poker Ah Count"]
     pub mod PKR_A_CT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Poker Bh Count"]
     pub mod PKR_B_CT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Poker Count D and C Register"]
 pub mod PKRCNTDC {
+    pub use crate::RO as access;
     #[doc = "Poker Ch Count"]
     pub mod PKR_C_CT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Poker Dh Count"]
     pub mod PKR_D_CT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Statistical Check Poker Count F and E Register"]
 pub mod PKRCNTFE {
+    pub use crate::RO as access;
     #[doc = "Poker Eh Count"]
     pub mod PKR_E_CT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Poker Fh Count"]
     pub mod PKR_F_CT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Security Configuration Register"]
 pub mod SEC_CFG {
+    pub use crate::RW as access;
     #[doc = "This bit is unused. Ignore."]
     pub mod UNUSED0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "If set, the TRNG registers cannot be programmed"]
     pub mod NO_PRGM {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Programability of registers controlled only by the Miscellaneous Control Register's access mode bit."]
             pub const NO_PRGM_0: u32 = 0;
             #[doc = "Overides Miscellaneous Control Register access mode and prevents TRNG register programming."]
             pub const NO_PRGM_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This bit is unused. Ignore."]
     pub mod UNUSED2 {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Interrupt Control Register"]
 pub mod INT_CTRL {
+    pub use crate::RW as access;
     #[doc = "Bit position that can be cleared if corresponding bit of INT_STATUS register has been asserted."]
     pub mod HW_ERR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Corresponding bit of INT_STATUS register cleared."]
             pub const HW_ERR_0: u32 = 0;
             #[doc = "Corresponding bit of INT_STATUS register active."]
             pub const HW_ERR_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Same behavior as bit 0 of this register."]
     pub mod ENT_VAL {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Same behavior as bit 0 of this register."]
             pub const ENT_VAL_0: u32 = 0;
             #[doc = "Same behavior as bit 0 of this register."]
             pub const ENT_VAL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Same behavior as bit 0 of this register."]
     pub mod FRQ_CT_FAIL {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Same behavior as bit 0 of this register."]
             pub const FRQ_CT_FAIL_0: u32 = 0;
             #[doc = "Same behavior as bit 0 of this register."]
             pub const FRQ_CT_FAIL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Mask Register"]
 pub mod INT_MASK {
+    pub use crate::RW as access;
     #[doc = "Bit position that can be cleared if corresponding bit of INT_STATUS has been asserted."]
     pub mod HW_ERR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Corresponding interrupt of INT_STATUS is masked."]
             pub const HW_ERR_0: u32 = 0;
             #[doc = "Corresponding bit of INT_STATUS is active."]
             pub const HW_ERR_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Same behavior as bit 0 of this register."]
     pub mod ENT_VAL {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Same behavior as bit 0 of this register."]
             pub const ENT_VAL_0: u32 = 0;
             #[doc = "Same behavior as bit 0 of this register."]
             pub const ENT_VAL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Same behavior as bit 0 of this register."]
     pub mod FRQ_CT_FAIL {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Same behavior as bit 0 of this register."]
             pub const FRQ_CT_FAIL_0: u32 = 0;
             #[doc = "Same behavior as bit 0 of this register."]
             pub const FRQ_CT_FAIL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Interrupt Status Register"]
 pub mod INT_STATUS {
+    pub use crate::RO as access;
     #[doc = "Read: Error status"]
     pub mod HW_ERR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "no error"]
             pub const HW_ERR_0: u32 = 0;
             #[doc = "error detected."]
             pub const HW_ERR_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Read only: Entropy Valid"]
     pub mod ENT_VAL {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Busy generation entropy. Any value read is invalid."]
             pub const ENT_VAL_0: u32 = 0;
             #[doc = "TRNG can be stopped and entropy is valid if read."]
             pub const ENT_VAL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Read only: Frequency Count Fail"]
     pub mod FRQ_CT_FAIL {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "No hardware nor self test frequency errors."]
             pub const FRQ_CT_FAIL_0: u32 = 0;
             #[doc = "The frequency counter has detected a failure."]
             pub const FRQ_CT_FAIL_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Version ID Register (MS)"]
 pub mod VID1 {
+    pub use crate::RO as access;
     #[doc = "Shows the IP's Minor revision of the TRNG."]
     pub mod MIN_REV {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Minor revision number for TRNG."]
             pub const MIN_REV_0: u32 = 0;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Shows the IP's Major revision of the TRNG."]
     pub mod MAJ_REV {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Major revision number for TRNG."]
             pub const MAJ_REV_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Shows the IP ID."]
     pub mod IP_ID {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "ID for TRNG."]
             pub const IP_ID_48: u32 = 0x30;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Version ID Register (LS)"]
 pub mod VID2 {
+    pub use crate::RO as access;
     #[doc = "Shows the IP's Configuaration options for the TRNG."]
     pub mod CONFIG_OPT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "TRNG_CONFIG_OPT for TRNG."]
             pub const CONFIG_OPT_0: u32 = 0;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Shows the IP's ECO revision of the TRNG."]
     pub mod ECO_REV {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "TRNG_ECO_REV for TRNG."]
             pub const ECO_REV_0: u32 = 0;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Shows the integration options for the TRNG."]
     pub mod INTG_OPT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "INTG_OPT for TRNG."]
             pub const INTG_OPT_0: u32 = 0;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Shows the compile options for the TRNG."]
     pub mod ERA {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "COMPILE_OPT for TRNG."]
             pub const ERA_0: u32 = 0;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }

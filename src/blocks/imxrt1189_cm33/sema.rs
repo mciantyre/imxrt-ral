@@ -2,146 +2,147 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "Gate"]
-    pub GATE3: crate::RWRegister<u8>,
+    pub GATE3: u8,
     #[doc = "Gate"]
-    pub GATE2: crate::RWRegister<u8>,
+    pub GATE2: u8,
     #[doc = "Gate"]
-    pub GATE1: crate::RWRegister<u8>,
+    pub GATE1: u8,
     #[doc = "Gate"]
-    pub GATE0: crate::RWRegister<u8>,
+    pub GATE0: u8,
     #[doc = "Gate"]
-    pub GATE7: crate::RWRegister<u8>,
+    pub GATE7: u8,
     #[doc = "Gate"]
-    pub GATE6: crate::RWRegister<u8>,
+    pub GATE6: u8,
     #[doc = "Gate"]
-    pub GATE5: crate::RWRegister<u8>,
+    pub GATE5: u8,
     #[doc = "Gate"]
-    pub GATE4: crate::RWRegister<u8>,
+    pub GATE4: u8,
     #[doc = "Gate"]
-    pub GATE11: crate::RWRegister<u8>,
+    pub GATE11: u8,
     #[doc = "Gate"]
-    pub GATE10: crate::RWRegister<u8>,
+    pub GATE10: u8,
     #[doc = "Gate"]
-    pub GATE9: crate::RWRegister<u8>,
+    pub GATE9: u8,
     #[doc = "Gate"]
-    pub GATE8: crate::RWRegister<u8>,
+    pub GATE8: u8,
     #[doc = "Gate"]
-    pub GATE15: crate::RWRegister<u8>,
+    pub GATE15: u8,
     #[doc = "Gate"]
-    pub GATE14: crate::RWRegister<u8>,
+    pub GATE14: u8,
     #[doc = "Gate"]
-    pub GATE13: crate::RWRegister<u8>,
+    pub GATE13: u8,
     #[doc = "Gate"]
-    pub GATE12: crate::RWRegister<u8>,
+    pub GATE12: u8,
     #[doc = "Gate"]
-    pub GATE19: crate::RWRegister<u8>,
+    pub GATE19: u8,
     #[doc = "Gate"]
-    pub GATE18: crate::RWRegister<u8>,
+    pub GATE18: u8,
     #[doc = "Gate"]
-    pub GATE17: crate::RWRegister<u8>,
+    pub GATE17: u8,
     #[doc = "Gate"]
-    pub GATE16: crate::RWRegister<u8>,
+    pub GATE16: u8,
     #[doc = "Gate"]
-    pub GATE23: crate::RWRegister<u8>,
+    pub GATE23: u8,
     #[doc = "Gate"]
-    pub GATE22: crate::RWRegister<u8>,
+    pub GATE22: u8,
     #[doc = "Gate"]
-    pub GATE21: crate::RWRegister<u8>,
+    pub GATE21: u8,
     #[doc = "Gate"]
-    pub GATE20: crate::RWRegister<u8>,
+    pub GATE20: u8,
     #[doc = "Gate"]
-    pub GATE27: crate::RWRegister<u8>,
+    pub GATE27: u8,
     #[doc = "Gate"]
-    pub GATE26: crate::RWRegister<u8>,
+    pub GATE26: u8,
     #[doc = "Gate"]
-    pub GATE25: crate::RWRegister<u8>,
+    pub GATE25: u8,
     #[doc = "Gate"]
-    pub GATE24: crate::RWRegister<u8>,
+    pub GATE24: u8,
     #[doc = "Gate"]
-    pub GATE31: crate::RWRegister<u8>,
+    pub GATE31: u8,
     #[doc = "Gate"]
-    pub GATE30: crate::RWRegister<u8>,
+    pub GATE30: u8,
     #[doc = "Gate"]
-    pub GATE29: crate::RWRegister<u8>,
+    pub GATE29: u8,
     #[doc = "Gate"]
-    pub GATE28: crate::RWRegister<u8>,
+    pub GATE28: u8,
     #[doc = "Gate"]
-    pub GATE35: crate::RWRegister<u8>,
+    pub GATE35: u8,
     #[doc = "Gate"]
-    pub GATE34: crate::RWRegister<u8>,
+    pub GATE34: u8,
     #[doc = "Gate"]
-    pub GATE33: crate::RWRegister<u8>,
+    pub GATE33: u8,
     #[doc = "Gate"]
-    pub GATE32: crate::RWRegister<u8>,
+    pub GATE32: u8,
     #[doc = "Gate"]
-    pub GATE39: crate::RWRegister<u8>,
+    pub GATE39: u8,
     #[doc = "Gate"]
-    pub GATE38: crate::RWRegister<u8>,
+    pub GATE38: u8,
     #[doc = "Gate"]
-    pub GATE37: crate::RWRegister<u8>,
+    pub GATE37: u8,
     #[doc = "Gate"]
-    pub GATE36: crate::RWRegister<u8>,
+    pub GATE36: u8,
     #[doc = "Gate"]
-    pub GATE43: crate::RWRegister<u8>,
+    pub GATE43: u8,
     #[doc = "Gate"]
-    pub GATE42: crate::RWRegister<u8>,
+    pub GATE42: u8,
     #[doc = "Gate"]
-    pub GATE41: crate::RWRegister<u8>,
+    pub GATE41: u8,
     #[doc = "Gate"]
-    pub GATE40: crate::RWRegister<u8>,
+    pub GATE40: u8,
     #[doc = "Gate"]
-    pub GATE47: crate::RWRegister<u8>,
+    pub GATE47: u8,
     #[doc = "Gate"]
-    pub GATE46: crate::RWRegister<u8>,
+    pub GATE46: u8,
     #[doc = "Gate"]
-    pub GATE45: crate::RWRegister<u8>,
+    pub GATE45: u8,
     #[doc = "Gate"]
-    pub GATE44: crate::RWRegister<u8>,
+    pub GATE44: u8,
     #[doc = "Gate"]
-    pub GATE51: crate::RWRegister<u8>,
+    pub GATE51: u8,
     #[doc = "Gate"]
-    pub GATE50: crate::RWRegister<u8>,
+    pub GATE50: u8,
     #[doc = "Gate"]
-    pub GATE49: crate::RWRegister<u8>,
+    pub GATE49: u8,
     #[doc = "Gate"]
-    pub GATE48: crate::RWRegister<u8>,
+    pub GATE48: u8,
     #[doc = "Gate"]
-    pub GATE55: crate::RWRegister<u8>,
+    pub GATE55: u8,
     #[doc = "Gate"]
-    pub GATE54: crate::RWRegister<u8>,
+    pub GATE54: u8,
     #[doc = "Gate"]
-    pub GATE53: crate::RWRegister<u8>,
+    pub GATE53: u8,
     #[doc = "Gate"]
-    pub GATE52: crate::RWRegister<u8>,
+    pub GATE52: u8,
     #[doc = "Gate"]
-    pub GATE59: crate::RWRegister<u8>,
+    pub GATE59: u8,
     #[doc = "Gate"]
-    pub GATE58: crate::RWRegister<u8>,
+    pub GATE58: u8,
     #[doc = "Gate"]
-    pub GATE57: crate::RWRegister<u8>,
+    pub GATE57: u8,
     #[doc = "Gate"]
-    pub GATE56: crate::RWRegister<u8>,
+    pub GATE56: u8,
     #[doc = "Gate"]
-    pub GATE63: crate::RWRegister<u8>,
+    pub GATE63: u8,
     #[doc = "Gate"]
-    pub GATE62: crate::RWRegister<u8>,
+    pub GATE62: u8,
     #[doc = "Gate"]
-    pub GATE61: crate::RWRegister<u8>,
+    pub GATE61: u8,
     #[doc = "Gate"]
-    pub GATE60: crate::RWRegister<u8>,
+    pub GATE60: u8,
     _reserved0: [u8; 0x02],
     #[doc = "Reset Gate Read"]
-    pub RSTGT_R: crate::RORegister<u16>,
+    pub RSTGT_R: u16,
 }
 #[doc = "Gate"]
 pub mod GATE3 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -175,17 +176,20 @@ pub mod GATE3 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE2 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -219,17 +223,20 @@ pub mod GATE2 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE1 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -263,17 +270,20 @@ pub mod GATE1 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE0 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -307,17 +317,20 @@ pub mod GATE0 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE7 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -351,17 +364,20 @@ pub mod GATE7 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE6 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -395,17 +411,20 @@ pub mod GATE6 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE5 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -439,17 +458,20 @@ pub mod GATE5 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE4 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -483,17 +505,20 @@ pub mod GATE4 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE11 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -527,17 +552,20 @@ pub mod GATE11 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE10 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -571,17 +599,20 @@ pub mod GATE10 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE9 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -615,17 +646,20 @@ pub mod GATE9 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE8 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -659,17 +693,20 @@ pub mod GATE8 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE15 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -703,17 +740,20 @@ pub mod GATE15 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE14 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -747,17 +787,20 @@ pub mod GATE14 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE13 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -791,17 +834,20 @@ pub mod GATE13 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE12 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -835,17 +881,20 @@ pub mod GATE12 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE19 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -879,17 +928,20 @@ pub mod GATE19 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE18 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -923,17 +975,20 @@ pub mod GATE18 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE17 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -967,17 +1022,20 @@ pub mod GATE17 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE16 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1011,17 +1069,20 @@ pub mod GATE16 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE23 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1055,17 +1116,20 @@ pub mod GATE23 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE22 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1099,17 +1163,20 @@ pub mod GATE22 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE21 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1143,17 +1210,20 @@ pub mod GATE21 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE20 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1187,17 +1257,20 @@ pub mod GATE20 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE27 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1231,17 +1304,20 @@ pub mod GATE27 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE26 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1275,17 +1351,20 @@ pub mod GATE26 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE25 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1319,17 +1398,20 @@ pub mod GATE25 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE24 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1363,17 +1445,20 @@ pub mod GATE24 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE31 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1407,17 +1492,20 @@ pub mod GATE31 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE30 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1451,17 +1539,20 @@ pub mod GATE30 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE29 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1495,17 +1586,20 @@ pub mod GATE29 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE28 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1539,17 +1633,20 @@ pub mod GATE28 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE35 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1583,17 +1680,20 @@ pub mod GATE35 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE34 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1627,17 +1727,20 @@ pub mod GATE34 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE33 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1671,17 +1774,20 @@ pub mod GATE33 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE32 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1715,17 +1821,20 @@ pub mod GATE32 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE39 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1759,17 +1868,20 @@ pub mod GATE39 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE38 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1803,17 +1915,20 @@ pub mod GATE38 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE37 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1847,17 +1962,20 @@ pub mod GATE37 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE36 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1891,17 +2009,20 @@ pub mod GATE36 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE43 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1935,17 +2056,20 @@ pub mod GATE43 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE42 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -1979,17 +2103,20 @@ pub mod GATE42 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE41 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2023,17 +2150,20 @@ pub mod GATE41 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE40 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2067,17 +2197,20 @@ pub mod GATE40 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE47 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2111,17 +2244,20 @@ pub mod GATE47 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE46 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2155,17 +2291,20 @@ pub mod GATE46 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE45 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2199,17 +2338,20 @@ pub mod GATE45 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE44 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2243,17 +2385,20 @@ pub mod GATE44 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE51 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2287,17 +2432,20 @@ pub mod GATE51 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE50 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2331,17 +2479,20 @@ pub mod GATE50 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE49 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2375,17 +2526,20 @@ pub mod GATE49 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE48 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2419,17 +2573,20 @@ pub mod GATE48 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE55 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2463,17 +2620,20 @@ pub mod GATE55 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE54 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2507,17 +2667,20 @@ pub mod GATE54 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE53 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2551,17 +2714,20 @@ pub mod GATE53 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE52 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2595,17 +2761,20 @@ pub mod GATE52 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE59 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2639,17 +2808,20 @@ pub mod GATE59 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE58 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2683,17 +2855,20 @@ pub mod GATE58 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE57 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2727,17 +2902,20 @@ pub mod GATE57 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE56 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2771,17 +2949,20 @@ pub mod GATE56 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE63 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2815,17 +2996,20 @@ pub mod GATE63 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE62 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2859,17 +3043,20 @@ pub mod GATE62 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE61 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2903,17 +3090,20 @@ pub mod GATE61 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Gate"]
 pub mod GATE60 {
+    pub use crate::RW as access;
     #[doc = "Gate Finite State Machine"]
     pub mod GTFSM {
         pub const offset: u8 = 0;
         pub const mask: u8 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The gate is unlocked (free)."]
             pub const UNLOCKED: u8 = 0;
             #[doc = "Domain 0 locked the gate."]
@@ -2947,33 +3137,40 @@ pub mod GATE60 {
             #[doc = "Domain 14 locked the gate."]
             pub const LOCKED_BY_D14: u8 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Reset Gate Read"]
 pub mod RSTGT_R {
+    pub use crate::RO as access;
     #[doc = "Reset Gate Number"]
     pub mod RSTGTN {
         pub const offset: u16 = 0;
         pub const mask: u16 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Reset Gate Domain"]
     pub mod RSTGMS {
         pub const offset: u16 = 8;
         pub const mask: u16 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Reset Gate Finite State Machine"]
     pub mod RSTGSM {
         pub const offset: u16 = 12;
         pub const mask: u16 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Idle, waiting for the first data pattern write."]
             pub const IDLE: u16 = 0;
             #[doc = "Waiting for the second data pattern write"]
@@ -2981,5 +3178,7 @@ pub mod RSTGT_R {
             #[doc = "The 2-write sequence has completed. Generate the specified gate reset(s). After the reset is performed, this machine returns to the idle (waiting for first data pattern write) state."]
             pub const TWO_WRITE_DONE: u16 = 0x02;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }

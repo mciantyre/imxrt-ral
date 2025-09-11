@@ -25,7 +25,7 @@ version = "0.7.2"
 optional = true
 
 [dependencies.ral-registers]
-version = "0.1"
+version = "0.2"
 
 [lib]
 bench = false
@@ -51,3 +51,6 @@ members = [
     "examples/teensy4",
     "raltool",
 ]
+
+[patch.crates-io.ral-registers]
+git = "https://git.mciantyre.dev/ral-registers"

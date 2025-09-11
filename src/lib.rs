@@ -4,10 +4,17 @@
     non_camel_case_types,
     non_snake_case,
     non_upper_case_globals,
+    unused_imports,
     clippy::self_named_constructors,
     clippy::module_inception
 )]
-pub use ral_registers::{modify_reg, read_reg, write_reg, RORegister, RWRegister, WORegister};
+pub use ral_registers::{modify_reg, read_reg, write_reg, Access};
+#[doc = r" Read-only access."]
+pub const RO: Access = Access::RO;
+#[doc = r" Write-only access."]
+pub const WO: Access = Access::WO;
+#[doc = r" Read-write access."]
+pub const RW: Access = Access::RW;
 #[doc = r" An owned peripheral of type `T`, instance `N`."]
 #[doc = r""]
 #[doc = r" Fabricating an `Instance` is always `unsafe`. An owner of an"]
@@ -42,15 +49,9 @@ pub use ral_registers::{modify_reg, read_reg, write_reg, RORegister, RWRegister,
 #[doc = r" you're only responsible for ensuring safety concern 3 from `new()`."]
 #[repr(transparent)]
 pub struct Instance<T, const N: u8> {
-    ptr: core::ptr::NonNull<T>,
+    inner: ral_registers::Instance<T>,
 }
-impl<T, const N: u8> core::ops::Deref for Instance<T, N> {
-    type Target = T;
-    #[inline]
-    fn deref(&self) -> &Self::Target {
-        unsafe { self.ptr.as_ref() }
-    }
-}
+unsafe impl<T, const N: u8> ral_registers::Inst for Instance<T, N> {}
 impl<T, const N: u8> Instance<T, N> {
     #[doc = r" Create an arbitrary `Instance` from a pointer to `T`."]
     #[doc = r""]
@@ -58,10 +59,15 @@ impl<T, const N: u8> Instance<T, N> {
     #[doc = r""]
     #[doc = r" See [the struct docs](Instance) for the safety contract."]
     #[inline]
-    pub const unsafe fn new(ptr: *const T) -> Self {
+    pub const unsafe fn new(ptr: *mut T) -> Self {
         Self {
-            ptr: core::ptr::NonNull::new_unchecked(ptr as *mut _),
+            inner: ral_registers::Instance::new_unchecked(ptr),
         }
+    }
+    #[doc = r" Returns the inner pointer."]
+    #[inline(always)]
+    pub const fn as_ptr(&self) -> *mut T {
+        self.inner.as_ptr()
     }
 }
 unsafe impl<T, const N: u8> Send for Instance<T, N> {}

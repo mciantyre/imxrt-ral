@@ -951,9 +951,9 @@ mod _vectors {
 #[path = "."]
 pub mod adc {
     #[doc = "ADC"]
-    pub const ADC1: *const RegisterBlock = 0x4260_0000 as *const RegisterBlock;
+    pub const ADC1: *mut RegisterBlock = 0x4260_0000 as *mut RegisterBlock;
     #[doc = "ADC"]
-    pub const ADC2: *const RegisterBlock = 0x42e0_0000 as *const RegisterBlock;
+    pub const ADC2: *mut RegisterBlock = 0x42e0_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/adc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -997,7 +997,7 @@ pub mod adc {
 #[path = "."]
 pub mod anadig_ldo_bbsm {
     #[doc = "RT1180_ANADIG_REGISTER"]
-    pub const ANADIG_LDO_BBSM: *const RegisterBlock = 0x4448_0000 as *const RegisterBlock;
+    pub const ANADIG_LDO_BBSM: *mut RegisterBlock = 0x4448_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/anadig_ldo_bbsm.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1024,7 +1024,7 @@ pub mod anadig_ldo_bbsm {
 #[path = "."]
 pub mod anadig_misc {
     #[doc = "RT1180_ANADIG_REGISTER"]
-    pub const ANADIG_MISC: *const RegisterBlock = 0x4448_0000 as *const RegisterBlock;
+    pub const ANADIG_MISC: *mut RegisterBlock = 0x4448_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/anadig_misc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1051,7 +1051,7 @@ pub mod anadig_misc {
 #[path = "."]
 pub mod anadig_osc {
     #[doc = "RT1180_ANADIG_REGISTER"]
-    pub const ANADIG_OSC: *const RegisterBlock = 0x4448_0000 as *const RegisterBlock;
+    pub const ANADIG_OSC: *mut RegisterBlock = 0x4448_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/anadig_osc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1078,7 +1078,7 @@ pub mod anadig_osc {
 #[path = "."]
 pub mod anadig_pll {
     #[doc = "RT1180_ANADIG_REGISTER"]
-    pub const ANADIG_PLL: *const RegisterBlock = 0x4448_0000 as *const RegisterBlock;
+    pub const ANADIG_PLL: *mut RegisterBlock = 0x4448_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/anadig_pll.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1105,7 +1105,7 @@ pub mod anadig_pll {
 #[path = "."]
 pub mod anadig_pmu {
     #[doc = "RT1180_ANADIG_REGISTER"]
-    pub const ANADIG_PMU: *const RegisterBlock = 0x4448_0000 as *const RegisterBlock;
+    pub const ANADIG_PMU: *mut RegisterBlock = 0x4448_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/anadig_pmu.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1132,7 +1132,7 @@ pub mod anadig_pmu {
 #[path = "."]
 pub mod anadig_slots {
     #[doc = "IPS Domain"]
-    pub const ANADIG_SLOTS: *const RegisterBlock = 0x4448_0000 as *const RegisterBlock;
+    pub const ANADIG_SLOTS: *mut RegisterBlock = 0x4448_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/anadig_slots.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1159,7 +1159,7 @@ pub mod anadig_slots {
 #[path = "."]
 pub mod anadig_tempsensor {
     #[doc = "RT1180_ANADIG_REGISTER"]
-    pub const ANADIG_TEMPSENSOR: *const RegisterBlock = 0x4448_0000 as *const RegisterBlock;
+    pub const ANADIG_TEMPSENSOR: *mut RegisterBlock = 0x4448_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/anadig_tempsensor.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1186,13 +1186,13 @@ pub mod anadig_tempsensor {
 #[path = "."]
 pub mod aoi {
     #[doc = "AOI"]
-    pub const AOI1: *const RegisterBlock = 0x4278_0000 as *const RegisterBlock;
+    pub const AOI1: *mut RegisterBlock = 0x4278_0000 as *mut RegisterBlock;
     #[doc = "AOI"]
-    pub const AOI2: *const RegisterBlock = 0x4279_0000 as *const RegisterBlock;
+    pub const AOI2: *mut RegisterBlock = 0x4279_0000 as *mut RegisterBlock;
     #[doc = "AOI"]
-    pub const AOI3: *const RegisterBlock = 0x427e_0000 as *const RegisterBlock;
+    pub const AOI3: *mut RegisterBlock = 0x427e_0000 as *mut RegisterBlock;
     #[doc = "AOI"]
-    pub const AOI4: *const RegisterBlock = 0x427f_0000 as *const RegisterBlock;
+    pub const AOI4: *mut RegisterBlock = 0x427f_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1176_cm4/aoi.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1264,7 +1264,7 @@ pub mod aoi {
 #[path = "."]
 pub mod asrc {
     #[doc = "ASRC"]
-    pub const ASRC: *const RegisterBlock = 0x429a_0000 as *const RegisterBlock;
+    pub const ASRC: *mut RegisterBlock = 0x429a_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/asrc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1291,7 +1291,7 @@ pub mod asrc {
 #[path = "."]
 pub mod axbs {
     #[doc = "AXBS"]
-    pub const AXBS: *const RegisterBlock = 0x4451_0000 as *const RegisterBlock;
+    pub const AXBS: *mut RegisterBlock = 0x4451_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/axbs.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1318,7 +1318,7 @@ pub mod axbs {
 #[path = "."]
 pub mod bbnsm {
     #[doc = "BBNSM"]
-    pub const BBNSM: *const RegisterBlock = 0x4444_0000 as *const RegisterBlock;
+    pub const BBNSM: *mut RegisterBlock = 0x4444_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/bbnsm.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1345,7 +1345,7 @@ pub mod bbnsm {
 #[path = "."]
 pub mod blk_ctrl_bbsmmix {
     #[doc = "blk_ctrl_bbsmmix"]
-    pub const BLK_CTRL_BBSMMIX: *const RegisterBlock = 0x4441_0000 as *const RegisterBlock;
+    pub const BLK_CTRL_BBSMMIX: *mut RegisterBlock = 0x4441_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/blk_ctrl_bbsmmix.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1372,7 +1372,7 @@ pub mod blk_ctrl_bbsmmix {
 #[path = "."]
 pub mod blk_ctrl_ns_aonmix {
     #[doc = "Block Control Non-Secure AON Domain"]
-    pub const BLK_CTRL_NS_AONMIX: *const RegisterBlock = 0x4421_0000 as *const RegisterBlock;
+    pub const BLK_CTRL_NS_AONMIX: *mut RegisterBlock = 0x4421_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/blk_ctrl_ns_aonmix.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1399,7 +1399,7 @@ pub mod blk_ctrl_ns_aonmix {
 #[path = "."]
 pub mod blk_ctrl_s_aonmix {
     #[doc = "Block Control Secure AONMIX"]
-    pub const BLK_CTRL_S_AONMIX: *const RegisterBlock = 0x444f_0000 as *const RegisterBlock;
+    pub const BLK_CTRL_S_AONMIX: *mut RegisterBlock = 0x444f_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/blk_ctrl_s_aonmix.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1426,7 +1426,7 @@ pub mod blk_ctrl_s_aonmix {
 #[path = "."]
 pub mod blk_ctrl_wakeupmix {
     #[doc = "Block Control WAKEUP Domain"]
-    pub const BLK_CTRL_WAKEUPMIX: *const RegisterBlock = 0x4242_0000 as *const RegisterBlock;
+    pub const BLK_CTRL_WAKEUPMIX: *mut RegisterBlock = 0x4242_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/blk_ctrl_wakeupmix.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1453,11 +1453,11 @@ pub mod blk_ctrl_wakeupmix {
 #[path = "."]
 pub mod can {
     #[doc = "CAN"]
-    pub const CAN2: *const RegisterBlock = 0x425b_0000 as *const RegisterBlock;
+    pub const CAN2: *mut RegisterBlock = 0x425b_0000 as *mut RegisterBlock;
     #[doc = "CAN"]
-    pub const CAN1: *const RegisterBlock = 0x443a_0000 as *const RegisterBlock;
+    pub const CAN1: *mut RegisterBlock = 0x443a_0000 as *mut RegisterBlock;
     #[doc = "CAN"]
-    pub const CAN3: *const RegisterBlock = 0x445b_0000 as *const RegisterBlock;
+    pub const CAN3: *mut RegisterBlock = 0x445b_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/can.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1515,7 +1515,7 @@ pub mod can {
 #[path = "."]
 pub mod ccm {
     #[doc = "CCM"]
-    pub const CCM: *const RegisterBlock = 0x4445_0000 as *const RegisterBlock;
+    pub const CCM: *mut RegisterBlock = 0x4445_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/ccm.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1542,7 +1542,7 @@ pub mod ccm {
 #[path = "."]
 pub mod cm7platform_tcm {
     #[doc = "MEM Type I with PSW"]
-    pub const CM7PLATFORM_TCM: *const RegisterBlock = 0x4446_4c00 as *const RegisterBlock;
+    pub const CM7PLATFORM_TCM: *mut RegisterBlock = 0x4446_4c00 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/cm7platform_tcm.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1569,13 +1569,13 @@ pub mod cm7platform_tcm {
 #[path = "."]
 pub mod cmp {
     #[doc = "ACMP"]
-    pub const CMP1: *const RegisterBlock = 0x42dc_0000 as *const RegisterBlock;
+    pub const CMP1: *mut RegisterBlock = 0x42dc_0000 as *mut RegisterBlock;
     #[doc = "ACMP"]
-    pub const CMP2: *const RegisterBlock = 0x42dd_0000 as *const RegisterBlock;
+    pub const CMP2: *mut RegisterBlock = 0x42dd_0000 as *mut RegisterBlock;
     #[doc = "ACMP"]
-    pub const CMP3: *const RegisterBlock = 0x42de_0000 as *const RegisterBlock;
+    pub const CMP3: *mut RegisterBlock = 0x42de_0000 as *mut RegisterBlock;
     #[doc = "ACMP"]
-    pub const CMP4: *const RegisterBlock = 0x42df_0000 as *const RegisterBlock;
+    pub const CMP4: *mut RegisterBlock = 0x42df_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/cmp.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1647,8 +1647,8 @@ pub mod cmp {
 #[path = "."]
 pub mod cp_cm33_imx9rtc__cm33_cache_ecc_mcm {
     #[doc = "CM33_CACHE_ECC_MCM"]
-    pub const CP_CM33_IMX9RTC__CM33_CACHE_ECC_MCM: *const RegisterBlock =
-        0x4440_1000 as *const RegisterBlock;
+    pub const CP_CM33_IMX9RTC__CM33_CACHE_ECC_MCM: *mut RegisterBlock =
+        0x4440_1000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/cp_cm33_imx9rtc__cm33_cache_ecc_mcm.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1675,8 +1675,7 @@ pub mod cp_cm33_imx9rtc__cm33_cache_ecc_mcm {
 #[path = "."]
 pub mod cp_cm33_imx9rtc__cm33_tcm_mcm {
     #[doc = "CM33_TCM_MCM"]
-    pub const CP_CM33_IMX9RTC__CM33_TCM_MCM: *const RegisterBlock =
-        0x4442_0000 as *const RegisterBlock;
+    pub const CP_CM33_IMX9RTC__CM33_TCM_MCM: *mut RegisterBlock = 0x4442_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/cp_cm33_imx9rtc__cm33_tcm_mcm.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1703,7 +1702,7 @@ pub mod cp_cm33_imx9rtc__cm33_tcm_mcm {
 #[path = "."]
 pub mod dac {
     #[doc = "DAC"]
-    pub const DAC: *const RegisterBlock = 0x42e2_0000 as *const RegisterBlock;
+    pub const DAC: *mut RegisterBlock = 0x42e2_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1176_cm4/dac.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1730,7 +1729,7 @@ pub mod dac {
 #[path = "."]
 pub mod dcdc {
     #[doc = "DCDC"]
-    pub const DCDC: *const RegisterBlock = 0x4452_0000 as *const RegisterBlock;
+    pub const DCDC: *mut RegisterBlock = 0x4452_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/dcdc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1757,7 +1756,7 @@ pub mod dcdc {
 #[path = "."]
 pub mod dma {
     #[doc = "DMA MP"]
-    pub const DMA: *const RegisterBlock = 0x4200_0000 as *const RegisterBlock;
+    pub const DMA: *mut RegisterBlock = 0x4200_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/dma.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1784,7 +1783,7 @@ pub mod dma {
 #[path = "."]
 pub mod dma3__tcd {
     #[doc = "DMA TCD"]
-    pub const DMA3__TCD: *const RegisterBlock = 0x4401_0000 as *const RegisterBlock;
+    pub const DMA3__TCD: *mut RegisterBlock = 0x4401_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/dma3__tcd.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1811,7 +1810,7 @@ pub mod dma3__tcd {
 #[path = "."]
 pub mod dma4__tcd {
     #[doc = "DMA TCD"]
-    pub const DMA4__TCD: *const RegisterBlock = 0x4201_0000 as *const RegisterBlock;
+    pub const DMA4__TCD: *mut RegisterBlock = 0x4201_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/dma4__tcd.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1838,7 +1837,7 @@ pub mod dma4__tcd {
 #[path = "."]
 pub mod ecat {
     #[doc = "ETHERCAT"]
-    pub const ECAT: *const RegisterBlock = 0x42a8_0000 as *const RegisterBlock;
+    pub const ECAT: *mut RegisterBlock = 0x42a8_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/ecat.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1865,7 +1864,7 @@ pub mod ecat {
 #[path = "."]
 pub mod eim {
     #[doc = "EIM"]
-    pub const EIM: *const RegisterBlock = 0x4b86_0000 as *const RegisterBlock;
+    pub const EIM: *mut RegisterBlock = 0x4b86_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/eim.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1892,7 +1891,7 @@ pub mod eim {
 #[path = "."]
 pub mod emdio_base {
     #[doc = "NETC EMDIO base function"]
-    pub const EMDIO_BASE: *const RegisterBlock = 0x60ba_0000 as *const RegisterBlock;
+    pub const EMDIO_BASE: *mut RegisterBlock = 0x60ba_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/emdio_base.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1919,7 +1918,7 @@ pub mod emdio_base {
 #[path = "."]
 pub mod emdio_global {
     #[doc = "NETC global"]
-    pub const EMDIO_GLOBAL: *const RegisterBlock = 0x60bb_0000 as *const RegisterBlock;
+    pub const EMDIO_GLOBAL: *mut RegisterBlock = 0x60bb_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/emdio_global.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1946,7 +1945,7 @@ pub mod emdio_global {
 #[path = "."]
 pub mod enetc0_base {
     #[doc = "ENETC base"]
-    pub const ENETC0_BASE: *const RegisterBlock = 0x60b1_0000 as *const RegisterBlock;
+    pub const ENETC0_BASE: *mut RegisterBlock = 0x60b1_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/enetc0_base.rs"]
     mod blocks;
     pub use blocks::*;
@@ -1973,7 +1972,7 @@ pub mod enetc0_base {
 #[path = "."]
 pub mod enetc0_common {
     #[doc = "Switch and ENETC common base"]
-    pub const ENETC0_COMMON: *const RegisterBlock = 0x60b1_0000 as *const RegisterBlock;
+    pub const ENETC0_COMMON: *mut RegisterBlock = 0x60b1_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/enetc0_common.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2000,7 +1999,7 @@ pub mod enetc0_common {
 #[path = "."]
 pub mod enetc0_eth_mac_port {
     #[doc = "Ethernet MAC port"]
-    pub const ENETC0_ETH_MAC_PORT: *const RegisterBlock = 0x60b1_5000 as *const RegisterBlock;
+    pub const ENETC0_ETH_MAC_PORT: *mut RegisterBlock = 0x60b1_5000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/enetc0_eth_mac_port.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2027,7 +2026,7 @@ pub mod enetc0_eth_mac_port {
 #[path = "."]
 pub mod enetc0_port {
     #[doc = "Port"]
-    pub const ENETC0_PORT: *const RegisterBlock = 0x60b1_4000 as *const RegisterBlock;
+    pub const ENETC0_PORT: *mut RegisterBlock = 0x60b1_4000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/enetc0_port.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2054,7 +2053,7 @@ pub mod enetc0_port {
 #[path = "."]
 pub mod enetc0_si0 {
     #[doc = "ENETC Station Interface"]
-    pub const ENETC0_SI0: *const RegisterBlock = 0x60b0_0000 as *const RegisterBlock;
+    pub const ENETC0_SI0: *mut RegisterBlock = 0x60b0_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/enetc0_si0.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2081,7 +2080,7 @@ pub mod enetc0_si0 {
 #[path = "."]
 pub mod enetc1_base {
     #[doc = "ENETC base"]
-    pub const ENETC1_BASE: *const RegisterBlock = 0x60b5_0000 as *const RegisterBlock;
+    pub const ENETC1_BASE: *mut RegisterBlock = 0x60b5_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/enetc1_base.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2108,7 +2107,7 @@ pub mod enetc1_base {
 #[path = "."]
 pub mod enetc1_common {
     #[doc = "Switch and ENETC common base"]
-    pub const ENETC1_COMMON: *const RegisterBlock = 0x60b5_0000 as *const RegisterBlock;
+    pub const ENETC1_COMMON: *mut RegisterBlock = 0x60b5_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/enetc1_common.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2135,7 +2134,7 @@ pub mod enetc1_common {
 #[path = "."]
 pub mod enetc1_port {
     #[doc = "Port"]
-    pub const ENETC1_PORT: *const RegisterBlock = 0x60b5_4000 as *const RegisterBlock;
+    pub const ENETC1_PORT: *mut RegisterBlock = 0x60b5_4000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/enetc1_port.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2162,7 +2161,7 @@ pub mod enetc1_port {
 #[path = "."]
 pub mod enetc1_pseudo_mac_port {
     #[doc = "Pseudo MAC port"]
-    pub const ENETC1_PSEUDO_MAC_PORT: *const RegisterBlock = 0x60b5_5000 as *const RegisterBlock;
+    pub const ENETC1_PSEUDO_MAC_PORT: *mut RegisterBlock = 0x60b5_5000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/enetc1_pseudo_mac_port.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2189,7 +2188,7 @@ pub mod enetc1_pseudo_mac_port {
 #[path = "."]
 pub mod enetc1_si0 {
     #[doc = "ENETC Station Interface"]
-    pub const ENETC1_SI0: *const RegisterBlock = 0x60b4_0000 as *const RegisterBlock;
+    pub const ENETC1_SI0: *mut RegisterBlock = 0x60b4_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/enetc1_si0.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2216,7 +2215,7 @@ pub mod enetc1_si0 {
 #[path = "."]
 pub mod enetc1_si1 {
     #[doc = "ENETC Station Interface"]
-    pub const ENETC1_SI1: *const RegisterBlock = 0x60c1_0000 as *const RegisterBlock;
+    pub const ENETC1_SI1: *mut RegisterBlock = 0x60c1_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/enetc1_si1.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2243,13 +2242,13 @@ pub mod enetc1_si1 {
 #[path = "."]
 pub mod eqdc {
     #[doc = "Quadrature_Decoder"]
-    pub const EQDC1: *const RegisterBlock = 0x4271_0000 as *const RegisterBlock;
+    pub const EQDC1: *mut RegisterBlock = 0x4271_0000 as *mut RegisterBlock;
     #[doc = "Quadrature_Decoder"]
-    pub const EQDC2: *const RegisterBlock = 0x4272_0000 as *const RegisterBlock;
+    pub const EQDC2: *mut RegisterBlock = 0x4272_0000 as *mut RegisterBlock;
     #[doc = "Quadrature_Decoder"]
-    pub const EQDC3: *const RegisterBlock = 0x4273_0000 as *const RegisterBlock;
+    pub const EQDC3: *mut RegisterBlock = 0x4273_0000 as *mut RegisterBlock;
     #[doc = "Quadrature_Decoder"]
-    pub const EQDC4: *const RegisterBlock = 0x4274_0000 as *const RegisterBlock;
+    pub const EQDC4: *mut RegisterBlock = 0x4274_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/eqdc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2321,7 +2320,7 @@ pub mod eqdc {
 #[path = "."]
 pub mod erm {
     #[doc = "ERM"]
-    pub const ERM: *const RegisterBlock = 0x4b86_4000 as *const RegisterBlock;
+    pub const ERM: *mut RegisterBlock = 0x4b86_4000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/erm.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2348,7 +2347,7 @@ pub mod erm {
 #[path = "."]
 pub mod ewm {
     #[doc = "EWM"]
-    pub const EWM: *const RegisterBlock = 0x427b_0000 as *const RegisterBlock;
+    pub const EWM: *mut RegisterBlock = 0x427b_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1176_cm4/ewm.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2375,9 +2374,9 @@ pub mod ewm {
 #[path = "."]
 pub mod flexio {
     #[doc = "FLEXIO"]
-    pub const FLEXIO1: *const RegisterBlock = 0x425c_0000 as *const RegisterBlock;
+    pub const FLEXIO1: *mut RegisterBlock = 0x425c_0000 as *mut RegisterBlock;
     #[doc = "FLEXIO"]
-    pub const FLEXIO2: *const RegisterBlock = 0x425d_0000 as *const RegisterBlock;
+    pub const FLEXIO2: *mut RegisterBlock = 0x425d_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/flexio.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2421,9 +2420,9 @@ pub mod flexio {
 #[path = "."]
 pub mod flexspi {
     #[doc = "FlexSPI"]
-    pub const FLEXSPI1: *const RegisterBlock = 0x425e_0000 as *const RegisterBlock;
+    pub const FLEXSPI1: *mut RegisterBlock = 0x425e_0000 as *mut RegisterBlock;
     #[doc = "FlexSPI"]
-    pub const FLEXSPI2: *const RegisterBlock = 0x445e_0000 as *const RegisterBlock;
+    pub const FLEXSPI2: *mut RegisterBlock = 0x445e_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/flexspi.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2467,7 +2466,7 @@ pub mod flexspi {
 #[path = "."]
 pub mod flexspi_slv {
     #[doc = "FlexSPI_FLR"]
-    pub const FLEXSPI_SLV: *const RegisterBlock = 0x4290_0000 as *const RegisterBlock;
+    pub const FLEXSPI_SLV: *mut RegisterBlock = 0x4290_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/flexspi_slv.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2494,7 +2493,7 @@ pub mod flexspi_slv {
 #[path = "."]
 pub mod gpc_cpu_ctrl {
     #[doc = "no description available"]
-    pub const GPC_CPU_CTRL: *const RegisterBlock = 0x4447_0000 as *const RegisterBlock;
+    pub const GPC_CPU_CTRL: *mut RegisterBlock = 0x4447_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/gpc_cpu_ctrl.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2521,7 +2520,7 @@ pub mod gpc_cpu_ctrl {
 #[path = "."]
 pub mod gpc_global {
     #[doc = "no description available"]
-    pub const GPC_GLOBAL: *const RegisterBlock = 0x4447_2000 as *const RegisterBlock;
+    pub const GPC_GLOBAL: *mut RegisterBlock = 0x4447_2000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/gpc_global.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2548,7 +2547,7 @@ pub mod gpc_global {
 #[path = "."]
 pub mod gpc_sys_sleep_ctrl {
     #[doc = "no description available"]
-    pub const GPC_SYS_SLEEP_CTRL: *const RegisterBlock = 0x4447_2800 as *const RegisterBlock;
+    pub const GPC_SYS_SLEEP_CTRL: *mut RegisterBlock = 0x4447_2800 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/gpc_sys_sleep_ctrl.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2574,9 +2573,9 @@ pub mod gpc_sys_sleep_ctrl {
 }
 #[path = "."]
 pub mod gpt {
-    pub const GPT2: *const RegisterBlock = 0x42ec_0000 as *const RegisterBlock;
+    pub const GPT2: *mut RegisterBlock = 0x42ec_0000 as *mut RegisterBlock;
     #[doc = "GPT"]
-    pub const GPT1: *const RegisterBlock = 0x446c_0000 as *const RegisterBlock;
+    pub const GPT1: *mut RegisterBlock = 0x446c_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1011/gpt.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2620,9 +2619,9 @@ pub mod gpt {
 #[path = "."]
 pub mod i3c {
     #[doc = "I3C"]
-    pub const I3C2: *const RegisterBlock = 0x4252_0000 as *const RegisterBlock;
+    pub const I3C2: *mut RegisterBlock = 0x4252_0000 as *mut RegisterBlock;
     #[doc = "I3C"]
-    pub const I3C1: *const RegisterBlock = 0x4433_0000 as *const RegisterBlock;
+    pub const I3C1: *mut RegisterBlock = 0x4433_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/i3c.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2666,7 +2665,7 @@ pub mod i3c {
 #[path = "."]
 pub mod iee {
     #[doc = "IEE"]
-    pub const IEE: *const RegisterBlock = 0x42e4_0000 as *const RegisterBlock;
+    pub const IEE: *mut RegisterBlock = 0x42e4_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/iee.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2693,7 +2692,7 @@ pub mod iee {
 #[path = "."]
 pub mod iee_apc {
     #[doc = "IEE_APC"]
-    pub const IEE_APC: *const RegisterBlock = 0x42e4_4000 as *const RegisterBlock;
+    pub const IEE_APC: *mut RegisterBlock = 0x42e4_4000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/iee_apc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2720,7 +2719,7 @@ pub mod iee_apc {
 #[path = "."]
 pub mod ierc_f0_pci_hdr_type0 {
     #[doc = "PCI Express ECAM Event Collector config"]
-    pub const IERC_F0_PCI_HDR_TYPE0: *const RegisterBlock = 0x600f_8000 as *const RegisterBlock;
+    pub const IERC_F0_PCI_HDR_TYPE0: *mut RegisterBlock = 0x600f_8000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/ierc_f0_pci_hdr_type0.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2747,7 +2746,7 @@ pub mod ierc_f0_pci_hdr_type0 {
 #[path = "."]
 pub mod ierc_ierb {
     #[doc = "Event Collector Integrated Endpoint Register Block"]
-    pub const IERC_IERB: *const RegisterBlock = 0x6081_0000 as *const RegisterBlock;
+    pub const IERC_IERB: *mut RegisterBlock = 0x6081_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/ierc_ierb.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2774,7 +2773,7 @@ pub mod ierc_ierb {
 #[path = "."]
 pub mod iomuxc {
     #[doc = "IOMUXC"]
-    pub const IOMUXC: *const RegisterBlock = 0x42a1_0000 as *const RegisterBlock;
+    pub const IOMUXC: *mut RegisterBlock = 0x42a1_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/iomuxc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2801,7 +2800,7 @@ pub mod iomuxc {
 #[path = "."]
 pub mod iomuxc_aon {
     #[doc = "IOMUXC_AON"]
-    pub const IOMUXC_AON: *const RegisterBlock = 0x443c_0000 as *const RegisterBlock;
+    pub const IOMUXC_AON: *mut RegisterBlock = 0x443c_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/iomuxc_aon.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2828,7 +2827,7 @@ pub mod iomuxc_aon {
 #[path = "."]
 pub mod kpp {
     #[doc = "KPP"]
-    pub const KPP: *const RegisterBlock = 0x42a0_0000 as *const RegisterBlock;
+    pub const KPP: *mut RegisterBlock = 0x42a0_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1011/kpp.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2854,17 +2853,17 @@ pub mod kpp {
 }
 #[path = "."]
 pub mod lpi2c {
-    pub const LPI2C3: *const RegisterBlock = 0x4253_0000 as *const RegisterBlock;
+    pub const LPI2C3: *mut RegisterBlock = 0x4253_0000 as *mut RegisterBlock;
     #[doc = "Low-Power Inter-Integrated Circuit"]
-    pub const LPI2C4: *const RegisterBlock = 0x4254_0000 as *const RegisterBlock;
+    pub const LPI2C4: *mut RegisterBlock = 0x4254_0000 as *mut RegisterBlock;
     #[doc = "Low-Power Inter-Integrated Circuit"]
-    pub const LPI2C5: *const RegisterBlock = 0x42d3_0000 as *const RegisterBlock;
+    pub const LPI2C5: *mut RegisterBlock = 0x42d3_0000 as *mut RegisterBlock;
     #[doc = "Low-Power Inter-Integrated Circuit"]
-    pub const LPI2C6: *const RegisterBlock = 0x42d4_0000 as *const RegisterBlock;
+    pub const LPI2C6: *mut RegisterBlock = 0x42d4_0000 as *mut RegisterBlock;
     #[doc = "Low-Power Inter-Integrated Circuit"]
-    pub const LPI2C1: *const RegisterBlock = 0x4434_0000 as *const RegisterBlock;
+    pub const LPI2C1: *mut RegisterBlock = 0x4434_0000 as *mut RegisterBlock;
     #[doc = "Low-Power Inter-Integrated Circuit"]
-    pub const LPI2C2: *const RegisterBlock = 0x4435_0000 as *const RegisterBlock;
+    pub const LPI2C2: *mut RegisterBlock = 0x4435_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1011/lpi2c.rs"]
     mod blocks;
     pub use blocks::*;
@@ -2971,11 +2970,11 @@ pub mod lpi2c {
 #[path = "."]
 pub mod lpit {
     #[doc = "LPIT"]
-    pub const LPIT2: *const RegisterBlock = 0x424c_0000 as *const RegisterBlock;
+    pub const LPIT2: *mut RegisterBlock = 0x424c_0000 as *mut RegisterBlock;
     #[doc = "LPIT"]
-    pub const LPIT3: *const RegisterBlock = 0x42cc_0000 as *const RegisterBlock;
+    pub const LPIT3: *mut RegisterBlock = 0x42cc_0000 as *mut RegisterBlock;
     #[doc = "LPIT"]
-    pub const LPIT1: *const RegisterBlock = 0x442f_0000 as *const RegisterBlock;
+    pub const LPIT1: *mut RegisterBlock = 0x442f_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/lpit.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3032,17 +3031,17 @@ pub mod lpit {
 }
 #[path = "."]
 pub mod lpspi {
-    pub const LPSPI3: *const RegisterBlock = 0x4255_0000 as *const RegisterBlock;
+    pub const LPSPI3: *mut RegisterBlock = 0x4255_0000 as *mut RegisterBlock;
     #[doc = "Low-Power Serial Peripheral Interface"]
-    pub const LPSPI4: *const RegisterBlock = 0x4256_0000 as *const RegisterBlock;
+    pub const LPSPI4: *mut RegisterBlock = 0x4256_0000 as *mut RegisterBlock;
     #[doc = "Low-Power Serial Peripheral Interface"]
-    pub const LPSPI5: *const RegisterBlock = 0x42d5_0000 as *const RegisterBlock;
+    pub const LPSPI5: *mut RegisterBlock = 0x42d5_0000 as *mut RegisterBlock;
     #[doc = "Low-Power Serial Peripheral Interface"]
-    pub const LPSPI6: *const RegisterBlock = 0x42d6_0000 as *const RegisterBlock;
+    pub const LPSPI6: *mut RegisterBlock = 0x42d6_0000 as *mut RegisterBlock;
     #[doc = "Low-Power Serial Peripheral Interface"]
-    pub const LPSPI1: *const RegisterBlock = 0x4436_0000 as *const RegisterBlock;
+    pub const LPSPI1: *mut RegisterBlock = 0x4436_0000 as *mut RegisterBlock;
     #[doc = "Low-Power Serial Peripheral Interface"]
-    pub const LPSPI2: *const RegisterBlock = 0x4437_0000 as *const RegisterBlock;
+    pub const LPSPI2: *mut RegisterBlock = 0x4437_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1011/lpspi.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3149,11 +3148,11 @@ pub mod lpspi {
 #[path = "."]
 pub mod lptmr {
     #[doc = "LPTMR"]
-    pub const LPTMR2: *const RegisterBlock = 0x424d_0000 as *const RegisterBlock;
+    pub const LPTMR2: *mut RegisterBlock = 0x424d_0000 as *mut RegisterBlock;
     #[doc = "LPTMR"]
-    pub const LPTMR3: *const RegisterBlock = 0x42cd_0000 as *const RegisterBlock;
+    pub const LPTMR3: *mut RegisterBlock = 0x42cd_0000 as *mut RegisterBlock;
     #[doc = "LPTMR"]
-    pub const LPTMR1: *const RegisterBlock = 0x4430_0000 as *const RegisterBlock;
+    pub const LPTMR1: *mut RegisterBlock = 0x4430_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/lptmr.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3210,29 +3209,29 @@ pub mod lptmr {
 }
 #[path = "."]
 pub mod lpuart {
-    pub const LPUART3: *const RegisterBlock = 0x4257_0000 as *const RegisterBlock;
+    pub const LPUART3: *mut RegisterBlock = 0x4257_0000 as *mut RegisterBlock;
     #[doc = "LPUART"]
-    pub const LPUART4: *const RegisterBlock = 0x4258_0000 as *const RegisterBlock;
+    pub const LPUART4: *mut RegisterBlock = 0x4258_0000 as *mut RegisterBlock;
     #[doc = "LPUART"]
-    pub const LPUART5: *const RegisterBlock = 0x4259_0000 as *const RegisterBlock;
+    pub const LPUART5: *mut RegisterBlock = 0x4259_0000 as *mut RegisterBlock;
     #[doc = "LPUART"]
-    pub const LPUART6: *const RegisterBlock = 0x425a_0000 as *const RegisterBlock;
+    pub const LPUART6: *mut RegisterBlock = 0x425a_0000 as *mut RegisterBlock;
     #[doc = "LPUART"]
-    pub const LPUART9: *const RegisterBlock = 0x42d7_0000 as *const RegisterBlock;
+    pub const LPUART9: *mut RegisterBlock = 0x42d7_0000 as *mut RegisterBlock;
     #[doc = "LPUART"]
-    pub const LPUART10: *const RegisterBlock = 0x42d8_0000 as *const RegisterBlock;
+    pub const LPUART10: *mut RegisterBlock = 0x42d8_0000 as *mut RegisterBlock;
     #[doc = "LPUART"]
-    pub const LPUART11: *const RegisterBlock = 0x42d9_0000 as *const RegisterBlock;
+    pub const LPUART11: *mut RegisterBlock = 0x42d9_0000 as *mut RegisterBlock;
     #[doc = "LPUART"]
-    pub const LPUART8: *const RegisterBlock = 0x42da_0000 as *const RegisterBlock;
+    pub const LPUART8: *mut RegisterBlock = 0x42da_0000 as *mut RegisterBlock;
     #[doc = "LPUART"]
-    pub const LPUART1: *const RegisterBlock = 0x4438_0000 as *const RegisterBlock;
+    pub const LPUART1: *mut RegisterBlock = 0x4438_0000 as *mut RegisterBlock;
     #[doc = "LPUART"]
-    pub const LPUART2: *const RegisterBlock = 0x4439_0000 as *const RegisterBlock;
+    pub const LPUART2: *mut RegisterBlock = 0x4439_0000 as *mut RegisterBlock;
     #[doc = "LPUART"]
-    pub const LPUART7: *const RegisterBlock = 0x4457_0000 as *const RegisterBlock;
+    pub const LPUART7: *mut RegisterBlock = 0x4457_0000 as *mut RegisterBlock;
     #[doc = "LPUART"]
-    pub const LPUART12: *const RegisterBlock = 0x4458_0000 as *const RegisterBlock;
+    pub const LPUART12: *mut RegisterBlock = 0x4458_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1011/lpuart.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3429,9 +3428,9 @@ pub mod lpuart {
 #[path = "."]
 pub mod mecc {
     #[doc = "MECC64"]
-    pub const MECC1: *const RegisterBlock = 0x4292_0000 as *const RegisterBlock;
+    pub const MECC1: *mut RegisterBlock = 0x4292_0000 as *mut RegisterBlock;
     #[doc = "MECC64"]
-    pub const MECC2: *const RegisterBlock = 0x4293_0000 as *const RegisterBlock;
+    pub const MECC2: *mut RegisterBlock = 0x4293_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1176_cm4/mecc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3475,17 +3474,17 @@ pub mod mecc {
 #[path = "."]
 pub mod msgintr {
     #[doc = "MSGINTR"]
-    pub const MSGINTR1: *const RegisterBlock = 0x428a_0000 as *const RegisterBlock;
+    pub const MSGINTR1: *mut RegisterBlock = 0x428a_0000 as *mut RegisterBlock;
     #[doc = "MSGINTR"]
-    pub const MSGINTR2: *const RegisterBlock = 0x428b_0000 as *const RegisterBlock;
+    pub const MSGINTR2: *mut RegisterBlock = 0x428b_0000 as *mut RegisterBlock;
     #[doc = "MSGINTR"]
-    pub const MSGINTR3: *const RegisterBlock = 0x428c_0000 as *const RegisterBlock;
+    pub const MSGINTR3: *mut RegisterBlock = 0x428c_0000 as *mut RegisterBlock;
     #[doc = "MSGINTR"]
-    pub const MSGINTR4: *const RegisterBlock = 0x428d_0000 as *const RegisterBlock;
+    pub const MSGINTR4: *mut RegisterBlock = 0x428d_0000 as *mut RegisterBlock;
     #[doc = "MSGINTR"]
-    pub const MSGINTR5: *const RegisterBlock = 0x428e_0000 as *const RegisterBlock;
+    pub const MSGINTR5: *mut RegisterBlock = 0x428e_0000 as *mut RegisterBlock;
     #[doc = "MSGINTR"]
-    pub const MSGINTR6: *const RegisterBlock = 0x428f_0000 as *const RegisterBlock;
+    pub const MSGINTR6: *mut RegisterBlock = 0x428f_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/msgintr.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3592,9 +3591,9 @@ pub mod msgintr {
 #[path = "."]
 pub mod mu_apps_s3mua {
     #[doc = "S3MUA"]
-    pub const MU_APPS_S3MUA: *const RegisterBlock = 0x4752_0000 as *const RegisterBlock;
+    pub const MU_APPS_S3MUA: *mut RegisterBlock = 0x4752_0000 as *mut RegisterBlock;
     #[doc = "S3MUA"]
-    pub const MU_RT_S3MUA: *const RegisterBlock = 0x4754_0000 as *const RegisterBlock;
+    pub const MU_RT_S3MUA: *mut RegisterBlock = 0x4754_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/mu_apps_s3mua.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3633,7 +3632,7 @@ pub mod mu_apps_s3mua {
 #[path = "."]
 pub mod netc_f0_pci_hdr_type0 {
     #[doc = "NETC PCI Express ECAM PF config"]
-    pub const NETC_F0_PCI_HDR_TYPE0: *const RegisterBlock = 0x6000_0000 as *const RegisterBlock;
+    pub const NETC_F0_PCI_HDR_TYPE0: *mut RegisterBlock = 0x6000_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/netc_f0_pci_hdr_type0.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3660,7 +3659,7 @@ pub mod netc_f0_pci_hdr_type0 {
 #[path = "."]
 pub mod netc_f1_pci_hdr_type0 {
     #[doc = "NETC PCI Express ECAM PF config"]
-    pub const NETC_F1_PCI_HDR_TYPE0: *const RegisterBlock = 0x6000_1000 as *const RegisterBlock;
+    pub const NETC_F1_PCI_HDR_TYPE0: *mut RegisterBlock = 0x6000_1000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/netc_f1_pci_hdr_type0.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3687,7 +3686,7 @@ pub mod netc_f1_pci_hdr_type0 {
 #[path = "."]
 pub mod netc_f2_pci_hdr_type0 {
     #[doc = "NETC PCI Express ECAM PF config"]
-    pub const NETC_F2_PCI_HDR_TYPE0: *const RegisterBlock = 0x6000_2000 as *const RegisterBlock;
+    pub const NETC_F2_PCI_HDR_TYPE0: *mut RegisterBlock = 0x6000_2000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/netc_f2_pci_hdr_type0.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3714,7 +3713,7 @@ pub mod netc_f2_pci_hdr_type0 {
 #[path = "."]
 pub mod netc_f3_pci_hdr_type0 {
     #[doc = "NETC PCI Express ECAM PF config"]
-    pub const NETC_F3_PCI_HDR_TYPE0: *const RegisterBlock = 0x6000_3000 as *const RegisterBlock;
+    pub const NETC_F3_PCI_HDR_TYPE0: *mut RegisterBlock = 0x6000_3000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/netc_f3_pci_hdr_type0.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3741,7 +3740,7 @@ pub mod netc_f3_pci_hdr_type0 {
 #[path = "."]
 pub mod netc_f4_pci_hdr_type0 {
     #[doc = "NETC PCI Express ECAM PF config"]
-    pub const NETC_F4_PCI_HDR_TYPE0: *const RegisterBlock = 0x6000_4000 as *const RegisterBlock;
+    pub const NETC_F4_PCI_HDR_TYPE0: *mut RegisterBlock = 0x6000_4000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/netc_f4_pci_hdr_type0.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3768,7 +3767,7 @@ pub mod netc_f4_pci_hdr_type0 {
 #[path = "."]
 pub mod netc_ierb {
     #[doc = "NETC Integrated Endpoint Register Block"]
-    pub const NETC_IERB: *const RegisterBlock = 0x6080_0000 as *const RegisterBlock;
+    pub const NETC_IERB: *mut RegisterBlock = 0x6080_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/netc_ierb.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3795,7 +3794,7 @@ pub mod netc_ierb {
 #[path = "."]
 pub mod netc_priv {
     #[doc = "NETC privileged"]
-    pub const NETC_PRIV: *const RegisterBlock = 0x6090_0000 as *const RegisterBlock;
+    pub const NETC_PRIV: *mut RegisterBlock = 0x6090_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/netc_priv.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3822,7 +3821,7 @@ pub mod netc_priv {
 #[path = "."]
 pub mod netc_vf1_pci_hdr_type0 {
     #[doc = "NETC PCI Express ECAM VF config"]
-    pub const NETC_VF1_PCI_HDR_TYPE0: *const RegisterBlock = 0x6010_0000 as *const RegisterBlock;
+    pub const NETC_VF1_PCI_HDR_TYPE0: *mut RegisterBlock = 0x6010_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/netc_vf1_pci_hdr_type0.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3849,7 +3848,7 @@ pub mod netc_vf1_pci_hdr_type0 {
 #[path = "."]
 pub mod ocotp_fsb {
     #[doc = "no description available"]
-    pub const OCOTP_FSB: *const RegisterBlock = 0x4751_8000 as *const RegisterBlock;
+    pub const OCOTP_FSB: *mut RegisterBlock = 0x4751_8000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/ocotp_fsb.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3876,7 +3875,7 @@ pub mod ocotp_fsb {
 #[path = "."]
 pub mod osc_rc_400m {
     #[doc = "no description available"]
-    pub const OSC_RC_400M: *const RegisterBlock = 0x4448_4380 as *const RegisterBlock;
+    pub const OSC_RC_400M: *mut RegisterBlock = 0x4448_4380 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/osc_rc_400m.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3903,9 +3902,9 @@ pub mod osc_rc_400m {
 #[path = "."]
 pub mod otfad {
     #[doc = "OTFAD"]
-    pub const OTFAD1: *const RegisterBlock = 0x425e_0000 as *const RegisterBlock;
+    pub const OTFAD1: *mut RegisterBlock = 0x425e_0000 as *mut RegisterBlock;
     #[doc = "OTFAD"]
-    pub const OTFAD2: *const RegisterBlock = 0x445e_0000 as *const RegisterBlock;
+    pub const OTFAD2: *mut RegisterBlock = 0x445e_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1176_cm4/otfad.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3949,7 +3948,7 @@ pub mod otfad {
 #[path = "."]
 pub mod pdm {
     #[doc = "MICFIL"]
-    pub const PDM: *const RegisterBlock = 0x42be_0000 as *const RegisterBlock;
+    pub const PDM: *mut RegisterBlock = 0x42be_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/pdm.rs"]
     mod blocks;
     pub use blocks::*;
@@ -3976,7 +3975,7 @@ pub mod pdm {
 #[path = "."]
 pub mod phy_ldo {
     #[doc = "no description available"]
-    pub const PHY_LDO: *const RegisterBlock = 0x4448_4680 as *const RegisterBlock;
+    pub const PHY_LDO: *mut RegisterBlock = 0x4448_4680 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/phy_ldo.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4003,13 +4002,13 @@ pub mod phy_ldo {
 #[path = "."]
 pub mod pwm {
     #[doc = "PWM"]
-    pub const PWM1: *const RegisterBlock = 0x4265_0000 as *const RegisterBlock;
+    pub const PWM1: *mut RegisterBlock = 0x4265_0000 as *mut RegisterBlock;
     #[doc = "PWM"]
-    pub const PWM2: *const RegisterBlock = 0x4266_0000 as *const RegisterBlock;
+    pub const PWM2: *mut RegisterBlock = 0x4266_0000 as *mut RegisterBlock;
     #[doc = "PWM"]
-    pub const PWM3: *const RegisterBlock = 0x4267_0000 as *const RegisterBlock;
+    pub const PWM3: *mut RegisterBlock = 0x4267_0000 as *mut RegisterBlock;
     #[doc = "PWM"]
-    pub const PWM4: *const RegisterBlock = 0x4268_0000 as *const RegisterBlock;
+    pub const PWM4: *mut RegisterBlock = 0x4268_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/pwm.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4081,17 +4080,17 @@ pub mod pwm {
 #[path = "."]
 pub mod rgpio {
     #[doc = "GPIO"]
-    pub const RGPIO2: *const RegisterBlock = 0x4381_0000 as *const RegisterBlock;
+    pub const RGPIO2: *mut RegisterBlock = 0x4381_0000 as *mut RegisterBlock;
     #[doc = "GPIO"]
-    pub const RGPIO3: *const RegisterBlock = 0x4382_0000 as *const RegisterBlock;
+    pub const RGPIO3: *mut RegisterBlock = 0x4382_0000 as *mut RegisterBlock;
     #[doc = "GPIO"]
-    pub const RGPIO4: *const RegisterBlock = 0x4383_0000 as *const RegisterBlock;
+    pub const RGPIO4: *mut RegisterBlock = 0x4383_0000 as *mut RegisterBlock;
     #[doc = "GPIO"]
-    pub const RGPIO5: *const RegisterBlock = 0x4384_0000 as *const RegisterBlock;
+    pub const RGPIO5: *mut RegisterBlock = 0x4384_0000 as *mut RegisterBlock;
     #[doc = "GPIO"]
-    pub const RGPIO6: *const RegisterBlock = 0x4385_0000 as *const RegisterBlock;
+    pub const RGPIO6: *mut RegisterBlock = 0x4385_0000 as *mut RegisterBlock;
     #[doc = "GPIO"]
-    pub const RGPIO1: *const RegisterBlock = 0x4740_0000 as *const RegisterBlock;
+    pub const RGPIO1: *mut RegisterBlock = 0x4740_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/rgpio.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4198,15 +4197,15 @@ pub mod rgpio {
 #[path = "."]
 pub mod rtwdog {
     #[doc = "WDOG"]
-    pub const RTWDOG3: *const RegisterBlock = 0x4249_0000 as *const RegisterBlock;
+    pub const RTWDOG3: *mut RegisterBlock = 0x4249_0000 as *mut RegisterBlock;
     #[doc = "WDOG"]
-    pub const RTWDOG4: *const RegisterBlock = 0x424a_0000 as *const RegisterBlock;
+    pub const RTWDOG4: *mut RegisterBlock = 0x424a_0000 as *mut RegisterBlock;
     #[doc = "WDOG"]
-    pub const RTWDOG5: *const RegisterBlock = 0x424b_0000 as *const RegisterBlock;
+    pub const RTWDOG5: *mut RegisterBlock = 0x424b_0000 as *mut RegisterBlock;
     #[doc = "WDOG"]
-    pub const RTWDOG1: *const RegisterBlock = 0x442d_0000 as *const RegisterBlock;
+    pub const RTWDOG1: *mut RegisterBlock = 0x442d_0000 as *mut RegisterBlock;
     #[doc = "WDOG"]
-    pub const RTWDOG2: *const RegisterBlock = 0x442e_0000 as *const RegisterBlock;
+    pub const RTWDOG2: *mut RegisterBlock = 0x442e_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1176_cm4/rtwdog.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4298,9 +4297,9 @@ pub mod rtwdog {
 #[path = "."]
 pub mod sai {
     #[doc = "SAI"]
-    pub const SAI2: *const RegisterBlock = 0x42bb_0000 as *const RegisterBlock;
+    pub const SAI2: *mut RegisterBlock = 0x42bb_0000 as *mut RegisterBlock;
     #[doc = "SAI"]
-    pub const SAI3: *const RegisterBlock = 0x42bc_0000 as *const RegisterBlock;
+    pub const SAI3: *mut RegisterBlock = 0x42bc_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sai.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4344,7 +4343,7 @@ pub mod sai {
 #[path = "."]
 pub mod sai1 {
     #[doc = "SAI"]
-    pub const SAI1: *const RegisterBlock = 0x443b_0000 as *const RegisterBlock;
+    pub const SAI1: *mut RegisterBlock = 0x443b_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sai1.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4371,7 +4370,7 @@ pub mod sai1 {
 #[path = "."]
 pub mod sai4 {
     #[doc = "SAI"]
-    pub const SAI4: *const RegisterBlock = 0x42bd_0000 as *const RegisterBlock;
+    pub const SAI4: *mut RegisterBlock = 0x42bd_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sai4.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4398,9 +4397,9 @@ pub mod sai4 {
 #[path = "."]
 pub mod sema {
     #[doc = "SEMA42"]
-    pub const SEMA2: *const RegisterBlock = 0x4245_0000 as *const RegisterBlock;
+    pub const SEMA2: *mut RegisterBlock = 0x4245_0000 as *mut RegisterBlock;
     #[doc = "SEMA42"]
-    pub const SEMA1: *const RegisterBlock = 0x4426_0000 as *const RegisterBlock;
+    pub const SEMA1: *mut RegisterBlock = 0x4426_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sema.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4444,7 +4443,7 @@ pub mod sema {
 #[path = "."]
 pub mod semc {
     #[doc = "SEMC"]
-    pub const SEMC: *const RegisterBlock = 0x4291_0000 as *const RegisterBlock;
+    pub const SEMC: *mut RegisterBlock = 0x4291_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/semc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4471,11 +4470,11 @@ pub mod semc {
 #[path = "."]
 pub mod sinc {
     #[doc = "SINC"]
-    pub const SINC1: *const RegisterBlock = 0x42bf_0000 as *const RegisterBlock;
+    pub const SINC1: *mut RegisterBlock = 0x42bf_0000 as *mut RegisterBlock;
     #[doc = "SINC"]
-    pub const SINC2: *const RegisterBlock = 0x42c0_0000 as *const RegisterBlock;
+    pub const SINC2: *mut RegisterBlock = 0x42c0_0000 as *mut RegisterBlock;
     #[doc = "SINC"]
-    pub const SINC3: *const RegisterBlock = 0x42c1_0000 as *const RegisterBlock;
+    pub const SINC3: *mut RegisterBlock = 0x42c1_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sinc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4533,7 +4532,7 @@ pub mod sinc {
 #[path = "."]
 pub mod spdif {
     #[doc = "SPDIF"]
-    pub const SPDIF: *const RegisterBlock = 0x42ba_0000 as *const RegisterBlock;
+    pub const SPDIF: *mut RegisterBlock = 0x42ba_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/spdif.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4560,7 +4559,7 @@ pub mod spdif {
 #[path = "."]
 pub mod src_general_reg {
     #[doc = "SRC General"]
-    pub const SRC_GENERAL_REG: *const RegisterBlock = 0x4446_0000 as *const RegisterBlock;
+    pub const SRC_GENERAL_REG: *mut RegisterBlock = 0x4446_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/src_general_reg.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4587,7 +4586,7 @@ pub mod src_general_reg {
 #[path = "."]
 pub mod sw0_base {
     #[doc = "Switch base"]
-    pub const SW0_BASE: *const RegisterBlock = 0x60a0_0000 as *const RegisterBlock;
+    pub const SW0_BASE: *mut RegisterBlock = 0x60a0_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sw0_base.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4614,7 +4613,7 @@ pub mod sw0_base {
 #[path = "."]
 pub mod sw0_common {
     #[doc = "Switch and ENETC common base"]
-    pub const SW0_COMMON: *const RegisterBlock = 0x60a0_0000 as *const RegisterBlock;
+    pub const SW0_COMMON: *mut RegisterBlock = 0x60a0_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sw0_common.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4641,7 +4640,7 @@ pub mod sw0_common {
 #[path = "."]
 pub mod sw0_eth_mac_port0 {
     #[doc = "Ethernet MAC port"]
-    pub const SW0_ETH_MAC_PORT0: *const RegisterBlock = 0x60a0_5000 as *const RegisterBlock;
+    pub const SW0_ETH_MAC_PORT0: *mut RegisterBlock = 0x60a0_5000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sw0_eth_mac_port0.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4668,7 +4667,7 @@ pub mod sw0_eth_mac_port0 {
 #[path = "."]
 pub mod sw0_eth_mac_port1 {
     #[doc = "Ethernet MAC port"]
-    pub const SW0_ETH_MAC_PORT1: *const RegisterBlock = 0x60a0_9000 as *const RegisterBlock;
+    pub const SW0_ETH_MAC_PORT1: *mut RegisterBlock = 0x60a0_9000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sw0_eth_mac_port1.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4695,7 +4694,7 @@ pub mod sw0_eth_mac_port1 {
 #[path = "."]
 pub mod sw0_eth_mac_port2 {
     #[doc = "Ethernet MAC port"]
-    pub const SW0_ETH_MAC_PORT2: *const RegisterBlock = 0x60a0_d000 as *const RegisterBlock;
+    pub const SW0_ETH_MAC_PORT2: *mut RegisterBlock = 0x60a0_d000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sw0_eth_mac_port2.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4722,7 +4721,7 @@ pub mod sw0_eth_mac_port2 {
 #[path = "."]
 pub mod sw0_eth_mac_port3 {
     #[doc = "Ethernet MAC port"]
-    pub const SW0_ETH_MAC_PORT3: *const RegisterBlock = 0x60a1_1000 as *const RegisterBlock;
+    pub const SW0_ETH_MAC_PORT3: *mut RegisterBlock = 0x60a1_1000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sw0_eth_mac_port3.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4749,13 +4748,13 @@ pub mod sw0_eth_mac_port3 {
 #[path = "."]
 pub mod sw0_port {
     #[doc = "Port"]
-    pub const SW0_PORT0: *const RegisterBlock = 0x60a0_4000 as *const RegisterBlock;
+    pub const SW0_PORT0: *mut RegisterBlock = 0x60a0_4000 as *mut RegisterBlock;
     #[doc = "Port"]
-    pub const SW0_PORT1: *const RegisterBlock = 0x60a0_8000 as *const RegisterBlock;
+    pub const SW0_PORT1: *mut RegisterBlock = 0x60a0_8000 as *mut RegisterBlock;
     #[doc = "Port"]
-    pub const SW0_PORT2: *const RegisterBlock = 0x60a0_c000 as *const RegisterBlock;
+    pub const SW0_PORT2: *mut RegisterBlock = 0x60a0_c000 as *mut RegisterBlock;
     #[doc = "Port"]
-    pub const SW0_PORT3: *const RegisterBlock = 0x60a1_0000 as *const RegisterBlock;
+    pub const SW0_PORT3: *mut RegisterBlock = 0x60a1_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sw0_port.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4832,7 +4831,7 @@ pub mod sw0_port {
 #[path = "."]
 pub mod sw0_port4 {
     #[doc = "Port"]
-    pub const SW0_PORT4: *const RegisterBlock = 0x60a1_4000 as *const RegisterBlock;
+    pub const SW0_PORT4: *mut RegisterBlock = 0x60a1_4000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sw0_port4.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4859,7 +4858,7 @@ pub mod sw0_port4 {
 #[path = "."]
 pub mod sw0_pseudo_mac_port4 {
     #[doc = "Pseudo MAC port"]
-    pub const SW0_PSEUDO_MAC_PORT4: *const RegisterBlock = 0x60a1_5000 as *const RegisterBlock;
+    pub const SW0_PSEUDO_MAC_PORT4: *mut RegisterBlock = 0x60a1_5000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sw0_pseudo_mac_port4.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4886,7 +4885,7 @@ pub mod sw0_pseudo_mac_port4 {
 #[path = "."]
 pub mod sys_ctr_compare {
     #[doc = "SYS_CTR_COMPARE"]
-    pub const SYS_CTR_COMPARE: *const RegisterBlock = 0x442a_0000 as *const RegisterBlock;
+    pub const SYS_CTR_COMPARE: *mut RegisterBlock = 0x442a_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sys_ctr_compare.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4913,7 +4912,7 @@ pub mod sys_ctr_compare {
 #[path = "."]
 pub mod sys_ctr_control {
     #[doc = "SYS_CTR_CONTROL"]
-    pub const SYS_CTR_CONTROL: *const RegisterBlock = 0x4429_0000 as *const RegisterBlock;
+    pub const SYS_CTR_CONTROL: *mut RegisterBlock = 0x4429_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sys_ctr_control.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4940,7 +4939,7 @@ pub mod sys_ctr_control {
 #[path = "."]
 pub mod sys_ctr_read {
     #[doc = "SYS_CTR_READ"]
-    pub const SYS_CTR_READ: *const RegisterBlock = 0x442b_0000 as *const RegisterBlock;
+    pub const SYS_CTR_READ: *mut RegisterBlock = 0x442b_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sys_ctr_read.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4967,7 +4966,7 @@ pub mod sys_ctr_read {
 #[path = "."]
 pub mod sys_tick0 {
     #[doc = "M33 Systick module"]
-    pub const SYSTICK0: *const RegisterBlock = 0xe000_e010 as *const RegisterBlock;
+    pub const SYSTICK0: *mut RegisterBlock = 0xe000_e010 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/sys_tick0.rs"]
     mod blocks;
     pub use blocks::*;
@@ -4994,7 +4993,7 @@ pub mod sys_tick0 {
 #[path = "."]
 pub mod tmpsns {
     #[doc = "TMPSNS"]
-    pub const TMPSNS: *const RegisterBlock = 0x4448_4580 as *const RegisterBlock;
+    pub const TMPSNS: *mut RegisterBlock = 0x4448_4580 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/tmpsns.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5021,21 +5020,21 @@ pub mod tmpsns {
 #[path = "."]
 pub mod tmr {
     #[doc = "TMR"]
-    pub const TMR1: *const RegisterBlock = 0x4269_0000 as *const RegisterBlock;
+    pub const TMR1: *mut RegisterBlock = 0x4269_0000 as *mut RegisterBlock;
     #[doc = "TMR"]
-    pub const TMR2: *const RegisterBlock = 0x426a_0000 as *const RegisterBlock;
+    pub const TMR2: *mut RegisterBlock = 0x426a_0000 as *mut RegisterBlock;
     #[doc = "TMR"]
-    pub const TMR3: *const RegisterBlock = 0x426b_0000 as *const RegisterBlock;
+    pub const TMR3: *mut RegisterBlock = 0x426b_0000 as *mut RegisterBlock;
     #[doc = "TMR"]
-    pub const TMR4: *const RegisterBlock = 0x426c_0000 as *const RegisterBlock;
+    pub const TMR4: *mut RegisterBlock = 0x426c_0000 as *mut RegisterBlock;
     #[doc = "TMR"]
-    pub const TMR5: *const RegisterBlock = 0x426d_0000 as *const RegisterBlock;
+    pub const TMR5: *mut RegisterBlock = 0x426d_0000 as *mut RegisterBlock;
     #[doc = "TMR"]
-    pub const TMR6: *const RegisterBlock = 0x426e_0000 as *const RegisterBlock;
+    pub const TMR6: *mut RegisterBlock = 0x426e_0000 as *mut RegisterBlock;
     #[doc = "TMR"]
-    pub const TMR7: *const RegisterBlock = 0x426f_0000 as *const RegisterBlock;
+    pub const TMR7: *mut RegisterBlock = 0x426f_0000 as *mut RegisterBlock;
     #[doc = "TMR"]
-    pub const TMR8: *const RegisterBlock = 0x4270_0000 as *const RegisterBlock;
+    pub const TMR8: *mut RegisterBlock = 0x4270_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1176_cm4/tmr.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5172,7 +5171,7 @@ pub mod tmr {
 #[path = "."]
 pub mod tmr0_base {
     #[doc = "Timer"]
-    pub const TMR0_BASE: *const RegisterBlock = 0x60b8_0000 as *const RegisterBlock;
+    pub const TMR0_BASE: *mut RegisterBlock = 0x60b8_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/tmr0_base.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5199,7 +5198,7 @@ pub mod tmr0_base {
 #[path = "."]
 pub mod tmr0_global {
     #[doc = "NETC global"]
-    pub const TMR0_GLOBAL: *const RegisterBlock = 0x60b9_0000 as *const RegisterBlock;
+    pub const TMR0_GLOBAL: *mut RegisterBlock = 0x60b9_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/tmr0_global.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5226,17 +5225,17 @@ pub mod tmr0_global {
 #[path = "."]
 pub mod tpm {
     #[doc = "TPM"]
-    pub const TPM3: *const RegisterBlock = 0x424e_0000 as *const RegisterBlock;
+    pub const TPM3: *mut RegisterBlock = 0x424e_0000 as *mut RegisterBlock;
     #[doc = "TPM"]
-    pub const TPM4: *const RegisterBlock = 0x424f_0000 as *const RegisterBlock;
+    pub const TPM4: *mut RegisterBlock = 0x424f_0000 as *mut RegisterBlock;
     #[doc = "TPM"]
-    pub const TPM5: *const RegisterBlock = 0x4250_0000 as *const RegisterBlock;
+    pub const TPM5: *mut RegisterBlock = 0x4250_0000 as *mut RegisterBlock;
     #[doc = "TPM"]
-    pub const TPM6: *const RegisterBlock = 0x4251_0000 as *const RegisterBlock;
+    pub const TPM6: *mut RegisterBlock = 0x4251_0000 as *mut RegisterBlock;
     #[doc = "TPM"]
-    pub const TPM1: *const RegisterBlock = 0x4431_0000 as *const RegisterBlock;
+    pub const TPM1: *mut RegisterBlock = 0x4431_0000 as *mut RegisterBlock;
     #[doc = "TPM"]
-    pub const TPM2: *const RegisterBlock = 0x4432_0000 as *const RegisterBlock;
+    pub const TPM2: *mut RegisterBlock = 0x4432_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/tpm.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5343,7 +5342,7 @@ pub mod tpm {
 #[path = "."]
 pub mod trdc1 {
     #[doc = "TRDC"]
-    pub const TRDC1: *const RegisterBlock = 0x4427_0000 as *const RegisterBlock;
+    pub const TRDC1: *mut RegisterBlock = 0x4427_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/trdc1.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5370,7 +5369,7 @@ pub mod trdc1 {
 #[path = "."]
 pub mod trdc2 {
     #[doc = "TRDC"]
-    pub const TRDC2: *const RegisterBlock = 0x4246_0000 as *const RegisterBlock;
+    pub const TRDC2: *mut RegisterBlock = 0x4246_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/trdc2.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5397,7 +5396,7 @@ pub mod trdc2 {
 #[path = "."]
 pub mod trdc3 {
     #[doc = "TRDC"]
-    pub const TRDC3: *const RegisterBlock = 0x4281_0000 as *const RegisterBlock;
+    pub const TRDC3: *mut RegisterBlock = 0x4281_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/trdc3.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5424,8 +5423,8 @@ pub mod trdc3 {
 #[path = "."]
 pub mod usb {
     #[doc = "USBC"]
-    pub const USB1: *const RegisterBlock = 0x42c8_0000 as *const RegisterBlock;
-    pub const USB2: *const RegisterBlock = 0x42c9_0000 as *const RegisterBlock;
+    pub const USB1: *mut RegisterBlock = 0x42c8_0000 as *mut RegisterBlock;
+    pub const USB2: *mut RegisterBlock = 0x42c9_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1011/usb.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5469,9 +5468,9 @@ pub mod usb {
 #[path = "."]
 pub mod usbhsdcd {
     #[doc = "USBDCD"]
-    pub const USBHSDCD1: *const RegisterBlock = 0x42ca_0800 as *const RegisterBlock;
+    pub const USBHSDCD1: *mut RegisterBlock = 0x42ca_0800 as *mut RegisterBlock;
     #[doc = "USBDCD"]
-    pub const USBHSDCD2: *const RegisterBlock = 0x42cb_0800 as *const RegisterBlock;
+    pub const USBHSDCD2: *mut RegisterBlock = 0x42cb_0800 as *mut RegisterBlock;
     #[path = "blocks/imxrt1176_cm4/usbhsdcd.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5515,8 +5514,8 @@ pub mod usbhsdcd {
 #[path = "."]
 pub mod usbnc {
     #[doc = "USBNC"]
-    pub const USBNC1: *const RegisterBlock = 0x42c8_0200 as *const RegisterBlock;
-    pub const USBNC2: *const RegisterBlock = 0x42c9_0200 as *const RegisterBlock;
+    pub const USBNC1: *mut RegisterBlock = 0x42c8_0200 as *mut RegisterBlock;
+    pub const USBNC2: *mut RegisterBlock = 0x42c9_0200 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/usbnc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5560,9 +5559,9 @@ pub mod usbnc {
 #[path = "."]
 pub mod usbphy {
     #[doc = "USBPHY"]
-    pub const USBPHY1: *const RegisterBlock = 0x42ca_0000 as *const RegisterBlock;
+    pub const USBPHY1: *mut RegisterBlock = 0x42ca_0000 as *mut RegisterBlock;
     #[doc = "USBPHY"]
-    pub const USBPHY2: *const RegisterBlock = 0x42cb_0000 as *const RegisterBlock;
+    pub const USBPHY2: *mut RegisterBlock = 0x42cb_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/usbphy.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5606,9 +5605,9 @@ pub mod usbphy {
 #[path = "."]
 pub mod usdhc {
     #[doc = "uSDHC"]
-    pub const USDHC1: *const RegisterBlock = 0x4285_0000 as *const RegisterBlock;
+    pub const USDHC1: *mut RegisterBlock = 0x4285_0000 as *mut RegisterBlock;
     #[doc = "uSDHC"]
-    pub const USDHC2: *const RegisterBlock = 0x4286_0000 as *const RegisterBlock;
+    pub const USDHC2: *mut RegisterBlock = 0x4286_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/usdhc.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5652,7 +5651,7 @@ pub mod usdhc {
 #[path = "."]
 pub mod vmbandgap {
     #[doc = "no description available"]
-    pub const VMBANDGAP: *const RegisterBlock = 0x4448_4780 as *const RegisterBlock;
+    pub const VMBANDGAP: *mut RegisterBlock = 0x4448_4780 as *mut RegisterBlock;
     #[path = "blocks/imxrt1176_cm4/vmbandgap.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5679,7 +5678,7 @@ pub mod vmbandgap {
 #[path = "."]
 pub mod vref {
     #[doc = "VREF"]
-    pub const VREF: *const RegisterBlock = 0x42e3_0000 as *const RegisterBlock;
+    pub const VREF: *mut RegisterBlock = 0x42e3_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/vref.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5706,9 +5705,9 @@ pub mod vref {
 #[path = "."]
 pub mod xbar {
     #[doc = "XBAR"]
-    pub const XBAR2: *const RegisterBlock = 0x4276_0000 as *const RegisterBlock;
+    pub const XBAR2: *mut RegisterBlock = 0x4276_0000 as *mut RegisterBlock;
     #[doc = "XBAR"]
-    pub const XBAR3: *const RegisterBlock = 0x4277_0000 as *const RegisterBlock;
+    pub const XBAR3: *mut RegisterBlock = 0x4277_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/xbar.rs"]
     mod blocks;
     pub use blocks::*;
@@ -5752,7 +5751,7 @@ pub mod xbar {
 #[path = "."]
 pub mod xbar1 {
     #[doc = "XBAR"]
-    pub const XBAR1: *const RegisterBlock = 0x4275_0000 as *const RegisterBlock;
+    pub const XBAR1: *mut RegisterBlock = 0x4275_0000 as *mut RegisterBlock;
     #[path = "blocks/imxrt1189_cm33/xbar1.rs"]
     mod blocks;
     pub use blocks::*;

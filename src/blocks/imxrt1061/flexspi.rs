@@ -2,106 +2,111 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "Module Control Register 0"]
-    pub MCR0: crate::RWRegister<u32>,
+    pub MCR0: u32,
     #[doc = "Module Control Register 1"]
-    pub MCR1: crate::RWRegister<u32>,
+    pub MCR1: u32,
     #[doc = "Module Control Register 2"]
-    pub MCR2: crate::RWRegister<u32>,
+    pub MCR2: u32,
     #[doc = "AHB Bus Control Register"]
-    pub AHBCR: crate::RWRegister<u32>,
+    pub AHBCR: u32,
     #[doc = "Interrupt Enable Register"]
-    pub INTEN: crate::RWRegister<u32>,
+    pub INTEN: u32,
     #[doc = "Interrupt Register"]
-    pub INTR: crate::RWRegister<u32>,
+    pub INTR: u32,
     #[doc = "LUT Key Register"]
-    pub LUTKEY: crate::RWRegister<u32>,
+    pub LUTKEY: u32,
     #[doc = "LUT Control Register"]
-    pub LUTCR: crate::RWRegister<u32>,
+    pub LUTCR: u32,
     #[doc = "AHB RX Buffer 0 Control Register 0"]
-    pub AHBRXBUF0CR0: crate::RWRegister<u32>,
+    pub AHBRXBUF0CR0: u32,
     #[doc = "AHB RX Buffer 1 Control Register 0"]
-    pub AHBRXBUF1CR0: crate::RWRegister<u32>,
+    pub AHBRXBUF1CR0: u32,
     #[doc = "AHB RX Buffer 2 Control Register 0"]
-    pub AHBRXBUF2CR0: crate::RWRegister<u32>,
+    pub AHBRXBUF2CR0: u32,
     #[doc = "AHB RX Buffer 3 Control Register 0"]
-    pub AHBRXBUF3CR0: crate::RWRegister<u32>,
+    pub AHBRXBUF3CR0: u32,
     _reserved0: [u8; 0x30],
     #[doc = "Flash A1 Control Register 0"]
-    pub FLSHA1CR0: crate::RWRegister<u32>,
+    pub FLSHA1CR0: u32,
     #[doc = "Flash A2 Control Register 0"]
-    pub FLSHA2CR0: crate::RWRegister<u32>,
+    pub FLSHA2CR0: u32,
     #[doc = "Flash B1 Control Register 0"]
-    pub FLSHB1CR0: crate::RWRegister<u32>,
+    pub FLSHB1CR0: u32,
     #[doc = "Flash B2 Control Register 0"]
-    pub FLSHB2CR0: crate::RWRegister<u32>,
+    pub FLSHB2CR0: u32,
     #[doc = "Flash A1 Control Register 1"]
-    pub FLSHCR1: [crate::RWRegister<u32>; 4usize],
+    pub FLSHCR1: [u32; 4usize],
     #[doc = "Flash A1 Control Register 2"]
-    pub FLSHCR2: [crate::RWRegister<u32>; 4usize],
+    pub FLSHCR2: [u32; 4usize],
     _reserved1: [u8; 0x04],
     #[doc = "Flash Control Register 4"]
-    pub FLSHCR4: crate::RWRegister<u32>,
+    pub FLSHCR4: u32,
     _reserved2: [u8; 0x08],
     #[doc = "IP Control Register 0"]
-    pub IPCR0: crate::RWRegister<u32>,
+    pub IPCR0: u32,
     #[doc = "IP Control Register 1"]
-    pub IPCR1: crate::RWRegister<u32>,
+    pub IPCR1: u32,
     _reserved3: [u8; 0x08],
     #[doc = "IP Command Register"]
-    pub IPCMD: crate::RWRegister<u32>,
+    pub IPCMD: u32,
     _reserved4: [u8; 0x04],
     #[doc = "IP RX FIFO Control Register"]
-    pub IPRXFCR: crate::RWRegister<u32>,
+    pub IPRXFCR: u32,
     #[doc = "IP TX FIFO Control Register"]
-    pub IPTXFCR: crate::RWRegister<u32>,
+    pub IPTXFCR: u32,
     #[doc = "DLL Control Register 0"]
-    pub DLLCR: [crate::RWRegister<u32>; 2usize],
+    pub DLLCR: [u32; 2usize],
     _reserved5: [u8; 0x18],
     #[doc = "Status Register 0"]
-    pub STS0: crate::RORegister<u32>,
+    pub STS0: u32,
     #[doc = "Status Register 1"]
-    pub STS1: crate::RORegister<u32>,
+    pub STS1: u32,
     #[doc = "Status Register 2"]
-    pub STS2: crate::RORegister<u32>,
+    pub STS2: u32,
     #[doc = "AHB Suspend Status Register"]
-    pub AHBSPNDSTS: crate::RORegister<u32>,
+    pub AHBSPNDSTS: u32,
     #[doc = "IP RX FIFO Status Register"]
-    pub IPRXFSTS: crate::RORegister<u32>,
+    pub IPRXFSTS: u32,
     #[doc = "IP TX FIFO Status Register"]
-    pub IPTXFSTS: crate::RORegister<u32>,
+    pub IPTXFSTS: u32,
     _reserved6: [u8; 0x08],
     #[doc = "IP RX FIFO Data Register 0"]
-    pub RFDR: [crate::RORegister<u32>; 32usize],
+    pub RFDR: [u32; 32usize],
     #[doc = "IP TX FIFO Data Register 0"]
-    pub TFDR: [crate::WORegister<u32>; 32usize],
+    pub TFDR: [u32; 32usize],
     #[doc = "LUT 0"]
-    pub LUT: [crate::RWRegister<u32>; 64usize],
+    pub LUT: [u32; 64usize],
 }
 #[doc = "Module Control Register 0"]
 pub mod MCR0 {
+    pub use crate::RW as access;
     #[doc = "Software Reset"]
     pub mod SWRESET {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Module Disable"]
     pub mod MDIS {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Sample Clock source selection for Flash Reading"]
     pub mod RXCLKSRC {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Dummy Read strobe generated by FlexSPI Controller and loopback internally."]
             pub const RXCLKSRC_0: u32 = 0;
             #[doc = "Dummy Read strobe generated by FlexSPI Controller and loopback from DQS pad."]
@@ -109,40 +114,46 @@ pub mod MCR0 {
             #[doc = "Flash provided Read strobe and input from DQS pad"]
             pub const RXCLKSRC_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Enable AHB bus Read Access to IP RX FIFO."]
     pub mod ARDFEN {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "IP RX FIFO should be read by IP Bus. AHB Bus read access to IP RX FIFO memory space will get bus error response."]
             pub const ARDFEN_0: u32 = 0;
             #[doc = "IP RX FIFO should be read by AHB Bus. IP Bus read access to IP RX FIFO memory space will always return data zero but no bus error response."]
             pub const ARDFEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Enable AHB bus Write Access to IP TX FIFO."]
     pub mod ATDFEN {
         pub const offset: u32 = 7;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "IP TX FIFO should be written by IP Bus. AHB Bus write access to IP TX FIFO memory space will get bus error response."]
             pub const ATDFEN_0: u32 = 0;
             #[doc = "IP TX FIFO should be written by AHB Bus. IP Bus write access to IP TX FIFO memory space will be ignored but no bus error response."]
             pub const ATDFEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "The serial root clock could be divided inside FlexSPI . Refer Clocks chapter for more details on clocking."]
     pub mod SERCLKDIV {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Divided by 1"]
             pub const SERCLKDIV_0: u32 = 0;
             #[doc = "Divided by 2"]
@@ -160,717 +171,884 @@ pub mod MCR0 {
             #[doc = "Divided by 8"]
             pub const SERCLKDIV_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Half Speed Serial Flash access Enable."]
     pub mod HSEN {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable divide by 2 of serial flash clock for half speed commands."]
             pub const HSEN_0: u32 = 0;
             #[doc = "Enable divide by 2 of serial flash clock for half speed commands."]
             pub const HSEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Doze mode enable bit"]
     pub mod DOZEEN {
         pub const offset: u32 = 12;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Doze mode support disabled. AHB clock and serial clock will not be gated off when there is doze mode request from system."]
             pub const DOZEEN_0: u32 = 0;
             #[doc = "Doze mode support enabled. AHB clock and serial clock will be gated off when there is doze mode request from system."]
             pub const DOZEEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This bit is to support Flash Octal mode access by combining Port A and B Data pins (A_DATA\\[3:0\\] and B_DATA\\[3:0\\])."]
     pub mod COMBINATIONEN {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable."]
             pub const COMBINATIONEN_0: u32 = 0;
             #[doc = "Enable."]
             pub const COMBINATIONEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This bit is used to force SCLK output free-running. For FPGA applications, external device may use SCLK as reference clock to its internal PLL. If SCLK free-running is enabled, data sampling with loopback clock from SCLK pad is not supported (MCR0\\[RXCLKSRC\\]=2)."]
     pub mod SCKFREERUNEN {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disable."]
             pub const SCKFREERUNEN_0: u32 = 0;
             #[doc = "Enable."]
             pub const SCKFREERUNEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Time out wait cycle for IP command grant."]
     pub mod IPGRANTWAIT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Timeout wait cycle for AHB command grant."]
     pub mod AHBGRANTWAIT {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Module Control Register 1"]
 pub mod MCR1 {
+    pub use crate::RW as access;
     #[doc = "AHB Read/Write access to Serial Flash Memory space will timeout if not data received from Flash or data not transmitted after AHBBUSWAIT * 1024 ahb clock cycles, AHB Bus will get an error response"]
     pub mod AHBBUSWAIT {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Command Sequence Execution will timeout and abort after SEQWAIT * 1024 Serial Root Clock cycles"]
     pub mod SEQWAIT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Module Control Register 2"]
 pub mod MCR2 {
+    pub use crate::RW as access;
     #[doc = "This bit determines whether AHB RX Buffer and AHB TX Buffer will be cleaned automatically when FlexSPI returns STOP mode ACK. Software should set this bit if AHB RX Buffer or AHB TX Buffer will be powered off in STOP mode. Otherwise AHB read access after exiting STOP mode may hit AHB RX Buffer or AHB TX Buffer but their data entries are invalid."]
     pub mod CLRAHBBUFOPT {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "AHB RX/TX Buffer will not be cleaned automatically when FlexSPI return Stop mode ACK."]
             pub const CLRAHBBUFOPT_0: u32 = 0;
             #[doc = "AHB RX/TX Buffer will be cleaned automatically when FlexSPI return Stop mode ACK."]
             pub const CLRAHBBUFOPT_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "The sampling clock phase selection will be reset to phase 0 when this bit is written with 0x1. This bit will be auto-cleared immediately."]
     pub mod CLRLEARNPHASE {
         pub const offset: u32 = 14;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "All external devices are same devices (both in types and size) for A1/A2/B1/B2."]
     pub mod SAMEDEVICEEN {
         pub const offset: u32 = 15;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "In Individual mode, FLSHA1CRx/FLSHA2CRx/FLSHB1CRx/FLSHB2CRx register setting will be applied to Flash A1/A2/B1/B2 separately. In Parallel mode, FLSHA1CRx register setting will be applied to Flash A1 and B1, FLSHA2CRx register setting will be applied to Flash A2 and B2. FLSHB1CRx/FLSHB2CRx register settings will be ignored."]
             pub const SAMEDEVICEEN_0: u32 = 0;
             #[doc = "FLSHA1CR0/FLSHA1CR1/FLSHA1CR2 register settings will be applied to Flash A1/A2/B1/B2. FLSHA2CRx/FLSHB1CRx/FLSHB2CRx will be ignored."]
             pub const SAMEDEVICEEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "B_SCLK pad can be used as A_SCLK differential clock output (inverted clock to A_SCLK). In this case, port B flash access is not available. After changing the value of this field, MCR0\\[SWRESET\\] should be set."]
     pub mod SCKBDIFFOPT {
         pub const offset: u32 = 19;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "B_SCLK pad is used as port B SCLK clock output. Port B flash access is available."]
             pub const SCKBDIFFOPT_0: u32 = 0;
             #[doc = "B_SCLK pad is used as port A SCLK inverted clock output (Differential clock to A_SCLK). Port B flash access is not available."]
             pub const SCKBDIFFOPT_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Wait cycle (in AHB clock cycle) for idle state before suspended command sequence resumed."]
     pub mod RESUMEWAIT {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "AHB Bus Control Register"]
 pub mod AHBCR {
+    pub use crate::RW as access;
     #[doc = "Parallel mode enabled for AHB triggered Command (both read and write) ."]
     pub mod APAREN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Flash will be accessed in Individual mode."]
             pub const APAREN_0: u32 = 0;
             #[doc = "Flash will be accessed in Parallel mode."]
             pub const APAREN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Enable AHB bus cachable read access support."]
     pub mod CACHABLEEN {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disabled. When there is AHB bus cachable read access, FlexSPI will not check whether it hit AHB TX Buffer."]
             pub const CACHABLEEN_0: u32 = 0;
             #[doc = "Enabled. When there is AHB bus cachable read access, FlexSPI will check whether it hit AHB TX Buffer first."]
             pub const CACHABLEEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Enable AHB bus bufferable write access support. This field affects the last beat of AHB write access, refer for more details about AHB bufferable write."]
     pub mod BUFFERABLEEN {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Disabled. For all AHB write access (no matter bufferable or non-bufferable ), FlexSPI will return AHB Bus ready after all data is transmitted to External device and AHB command finished."]
             pub const BUFFERABLEEN_0: u32 = 0;
             #[doc = "Enabled. For AHB bufferable write access, FlexSPI will return AHB Bus ready when the AHB command is granted by arbitrator and will not wait for AHB command finished."]
             pub const BUFFERABLEEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB Read Prefetch Enable."]
     pub mod PREFETCHEN {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB Read Address option bit. This option bit is intend to remove AHB burst start address alignment limitation."]
     pub mod READADDROPT {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "There is AHB read burst start address alignment limitation when flash is accessed in parallel mode or flash is wordaddressable."]
             pub const READADDROPT_0: u32 = 0;
             #[doc = "There is no AHB read burst start address alignment limitation. FlexSPI will fetch more data than AHB burst required to meet the alignment requirement."]
             pub const READADDROPT_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Interrupt Enable Register"]
 pub mod INTEN {
+    pub use crate::RW as access;
     #[doc = "IP triggered Command Sequences Execution finished interrupt enable."]
     pub mod IPCMDDONEEN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP triggered Command Sequences Grant Timeout interrupt enable."]
     pub mod IPCMDGEEN {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB triggered Command Sequences Grant Timeout interrupt enable."]
     pub mod AHBCMDGEEN {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP triggered Command Sequences Error Detected interrupt enable."]
     pub mod IPCMDERREN {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB triggered Command Sequences Error Detected interrupt enable."]
     pub mod AHBCMDERREN {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP RX FIFO WaterMark available interrupt enable."]
     pub mod IPRXWAEN {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP TX FIFO WaterMark empty interrupt enable."]
     pub mod IPTXWEEN {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SCK is stopped during command sequence because Async RX FIFO full interrupt enable."]
     pub mod SCKSTOPBYRDEN {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SCK is stopped during command sequence because Async TX FIFO empty interrupt enable."]
     pub mod SCKSTOPBYWREN {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB Bus timeout interrupt.Refer Interrupts chapter for more details."]
     pub mod AHBBUSTIMEOUTEN {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Sequence execution timeout interrupt enable.Refer Interrupts chapter for more details."]
     pub mod SEQTIMEOUTEN {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Interrupt Register"]
 pub mod INTR {
+    pub use crate::RW as access;
     #[doc = "IP triggered Command Sequences Execution finished interrupt. This interrupt is also generated when there is IPCMDGE or IPCMDERR interrupt generated."]
     pub mod IPCMDDONE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP triggered Command Sequences Grant Timeout interrupt."]
     pub mod IPCMDGE {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB triggered Command Sequences Grant Timeout interrupt."]
     pub mod AHBCMDGE {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP triggered Command Sequences Error Detected interrupt. When an error detected for IP command, this command will be ignored and not executed at all."]
     pub mod IPCMDERR {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB triggered Command Sequences Error Detected interrupt. When an error detected for AHB command, this command will be ignored and not executed at all."]
     pub mod AHBCMDERR {
         pub const offset: u32 = 4;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP RX FIFO watermark available interrupt."]
     pub mod IPRXWA {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP TX FIFO watermark empty interrupt."]
     pub mod IPTXWE {
         pub const offset: u32 = 6;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SCK is stopped during command sequence because Async RX FIFO full interrupt."]
     pub mod SCKSTOPBYRD {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "SCK is stopped during command sequence because Async TX FIFO empty interrupt."]
     pub mod SCKSTOPBYWR {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB Bus timeout interrupt.Refer Interrupts chapter for more details."]
     pub mod AHBBUSTIMEOUT {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Sequence execution timeout interrupt."]
     pub mod SEQTIMEOUT {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LUT Key Register"]
 pub mod LUTKEY {
+    pub use crate::RW as access;
     #[doc = "The Key to lock or unlock LUT."]
     pub mod KEY {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LUT Control Register"]
 pub mod LUTCR {
+    pub use crate::RW as access;
     #[doc = "Lock LUT"]
     pub mod LOCK {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Unlock LUT"]
     pub mod UNLOCK {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "AHB RX Buffer 0 Control Register 0"]
 pub mod AHBRXBUF0CR0 {
+    pub use crate::RW as access;
     #[doc = "AHB RX Buffer Size in 64 bits."]
     pub mod BUFSZ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This AHB RX Buffer is assigned according to AHB Master with ID (MSTR_ID)."]
     pub mod MSTRID {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This priority for AHB Master Read which this AHB RX Buffer is assigned. 7 is the highest priority, 0 the lowest."]
     pub mod PRIORITY {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB Read Prefetch Enable for current AHB RX Buffer corresponding Master."]
     pub mod PREFETCHEN {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "AHB RX Buffer 1 Control Register 0"]
 pub mod AHBRXBUF1CR0 {
+    pub use crate::RW as access;
     #[doc = "AHB RX Buffer Size in 64 bits."]
     pub mod BUFSZ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This AHB RX Buffer is assigned according to AHB Master with ID (MSTR_ID)."]
     pub mod MSTRID {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This priority for AHB Master Read which this AHB RX Buffer is assigned. 7 is the highest priority, 0 the lowest."]
     pub mod PRIORITY {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB Read Prefetch Enable for current AHB RX Buffer corresponding Master."]
     pub mod PREFETCHEN {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "AHB RX Buffer 2 Control Register 0"]
 pub mod AHBRXBUF2CR0 {
+    pub use crate::RW as access;
     #[doc = "AHB RX Buffer Size in 64 bits."]
     pub mod BUFSZ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This AHB RX Buffer is assigned according to AHB Master with ID (MSTR_ID)."]
     pub mod MSTRID {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This priority for AHB Master Read which this AHB RX Buffer is assigned. 7 is the highest priority, 0 the lowest."]
     pub mod PRIORITY {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB Read Prefetch Enable for current AHB RX Buffer corresponding Master."]
     pub mod PREFETCHEN {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "AHB RX Buffer 3 Control Register 0"]
 pub mod AHBRXBUF3CR0 {
+    pub use crate::RW as access;
     #[doc = "AHB RX Buffer Size in 64 bits."]
     pub mod BUFSZ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This AHB RX Buffer is assigned according to AHB Master with ID (MSTR_ID)."]
     pub mod MSTRID {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This priority for AHB Master Read which this AHB RX Buffer is assigned. 7 is the highest priority, 0 the lowest."]
     pub mod PRIORITY {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB Read Prefetch Enable for current AHB RX Buffer corresponding Master."]
     pub mod PREFETCHEN {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Flash A1 Control Register 0"]
 pub mod FLSHA1CR0 {
+    pub use crate::RW as access;
     #[doc = "Flash Size in KByte."]
     pub mod FLSHSZ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x007f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Flash A2 Control Register 0"]
 pub mod FLSHA2CR0 {
+    pub use crate::RW as access;
     #[doc = "Flash Size in KByte."]
     pub mod FLSHSZ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x007f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Flash B1 Control Register 0"]
 pub mod FLSHB1CR0 {
+    pub use crate::RW as access;
     #[doc = "Flash Size in KByte."]
     pub mod FLSHSZ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x007f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Flash B2 Control Register 0"]
 pub mod FLSHB2CR0 {
+    pub use crate::RW as access;
     #[doc = "Flash Size in KByte."]
     pub mod FLSHSZ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x007f_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Flash A1 Control Register 1"]
 pub mod FLSHCR1 {
+    pub use crate::RW as access;
     #[doc = "Serial Flash CS setup time."]
     pub mod TCSS {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Serial Flash CS Hold time."]
     pub mod TCSH {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x1f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Word Addressable."]
     pub mod WA {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Column Address Size."]
     pub mod CAS {
         pub const offset: u32 = 11;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "CS interval unit"]
     pub mod CSINTERVALUNIT {
         pub const offset: u32 = 15;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The CS interval unit is 1 serial clock cycle"]
             pub const CSINTERVALUNIT_0: u32 = 0;
             #[doc = "The CS interval unit is 256 serial clock cycle"]
             pub const CSINTERVALUNIT_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This field is used to set the minimum interval between flash device Chip selection deassertion and flash device Chip selection assertion. If external flash has a limitation on the interval between command sequences, this field should be set accordingly. If there is no limitation, set this field with value 0x0."]
     pub mod CSINTERVAL {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Flash A1 Control Register 2"]
 pub mod FLSHCR2 {
+    pub use crate::RW as access;
     #[doc = "Sequence Index for AHB Read triggered Command in LUT."]
     pub mod ARDSEQID {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Sequence Number for AHB Read triggered Command in LUT."]
     pub mod ARDSEQNUM {
         pub const offset: u32 = 5;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Sequence Index for AHB Write triggered Command."]
     pub mod AWRSEQID {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Sequence Number for AHB Write triggered Command."]
     pub mod AWRSEQNUM {
         pub const offset: u32 = 13;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "For certain devices (such as FPGA), it need some time to write data into internal memory after the command sequences finished on FlexSPI interface"]
     pub mod AWRWAIT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0fff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AWRWAIT unit"]
     pub mod AWRWAITUNIT {
         pub const offset: u32 = 28;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "The AWRWAIT unit is 2 ahb clock cycle"]
             pub const AWRWAITUNIT_0: u32 = 0;
             #[doc = "The AWRWAIT unit is 8 ahb clock cycle"]
@@ -888,252 +1066,308 @@ pub mod FLSHCR2 {
             #[doc = "The AWRWAIT unit is 32768 ahb clock cycle"]
             pub const AWRWAITUNIT_7: u32 = 0x07;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Clear the instruction pointer which is internally saved pointer by JMP_ON_CS. Refer Programmable Sequence Engine for details."]
     pub mod CLRINSTRPTR {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Flash Control Register 4"]
 pub mod FLSHCR4 {
+    pub use crate::RW as access;
     #[doc = "Write mask option bit 1. This option bit could be used to remove AHB write burst start address alignment limitation."]
     pub mod WMOPT1 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "DQS pin will be used as Write Mask when writing to external device. There is no limitation on AHB write burst start address alignment when flash is accessed in individual mode."]
             pub const WMOPT1_0: u32 = 0;
             #[doc = "DQS pin will not be used as Write Mask when writing to external device. There is limitation on AHB write burst start address alignment when flash is accessed in individual mode."]
             pub const WMOPT1_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Write mask enable bit for flash device on port A. When write mask function is needed for memory device on port A, this bit must be set."]
     pub mod WMENA {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Write mask is disabled, DQS(RWDS) pin will be un-driven when writing to external device."]
             pub const WMENA_0: u32 = 0;
             #[doc = "Write mask is enabled, DQS(RWDS) pin will be driven by FlexSPI as write mask output when writing to external device."]
             pub const WMENA_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Write mask enable bit for flash device on port B. When write mask function is needed for memory device on port B, this bit must be set."]
     pub mod WMENB {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Write mask is disabled, DQS(RWDS) pin will be un-driven when writing to external device."]
             pub const WMENB_0: u32 = 0;
             #[doc = "Write mask is enabled, DQS(RWDS) pin will be driven by FlexSPI as write mask output when writing to external device."]
             pub const WMENB_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP Control Register 0"]
 pub mod IPCR0 {
+    pub use crate::RW as access;
     #[doc = "Serial Flash Address for IP command."]
     pub mod SFAR {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP Control Register 1"]
 pub mod IPCR1 {
+    pub use crate::RW as access;
     #[doc = "Flash Read/Program Data Size (in Bytes) for IP command."]
     pub mod IDATSZ {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Sequence Index in LUT for IP command."]
     pub mod ISEQID {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Sequence Number for IP command: ISEQNUM+1."]
     pub mod ISEQNUM {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Parallel mode Enabled for IP command."]
     pub mod IPAREN {
         pub const offset: u32 = 31;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Flash will be accessed in Individual mode."]
             pub const IPAREN_0: u32 = 0;
             #[doc = "Flash will be accessed in Parallel mode."]
             pub const IPAREN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP Command Register"]
 pub mod IPCMD {
+    pub use crate::RW as access;
     #[doc = "Setting this bit will trigger an IP Command."]
     pub mod TRG {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP RX FIFO Control Register"]
 pub mod IPRXFCR {
+    pub use crate::RW as access;
     #[doc = "Clear all valid data entries in IP RX FIFO."]
     pub mod CLRIPRXF {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP RX FIFO reading by DMA enabled."]
     pub mod RXDMAEN {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "IP RX FIFO would be read by processor."]
             pub const RXDMAEN_0: u32 = 0;
             #[doc = "IP RX FIFO would be read by DMA."]
             pub const RXDMAEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Watermark level is (RXWMRK+1)*64 Bits."]
     pub mod RXWMRK {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP TX FIFO Control Register"]
 pub mod IPTXFCR {
+    pub use crate::RW as access;
     #[doc = "Clear all valid data entries in IP TX FIFO."]
     pub mod CLRIPTXF {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "IP TX FIFO filling by DMA enabled."]
     pub mod TXDMAEN {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "IP TX FIFO would be filled by processor."]
             pub const TXDMAEN_0: u32 = 0;
             #[doc = "IP TX FIFO would be filled by DMA."]
             pub const TXDMAEN_1: u32 = 0x01;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Watermark level is (TXWMRK+1)*64 Bits."]
     pub mod TXWMRK {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "DLL Control Register 0"]
 pub mod DLLCR {
+    pub use crate::RW as access;
     #[doc = "DLL calibration enable."]
     pub mod DLLEN {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Software could force a reset on DLL by setting this field to 0x1. This will cause the DLL to lose lock and re-calibrate to detect an ref_clock half period phase shift. The reset action is edge triggered, so software need to clear this bit after set this bit (no delay limitation)."]
     pub mod DLLRESET {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "The delay target for slave delay line is: ((SLVDLYTARGET+1) * 1/32 * clock cycle of reference clock (serial root clock). If serial root clock is >= 100 MHz, DLLEN set to 0x1, OVRDEN set to =0x0, then SLVDLYTARGET setting of 0xF is recommended."]
     pub mod SLVDLYTARGET {
         pub const offset: u32 = 3;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Slave clock delay line delay cell number selection override enable."]
     pub mod OVRDEN {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Slave clock delay line delay cell number selection override value."]
     pub mod OVRDVAL {
         pub const offset: u32 = 9;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Status Register 0"]
 pub mod STS0 {
+    pub use crate::RO as access;
     #[doc = "This status bit indicates the state machine in SEQ_CTL is idle and there is command sequence executing on FlexSPI interface."]
     pub mod SEQIDLE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This status bit indicates the state machine in ARB_CTL is busy and there is command sequence granted by arbitrator and not finished yet on FlexSPI interface. When ARB_CTL state (ARBIDLE=0x1) is idle, there will be no transaction on FlexSPI interface also (SEQIDLE=0x1). So this bit should be polled to wait for FlexSPI controller become idle instead of SEQIDLE."]
     pub mod ARBIDLE {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "This status field indicates the trigger source of current command sequence granted by arbitrator. This field value is meaningless when ARB_CTL is not busy (STS0\\[ARBIDLE\\]=0x1)."]
     pub mod ARBCMDSRC {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "Triggered by AHB read command (triggered by AHB read)."]
             pub const ARBCMDSRC_0: u32 = 0;
             #[doc = "Triggered by AHB write command (triggered by AHB Write)."]
@@ -1143,25 +1377,30 @@ pub mod STS0 {
             #[doc = "Triggered by suspended command (resumed)."]
             pub const ARBCMDSRC_3: u32 = 0x03;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Status Register 1"]
 pub mod STS1 {
+    pub use crate::RO as access;
     #[doc = "Indicates the sequence index when an AHB command error is detected. This field will be cleared when INTR\\[AHBCMDERR\\] is write-1-clear(w1c)."]
     pub mod AHBCMDERRID {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Indicates the Error Code when AHB command Error detected. This field will be cleared when INTR\\[AHBCMDERR\\] is write-1-clear(w1c)."]
     pub mod AHBCMDERRCODE {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "No error."]
             pub const AHBCMDERRCODE_0: u32 = 0;
             #[doc = "AHB Write command with JMP_ON_CS instruction used in the sequence."]
@@ -1175,22 +1414,26 @@ pub mod STS1 {
             #[doc = "Sequence execution timeout."]
             pub const AHBCMDERRCODE_14: u32 = 0x0e;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Indicates the sequence Index when IP command error detected. This field will be cleared when INTR\\[IPCMDERR\\] is write-1-clear(w1c)."]
     pub mod IPCMDERRID {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Indicates the Error Code when IP command Error detected. This field will be cleared when INTR\\[IPCMDERR\\] is write-1-clear(w1c)."]
     pub mod IPCMDERRCODE {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x0f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {
+        pub use crate::RW as access;
+        #[doc(hidden)]
+        pub mod vals {
             #[doc = "No error."]
             pub const IPCMDERRCODE_0: u32 = 0;
             #[doc = "IP command with JMP_ON_CS instruction used in the sequence."]
@@ -1208,210 +1451,265 @@ pub mod STS1 {
             #[doc = "Flash boundary crossed."]
             pub const IPCMDERRCODE_15: u32 = 0x0f;
         }
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "Status Register 2"]
 pub mod STS2 {
+    pub use crate::RO as access;
     #[doc = "Flash A sample clock slave delay line locked."]
     pub mod ASLVLOCK {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Flash A sample clock reference delay line locked."]
     pub mod AREFLOCK {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Flash A sample clock slave delay line delay cell number selection ."]
     pub mod ASLVSEL {
         pub const offset: u32 = 2;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Flash A sample clock reference delay line delay cell number selection."]
     pub mod AREFSEL {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Flash B sample clock slave delay line locked."]
     pub mod BSLVLOCK {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Flash B sample clock reference delay line locked."]
     pub mod BREFLOCK {
         pub const offset: u32 = 17;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Flash B sample clock slave delay line delay cell number selection."]
     pub mod BSLVSEL {
         pub const offset: u32 = 18;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Flash B sample clock reference delay line delay cell number selection."]
     pub mod BREFSEL {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "AHB Suspend Status Register"]
 pub mod AHBSPNDSTS {
+    pub use crate::RO as access;
     #[doc = "Indicates if an AHB read prefetch command sequence has been suspended."]
     pub mod ACTIVE {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0x01 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "AHB RX BUF ID for suspended command sequence."]
     pub mod BUFID {
         pub const offset: u32 = 1;
         pub const mask: u32 = 0x07 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Left Data size for suspended command sequence (in byte)."]
     pub mod DATLFT {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP RX FIFO Status Register"]
 pub mod IPRXFSTS {
+    pub use crate::RO as access;
     #[doc = "Fill level of IP RX FIFO."]
     pub mod FILL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Total Read Data Counter: RDCNTR * 64 Bits."]
     pub mod RDCNTR {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP TX FIFO Status Register"]
 pub mod IPTXFSTS {
+    pub use crate::RO as access;
     #[doc = "Fill level of IP TX FIFO."]
     pub mod FILL {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "Total Write Data Counter: WRCNTR * 64 Bits."]
     pub mod WRCNTR {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP RX FIFO Data Register 0"]
 pub mod RFDR {
+    pub use crate::RO as access;
     #[doc = "RX Data"]
     pub mod RXDATA {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "IP TX FIFO Data Register 0"]
 pub mod TFDR {
+    pub use crate::WO as access;
     #[doc = "TX Data"]
     pub mod TXDATA {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xffff_ffff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
 #[doc = "LUT 0"]
 pub mod LUT {
+    pub use crate::RW as access;
     #[doc = "OPERAND0"]
     pub mod OPERAND0 {
         pub const offset: u32 = 0;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "NUM_PADS0"]
     pub mod NUM_PADS0 {
         pub const offset: u32 = 8;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "OPCODE"]
     pub mod OPCODE0 {
         pub const offset: u32 = 10;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "OPERAND1"]
     pub mod OPERAND1 {
         pub const offset: u32 = 16;
         pub const mask: u32 = 0xff << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "NUM_PADS1"]
     pub mod NUM_PADS1 {
         pub const offset: u32 = 24;
         pub const mask: u32 = 0x03 << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
     #[doc = "OPCODE1"]
     pub mod OPCODE1 {
         pub const offset: u32 = 26;
         pub const mask: u32 = 0x3f << offset;
-        pub mod R {}
-        pub mod W {}
-        pub mod RW {}
+        pub use super::access;
+        #[doc(hidden)]
+        pub mod vals {}
+        #[doc(inline)]
+        pub use vals::*;
     }
 }
