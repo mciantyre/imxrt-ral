@@ -42,9 +42,5 @@ name = "blink"
 path = "blink.rs"
 
 [[bin]]
-name = "blink-nosync"
-path = "blink-nosync.rs"
-
-[[bin]]
 name = "rtic-blink"
 path = "rtic-blink.rs"
