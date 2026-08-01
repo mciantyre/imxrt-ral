@@ -229,7 +229,7 @@ pub fn render(_opts: &super::Options, _ir: &IR, d: &Device) -> Result<TokenStrea
             }
         }
 
-        #[cfg(all(feature = "rt", target_os = "none"))]
+        #[cfg(all(feature = "rt", any(target_os = "none", target_os = "threadx")))]
         mod _vectors {
             extern "C" {
                 #(fn #names();)*
@@ -240,7 +240,7 @@ pub fn render(_opts: &super::Options, _ir: &IR, d: &Device) -> Result<TokenStrea
                 _reserved: u32,
             }
 
-            #[cfg_attr(target_os = "none", link_section = ".vector_table.interrupts")]
+            #[cfg_attr(any(target_os = "none", target_os = "threadx"), link_section = ".vector_table.interrupts")]
             #[no_mangle]
             pub static __INTERRUPTS: [Vector; #n] = [
                 #vectors

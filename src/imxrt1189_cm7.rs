@@ -384,7 +384,7 @@ unsafe impl cortex_m::interrupt::InterruptNumber for Interrupt {
         self as u16
     }
 }
-#[cfg(all(feature = "rt", target_os = "none"))]
+#[cfg(all(feature = "rt", any(target_os = "none", target_os = "threadx")))]
 mod _vectors {
     extern "C" {
         fn TMR1();
@@ -580,7 +580,10 @@ mod _vectors {
         _handler: unsafe extern "C" fn(),
         _reserved: u32,
     }
-    #[cfg_attr(target_os = "none", link_section = ".vector_table.interrupts")]
+    #[cfg_attr(
+        any(target_os = "none", target_os = "threadx"),
+        link_section = ".vector_table.interrupts"
+    )]
     #[no_mangle]
     pub static __INTERRUPTS: [Vector; 237] = [
         Vector { _handler: TMR1 },
